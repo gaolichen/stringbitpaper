@@ -1,0 +1,8315 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{babel}
+\allowdisplaybreaks
+
+\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\ba}{\bar{a}}
+\newcommand{\bb}{\bar{b}}
+\newcommand{\normord}[1]{{:}\!\mathrel{#1}\!{:}}
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle #1\right|}
+\newcommand{\ketp}[1]{\left|#1\right\} }
+\newcommand{\brap}[1]{\left\{ #1\right|}
+\newcommand{\dprod}[2]{\left\langle #1|#2\right\rangle}
+\newcommand{\dprodp}[2]{\left\{ #1|#2\right\} }
+\newcommand{\mat}[1]{\mathbf{#1}}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Numerical Study of Stringbit Model
+\end_layout
+
+\begin_layout Author
+Gaoli Chen
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+email: gchen@ufl.edu
+\end_layout
+
+\end_inset
+
+, Songge Sun
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+email: uranussg@phys.ufl.edu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+Institute for Fundamental Theory, 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\emph on
+Department of Physics, University of Florida, Gainesville, FL 32611
+\end_layout
+
+\begin_layout Abstract
+This is the abstract.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+String bit model is one approach to a fundamental formulation of string
+ theory.
+ The main idea of string bit model is to describe string theories of point-like
+ entities-string bits, in which string is composite but not the fundamental
+ objects.
+ 
+\end_layout
+
+\begin_layout Standard
+The light-cone string can be described by discretizing the world-sheet spatial
+ coordinate 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ to 
+\begin_inset Formula $M$
+\end_inset
+
+ lattice site so that 
+\begin_inset Formula $p^{+}=M\epsilon T_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus the states of a single string described by the wave function: 
+\begin_inset Formula $\psi_{M}(x_{1},\cdots,x_{M},\tau)=\psi_{M}(x_{2},\cdots,x_{M},x_{1},\tau)$
+\end_inset
+
+ and the Hamiltonian: 
+\begin_inset Formula $P^{-}=\frac{1}{\epsilon}\sum_{i}^{M}\frac{1}{2T_{0}}(-\nabla_{i}^{2}+T_{0}^{2}(x_{i+1}-x_{i})^{2}).$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The ground state energy of a bosonic closed string bit chain is: 
+\begin_inset Formula 
+\[
+E_{G}=\frac{1}{2}\sum_{n}\omega_{n}=\frac{dT_{0}}{m}\sum_{n=1}^{M-1}\sin\frac{n\pi}{M}=\frac{dT_{0}}{m}\cot\frac{\pi}{2M}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}(M^{-3}))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because of the second term, a long chain of bosonic bits is unstable, it
+ will decay into two small chains.
+ This instability is also a motivation for introducing supersymmetry.
+ By adding on the fermionic degrees of freedom, the negative $1/M$ term
+ will be cancelled and leading to massless ground states.
+\end_layout
+
+\begin_layout Standard
+In this project, the model we study has zero space dimensions with s=1.
+ By analysis of the eigenstates from the low 
+\begin_inset Formula $M$
+\end_inset
+
+ data, we get physical features of this model.
+\end_layout
+
+\begin_layout Standard
+In this model, we have 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+ bosonic creat 
+\begin_inset Formula ${\bar{a}}_{\alpha}^{\beta}\equiv(a_{\beta}^{\alpha})^{\dagger}$
+\end_inset
+
+ and 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+ fermionic which obey 
+\begin_inset Formula ${\bar{b}}_{\alpha}^{\beta}\equiv(b_{\beta}^{\alpha})^{\dagger}$
+\end_inset
+
+.
+ these operators satisfy the (anti-)commutation relations: 
+\begin_inset Formula 
+\[
+[a_{\alpha}^{\beta},{\bar{a}}_{\gamma}^{\delta}]=\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta},\qquad\{b_{\alpha}^{\beta},{\bar{b}}_{\gamma}^{\delta}\}=\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta}
+\]
+
+\end_inset
+
+ all others vanishing.
+\end_layout
+
+\begin_layout Standard
+Also we define a super creation operator as 
+\begin_inset Formula $\psi(\theta)={\bar{a}}+{\bar{b}}\theta$
+\end_inset
+
+ From where we can get 
+\begin_inset Formula 
+\[
+{\bar{b}}=-\frac{d}{d\theta}\psi,\qquad{\bar{a}}=\left(1-\theta\frac{d}{d\theta}\right)\psi
+\]
+
+\end_inset
+
+ here 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a Grassmann anti-commuting number.
+ Then the single trace state is represented by 
+\begin_inset Formula 
+\[
+\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\ \tr\ \left[\psi(\theta_{1})\psi(\theta_{2})\cdots\psi(\theta_{M})\right]\ket{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consulting , the first quantize Hamiltonian 
+\begin_inset Formula $h$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+h & = & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}({\tilde{S}}_{k+1}+{\tilde{S}}_{k-1}-2{\tilde{S}}_{k})\right]\\
+ & \text{=} & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}{\tilde{S}}_{k+1}-S_{k+1}{\tilde{S}}_{k}+2iS_{k}{\tilde{S}}_{k}\right]\\
+ & \text{}
+\end{eqnarray*}
+
+\end_inset
+
+ represent them in terms of Grassmann variables 
+\begin_inset Formula 
+\[
+S_{k}=\theta_{k}+\frac{d}{d\theta_{k}},\qquad{\tilde{S}}_{k}=i\left(\theta_{k}-\frac{d}{d\theta_{k}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and interate them by part we can get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{h}=\sum_{k=1}^{M}\left[-2i\theta_{k}\theta_{k+1}-2i\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}-2\theta_{k}\frac{d}{d\theta_{k+1}}-2\theta_{k+1}\frac{d}{d\theta_{k}}-2+4\theta_{k}\frac{d}{d\theta_{k}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, we would like the bit number to be conserved, also that the dynamic
+ reduces to the superstring bit model above.
+ In order to achieve that, our operators' structure should be two annihilation
+ operators followed by two creation operators.
+ The details will be shown later.
+ Thus we have all the candidate terms to construct the Hamiltonian.
+ 
+\begin_inset Formula 
+\[
+\tr\ {\bar{a}}^{2}a^{2},\quad\tr\ {\bar{b}}^{2}b^{2},\quad\tr\ {\bar{b}}^{2}a^{2},\quad\tr\ {\bar{a}}^{2}b^{2},\quad\tr\ {\bar{a}}{\bar{b}}ba,\quad\tr\ {\bar{a}}{\bar{b}}ab,\quad\tr\ {\bar{b}}{\bar{a}}ba,\quad\tr\ {\bar{b}}{\bar{a}}ab
+\]
+
+\end_inset
+
+with coefficients scaling as 
+\begin_inset Formula $1/N$
+\end_inset
+
+.
+ Here's an example of applying one of the terms to a single trace state.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{N}\tr\ {\bar{a}}^{2}a^{2}\ket{\theta_{1}\theta_{2}\cdots\theta_{M}} & = & \frac{1}{N}\sum_{k=1}^{M}\tr\ {\bar{a}}^{2}a(\bar{a}+\bar{b}\theta_{k+1})\cdots(\bar{a}+\bar{b}\theta_{M})\cdots(\bar{a}+\bar{b}\theta_{k-1})\\
+ & = & \sum_{k=1}^{M}\left(1-\theta_{k}\frac{d}{d\theta_{k}}\right)\left(1-\theta_{k+1}\frac{d}{d\theta_{k+1}}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}+{\cal O}(N^{-1})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As a result, this kind of operators preserves the feature that only the
+ neighbor bit interaction survive the large 
+\begin_inset Formula $N$
+\end_inset
+
+limit.
+\end_layout
+
+\begin_layout Standard
+However, in the superstring model, the Hamiltonian has six independent terms.
+ while the number of our candidate terms is 8.
+ This indicate that we have 2 extra freedom.
+ By applying each candidate on the single trace state and reconstructing
+ the hamiltonian, we got,
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \frac{2}{N}\tr\left[i{\bar{a}}^{2}b^{2}-i{\bar{b}}^{2}a^{2}+{\bar{a}}{\bar{b}}ab+{\bar{b}}{\bar{a}}ba+{\bar{a}}^{2}a^{2}-{\bar{b}}^{2}b^{2}\right]\\
+ &  & +\frac{1}{N}\tr\left[2\i_{1}{\bar{a}}{\bar{b}}ba+2\xi_{2}{\bar{b}}{\bar{a}}ab+(\xi_{1}+\xi_{2})({\bar{a}}^{2}a^{2}+{\bar{b}}^{2}b^{2}-M)\right]
+\end{eqnarray*}
+
+\end_inset
+
+here 
+\begin_inset Formula $\xi_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi_{2}$
+\end_inset
+
+ are random numbers.
+ In our previous study, we pick 
+\begin_inset Formula $\xi_{2}=-\xi_{1}=1$
+\end_inset
+
+, so the Hamiltonian is 
+\begin_inset Formula 
+\begin{equation}
+H=\frac{2}{N}\tr\left[({\bar{a}}^{2}-i{\bar{b}}^{2})a^{2}-({\bar{b}}^{2}-i{\bar{a}}^{2})b^{2}+({\bar{a}}{\bar{b}}+{\bar{b}}{\bar{a}})ba+({\bar{a}}{\bar{b}}-{\bar{b}}{\bar{a}})ab\right]\label{bitham}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Supersymmetry
+\end_layout
+
+\begin_layout Standard
+This section describes the Hamiltonians of stringbit model and their supersymmet
+ry property to be studied in this paper.
+\end_layout
+
+\begin_layout Standard
+As described in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+ , there's a ambiguiaty of the hamiltonian.
+ A possible form of Hamiltonian reads 
+\begin_inset Formula 
+\begin{equation}
+H=H_{0}^{\prime}+\Delta H^{\prime},\label{eq:Hamiltonian-1-1}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\begin{eqnarray*}
+H_{0}^{\prime} & = & \frac{2}{N}\mathrm{Tr}\left[i\bar{a}^{2}b^{2}-i\bar{b}^{2}a^{2}+\bar{a}\bar{b}ab+\bar{b}\bar{a}ba+\bar{a}^{2}a^{2}-\bar{b}^{2}b^{2}\right],\\
+\Delta H^{\prime} & = & \frac{1}{N}\mathrm{Tr}\left[2\xi_{1}\bar{a}\bar{b}ba+2\xi_{2}\bar{b}\bar{a}ab+\left(\xi_{1}+\xi_{2}\right)\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\right],\\
+\tilde{M} & = & \tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right),
+\end{eqnarray*}
+
+\end_inset
+
+ with 
+\begin_inset Formula $\xi_{1},\xi_{2}$
+\end_inset
+
+ be two parameters.
+ When acting to trace states, 
+\begin_inset Formula $H_{0}^{\prime}$
+\end_inset
+
+ makes 
+\begin_inset Formula $\mathcal{O}\left(1\right)$
+\end_inset
+
+ contribution while 
+\begin_inset Formula $\Delta H^{\prime}$
+\end_inset
+
+ makes at most 
+\begin_inset Formula $\mathcal{O}\left(\frac{1}{N}\right)$
+\end_inset
+
+ contribution and hence vanishes in large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+ uses the bit operator 
+\begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
+\end_inset
+
+ in stread of 
+\begin_inset Formula $\tilde{M}$
+\end_inset
+
+ in 
+\begin_inset Formula $\Delta H^{\prime}$
+\end_inset
+
+.
+ Our calculation reveals in order to let 
+\begin_inset Formula $\Delta H^{\prime}$
+\end_inset
+
+ vanishes in large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, 
+\begin_inset Formula $M$
+\end_inset
+
+ must be replaced by 
+\begin_inset Formula $\tilde{M}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ The parameters 
+\begin_inset Formula $\xi_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi_{2}$
+\end_inset
+
+ are constrained by the  requirement of sypersymmetry.
+ A supersymmetric Hamiltonian must commute with the supersymmetry operator
+ 
+\begin_inset Formula 
+\[
+Q=\tr\left(\bar{a}b+\bar{b}a\right).
+\]
+
+\end_inset
+
+ In Append 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "App:Calculation-of-HQ"
+
+\end_inset
+
+, we show that 
+\begin_inset Formula $\left[H,Q\right]=0$
+\end_inset
+
+ if 
+\begin_inset Formula 
+\[
+\xi_{1}-\xi_{2}=2.
+\]
+
+\end_inset
+
+This allows the supersymmetric Hamiltonian to be parameterized by only one
+ parameter, 
+\begin_inset Formula $\xi=\xi_{1}-1=\xi_{2}+1$
+\end_inset
+
+, as 
+\begin_inset Formula 
+\begin{equation}
+H=H_{0}+\xi\Delta H,\label{eq:Hamiltonian-2-1}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula 
+\begin{eqnarray*}
+H_{0} & = & \frac{2}{N}\mathrm{Tr}\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{b}^{2}-i\bar{a}^{2}\right)b^{2}+\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)ba+\left(\bar{a}\bar{b}-\bar{b}\bar{a}\right)ab\right],\\
+\Delta H & = & \frac{2}{N}\tr\left[\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right].
+\end{eqnarray*}
+
+\end_inset
+
+Again, 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ makes 
+\begin_inset Formula $\mathcal{O}\left(1\right)$
+\end_inset
+
+ contribution and 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ 
+\begin_inset Formula $\mathcal{O}\left(\frac{1}{N}\right)$
+\end_inset
+
+ contribution.
+ The values of 
+\begin_inset Formula $\xi$
+\end_inset
+
+ are determined by the requirement that a well-defined Hamiltonian should
+ be stable for large 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\tr\bar{a}^{2}a^{2}$
+\end_inset
+
+ term can produce about 
+\begin_inset Formula $M^{2}$
+\end_inset
+
+ terms by attacking to the trace state 
+\begin_inset Formula $\tr\bar{a}^{M}\ket{0}$
+\end_inset
+
+.
+ This would cause dangerous instability if the coefficient of 
+\begin_inset Formula $\tr\bar{a}^{2}a^{2}$
+\end_inset
+
+ is negative.
+ To maintain a 
+\begin_inset Formula $\tr\bar{a}^{2}a^{2}$
+\end_inset
+
+ term with a positive coefficient, we must choose 
+\begin_inset Formula $\xi>-1$
+\end_inset
+
+.
+ Therefore, we obtain a form of well-defined Hamiltonian
+\begin_inset Formula 
+\begin{equation}
+H=H_{0}+\xi\Delta H,\quad\xi>-1.\label{eq:Hamiltonian-3-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Besides 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hamiltonian-3-1"
+
+\end_inset
+
+, there exist other supersymmetric Hamiltonians.
+ As both 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ are supersymmetric, we obtain another supersymmetric Hamiltonian by replacing
+ 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ with 
+\begin_inset Formula $-H_{0}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+H=-H_{0}+\xi\Delta H,\quad\xi>1,\label{eq:Hamiltonian-4-1}
+\end{equation}
+
+\end_inset
+
+ where the constraint 
+\begin_inset Formula $\xi>1$
+\end_inset
+
+ comes from the stability condition.
+ 
+\end_layout
+
+\begin_layout Standard
+One might wonder if there exist other supersymmetric operators that are
+ capable of stabilizing 
+\begin_inset Formula $-H_{0}$
+\end_inset
+
+ and make only 
+\begin_inset Formula $\mathcal{O}\left(\frac{1}{N}\right)$
+\end_inset
+
+ contributions.
+ One possibility is to use 
+\begin_inset Formula $\tr\bar{a}a\bar{a}a$
+\end_inset
+
+ which also produces about 
+\begin_inset Formula $M^{2}$
+\end_inset
+
+ terms when acting on 
+\begin_inset Formula $\tr\bar{a}^{M}\ket{0}$
+\end_inset
+
+.
+ A combination 
+\begin_inset Formula 
+\[
+H^{\prime}=\frac{2}{N}\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right),
+\]
+
+\end_inset
+
+ meet such requirement.
+ However, as Appendix 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "app:HPrime-Equals-DeltaH"
+
+\end_inset
+
+ shows, 
+\begin_inset Formula $H^{\prime}$
+\end_inset
+
+ equals 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ for all trace states space, i.e, 
+\begin_inset Formula 
+\[
+\left(H^{\prime}-\Delta H\right)\ket{\text{Any trace state}}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We are not sure if there exist other well-defined Hamiltonians.
+ For the time being, we leave be question for further research and only
+ study Hamiltonians in the form of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hamiltonian-3-1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hamiltonian-4-1"
+
+\end_inset
+
+ in this paper.
+\end_layout
+
+\begin_layout Section*
+Energy Level
+\end_layout
+
+\begin_layout Standard
+For continous strings, which is when 
+\begin_inset Formula $M=\infty$
+\end_inset
+
+, their excitation energy would scales like 
+\begin_inset Formula $1/M=m/P^{+}$
+\end_inset
+
+.
+ From the nomal mode frequency(closed string) 
+\begin_inset Formula $\omega_{n}=(2T_{0}/m)\sin(n\pi/M)$
+\end_inset
+
+ we can get the spectrum in which all the excitation energy level would
+ be degeneracy.
+ And what's more, the higher the energy level is, the more degeneracy there
+ is.
+\end_layout
+
+\begin_layout Standard
+For a bosonic closed string bit chain, its ground state energy is:
+\begin_inset Formula 
+\[
+E_{G}=\frac{1}{2}\sum_{n}\omega_{n}=\frac{dT_{0}}{m}\sum_{n=1}^{M-1}\sin\frac{n\pi}{M}=\frac{dT_{0}}{m}\cot\frac{\pi}{2M}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+O(M^{-3})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However in our case what we're interested in is for finite 
+\begin_inset Formula $M$
+\end_inset
+
+, how this feature of the spectrum would be preserved as the number of bits
+ changes.
+ What we can expect is, as 
+\begin_inset Formula $M$
+\end_inset
+
+ getting larger, the discrete string bits would behave more and more like
+ the continuous string, while when 
+\begin_inset Formula $M=\infty$
+\end_inset
+
+, the energy level would have the same property with the energy spectrum
+ of the continuous string.
+\end_layout
+
+\begin_layout Standard
+Because of the cyclic symmetry constraint, when 
+\begin_inset Formula $M$
+\end_inset
+
+ is even ,the ground state would disappear.
+ Now we only check the odd bits number string.
+\end_layout
+
+\begin_layout Standard
+According to our previous paper, in the 
+\begin_inset Formula $\theta$
+\end_inset
+
+ language, the general eigenvalue of 
+\begin_inset Formula $h$
+\end_inset
+
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E({\eta})=8\sum_{n<M/2}\eta_{n}\textbf{sin}\frac{n\pi}{M}+4\eta_{M/2}\qquad\eta_{n}=+1,0,0,-1,\qquad\text{{for}}\quad n\neq\frac{M}{2},\qquad\eta_{M/2}=\pm1
+\]
+
+\end_inset
+
+Because of the cyclic constrain, when 
+\begin_inset Formula $M$
+\end_inset
+
+ is odd, 
+\begin_inset Formula $\eta$
+\end_inset
+
+ can only be 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Obviously when all the 
+\begin_inset Formula $\eta$
+\end_inset
+
+ have the value 
+\begin_inset Formula $-1$
+\end_inset
+
+ the eigenvalue is the smallest:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{min}=-4\sum_{n=1}^{M-1}\textsf{\sin}\frac{n\pi}{M}=-4\cot\frac{\pi}{2M}
+\]
+
+\end_inset
+
+In large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, it behave as: 
+\begin_inset Formula 
+\[
+E_{min}=-\frac{{8M}}{\pi}+\frac{2\pi}{3M}
+\]
+
+\end_inset
+
+The next energy level is when 
+\begin_inset Formula $n=1$
+\end_inset
+
+, 
+\begin_inset Formula $\eta=1$
+\end_inset
+
+ the rest of 
+\begin_inset Formula $\eta$
+\end_inset
+
+ still equal to 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ In this way we can get the gap between the first excited state's eigenvalue
+ and the ground state's eigenvalue.
+ So the energy difference is: 
+\begin_inset Formula 
+\[
+\delta H=16\sin\frac{\pi}{M}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Meanwhile we try to compare the single trace states' eigenvalues with the
+ multi-trace states' eigenvalues.
+ From the minimal eigenvalue's formula, it could be derived that the less
+ the trace states is, the lower the ground state's eigenvalue would be.
+\end_layout
+
+\begin_layout Standard
+However, for double trace states, since now we're in the case that the total
+ number of bits is odd, so there must be one odd number bits states and
+ one even number bits state.
+ Since the even one's ground state would disappear because of cyclic constrains,
+ this will lead to the absence of the double trace state's ground state.
+ However, for triple trace states, it could be divided into three odd number
+ trace states whose ground states all exist.
+ Thus the ground state of double trace state will be higher than the triple
+ trace states.
+\end_layout
+
+\begin_layout Standard
+Now we try to find the ground state's eigenvalue for multi-trace state which
+ we know comes from the triple trace states.
+\begin_inset Formula 
+\[
+E_{min}^{'}=-\frac{8M}{\pi}+\frac{2\pi}{3X_{1}}+\frac{2\pi}{3X_{2}}+\frac{2\pi}{3(M-X_{1}-X_{2})}
+\]
+
+\end_inset
+
+ It is obvious to conclude that when 
+\begin_inset Formula $X_{1}=X_{2}=M/3$
+\end_inset
+
+ it get the minmal value 
+\begin_inset Formula 
+\[
+E_{min}^{'}=-\frac{8M}{\pi}+\frac{6\pi}{M}
+\]
+
+\end_inset
+
+We get the energy gap between the ground state of single trace states and
+ multitrace states: 
+\begin_inset Formula 
+\[
+\delta H'=\frac{16\pi}{3M}
+\]
+
+\end_inset
+
+ The ratio of 
+\begin_inset Formula $\delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta H'$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+\frac{\delta H'}{\delta H}=\frac{1}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Above is theoretical analysis at the limit 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ What we concerned is how these properties will change at finite 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The following are the figures 
+\end_layout
+
+\begin_layout Standard
+All of the three figures contain the energy levels of single trace states(red
+ lines), triple trace states(yellow line), and the threshold for triple
+ trace states when 
+\begin_inset Formula $M=\infty$
+\end_inset
+
+(blue dash line).
+\end_layout
+
+\begin_layout Standard
+Here we've deduced the ground state from all the energy levels, which correspond
+ing to the 
+\begin_inset Formula $M$
+\end_inset
+
+ term of the ground state energy equation, and it is the same for both the
+ single trace states and triple trace states.
+\end_layout
+
+\begin_layout Standard
+As we can see, at 
+\begin_inset Formula $M=21$
+\end_inset
+
+ which is the lowest bit number, the degeneration is broken at higher energy
+ levels, they are spread out.
+ but at 
+\begin_inset Formula $m=101$
+\end_inset
+
+, we can see the degeneration still reserves.
+\end_layout
+
+\begin_layout Standard
+Except for the energy level generated by the single trace states, we also
+ look at the energy level from the multiple traces.
+ When the bit number 
+\begin_inset Formula $M$
+\end_inset
+
+ is not big enough, there're obvious gaps between energy levels of multiple
+ traces, however when it is getting larger, they would form a continuous
+ background.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/Mm=21.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 750bp 610bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The energy levels from both single trace states(red lines) and triple trace
+ states(yellow lines) for 
+\begin_inset Formula $M=21$
+\end_inset
+
+ when 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ The degeneracy of single trace states' energy levels is reserved.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see from Fig.1, at the lower area of energy, we could start to
+ see the feature of the degeneracy for single trace state.
+ While the triple trace states is not continuous.
+ the blue dash line is the threshold for multi-trace states energy when
+ 
+\begin_inset Formula $M=\infty$
+\end_inset
+
+.
+ Here we can see the lowest lines of triple trace states is very close to
+ it.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/Mm=51.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 750bp 610bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The energy levels from both single trace states and triple trace states
+ for 
+\begin_inset Formula $M=51$
+\end_inset
+
+ when 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ The degeneracy of single trace states' energy levels is reserved.
+ What's more, the energy levels from the triple trace state(the yellow lines)
+ start spread out the region.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From Fig.2 we can see the degeneration of single trace states' energy level
+ is getting more clear as 
+\begin_inset Formula $M$
+\end_inset
+
+ getting larger.
+ Meanwhile the higher part of the triple trace states already formed the
+ continuous background.
+ and the lowest state of it is also getting closer to the blue dash line.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/Mm=101.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 750bp 610bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The energy levels from both single trace states and triple trace states
+ for 
+\begin_inset Formula $M=101$
+\end_inset
+
+ when 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ The degeneracy of single trace states' energy levels is reserved.
+ What's more, the energy levels from the triple trace state(the yellow lines)
+ start spread out the region.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fig.3 show that at this number of bits, the continuous "yellow" background
+ is basically formed, while the lowest energy state of multi-trace states
+ is nearly coincided with the supposed boundary.
+ More single trace states is degenerated.
+\end_layout
+
+\begin_layout Standard
+For the analysis at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+ we can see how the string bits behave more and more like a continuous string
+ as 
+\begin_inset Formula $M$
+\end_inset
+
+ getting larger.
+ The characters of the continuous string (energy degeneracy of single trace
+ states, boundary of multi-trace states) start to appear at pretty low bit
+ number, and get great reserved when it is larger.
+ 
+\end_layout
+
+\begin_layout Section*
+Trace States
+\end_layout
+
+\begin_layout Standard
+The trace state space of stringbit is built as follows.
+ We first introduce the vacuum state 
+\begin_inset Formula $\ket{0}$
+\end_inset
+
+ which annihilated by all 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ with arbitary color indices.
+ We then can act on 
+\begin_inset Formula $\ket{0}$
+\end_inset
+
+ with arbitary number of 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ to obtain non-vacuum states with color indices.
+ Finally, we take trace of the creator operators to obtain color-singlet
+ states, which span the stringbit trace state space.
+ In general, when 
+\begin_inset Formula $N$
+\end_inset
+
+ is big enough, we can act arbitary number of traces on the vacuum state.
+ Each creator operator in the trace state is interpreted as one string bit.
+ Trace states with even number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ are bosonic states while those with odd number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ are fermionic states.
+ 
+\end_layout
+
+\begin_layout Standard
+A counting question arises naturally here.
+ How many trace states are there for a fixed bit number
+\begin_inset Formula $M$
+\end_inset
+
+? Let's first consider the single trace states.
+ There are 
+\begin_inset Formula $2^{M}$
+\end_inset
+
+ combinations of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit string consisting of 
+\begin_inset Formula $\ba,\bb$
+\end_inset
+
+.
+ By property of trace, a trace state is equavilent to its cyclic permutations.
+ For example, 
+\begin_inset Formula $\tr\bar{b}\bar{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tr\ba\bb$
+\end_inset
+
+ are equivalent states, so as 
+\begin_inset Formula $\tr\bar{b}\bar{a}\bar{a}\bar{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tr\ba\ba\bb\bb$
+\end_inset
+
+.
+ Actually, the later case differs by a negative sign
+\begin_inset Formula 
+\[
+\tr\ba\ba\bb\bb=-\tr\bb\ba\ba\bb.
+\]
+
+\end_inset
+
+The rule is each exchange of order of two 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ introduce a minus signe.
+ This leads to vanishing states, for example, 
+\begin_inset Formula 
+\[
+\tr\bar{b}\bar{b}=-\tr\bar{b}\bar{b}=0.
+\]
+
+\end_inset
+
+Using Burnside’s theorem, we proved that there are equal number of bosonic
+ and fermionic single trace states for a given number of 
+\begin_inset Formula $M$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This stems from the fact that the bit operator 
+\begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
+\end_inset
+
+ commute with supersymmetry operator 
+\begin_inset Formula $Q=\tr\left(\exp\left(i\frac{\pi}{4}\right)\bar{a}b+\exp\left(-i\frac{\pi}{4}\right)\bar{b}a\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+.
+ The number is given by 
+\begin_inset Formula 
+\begin{equation}
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, n,n|M}\varphi\left(n\right)2^{\frac{M}{n}},\label{eq:Single-Trace-Number}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $n|M$
+\end_inset
+
+ denotes the condition that 
+\begin_inset Formula $M$
+\end_inset
+
+ is dividible by 
+\begin_inset Formula $n$
+\end_inset
+
+, and 
+\begin_inset Formula $\varphi\left(n\right)$
+\end_inset
+
+ the Euler's totient function, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+which indicates the number of positive integers less than or equal to 
+\begin_inset Formula $n$
+\end_inset
+
+ that are relatively prime to 
+\begin_inset Formula $n$
+\end_inset
+
+.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ The proof of formula 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Single-Trace-Number"
+
+\end_inset
+
+ is given in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:Counting-Single-Trace"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now consider the general trace states, including single and multiple trace
+ states.
+ Let 
+\begin_inset Formula $T\left(m,r;0\right)$
+\end_inset
+
+ be the number of 
+\begin_inset Formula $r$
+\end_inset
+
+-bit bosonic trace states built out of single trace states of bits less
+ than or equal to 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T\left(m,r;1\right)$
+\end_inset
+
+ is defined similarly for fermionic trace states.
+ We can express 
+\begin_inset Formula $T\left(m,r,b\right)$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $T\left(m-1,\cdots\right)$
+\end_inset
+
+.
+ Among the 
+\begin_inset Formula $r$
+\end_inset
+
+ bits, we can assign 
+\begin_inset Formula $i\times m$
+\end_inset
+
+ bits to 
+\begin_inset Formula $i$
+\end_inset
+
+ bosonic single trace states and 
+\begin_inset Formula $j\times m$
+\end_inset
+
+ bits to 
+\begin_inset Formula $j$
+\end_inset
+
+ fermionic single trace states, provided 
+\begin_inset Formula $\left(i+j\right)m\leq r$
+\end_inset
+
+.
+ There are 
+\begin_inset Formula $\binom{S_{m}}{i}$
+\end_inset
+
+ ways to 
+\begin_inset Formula $ $
+\end_inset
+
+pick 
+\begin_inset Formula $i$
+\end_inset
+
+ fermionic 
+\begin_inset Formula $m$
+\end_inset
+
+-bit single trace states, and 
+\begin_inset Formula $\binom{S_{m}+j-1}{j}$
+\end_inset
+
+ ways to pick 
+\begin_inset Formula $j$
+\end_inset
+
+ bosonic 
+\begin_inset Formula $m$
+\end_inset
+
+-bit single trace states.
+ The rest 
+\begin_inset Formula $r-\left(i+j\right)m$
+\end_inset
+
+ bits need to be built out of single trace states of bits less than or equal
+ to 
+\begin_inset Formula $m-1$
+\end_inset
+
+.
+ Summation over all non-negative 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $j$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{equation}
+T\left(m,r;b\right)=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T\left(m-1,r-\left(i+j\right)m;\left(b+i\right)\mod2\right).\label{eq:Multiple-Trace-States}
+\end{equation}
+
+\end_inset
+
+We can use induction to prove that 
+\begin_inset Formula 
+\begin{equation}
+T\left(m,r;0\right)=T\left(m,r;1\right),\label{eq:Multiple-trace-T0=T1}
+\end{equation}
+
+\end_inset
+
+ which follows there are equal number of bosonic and fermionic multiple
+ trace states.
+ For 
+\begin_inset Formula $m=1$
+\end_inset
+
+, the only 
+\begin_inset Formula $r$
+\end_inset
+
+-bit bosonic state is 
+\begin_inset Formula $\left(\tr\bar{a}\right)^{r}\ket{0}$
+\end_inset
+
+ and the only 
+\begin_inset Formula $r$
+\end_inset
+
+-bit fermionic state is 
+\begin_inset Formula $\left(\tr\bar{a}\right)^{r-1}\tr\bar{b}\ket{0}$
+\end_inset
+
+, which implies 
+\begin_inset Formula $T\left(1,r;0\right)=T\left(1,r;1\right)=1$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $T\left(m-1,r;0\right)=T\left(m-1,r;1\right)$
+\end_inset
+
+ holds for all 
+\begin_inset Formula $r$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Multiple-Trace-States"
+
+\end_inset
+
+ gives the same result for 
+\begin_inset Formula $T\left(m,r;0\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $T\left(m,r;1\right)$
+\end_inset
+
+, which follows 
+\begin_inset Formula $T\left(m,r;0\right)=T\left(m,r;1\right)$
+\end_inset
+
+ holds for all values of 
+\begin_inset Formula $m,r$
+\end_inset
+
+.
+ Therefore, we can drop the third argument of 
+\begin_inset Formula $T$
+\end_inset
+
+ function and simply write 
+\begin_inset Formula 
+\begin{equation}
+T\left(m,r\right)=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T\left(m-1,r-\left(i+j\right)m\right).\label{eq:Multiple-trace-states-2}
+\end{equation}
+
+\end_inset
+
+The number of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit bosonic or fermionc trace states is simply 
+\begin_inset Formula 
+\begin{equation}
+T_{M}=T\left(M,M\right).\label{eq:Multiple-trace-states-3}
+\end{equation}
+
+\end_inset
+
+ Equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Single-Trace-Number"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Multiple-trace-states-2"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Multiple-trace-states-3"
+
+\end_inset
+
+ enable us to find the number of trace states by computer program.
+ The results of 
+\begin_inset Formula $S_{M}$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{M}$
+\end_inset
+
+ are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Number-of-trace-states"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="44" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S_{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $T_{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S_{M}\times\nicefrac{M}{2^{M}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{T_{M}}{2^{M}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.750000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.625000000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.625000000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.625000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.656250000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.562500000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.687500000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+89
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.546875000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.695312500000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.703125000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+365
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.527343750000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.712890625000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+734
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.507812500000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.716796875000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1473
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.504882812500 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.719238281250 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+172 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2958 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.503906250000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.722167968750 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+316 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5925 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.501464843750 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.723266601563 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+586 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11864 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500732421875 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.724121093750 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1096
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23757
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.501708984375 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.725006103516 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2048 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+47536 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.725341796875 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3856 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+95105 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500122070313 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.725593566895 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7286 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+190274 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500289916992 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.725837707520 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13798 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+380601 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500034332275 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.725938796997 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26216
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+761282 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500030517578 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726015090942 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+49940 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1522705 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500078201294 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726082324982 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+95326 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3045532 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500004768372 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726111412048 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+182362 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6091241 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500002622604 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726132512093 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+349536 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12182788 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500015258789 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726150751114 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+671092
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24365857 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500002503395 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726159125566 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1290556 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48732102 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000357628 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726164907217 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2485534 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97464861 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500004127622 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726169802248 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4793492 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+194930334 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000178814 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726172082126 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9256396 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+389861509 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000052154 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726173648611 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17895736 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+779724424 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500001087785 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726174958050 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34636834 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1559450161 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000013970 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726175569464 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+67108864 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3118902120 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726175988093 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+130150588 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6237807181 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000245403 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176330470 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+252645136 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12475617154 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000001863 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176492986 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+490853416 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24951238137 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000010943 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176604425 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+954437292 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+49902482386 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000060303 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176693366 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1857283156 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+99804970645 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000262 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176736098 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3616814566 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+199609949268 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000131 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176765122 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7048151672 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+399219911173 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000015032 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176788108 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13743895360 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+798439834644 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000466 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176799293 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+390937468408 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25550075403713 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000965 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176819049 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11258999068468 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+817602415099946 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000001 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176820986 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9607679205074672 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+837224873334502342 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000001 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176821223 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Number-of-trace-states"
+
+\end_inset
+
+Number of trace states
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results reveals that as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase 
+\begin_inset Formula 
+\[
+S_{M}\to\frac{2^{M-1}}{M},\qquad T_{M}\to\left(0.7261768212\cdots\right)\times2^{M}.
+\]
+
+\end_inset
+
+The limit of 
+\begin_inset Formula $S_{M}$
+\end_inset
+
+ shows for large 
+\begin_inset Formula $M$
+\end_inset
+
+ almost each single trace state has 
+\begin_inset Formula $M$
+\end_inset
+
+ different cyclic permutations.
+ This is easy to understand.
+ As 
+\begin_inset Formula $M$
+\end_inset
+
+ increase, the ratio of the single trace with certain cyclic symmetry become
+ lower and lower.
+ 
+\begin_inset Formula $T_{M}$
+\end_inset
+
+ increase simply as 
+\begin_inset Formula $2^{M}$
+\end_inset
+
+ with a prefactor we don't understand.
+ The exploration of the magic number in the 
+\begin_inset Formula $T_{M}$
+\end_inset
+
+ limit could be an interesting mathematic problem.
+\end_layout
+
+\begin_layout Standard
+The metric matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit bosonic trace state space 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $M$
+\end_inset
+
+- bit fermionic trace state space has a equavilent metric as 
+\begin_inset Formula $M$
+\end_inset
+
+-bit bosonic trace state space.
+\end_layout
+
+\end_inset
+
+ is a 
+\begin_inset Formula $T_{M}\times T_{M}$
+\end_inset
+
+ real symmetric matrix defined as 
+\begin_inset Formula 
+\begin{equation}
+G_{ij}=\dprod{i}{j},\label{eq:Norm-Matrix-Definition}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\ket{i}$
+\end_inset
+
+ is the 
+\begin_inset Formula $i$
+\end_inset
+
+-th 
+\begin_inset Formula $M$
+\end_inset
+
+-bit trace state.
+ The complete lists of bosonic trace states from 
+\begin_inset Formula $M=1$
+\end_inset
+
+ to 
+\begin_inset Formula $M=7$
+\end_inset
+
+ are in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:Trace-States-List"
+
+\end_inset
+
+.
+ The rank of 
+\begin_inset Formula $G$
+\end_inset
+
+ determines the dimension of the trace state space, and hence, the number
+ of energy levels of the system.
+ Matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ has full rank for 
+\begin_inset Formula $N\geq M$
+\end_inset
+
+, while for 
+\begin_inset Formula $N<M$
+\end_inset
+
+ it's rank deficient.
+ As 
+\begin_inset Formula $N$
+\end_inset
+
+ change from 
+\begin_inset Formula $M$
+\end_inset
+
+ to 
+\begin_inset Formula $1$
+\end_inset
+
+, , it's rank changes from 
+\begin_inset Formula $T_{M}$
+\end_inset
+
+ to 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+ and 
+\begin_inset Formula $N\leq M$
+\end_inset
+
+, the ranks of 
+\begin_inset Formula $G$
+\end_inset
+
+ matrices form an number triangle show as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{gather*}
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+quad 2 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+quad 4 
+\backslash
+quad 5 
+\backslash
+
+\backslash
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 6 
+\backslash
+quad 9 
+\backslash
+quad 10 
+\backslash
+
+\backslash
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 8
+\backslash
+quad 17
+\backslash
+quad 20
+\backslash
+quad 21 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 10 
+\backslash
+quad 31 
+\backslash
+quad 40 
+\backslash
+quad 43
+\backslash
+quad 44 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 12 
+\backslash
+quad 49 
+\backslash
+quad 76 
+\backslash
+quad 85
+\backslash
+quad 88
+\backslash
+quad 89 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 14 
+\backslash
+quad 75 
+\backslash
+quad 140 
+\backslash
+quad 167
+\backslash
+quad 176 
+\backslash
+quad 179 
+\backslash
+quad 180
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 16 
+\backslash
+quad 109 
+\backslash
+quad 252 
+\backslash
+quad 325
+\backslash
+quad 352 
+\backslash
+quad 361 
+\backslash
+quad 364 
+\backslash
+quad 365
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 18 
+\backslash
+quad 147 
+\backslash
+quad 436 
+\backslash
+quad 621
+\backslash
+quad 694 
+\backslash
+quad 721 
+\backslash
+quad 730 
+\backslash
+quad 733 
+\backslash
+quad 734
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquad 1
+\backslash
+quad 20 
+\backslash
+quad 193 
+\backslash
+quad 724 
+\backslash
+quad 1165
+\backslash
+quad 1360 
+\backslash
+quad 1433 
+\backslash
+quad 1460 
+\backslash
+quad 1469 
+\backslash
+quad 1472 
+\backslash
+quad 1473
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{gather*} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The number at 
+\begin_inset Formula $i$
+\end_inset
+
+-th row and 
+\begin_inset Formula $j$
+\end_inset
+
+-th column is the rank of 
+\begin_inset Formula $G$
+\end_inset
+
+ when 
+\begin_inset Formula $M=i,\, N=j$
+\end_inset
+
+.
+ Let's denote the rank to be of 
+\begin_inset Formula $R\left(i,j\right)$
+\end_inset
+
+.
+ There are couples of obvious patterns: 
+\begin_inset Formula $R\left(M,M\right)=T_{M}$
+\end_inset
+
+, 
+\begin_inset Formula $R\left(M,M-1\right)=T_{M}-1$
+\end_inset
+
+, 
+\begin_inset Formula $R\left(M,1\right)=1$
+\end_inset
+
+, and for 
+\begin_inset Formula $M$
+\end_inset
+
+ greater than 1, 
+\begin_inset Formula $R\left(M,2\right)=2M-2$
+\end_inset
+
+.
+ Moreover, if we define 
+\begin_inset Formula $R\left(M,0\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $D\left(M,N\right)=R\left(M,N\right)-R\left(M,N-1\right)$
+\end_inset
+
+, we obtain another number triangle formed by 
+\begin_inset Formula $D\left(M,N\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{gather*}
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+quad 1 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+quad 3 
+\backslash
+quad 1 
+\backslash
+
+\backslash
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 5 
+\backslash
+quad 3 
+\backslash
+quad 1 
+\backslash
+
+\backslash
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 7
+\backslash
+quad 9
+\backslash
+quad 3
+\backslash
+quad 1 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 9 
+\backslash
+quad 21 
+\backslash
+quad 9 
+\backslash
+quad 3
+\backslash
+quad 1 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 11 
+\backslash
+quad 37 
+\backslash
+quad 27 
+\backslash
+quad 9
+\backslash
+quad 3
+\backslash
+quad 1 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 13 
+\backslash
+quad 61 
+\backslash
+quad 65 
+\backslash
+quad 27
+\backslash
+quad 9 
+\backslash
+quad 3 
+\backslash
+quad 1
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 15 
+\backslash
+quad 93 
+\backslash
+quad 143 
+\backslash
+quad 73
+\backslash
+quad 27 
+\backslash
+quad 9 
+\backslash
+quad 3 
+\backslash
+quad 1
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 17 
+\backslash
+quad 129 
+\backslash
+quad 289 
+\backslash
+quad 185
+\backslash
+quad 73 
+\backslash
+quad 27 
+\backslash
+quad 9 
+\backslash
+quad 3 
+\backslash
+quad 1
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 19 
+\backslash
+quad 173 
+\backslash
+quad 531 
+\backslash
+quad 441
+\backslash
+quad 195 
+\backslash
+quad 73 
+\backslash
+quad 27 
+\backslash
+quad 9 
+\backslash
+quad 3 
+\backslash
+quad 1
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{gather*} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The right half of the each row exibits the pattern 
+\begin_inset Formula 
+\[
+1,\quad3,\quad9,\quad27,\quad73,\quad195,\cdots.
+\]
+
+\end_inset
+
+ For odd 
+\begin_inset Formula $M$
+\end_inset
+
+, the sequence starts from 
+\begin_inset Formula $N=M$
+\end_inset
+
+ to 
+\begin_inset Formula $N=\frac{M+1}{2}$
+\end_inset
+
+; for even 
+\begin_inset Formula $M$
+\end_inset
+
+, the sequence starts from 
+\begin_inset Formula $N=M$
+\end_inset
+
+ to 
+\begin_inset Formula $N=\frac{M}{2}$
+\end_inset
+
+.
+ We are not sure about why it behaves like this.
+ It might be related to the value of 
+\begin_inset Formula $N$
+\end_inset
+
+ when the norm of some trace states begin to vanish.
+ For odd 
+\begin_inset Formula $M$
+\end_inset
+
+, the norm of state 
+\begin_inset Formula $\tr\bar{a}\bar{b}^{M-1}\ket{0}$
+\end_inset
+
+ vanishes at 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+, and as 
+\begin_inset Formula $N$
+\end_inset
+
+ decrease, more states have zero norm.
+ For even 
+\begin_inset Formula $M$
+\end_inset
+
+, when 
+\begin_inset Formula $N=\frac{M}{2}$
+\end_inset
+
+, there is state with vanishing norm, but when 
+\begin_inset Formula $N=\frac{M}{2}-2$
+\end_inset
+
+, there are more than one states have zero norm.
+\end_layout
+
+\begin_layout Section*
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Method"
+
+\end_inset
+
+The 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ Matrices
+\end_layout
+
+\begin_layout Standard
+Our goal is to study the energy spectrum of Hamiltonian 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hamiltonian-3"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hamiltonian-4"
+
+\end_inset
+
+.
+ The traditional approach is to build a Hamiltonian matrix in orthnormal
+ basis, which comes from the diagonalization of the norm matrix 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Norm-Matrix-Definition"
+
+\end_inset
+
+.
+ We used another approach which does not require the diagonalization of
+ the norm matrix.
+ A complex value matrix 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ is defined as 
+\begin_inset Formula 
+\[
+H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}
+\]
+
+\end_inset
+
+ for a given value of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ is not the Hamiltonian matrix as the trace states 
+\begin_inset Formula $\ket{i}$
+\end_inset
+
+ are not orthnormal basis.
+ We then solve the eigenvalue problem of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\left(\mathcal{H}-E\right)V=0.
+\]
+
+\end_inset
+
+ In Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:Hamiltonian-Eigenvalue-Problem"
+
+\end_inset
+
+, we prove the following claims regarding the eigenvalue problem of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, its complex conjugate 
+\begin_inset Formula $E^{*}$
+\end_inset
+
+ is also an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is not real, we have 
+\begin_inset Formula $V^{\dagger}GV=0$
+\end_inset
+
+, where 
+\begin_inset Formula $G$
+\end_inset
+
+ is the norm matrix defined by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Norm-Matrix-Definition"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive-semidefinite, every eigenvalue of the Hamiltonian system is
+ an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive-semidefinite, E is an eigenvalue of the Hamiltonian system
+ if and only if 
+\begin_inset Formula $V^{\dagger}GV>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+What if 
+\begin_inset Formula $G$
+\end_inset
+
+ is not positive-semidefinite? Per our calculation, this only happens when
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ is less than 
+\begin_inset Formula $M$
+\end_inset
+
+ and non-integer.
+ In such case, the trace state space is not a Hilbert space and has no orthnorma
+l basis.
+ For every set of basis, there exists one or more ghost states whose norms
+ are negative.
+ In analogy with positive-semidefinite case, we can still build a Hamiltonian
+ matrix base on these basis.
+ We have the following claims proved in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:Hamiltonian-Eigenvalue-Problem"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of the Hamiltonian matrix with eigenvector 
+\begin_inset Formula $W$
+\end_inset
+
+, it is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ if 
+\begin_inset Formula $W$
+\end_inset
+
+ does not mix with ghost states.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with eigenvecot 
+\begin_inset Formula $V$
+\end_inset
+
+, then it is an eigenvalue of the Hamiltonian matrix if 
+\begin_inset Formula $E=0$
+\end_inset
+
+ or 
+\begin_inset Formula $V^{\dagger}\mathrm{abs}\left(G\right)V=V^{\dagger}GV>0$
+\end_inset
+
+, where the function 
+\begin_inset Formula $\mathrm{abs}$
+\end_inset
+
+ is defined as
+\begin_inset Formula 
+\[
+\mathrm{abs}\left(G\right)=U^{\dagger}\left(\begin{array}{cccc}
+\left|g_{1}\right|\\
+ & \left|g_{2}\right|\\
+ &  & \ddots\\
+ &  &  & \left|g_{n}\right|
+\end{array}\right)U,
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula 
+\[
+G=U^{\dagger}\left(\begin{array}{cccc}
+g_{1}\\
+ & g_{2}\\
+ &  & \ddots\\
+ &  &  & g_{n}
+\end{array}\right)U
+\]
+
+\end_inset
+
+ be the eigendecomposition of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The above claims implies, for positive-semidefinite 
+\begin_inset Formula $G$
+\end_inset
+
+, the subset of eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ whose eigenvector 
+\begin_inset Formula $V$
+\end_inset
+
+ satisfying 
+\begin_inset Formula $V^{\dagger}GV>0$
+\end_inset
+
+ are eigenvalues of the Hamiltonian.
+ But for non-positive-semidefinite 
+\begin_inset Formula $G$
+\end_inset
+
+, there is no such simple relationship.
+ 
+\end_layout
+
+\begin_layout Section*
+Data Analysis at Finite 
+\begin_inset Formula $N$
+\end_inset
+
+ for Original Hamltonian
+\end_layout
+
+\begin_layout Standard
+We plot the energy levels of the system with respect to 
+\begin_inset Formula $1/N$
+\end_inset
+
+, shown as Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=3"
+
+\end_inset
+
+ to 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=11"
+
+\end_inset
+
+.
+ In these figures, curves with different colors indicate different energy
+ levels.
+ A solid curve represents a positive norm energy level, while dotted and
+ dash-dotted curves correspond to negative norm states and zero norm states
+ respectively.
+ As mentioned in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Method"
+
+\end_inset
+
+, a zero norm state is always associated with two complex energy levels
+ conjugate to each other.
+ This is also illustrated by the plot, where dash-dotted curve comes from
+ merge of two curves.
+ 
+\end_layout
+
+\begin_layout Standard
+As we see, the curves are relatively flat in the range of low value of 
+\begin_inset Formula $1/N$
+\end_inset
+
+ and decline dramatically in high value of 
+\begin_inset Formula $1/N$
+\end_inset
+
+.
+ For large value of 
+\begin_inset Formula $M$
+\end_inset
+
+, the plots are splitted into two parts with one part of low value of 
+\begin_inset Formula $1/N$
+\end_inset
+
+ and the other part of high value of 
+\begin_inset Formula $1/N$
+\end_inset
+
+.
+ Curves of the same color in two parts are for the same energy level.
+ 
+\end_layout
+
+\begin_layout Standard
+As we've mentioned before, the ground state woud disappear for even number
+ of bits chains.
+ Thus we would study the odd and even number bits chains seperatly.
+\end_layout
+
+\begin_layout Subsection*
+Odd Number Bits
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=3.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=3"
+
+\end_inset
+
+Lowest 5 energy states for the 3-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=5.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states for the 5-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=7.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states for the 7-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=9.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states for the 9-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=11.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states for the 11-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For the same energy state, if we pay attention to its norm, we can see that
+ the norm changes along with the 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ One thing we can notice is that if one state dose not tangle with other
+ states, then it is plotted by either solid line or dotted line, which means
+ there is not a period of region that its norm is zero.
+ However at the point where the sold line turns into dotted line or backward,
+ its norm is zero.
+\end_layout
+
+\begin_layout Itemize
+at 
+\begin_inset Formula $N=1$
+\end_inset
+
+, only one state survive, all other states disappear.
+ Since all our figures only show the lowest 8 energy states for each case,
+ so except the 
+\begin_inset Formula $M=3$
+\end_inset
+
+ case, all the states' norms are zero.
+\end_layout
+
+\begin_layout Itemize
+For these states that have negative norms, they only happen at the region
+ that 
+\begin_inset Formula $N$
+\end_inset
+
+ is non-integer, which means it is not physical.
+ These states become ghosts at the non-physical negative norm region.
+\end_layout
+
+\begin_layout Itemize
+The figures above only shows the real part of energy states.
+ In each figure we can find out that there're the phenomenons that two lines
+ merge into one.
+ This does not suggest that their energy levels are identical afterwards,
+ however the truth is they become complex pairs whose real parts are the
+ same.
+ At meantime we notice the norm of the pairs.
+ Before the merging happen, the norms of the two levels could be either
+ positive(solid line) or negative(dotted line), but as long as they become
+ complex pairs, their norms are always zero(dash line), in any bits number
+ chains, no matter at integer 
+\begin_inset Formula $N$
+\end_inset
+
+ or non integer 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ This is reasonable because the Hamiltonian is Hermitian, so its eigenvalues
+ are supposed to be real.
+ Thus in our fock space, these eigenstate with complex eigenvalues would
+ have zero norm which means they would not exist.
+\end_layout
+
+\begin_layout Itemize
+Another thing we could notice is that these states which would tend to become
+ zero norm at integer 
+\begin_inset Formula $N$
+\end_inset
+
+, where it is physical.
+ What's more, as the bits of number getting larger, the place that zero
+ and negative norm would be at higher and higher 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ It is not only true for the states that are not entangling with other state,
+ but also the complex pairs.
+\end_layout
+
+\begin_layout Itemize
+The ground states also have zero norm.
+ For these cases we have, the zero norm of the ground states only happens
+ at integer 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ and as 
+\begin_inset Formula $M$
+\end_inset
+
+ getting larger, the first zero norm of the ground state happens at higher
+ 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Even Number Bits
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=4.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states for the 4-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=6.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states for the 6-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=8.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states for the 8-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=10.pdf
+	height 35pheight%
+	BoundingBox 55bp 100bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states for the 10-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The other features such as complex pairs, how the value of N where the disappear
+ance of state happens changes as M changes are the same with the odd bits
+ number case.
+ However, because of the cyclic constraint, the ground state of the even
+ number of bits chains do not exist anymore, thus we are not able to see
+ their trend through even bits number chains.
+\end_layout
+
+\begin_layout Section*
+Data Analysis at Finite 
+\begin_inset Formula $N$
+\end_inset
+
+ for Variation of the Haniltonian
+\end_layout
+
+\begin_layout Section*
+The cubics
+\end_layout
+
+\begin_layout Standard
+Now we try to construct our Hamiltonian in the square of the cubics.
+ Since our Hamiltonian are in the form two annihilation operator followed
+ by two creation operator, so the are three bits fermions: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}=\bar{b}\bar{b}b,\qquad R_{2}=\bar{a}\bar{a}bb
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}=\bar{a}\bar{b}b,\qquad R_{2}=\bar{b}\bar{a}
+\]
+
+\end_inset
+
+If we define 
+\begin_inset Formula ${Q,R}=F$
+\end_inset
+
+ Then we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[Q,F]=[Q,QR+RQ]=QQR+QRQ-RQQ-QRQ=[Q^{2},R]
+\]
+
+\end_inset
+
+In which the Grassmann odd operator 
+\begin_inset Formula $Q$
+\end_inset
+
+ is 
+\begin_inset Formula $Q=Tr[(\bar{a}be^{i\pi/4}+\bar{b}ae^{-i\pi/4}]$
+\end_inset
+
+ We can get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q^{2}=Tr(\bar{a}a+\bar{b}b)
+\]
+
+\end_inset
+
+which is the bit number operator So
+\begin_inset Formula $[Q,F]=M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Follow this routinue, the hamiltonian
+\begin_inset Formula 
+\[
+H={R,R^{\dagger}}+[F,F^{\dagger}]
+\]
+
+\end_inset
+
+ will be automatically supersymmetric.
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $R$
+\end_inset
+
+ here's the results:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{1} & = & \bar{b}\bar{b}b,\qquad F_{1}=[Tr(\bar{a}\bar{b}b)-Tr(\bar{b}\bar{a}b)]e^{i\pi/4}+Tr(\bar{b}\bar{b}a)e^{-i\pi/4}\\
+H_{1} & = & Tr(\bar{a}\bar{b}ba)-Tr(\bar{a}\bar{b}ab)+Tr(\bar{b}\bar{a}ab)-Tr(\bar{b}\bar{a}ba)+2Tr(\bar{b}\bar{b}bb)\\
+R_{2} & = & \bar{a}\bar{a}b,\qquad F_{2}=[Tr(\bar{b}\bar{a}b)-Tr(\bar{a}\bar{b}b)+Tr(\bar{a}\bar{a}a])e^{-i\pi/4}\\
+H_{2} & = & Tr(\bar{a}\bar{b}ba)-Tr(\bar{a}\bar{a}ab)+Tr(\bar{b}\bar{a}ab-\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+2Tr(\bar{b}\bar{b}bb)+2Tr(\bar{a}a\bar{a}a)+2Tr(\bar{a}a\bar{b}b)+2Tr(\bar{b}a\bar{a}b)\\
+R_{3} & = & \bar{a}\bar{b}a,\qquad F_{3}=[Tr(\bar{a}\bar{a}a)-Tr(\bar{a}\bar{b}b)]e^{i\pi/4}+Tr(\bar{b}\bar{b}a)\\
+H_{3} & = & Tr(\bar{a}\bar{a}aa)-Tr(\bar{b}\bar{b}bb)+Tr(\bar{a}\bar{b}ab+\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+Tr(\bar{a}a\bar{a}a)+2Tr(\bar{a}a\bar{b}b)+Tr(\bar{b}b\bar{b}b)\\
+R_{4} & = & \bar{b}\bar{a}a,\qquad F_{4}=[Tr(\bar{a}\bar{a}a)+Tr(\bar{b}\bar{a}b)]e^{i\pi/4}-Tr(\bar{b}\bar{b}a)e^{-i\pi/4}\\
+H_{4} & = & Tr(\bar{a}\bar{a}aa)-Tr(\bar{b}\bar{b}bb)+Tr(\bar{a}\bar{b}ab+\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+Tr(\bar{a}a\bar{a}a)+2Tr(\bar{b}a\bar{a}b)-Tr(\bar{b}b\bar{b}b)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Hamiltonian has two parts, we look at them separately For the large
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ part we can conclude actually there's only two independent hamiltonian
+ for each part.
+ If we only focus on the large
+\begin_inset Formula $N$
+\end_inset
+
+ part and express the in terms of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $d/\theta$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & 2\theta_{k}\frac{d}{d\theta_{k}}-\theta_{k}\frac{d}{d\theta_{k+1}}-\theta_{k}+1\frac{d}{d\theta_{k}}\\
+H^{'} & = & 2\theta_{k}\frac{d}{d\theta_{k}}-\theta_{k}\frac{d}{d\theta_{k+1}}-\theta_{k}+1\frac{d}{d\theta_{k}}+1
+\end{eqnarray*}
+
+\end_inset
+
+ It is not able to reconstruct our Hamiltonian by this routine.
+ However we can try to 
+\end_layout
+
+\begin_layout Section*
+Conclusion
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "ref"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+\begin_inset CommandInset label
+LatexCommand label
+name "app:Counting-Single-Trace"
+
+\end_inset
+
+Counting Single Trace States
+\end_layout
+
+\begin_layout Standard
+To count the single trace states, we need the following definition and theorem.
+ 
+\end_layout
+
+\begin_layout Definition*
+Given a group 
+\begin_inset Formula $G$
+\end_inset
+
+ acting on a set 
+\begin_inset Formula $X$
+\end_inset
+
+, the orbit of 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ is the set 
+\begin_inset Formula $Gx=\left\{ g\cdot x|g\in G\right\} $
+\end_inset
+
+.
+ The set of orbits is denoted by 
+\begin_inset Formula $X/G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In our case, the cyclic group 
+\begin_inset Formula $C_{M}$
+\end_inset
+
+ is the group 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ is the 
+\begin_inset Formula $2^{M}$
+\end_inset
+
+ combinations of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit operators, and 
+\begin_inset Formula $x$
+\end_inset
+
+ corresponds to one perticular combination.
+ 
+\begin_inset Formula $X/G$
+\end_inset
+
+ is the set of different combinations under the action of Cyclic group.
+ 
+\end_layout
+
+\begin_layout Theorem*
+(Burnside’s theorem).
+ If 
+\begin_inset Formula $G$
+\end_inset
+
+ is a finite group acting on a finite set 
+\begin_inset Formula $X$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\left|X/G\right|=\frac{1}{\left|G\right|}\sum_{g\in G}\left|\mathrm{Fix}\left(g\right)\right|,
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\mathrm{Fix}\left(g\right)$
+\end_inset
+
+ is the set of 
+\begin_inset Formula $x$
+\end_inset
+
+ that is invariant under action of 
+\begin_inset Formula $g$
+\end_inset
+
+, i.e, 
+\begin_inset Formula 
+\[
+\mathrm{Fix}\left(g\right)=\left\{ x\in X|g\cdot x=x\right\} 
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+To find the state number, we need to find 
+\begin_inset Formula $\left|\mathrm{Fix}\left(g\right)\right|$
+\end_inset
+
+ for each group member.
+\end_layout
+
+\begin_layout Standard
+We first consider the case of odd 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $c_{k}\in C_{M},\, k=1,2,\cdots M$
+\end_inset
+
+, be the group member that shift 
+\begin_inset Formula $k$
+\end_inset
+
+ operators from the tail of the trace to the beginning.
+ Here, the identity of the group is 
+\begin_inset Formula $e=c_{M}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+ denote the greatest common divisor of 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ For group member 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, we equally divide the 
+\begin_inset Formula $M$
+\end_inset
+
+ bits into 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ parts with each part of 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+ bits: the first part starts from bit 1 to bit 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+, and the second part starts from bit 
+\begin_inset Formula $\left(M,k\right)+1$
+\end_inset
+
+ to bit 
+\begin_inset Formula $2\left(M,k\right)$
+\end_inset
+
+, and etc.
+ Under the action of 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, the 
+\begin_inset Formula $i$
+\end_inset
+
+th part transfer as 
+\begin_inset Formula 
+\[
+i\mathrm{th}\text{ part}\to\left(i+\frac{k}{\left(M,k\right)}\right)\mathrm{\text{th part}}.
+\]
+
+\end_inset
+
+The trace is invariant under 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ if and only if all the parts are identical to each other.
+ For bosonic trace states, each part need to bosonic, which follows 
+\begin_inset Formula 
+\begin{equation}
+\left|\mathrm{Fix}\left(c_{k}\right)\right|=\sum_{\text{even }i}\binom{\left(M,k\right)}{i}=\frac{1}{2}2^{\left(M,k\right)}.\label{eq:A-Fix-1}
+\end{equation}
+
+\end_inset
+
+ Similarly, for fermionic single trace states, each part need to be fermionic,
+ 
+\begin_inset Formula 
+\begin{equation}
+\left|\mathrm{Fix}\left(c_{k}\right)\right|=\sum_{\text{odd }i}\binom{\left(M,k\right)}{i}=\frac{1}{2}2^{\left(M,k\right)},\label{eq:A-Fix-2}
+\end{equation}
+
+\end_inset
+
+which implies there are the same number of bosonic and fermonic single trace
+ states for odd 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ By Burnside's theorem, this number is given by 
+\begin_inset Formula 
+\begin{equation}
+S_{M}=\frac{1}{2M}\sum_{k=1}^{M}2^{\left(M,k\right)}.\label{eq:A-SM-Odd}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+For even 
+\begin_inset Formula $M$
+\end_inset
+
+, let's first consider the fermionic states.
+ For a group member 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\mathrm{Fix}\left(c_{k}\right)\right|=0$
+\end_inset
+
+ if 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ is even.
+ This because odd number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ cannot be equally divided into even parts.
+ Therefore, only odd 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ contributes to 
+\begin_inset Formula $\left|\mathrm{Fix}\left(c_{k}\right)\right|$
+\end_inset
+
+, which is still given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Fix-2"
+
+\end_inset
+
+.
+ And Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Odd"
+
+\end_inset
+
+ becomes
+\begin_inset Formula 
+\begin{equation}
+S_{M}=\frac{1}{2M}\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)}.\label{eq:A-SM-Even}
+\end{equation}
+
+\end_inset
+
+Let 
+\begin_inset Formula $i=M/\left(M,k\right)$
+\end_inset
+
+, Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Even"
+
+\end_inset
+
+ can be written as 
+\begin_inset Formula 
+\begin{equation}
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},\label{eq:A-SM-Euler}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\varphi\left(i\right)$
+\end_inset
+
+ is the Euler's totient function and 
+\begin_inset Formula $i|M$
+\end_inset
+
+ means 
+\begin_inset Formula $M$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ We see that Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Odd"
+
+\end_inset
+
+ is a special case of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Even"
+
+\end_inset
+
+ with 
+\begin_inset Formula $s=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For bosonic states, we cannot simply count all single trace states with
+ even number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, because there exist vanishing states, for example, 
+\begin_inset Formula 
+\[
+\tr\ba\bb\ba\bb=-\tr\ba\bb\ba\bb=0.
+\]
+
+\end_inset
+
+ The number of bosonic states equals to number of even-
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+-state minus number of vanishing states.
+ Consider the number of even-
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+-states, for a group member 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, we again divide 
+\begin_inset Formula $M$
+\end_inset
+
+ bits equally into 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ parts with each part 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+ bits.
+ If 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ is odd, we need even number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ in each part; if 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ is even, there can be any number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ in each part, which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\text{number of even-}\bar{b}\text{-state} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)-1}+\sum_{M/\left(M,k\right)\text{ is even}}2^{\left(M,k\right)}\right)\nonumber \\
+ & = & \frac{1}{2M}\left(\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}+2\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right).\label{eq:A-Even-b-States}
+\end{eqnarray}
+
+\end_inset
+
+ Now consider the number of vanishing states.
+ For each 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, we perform the same partition as before.
+ If 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ is even and all parts are identical and with odd number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, then it's a vanishing state.
+ But this does not cover all the possibilities.
+ If 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+ is even, we can perform finer partition: divide 
+\begin_inset Formula $M$
+\end_inset
+
+-bits into 
+\begin_inset Formula $2M/\left(M,k\right)$
+\end_inset
+
+ parts with each part of 
+\begin_inset Formula $\left(M,k\right)/2$
+\end_inset
+
+ bits.
+ If all the 
+\begin_inset Formula $2M/\left(M,k\right)$
+\end_inset
+
+ parts are the same and contain odd number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, it's a vanishing state.
+ We can continue perform the finer partition 
+\begin_inset Formula $i$
+\end_inset
+
+ times until 
+\begin_inset Formula $\left(M,k\right)/2^{i}$
+\end_inset
+
+ is odd.
+ There is a difference between odd 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ and even 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+: it needs to perform at least one finer partition to get vanishing states
+ for odd 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+, while for even 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ it doesn't.
+ Therefore, the number of vanishing states reads 
+\begin_inset Formula 
+\begin{eqnarray}
+\text{number of vanishing states} & = & \frac{1}{M}\sum_{\text{odd }M/\left(M,k\right)}\left(\sum_{i\geq1\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
+ &  & +\frac{1}{M}\sum_{\text{even }M/\left(M,k\right)}\left(\sum_{i\geq0\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
+ & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\text{even }M/\left(M,k\right)}2^{\left(M,k\right)}\right]\nonumber \\
+ & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right]\label{eq:A-Vanish-States-1}
+\end{eqnarray}
+
+\end_inset
+
+ Let 
+\begin_inset Formula $\frac{\left(M,k\right)}{2^{i}}=\frac{M}{j}$
+\end_inset
+
+, then we have 
+\begin_inset Formula $2^{i}|j$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(M,k\right)=2^{i}M/j$
+\end_inset
+
+.
+ The number of 
+\begin_inset Formula $k$
+\end_inset
+
+ with 
+\begin_inset Formula $\left(M,k\right)=2^{i}M/j$
+\end_inset
+
+ equals to 
+\begin_inset Formula 
+\[
+\varphi\left(\frac{M}{2^{i}M/j}\right)=\varphi\left(\frac{j}{2^{i}}\right).
+\]
+
+\end_inset
+
+Now, the first term inside parenthesis of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Vanish-States-1"
+
+\end_inset
+
+ can be written as
+\begin_inset Formula 
+\[
+\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{ even }j,j|M}\left[\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)2^{\frac{M}{j}}\right].
+\]
+
+\end_inset
+
+ With the following property of function 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\varphi\left(2m\right)=\begin{cases}
+2\varphi\left(m\right) & \quad\text{if }m\text{ is even}\\
+\varphi\left(m\right) & \quad\text{if }m\text{ is odd}
+\end{cases},
+\]
+
+\end_inset
+
+it's easy to prove that, 
+\begin_inset Formula 
+\[
+\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)=\varphi\left(j\right),\quad\text{if }j\text{ is even}.
+\]
+
+\end_inset
+
+It follows 
+\begin_inset Formula 
+\[
+\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{even }j,j|M}\varphi\left(j\right)2^{\frac{M}{j}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, the difference of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Even-b-States"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Vanish-States-1"
+
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},
+\]
+
+\end_inset
+
+ which is the same as the formula for fermionic states.
+ Easy to check that Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Odd"
+
+\end_inset
+
+ is the same as Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Euler"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "app:Trace-States-List"
+
+\end_inset
+
+Bosonic Trace States
+\end_layout
+
+\begin_layout Subsection*
+1 bits
+\end_layout
+
+\begin_layout Standard
+1 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2 bits
+\end_layout
+
+\begin_layout Standard
+2 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+3 bits
+\end_layout
+
+\begin_layout Standard
+5 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+4 bits
+\end_layout
+
+\begin_layout Standard
+10 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|10\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+5 bits
+\end_layout
+
+\begin_layout Standard
+21 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|16\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|19\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+6 bits
+\end_layout
+
+\begin_layout Standard
+44 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|16\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|19\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|22\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|23\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|24\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|25\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|26\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|27\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|28\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|29\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|30\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|31\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|32\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|33\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|34\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|35\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|36\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|37\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|38\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|39\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|40\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|41\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|42\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|43\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|44\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+7 bits
+\end_layout
+
+\begin_layout Standard
+89 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle \\
+\left|16\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|19\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|22\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|23\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|24\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|25\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|26\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|27\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|28\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|29\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|30\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|31\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|32\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|33\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|34\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|35\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|36\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|37\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|38\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|39\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|40\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|41\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|42\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|43\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|44\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|45\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|46\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|47\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|48\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|49\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|50\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|51\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|52\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|53\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|54\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|55\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|56\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|57\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|58\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|59\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|60\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|61\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|62\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|63\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|64\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|65\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|66\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|67\right\rangle  & =\mathrm{Tr}\bar{b}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|68\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|69\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|70\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|71\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|72\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|73\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|74\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|75\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|76\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|77\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|78\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|79\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|80\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|81\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|82\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|83\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|84\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|85\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|86\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|87\right\rangle  & =\mathrm{Tr}\bar{b}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|88\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|89\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "app:Hamiltonian-Eigenvalue-Problem"
+
+\end_inset
+
+Hamiltonian Eigenvalue Problem
+\end_layout
+
+\begin_layout Standard
+This section proves several claims on the eigenvalue problems of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+\left(\mathcal{H}-E\right)V=0,\label{eq:C-mH-Equation}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\begin{equation}
+H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}.\label{eq:C-H-on-trace}
+\end{equation}
+
+\end_inset
+
+First, let's prove the following two claims:
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, its complex conjugate 
+\begin_inset Formula $E^{*}$
+\end_inset
+
+ is also an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is not real, it must have 
+\begin_inset Formula $V^{\dagger}GV=0$
+\end_inset
+
+, where 
+\begin_inset Formula $G$
+\end_inset
+
+ is the norm matrix given by 
+\begin_inset Formula $G_{ij}=\dprod{i}{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:C-H-on-trace"
+
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\[
+\bra{i}H\ket{j}=\sum_{k}\dprod{i}{k}\mathcal{H}_{kj}=\left(G\mathcal{H}\right)_{ij}.
+\]
+
+\end_inset
+
+ Since 
+\begin_inset Formula $H$
+\end_inset
+
+ is hermitian, we also have 
+\begin_inset Formula 
+\[
+\bra{i}H\ket{j}=\sum_{k}\mathcal{H}_{ik}^{\dagger}\dprod{k}{j}=\left(\mathcal{H}^{\dagger}G\right)_{ij},
+\]
+
+\end_inset
+
+ which implies 
+\begin_inset Formula 
+\begin{equation}
+G\mathcal{H}=\mathcal{H}^{\dagger}G.\label{eq:GH-HG}
+\end{equation}
+
+\end_inset
+
+ Let 
+\begin_inset Formula $E$
+\end_inset
+
+ be an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with eigenvector 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Left multiplying Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:C-mH-Equation"
+
+\end_inset
+
+ by 
+\begin_inset Formula $G$
+\end_inset
+
+ and taking complex conjugate yields 
+\begin_inset Formula 
+\begin{equation}
+V^{\dagger}\left(\mathcal{H}^{\dagger}G-E^{*}G\right)=0.\label{eq:E-Complex-Eq1}
+\end{equation}
+
+\end_inset
+
+ Using Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:GH-HG"
+
+\end_inset
+
+ and taking transpose of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:E-Complex-Eq1"
+
+\end_inset
+
+, we obtain 
+\begin_inset Formula 
+\[
+\left(\mathcal{H}^{T}-E^{*}\right)GV^{*}=0.
+\]
+
+\end_inset
+
+ Since 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ has the same eigenvalues as 
+\begin_inset Formula $\mathcal{H}^{T}$
+\end_inset
+
+, 
+\begin_inset Formula $E^{*}$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+Using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:C-mH-Equation"
+
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+EV^{\dagger}GV & = & V^{\dagger}G\left(EV\right)=V^{\dagger}G\mathcal{H}V,\\
+E^{*}V^{\dagger}GV & = & \left(E^{*}V^{\dagger}\right)GV=V^{\dagger}\mathcal{H}^{\dagger}GV,
+\end{eqnarray*}
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\[
+\left(E-E^{*}\right)V^{\dagger}GV=V^{\dagger}\left(G\mathcal{H}-\mathcal{H}^{\dagger}G\right)V=0.
+\]
+
+\end_inset
+
+Therefore, if 
+\begin_inset Formula $E$
+\end_inset
+
+ is not real, it must have 
+\begin_inset Formula $V^{\dagger}GV=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The rest claims are related to whether 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive-semidefinite matrix.
+ Let's discuss them seperately.
+\end_layout
+
+\begin_layout Subsection*
+Positive-semidefinite 
+\begin_inset Formula $G$
+\end_inset
+
+ matrix
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $G$
+\end_inset
+
+ is a positive-semidefinite matrix, all its eigenvalues are non-negative.
+ There exists a set of orthnormal basis spanning the trace state space.
+ Suppose there are 
+\begin_inset Formula $r$
+\end_inset
+
+ trace states 
+\begin_inset Formula $\ket{1},\cdots,\ket{r}$
+\end_inset
+
+, 
+\begin_inset Formula $ $
+\end_inset
+
+with dimension 
+\begin_inset Formula $p\leq r$
+\end_inset
+
+.
+ We can build a set of nothnormal basis 
+\begin_inset Formula $\ketp{i}$
+\end_inset
+
+ using a 
+\begin_inset Formula $p\times r$
+\end_inset
+
+ matrix 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+\brap{i}=\sum_{j}S_{ij}\bra{j},\quad1\leq i\leq p,\,1\leq j\leq r,\label{eq:ortho-basis}
+\end{equation}
+
+\end_inset
+
+ where the basis and the matrix 
+\begin_inset Formula $S$
+\end_inset
+
+ satisfy 
+\begin_inset Formula 
+\begin{eqnarray*}
+\dprodp{i}{j} & = & \sum_{k,l}S\dprod{k}{l}S=\left(SGS\right)_{ij}=\delta_{ij}.
+\end{eqnarray*}
+
+\end_inset
+
+ In this basis, the 
+\begin_inset Formula $p\times p$
+\end_inset
+
+ Hamiltonian matrix 
+\begin_inset Formula $\mat{H}$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\begin{eqnarray}
+\mathbf{H}_{ij} & \equiv & \brap{i}H\ketp{j}\nonumber \\
+ & = & \sum_{k,l}S_{ik}\bra{k}H\ket{l}S_{lj}^{\dagger}\nonumber \\
+ & = & \sum_{k,l,m}S_{ik}\dprod{k}{m}\mathcal{H}_{ml}S_{lj}^{\dagger}\nonumber \\
+ & = & \left(SG\mathcal{H}S^{\dagger}\right)_{ij}.\label{eq:Ham-definition}
+\end{eqnarray}
+
+\end_inset
+
+ The eigenvalues of the Hamiltonian are given by the equation
+\begin_inset Formula 
+\begin{equation}
+\left(\mathbf{H}-E\right)W=0,\label{eq:Ham-Eigenvalue-Eq}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $W$
+\end_inset
+
+ is a 
+\begin_inset Formula $p$
+\end_inset
+
+-dimensional eigenvector.
+ We claim:
+\end_layout
+
+\begin_layout Itemize
+Every eigenvalue of 
+\begin_inset Formula $\mathbf{H}$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+An eigenvalue E of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with an eignvector 
+\begin_inset Formula $V$
+\end_inset
+
+ is also an eigenvalue of 
+\begin_inset Formula $\mathbf{H}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $V^{\dagger}GV>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+We can extend the 
+\begin_inset Formula $p$
+\end_inset
+
+ basis vectors 
+\begin_inset Formula $\ketp{i}$
+\end_inset
+
+ to 
+\begin_inset Formula $r$
+\end_inset
+
+ vectors 
+\begin_inset Formula $\ketp{i}^{\prime}$
+\end_inset
+
+ so that 
+\begin_inset Formula 
+\[
+\dprodp{i}{j}^{\prime}=\begin{cases}
+\delta_{ij} & ,\quad\text{if }i,j\leq p\\
+0 & ,\quad\text{if }i>p\,\text{ or }j>p
+\end{cases}.
+\]
+
+\end_inset
+
+This can be done by extending the 
+\begin_inset Formula $p\times r$
+\end_inset
+
+ matrix 
+\begin_inset Formula $S$
+\end_inset
+
+ to a 
+\begin_inset Formula $r\times r$
+\end_inset
+
+ invertable matrix 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ The matrix 
+\begin_inset Formula $R$
+\end_inset
+
+ can be constructed as follows.
+ We pick any invertable 
+\begin_inset Formula $r\times r$
+\end_inset
+
+ matrix which contains 
+\begin_inset Formula $S$
+\end_inset
+
+ as the first 
+\begin_inset Formula $p$
+\end_inset
+
+ rows.
+ For the 
+\begin_inset Formula $\left(p+1\right)$
+\end_inset
+
+-th row vector, 
+\begin_inset Formula $R_{p+1}$
+\end_inset
+
+, we calculate 
+\begin_inset Formula $R_{p+1}^{\dagger}GR_{i}$
+\end_inset
+
+ for each 
+\begin_inset Formula $i\leq p$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $R_{p+1}^{\dagger}GR_{i}\neq0$
+\end_inset
+
+, we replace 
+\begin_inset Formula $R_{p+1}$
+\end_inset
+
+ with 
+\begin_inset Formula $R_{p+1}-\left(R_{p+1}^{\dagger}GR_{i}\right)R_{i}$
+\end_inset
+
+.
+ In this way, 
+\begin_inset Formula $R_{p+1}$
+\end_inset
+
+ will be orthogonal to all the first 
+\begin_inset Formula $p$
+\end_inset
+
+ row vectors, and since the dimension of the state space is 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $R_{p+1}^{\dagger}GR$
+\end_inset
+
+ must be zero.
+ Repeating this process for the rest rows, we obtain the invertable square
+ matrix 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+The new basis are 
+\begin_inset Formula 
+\[
+\brap{i}^{\prime}=R_{ij}\bra{j},\quad1\leq i,j\leq r,
+\]
+
+\end_inset
+
+ which satisfy 
+\begin_inset Formula 
+\begin{equation}
+\dprodp{i}{j}^{\prime}=\left(RGR^{\dagger}\right)_{ij}=\left(\mat{I}_{p}\oplus\mat{O}_{r-p}\right)_{ij},\label{eq:SGS-2}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\mat{I}_{p}$
+\end_inset
+
+ is the 
+\begin_inset Formula $p\times p$
+\end_inset
+
+ identity matrix and 
+\begin_inset Formula $\mat{O}_{r-p}$
+\end_inset
+
+ the 
+\begin_inset Formula $\left(r-p\right)\times\left(r-p\right)$
+\end_inset
+
+ zero matrix.
+ In the new basis, we define a matrix,
+\begin_inset Formula 
+\begin{equation}
+\mathbb{H}=RG\mathcal{H}R^{\dagger}=\mat{H}\oplus\mat{O}_{r-p}.\label{eq:ExHam}
+\end{equation}
+
+\end_inset
+
+Clearly, if 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathbf{H}$
+\end_inset
+
+ with eigenvector 
+\begin_inset Formula $W$
+\end_inset
+
+, it is also an eigenvalue of 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+\left(\mathbb{\mathbb{H}}-E\right)W^{\prime}=0,\label{eq:ExHam-eigenvalue-Eq}
+\end{equation}
+
+\end_inset
+
+ with the eigenvector 
+\begin_inset Formula $W^{\prime}$
+\end_inset
+
+ satisfying 
+\begin_inset Formula 
+\begin{equation}
+W_{i}^{\prime}=\begin{cases}
+W_{i} & ,\quad\text{if }1\leq i\leq p\\
+0 & ,\quad\text{if }p<i\leq r
+\end{cases}.\label{eq:Exteigenvector1}
+\end{equation}
+
+\end_inset
+
+ With relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ExHam"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SGS-2"
+
+\end_inset
+
+, the left hand side of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ExHam-eigenvalue-Eq"
+
+\end_inset
+
+ can be expressed as 
+\begin_inset Formula 
+\begin{eqnarray}
+\left(\mathbb{H}-E\right)W^{\prime} & = & RG\mathcal{H}R^{\dagger}W^{\prime}-E\left(\mathbf{I}_{p}\oplus\mathbf{O}_{r-p}\right)W^{\prime}\nonumber \\
+ & = & RG\mathcal{H}R^{\dagger}W^{\prime}-ERGR^{\dagger}W^{\prime}\nonumber \\
+ & = & R\left(\mathcal{H}^{\dagger}-E\right)GR^{\dagger}W^{\prime}\nonumber \\
+ & = & R\left(\mathcal{H}^{\dagger}-E\right)R^{-1}\left(\mathbf{I}_{p}\oplus\mathbf{O}_{r-p}\right)W^{\prime}\nonumber \\
+ & = & R\left(\mathcal{H}^{\dagger}-E\right)R^{-1}W^{\prime}\label{eq:ExtHam-LHS1}
+\end{eqnarray}
+
+\end_inset
+
+ Since 
+\begin_inset Formula $R$
+\end_inset
+
+ is invertable, we obtain 
+\begin_inset Formula 
+\[
+\left(\mathcal{H}^{\dagger}-E\right)R^{-1}W^{\prime}=0.
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $R^{-1}W^{\prime}$
+\end_inset
+
+ cannot be zero as 
+\begin_inset Formula $R^{-1}$
+\end_inset
+
+ is invertable and 
+\begin_inset Formula $W^{\prime}\neq0$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $E$
+\end_inset
+
+ is real, 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}^{\dagger}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+Conversely, if 
+\begin_inset Formula $E$
+\end_inset
+
+ is a eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with eigenvector 
+\begin_inset Formula $V$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\[
+RG\left(\mathcal{H}-E\right)V=0.
+\]
+
+\end_inset
+
+ The right hand side can be expressed as
+\begin_inset Formula 
+\begin{eqnarray*}
+RG\left(\mathcal{H}-E\right)V & = & RG\left(\mathcal{H}R^{\dagger}-ER^{\dagger}\right)R^{\dagger-1}V\\
+ & = & \left(\mathbb{H}-E\left(\mathbf{I}_{p}\oplus\mathbf{O}_{r-p}\right)\right)R^{\dagger-1}V\\
+ & = & \left(\mathbb{H}-E\right)\left(\mathbf{I}_{p}\oplus\mathbf{O}_{r-p}\right)R^{\dagger-1}V,
+\end{eqnarray*}
+
+\end_inset
+
+ which follows 
+\begin_inset Formula 
+\begin{equation}
+\left(\mathbb{H}-E\right)\left(\mathbf{I}_{p}\oplus\mathbf{O}_{r-p}\right)R^{\dagger-1}V=0.\label{eq:ExtHam-Eigenvalue-Eq3}
+\end{equation}
+
+\end_inset
+
+To let 
+\begin_inset Formula $E$
+\end_inset
+
+ be an eignvalue of 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+, we need 
+\begin_inset Formula $W^{\prime}\equiv\left(\mathbf{I}_{p}\oplus\mathbf{O}_{r-p}\right)R^{\dagger-1}V$
+\end_inset
+
+ to be a nonzero vector.
+ By calculating the norm of 
+\begin_inset Formula $W^{\prime}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{eqnarray*}
+W^{\prime\dagger}W^{\prime} & = & V^{\dagger}R^{\dagger-1}\left(\mathbf{I}_{p}\oplus\mathbf{O}_{r-p}\right)R^{\dagger-1}V\\
+ & = & V^{\dagger}GV,
+\end{eqnarray*}
+
+\end_inset
+
+we find that 
+\begin_inset Formula $E$
+\end_inset
+
+ is eigenvalue of 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $V^{\dagger}GV>0$
+\end_inset
+
+.
+ Under this constraint, as 
+\begin_inset Formula $\mathbb{H}=\mat{H}\oplus\mat{O}_{r-p}$
+\end_inset
+
+, 
+\begin_inset Formula $E$
+\end_inset
+
+ is also an eigenvalue of 
+\begin_inset Formula $\mat{H}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Non-positive-semidefinite 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $G$
+\end_inset
+
+ is not positive-semidefinite matrix, at least one of its eigenvalue is
+ negative.
+ There is no orthnormal basis can be constructed in trace state space.
+ Suppose the 
+\begin_inset Formula $r\times r$
+\end_inset
+
+ matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ has 
+\begin_inset Formula $p$
+\end_inset
+
+ positive eigenvalues and 
+\begin_inset Formula $q$
+\end_inset
+
+ negative eigenvalues, and 
+\begin_inset Formula $s=r-p-q$
+\end_inset
+
+ zero eigenvalues.
+ We can properly choose the transformation matrix 
+\begin_inset Formula $R$
+\end_inset
+
+ so that the new basis 
+\begin_inset Formula $\ketp{i}^{\prime}$
+\end_inset
+
+ satisfying 
+\begin_inset Formula 
+\[
+\dprodp{i}{j}^{\prime}=\left(RGR^{\dagger}\right)_{ij}=\left(\mat{I}_{p}\oplus-\mat{I}_{q}\oplus\mat{O}_{s}\right)_{ij},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\ketp{1}^{\prime},\cdots,\ketp{p}^{\prime}$
+\end_inset
+
+ are positive norm-square states, 
+\begin_inset Formula $\ketp{p+1}^{\prime},\cdots,\ketp{p+q}^{\prime}$
+\end_inset
+
+ negative norm-square states, and 
+\begin_inset Formula $\ketp{p+q+1}^{\prime},\cdots,\ketp{r}^{\prime}$
+\end_inset
+
+ zero norm states.
+ The negative norm-square states are also called ghost states.
+ The existence of ghost state implies the Hamiltonian is not unitary.
+ 
+\end_layout
+
+\begin_layout Standard
+In analogy with 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Ham-definition"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ExHam"
+
+\end_inset
+
+, we define 
+\begin_inset Formula $\mat{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\[
+\mat{H}_{ij}=\brap{i}H\ketp{j},\quad1\leq i,j\leq p+q,
+\]
+
+\end_inset
+
+ and
+\begin_inset Formula 
+\[
+\mathbb{H}=RG\mathcal{H}R^{\dagger}=\mat{H}\oplus\mat{O}_{s}.
+\]
+
+\end_inset
+
+ We claim:
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mat{H}$
+\end_inset
+
+ with eigenvector 
+\begin_inset Formula $W$
+\end_inset
+
+, it is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ when 
+\begin_inset Formula $W$
+\end_inset
+
+ does not contain any ghost state.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with eigenvecot 
+\begin_inset Formula $V$
+\end_inset
+
+, it is an eigenvalue of 
+\begin_inset Formula $\mat{H}$
+\end_inset
+
+ when 
+\begin_inset Formula $E=0$
+\end_inset
+
+ or 
+\begin_inset Formula $V^{\dagger}\mathrm{abs}\left(G\right)V=V^{\dagger}GV>0$
+\end_inset
+
+, where the function 
+\begin_inset Formula $\mathrm{abs}$
+\end_inset
+
+ is defined as
+\begin_inset Formula 
+\[
+\mathrm{abs}\left(G\right)=U^{\dagger}\left(\begin{array}{cccc}
+\left|g_{1}\right|\\
+ & \left|g_{2}\right|\\
+ &  & \ddots\\
+ &  &  & \left|g_{n}\right|
+\end{array}\right)U,
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula 
+\[
+G=U^{\dagger}\left(\begin{array}{cccc}
+g_{1}\\
+ & g_{2}\\
+ &  & \ddots\\
+ &  &  & g_{n}
+\end{array}\right)U
+\]
+
+\end_inset
+
+ be the eigendecomposition of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The condition 
+\begin_inset Formula $V^{\dagger}\mathrm{abs}\left(G\right)V=V^{\dagger}GV$
+\end_inset
+
+ implies, in the basis where 
+\begin_inset Formula $G$
+\end_inset
+
+ is diagonal, 
+\begin_inset Formula $V$
+\end_inset
+
+ does not mix with any ghost state.
+ According to our numerical calculation, 
+\begin_inset Formula $G$
+\end_inset
+
+ is not positive-semidefinite only when 
+\begin_inset Formula $N$
+\end_inset
+
+ is small enough and non-integer.
+ The numerical calculation shows, except the 
+\begin_inset Formula $E=0$
+\end_inset
+
+ case, the condition 
+\begin_inset Formula $V^{\dagger}\mathrm{abs}\left(G\right)V=V^{\dagger}GV$
+\end_inset
+
+ is usually not satisified when 
+\begin_inset Formula $G$
+\end_inset
+
+ is not positive-semidifinite.
+ The proof of the claims is given as follows.
+\end_layout
+
+\begin_layout Proof
+If 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mat{H}$
+\end_inset
+
+ with eigenvector 
+\begin_inset Formula $W$
+\end_inset
+
+, 
+\begin_inset Formula $E$
+\end_inset
+
+ is also an eigenvalue of 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+ with eigenvector defined as 
+\begin_inset Formula 
+\begin{equation}
+W_{i}^{\prime}=\begin{cases}
+W_{i} & ,\quad\text{if }1\leq i\leq p+q\\
+0 & ,\quad\text{if }p+q<i\leq r
+\end{cases}.\label{eq:Exteigenvector2}
+\end{equation}
+
+\end_inset
+
+ In analogy with 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ExtHam-LHS1"
+
+\end_inset
+
+, we have
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\mathbb{H}-E\right)W^{\prime} & = & RG\mathcal{H}R^{\dagger}W^{\prime}-E\left(\mathbf{I}_{p+q}\oplus\mathbf{O}_{s}\right)W^{\prime}\\
+ & = & RG\mathcal{H}R^{\dagger}W^{\prime}-E\left(RGR^{\dagger}+2\mathbf{O}_{p}\oplus\mat{I}_{q}\oplus\mathbf{O}_{s}\right)W^{\prime}\\
+ & = & R\left(\mathcal{H}-E\right)GR^{\dagger}W^{\prime}-2E\left(\mathbf{O}_{p}\oplus\mat{I}_{q}\oplus\mathbf{O}_{s}\right)W^{\prime}\\
+ & = & R\left(\mathcal{H}-E\right)R^{-1}\left(\mat{I}_{p}\oplus-\mat{I}_{q}\oplus\mat{O}_{s}\right)W^{\prime}-2E\left(\mathbf{O}_{p}\oplus\mat{I}_{q}\oplus\mathbf{O}_{s}\right)W^{\prime}.
+\end{eqnarray*}
+
+\end_inset
+
+ If the following condition are satisfied, 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\begin{cases}
+\left(\mathbf{O}_{p}\oplus\mat{I}_{q}\oplus\mathbf{O}_{s}\right)W^{\prime} & =0\\
+\left(\mat{I}_{p}\oplus-\mat{I}_{q}\oplus\mat{O}_{s}\right)W^{\prime} & \neq0
+\end{cases}.
+\]
+
+\end_inset
+
+With 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Exteigenvector2"
+
+\end_inset
+
+ and 
+\begin_inset Formula $W\neq0$
+\end_inset
+
+, it implies that if 
+\begin_inset Formula 
+\begin{equation}
+\left(\mathbf{O}_{p}\oplus\mat{I}_{q}\right)W=0,\label{eq:Noghost-condition}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Noghost-condition"
+
+\end_inset
+
+ is a constraint under which the eigenvector does not couple with the ghost
+ states.
+\end_layout
+
+\begin_layout Proof
+Conversely, if 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with eigenvector 
+\begin_inset Formula $V$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+RG\left(\mathcal{H}-E\right)V=0.
+\]
+
+\end_inset
+
+ The left hand side of the equation can be expressed as
+\begin_inset Formula 
+\begin{eqnarray*}
+RG\left(\mathcal{H}-E\right)V & = & RG\mathcal{H}R^{\dagger}R^{\dagger-1}V-ERGR^{\dagger}R^{\dagger-1}V\\
+ & = & \mathbb{H}R^{\dagger-1}V-E\left(\mat{I}_{p}\oplus-\mat{I}_{q}\oplus\mat{O}_{s}\right)R^{\dagger-1}V\\
+ & = & \left(\mathbb{H}-E\right)\left(\mat{I}_{p+q}\oplus\mat{O}_{s}\right)R^{\dagger-1}V+2E\left(\mat{O}_{p}\oplus\mat{I}_{q}\oplus\mat{O}_{s}\right)R^{\dagger-1}V\\
+ & = & \left(\mathbb{H}-E\right)W^{\prime}+2EW^{\prime\prime},
+\end{eqnarray*}
+
+\end_inset
+
+ where we define 
+\begin_inset Formula 
+\begin{eqnarray*}
+W^{\prime} & \equiv & \left(\mat{I}_{p+q}\oplus\mat{O}_{s}\right)R^{\dagger-1}V,\\
+W^{\prime\prime} & \equiv & \left(\mat{O}_{p}\oplus\mat{I}_{q}\oplus\mat{O}_{s}\right)R^{\dagger-1}V.
+\end{eqnarray*}
+
+\end_inset
+
+If 
+\begin_inset Formula $E=0$
+\end_inset
+
+, or 
+\begin_inset Formula $W^{\prime}\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $W^{\prime\prime}=0$
+\end_inset
+
+, 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mathbb{H}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $W^{\prime}\neq0$
+\end_inset
+
+ implies 
+\begin_inset Formula 
+\begin{eqnarray}
+W^{\prime\dagger}W^{\prime} & = & V^{\dagger}R^{-1}\left(\mat{I}_{p+q}\oplus\mat{O}_{s}\right)R^{\dagger-1}V\nonumber \\
+ & = & V^{\dagger}R^{-1}\left(\mat{I}_{p}\oplus-\mat{I}_{q}\oplus\mat{O}_{s}\right)R^{\dagger-1}V\nonumber \\
+ & = & V^{\dagger}R^{-1}RGR^{\dagger}R^{\dagger-1}V\nonumber \\
+ & = & V^{\dagger}GV>0,\label{eq:W-prime-norm}
+\end{eqnarray}
+
+\end_inset
+
+ where we use the constraint 
+\begin_inset Formula $W^{\prime\prime}=0$
+\end_inset
+
+ in the second equality.
+ With the equation 
+\begin_inset Formula 
+\[
+2\left(\mat{O}_{p}\oplus\mat{I}_{q}\oplus\mat{O}_{s}\right)=\left(RGR^{\dagger}\right)^{2}-RGR^{\dagger},
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $W^{\prime\prime}=0$
+\end_inset
+
+ is equivalent to 
+\begin_inset Formula 
+\begin{equation}
+V^{\dagger}\left(GR^{\dagger}RG-G\right)V=0.\label{eq:V-norm-constraint3}
+\end{equation}
+
+\end_inset
+
+ Combining constraint 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:W-prime-norm"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:V-norm-constraint3"
+
+\end_inset
+
+, we find if 
+\begin_inset Formula 
+\[
+V^{\dagger}GR^{\dagger}RGV=V^{\dagger}GV>0,
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ is an eigenvalue of 
+\begin_inset Formula $\mat{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Proof
+The matrix 
+\begin_inset Formula $GR^{\dagger}RG$
+\end_inset
+
+ seems to be dependent on 
+\begin_inset Formula $R$
+\end_inset
+
+, but actually, it only depends on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Indeed, any unitary transformation 
+\begin_inset Formula $R\to UR$
+\end_inset
+
+ does not change 
+\begin_inset Formula $GR^{\dagger}RG$
+\end_inset
+
+.
+ In general, if the eigendecomposition of 
+\begin_inset Formula $G$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+G=U^{\dagger}\left(\begin{array}{cccc}
+g_{1}\\
+ & g_{2}\\
+ &  & \ddots\\
+ &  &  & g_{n}
+\end{array}\right)U,\quad U^{\dagger}U=\mat{I},
+\]
+
+\end_inset
+
+ we can choose 
+\begin_inset Formula $R$
+\end_inset
+
+ as 
+\begin_inset Formula 
+\[
+R_{i}=\begin{cases}
+\frac{1}{\sqrt{\left|g_{i}\right|}}U_{i}, & \quad\text{if }g_{i}\neq0\\
+U_{i}, & \quad\text{if }g_{i}=0
+\end{cases}.
+\]
+
+\end_inset
+
+ Then, we obtain 
+\begin_inset Formula 
+\[
+GR^{\dagger}RG=U^{\dagger}\left(\begin{array}{cccc}
+\left|g_{1}\right|\\
+ & \left|g_{2}\right|\\
+ &  & \ddots\\
+ &  &  & \left|g_{n}\right|
+\end{array}\right)U,
+\]
+
+\end_inset
+
+ which clearly only depends on 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "App:Calculation-of-HQ"
+
+\end_inset
+
+Calculation of 
+\begin_inset Formula $\left[H,Q\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In [ref to stringbit], a general form of Hamiltonian is written as 
+\begin_inset Formula $H=H^{\prime}+\Delta H^{\prime},$
+\end_inset
+
+where 
+\begin_inset Formula 
+\begin{eqnarray*}
+H_{0}^{\prime} & = & \frac{2}{N}\mathrm{Tr}\left[i\bar{a}^{2}b^{2}-i\bar{b}^{2}a^{2}+\bar{a}\bar{b}ab+\bar{b}\bar{a}ba+\bar{a}^{2}a^{2}-\bar{b}^{2}b^{2}\right],\\
+\Delta H^{\prime} & = & \frac{1}{N}\mathrm{Tr}\left[2\xi_{1}\bar{a}\bar{b}ba+2\xi_{2}\bar{b}\bar{a}ab+\left(\xi_{1}+\xi_{2}\right)\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\right],\\
+\tilde{M} & = & \tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right).
+\end{eqnarray*}
+
+\end_inset
+
+ As the main text states, 
+\begin_inset Formula $H$
+\end_inset
+
+ does not commute with 
+\begin_inset Formula $Q=\tr\left(\bar{a}b+\bar{b}a\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $\xi_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi_{2}$
+\end_inset
+
+ .
+ In this section, we calculate 
+\begin_inset Formula $\left[H,Q\right]$
+\end_inset
+
+ and find the constraint under which it vanishes.
+ 
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula $\left[H_{0}^{\prime},Q\right]$
+\end_inset
+
+ Calculation
+\end_layout
+
+\begin_layout Standard
+First let's calculate 
+\begin_inset Formula $\left[H_{0}^{\prime},Q\right]$
+\end_inset
+
+.
+ We will simply calculate commutations between each term of 
+\begin_inset Formula $H_{0}^{\prime}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q$
+\end_inset
+
+ as follows.
+ 
+\begin_inset Formula 
+\[
+\left[\mathrm{Tr}\bar{a}^{2}b^{2},\mathrm{Tr}\bar{a}b\right]=\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{a}b-\mathrm{Tr}\bar{a}b\mathrm{Tr}\bar{a}^{2}b^{2}=0,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\mathrm{Tr}\bar{a}^{2}b^{2},\tr\bar{b}a\right] & = & \mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a-\mathrm{Tr}\bar{b}a\mathrm{Tr}\bar{a}^{2}b^{2}\\
+ & = & \mathrm{Tr}\bar{a}^{2}ba-\mathrm{Tr}b\bar{a}^{2}a+\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}\\
+ &  & -\left(\mathrm{Tr}\bar{b}\bar{a}b^{2}+\tr\bar{b}b^{2}\bar{a}+\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}\right)\\
+ & = & \tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2},
+\end{eqnarray*}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}$
+\end_inset
+
+ denotes the normal ordering of 
+\begin_inset Formula $\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a$
+\end_inset
+
+.
+ As we see, the normal ordering terms cancel out.
+ This occurs for all the terms of 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ So in the following calculation, we simply drop the normal ordering terms
+ in most cases.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\mathrm{Tr}\bar{a}^{2}b^{2},Q\right] & = & \exp\left(-i\frac{\pi}{4}\right)\left[\mathrm{Tr}\bar{a}^{2}b^{2},\tr\bar{b}a\right]\\
+ & = & \exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\right],
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}^{2}a^{2},\tr\bar{a}b\right] & = & \tr\bar{b}^{2}a^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}^{2}a^{2}\\
+ & = & \tr\bar{b}^{2}ab+\tr a\bar{b}^{2}b-\tr\bar{a}\bar{b}a^{2}+\tr\bar{a}a^{2}\bar{b}\\
+ & = & \tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2},
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\tr\bar{b}^{2}a^{2},\tr\bar{b}a\right]=0,
+\]
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{b}^{2}a^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}a^{2},\tr\bar{a}b\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2}\right].
+\end{eqnarray}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}^{2}a^{2},\tr\bar{a}b\right] & = & \tr\bar{a}^{2}a^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}^{2}a^{2}\\
+ & = & \tr\bar{a}^{2}ab+\tr\bar{a}^{2}ba+\normord{\tr\bar{a}^{2}a^{2}\tr\bar{a}b}-\tr\bar{a}b\tr\bar{a}^{2}a^{2}\\
+ & = & \tr\bar{a}^{2}\left(ab+ba\right),
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}^{2}a^{2},\tr\bar{b}a\right] & = & \tr\bar{a}^{2}a^{2}\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}^{2}a^{2}\\
+ & = & \tr\bar{a}^{2}a^{2}\tr\bar{b}a-\tr\bar{b}\bar{a}a^{2}-\tr\bar{a}\bar{b}a^{2}-\normord{\tr\bar{b}a\tr\bar{a}^{2}a^{2}}\\
+ & = & -\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2},
+\end{eqnarray*}
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{a}^{2}a^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}a^{2},\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}a^{2},\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\tr\bar{a}^{2}\left(ab+ba\right)-\exp\left(-i\frac{\pi}{4}\right)\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}.
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}^{2}b^{2},\tr\bar{a}b\right] & = & \tr\bar{b}^{2}b^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}^{2}b^{2}\\
+ & = & \tr\bar{b}^{2}b^{2}\tr\bar{a}b-\tr\bar{a}\bar{b}b^{2}+\tr\bar{b}\bar{a}b^{2}-\normord{\tr\bar{a}b\tr\bar{b}^{2}b^{2}}\\
+ & = & \tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2},
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}^{2}b^{2},\tr\bar{b}a\right] & = & \tr\bar{b}^{2}b^{2}\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}^{2}b^{2}\\
+ & = & \tr\bar{b}^{2}ba-\tr\bar{b}^{2}ab+\normord{\tr\bar{b}^{2}b^{2}\tr\bar{b}a}-\tr\bar{b}a\tr\bar{b}^{2}b^{2}\\
+ & = & \tr\bar{b}^{2}\left(ba-ab\right),
+\end{eqnarray*}
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{b}^{2}b^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}b^{2},\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}b^{2},\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2}+\exp\left(-i\frac{\pi}{4}\right)\tr\bar{b}^{2}\left(ba-ab\right).
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}\bar{a}ba,\tr\bar{a}b\right] & = & \tr\bar{b}\bar{a}ba\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}\bar{a}ba\\
+ & = & \tr\bar{b}\bar{a}bb+\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}-\tr\bar{a}\bar{a}ba+\normord{\tr\bar{a}b\tr\bar{b}\bar{a}ba}\\
+ & = & \tr\bar{b}\bar{a}bb+\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}-\tr\bar{a}\bar{a}ba-\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}\\
+ & = & \tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}\bar{a}ba,\tr\bar{b}a\right] & = & \tr\bar{b}\bar{a}ba\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}\bar{a}ba\\
+ & = & \tr\bar{b}\bar{a}a^{2}-\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}+\tr\bar{b}\bar{b}ba-\normord{\tr\bar{b}a\tr\bar{b}\bar{a}ba}\\
+ & = & \tr\bar{b}\bar{a}a^{2}-\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}+\tr\bar{b}\bar{b}ba+\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}\\
+ & = & \tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba,
+\end{eqnarray*}
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{b}\bar{a}ba,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ba,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ba,\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba\right]\nonumber \\
+ &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba\right].
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}\bar{b}ab,\tr\bar{a}b\right] & = & \tr\bar{a}\bar{b}ab\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}\bar{b}ab\\
+ & = & -\tr\bar{a}\bar{b}b^{2}+\normord{\tr\bar{a}\bar{b}ab\tr\bar{a}b}-\tr\bar{a}^{2}ab+\normord{\tr\bar{a}b\tr\bar{a}\bar{b}ab}\\
+ & = & -\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}\bar{b}ab,\tr\bar{b}a\right] & = & \tr\bar{a}\bar{b}ab\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}\bar{b}ab\\
+ & = & \tr\bar{a}\bar{b}a^{2}-\normord{\tr\bar{a}\bar{b}ab\tr\bar{b}a}-\tr\bar{b}^{2}ab-\normord{\tr\bar{a}\bar{b}ab\tr\bar{b}a}\\
+ & = & \tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab,
+\end{eqnarray*}
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{a}\bar{b}ab,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ab,\tr\bar{b}a\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ab,\tr\bar{a}b\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[-\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab\right]\nonumber \\
+ &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab\right].
+\end{eqnarray}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Substituting above results into 
+\begin_inset Formula $\left[H_{0}^{\prime},Q\right]$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{eqnarray}
+\left[H_{0}^{\prime},Q\right] & = & \frac{2i}{N}\left[\tr\bar{a}^{2}b^{2},Q\right]-2i\left[\tr\bar{b}^{2}a^{2},Q\right]+2\left[\tr\bar{a}\bar{b}ab,Q\right]\nonumber \\
+ &  & +\frac{2}{N}\left[\tr\bar{b}\bar{a}ba,Q\right]+2\left[\tr\bar{a}^{2}a^{2},Q\right]-2\left[\tr\bar{b}^{2}b^{2},Q\right]\nonumber \\
+ & = & \frac{2}{N}\exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\right]\nonumber \\
+ &  & +\frac{2}{N}\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2}\right].\label{eq:App-H0-Q-Com}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula $\left[\Delta H^{\prime},Q\right]$
+\end_inset
+
+ Calculation
+\end_layout
+
+\begin_layout Standard
+Now, let's calculate commutation between each term of 
+\begin_inset Formula $\Delta H^{\prime}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}\bar{b}ba,\tr\bar{a}b\right] & = & \tr\bar{a}\bar{b}ba\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}\bar{b}ba\\
+ & = & \tr\bar{a}\bar{b}bb+\normord{\tr\bar{a}\bar{b}ba\tr\bar{a}b}-\tr\bar{a}^{2}ba+\normord{\tr\bar{a}b\tr\bar{a}\bar{b}ba}\\
+ & = & \tr\bar{a}\bar{b}bb-\tr\bar{a}^{2}ba,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}\bar{b}ba,\tr\bar{b}a\right] & = & \tr\bar{a}\bar{b}ba\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}\bar{b}ba\\
+ & = & \tr\bar{a}\bar{b}aa-\normord{\tr\bar{a}\bar{b}ba\tr\bar{b}a}-\tr\bar{b}\bar{b}ba-\normord{\tr\bar{a}\bar{b}ba\tr\bar{b}a}\\
+ & = & \tr\bar{a}\bar{b}aa-\tr\bar{b}^{2}ba,
+\end{eqnarray*}
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{a}\bar{b}ba,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ba,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ba,\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}bb-\tr\bar{a}^{2}ba\right]\nonumber \\
+ &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}aa-\tr\bar{b}^{2}ba\right].
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}\bar{a}ab,\tr\bar{a}b\right] & = & \tr\bar{b}\bar{a}ab\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}\bar{a}ab\\
+ & = & -\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}\bar{a}ab,\tr\bar{b}a\right] & = & \tr\bar{b}\bar{a}ab\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}\bar{a}ab\\
+ & = & \tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab,
+\end{eqnarray*}
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{b}\bar{a}ab,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ab,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ab,\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[-\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab\right]\nonumber \\
+ &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab\right].
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Combining above results together, we obtain 
+\begin_inset Formula 
+\begin{eqnarray*}
+2\left[\xi_{1}\tr\bar{a}\bar{b}ba+\xi_{2}\tr\bar{b}\bar{a}ab,Q\right] & = & 2\exp\left(i\frac{\pi}{4}\right)\Big[-\tr\bar{a}^{2}\left(\xi_{1}ba+\xi_{2}ab\right)+\tr\left(\xi_{1}\bar{a}\bar{b}-\xi_{2}\bar{b}\bar{a}\right)b^{2}\Big]\\
+ &  & +2\exp\left(-i\frac{\pi}{4}\right)\Big[\tr\left(\xi_{1}\bar{a}\bar{b}+\xi_{2}\bar{b}\bar{a}\right)a^{2}+\tr\bar{b}^{2}\left(-\xi_{1}ba+\xi_{2}ab\right)\Big],
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\xi_{1}+\xi_{2}\right)\left[\tr\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right),Q\right] & = & \left(\xi_{1}+\xi_{2}\right)\exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2}\right]\\
+ &  & +\left(\xi_{1}+\xi_{2}\right)\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ba-ab\right)-\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}\right].
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Easy to check that 
+\begin_inset Formula $\left[\tilde{M},Q\right]=0$
+\end_inset
+
+.
+ Therefore, we obtain 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\Delta H^{\prime},Q\right] & = & \frac{\xi_{1}-\xi_{2}}{N}\Big\{\exp\left(i\frac{\pi}{4}\right)\Big[\tr\bar{a}^{2}\left(ab-ba\right)+\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\Big]\\
+ &  & -\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ba+ab\right)+\tr\left(-\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}\right]\Big\}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comparing 
+\begin_inset Formula $\left[\Delta H^{\prime},Q\right]$
+\end_inset
+
+ with 
+\begin_inset Formula $\left[H_{0}^{\prime},Q\right]$
+\end_inset
+
+ in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:App-H0-Q-Com"
+
+\end_inset
+
+, we find that 
+\begin_inset Formula $\left[H_{0}^{\prime}+\Delta H^{\prime},Q\right]=0$
+\end_inset
+
+ if 
+\begin_inset Formula $\xi_{1}-\xi_{2}=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "app:HPrime-Equals-DeltaH"
+
+\end_inset
+
+Proof of 
+\begin_inset Formula $H^{\prime}-\Delta H=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proof of the equation 
+\begin_inset Formula $H^{\prime}-\Delta H=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Algorithms
+\end_layout
+
+\begin_layout Standard
+The numerical calculation is performed by C++ and matlab program.
+ We use C++ program to generates all the norm matrices and 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrices, then use matlab to calculate eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and the corresponding 
+\begin_inset Formula $V^{\dagger}GV$
+\end_inset
+
+ for each eigenvalue.
+ The algorithms used in C++ program are roughly summarized as follows.
+\end_layout
+
+\begin_layout Itemize
+Generate trace states: We map bosonic operator 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ to 
+\begin_inset Formula $0$
+\end_inset
+
+ and fermionic operator 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ to 1.
+ Then 
+\begin_inset Formula $M$
+\end_inset
+
+-bit single trace states are mapped to 
+\begin_inset Formula $M$
+\end_inset
+
+-bit binary numbers.
+\end_layout
+
+\begin_layout Itemize
+Build norm matrices:
+\end_layout
+
+\begin_layout Itemize
+Build 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrices: 
+\end_layout
+
+\end_body
+\end_document
