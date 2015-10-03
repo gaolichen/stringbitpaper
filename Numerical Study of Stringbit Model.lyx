@@ -1054,6 +1054,7 @@ status open
 	height 35pheight%
 	BoundingBox 55bp 100bp 750bp 610bp
 	clip
+	groupId EnergyLevelPlot
 
 \end_inset
 
@@ -1116,6 +1117,7 @@ status open
 	height 35pheight%
 	BoundingBox 55bp 100bp 750bp 610bp
 	clip
+	groupId EnergyLevelPlot
 
 \end_inset
 
@@ -1182,6 +1184,7 @@ status open
 	height 35pheight%
 	BoundingBox 55bp 100bp 750bp 610bp
 	clip
+	groupId EnergyLevelPlot
 
 \end_inset
 
@@ -8274,8 +8277,13 @@ The numerical calculation is performed by C++ and matlab program.
  The algorithms used in C++ program are roughly summarized as follows.
 \end_layout
 
-\begin_layout Itemize
-Generate trace states: We map bosonic operator 
+\begin_layout Paragraph*
+Generate trace states
+\end_layout
+
+\begin_layout Standard
+Trace states are represented by integer numbers.
+ We map bosonic operator 
 \begin_inset Formula $\bar{a}$
 \end_inset
 
@@ -8288,27 +8296,201 @@ Generate trace states: We map bosonic operator
 \end_inset
 
  to 1.
- Then 
+ Then a 
 \begin_inset Formula $M$
 \end_inset
 
--bit single trace states are mapped to 
+-bit single trace is simply an 
 \begin_inset Formula $M$
 \end_inset
 
--bit binary numbers.
+-bit binary number while a multiple trace state is an array of integers.
+ Because of cyclic permutation, a single trace state could corresponds to
+ several integers.
+ Among these integers we choose the smallest integer as the representation
+ of the state.
+ For example, 
+\begin_inset Formula $\tr\bar{a}\bar{b}\bar{b}\ket{0}$
+\end_inset
+
+ is mapped to 
+\begin_inset Formula $\left(011\right)_{2}=3$
+\end_inset
+
+ rather than 
+\begin_inset Formula $\left(110\right)_{2}=6$
+\end_inset
+
+.
+ We go through all integers between 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $2^{M}-1$
+\end_inset
+
+.
+ For each integer, if there is no cyclic shift on this integer can produce
+ a smaller integer, it could be a single trace state.
+ We also need to check whether a state is a vanishing state.
+ If a state can be divided into even number of idential parts with each
+ part of odd 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ number, then it's a vanishing state.
+ For example, we can divide 
+\begin_inset Formula $\bar{b}\bar{b}\bar{b}\bar{b}$
+\end_inset
+
+ into four parts with part 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, therefore, 
+\begin_inset Formula $\tr\bar{b}\bar{b}\bar{b}\bar{b}\ket{0}$
+\end_inset
+
+ is a vanishing state.
+ 
 \end_layout
 
-\begin_layout Itemize
-Build norm matrices:
+\begin_layout Paragraph*
+Build norm matrices
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+To build norm matrix, we need to calculate 
+\begin_inset Formula $\dprod{i}{j}$
+\end_inset
+
+ for each pair states 
+\begin_inset Formula $i,\, j$
+\end_inset
+
+.
+ The norm can be calculated as follows.
+ If two 
+\begin_inset Formula $M$
+\end_inset
+
+-bit states 
+\begin_inset Formula $i,j$
+\end_inset
+
+ do not have the same number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, then 
+\begin_inset Formula $\dprod{i}{j}=0$
+\end_inset
+
+.
+ Otherwise, suppose they both have 
+\begin_inset Formula $n$
+\end_inset
+
+ fermionic operators, there are 
+\begin_inset Formula $n!\left(M-n\right)!$
+\end_inset
+
+ different contraction among these two states.
+ To calculate the norm of 
+\begin_inset Formula $\tr\bar{a}\bar{a}\bar{b}\bar{b}\ket{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tr\bar{a}\tr\bar{a}\bar{b}\bar{b}\ket{0}$
+\end_inset
+
+, we first write the states as
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr\bar{a}\bar{a}\bar{b}\bar{b}\ket{0} & = & \bar{a}_{\alpha}^{\beta}\bar{a}_{\beta}^{\gamma}\bar{b}_{\gamma}^{\rho}\bar{b}_{\rho}^{\alpha}\ket{0},\\
+\tr\bar{a}\tr\bar{a}\bar{b}\bar{b}\ket{0} & = & \bar{a}_{i}^{i}\bar{a}_{j}^{k}\bar{b}_{k}^{l}\bar{b}_{l}^{j}\ket{0}.
+\end{eqnarray*}
+
+\end_inset
+
+ With the commutation and anticommutation relation, we can expand the norm
+ into 
+\begin_inset Formula $2!\times2!=4$
+\end_inset
+
+ terms, 
+\begin_inset Formula 
+\begin{eqnarray*}
+\bra{0}\tr bbaa\tr\bar{b}\tr\bar{a}\bar{a}\bar{b}\ket{0} & = & \bra{0}b_{\alpha}^{\rho}b_{\rho}^{\gamma}a_{\gamma}^{\beta}a_{\beta}^{\alpha}\bar{a}_{i}^{i}\bar{a}_{j}^{k}\bar{b}_{k}^{l}\bar{b}_{l}^{j}\ket{0}\\
+ & = & \delta_{j}^{\beta}\delta_{\gamma}^{k}\delta_{i}^{\alpha}\delta_{\beta}^{i}\left(\delta_{l}^{\rho}\delta_{\alpha}^{j}\delta_{k}^{\gamma}\delta_{\rho}^{l}-\delta_{k}^{\rho}\delta_{\alpha}^{l}\delta_{l}^{\gamma}\delta_{\rho}^{j}\right)\\
+ &  & +\delta_{i}^{\beta}\delta_{\gamma}^{i}\delta_{j}^{\alpha}\delta_{\beta}^{k}\left(\delta_{l}^{\rho}\delta_{\alpha}^{j}\delta_{k}^{\gamma}\delta_{\rho}^{l}-\delta_{k}^{\rho}\delta_{\alpha}^{l}\delta_{l}^{\gamma}\delta_{\rho}^{j}\right),
+\end{eqnarray*}
+
+\end_inset
+
+ where the sign of each term is determined by how many times of swap occurs
+ between 
+\begin_inset Formula $b$
+\end_inset
+
+s.
+ For the frist term, we contract second 
+\begin_inset Formula $b$
+\end_inset
+
+ with first 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ and first 
+\begin_inset Formula $b$
+\end_inset
+
+ with second 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, no swap is needed, and hence, it's possible.
+ For second term, we contract first 
+\begin_inset Formula $b$
+\end_inset
+
+ with first 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ and second 
+\begin_inset Formula $b$
+\end_inset
+
+ with second 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, it need one swap between 
+\begin_inset Formula $b$
+\end_inset
+
+s, therefore, the second term is negative.
+ The first term can be written as 
+\begin_inset Formula 
+\begin{eqnarray*}
+\delta_{j}^{\beta}\delta_{\gamma}^{k}\delta_{i}^{\alpha}\delta_{\beta}^{i}\delta_{l}^{\rho}\delta_{\alpha}^{j}\delta_{k}^{\gamma}\delta_{\rho}^{l} & = & \left(\delta_{j}^{\beta}\delta_{\beta}^{i}\delta_{i}^{\alpha}\delta_{\alpha}^{j}\right)\left(\delta_{\gamma}^{k}\delta_{k}^{\gamma}\right)\left(\delta_{l}^{\rho}\delta_{\rho}^{l}\right)\\
+ & = & N^{3}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
 Build 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- matrices: 
+ matrices
 \end_layout
 
 \end_body
