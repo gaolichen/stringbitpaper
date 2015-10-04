@@ -4986,8 +4986,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=3.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
@@ -5038,8 +5038,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=5.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
@@ -5084,8 +5084,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=7.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
@@ -5110,10 +5110,6 @@ Lowest 8 energy states for the 7-bit system of Hamiltonian
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -5130,8 +5126,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=9.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
@@ -5176,8 +5172,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=11.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
@@ -5327,8 +5323,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=4.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
@@ -5369,8 +5365,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=6.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
@@ -5411,8 +5407,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=8.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
@@ -5453,8 +5449,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/boson/xi=0M=10.pdf
-	height 35pheight%
-	BoundingBox 55bp 100bp 550bp 610bp
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
 	groupId SingleColumnPlot
 
