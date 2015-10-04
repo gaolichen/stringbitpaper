@@ -4891,19 +4891,106 @@ The above claims implies, for positive-semidefinite
 \end_layout
 
 \begin_layout Section*
-Data Analysis at Finite 
+Finite 
 \begin_inset Formula $N$
 \end_inset
 
- for Original Hamltonian
+
 \end_layout
 
 \begin_layout Standard
-We plot the energy levels of the system with respect to 
+In this section, we present the numerical results of energy levels of the
+ stringbit system from 
+\begin_inset Formula $M=3$
+\end_inset
+
+ to 
+\begin_inset Formula $M=11$
+\end_inset
+
+ in finite 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ We will show how the lowest or highest several energy levels of stringbit
+ systems change with respect to 
 \begin_inset Formula $1/N$
 \end_inset
 
-, shown as Figure 
+.
+ The following sections are organized as follows.
+ First, we show the result for the original Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+, which has been investigated for 
+\begin_inset Formula $M=3$
+\end_inset
+
+ case in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+.
+ Then, we discuss the results of Hamiltonians in the form 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+.
+ Finally, we explore the Hamiltonians in the form 
+\begin_inset Formula $H_{0}=-H_{0}+\xi\Delta H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As the calculation in large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit shows 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+, the ground states of odd 
+\begin_inset Formula $M$
+\end_inset
+
+ case are different with those of even 
+\begin_inset Formula $M$
+\end_inset
+
+, where the ground states disppear because of the effect of cyclic permutation
+ of trace states.
+ Let's first study the case of odd 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Odd Number Bits
+\end_layout
+
+\begin_layout Standard
+Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:H=H0M=3"
@@ -4915,6 +5002,10 @@ reference "fig:H=H0M=3"
 LatexCommand ref
 reference "fig:H=H0M=11"
 
+\end_inset
+
+ plot the change energy states with respect to 
+\begin_inset Formula $1/N$
 \end_inset
 
 .
@@ -4932,46 +5023,44 @@ reference "sec:Method"
 
 , a zero norm state is always associated with two complex energy levels
  conjugate to each other.
- This is also illustrated by the plot, where dash-dotted curve comes from
- merge of two curves.
- 
-\end_layout
-
-\begin_layout Standard
-As we see, the curves are relatively flat in the range of low value of 
-\begin_inset Formula $1/N$
-\end_inset
-
- and decline dramatically in high value of 
-\begin_inset Formula $1/N$
-\end_inset
-
-.
- For large value of 
+ The dash-dotted curves represent only the real part of the energy level,
+ and hence, always start at the merging point of two curves.
+ For higher 
 \begin_inset Formula $M$
 \end_inset
 
-, the plots are splitted into two parts with one part of low value of 
+, the curves are relatively flat in the range lower 
 \begin_inset Formula $1/N$
 \end_inset
 
- and the other part of high value of 
+ and decline dramatically in higher 
 \begin_inset Formula $1/N$
 \end_inset
 
 .
- Curves of the same color in two parts are for the same energy level.
+ To show more details of the curves in lower 
+\begin_inset Formula $1/N$
+\end_inset
+
+, we plit the plots into parts of lower 
+\begin_inset Formula $1/N$
+\end_inset
+
+ and higher 
+\begin_inset Formula $1/N$
+\end_inset
+
+.
+ Curves of the same color in these two parts are for the same energy states.
+ See 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=7"
+
+\end_inset
+
+ as an example.
  
-\end_layout
-
-\begin_layout Standard
-As we've mentioned before, the ground state woud disappear for even number
- of bits chains.
- Thus we would study the odd and even number bits chains seperatly.
-\end_layout
-
-\begin_layout Subsection*
-Odd Number Bits
 \end_layout
 
 \begin_layout Standard
@@ -5098,6 +5187,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=7"
+
+\end_inset
+
 Lowest 8 energy states for the 7-bit system of Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
@@ -5186,6 +5281,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=11"
+
+\end_inset
+
 Lowest 8 energy states for the 11-bit system of Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
@@ -5207,114 +5308,130 @@ Lowest 8 energy states for the 11-bit system of Hamiltonian
 
 \end_layout
 
+\begin_layout Standard
+From the figures, we summarize the phenomenons about energy state as follows.
+\end_layout
+
 \begin_layout Itemize
-For the same energy state, if we pay attention to its norm, we can see that
- the norm changes along with the 
+No degeneracy for ground states at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ Some non-ground states are degenerate at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+ and splitted into non-degeneracy at finite 
 \begin_inset Formula $N$
 \end_inset
 
 .
- One thing we can notice is that if one state dose not tangle with other
- states, then it is plotted by either solid line or dotted line, which means
- there is not a period of region that its norm is zero.
- However at the point where the sold line turns into dotted line or backward,
- its norm is zero.
 \end_layout
 
 \begin_layout Itemize
-at 
-\begin_inset Formula $N=1$
+As 
+\begin_inset Formula $1/N$
 \end_inset
 
-, only one state survive, all other states disappear.
- Since all our figures only show the lowest 8 energy states for each case,
- so except the 
-\begin_inset Formula $M=3$
-\end_inset
-
- case, all the states' norms are zero.
-\end_layout
-
-\begin_layout Itemize
-For these states that have negative norms, they only happen at the region
- that 
-\begin_inset Formula $N$
-\end_inset
-
- is non-integer, which means it is not physical.
- These states become ghosts at the non-physical negative norm region.
-\end_layout
-
-\begin_layout Itemize
-The figures above only shows the real part of energy states.
- In each figure we can find out that there're the phenomenons that two lines
- merge into one.
- This does not suggest that their energy levels are identical afterwards,
- however the truth is they become complex pairs whose real parts are the
- same.
- At meantime we notice the norm of the pairs.
- Before the merging happen, the norms of the two levels could be either
- positive(solid line) or negative(dotted line), but as long as they become
- complex pairs, their norms are always zero(dash line), in any bits number
- chains, no matter at integer 
-\begin_inset Formula $N$
-\end_inset
-
- or non integer 
+ increase, the ground states turn from positive norm to zero norm at some
+ values of 
 \begin_inset Formula $N$
 \end_inset
 
 .
- This is reasonable because the Hamiltonian is Hermitian, so its eigenvalues
- are supposed to be real.
- Thus in our fock space, these eigenstate with complex eigenvalues would
- have zero norm which means they would not exist.
-\end_layout
-
-\begin_layout Itemize
-Another thing we could notice is that these states which would tend to become
- zero norm at integer 
-\begin_inset Formula $N$
-\end_inset
-
-, where it is physical.
- What's more, as the bits of number getting larger, the place that zero
- and negative norm would be at higher and higher 
-\begin_inset Formula $N$
+ The first turning point occurs at 
+\begin_inset Formula $N=\frac{M-1}{2}$
 \end_inset
 
 .
- It is not only true for the states that are not entangling with other state,
- but also the complex pairs.
 \end_layout
 
 \begin_layout Itemize
-The ground states also have zero norm.
- For these cases we have, the zero norm of the ground states only happens
- at integer 
+At higher 
 \begin_inset Formula $N$
 \end_inset
 
+, the ground energies are very flat.
+ At certain value of 
+\begin_inset Formula $N$
+\end_inset
+
+ they begin to drop dramatically.
+ For 
+\begin_inset Formula $M=7$
+\end_inset
+
+, this occurs around 
+\begin_inset Formula $N=2$
+\end_inset
+
+; for 
+\begin_inset Formula $M=9$
+\end_inset
+
+, it occurs around 
+\begin_inset Formula $N=3$
+\end_inset
+
 .
- and as 
+ It seems that the ground states begin to drop earlier (at larger 
+\begin_inset Formula $N$
+\end_inset
+
+) for larger 
 \begin_inset Formula $M$
 \end_inset
 
- getting larger, the first zero norm of the ground state happens at higher
+.
  
-\begin_inset Formula $N$
+\end_layout
+
+\begin_layout Subsubsection*
+Even Number Bits
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=4"
+
+\end_inset
+
+ to 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=10"
+
+\end_inset
+
+ plot the lowest 8 energy levels for even 
+\begin_inset Formula $M$
 \end_inset
 
 .
-\end_layout
+ We can see that, at 
+\begin_inset Formula $N=\infty$
+\end_inset
 
-\begin_layout Subsection*
-Even Number Bits
+, the ground states of 
+\begin_inset Formula $M=4,8$
+\end_inset
+
+ are degenerate but those of 
+\begin_inset Formula $M=6,10$
+\end_inset
+
+ are nondegenerate.
+ 
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -5337,6 +5454,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=4"
+
+\end_inset
+
 Lowest 8 energy states for the 4-bit system of Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
@@ -5463,6 +5586,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=10"
+
+\end_inset
+
 Lowest 8 energy states for the 10-bit system of Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
@@ -5480,21 +5609,189 @@ Lowest 8 energy states for the 10-bit system of Hamiltonian
 
 \end_layout
 
-\begin_layout Itemize
-The other features such as complex pairs, how the value of N where the disappear
-ance of state happens changes as M changes are the same with the odd bits
- number case.
- However, because of the cyclic constraint, the ground state of the even
- number of bits chains do not exist anymore, thus we are not able to see
- their trend through even bits number chains.
+\begin_layout Subsubsection*
+Top energy levels
 \end_layout
 
-\begin_layout Section*
-Data Analysis at Finite 
-\begin_inset Formula $N$
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/boson/xi=0M=5_lr.pdf
+	width 50col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId HalfColumnPlot
+
 \end_inset
 
- for Variation of the Haniltonian
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/boson/xi=0M=6_lr.pdf
+	width 50col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId HalfColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/boson/xi=0M=7_lr.pdf
+	width 50col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId HalfColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename plots/boson/xi=0M=8_lr.pdf
+	width 50col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId HalfColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Top 5 energy level of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $M=5,6,7,8$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
