@@ -1,4 +1,4 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
 \lyxformat 413
 \begin_document
 \begin_header
@@ -37,6 +37,7 @@ theorems-ams
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -1378,7 +1379,7 @@ This stems from the fact that the bit operator
  The number is given by 
 \begin_inset Formula 
 \begin{equation}
-S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\,n,n|M}\varphi\left(n\right)2^{\frac{M}{n}},\label{eq:Single-Trace-Number}
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, n,n|M}\varphi\left(n\right)2^{\frac{M}{n}},\label{eq:Single-Trace-Number}
 \end{equation}
 
 \end_inset
@@ -1705,11 +1706,11 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="44" columns="5">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
@@ -4236,7 +4237,7 @@ The number at
 \end_inset
 
  when 
-\begin_inset Formula $M=i,\,N=j$
+\begin_inset Formula $M=i,\, N=j$
 \end_inset
 
 .
@@ -5601,7 +5602,29 @@ Lowest 8 energy states for the 10-bit system of Hamiltonian
 \end_layout
 
 \begin_layout Subsubsection*
-Top energy levels
+Highest energy levels
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Top-5-energy-H=H_0"
+
+\end_inset
+
+ shows the highest 5 energy levels of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+ The highest energy states does not disppear for any value of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -5760,6 +5783,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Top-5-energy-H=H_0"
+
+\end_inset
+
 Top 5 energy level of 
 \begin_inset Formula $H=H_{0}$
 \end_inset
@@ -6094,7 +6123,7 @@ We first consider the case of odd
 
 .
  Let 
-\begin_inset Formula $c_{k}\in C_{M},\,k=1,2,\cdots M$
+\begin_inset Formula $c_{k}\in C_{M},\, k=1,2,\cdots M$
 \end_inset
 
 , be the group member that shift 
@@ -6275,7 +6304,7 @@ reference "eq:A-SM-Even"
  can be written as 
 \begin_inset Formula 
 \begin{equation}
-S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\,i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},\label{eq:A-SM-Euler}
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},\label{eq:A-SM-Euler}
 \end{equation}
 
 \end_inset
@@ -6381,7 +6410,7 @@ For bosonic states, we cannot simply count all single trace states with
 \begin_inset Formula 
 \begin{eqnarray}
 \text{number of even-}\bar{b}\text{-state} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)-1}+\sum_{M/\left(M,k\right)\text{ is even}}2^{\left(M,k\right)}\right)\nonumber \\
- & = & \frac{1}{2M}\left(\sum_{\mathrm{odd}\,i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}+2\sum_{\mathrm{even}\,i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right).\label{eq:A-Even-b-States}
+ & = & \frac{1}{2M}\left(\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}+2\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right).\label{eq:A-Even-b-States}
 \end{eqnarray}
 
 \end_inset
@@ -6461,7 +6490,7 @@ For bosonic states, we cannot simply count all single trace states with
 \text{number of vanishing states} & = & \frac{1}{M}\sum_{\text{odd }M/\left(M,k\right)}\left(\sum_{i\geq1\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
  &  & +\frac{1}{M}\sum_{\text{even }M/\left(M,k\right)}\left(\sum_{i\geq0\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
  & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\text{even }M/\left(M,k\right)}2^{\left(M,k\right)}\right]\nonumber \\
- & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\mathrm{even}\,i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right]\label{eq:A-Vanish-States-1}
+ & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right]\label{eq:A-Vanish-States-1}
 \end{eqnarray}
 
 \end_inset
@@ -6564,7 +6593,7 @@ reference "eq:A-Vanish-States-1"
  yields 
 \begin_inset Formula 
 \[
-S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\,i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},
 \]
 
 \end_inset
@@ -8650,7 +8679,7 @@ To build norm matrix, we need to calculate
 \end_inset
 
  for each pair states 
-\begin_inset Formula $i,\,j$
+\begin_inset Formula $i,\, j$
 \end_inset
 
 .
