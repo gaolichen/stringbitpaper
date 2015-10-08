@@ -1139,7 +1139,7 @@ The energy levels from both single trace states(red lines) and triple trace
 \end_inset
 
 .
- The degeneracy of single trace states' energy levels is reserved.
+ The degeneracy of single trace states' energy levels is maintained.
  
 \end_layout
 
@@ -1196,7 +1196,7 @@ The energy levels from both single trace states and triple trace states
 \end_inset
 
 .
- The degeneracy of single trace states' energy levels is reserved.
+ The degeneracy of single trace states' energy levels is maintained.
  What's more, the energy levels from the triple trace state(the yellow lines)
  start spread out the region.
  
@@ -1259,7 +1259,7 @@ The energy levels from both single trace states and triple trace states
 \end_inset
 
 .
- The degeneracy of single trace states' energy levels is reserved.
+ The degeneracy of single trace states' energy levels is maintained.
  What's more, the energy levels from the triple trace state(the yellow lines)
  start spread out the region.
 \end_layout
@@ -1294,7 +1294,7 @@ For the analysis at
  getting larger.
  The characters of the continuous string (energy degeneracy of single trace
  states, boundary of multi-trace states) start to appear at pretty low bit
- number, and get great reserved when it is larger.
+ number, and get great maintained when it is larger.
  
 \end_layout
 
@@ -5986,13 +5986,13 @@ H^{'} & = & 2\theta_{k}\frac{d}{d\theta_{k}}-\theta_{k}\frac{d}{d\theta_{k+1}}-\
 \end_inset
 
  It is not able to reconstruct our Hamiltonian by this routine.
- However we can try not to stick to the given routinue above, but list all
+ However we can try not to stick to the given routine above, but list all
  the anti-commutator of all the candidate cubics, and then find out wether
  their linear combination would give us something similar.
 \end_layout
 
 \begin_layout Standard
-First the diagnal terms are:
+First the diagonal terms are:
 \begin_inset Formula 
 \begin{eqnarray*}
 \left\{ R_{1},R_{1}^{\dagger}\right\}  & = & -\tr(\bar{b}\bar{b}bb)\\
