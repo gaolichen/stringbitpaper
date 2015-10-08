@@ -5690,36 +5690,93 @@ Top 5 energy levels of
 \end_layout
 
 \begin_layout Subsection*
-Variation of 
-\begin_inset Formula $H$
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-As mentioned in previous section, 
-\begin_inset Formula $H$
+In this subsection, let's see how energy levels change with respect to the
+ parameter 
+\begin_inset Formula $\xi$
 \end_inset
 
- can vary in two ways as Eq.
+.
+ Fig.
  
 \begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Hamiltonian-3-1"
+LatexCommand ref
+reference "fig:xi=negativeM=3"
 
 \end_inset
 
  and 
 \begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Hamiltonian-3-1"
+LatexCommand ref
+reference "fig:xi=positiveM=3"
 
 \end_inset
 
+ plot the energy states of 3-bit systems of Hamiltonian 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ with different 
+\begin_inset Formula $\xi$
+\end_inset
+
 .
- In this subsection, let's see how energy levels change for different 
-\begin_inset Formula $H$
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=negativeM=3"
+
+\end_inset
+
+ shows that the highest energy state disppear later (by later we mean larger
+ 
+\begin_inset Formula $1/N$
+\end_inset
+
+) as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ become larger.
+ The highest energy states disppear at 
+\begin_inset Formula $N=2$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=-0.9$
+\end_inset
+
+ and 
+\begin_inset Formula $N=1$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=-0.6$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\xi$
+\end_inset
+
+ continue increasing to -0.3, the highest state disppears only when 
+\begin_inset Formula $N>1.5$
+\end_inset
+
+, which implies it is alive for all physical cases.
+ Finally, when 
+\begin_inset Formula $\xi=-0.1$
+\end_inset
+
+, the disappearance happens after 
+\begin_inset Formula $1/N=2$
 \end_inset
 
 .
@@ -5736,10 +5793,124 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/boson/xi=manyM=3.pdf
+	filename plots/boson/xi=negativeM=3.pdf
 	width 100col%
-	BoundingBox 58bp 200bp 547bp 600bp
+	BoundingBox 55bp 200bp 550bp 610bp
 	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=negativeM=3"
+
+\end_inset
+
+Energy levels for 3-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+, with 
+\begin_inset Formula $\xi=-0.9,\,-0.6\,-0.3,$
+\end_inset
+
+ and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+-0.1.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now let's check how 
+\begin_inset Formula $\xi$
+\end_inset
+
+ impact the ground states.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=positiveM=3"
+
+\end_inset
+
+ shows the ground states disppear earlier as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ becomes larger.
+ When 
+\begin_inset Formula $\xi=0.01$
+\end_inset
+
+, the ground state disppear at 
+\begin_inset Formula $N=1$
+\end_inset
+
+; when 
+\begin_inset Formula $\xi=0.5$
+\end_inset
+
+ the disappearance occurs between 
+\begin_inset Formula $0.5<1/N<1$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $\xi=3$
+\end_inset
+
+, the disappearance occurs at 
+\begin_inset Formula $N=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=positiveM=3.pdf
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
 
 \end_inset
 
@@ -5750,15 +5921,84 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Energy levels for 
-\begin_inset Formula $M=3$
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=positiveM=3"
+
 \end_inset
 
-, 
+Energy levels for 3-bit systems of Hamiltonian 
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
+, with 
+\begin_inset Formula $\xi=0.01,\,0.5,\,1$
+\end_inset
 
+ and 
+\begin_inset Formula $1.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=2M=5.pdf
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Energy level for 5-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}+2\Delta H$
+\end_inset
+
+.
+ The ground state disppear at 
+\begin_inset Formula $N=4$
+\end_inset
+
+ while for the original Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+, the ground state disppear at 
+\begin_inset Formula $N=2$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
