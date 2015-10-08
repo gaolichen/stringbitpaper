@@ -5659,66 +5659,56 @@ Lowest 8 energy states for the 10-bit system of Hamiltonian
 
 \end_layout
 
-\begin_layout Subsubsection*
-Top energy levels
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Top-5-energy-H=H_0"
+
+\end_inset
+
+ shows the highest 5 energy levels of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+ for 
+\begin_inset Formula $M$
+\end_inset
+
+ from 4 to 7.
+ Unlike the lower energy states, the highest energy states do not disppear,
+ even if 
+\begin_inset Formula $N$
+\end_inset
+
+ is less than 1.
+ This also happens for 
+\begin_inset Formula $M=8,\,9,\,10,$
+\end_inset
+
+ and 
+\begin_inset Formula $11$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename plots/boson/xi=0M=5_lr.pdf
-	width 50col%
-	BoundingBox 55bp 200bp 550bp 610bp
+	filename plots/boson/xi=0M=4567top.pdf
+	width 100col%
+	BoundingBox 60bp 200bp 547bp 600bp
 	clip
-	groupId HalfColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/boson/xi=0M=6_lr.pdf
-	width 50col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId HalfColumnPlot
+	groupId SinglePagePlot
 
 \end_inset
 
@@ -5726,108 +5716,593 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Top-5-energy-H=H_0"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/boson/xi=0M=7_lr.pdf
-	width 50col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId HalfColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/boson/xi=0M=8_lr.pdf
-	width 50col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId HalfColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Top 5 energy level of 
+Top 5 energy levels of 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
  and 
-\begin_inset Formula $M=5,6,7,8$
+\begin_inset Formula $M=4,5,6,7$
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this subsection, let's see how energy levels change with respect to the
+ parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=negativeM=3"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=positiveM=3"
+
+\end_inset
+
+ plot the energy states of 3-bit systems of Hamiltonian 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ with different 
+\begin_inset Formula $\xi$
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=negativeM=3"
+
+\end_inset
+
+ shows that the highest energy state disppear later (by later we mean larger
+ 
+\begin_inset Formula $1/N$
+\end_inset
+
+) as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ become larger.
+ The highest energy states disppear at 
+\begin_inset Formula $N=2$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=-0.9$
+\end_inset
+
+ and 
+\begin_inset Formula $N=1$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=-0.6$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\xi$
+\end_inset
+
+ continue increasing to -0.3, the highest state disppears only when 
+\begin_inset Formula $N>1.5$
+\end_inset
+
+, which implies it is alive for all physical cases.
+ Finally, when 
+\begin_inset Formula $\xi=-0.1$
+\end_inset
+
+, the disappearance happens after 
+\begin_inset Formula $1/N=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=negativeM=3.pdf
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=negativeM=3"
+
+\end_inset
+
+Energy levels for 3-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+, with 
+\begin_inset Formula $\xi=-0.9,\,-0.6\,-0.3,$
+\end_inset
+
+ and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+-0.1.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now let's check how 
+\begin_inset Formula $\xi$
+\end_inset
+
+ impact the ground states.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=positiveM=3"
+
+\end_inset
+
+ shows the ground states disppear earlier as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ becomes larger.
+ When 
+\begin_inset Formula $\xi=0.01$
+\end_inset
+
+, the ground state disppear at 
+\begin_inset Formula $N=1$
+\end_inset
+
+; when 
+\begin_inset Formula $\xi=0.5$
+\end_inset
+
+ the disappearance occurs between 
+\begin_inset Formula $0.5<1/N<1$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $\xi=3$
+\end_inset
+
+, the disappearance occurs at 
+\begin_inset Formula $N=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=positiveM=3.pdf
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=positiveM=3"
+
+\end_inset
+
+Energy levels for 3-bit systems of Hamiltonian 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+, with 
+\begin_inset Formula $\xi=0.01,\,0.5,\,1$
+\end_inset
+
+ and 
+\begin_inset Formula $1.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By increasing 
+\begin_inset Formula $\xi$
+\end_inset
+
+, we can move the point at which of ground state disappear to 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+, the earliest point a state can disappear.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=2M=odd"
+
+\end_inset
+
+ show that for 
+\begin_inset Formula $H=H_{0}+2\Delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $M=3,\,5,\,7,\,9$
+\end_inset
+
+, the disppearance points of the ground states move to 
+\begin_inset Formula $2,\,4,\,6,\,8$
+\end_inset
+
+ respectively.
+ But we cannot move the disappearance point arbitary later because of the
+ stabalization constraint 
+\begin_inset Formula $\xi>-1$
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=-0.9M=odd"
+
+\end_inset
+
+ shows, for Hamiltonian 
+\begin_inset Formula $H=H_{0}-0.9\Delta H$
+\end_inset
+
+, the disappearance point of ground states are at 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+.
+ It suggest that the latest disappearance point of ground states is 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=2M=odd.pdf
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=2M=odd"
+
+\end_inset
+
+Energy level of Hamiltonian 
+\begin_inset Formula $H=H_{0}+2\Delta H$
+\end_inset
+
+, 
+\begin_inset Formula $M=3,\,5,\,7,\,9$
+\end_inset
+
+.
+ For each 
+\begin_inset Formula $M$
+\end_inset
+
+, the ground states disappear at 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+, which is earliest point a state can disappear.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=n.9M=odd.pdf
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=-0.9M=odd"
+
+\end_inset
+
+Energy level of Hamiltonian 
+\begin_inset Formula $H=H_{0}-0.9\Delta H$
+\end_inset
+
+, 
+\begin_inset Formula $M=3,\,5,\,7,\,9$
+\end_inset
+
+.
+ For each 
+\begin_inset Formula $M$
+\end_inset
+
+, the ground state disappear at 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
+\end_inset
+
+, the parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+ plays the same role.
+ A bigger 
+\begin_inset Formula $\xi$
+\end_inset
+
+ corresponds to earlier disappearance of ground states.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nxi=-2M=odd"
+
+\end_inset
+
+ shows that the disappearance point occurs at 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=2$
+\end_inset
+
+ and odd 
+\begin_inset Formula $M$
+\end_inset
+
+ between 3 and 9.
+ The latest disappearance point of ground states is when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ close to 
+\begin_inset Formula $1$
+\end_inset
+
+, the minimum value of 
+\begin_inset Formula $\xi$
+\end_inset
+
+ determined by stabalization condition.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nxi=2M=odd.pdf
+	width 100col%
+	BoundingBox 55bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nxi=-2M=odd"
+
+\end_inset
+
+Energy level of Hamiltonian 
+\begin_inset Formula $H=-H_{0}+2\Delta H$
+\end_inset
+
+, 
+\begin_inset Formula $M=3,\,5,\,7,\,9$
+\end_inset
+
+.
+ For each 
+\begin_inset Formula $M$
+\end_inset
+
+, the ground state disappear at 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
