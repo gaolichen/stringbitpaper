@@ -5601,10 +5601,6 @@ Lowest 8 energy states for the 10-bit system of Hamiltonian
 
 \end_layout
 
-\begin_layout Subsubsection*
-Highest energy levels
-\end_layout
-
 \begin_layout Standard
 Fig.
  
@@ -5618,164 +5614,43 @@ reference "fig:Top-5-energy-H=H_0"
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
-.
- The highest energy states does not disppear for any value of 
+ for 
+\begin_inset Formula $M$
+\end_inset
+
+ from 4 to 7.
+ Unlike the lower energy states, the highest energy states do not disppear,
+ even if 
 \begin_inset Formula $N$
 \end_inset
 
+ is less than 1.
+ This also happens for 
+\begin_inset Formula $M=8,\,9,\,10,$
+\end_inset
+
+ and 
+\begin_inset Formula $11$
+\end_inset
+
 .
- 
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename plots/boson/xi=0M=5_lr.pdf
-	width 50col%
-	BoundingBox 55bp 200bp 550bp 610bp
+	filename plots/boson/xi=0M=4567top.pdf
+	width 100col%
+	BoundingBox 60bp 200bp 547bp 600bp
 	clip
-	groupId HalfColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/boson/xi=0M=6_lr.pdf
-	width 50col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId HalfColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/boson/xi=0M=7_lr.pdf
-	width 50col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId HalfColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename plots/boson/xi=0M=8_lr.pdf
-	width 50col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId HalfColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+	groupId SinglePagePlot
 
 \end_inset
 
@@ -5789,12 +5664,98 @@ name "fig:Top-5-energy-H=H_0"
 
 \end_inset
 
-Top 5 energy level of 
+Top 5 energy levels of 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
  and 
-\begin_inset Formula $M=5,6,7,8$
+\begin_inset Formula $M=4,5,6,7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Variation of 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As mentioned in previous section, 
+\begin_inset Formula $H$
+\end_inset
+
+ can vary in two ways as Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hamiltonian-3-1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hamiltonian-3-1"
+
+\end_inset
+
+.
+ In this subsection, let's see how energy levels change for different 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=manyM=3.pdf
+	width 100col%
+	BoundingBox 58bp 200bp 547bp 600bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Energy levels for 
+\begin_inset Formula $M=3$
+\end_inset
+
+, 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
 
