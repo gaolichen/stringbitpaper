@@ -4968,7 +4968,7 @@ key "Sun:2014dga"
 \begin_inset Formula $M$
 \end_inset
 
-, where the ground states disppear because of the effect of cyclic permutation
+, where the ground states disappear because of the effect of cyclic permutation
  of trace states.
  Let's first study the case of odd 
 \begin_inset Formula $M$
@@ -5619,7 +5619,7 @@ reference "fig:Top-5-energy-H=H_0"
 \end_inset
 
  from 4 to 7.
- Unlike the lower energy states, the highest energy states do not disppear,
+ Unlike the lower energy states, the highest energy states do not disappear,
  even if 
 \begin_inset Formula $N$
 \end_inset
@@ -5735,7 +5735,7 @@ reference "fig:xi=negativeM=3"
 
 \end_inset
 
- shows that the highest energy state disppear later (by later we mean larger
+ shows that the highest energy state disappear later (by later we mean larger
  
 \begin_inset Formula $1/N$
 \end_inset
@@ -5745,7 +5745,7 @@ reference "fig:xi=negativeM=3"
 \end_inset
 
  become larger.
- The highest energy states disppear at 
+ The highest energy states disappear at 
 \begin_inset Formula $N=2$
 \end_inset
 
@@ -5766,7 +5766,7 @@ reference "fig:xi=negativeM=3"
 \begin_inset Formula $\xi$
 \end_inset
 
- continue increasing to -0.3, the highest state disppears only when 
+ continue increasing to -0.3, the highest state disappears only when 
 \begin_inset Formula $N>1.5$
 \end_inset
 
@@ -5862,7 +5862,7 @@ reference "fig:xi=positiveM=3"
 
 \end_inset
 
- shows the ground states disppear earlier as 
+ shows the ground states disappear earlier as 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -5871,7 +5871,7 @@ reference "fig:xi=positiveM=3"
 \begin_inset Formula $\xi=0.01$
 \end_inset
 
-, the ground state disppear at 
+, the ground state disappear at 
 \begin_inset Formula $N=1$
 \end_inset
 
@@ -5982,7 +5982,7 @@ reference "fig:xi=2M=odd"
 \begin_inset Formula $M=3,\,5,\,7,\,9$
 \end_inset
 
-, the disppearance points of the ground states move to 
+, the disappearance points of the ground states move to 
 \begin_inset Formula $2,\,4,\,6,\,8$
 \end_inset
 
