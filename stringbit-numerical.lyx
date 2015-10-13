@@ -5446,18 +5446,11 @@ Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:H=H0M=4"
+reference "figH=h0M=even"
 
 \end_inset
 
- to 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:H=H0M=10"
-
-\end_inset
-
- plot the lowest 8 energy levels for even 
+ plots the lowest 5 energy levels for even 
 \begin_inset Formula $M$
 \end_inset
 
@@ -5481,7 +5474,6 @@ reference "fig:H=H0M=10"
 \begin_layout Standard
 \align center
 \begin_inset Float figure
-placement h
 wide false
 sideways false
 status open
@@ -5489,7 +5481,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/boson/xi=0M=4.pdf
+	filename plots/boson/xi=0M=even.pdf
 	width 100col%
 	BoundingBox 55bp 200bp 550bp 610bp
 	clip
@@ -5506,147 +5498,19 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:H=H0M=4"
+name "figH=h0M=even"
 
 \end_inset
 
-Lowest 8 energy states for the 4-bit system of Hamiltonian 
+Lowest 5 energy states Hamiltonia 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
-.
-\end_layout
-
+ with 
+\begin_inset Formula $M=4,6,8,10$
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=6.pdf
-	width 100col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Lowest 8 energy states for the 6-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=8.pdf
-	width 100col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Lowest 8 energy states for the 8-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=10.pdf
-	width 100col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:H=H0M=10"
-
-\end_inset
-
-Lowest 8 energy states for the 10-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
 \end_layout
 
 \end_inset
