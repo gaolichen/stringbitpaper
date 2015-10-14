@@ -4949,36 +4949,75 @@ Finite
 \end_layout
 
 \begin_layout Standard
-In this section, we present the numerical results of energy levels of the
- stringbit system from 
-\begin_inset Formula $M=3$
-\end_inset
-
+In this section, we perform the numerical analysis of the energy levels
+ of our model.
+ We will show how energy levels of various Hamiltonians change with respect
  to 
-\begin_inset Formula $M=11$
+\begin_inset Formula $N$
 \end_inset
 
- in finite 
+ and bit number 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ For different values of 
+\begin_inset Formula $M$
+\end_inset
+
+, we calculated the 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrices and norm matrices 
+\begin_inset Formula $G$
+\end_inset
+
+, whose entries are expressed in terms of 
 \begin_inset Formula $N$
 \end_inset
 
 .
- We will show how the lowest or highest several energy levels of stringbit
- systems change with respect to 
-\begin_inset Formula $1/N$
+ Since the nubmer of trace states increase exponentially as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase, it's only feasible to perform the calculation for small values
+ of 
+\begin_inset Formula $M$
 \end_inset
 
 .
- The following sections are organized as follows.
- First, we show the result for the original Hamiltonian 
+ The biggest value of 
+\begin_inset Formula $M$
+\end_inset
+
+ we target is 11, where 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $G$
+\end_inset
+
+ are 
+\begin_inset Formula $1473\times1473$
+\end_inset
+
+ matrices.
+ 
+\end_layout
+
+\begin_layout Standard
+We will first analyze the result for the original Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
-, which has been investigated for 
+, for which the 
 \begin_inset Formula $M=3$
 \end_inset
 
- case in 
+ case has been investigated in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sun:2014dga"
@@ -4986,13 +5025,17 @@ key "Sun:2014dga"
 \end_inset
 
 .
- Then, we discuss the results of Hamiltonians in the form 
+ Next, we move to the Hamiltonians of the form 
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
-.
- Finally, we explore the Hamiltonians in the form 
-\begin_inset Formula $H_{0}=-H_{0}+\xi\Delta H$
+ and investigate how the parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+ impact the energy levels.
+ Finally, we explore the Hamiltonians of the form 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
 \end_inset
 
 .
@@ -5035,12 +5078,9 @@ key "Sun:2014dga"
 .
 \end_layout
 
-\begin_layout Subsubsection*
-Odd Number Bits
-\end_layout
-
 \begin_layout Standard
-Fig 
+Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:H=H0M=3"
@@ -5054,27 +5094,30 @@ reference "fig:H=H0M=11"
 
 \end_inset
 
- plot the change energy states with respect to 
+ plot energy levels for odd 
+\begin_inset Formula $M$
+\end_inset
+
+ range from 3 to 11 with respect to 
 \begin_inset Formula $1/N$
 \end_inset
 
 .
- In these figures, curves with different colors indicate different energy
- levels.
- A solid curve represents a positive norm energy level, while dotted and
- dash-dotted curves correspond to negative norm states and zero norm states
- respectively.
- As mentioned in Section 
+ In these figures, different colors represent different energy states and
+ different line styles indicate different norm of energy states.
+ Solid, dotted, and dash-dotted curves correspond to positive, negative,
+ and zero norm energy states respectively.
+ As mentioned in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Method"
 
 \end_inset
 
-, a zero norm state is always associated with two complex energy levels
+, a zero norm state always associate with two complex energy levels that
  conjugate to each other.
- The dash-dotted curves represent only the real part of the energy level,
- and hence, always start at the merging point of two curves.
+ Therefore, The dash-dotted curves represent only the real parts of the
+ energy levels and always starts and ends at the merging point of two curves.
  For higher 
 \begin_inset Formula $M$
 \end_inset
@@ -5435,10 +5478,6 @@ At higher
 
 .
  
-\end_layout
-
-\begin_layout Subsubsection*
-Even Number Bits
 \end_layout
 
 \begin_layout Standard
