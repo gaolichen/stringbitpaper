@@ -5103,6 +5103,11 @@ reference "fig:H=H0M=11"
 \end_inset
 
 .
+ Five energy levels are plotted for 
+\begin_inset Formula $M=3$
+\end_inset
+
+ and lowest eight energy levels are plotted for others.
  In these figures, different colors represent different energy states and
  different line styles indicate different norm of energy states.
  Solid, dotted, and dash-dotted curves correspond to positive, negative,
@@ -5114,37 +5119,38 @@ reference "sec:Method"
 
 \end_inset
 
-, a zero norm state always associate with two complex energy levels that
- conjugate to each other.
- Therefore, The dash-dotted curves represent only the real parts of the
+, a zero norm state associate with two complex energy levels that conjugate
+ to each other.
+ Therefore, the dash-dotted curves represent only the real parts of the
  energy levels and always starts and ends at the merging point of two curves.
  For higher 
 \begin_inset Formula $M$
 \end_inset
 
-, the curves are relatively flat in the range lower 
+ and 
 \begin_inset Formula $1/N$
 \end_inset
 
- and decline dramatically in higher 
+, the energy levels decline dramatically as 
 \begin_inset Formula $1/N$
 \end_inset
 
-.
+ increase.
  To show more details of the curves in lower 
 \begin_inset Formula $1/N$
 \end_inset
 
-, we plit the plots into parts of lower 
+, we split the plots into lower 
 \begin_inset Formula $1/N$
 \end_inset
 
- and higher 
+ part and higher 
 \begin_inset Formula $1/N$
 \end_inset
 
-.
- Curves of the same color in these two parts are for the same energy states.
+ part.
+ Between these two parts, curves of the same color represent the same energy
+ states.
  See 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5399,6 +5405,53 @@ Lowest 8 energy states for the 11-bit system of Hamiltonian
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+We see several features from these figures.
+ At 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, degeneracy occurs for some excited states while the ground states are
+ non-degenerate.
+ This is consistent with the analytic calculation of large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+.
+ The degeneracies are broken when 
+\begin_inset Formula $N$
+\end_inset
+
+ is finite.
+ All the curves are almost horizontal in the region close to 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, and at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, perpendicular to the vertical axes.
+ This implies an interesting fact that there is 
+\begin_inset Formula $1/N$
+\end_inset
+
+ order perturbation of energy levels.
+ As 
+\begin_inset Formula $N$
+\end_inset
+
+ decrease, the solid curves turn to dotted or dash-dotted curve.
+ 
 \end_layout
 
 \begin_layout Standard
