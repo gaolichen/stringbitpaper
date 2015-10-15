@@ -146,29 +146,115 @@ String bit model is one approach to a fundamental formulation of string
 \end_layout
 
 \begin_layout Standard
-The light-cone string can be described by discretizing the world-sheet spatial
- coordinate 
-\begin_inset Formula $\sigma$
-\end_inset
+We describe the string bits by lightcone coordinates,
+\begin_inset Formula 
+\[
+x^{\pm}=(x^{0}\pm x^{1})/\sqrt{2}{\rm \qquad x}=(x^{2},\cdots,x^{d})
+\]
 
- to 
-\begin_inset Formula $M$
-\end_inset
-
- lattice site so that 
-\begin_inset Formula $p^{+}=M\epsilon T_{0}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Thus the states of a single string described by the wave function: 
-\begin_inset Formula $\psi_{M}(x_{1},\cdots,x_{M},\tau)=\psi_{M}(x_{2},\cdots,x_{M},x_{1},\tau)$
+here 
+\begin_inset Formula $d$
+\end_inset
+
+ is the transverse coordinates 
+\begin_inset Formula $d=D-2$
+\end_inset
+
+ where 
+\begin_inset Formula $D$
+\end_inset
+
+ is the spacetime.
+ In this coordinate system, it is Galilei invariant.
+\end_layout
+
+\begin_layout Standard
+For light-cone string, 
+\begin_inset Formula $\tau$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is identified by setting 
+\begin_inset Formula $x^{+}=\tau$
+\end_inset
+
+ and 
+\begin_inset Formula ${\cal P}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+By setting the momentum density 
+\begin_inset Formula ${\cal P}$
+\end_inset
+
+ to be 1, the total momentum 
+\begin_inset Formula $P^{+}$
+\end_inset
+
+ would be: 
+\begin_inset Formula 
+\[
+P^{+}=\int{\rm d}\sigma{\cal P}^{+}=\int{\rm d}\sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Coming back to the discrete string bits, the mass 
+\begin_inset Formula $m$
+\end_inset
+
+ of each string bit is fixed, thus the total momentum can be directly related
+ to the number of bits 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $M\rightarrow\infty$
+\end_inset
+
+ this emergent 
+\begin_inset Formula $P^{+}$
+\end_inset
+
+ would behave like a continuous total momentum.
+\end_layout
+
+\begin_layout Standard
+Thus the states of a single string described by the 
+\begin_inset Formula $M$
+\end_inset
+
+ particle wave function: 
+\begin_inset Formula 
+\[
+\psi_{M}(x_{1},\cdots,x_{M},\tau)=\psi_{M}(x_{2},\cdots,x_{M},x_{1},\tau)
+\]
+
 \end_inset
 
  and the Hamiltonian: 
-\begin_inset Formula $P^{-}=\frac{1}{\epsilon}\sum_{i}^{M}\frac{1}{2T_{0}}(-\nabla_{i}^{2}+T_{0}^{2}(x_{i+1}-x_{i})^{2}).$
+\begin_inset Formula 
+\[
+P^{-}=\frac{1}{\epsilon}\sum_{i}^{M}\frac{1}{2T_{0}}(-\nabla_{i}^{2}+T_{0}^{2}(x_{i+1}-x_{i})^{2}).
+\]
+
 \end_inset
 
  
@@ -190,12 +276,45 @@ E_{G}=\frac{1}{2}\sum_{n}\omega_{n}=\frac{dT_{0}}{m}\sum_{n=1}^{M-1}\sin\frac{n\
 Because of the second term, a long chain of bosonic bits is unstable, it
  will decay into two small chains.
  This instability is also a motivation for introducing supersymmetry.
- By adding on the fermionic degrees of freedom, the negative $1/M$ term
- will be cancelled and leading to massless ground states.
+ By adding on the fermionic degrees of freedom, the negative 
+\begin_inset Formula $1/M$
+\end_inset
+
+ term will be cancelled and leading to massless ground states.
 \end_layout
 
 \begin_layout Standard
-In this project, the model we study has zero space dimensions with s=1.
+As we know for superstring, 8 bosonic coordinate fields 
+\begin_inset Formula $x^{k}$
+\end_inset
+
+ and 8 pairs of fermionic Grassmann filed 
+\begin_inset Formula $\theta_{L,R}^{q}$
+\end_inset
+
+ is required, however in this project, we would like to study more general
+ case in which there're 
+\begin_inset Formula $d$
+\end_inset
+
+ bosonic fields and 
+\begin_inset Formula $s$
+\end_inset
+
+ fermionic fields, provided 
+\begin_inset Formula $d<s$
+\end_inset
+
+.
+ The first step for this model we study has zero space dimensions 
+\begin_inset Formula $d=0$
+\end_inset
+
+ with 
+\begin_inset Formula $s=1$
+\end_inset
+
+.
  By analysis of the eigenstates from the low 
 \begin_inset Formula $M$
 \end_inset
@@ -208,7 +327,7 @@ In this model, we have
 \begin_inset Formula $N^{2}$
 \end_inset
 
- bosonic creat 
+ bosonic create 
 \begin_inset Formula ${\bar{a}}_{\alpha}^{\beta}\equiv(a_{\beta}^{\alpha})^{\dagger}$
 \end_inset
 
@@ -291,7 +410,7 @@ S_{k}=\theta_{k}+\frac{d}{d\theta_{k}},\qquad{\tilde{S}}_{k}=i\left(\theta_{k}-\
 \end_layout
 
 \begin_layout Standard
-and interate them by part we can get:
+and integrate them by part we can get:
 \end_layout
 
 \begin_layout Standard
@@ -392,13 +511,30 @@ H=\frac{2}{N}\tr\left[({\bar{a}}^{2}-i{\bar{b}}^{2})a^{2}-({\bar{b}}^{2}-i{\bar{
 
 \end_layout
 
+\begin_layout Standard
+In our previous paper we've already explored the situation at low bits number
+ 
+\begin_inset Formula $M=3$
+\end_inset
+
+, in this paper we will continues to do the numerical simulation at higher
+ bits number up to 
+\begin_inset Formula $M=11$
+\end_inset
+
+.
+ Meanwhile, since there's an ambiguity for the Hamiltonian we will also
+ try to understand the string chains behavior under different Hamiltonians
+ .
+\end_layout
+
 \begin_layout Subsection*
 Supersymmetry
 \end_layout
 
 \begin_layout Standard
-This section describes the Hamiltonians of stringbit model and their supersymmet
-ry property to be studied in this paper.
+This section describes the Hamiltonians of string-bit model and their supersymme
+try property to be studied in this paper.
 \end_layout
 
 \begin_layout Standard
@@ -409,7 +545,7 @@ key "Sun:2014dga"
 
 \end_inset
 
- , there's a ambiguiaty of the hamiltonian.
+ , there's a ambiguity of the hamiltonian.
  A possible form of Hamiltonian reads 
 \begin_inset Formula 
 \begin{equation}
@@ -468,7 +604,7 @@ key "Sun:2014dga"
 \begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
 \end_inset
 
- in stread of 
+ in stead of 
 \begin_inset Formula $\tilde{M}$
 \end_inset
 
@@ -507,7 +643,7 @@ key "Sun:2014dga"
 \begin_inset Formula $\xi_{2}$
 \end_inset
 
- are constrained by the  requirement of sypersymmetry.
+ are constrained by the  requirement of supersymmetry.
  A supersymmetric Hamiltonian must commute with the supersymmetry operator
  
 \begin_inset Formula 
@@ -749,7 +885,7 @@ Energy Levels
 \end_layout
 
 \begin_layout Standard
-For continous strings, which is when 
+For continuous strings, which is when 
 \begin_inset Formula $M=\infty$
 \end_inset
 
@@ -758,7 +894,7 @@ For continous strings, which is when
 \end_inset
 
 .
- From the nomal mode frequency(closed string) 
+ From the normal mode frequency(closed string) 
 \begin_inset Formula $\omega_{n}=(2T_{0}/m)\sin(n\pi/M)$
 \end_inset
 
@@ -940,7 +1076,7 @@ E_{min}^{'}=-\frac{8M}{\pi}+\frac{2\pi}{3X_{1}}+\frac{2\pi}{3X_{2}}+\frac{2\pi}{
 \begin_inset Formula $X_{1}=X_{2}=M/3$
 \end_inset
 
- it get the minmal value 
+ it get the minimal value 
 \begin_inset Formula 
 \[
 E_{min}^{'}=-\frac{8M}{\pi}+\frac{6\pi}{M}
@@ -949,7 +1085,7 @@ E_{min}^{'}=-\frac{8M}{\pi}+\frac{6\pi}{M}
 \end_inset
 
 We get the energy gap between the ground state of single trace states and
- multitrace states: 
+ multi-trace states: 
 \begin_inset Formula 
 \[
 \delta H'=\frac{16\pi}{3M}
@@ -1052,10 +1188,10 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/Mm=13.pdf
+	width 100text%
 	height 37pheight%
-	BoundingBox 55bp 100bp 750bp 610bp
-	clip
-	groupId EnergyLevelPlot
+	keepAspectRatio
+	BoundingBox 0bp 0bp 594bp 522bp
 
 \end_inset
 
@@ -1115,8 +1251,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/Mm=21.pdf
+	width 100text%
 	height 37pheight%
-	BoundingBox 55bp 100bp 750bp 610bp
+	BoundingBox 55bp 10bp 750bp 610bp
 	clip
 	groupId EnergyLevelPlot
 
@@ -1172,8 +1309,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/Mm=51.pdf
+	width 100text%
 	height 37pheight%
-	BoundingBox 55bp 100bp 750bp 610bp
+	BoundingBox 55bp 10bp 750bp 610bp
 	clip
 	groupId EnergyLevelPlot
 
@@ -1235,8 +1373,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/Mm=101.pdf
+	width 100text%
 	height 37pheight%
-	BoundingBox 55bp 100bp 750bp 610bp
+	BoundingBox 55bp 10bp 750bp 610bp
 	clip
 	groupId EnergyLevelPlot
 
@@ -1303,7 +1442,7 @@ Trace States
 \end_layout
 
 \begin_layout Standard
-The trace state space of stringbit is built as follows.
+The trace state space of string-bit is built as follows.
  We first introduce the vacuum state 
 \begin_inset Formula $\ket{0}$
 \end_inset
@@ -1316,12 +1455,12 @@ The trace state space of stringbit is built as follows.
 \begin_inset Formula $b$
 \end_inset
 
- with arbitary color indices.
+ with arbitrary color indices.
  We then can act on 
 \begin_inset Formula $\ket{0}$
 \end_inset
 
- with arbitary number of 
+ with arbitrary number of 
 \begin_inset Formula $\bar{a}$
 \end_inset
 
@@ -1331,12 +1470,12 @@ The trace state space of stringbit is built as follows.
 
  to obtain non-vacuum states with color indices.
  Finally, we take trace of the creator operators to obtain color-singlet
- states, which span the stringbit trace state space.
+ states, which span the string-bit trace state space.
  In general, when 
 \begin_inset Formula $N$
 \end_inset
 
- is big enough, we can act arbitary number of traces on the vacuum state.
+ is big enough, we can act arbitrary number of traces on the vacuum state.
  Each creator operator in the trace state is interpreted as one string bit.
  Trace states with even number of 
 \begin_inset Formula $\bar{b}$
@@ -1370,7 +1509,7 @@ A counting question arises naturally here.
 \end_inset
 
 .
- By property of trace, a trace state is equavilent to its cyclic permutations.
+ By property of trace, a trace state is equivalent to its cyclic permutations.
  For example, 
 \begin_inset Formula $\tr\bar{b}\bar{a}$
 \end_inset
@@ -1400,7 +1539,7 @@ The rule is each exchange of order of two
 \begin_inset Formula $\bar{b}$
 \end_inset
 
- introduce a minus signe.
+ introduce a minus sign.
  This leads to vanishing states, for example, 
 \begin_inset Formula 
 \[
@@ -1704,7 +1843,7 @@ The number of
 \begin_inset Formula $M$
 \end_inset
 
--bit bosonic or fermionc trace states is simply 
+-bit bosonic or fermionic trace states is simply 
 \begin_inset Formula 
 \begin{equation}
 T_{M}=T\left(M,M\right).\label{eq:Multiple-trace-states-3}
@@ -3946,7 +4085,7 @@ The
 \begin_inset Formula $M$
 \end_inset
 
-- bit fermionic trace state space has a equavilent metric as 
+- bit fermionic trace state space has a equivalent metric as 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4950,7 +5089,7 @@ Finite
 
 \begin_layout Standard
 In this section, we present the numerical results of energy levels of the
- stringbit system from 
+ string-bit system from 
 \begin_inset Formula $M=3$
 \end_inset
 
@@ -4963,7 +5102,7 @@ In this section, we present the numerical results of energy levels of the
 \end_inset
 
 .
- We will show how the lowest or highest several energy levels of stringbit
+ We will show how the lowest or highest several energy levels of string-bit
  systems change with respect to 
 \begin_inset Formula $1/N$
 \end_inset
@@ -5026,7 +5165,7 @@ key "Sun:2014dga"
 \begin_inset Formula $M$
 \end_inset
 
-, where the ground states disppear because of the effect of cyclic permutation
+, where the ground states disappear because of the effect of cyclic permutation
  of trace states.
  Let's first study the case of odd 
 \begin_inset Formula $M$
@@ -5092,7 +5231,7 @@ reference "sec:Method"
 \begin_inset Formula $1/N$
 \end_inset
 
-, we plit the plots into parts of lower 
+, we plot the plots into parts of lower 
 \begin_inset Formula $1/N$
 \end_inset
 
@@ -8659,7 +8798,7 @@ Calculation of
 \end_layout
 
 \begin_layout Standard
-In [ref to stringbit], a general form of Hamiltonian is written as 
+In [ref to string-bit], a general form of Hamiltonian is written as 
 \begin_inset Formula $H=H^{\prime}+\Delta H^{\prime},$
 \end_inset
 
