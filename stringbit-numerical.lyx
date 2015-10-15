@@ -5088,36 +5088,90 @@ Finite
 \end_layout
 
 \begin_layout Standard
+<<<<<<< HEAD
 In this section, we present the numerical results of energy levels of the
  string-bit system from 
 \begin_inset Formula $M=3$
 \end_inset
 
+=======
+In this section, we perform the numerical analysis of the energy levels
+ of our model.
+ We will show how energy levels of various Hamiltonians change with respect
+>>>>>>> 3618403c0b22b78b2ee778925852e2e16a868c69
  to 
-\begin_inset Formula $M=11$
-\end_inset
-
- in finite 
 \begin_inset Formula $N$
 \end_inset
 
+<<<<<<< HEAD
 .
  We will show how the lowest or highest several energy levels of string-bit
  systems change with respect to 
 \begin_inset Formula $1/N$
+=======
+ and bit number 
+\begin_inset Formula $M$
+>>>>>>> 3618403c0b22b78b2ee778925852e2e16a868c69
 \end_inset
 
 .
- The following sections are organized as follows.
- First, we show the result for the original Hamiltonian 
+ For different values of 
+\begin_inset Formula $M$
+\end_inset
+
+, we calculated the 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrices and norm matrices 
+\begin_inset Formula $G$
+\end_inset
+
+, whose entries are expressed in terms of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Since the nubmer of trace states increase exponentially as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase, it's only feasible to perform the calculation for small values
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ The biggest value of 
+\begin_inset Formula $M$
+\end_inset
+
+ we target is 11, where 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $G$
+\end_inset
+
+ are 
+\begin_inset Formula $1473\times1473$
+\end_inset
+
+ matrices.
+ 
+\end_layout
+
+\begin_layout Standard
+We will first analyze the result for the original Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
-, which has been investigated for 
+, for which the 
 \begin_inset Formula $M=3$
 \end_inset
 
- case in 
+ case has been investigated in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sun:2014dga"
@@ -5125,13 +5179,24 @@ key "Sun:2014dga"
 \end_inset
 
 .
- Then, we discuss the results of Hamiltonians in the form 
+ Next, we move to the Hamiltonians of the form 
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
-.
- Finally, we explore the Hamiltonians in the form 
-\begin_inset Formula $H_{0}=-H_{0}+\xi\Delta H$
+ and investigate how the parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+<<<<<<< HEAD
+, where the ground states disappear because of the effect of cyclic permutation
+ of trace states.
+ Let's first study the case of odd 
+\begin_inset Formula $M$
+=======
+ impact the energy levels.
+ Finally, we explore the Hamiltonians of the form 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
+>>>>>>> 3618403c0b22b78b2ee778925852e2e16a868c69
 \end_inset
 
 .
@@ -5146,40 +5211,8 @@ key "Sun:2014dga"
 \end_layout
 
 \begin_layout Standard
-As the calculation in large 
-\begin_inset Formula $N$
-\end_inset
-
- limit shows 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
-
-\end_inset
-
-, the ground states of odd 
-\begin_inset Formula $M$
-\end_inset
-
- case are different with those of even 
-\begin_inset Formula $M$
-\end_inset
-
-, where the ground states disappear because of the effect of cyclic permutation
- of trace states.
- Let's first study the case of odd 
-\begin_inset Formula $M$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection*
-Odd Number Bits
-\end_layout
-
-\begin_layout Standard
-Fig 
+Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:H=H0M=3"
@@ -5193,54 +5226,74 @@ reference "fig:H=H0M=11"
 
 \end_inset
 
- plot the change energy states with respect to 
+ plot energy levels for odd 
+\begin_inset Formula $M$
+\end_inset
+
+ range from 3 to 11 with respect to 
 \begin_inset Formula $1/N$
 \end_inset
 
 .
- In these figures, curves with different colors indicate different energy
- levels.
- A solid curve represents a positive norm energy level, while dotted and
- dash-dotted curves correspond to negative norm states and zero norm states
- respectively.
- As mentioned in Section 
+ Five energy levels are plotted for 
+\begin_inset Formula $M=3$
+\end_inset
+
+ and lowest eight energy levels are plotted for others.
+ In these figures, different colors represent different energy states and
+ different line styles indicate different norm of energy states.
+ Solid, dotted, and dash-dotted curves correspond to positive, negative,
+ and zero norm energy states respectively.
+ As mentioned in section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Method"
 
 \end_inset
 
-, a zero norm state is always associated with two complex energy levels
- conjugate to each other.
- The dash-dotted curves represent only the real part of the energy level,
- and hence, always start at the merging point of two curves.
+, a zero norm state associate with two complex energy levels that conjugate
+ to each other.
+ Therefore, the dash-dotted curves represent only the real parts of the
+ energy levels and always starts and ends at the merging point of two curves.
+ A dotted curve corresponds a negative norm state, which can be either pure
+ ghost states or mixing of ghost states and other states.
+ Note that there is non negative norm states at integer values of 
+\begin_inset Formula $N$
+\end_inset
+
+.
  For higher 
 \begin_inset Formula $M$
 \end_inset
 
-, the curves are relatively flat in the range lower 
+ and 
 \begin_inset Formula $1/N$
 \end_inset
 
- and decline dramatically in higher 
+, the energy levels decline dramatically as 
 \begin_inset Formula $1/N$
 \end_inset
 
-.
+ increase.
  To show more details of the curves in lower 
 \begin_inset Formula $1/N$
 \end_inset
 
+<<<<<<< HEAD
 , we plot the plots into parts of lower 
+=======
+, we split the plots into lower 
+>>>>>>> 3618403c0b22b78b2ee778925852e2e16a868c69
 \begin_inset Formula $1/N$
 \end_inset
 
- and higher 
+ part and higher 
 \begin_inset Formula $1/N$
 \end_inset
 
-.
- Curves of the same color in these two parts are for the same energy states.
+ part.
+ Between these two parts, curves of the same color represent the same energy
+ states.
  See 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5498,60 +5551,110 @@ Lowest 8 energy states for the 11-bit system of Hamiltonian
 \end_layout
 
 \begin_layout Standard
-From the figures, we summarize the phenomenons about energy state as follows.
-\end_layout
-
-\begin_layout Itemize
-No degeneracy for ground states at 
+We see several features from these figures.
+ At 
 \begin_inset Formula $N=\infty$
 \end_inset
 
-.
- Some non-ground states are degenerate at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
- and splitted into non-degeneracy at finite 
+, degeneracy occurs for some excited states while the ground states are
+ non-degenerate.
+ This is consistent with the analytic calculation of large 
 \begin_inset Formula $N$
 \end_inset
 
-.
-\end_layout
+ limit 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
 
-\begin_layout Itemize
-As 
+\end_inset
+
+.
+ The degeneracies are broken when 
+\begin_inset Formula $N$
+\end_inset
+
+ is finite.
+ All the curves are almost horizontal in the region close to 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, and at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, perpendicular to the vertical axes.
+ This implies that 
 \begin_inset Formula $1/N$
 \end_inset
 
- increase, the ground states turn from positive norm to zero norm at some
- values of 
+ order perturbation of energy levels is zero.
+ As 
+\begin_inset Formula $1/N$
+\end_inset
+
+ increase, the solid curves turn to dotted or dash-dotted curves, which
+ corresponds to the disappearance of states.
+ If a state disappears at an integer value of 
+\begin_inset Formula $N$
+\end_inset
+
+, if also disappears at all the integers less than 
 \begin_inset Formula $N$
 \end_inset
 
 .
- The first turning point occurs at 
+ For example, the ground state of 
+\begin_inset Formula $M=5$
+\end_inset
+
+ disappears at 
+\begin_inset Formula $N=2,\,1$
+\end_inset
+
+; ground state of 
+\begin_inset Formula $M=7$
+\end_inset
+
+ disappears at 
+\begin_inset Formula $N=3,2,1$
+\end_inset
+
+.
+ It is interesting to note that the the first disappearances of ground states
+ occur at 
 \begin_inset Formula $N=\frac{M-1}{2}$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Itemize
-At higher 
+ This implies to have ground states survive, 
 \begin_inset Formula $N$
 \end_inset
 
-, the ground energies are very flat.
+ must increase linearly as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase.
  At certain value of 
+\begin_inset Formula $1/N$
+\end_inset
+
+, the energy levels begin to drop dramatically.
+ The large 
+\begin_inset Formula $M$
+\end_inset
+
+ is, the earlier (larger 
 \begin_inset Formula $N$
 \end_inset
 
- they begin to drop dramatically.
+) the drop happens.
  For 
 \begin_inset Formula $M=7$
 \end_inset
 
-, this occurs around 
+, it occurs around 
 \begin_inset Formula $N=2$
 \end_inset
 
@@ -5564,20 +5667,7 @@ At higher
 \end_inset
 
 .
- It seems that the ground states begin to drop earlier (at larger 
-\begin_inset Formula $N$
-\end_inset
-
-) for larger 
-\begin_inset Formula $M$
-\end_inset
-
-.
  
-\end_layout
-
-\begin_layout Subsubsection*
-Even Number Bits
 \end_layout
 
 \begin_layout Standard
@@ -5585,23 +5675,26 @@ Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:H=H0M=4"
+reference "figH=h0M=even"
 
 \end_inset
 
- to 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:H=H0M=10"
-
-\end_inset
-
- plot the lowest 8 energy levels for even 
+ plots the lowest five energy levels for even 
 \begin_inset Formula $M$
 \end_inset
 
+ from 
+\begin_inset Formula $4$
+\end_inset
+
+ to 
+\begin_inset Formula $10$
+\end_inset
+
 .
- We can see that, at 
+ Much of the analysis of odd cases applies to even cases except the ground
+ states.
+ At 
 \begin_inset Formula $N=\infty$
 \end_inset
 
@@ -5609,18 +5702,16 @@ reference "fig:H=H0M=10"
 \begin_inset Formula $M=4,8$
 \end_inset
 
- are degenerate but those of 
+ are degenerate, but for 
 \begin_inset Formula $M=6,10$
 \end_inset
 
- are nondegenerate.
- 
+ they are not degenerate.
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Float figure
-placement h
 wide false
 sideways false
 status open
@@ -5628,7 +5719,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/boson/xi=0M=4.pdf
+	filename plots/boson/xi=0M=even.pdf
 	width 100col%
 	BoundingBox 55bp 200bp 550bp 610bp
 	clip
@@ -5645,147 +5736,19 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:H=H0M=4"
+name "figH=h0M=even"
 
 \end_inset
 
-Lowest 8 energy states for the 4-bit system of Hamiltonian 
+Lowest 5 energy states Hamiltonia 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
-.
-\end_layout
-
+ with 
+\begin_inset Formula $M=4,6,8,10$
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=6.pdf
-	width 100col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Lowest 8 energy states for the 6-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=8.pdf
-	width 100col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Lowest 8 energy states for the 8-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=10.pdf
-	width 100col%
-	BoundingBox 55bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:H=H0M=10"
-
-\end_inset
-
-Lowest 8 energy states for the 10-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
 \end_layout
 
 \end_inset
@@ -5816,21 +5779,21 @@ reference "fig:Top-5-energy-H=H_0"
 \end_inset
 
  from 4 to 7.
- Unlike the lower energy states, the highest energy states do not disppear,
+ Unlike the low energy states, the highest energy states do not disappear,
  even if 
 \begin_inset Formula $N$
 \end_inset
 
  is less than 1.
- This also happens for 
-\begin_inset Formula $M=8,\,9,\,10,$
+ If we use 
+\begin_inset Formula $-H_{0}$
 \end_inset
 
- and 
-\begin_inset Formula $11$
+ as Hamiltonian, will the ground states survive for smaller 
+\begin_inset Formula $N$
 \end_inset
 
-.
+? We now answer this question in the next subsection.
 \end_layout
 
 \begin_layout Standard
@@ -5887,20 +5850,30 @@ Top 5 energy levels of
 \end_layout
 
 \begin_layout Subsection*
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
+Variations of 
+\begin_inset Formula $H$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-In this subsection, let's see how energy levels change with respect to the
- parameter 
-\begin_inset Formula $\xi$
+In this subsection, we will analyze how the energy levels changes for two
+ variations of the Hamiltonian.
+ The first form of Hamiltonian is 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ and the second one is 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
 \end_inset
 
 .
- Fig.
+ 
+\end_layout
+
+\begin_layout Standard
+Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5919,7 +5892,7 @@ reference "fig:xi=positiveM=3"
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
- with different 
+ with different values of 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -5932,17 +5905,16 @@ reference "fig:xi=negativeM=3"
 
 \end_inset
 
- shows that the highest energy state disppear later (by later we mean larger
- 
+ shows that the highest energy state disappear later at larger 
 \begin_inset Formula $1/N$
 \end_inset
 
-) as 
+ as 
 \begin_inset Formula $\xi$
 \end_inset
 
- become larger.
- The highest energy states disppear at 
+ increase.
+ The highest energy state disappears at 
 \begin_inset Formula $N=2$
 \end_inset
 
@@ -5963,11 +5935,11 @@ reference "fig:xi=negativeM=3"
 \begin_inset Formula $\xi$
 \end_inset
 
- continue increasing to -0.3, the highest state disppears only when 
+ continue increasing to -0.3, the highest state disappears only when 
 \begin_inset Formula $N>1.5$
 \end_inset
 
-, which implies it is alive for all physical cases.
+, which implies it survives for all physical cases.
  Finally, when 
 \begin_inset Formula $\xi=-0.1$
 \end_inset
@@ -6059,7 +6031,7 @@ reference "fig:xi=positiveM=3"
 
 \end_inset
 
- shows the ground states disppear earlier as 
+ shows the ground states disappear earlier as 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -6068,7 +6040,7 @@ reference "fig:xi=positiveM=3"
 \begin_inset Formula $\xi=0.01$
 \end_inset
 
-, the ground state disppear at 
+, the ground state disappears at 
 \begin_inset Formula $N=1$
 \end_inset
 
@@ -6080,12 +6052,11 @@ reference "fig:xi=positiveM=3"
 \begin_inset Formula $0.5<1/N<1$
 \end_inset
 
-.
- When 
+; when 
 \begin_inset Formula $\xi=3$
 \end_inset
 
-, the disappearance occurs at 
+, it's at 
 \begin_inset Formula $N=2$
 \end_inset
 
@@ -6179,7 +6150,7 @@ reference "fig:xi=2M=odd"
 \begin_inset Formula $M=3,\,5,\,7,\,9$
 \end_inset
 
-, the disppearance points of the ground states move to 
+, the disappearance points of the ground states move to 
 \begin_inset Formula $2,\,4,\,6,\,8$
 \end_inset
 
@@ -6364,7 +6335,7 @@ reference "fig:nxi=-2M=odd"
 
 \end_inset
 
- shows that the disappearance point occurs at 
+ shows that the first disappearing ground states locate at 
 \begin_inset Formula $N=M-1$
 \end_inset
 
