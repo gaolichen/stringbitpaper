@@ -5123,6 +5123,13 @@ reference "sec:Method"
  to each other.
  Therefore, the dash-dotted curves represent only the real parts of the
  energy levels and always starts and ends at the merging point of two curves.
+ A dotted curve corresponds a negative norm state, which can be either pure
+ ghost states or mixing of ghost states and other states.
+ Note that there is non negative norm states at integer values of 
+\begin_inset Formula $N$
+\end_inset
+
+.
  For higher 
 \begin_inset Formula $M$
 \end_inset
@@ -5441,74 +5448,77 @@ key "Sun:2014dga"
 \end_inset
 
 , perpendicular to the vertical axes.
- This implies an interesting fact that there is 
+ This implies that 
 \begin_inset Formula $1/N$
 \end_inset
 
- order perturbation of energy levels.
+ order perturbation of energy levels is zero.
  As 
-\begin_inset Formula $N$
-\end_inset
-
- decrease, the solid curves turn to dotted or dash-dotted curve.
- 
-\end_layout
-
-\begin_layout Standard
-From the figures, we summarize the phenomenons about energy state as follows.
-\end_layout
-
-\begin_layout Itemize
-No degeneracy for ground states at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-.
- Some non-ground states are degenerate at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
- and splitted into non-degeneracy at finite 
-\begin_inset Formula $N$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-As 
 \begin_inset Formula $1/N$
 \end_inset
 
- increase, the ground states turn from positive norm to zero norm at some
- values of 
+ increase, the solid curves turn to dotted or dash-dotted curves, which
+ corresponds to the disappearance of states.
+ If a state disappears at an integer value of 
+\begin_inset Formula $N$
+\end_inset
+
+, if also disappears at all the integers less than 
 \begin_inset Formula $N$
 \end_inset
 
 .
- The first turning point occurs at 
+ For example, the ground state of 
+\begin_inset Formula $M=5$
+\end_inset
+
+ disappears at 
+\begin_inset Formula $N=2,\,1$
+\end_inset
+
+; ground state of 
+\begin_inset Formula $M=7$
+\end_inset
+
+ disappears at 
+\begin_inset Formula $N=3,2,1$
+\end_inset
+
+.
+ It is interesting to note that the the first disappearances of ground states
+ occur at 
 \begin_inset Formula $N=\frac{M-1}{2}$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Itemize
-At higher 
+ This implies to have ground states survive, 
 \begin_inset Formula $N$
 \end_inset
 
-, the ground energies are very flat.
+ must increase linearly as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase.
  At certain value of 
+\begin_inset Formula $1/N$
+\end_inset
+
+, the energy levels begin to drop dramatically.
+ The large 
+\begin_inset Formula $M$
+\end_inset
+
+ is, the earlier (larger 
 \begin_inset Formula $N$
 \end_inset
 
- they begin to drop dramatically.
+) the drop happens.
  For 
 \begin_inset Formula $M=7$
 \end_inset
 
-, this occurs around 
+, it occurs around 
 \begin_inset Formula $N=2$
 \end_inset
 
@@ -5518,15 +5528,6 @@ At higher
 
 , it occurs around 
 \begin_inset Formula $N=3$
-\end_inset
-
-.
- It seems that the ground states begin to drop earlier (at larger 
-\begin_inset Formula $N$
-\end_inset
-
-) for larger 
-\begin_inset Formula $M$
 \end_inset
 
 .
@@ -5542,12 +5543,22 @@ reference "figH=h0M=even"
 
 \end_inset
 
- plots the lowest 5 energy levels for even 
+ plots the lowest five energy levels for even 
 \begin_inset Formula $M$
 \end_inset
 
+ from 
+\begin_inset Formula $4$
+\end_inset
+
+ to 
+\begin_inset Formula $10$
+\end_inset
+
 .
- We can see that, at 
+ Much of the analysis of odd cases applies to even cases except the ground
+ states.
+ At 
 \begin_inset Formula $N=\infty$
 \end_inset
 
@@ -5555,12 +5566,11 @@ reference "figH=h0M=even"
 \begin_inset Formula $M=4,8$
 \end_inset
 
- are degenerate but those of 
+ are degenerate, but for 
 \begin_inset Formula $M=6,10$
 \end_inset
 
- are nondegenerate.
- 
+ they are not degenerate.
 \end_layout
 
 \begin_layout Standard
@@ -5633,7 +5643,7 @@ reference "fig:Top-5-energy-H=H_0"
 \end_inset
 
  from 4 to 7.
- Unlike the lower energy states, the highest energy states do not disappear,
+ Unlike the low energy states, the highest energy states do not disappear,
  even if 
 \begin_inset Formula $N$
 \end_inset
