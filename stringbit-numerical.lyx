@@ -5050,35 +5050,6 @@ key "Sun:2014dga"
 \end_layout
 
 \begin_layout Standard
-As the calculation in large 
-\begin_inset Formula $N$
-\end_inset
-
- limit shows 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
-
-\end_inset
-
-, the ground states of odd 
-\begin_inset Formula $M$
-\end_inset
-
- case are different with those of even 
-\begin_inset Formula $M$
-\end_inset
-
-, where the ground states disappear because of the effect of cyclic permutation
- of trace states.
- Let's first study the case of odd 
-\begin_inset Formula $M$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 Fig.
  
 \begin_inset CommandInset ref
@@ -5649,15 +5620,15 @@ reference "fig:Top-5-energy-H=H_0"
 \end_inset
 
  is less than 1.
- This also happens for 
-\begin_inset Formula $M=8,\,9,\,10,$
+ If we use 
+\begin_inset Formula $-H_{0}$
 \end_inset
 
- and 
-\begin_inset Formula $11$
+ as Hamiltonian, will the ground states survive for smaller 
+\begin_inset Formula $N$
 \end_inset
 
-.
+? We now answer this question in the next subsection.
 \end_layout
 
 \begin_layout Standard
@@ -5714,20 +5685,30 @@ Top 5 energy levels of
 \end_layout
 
 \begin_layout Subsection*
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
+Variations of 
+\begin_inset Formula $H$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-In this subsection, let's see how energy levels change with respect to the
- parameter 
-\begin_inset Formula $\xi$
+In this subsection, we will analyze how the energy levels changes for two
+ variations of the Hamiltonian.
+ The first form of Hamiltonian is 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ and the second one is 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
 \end_inset
 
 .
- Fig.
+ 
+\end_layout
+
+\begin_layout Standard
+Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5746,7 +5727,7 @@ reference "fig:xi=positiveM=3"
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
- with different 
+ with different values of 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -5759,17 +5740,16 @@ reference "fig:xi=negativeM=3"
 
 \end_inset
 
- shows that the highest energy state disappear later (by later we mean larger
- 
+ shows that the highest energy state disappear later at larger 
 \begin_inset Formula $1/N$
 \end_inset
 
-) as 
+ as 
 \begin_inset Formula $\xi$
 \end_inset
 
- become larger.
- The highest energy states disappear at 
+ increase.
+ The highest energy state disappears at 
 \begin_inset Formula $N=2$
 \end_inset
 
@@ -5794,7 +5774,7 @@ reference "fig:xi=negativeM=3"
 \begin_inset Formula $N>1.5$
 \end_inset
 
-, which implies it is alive for all physical cases.
+, which implies it survives for all physical cases.
  Finally, when 
 \begin_inset Formula $\xi=-0.1$
 \end_inset
@@ -5895,7 +5875,7 @@ reference "fig:xi=positiveM=3"
 \begin_inset Formula $\xi=0.01$
 \end_inset
 
-, the ground state disappear at 
+, the ground state disappears at 
 \begin_inset Formula $N=1$
 \end_inset
 
@@ -5907,12 +5887,11 @@ reference "fig:xi=positiveM=3"
 \begin_inset Formula $0.5<1/N<1$
 \end_inset
 
-.
- When 
+; when 
 \begin_inset Formula $\xi=3$
 \end_inset
 
-, the disappearance occurs at 
+, it's at 
 \begin_inset Formula $N=2$
 \end_inset
 
@@ -6191,7 +6170,7 @@ reference "fig:nxi=-2M=odd"
 
 \end_inset
 
- shows that the disappearance point occurs at 
+ shows that the first disappearing ground states locate at 
 \begin_inset Formula $N=M-1$
 \end_inset
 
