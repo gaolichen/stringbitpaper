@@ -1,4 +1,4 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
+﻿#LyX 2.0 created this file. For more info see http://www.lyx.org/
 \lyxformat 413
 \begin_document
 \begin_header
@@ -5088,30 +5088,15 @@ Finite
 \end_layout
 
 \begin_layout Standard
-<<<<<<< HEAD
-In this section, we present the numerical results of energy levels of the
- string-bit system from 
-\begin_inset Formula $M=3$
-\end_inset
-
-=======
 In this section, we perform the numerical analysis of the energy levels
  of our model.
  We will show how energy levels of various Hamiltonians change with respect
->>>>>>> 3618403c0b22b78b2ee778925852e2e16a868c69
  to 
 \begin_inset Formula $N$
 \end_inset
 
-<<<<<<< HEAD
-.
- We will show how the lowest or highest several energy levels of string-bit
- systems change with respect to 
-\begin_inset Formula $1/N$
-=======
  and bit number 
 \begin_inset Formula $M$
->>>>>>> 3618403c0b22b78b2ee778925852e2e16a868c69
 \end_inset
 
 .
@@ -5187,16 +5172,9 @@ key "Sun:2014dga"
 \begin_inset Formula $\xi$
 \end_inset
 
-<<<<<<< HEAD
-, where the ground states disappear because of the effect of cyclic permutation
- of trace states.
- Let's first study the case of odd 
-\begin_inset Formula $M$
-=======
  impact the energy levels.
  Finally, we explore the Hamiltonians of the form 
 \begin_inset Formula $H=-H_{0}+\xi\Delta H$
->>>>>>> 3618403c0b22b78b2ee778925852e2e16a868c69
 \end_inset
 
 .
@@ -5279,11 +5257,7 @@ reference "sec:Method"
 \begin_inset Formula $1/N$
 \end_inset
 
-<<<<<<< HEAD
-, we plot the plots into parts of lower 
-=======
 , we split the plots into lower 
->>>>>>> 3618403c0b22b78b2ee778925852e2e16a868c69
 \begin_inset Formula $1/N$
 \end_inset
 
