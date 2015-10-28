@@ -137,8 +137,14 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-String bit model is one approach to a fundamental formulation of string
- theory.
+String bit model
+\begin_inset CommandInset citation
+LatexCommand cite
+key "arXiv:hep-th/9405069v1"
+
+\end_inset
+
+ is one approach to a fundamental formulation of string theory.
  The main idea of string bit model is to describe string theories of point-like
  entities-string bits, in which string is composite but not the fundamental
  objects.
@@ -306,7 +312,9 @@ As we know for superstring, 8 bosonic coordinate fields
 \end_inset
 
 .
- The first step for this model we study has zero space dimensions 
+ The superstring case, in which s=d=8, is on marginally stable.
+ However the first step for this model we study has zero space dimensions
+ 
 \begin_inset Formula $d=0$
 \end_inset
 
@@ -381,7 +389,14 @@ Also we define a super creation operator as
 \end_layout
 
 \begin_layout Standard
-Consulting , the first quantize Hamiltonian 
+Consulting
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hep-th/9506125"
+
+\end_inset
+
+ , the first quantize Hamiltonian 
 \begin_inset Formula $h$
 \end_inset
 
