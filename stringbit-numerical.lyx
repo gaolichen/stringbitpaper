@@ -137,17 +137,16 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-String bit model
+String bit models
 \begin_inset CommandInset citation
 LatexCommand cite
 key "arXiv:hep-th/9405069v1"
 
 \end_inset
 
- is one approach to a fundamental formulation of string theory.
- The main idea of string bit model is to describe string theories of point-like
- entities-string bits, in which string is composite but not the fundamental
- objects.
+ provide one approach to a fundamental formulation of string theory.
+ The main idea of string bit model is to describe string as a composite
+ theories of point-like entities-string bits so that string is not fundamental.
  
 \end_layout
 
@@ -194,10 +193,26 @@ For light-cone string,
 \end_inset
 
  and 
-\begin_inset Formula ${\cal P}=1$
+\begin_inset Formula ${\cal P^{\text{+}}}=1$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Under the description of lightcone coordinate, the single string's Hamiltonian
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P^{-}=\frac{1}{2}\int_{0}^{P^{+}}d\sigma[p^{2}+T_{0}^{2}x^{'2}]
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -221,7 +236,16 @@ P^{+}=\int{\rm d}\sigma{\cal P}^{+}=\int{\rm d}\sigma
 \end_layout
 
 \begin_layout Standard
-Coming back to the discrete string bits, the mass 
+Then next step is to the discrete string bits.
+ Now we change the integral to sum
+\begin_inset Formula 
+\[
+\int_{0}^{P^{+}}d\sigma\rightarrow m\sum_{i=1}^{M}
+\]
+
+\end_inset
+
+the mass 
 \begin_inset Formula $m$
 \end_inset
 
@@ -230,8 +254,15 @@ Coming back to the discrete string bits, the mass
 \begin_inset Formula $M$
 \end_inset
 
+ as 
+\begin_inset Formula $P^{+}=mM$
+\end_inset
+
 .
- As 
+\end_layout
+
+\begin_layout Standard
+As 
 \begin_inset Formula $M\rightarrow\infty$
 \end_inset
 
@@ -243,7 +274,7 @@ Coming back to the discrete string bits, the mass
 \end_layout
 
 \begin_layout Standard
-Thus the states of a single string described by the 
+Thus the states of a single string bit chain described by the 
 \begin_inset Formula $M$
 \end_inset
 
@@ -313,7 +344,11 @@ As we know for superstring, 8 bosonic coordinate fields
 
 .
  The superstring case, in which s=d=8, is on marginally stable.
- However the first step for this model we study has zero space dimensions
+ 
+\end_layout
+
+\begin_layout Standard
+However, the first step for this model we study here has zero space dimensions
  
 \begin_inset Formula $d=0$
 \end_inset
@@ -323,19 +358,19 @@ As we know for superstring, 8 bosonic coordinate fields
 \end_inset
 
 .
- By analysis of the eigenstates from the low 
-\begin_inset Formula $M$
-\end_inset
-
- data, we get physical features of this model.
+ 
 \end_layout
 
 \begin_layout Standard
-In this model, we have 
+In stead of second-quantizing 
+\begin_inset Formula $\psi_{M}$
+\end_inset
+
+, we have 
 \begin_inset Formula $N^{2}$
 \end_inset
 
- bosonic create 
+ bosonic creator 
 \begin_inset Formula ${\bar{a}}_{\alpha}^{\beta}\equiv(a_{\beta}^{\alpha})^{\dagger}$
 \end_inset
 
@@ -343,12 +378,21 @@ In this model, we have
 \begin_inset Formula $N^{2}$
 \end_inset
 
- fermionic which obey 
+ fermionic annhilator which obey 
 \begin_inset Formula ${\bar{b}}_{\alpha}^{\beta}\equiv(b_{\beta}^{\alpha})^{\dagger}$
 \end_inset
 
 .
- these operators satisfy the (anti-)commutation relations: 
+ Since we are at 
+\begin_inset Formula $d=0$
+\end_inset
+
+ spacetime so these operators are not 
+\begin_inset Formula $x$
+\end_inset
+
+ dependent.
+ They satisfy the (anti-)commutation relations: 
 \begin_inset Formula 
 \[
 [a_{\alpha}^{\beta},{\bar{a}}_{\gamma}^{\delta}]=\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta},\qquad\{b_{\alpha}^{\beta},{\bar{b}}_{\gamma}^{\delta}\}=\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta}
@@ -360,92 +404,12 @@ In this model, we have
 \end_layout
 
 \begin_layout Standard
-Also we define a super creation operator as 
-\begin_inset Formula $\psi(\theta)={\bar{a}}+{\bar{b}}\theta$
-\end_inset
-
- From where we can get 
-\begin_inset Formula 
-\[
-{\bar{b}}=-\frac{d}{d\theta}\psi,\qquad{\bar{a}}=\left(1-\theta\frac{d}{d\theta}\right)\psi
-\]
-
-\end_inset
-
- here 
-\begin_inset Formula $\theta$
-\end_inset
-
- is a Grassmann anti-commuting number.
- Then the single trace state is represented by 
-\begin_inset Formula 
-\[
-\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\ \tr\ \left[\psi(\theta_{1})\psi(\theta_{2})\cdots\psi(\theta_{M})\right]\ket{0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Consulting
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hep-th/9506125"
-
-\end_inset
-
- , the first quantize Hamiltonian 
-\begin_inset Formula $h$
-\end_inset
-
- is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-h & = & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}({\tilde{S}}_{k+1}+{\tilde{S}}_{k-1}-2{\tilde{S}}_{k})\right]\\
- & \text{=} & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}{\tilde{S}}_{k+1}-S_{k+1}{\tilde{S}}_{k}+2iS_{k}{\tilde{S}}_{k}\right]\\
- & \text{}
-\end{eqnarray*}
-
-\end_inset
-
- represent them in terms of Grassmann variables 
-\begin_inset Formula 
-\[
-S_{k}=\theta_{k}+\frac{d}{d\theta_{k}},\qquad{\tilde{S}}_{k}=i\left(\theta_{k}-\frac{d}{d\theta_{k}}\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and integrate them by part we can get:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\hat{h}=\sum_{k=1}^{M}\left[-2i\theta_{k}\theta_{k+1}-2i\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}-2\theta_{k}\frac{d}{d\theta_{k+1}}-2\theta_{k+1}\frac{d}{d\theta_{k}}-2+4\theta_{k}\frac{d}{d\theta_{k}}\right]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 At large 
 \begin_inset Formula $N$
 \end_inset
 
  limit, we would like the bit number to be conserved, also that the dynamic
- reduces to the superstring bit model above.
+ reduces to the superstring bit model.
  In order to achieve that, our operators' structure should be two annihilation
  operators followed by two creation operators.
  The details will be shown later.
@@ -539,7 +503,7 @@ In our previous paper we've already explored the situation at low bits number
 
 .
  Meanwhile, since there's an ambiguity for the Hamiltonian we will also
- try to understand the string chains behavior under different Hamiltonians
+ try to understand the string chains' behavior under different Hamiltonians
  .
 \end_layout
 
@@ -895,8 +859,189 @@ reference "eq:Hamiltonian-4-1"
  in this paper.
 \end_layout
 
+\begin_layout Standard
+The hamiltonian we disscussed above, even though it has variations, will
+ become 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ However, we can also explore how the Hamiltonian would change if we only
+ apply the constraint that 
+\begin_inset Formula $H$
+\end_inset
+
+ is supersymmetric.
+ 
+\end_layout
+
+\begin_layout Standard
+We apply different parameters in front of each candidate of the Hamiltonian,
+ thus the Hamiltonian can be expressed as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H=\varepsilon_{1}\tr\ {\bar{a}}^{2}a^{2}+\varepsilon_{2\,}\tr\ {\bar{b}}^{2}b^{2}+(\varepsilon_{3}+i\varepsilon_{4})\tr\ {\bar{b}}^{2}a^{2}(\varepsilon_{3}-\,\, i\varepsilon_{4})tr\ {\bar{a}}^{2}b^{2}+\varepsilon_{5}\tr\ {\bar{a}}{\bar{b}}ba+\varepsilon_{6}\tr\ {\bar{b}}{\bar{a}}ab+(\varepsilon_{7}+i\varepsilon_{8})\tr\ {\bar{a}}{\bar{b}}ab+(\varepsilon_{7}-\, i\varepsilon_{8})\tr\ {\bar{b}}{\bar{a}}ba
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we add the supersymmetry constraint to it, make it commute with 
+\begin_inset Formula $Q$
+\end_inset
+
+, we get the relationship between these parameters.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+So the Hamiltionian with only the supersymmetric constraint is written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & H_{0}+\varepsilon(\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab+{\bar{a}}^{2}a^{2}+{\bar{b}}^{2}b^{2})+\varepsilon^{'}(\tr\ {\bar{b}}^{2}a^{2}+\tr\ {\bar{a}}^{2}b^{2}+i\tr\ {\bar{a}}{\bar{b}}ab-i\tr\ {\bar{b}}{\bar{a}}ba)\\
+ & + & \varepsilon^{''}(i\tr\ {\bar{b}}^{2}a^{2}-i\tr\ {\bar{a}}^{2}b^{2}-\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which shows that there's three free parameters here in which the first parameter
+ is the same with the 
+\begin_inset Formula $H^{'}$
+\end_inset
+
+above.
+\end_layout
+
 \begin_layout Section*
-Energy Levels
+Energy Spectrum at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The case when 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+ is solved in
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hep-th/9506125"
+
+\end_inset
+
+.
+ Now we use its solution as a guideline for our case in which 
+\begin_inset Formula $N$
+\end_inset
+
+ is infinity and the bit number 
+\begin_inset Formula $M$
+\end_inset
+
+ is gradually approaching infinity.
+ 
+\end_layout
+
+\begin_layout Standard
+we define a super creation operator as 
+\begin_inset Formula $\psi(\theta)={\bar{a}}+{\bar{b}}\theta$
+\end_inset
+
+ From where we can get 
+\begin_inset Formula 
+\[
+{\bar{b}}=-\frac{d}{d\theta}\psi,\qquad{\bar{a}}=\left(1-\theta\frac{d}{d\theta}\right)\psi
+\]
+
+\end_inset
+
+ here 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a Grassmann anti-commuting number.
+ Then the single trace state is represented by 
+\begin_inset Formula 
+\[
+\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\ \tr\ \left[\psi(\theta_{1})\psi(\theta_{2})\cdots\psi(\theta_{M})\right]\ket{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consulting
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hep-th/9506125"
+
+\end_inset
+
+ , the first quantize Hamiltonian 
+\begin_inset Formula $h$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+h & = & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}({\tilde{S}}_{k+1}+{\tilde{S}}_{k-1}-2{\tilde{S}}_{k})\right]\\
+ & \text{=} & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}{\tilde{S}}_{k+1}-S_{k+1}{\tilde{S}}_{k}+2iS_{k}{\tilde{S}}_{k}\right]\\
+ & \text{}
+\end{eqnarray*}
+
+\end_inset
+
+ represent them in terms of Grassmann variables 
+\begin_inset Formula 
+\[
+S_{k}=\theta_{k}+\frac{d}{d\theta_{k}},\qquad{\tilde{S}}_{k}=i\left(\theta_{k}-\frac{d}{d\theta_{k}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and integrate them by part we can get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{h}=\sum_{k=1}^{M}\left[-2i\theta_{k}\theta_{k+1}-2i\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}-2\theta_{k}\frac{d}{d\theta_{k+1}}-2\theta_{k+1}\frac{d}{d\theta_{k}}-2+4\theta_{k}\frac{d}{d\theta_{k}}\right]
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -915,8 +1060,8 @@ For continuous strings, which is when
 
  we can get the spectrum in which all the excitation energy level would
  be degeneracy.
- And what's more, the higher the energy level is, the more degeneracy there
- is.
+ And what's more, the higher the energy level is, the more degeneracy energy
+ levels there are.
 \end_layout
 
 \begin_layout Standard
@@ -936,8 +1081,7 @@ However in our case what we're interested in is for finite
 \begin_inset Formula $M$
 \end_inset
 
-, how this feature of the spectrum would be preserved as the number of bits
- changes.
+, how this feature of the spectrum would be seen as the number of bits changes.
  What we can expect is, as 
 \begin_inset Formula $M$
 \end_inset
