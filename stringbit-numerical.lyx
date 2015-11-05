@@ -137,21 +137,23 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-String bit models
+There're different approaches to a fundamental formulation of string theory,
+ String bit models
 \begin_inset CommandInset citation
 LatexCommand cite
 key "arXiv:hep-th/9405069v1"
 
 \end_inset
 
- provide one approach to a fundamental formulation of string theory.
+ provide one of them.
  The main idea of string bit model is to describe string as a composite
- theories of point-like entities-string bits so that string is not fundamental.
+ theories of point-like entities-string bits so that the string chains as
+ a one dimensional objects is not fundamental any more.
  
 \end_layout
 
 \begin_layout Standard
-We describe the string bits by lightcone coordinates,
+For convinience, we would describe the string bits by lightcone coordinates,
 \begin_inset Formula 
 \[
 x^{\pm}=(x^{0}\pm x^{1})/\sqrt{2}{\rm \qquad x}=(x^{2},\cdots,x^{d})
@@ -286,7 +288,7 @@ Thus the states of a single string bit chain described by the
 
 \end_inset
 
- and the Hamiltonian: 
+ and the Hamiltonian can be expressed as: 
 \begin_inset Formula 
 \[
 P^{-}=\frac{1}{\epsilon}\sum_{i}^{M}\frac{1}{2T_{0}}(-\nabla_{i}^{2}+T_{0}^{2}(x_{i+1}-x_{i})^{2}).
@@ -329,7 +331,7 @@ As we know for superstring, 8 bosonic coordinate fields
 \begin_inset Formula $\theta_{L,R}^{q}$
 \end_inset
 
- is required, however in this project, we would like to study more general
+ is required, however in this project, we would like to study the more general
  case in which there're 
 \begin_inset Formula $d$
 \end_inset
@@ -366,7 +368,7 @@ In stead of second-quantizing
 \begin_inset Formula $\psi_{M}$
 \end_inset
 
-, we have 
+ like string field theory, we introduce 
 \begin_inset Formula $N^{2}$
 \end_inset
 
@@ -400,7 +402,7 @@ In stead of second-quantizing
 
 \end_inset
 
- all others vanishing.
+ all others would vanish.
 \end_layout
 
 \begin_layout Standard
@@ -413,7 +415,7 @@ At large
  In order to achieve that, our operators' structure should be two annihilation
  operators followed by two creation operators.
  The details will be shown later.
- Thus we have all the candidate terms to construct the Hamiltonian.
+ Thus we have all the candidate trace operators to construct the Hamiltonian.
  
 \begin_inset Formula 
 \[
@@ -449,7 +451,16 @@ As a result, this kind of operators preserves the feature that only the
 \begin_inset Formula $N$
 \end_inset
 
-limit.
+ limit.
+ The 
+\begin_inset Formula $1/N$
+\end_inset
+
+ term, on the other hand, will produce two seperated strings, so the 
+\begin_inset Formula $1/N$
+\end_inset
+
+ could be seen as the string coupling constant.
 \end_layout
 
 \begin_layout Standard
@@ -840,9 +851,8 @@ reference "app:HPrime-Equals-DeltaH"
 \end_layout
 
 \begin_layout Standard
-We are not sure if there exist other well-defined Hamiltonians.
- For the time being, we leave be question for further research and only
- study Hamiltonians in the form of 
+For the time being, we leave be question for further research and only study
+ Hamiltonians in the form of 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:Hamiltonian-3-1"
@@ -861,7 +871,7 @@ reference "eq:Hamiltonian-4-1"
 
 \begin_layout Standard
 The hamiltonian we disscussed above, even though it has variations, will
- become 
+ all turn out to be 
 \begin_inset Formula $H_{0}$
 \end_inset
 
@@ -870,8 +880,10 @@ The hamiltonian we disscussed above, even though it has variations, will
 \end_inset
 
 .
- However, we can also explore how the Hamiltonian would change if we only
- apply the constraint that 
+ However, we are also curious about whether there;s other well-defined Hamiltion
+ian.
+ So we also studied how the Hamiltonian would change if we only apply the
+ constraint that 
 \begin_inset Formula $H$
 \end_inset
 
@@ -881,7 +893,7 @@ The hamiltonian we disscussed above, even though it has variations, will
 
 \begin_layout Standard
 We apply different parameters in front of each candidate of the Hamiltonian,
- thus the Hamiltonian can be expressed as:
+ thus the very general form of the Hamiltonian can be expressed as:
 \end_layout
 
 \begin_layout Standard
@@ -897,17 +909,32 @@ H=\varepsilon_{1}\tr\ {\bar{a}}^{2}a^{2}+\varepsilon_{2\,}\tr\ {\bar{b}}^{2}b^{2
 
 \begin_layout Standard
 Now we add the supersymmetry constraint to it, make it commute with 
-\begin_inset Formula $Q$
+\begin_inset Formula $Q=\tr\left(\bar{a}b+\bar{b}a\right).$
 \end_inset
 
 , we get the relationship between these parameters.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{1}+i(\varepsilon_{3}-i\varepsilon_{4})-\varepsilon_{6}-(\varepsilon_{7}+i\varepsilon_{8}) & = & 0\\
+\varepsilon_{1}-i(\varepsilon_{3}-i\varepsilon_{4})-\varepsilon_{5}-(\varepsilon_{7}-i\varepsilon_{8}) & = & 0\\
+-\varepsilon_{2}+i(\varepsilon_{3}+i\varepsilon_{4})+\varepsilon_{6}-(\varepsilon_{7}+i\varepsilon_{8}) & = & 0\\
+\varepsilon_{2}+i(\varepsilon_{3}+i\varepsilon_{4})-\varepsilon_{5}+(\varepsilon_{7}-i\varepsilon_{8}) & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $ $
 \end_inset
 
-So the Hamiltionian with only the supersymmetric constraint is written as:
+Eliminate the total scaling parameter, the Hamiltionian with only the supersymme
+tric constraint could be written as:
 \end_layout
 
 \begin_layout Standard
@@ -923,12 +950,13 @@ H & = & H_{0}+\varepsilon(\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab+{\
 \end_layout
 
 \begin_layout Standard
-Which shows that there's three free parameters here in which the first parameter
- is the same with the 
+Which shows that there's three free parameters here, in which the first
+ parameter is the same with the 
 \begin_inset Formula $H^{'}$
 \end_inset
 
-above.
+ above.
+ So there's two new parameters for the general supersymmetric Hamiltionian.
 \end_layout
 
 \begin_layout Section*
@@ -1049,7 +1077,7 @@ For continuous strings, which is when
 \begin_inset Formula $M=\infty$
 \end_inset
 
-, their excitation energy would scales like 
+, their excitation energy levels would scales like 
 \begin_inset Formula $1/M=m/P^{+}$
 \end_inset
 
@@ -1277,15 +1305,19 @@ Above is theoretical analysis at the limit
 \end_inset
 
 .
- What we concerned is how these properties will change at finite 
-\begin_inset Formula $N$
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
-The following are the figures 
+The following are the figures of energy specturm at
+\begin_inset Formula $N=\infty$
+\end_inset
+
+ for different 
+\begin_inset Formula $M$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1296,6 +1328,7 @@ All of the figures contain the energy levels of single trace states(red
 \end_inset
 
 (blue dash line).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1304,8 +1337,18 @@ ing to the
 \begin_inset Formula $M$
 \end_inset
 
- term of the ground state energy equation, and it is the same for both the
- single trace states and triple trace states.
+ term of the ground state energy equation, and the 
+\begin_inset Formula $y$
+\end_inset
+
+ value is the difference of the energy states times the number of bits 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ and it is the same for both the single trace states and triple trace states.
+ Acoording to the anlysis above, for continous string chains, the figures
+ should have the same energy gaps for single trace states.
 \end_layout
 
 \begin_layout Standard
@@ -1313,13 +1356,15 @@ As we can see, at
 \begin_inset Formula $M=13$
 \end_inset
 
- which is the lowest bit number, the degeneracy start to appear but it is
- broken at higher energy levels, they are spread out.
+ which is the lowest bit number, the degeneracy has the sign to appear,
+ but it is not well formed.
+ especially for high energy levels, they are spread out.
  However at 
 \begin_inset Formula $M=101$
 \end_inset
 
-, we can see the degeneracy still reserves at higher energy levels..
+, we can see the degeneracy not only exist at low energy levels but also
+ remains stable at higher energy levels.
 \end_layout
 
 \begin_layout Standard
@@ -1372,22 +1417,8 @@ The energy levels from both single trace states(red lines) and triple trace
 
 .
  The degeneracy of single trace states' energy levels start to appear.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-As we can see from Fig.1, at the lower part of the figure, we could start
- to see the feature of the degeneracy for single trace states.
+ at the lower part of the figure, we could start to see the feature of the
+ degeneracy for single trace states.
  There's only a few multi-trace energy states.
  The blue dash line is the threshold for multi-trace states energy when
  
@@ -1397,6 +1428,16 @@ As we can see from Fig.1, at the lower part of the figure, we could start
 .
  Here we can see the lowest lines of triple trace states is very close to
  it.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1436,25 +1477,21 @@ The energy levels from both single trace states(red lines) and triple trace
 
 .
  The degeneracy of single trace states' energy levels is maintained.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-As we can see from Fig.2, at the lower area of energy, the feature of degeneracy
- is getting a little bit more obvious.
+ At the lower area of energy, the feature of degeneracy is getting a little
+ bit more obvious.
  While there's still big gaps between the triple trace states.
  And still the lowest lines of triple trace states is very close to the
  threshold for multi-trace states.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1496,22 +1533,8 @@ The energy levels from both single trace states and triple trace states
  The degeneracy of single trace states' energy levels is maintained.
  What's more, the energy levels from the triple trace state(the yellow lines)
  start spread out the region.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-From Fig.3 we can see the degeneracy of single trace states' energy level
- is getting more clear as 
+ we can see the degeneracy of single trace states' energy level is getting
+ more clear as 
 \begin_inset Formula $M$
 \end_inset
 
@@ -1519,6 +1542,16 @@ From Fig.3 we can see the degeneracy of single trace states' energy level
  Meanwhile the higher part of the triple trace states already formed the
  continuous background.
  and the lowest state of it is also getting closer to the blue dash line.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1560,23 +1593,20 @@ The energy levels from both single trace states and triple trace states
  The degeneracy of single trace states' energy levels is maintained.
  What's more, the energy levels from the triple trace state(the yellow lines)
  start spread out the region.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Fig.4 show that at this number of bits, the continuous "yellow" background
+ This show that at this number of bits, the continuous "yellow" background
  is basically formed, while the lowest energy state of multi-trace states
  is nearly coincided with the supposed boundary.
  More single trace states is degenerated.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1590,10 +1620,58 @@ For the analysis at
 \end_inset
 
  getting larger.
- The characters of the continuous string (energy degeneracy of single trace
- states, boundary of multi-trace states) start to appear at pretty low bit
- number, and get great maintained when it is larger.
  
+\end_layout
+
+\begin_layout Standard
+For large 
+\begin_inset Formula $M$
+\end_inset
+
+, the 
+\begin_inset Formula $E_{G}$
+\end_inset
+
+ is expected to have the asymptotic form
+\begin_inset CommandInset citation
+LatexCommand cite
+key "arXiv:hep-th/9607204"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{G}(M)\sim\alpha M+\frac{\gamma}{M}+O(\frac{1}{M^{3}})
+\]
+
+\end_inset
+
+ And the excitation energy states scales like 
+\begin_inset Formula $1/M$
+\end_inset
+
+.
+ From the figures aboe, this characters of the continuous string chains
+ start to appear at pretty low bit number 
+\begin_inset Formula $(M=13)$
+\end_inset
+
+, and become more and more obvous as 
+\begin_inset Formula $M\rightarrow\infty$
+\end_inset
+
+ .
+ Meanwhile, the other feature of continous string chain, for instans the
+ energy degeneracy of single trace states, boundary of multi-trace states,
+ also get more and more clear as 
+\begin_inset Formula $M$
+\end_inset
+
+ getting larger.
 \end_layout
 
 \begin_layout Section*
