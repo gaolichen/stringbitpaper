@@ -132,12 +132,12 @@ This is the abstract.
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Introduction
 \end_layout
 
 \begin_layout Standard
-There're different approaches to a fundamental formulation of string theory,
+there are different approaches to a fundamental formulation of string theory,
  String bit models
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -153,7 +153,9 @@ key "arXiv:hep-th/9405069v1"
 \end_layout
 
 \begin_layout Standard
-For convinience, we would describe the string bits by lightcone coordinates,
+The string bit model is motivated by the superstring description in lightcone
+ gauge.
+ First of all we introduce the lightcone coordinate,
 \begin_inset Formula 
 \[
 x^{\pm}=(x^{0}\pm x^{1})/\sqrt{2}{\rm \qquad x}=(x^{2},\cdots,x^{d})
@@ -219,10 +221,11 @@ P^{-}=\frac{1}{2}\int_{0}^{P^{+}}d\sigma[p^{2}+T_{0}^{2}x^{'2}]
 
 \begin_layout Standard
 By setting the momentum density 
-\begin_inset Formula ${\cal P}$
+\begin_inset Formula ${\cal P^{\text{+}}}$
 \end_inset
 
- to be 1, the total momentum 
+.
+ wto be 1, the total momentum 
 \begin_inset Formula $P^{+}$
 \end_inset
 
@@ -303,7 +306,7 @@ P^{-}=\frac{1}{\epsilon}\sum_{i}^{M}\frac{1}{2T_{0}}(-\nabla_{i}^{2}+T_{0}^{2}(x
 The ground state energy of a bosonic closed string bit chain is: 
 \begin_inset Formula 
 \[
-E_{G}=\frac{1}{2}\sum_{n}\omega_{n}=\frac{dT_{0}}{m}\sum_{n=1}^{M-1}\sin\frac{n\pi}{M}=\frac{dT_{0}}{m}\cot\frac{\pi}{2M}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}(M^{-3}))
+E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}(M^{-3}))
 \]
 
 \end_inset
@@ -312,8 +315,12 @@ E_{G}=\frac{1}{2}\sum_{n}\omega_{n}=\frac{dT_{0}}{m}\sum_{n=1}^{M-1}\sin\frac{n\
 \end_layout
 
 \begin_layout Standard
-Because of the second term, a long chain of bosonic bits is unstable, it
- will decay into two small chains.
+Because of the second term which is propotional to 
+\begin_inset Formula $-1/M$
+\end_inset
+
+, a long chain of bosonic bits is unstable, it will decay into two small
+ chains.
  This instability is also a motivation for introducing supersymmetry.
  By adding on the fermionic degrees of freedom, the negative 
 \begin_inset Formula $1/M$
@@ -332,7 +339,7 @@ As we know for superstring, 8 bosonic coordinate fields
 \end_inset
 
  is required, however in this project, we would like to study the more general
- case in which there're 
+ case in which there are 
 \begin_inset Formula $d$
 \end_inset
 
@@ -372,7 +379,7 @@ In stead of second-quantizing
 \begin_inset Formula $N^{2}$
 \end_inset
 
- bosonic creator 
+ bosonic operators 
 \begin_inset Formula ${\bar{a}}_{\alpha}^{\beta}\equiv(a_{\beta}^{\alpha})^{\dagger}$
 \end_inset
 
@@ -380,7 +387,7 @@ In stead of second-quantizing
 \begin_inset Formula $N^{2}$
 \end_inset
 
- fermionic annhilator which obey 
+ fermionic operators which obey 
 \begin_inset Formula ${\bar{b}}_{\alpha}^{\beta}\equiv(b_{\beta}^{\alpha})^{\dagger}$
 \end_inset
 
@@ -429,20 +436,7 @@ with coefficients scaling as
 \end_inset
 
 .
- Here's an example of applying one of the terms to a single trace state.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\frac{1}{N}\tr\ {\bar{a}}^{2}a^{2}\ket{\theta_{1}\theta_{2}\cdots\theta_{M}} & = & \frac{1}{N}\sum_{k=1}^{M}\tr\ {\bar{a}}^{2}a(\bar{a}+\bar{b}\theta_{k+1})\cdots(\bar{a}+\bar{b}\theta_{M})\cdots(\bar{a}+\bar{b}\theta_{k-1})\\
- & = & \sum_{k=1}^{M}\left(1-\theta_{k}\frac{d}{d\theta_{k}}\right)\left(1-\theta_{k+1}\frac{d}{d\theta_{k+1}}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}+{\cal O}(N^{-1})
-\end{eqnarray*}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -464,33 +458,8 @@ As a result, this kind of operators preserves the feature that only the
 \end_layout
 
 \begin_layout Standard
-However, in the superstring model, the Hamiltonian has six independent terms.
- while the number of our candidate terms is 8.
- This indicate that we have 2 extra freedom.
- By applying each candidate on the single trace state and reconstructing
- the hamiltonian, we got,
-\begin_inset Formula 
-\begin{eqnarray*}
-H & = & \frac{2}{N}\tr\left[i{\bar{a}}^{2}b^{2}-i{\bar{b}}^{2}a^{2}+{\bar{a}}{\bar{b}}ab+{\bar{b}}{\bar{a}}ba+{\bar{a}}^{2}a^{2}-{\bar{b}}^{2}b^{2}\right]\\
- &  & +\frac{1}{N}\tr\left[2\i_{1}{\bar{a}}{\bar{b}}ba+2\xi_{2}{\bar{b}}{\bar{a}}ab+(\xi_{1}+\xi_{2})({\bar{a}}^{2}a^{2}+{\bar{b}}^{2}b^{2}-M)\right]
-\end{eqnarray*}
-
-\end_inset
-
-here 
-\begin_inset Formula $\xi_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $\xi_{2}$
-\end_inset
-
- are random numbers.
- In our previous study, we pick 
-\begin_inset Formula $\xi_{2}=-\xi_{1}=1$
-\end_inset
-
-, so the Hamiltonian is 
+The particular Hamiltonian we've chosen in our previous paper and would
+ be futher studied in this parper is 
 \begin_inset Formula 
 \begin{equation}
 H=\frac{2}{N}\tr\left[({\bar{a}}^{2}-i{\bar{b}}^{2})a^{2}-({\bar{b}}^{2}-i{\bar{a}}^{2})b^{2}+({\bar{a}}{\bar{b}}+{\bar{b}}{\bar{a}})ba+({\bar{a}}{\bar{b}}-{\bar{b}}{\bar{a}})ab\right]\label{bitham}
@@ -502,8 +471,9 @@ H=\frac{2}{N}\tr\left[({\bar{a}}^{2}-i{\bar{b}}^{2})a^{2}-({\bar{b}}^{2}-i{\bar{
 \end_layout
 
 \begin_layout Standard
-In our previous paper we've already explored the situation at low bits number
- 
+This Hamiltonian reconstructed the superstring case.
+ In our previous paper we've already explored the situation at low bits
+ number 
 \begin_inset Formula $M=3$
 \end_inset
 
@@ -518,7 +488,7 @@ In our previous paper we've already explored the situation at low bits number
  .
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Section
 Supersymmetry
 \end_layout
 
@@ -528,15 +498,30 @@ try property to be studied in this paper.
 \end_layout
 
 \begin_layout Standard
-As described in 
+In our previous paper
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sun:2014dga"
 
 \end_inset
 
- , there's a ambiguity of the hamiltonian.
- A possible form of Hamiltonian reads 
+ , we pick the Fock space Hamiltion whose dynamic will reduce to te supertring
+ bit model in large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit.
+ The detail will be shown in Part.
+ 3.
+ However, if this is the only requirement, then there would be six terms
+ in our hamiltonian while we have six candidate.
+ This means there is a ambiguity of the hamiltonian: we would have two free
+ parameters.
+ 
+\end_layout
+
+\begin_layout Standard
+A possible form of Hamiltonian reads 
 \begin_inset Formula 
 \begin{equation}
 H=H_{0}^{\prime}+\Delta H^{\prime},\label{eq:Hamiltonian-1-1}
@@ -625,7 +610,11 @@ key "Sun:2014dga"
 \end_inset
 
 .
- The parameters 
+ 
+\end_layout
+
+\begin_layout Standard
+Now we require that the parameters 
 \begin_inset Formula $\xi_{1}$
 \end_inset
 
@@ -638,7 +627,7 @@ key "Sun:2014dga"
  
 \begin_inset Formula 
 \[
-Q=\tr\left(\bar{a}b+\bar{b}a\right).
+Q=\tr\left(\bar{a}b*e^{i\pi/4}+\bar{b}a*e^{-i\pi/4}\right).
 \]
 
 \end_inset
@@ -684,6 +673,15 @@ H_{0} & = & \frac{2}{N}\mathrm{Tr}\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+So the supersymmetric constraint reduce the number of free parameter to
+ 1.
+\end_layout
+
+\begin_layout Standard
 Again, 
 \begin_inset Formula $H_{0}$
 \end_inset
@@ -879,11 +877,11 @@ The hamiltonian we disscussed above, even though it has variations, will
 \begin_inset Formula $N=\infty$
 \end_inset
 
-.
+, which reduce to the super string bit model dynamic.
  However, we are also curious about whether there;s other well-defined Hamiltion
 ian.
- So we also studied how the Hamiltonian would change if we only apply the
- constraint that 
+ So we also studied the possibilities if we only apply the constraint that
+ 
 \begin_inset Formula $H$
 \end_inset
 
@@ -898,9 +896,10 @@ We apply different parameters in front of each candidate of the Hamiltonian,
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-H=\varepsilon_{1}\tr\ {\bar{a}}^{2}a^{2}+\varepsilon_{2\,}\tr\ {\bar{b}}^{2}b^{2}+(\varepsilon_{3}+i\varepsilon_{4})\tr\ {\bar{b}}^{2}a^{2}(\varepsilon_{3}-\,\, i\varepsilon_{4})tr\ {\bar{a}}^{2}b^{2}+\varepsilon_{5}\tr\ {\bar{a}}{\bar{b}}ba+\varepsilon_{6}\tr\ {\bar{b}}{\bar{a}}ab+(\varepsilon_{7}+i\varepsilon_{8})\tr\ {\bar{a}}{\bar{b}}ab+(\varepsilon_{7}-\, i\varepsilon_{8})\tr\ {\bar{b}}{\bar{a}}ba
-\]
+\begin{eqnarray*}
+H & = & \varepsilon_{1}\tr\ {\bar{a}}^{2}a^{2}+\varepsilon_{2\,}\tr\ {\bar{b}}^{2}b^{2}+(\varepsilon_{3}+i\varepsilon_{4})\tr\ {\bar{b}}^{2}a^{2}+(\varepsilon_{3}-\,\, i\varepsilon_{4})tr\ {\bar{a}}^{2}b^{2}\\
+ & + & \varepsilon_{5}\tr\ {\bar{a}}{\bar{b}}ba+\varepsilon_{6}\tr\ {\bar{b}}{\bar{a}}ab+(\varepsilon_{7}+i\varepsilon_{8})\tr\ {\bar{a}}{\bar{b}}ab+(\varepsilon_{7}-\, i\varepsilon_{8})\tr\ {\bar{b}}{\bar{a}}ba
+\end{eqnarray*}
 
 \end_inset
 
@@ -951,15 +950,19 @@ H & = & H_{0}+\varepsilon(\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab+{\
 
 \begin_layout Standard
 Which shows that there's three free parameters here, in which the first
- parameter is the same with the 
-\begin_inset Formula $H^{'}$
+ parameter controls the same with the 
+\begin_inset Formula $\Delta H$
 \end_inset
 
- above.
+ above except the counting operator 
+\begin_inset Formula $M$
+\end_inset
+
+.
  So there's two new parameters for the general supersymmetric Hamiltionian.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Energy Spectrum at 
 \begin_inset Formula $N=\infty$
 \end_inset
@@ -1073,6 +1076,29 @@ and integrate them by part we can get:
 \end_layout
 
 \begin_layout Standard
+Here's an example of applying one of the candidate terms to a single trace
+ state.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{N}\tr\ {\bar{a}}^{2}a^{2}\ket{\theta_{1}\theta_{2}\cdots\theta_{M}} & = & \frac{1}{N}\sum_{k=1}^{M}\tr\ {\bar{a}}^{2}a(\bar{a}+\bar{b}\theta_{k+1})\cdots(\bar{a}+\bar{b}\theta_{M})\cdots(\bar{a}+\bar{b}\theta_{k-1})\\
+ & = & \sum_{k=1}^{M}\left(1-\theta_{k}\frac{d}{d\theta_{k}}\right)\left(1-\theta_{k+1}\frac{d}{d\theta_{k+1}}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}+{\cal O}(N^{-1})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By applying each candidate on the single trace state, we could reconstruct
+ the superstring hamiltonian.
+\end_layout
+
+\begin_layout Standard
 For continuous strings, which is when 
 \begin_inset Formula $M=\infty$
 \end_inset
@@ -1096,7 +1122,7 @@ For continuous strings, which is when
 For a bosonic closed string bit chain, its ground state energy is:
 \begin_inset Formula 
 \[
-E_{G}=\frac{1}{2}\sum_{n}\omega_{n}=\frac{dT_{0}}{m}\sum_{n=1}^{M-1}\sin\frac{n\pi}{M}=\frac{dT_{0}}{m}\cot\frac{\pi}{2M}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+O(M^{-3})
+E_{G}=\frac{1}{2}\sum_{n}\omega_{n}=\frac{dT_{0}}{m}\cot\frac{\pi}{2M}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+O(M^{-3})
 \]
 
 \end_inset
@@ -1374,7 +1400,7 @@ Except for the energy levels generated by the single trace states, we also
 \begin_inset Formula $M$
 \end_inset
 
- is not big enough, there're obvious gaps between energy levels of multiple
+ is not big enough, there are obvious gaps between energy levels of multiple
  traces.
  While when it is getting larger, they would gradually form a continuous
  background.
@@ -1674,7 +1700,7 @@ E_{G}(M)\sim\alpha M+\frac{\gamma}{M}+O(\frac{1}{M^{3}})
  getting larger.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Trace States
 \end_layout
 
@@ -5316,7 +5342,7 @@ The above claims implies, for positive-semidefinite
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Finite 
 \begin_inset Formula $N$
 \end_inset
