@@ -1129,8 +1129,8 @@ ric constraint could be written as:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-H & = & H_{0}+\varepsilon(\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab+{\bar{a}}^{2}a^{2}+{\bar{b}}^{2}b^{2})+\varepsilon^{'}(\tr\ {\bar{b}}^{2}a^{2}+\tr\ {\bar{a}}^{2}b^{2}+i\tr\ {\bar{a}}{\bar{b}}ab-i\tr\ {\bar{b}}{\bar{a}}ba)\\
- & + & \varepsilon^{''}(i\tr\ {\bar{b}}^{2}a^{2}-i\tr\ {\bar{a}}^{2}b^{2}-\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab)
+H & = & H_{0}+\varepsilon(\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab+{\bar{a}}^{2}a^{2}+{\bar{b}}^{2}b^{2})+\varepsilon'(\tr\ {\bar{b}}^{2}a^{2}+\tr\ {\bar{a}}^{2}b^{2}+i\tr\ {\bar{a}}{\bar{b}}ab-i\tr\ {\bar{b}}{\bar{a}}ba)\\
+ & + & \varepsilon''(i\tr\ {\bar{b}}^{2}a^{2}-i\tr\ {\bar{a}}^{2}b^{2}-\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab)
 \end{eqnarray*}
 
 \end_inset
@@ -1164,9 +1164,17 @@ If we describe the general supersymmetric Fock Space Hamiltonian in terms
 \begin_layout Standard
 \begin_inset Formula 
 \[
-h=
+\epsilon_{n}=(1-x)\sin\frac{\pi n}{M}\pm\sqrt{(1-x)^{2}\sin^{2}\frac{\pi n}{M}+(1-x^{2})\cos^{2}\frac{\pi n}{M}}
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $x=\varepsilon'-i\varepsilon''$
 \end_inset
 
 
@@ -1287,7 +1295,14 @@ Because of the cyclic constrain, when
 \begin_inset Formula $\pm1$
 \end_inset
 
-.
+ or with some 
+\begin_inset Formula $\eta_{k}=0$
+\end_inset
+
+ 
+\begin_inset Formula $\sum_{k,\eta_{k}=0}k=M$
+\end_inset
+
  
 \end_layout
 
@@ -1350,11 +1365,7 @@ The next energy level is when
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-Meanwhile we try to compare the single trace states' eigenvalues with the
+ Meanwhile we try to compare the single trace states' eigenvalues with the
  multi-trace states' eigenvalues.
  From the minimal eigenvalue's formula, it could be derived that the less
  the trace states is, the lower the ground state's eigenvalue would be.
