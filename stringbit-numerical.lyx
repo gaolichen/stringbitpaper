@@ -225,7 +225,7 @@ By setting the momentum density
 \end_inset
 
 .
- wto be 1, the total momentum 
+ to be 1, the total momentum 
 \begin_inset Formula $P^{+}$
 \end_inset
 
@@ -319,14 +319,60 @@ Because of the second term which is propotional to
 \begin_inset Formula $-1/M$
 \end_inset
 
-, a long chain of bosonic bits is unstable, it will decay into two small
- chains.
+, a long chain of bosonic bits is unstable, it will decay into smaller chains.
  This instability is also a motivation for introducing supersymmetry.
- By adding on the fermionic degrees of freedom, the negative 
-\begin_inset Formula $1/M$
+ However except this there are also fermionic degrees of freedom which are
+ called statistic waves
+\begin_inset CommandInset citation
+LatexCommand cite
+key "arXiv:hep-th/9607204"
+
 \end_inset
 
- term will be cancelled and leading to massless ground states.
+.
+ The coefficient for the statistics waves ground state energy is positive
+ .
+\end_layout
+
+\begin_layout Standard
+Imagine the multiplets which have 
+\begin_inset Formula $d$
+\end_inset
+
+ bosons and 
+\begin_inset Formula $s$
+\end_inset
+
+ pairs of fermions.
+ Thus the ground state energy read as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{G}=\frac{(s-d)\pi T_{0}}{6Mm}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the case 
+\begin_inset Formula $s=d$
+\end_inset
+
+ the ground state energy for a closed chain would be exactly zero, while
+ for 
+\begin_inset Formula $s>d$
+\end_inset
+
+ it is positive which lead to stable states, for 
+\begin_inset Formula $s<d$
+\end_inset
+
+ the unstable states.
 \end_layout
 
 \begin_layout Standard
@@ -338,8 +384,15 @@ As we know for superstring, 8 bosonic coordinate fields
 \begin_inset Formula $\theta_{L,R}^{q}$
 \end_inset
 
- is required, however in this project, we would like to study the more general
- case in which there are 
+ is required.
+ Thus the negative 
+\begin_inset Formula $1/M$
+\end_inset
+
+ term in superstring will be cancelled and leading to massless ground states,
+ so it is marginally stable.
+ however in this project, we would like to study the more general case in
+ which there are 
 \begin_inset Formula $d$
 \end_inset
 
@@ -348,11 +401,10 @@ As we know for superstring, 8 bosonic coordinate fields
 \end_inset
 
  fermionic fields, provided 
-\begin_inset Formula $d<s$
+\begin_inset Formula $s>d$
 \end_inset
 
 .
- The superstring case, in which s=d=8, is on marginally stable.
  
 \end_layout
 
@@ -450,7 +502,7 @@ As a result, this kind of operators preserves the feature that only the
 \begin_inset Formula $1/N$
 \end_inset
 
- term, on the other hand, will produce two seperated strings, so the 
+ term, on the other hand, will produce two separated strings, so the 
 \begin_inset Formula $1/N$
 \end_inset
 
@@ -459,7 +511,7 @@ As a result, this kind of operators preserves the feature that only the
 
 \begin_layout Standard
 The particular Hamiltonian we've chosen in our previous paper and would
- be futher studied in this parper is 
+ be further studied in this paper is 
 \begin_inset Formula 
 \begin{equation}
 H=\frac{2}{N}\tr\left[({\bar{a}}^{2}-i{\bar{b}}^{2})a^{2}-({\bar{b}}^{2}-i{\bar{a}}^{2})b^{2}+({\bar{a}}{\bar{b}}+{\bar{b}}{\bar{a}})ba+({\bar{a}}{\bar{b}}-{\bar{b}}{\bar{a}})ab\right]\label{bitham}
@@ -493,8 +545,8 @@ Supersymmetry
 \end_layout
 
 \begin_layout Standard
-This section describes the Hamiltonians of string-bit model and their supersymme
-try property to be studied in this paper.
+This section describes the Hamiltonians of string-bit model we would like
+ to study and their supersymmetry property to be studied in this paper.
 \end_layout
 
 \begin_layout Standard
@@ -505,18 +557,156 @@ key "Sun:2014dga"
 
 \end_inset
 
- , we pick the Fock space Hamiltion whose dynamic will reduce to te supertring
- bit model in large 
+ , we pick the Fock space Hamiltonian whose dynamic will reduce to the supertrin
+g bit model in large 
 \begin_inset Formula $N$
 \end_inset
 
  limit.
- The detail will be shown in Part.
- 3.
- However, if this is the only requirement, then there would be six terms
- in our hamiltonian while we have six candidate.
- This means there is a ambiguity of the hamiltonian: we would have two free
- parameters.
+ 
+\end_layout
+
+\begin_layout Standard
+Here is how we reconstructed the Hamiltonian.
+ The case when 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+ is solved in
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hep-th/9506125"
+
+\end_inset
+
+.
+ Now we use its solution as a guideline for our case in which 
+\begin_inset Formula $N$
+\end_inset
+
+ is infinity.
+ 
+\end_layout
+
+\begin_layout Standard
+we define a super creation operator as 
+\begin_inset Formula $\psi(\theta)={\bar{a}}+{\bar{b}}\theta$
+\end_inset
+
+ From where we can get 
+\begin_inset Formula 
+\[
+{\bar{b}}=-\frac{d}{d\theta}\psi,\qquad{\bar{a}}=\left(1-\theta\frac{d}{d\theta}\right)\psi
+\]
+
+\end_inset
+
+ here 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a Grassmann anti-commuting number.
+ Then the single trace state is represented by 
+\begin_inset Formula 
+\[
+\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\ \tr\ \left[\psi(\theta_{1})\psi(\theta_{2})\cdots\psi(\theta_{M})\right]\ket{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consulting
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hep-th/9506125"
+
+\end_inset
+
+ , the first quantize Hamiltonian 
+\begin_inset Formula $h$
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+h & = & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}({\tilde{S}}_{k+1}+{\tilde{S}}_{k-1}-2{\tilde{S}}_{k})\right]\\
+ & \text{=} & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}{\tilde{S}}_{k+1}-S_{k+1}{\tilde{S}}_{k}+2iS_{k}{\tilde{S}}_{k}\right]\\
+ & \text{}
+\end{eqnarray*}
+
+\end_inset
+
+ represent them in terms of Grassmann variables 
+\begin_inset Formula 
+\[
+S_{k}=\theta_{k}+\frac{d}{d\theta_{k}},\qquad{\tilde{S}}_{k}=i\left(\theta_{k}-\frac{d}{d\theta_{k}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and integrate them by part we can get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{h}=\sum_{k=1}^{M}\left[-2i\theta_{k}\theta_{k+1}-2i\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}-2\theta_{k}\frac{d}{d\theta_{k+1}}-2\theta_{k+1}\frac{d}{d\theta_{k}}-2+4\theta_{k}\frac{d}{d\theta_{k}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next step is straight forward, here's an example of applying one of
+ the candidate terms to a single trace state.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{N}\tr\ {\bar{a}}^{2}a^{2}\ket{\theta_{1}\theta_{2}\cdots\theta_{M}} & = & \frac{1}{N}\sum_{k=1}^{M}\tr\ {\bar{a}}^{2}a(\bar{a}+\bar{b}\theta_{k+1})\cdots(\bar{a}+\bar{b}\theta_{M})\cdots(\bar{a}+\bar{b}\theta_{k-1})\\
+ & = & \sum_{k=1}^{M}\left(1-\theta_{k}\frac{d}{d\theta_{k}}\right)\left(1-\theta_{k+1}\frac{d}{d\theta_{k+1}}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}+{\cal O}(N^{-1})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By applying each candidate on the single trace state, we have our dictionary
+ to reconstruct the superstring hamiltonian.
+\end_layout
+
+\begin_layout Standard
+However, if reproduce 
+\begin_inset Formula $h$
+\end_inset
+
+ at large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit is the only requirement, we would have two free parameters.
+ Because there are only six terms in 
+\begin_inset Formula $h$
+\end_inset
+
+ while we have eight candidates in total.
+ This means there is a ambiguity of the hamiltonian.
  
 \end_layout
 
@@ -868,7 +1058,7 @@ reference "eq:Hamiltonian-4-1"
 \end_layout
 
 \begin_layout Standard
-The hamiltonian we disscussed above, even though it has variations, will
+The hamiltonian we discussed above, even though it has variations, will
  all turn out to be 
 \begin_inset Formula $H_{0}$
 \end_inset
@@ -878,8 +1068,8 @@ The hamiltonian we disscussed above, even though it has variations, will
 \end_inset
 
 , which reduce to the super string bit model dynamic.
- However, we are also curious about whether there;s other well-defined Hamiltion
-ian.
+ However, we are also curious about whether there;s other well-defined Hamiltoni
+an.
  So we also studied the possibilities if we only apply the constraint that
  
 \begin_inset Formula $H$
@@ -932,8 +1122,8 @@ Now we add the supersymmetry constraint to it, make it commute with
 \begin_inset Formula $ $
 \end_inset
 
-Eliminate the total scaling parameter, the Hamiltionian with only the supersymme
-tric constraint could be written as:
+Eliminate the total scaling parameter, the Hamiltonian with only the supersymmet
+ric constraint could be written as:
 \end_layout
 
 \begin_layout Standard
@@ -959,7 +1149,42 @@ Which shows that there's three free parameters here, in which the first
 \end_inset
 
 .
- So there's two new parameters for the general supersymmetric Hamiltionian.
+ So there's two new parameters for the general supersymmetric Hamiltonian.
+\end_layout
+
+\begin_layout Standard
+If we describe the general supersymmetric Fock Space Hamiltonian in terms
+ of the first quantized 
+\begin_inset Formula $h$
+\end_inset
+
+ and resolve it, we could have its eigenvalues.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+h=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can notice that the eigenvalue for the general Hamiltonian is also propotiona
+l to 
+\begin_inset Formula $1/M$
+\end_inset
+
+ at large 
+\begin_inset Formula $M$
+\end_inset
+
+, which indicate that this property dose not need the Hamiltonian to be
+ the same as the superstring, in fact any sypersymmetic Hamiltonian would
+ have this property
 \end_layout
 
 \begin_layout Section
@@ -968,134 +1193,6 @@ Energy Spectrum at
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-The case when 
-\begin_inset Formula $N=\infty$
-\end_inset
-
- is solved in
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hep-th/9506125"
-
-\end_inset
-
-.
- Now we use its solution as a guideline for our case in which 
-\begin_inset Formula $N$
-\end_inset
-
- is infinity and the bit number 
-\begin_inset Formula $M$
-\end_inset
-
- is gradually approaching infinity.
- 
-\end_layout
-
-\begin_layout Standard
-we define a super creation operator as 
-\begin_inset Formula $\psi(\theta)={\bar{a}}+{\bar{b}}\theta$
-\end_inset
-
- From where we can get 
-\begin_inset Formula 
-\[
-{\bar{b}}=-\frac{d}{d\theta}\psi,\qquad{\bar{a}}=\left(1-\theta\frac{d}{d\theta}\right)\psi
-\]
-
-\end_inset
-
- here 
-\begin_inset Formula $\theta$
-\end_inset
-
- is a Grassmann anti-commuting number.
- Then the single trace state is represented by 
-\begin_inset Formula 
-\[
-\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\ \tr\ \left[\psi(\theta_{1})\psi(\theta_{2})\cdots\psi(\theta_{M})\right]\ket{0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Consulting
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hep-th/9506125"
-
-\end_inset
-
- , the first quantize Hamiltonian 
-\begin_inset Formula $h$
-\end_inset
-
- is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-h & = & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}({\tilde{S}}_{k+1}+{\tilde{S}}_{k-1}-2{\tilde{S}}_{k})\right]\\
- & \text{=} & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}{\tilde{S}}_{k+1}-S_{k+1}{\tilde{S}}_{k}+2iS_{k}{\tilde{S}}_{k}\right]\\
- & \text{}
-\end{eqnarray*}
-
-\end_inset
-
- represent them in terms of Grassmann variables 
-\begin_inset Formula 
-\[
-S_{k}=\theta_{k}+\frac{d}{d\theta_{k}},\qquad{\tilde{S}}_{k}=i\left(\theta_{k}-\frac{d}{d\theta_{k}}\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and integrate them by part we can get:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\hat{h}=\sum_{k=1}^{M}\left[-2i\theta_{k}\theta_{k+1}-2i\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}-2\theta_{k}\frac{d}{d\theta_{k+1}}-2\theta_{k+1}\frac{d}{d\theta_{k}}-2+4\theta_{k}\frac{d}{d\theta_{k}}\right]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Here's an example of applying one of the candidate terms to a single trace
- state.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\frac{1}{N}\tr\ {\bar{a}}^{2}a^{2}\ket{\theta_{1}\theta_{2}\cdots\theta_{M}} & = & \frac{1}{N}\sum_{k=1}^{M}\tr\ {\bar{a}}^{2}a(\bar{a}+\bar{b}\theta_{k+1})\cdots(\bar{a}+\bar{b}\theta_{M})\cdots(\bar{a}+\bar{b}\theta_{k-1})\\
- & = & \sum_{k=1}^{M}\left(1-\theta_{k}\frac{d}{d\theta_{k}}\right)\left(1-\theta_{k+1}\frac{d}{d\theta_{k+1}}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}+{\cal O}(N^{-1})
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-By applying each candidate on the single trace state, we could reconstruct
- the superstring hamiltonian.
 \end_layout
 
 \begin_layout Standard
@@ -1335,7 +1432,7 @@ Above is theoretical analysis at the limit
 \end_layout
 
 \begin_layout Standard
-The following are the figures of energy specturm at
+The following are the figures of energy spectrum at
 \begin_inset Formula $N=\infty$
 \end_inset
 
@@ -1373,7 +1470,7 @@ ing to the
 
 .
  and it is the same for both the single trace states and triple trace states.
- Acoording to the anlysis above, for continous string chains, the figures
+ According to the analysis above, for continuous string chains, the figures
  should have the same energy gaps for single trace states.
 \end_layout
 
@@ -1681,17 +1778,17 @@ E_{G}(M)\sim\alpha M+\frac{\gamma}{M}+O(\frac{1}{M^{3}})
 \end_inset
 
 .
- From the figures aboe, this characters of the continuous string chains
+ From the figures above, this characters of the continuous string chains
  start to appear at pretty low bit number 
 \begin_inset Formula $(M=13)$
 \end_inset
 
-, and become more and more obvous as 
+, and become more and more obvious as 
 \begin_inset Formula $M\rightarrow\infty$
 \end_inset
 
  .
- Meanwhile, the other feature of continous string chain, for instans the
+ Meanwhile, the other feature of continuous string chain, for instance the
  energy degeneracy of single trace states, boundary of multi-trace states,
  also get more and more clear as 
 \begin_inset Formula $M$
