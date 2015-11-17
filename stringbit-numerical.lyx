@@ -5165,6 +5165,231 @@ The
 \end_layout
 
 \begin_layout Standard
+We have two methods to calculate the energy states of the system.
+ The first method, which is used in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+, is to calculate the eigenvalues of the 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrix defined as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $H$
+\end_inset
+
+ is the Hamiltonian of the system and 
+\begin_inset Formula $\ket{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{j}$
+\end_inset
+
+ are the trace states for a given bit number 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ If the norm matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive definite, i.e, all eigenvalues of 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive, then every eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and its eigenstate uniquely correspond to a energy level and state of the
+ Hamiltonian.
+ For a eigenstate of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, 
+\begin_inset Formula $\ket{E}=\sum_{i}\ket{i}v^{i}$
+\end_inset
+
+, the norm of the state is given by 
+\begin_inset Formula 
+\[
+\dprod{E}{E}=\sum_{ij}v^{i*}\dprod{i}{j}v^{j}=v^{\dagger}Gv.
+\]
+
+\end_inset
+
+ In this case, all the and eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ are physical their norms 
+\begin_inset Formula $\dprod{E}{E}$
+\end_inset
+
+ are positive.
+ Our calculation shows when 
+\begin_inset Formula $N$
+\end_inset
+
+ is greater or equal to 
+\begin_inset Formula $M$
+\end_inset
+
+, the norm matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ is always positive definite.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $N$
+\end_inset
+
+ is less than 
+\begin_inset Formula $M$
+\end_inset
+
+ and integal, the norm matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive semidefinite, i.e, some eigenvalues are zero and the others
+ are positive.
+ In this case, the eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with positive norm are physical and the ones with zero norm are unphysical.
+ The number of physical energy states equal to the number of positve eigenvalues
+ of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $N$
+\end_inset
+
+ is less than 
+\begin_inset Formula $M$
+\end_inset
+
+ and non-integer, the norm matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ is indefinite, i.e, has both positive and negative eigenvalues.
+ There is some subtle complication.
+ The unphysical states can be either zero norm or negative norm.
+ The negative norm eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ stem from their coupling to the eigenstates of 
+\begin_inset Formula $G$
+\end_inset
+
+ whose corresponding eigenvalues are negative.
+ The eigenstates of 
+\begin_inset Formula $G$
+\end_inset
+
+ with negative eigenvalues are also called ghost states.
+ Unlike the positive definite and positive semidefinite cases, a eigenstate
+ of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with positive norm does not correspond to a physical energy state unless
+ it is orthogonal to every ghost states.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that the eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ can also be non-real.
+ This occurs for both positive-semidefinite and indefinite cases.
+ For a non-real eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, its complex conjugate is also an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and both of them correspond to zero nom eigenstates.
+\end_layout
+
+\begin_layout Standard
+The second method is to solve a generalised eigenvalue problem of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ In stead of solving the eigenvalue problem as 
+\begin_inset Formula 
+\[
+\mathcal{H}\ket{E}=E\ket{E},
+\]
+
+\end_inset
+
+ we solve a generalised eigenvalue problem as 
+\begin_inset Formula 
+\begin{equation}
+\left(G\mathcal{H}\right)\ket{E}=EG\ket{E}.\label{eq:generalised-eigenvalue-problem}
+\end{equation}
+
+\end_inset
+
+Compared with the first method, the second method has the following advantages.
+ The matrix 
+\begin_inset Formula $G\mathcal{H}$
+\end_inset
+
+ is hermitian and all the states 
+\begin_inset Formula $\ket{E}$
+\end_inset
+
+ satisfying Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:generalised-eigenvalue-problem"
+
+\end_inset
+
+ is physical.
+ 
+\end_layout
+
+\begin_layout Standard
 Our goal is to study the energy spectrum of Hamiltonian 
 \begin_inset CommandInset ref
 LatexCommand eqref
