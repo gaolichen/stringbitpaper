@@ -5354,9 +5354,9 @@ The second method is to solve a generalised eigenvalue problem of
 .
  In stead of solving the eigenvalue problem as 
 \begin_inset Formula 
-\[
-\mathcal{H}\ket{E}=E\ket{E},
-\]
+\begin{equation}
+\mathcal{H}\ket{E}=E\ket{E},\label{eq:eigenvalue-problem}
+\end{equation}
 
 \end_inset
 
@@ -5491,11 +5491,12 @@ In this section, we perform the numerical analysis of the energy levels
 \begin_inset Formula $N$
 \end_inset
 
- and bit number 
+ and the bit number 
 \begin_inset Formula $M$
 \end_inset
 
 .
+ The procedure of calculation are very straightforward.
  For different values of 
 \begin_inset Formula $M$
 \end_inset
@@ -5513,12 +5514,27 @@ In this section, we perform the numerical analysis of the energy levels
 \end_inset
 
 .
+ Then use Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:eigenvalue-problem"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:generalised-eigenvalue-problem"
+
+\end_inset
+
+ to find the energy levels.
  Since the nubmer of trace states increase exponentially as 
 \begin_inset Formula $M$
 \end_inset
 
- increase, it's only feasible to perform the calculation for small values
- of 
+ increase, it's only feasible to perform the calculation for small 
 \begin_inset Formula $M$
 \end_inset
 
@@ -5527,7 +5543,7 @@ In this section, we perform the numerical analysis of the energy levels
 \begin_inset Formula $M$
 \end_inset
 
- we target is 11, where 
+ we calculate is 11, at which value 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
@@ -5574,6 +5590,24 @@ key "Sun:2014dga"
 \end_inset
 
 .
+ For each case, we first analyze the change of energy levels with respect
+ to 
+\begin_inset Formula $N$
+\end_inset
+
+ when 
+\begin_inset Formula $M$
+\end_inset
+
+ is fixed, and then with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ when 
+\begin_inset Formula $N$
+\end_inset
+
+ is fixed.
  
 \end_layout
 
@@ -5600,42 +5634,51 @@ reference "fig:H=H0M=11"
 
 \end_inset
 
- plot energy levels for odd 
-\begin_inset Formula $M$
-\end_inset
-
- range from 3 to 11 with respect to 
+ shows the energy levels as a function of 
 \begin_inset Formula $1/N$
 \end_inset
 
-.
+ for fixed 
+\begin_inset Formula $M$
+\end_inset
+
+ from 3 to 11.
  Five energy levels are plotted for 
 \begin_inset Formula $M=3$
 \end_inset
 
  and lowest eight energy levels are plotted for others.
- In these figures, different colors represent different energy states and
- different line styles indicate different norm of energy states.
- Solid, dotted, and dash-dotted curves correspond to positive, negative,
- and zero norm energy states respectively.
- As mentioned in section 
+ The energy levels are calculated based on Eq.
+ 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Method"
+LatexCommand eqref
+reference "eq:eigenvalue-problem"
 
 \end_inset
 
-, a zero norm state associate with two complex energy levels that conjugate
- to each other.
- Therefore, the dash-dotted curves represent only the real parts of the
- energy levels and always starts and ends at the merging point of two curves.
- A dotted curve corresponds a negative norm state, which can be either pure
- ghost states or mixing of ghost states and other states.
- Note that there is non negative norm states at integer values of 
+, so there exist unphysical states when 
 \begin_inset Formula $N$
 \end_inset
 
-.
+ is small.
+ To distinguish different energy states and unphysical states from physical
+ states, we use different colors for different energy states and different
+ line styles for different types of states.
+ Solid, dotted, and dash-dotted curves correspond to positive, negative,
+ and zero norm energy states respectively.
+ Since a zero norm state associates with two complex energy levels that
+ conjugate to each other, the dash-dotted curves represent only the real
+ parts of the energy levels and always starts and ends at the merging point
+ of two curves.
+ Note a dotted line cannot pass across an integral value of 
+\begin_inset Formula $N$
+\end_inset
+
+ as the norm of states at integral values of 
+\begin_inset Formula $N$
+\end_inset
+
+ are always non-negative.
  For higher 
 \begin_inset Formula $M$
 \end_inset
@@ -5921,7 +5964,7 @@ Lowest 8 energy states for the 11-bit system of Hamiltonian
 \end_layout
 
 \begin_layout Standard
-We see several features from these figures.
+From these figures, we can see several features of the energy levels.
  At 
 \begin_inset Formula $N=\infty$
 \end_inset
@@ -5940,20 +5983,16 @@ key "Sun:2014dga"
 \end_inset
 
 .
- The degeneracies are broken when 
+ The degeneracies are broken a finite 
 \begin_inset Formula $N$
 \end_inset
 
- is finite.
- All the curves are almost horizontal in the region close to 
+.
+ All the curves are almost perpendicular to the vertical axe at 
 \begin_inset Formula $N=\infty$
 \end_inset
 
-, and at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, perpendicular to the vertical axes.
+.
  This implies that 
 \begin_inset Formula $1/N$
 \end_inset
@@ -5964,12 +6003,12 @@ key "Sun:2014dga"
 \end_inset
 
  increase, the solid curves turn to dotted or dash-dotted curves, which
- corresponds to the disappearance of states.
- If a state disappears at an integer value of 
+ implies to the disappearance of physical states.
+ If a physical state disappears at an integer value of 
 \begin_inset Formula $N$
 \end_inset
 
-, if also disappears at all the integers less than 
+, it also disappears at all the integers less than 
 \begin_inset Formula $N$
 \end_inset
 
@@ -5991,13 +6030,13 @@ key "Sun:2014dga"
 \end_inset
 
 .
- It is interesting to note that the the first disappearances of ground states
+ It is interesting to note that the first disappearances of ground states
  occur at 
 \begin_inset Formula $N=\frac{M-1}{2}$
 \end_inset
 
 .
- This implies to have ground states survive, 
+ Therefore, in order to have ground states surviving, 
 \begin_inset Formula $N$
 \end_inset
 
@@ -6010,8 +6049,7 @@ key "Sun:2014dga"
 \begin_inset Formula $1/N$
 \end_inset
 
-, the energy levels begin to drop dramatically.
- The large 
+, the energy levels begin to drop dramatically and the large 
 \begin_inset Formula $M$
 \end_inset
 
@@ -6041,7 +6079,11 @@ key "Sun:2014dga"
 \end_layout
 
 \begin_layout Standard
-Fig.
+For even number of 
+\begin_inset Formula $M$
+\end_inset
+
+, we have similar plots as Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6049,34 +6091,22 @@ reference "figH=h0M=even"
 
 \end_inset
 
- plots the lowest five energy levels for even 
-\begin_inset Formula $M$
-\end_inset
-
- from 
-\begin_inset Formula $4$
-\end_inset
-
- to 
-\begin_inset Formula $10$
-\end_inset
-
 .
- Much of the analysis of odd cases applies to even cases except the ground
- states.
- At 
-\begin_inset Formula $N=\infty$
+ The analysis of the odd cases also applies to the even cases except that
+ the ground states may be degenerate at large 
+\begin_inset Formula $N$
 \end_inset
 
-, the ground states of 
+ limit: the ground states of 
 \begin_inset Formula $M=4,8$
 \end_inset
 
- are degenerate, but for 
+ are degenerate, and 
 \begin_inset Formula $M=6,10$
 \end_inset
 
- they are not degenerate.
+ are not.
+ 
 \end_layout
 
 \begin_layout Standard
