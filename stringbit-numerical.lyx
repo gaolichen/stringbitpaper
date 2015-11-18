@@ -5368,172 +5368,84 @@ The second method is to solve a generalised eigenvalue problem of
 
 \end_inset
 
-Compared with the first method, the second method has the following advantages.
- The matrix 
-\begin_inset Formula $G\mathcal{H}$
-\end_inset
-
- is hermitian and all the states 
-\begin_inset Formula $\ket{E}$
-\end_inset
-
- satisfying Eq.
+This method is particularly helpful for filtering unphysical states when
  
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:generalised-eigenvalue-problem"
-
+\begin_inset Formula $G$
 \end_inset
 
- is physical.
- 
-\end_layout
+ is positive semidefinite.
+ If 
+\begin_inset Formula $G$
+\end_inset
 
-\begin_layout Standard
-Our goal is to study the energy spectrum of Hamiltonian 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Hamiltonian-3"
+ is a full-rank matrix, this is a regular generalised eigenvalue problem.
+ If 
+\begin_inset Formula $G$
+\end_inset
 
+ is not full-rank matrix, we cannot solve this equation.
+ If the rank of 
+\begin_inset Formula $G$
+\end_inset
+
+ is 
+\begin_inset Formula $r$
+\end_inset
+
+, we can pick 
+\begin_inset Formula $r$
+\end_inset
+
+ independent rows and columns of 
+\begin_inset Formula $G$
 \end_inset
 
  and 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Hamiltonian-4"
+\begin_inset Formula $\left(G\mathcal{H}\right)$
+\end_inset
+
+ to form two 
+\begin_inset Formula $r\times r$
+\end_inset
+
+ matrices as 
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{G} & = & \left(\begin{array}{cccc}
+G_{i_{1}i_{1}} & G_{i_{1}i_{2}} & \cdots & G_{i_{1}i_{r}}\\
+G_{i_{2}i_{2}} & G_{i_{2}i_{2}} & \cdots & G_{i_{2}i_{r}}\\
+\vdots & \vdots & \vdots & \vdots\\
+G_{i_{r}i_{1}} & G_{i_{r}i_{2}} & \cdots & G_{i_{r}i_{r}}
+\end{array}\right),\\
+\tilde{G\mathcal{H}} & = & \left(\begin{array}{cccc}
+\left(G\mathcal{H}\right)_{i_{1}i_{1}} & \left(G\mathcal{H}\right)_{i_{1}i_{2}} & \cdots & \left(G\mathcal{H}\right)_{i_{1}i_{r}}\\
+\left(G\mathcal{H}\right)_{i_{2}i_{2}} & \left(G\mathcal{H}\right)_{i_{2}i_{2}} & \cdots & \left(G\mathcal{H}\right)_{i_{2}i_{r}}\\
+\vdots & \vdots & \vdots & \vdots\\
+\left(G\mathcal{H}\right)_{i_{r}i_{1}} & \left(G\mathcal{H}\right)_{i_{r}i_{2}} & \cdots & \left(G\mathcal{H}\right)_{i_{r}i_{r}}
+\end{array}\right).
+\end{eqnarray*}
 
 \end_inset
 
-.
- The traditional approach is to build a Hamiltonian matrix in orthnormal
- basis, which comes from the diagonalization of the norm matrix 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Norm-Matrix-Definition"
-
-\end_inset
-
-.
- We used another approach which does not require the diagonalization of
- the norm matrix.
- A complex value matrix 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- is defined as 
+ Then the generalised eigenvalue problem become 
 \begin_inset Formula 
 \[
-H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}
+\left(\tilde{G\mathcal{H}}\right)\ket{E}=E\tilde{G}\ket{E},
 \]
 
 \end_inset
 
- for a given value of 
-\begin_inset Formula $M$
-\end_inset
-
-.
+whose eigenvalues are all correspond to physical states.
  
-\begin_inset Formula $\mathcal{H}$
-\end_inset
+\end_layout
 
- is not the Hamiltonian matrix as the trace states 
-\begin_inset Formula $\ket{i}$
-\end_inset
-
- are not orthnormal basis.
- We then solve the eigenvalue problem of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-, 
-\begin_inset Formula 
-\[
-\left(\mathcal{H}-E\right)V=0.
-\]
-
-\end_inset
-
- In Appendix 
+\begin_layout Standard
+The properties of the eigenvalue problems stated above are proved in Appendix
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "app:Hamiltonian-Eigenvalue-Problem"
 
-\end_inset
-
-, we prove the following claims regarding the eigenvalue problem of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $E$
-\end_inset
-
- is an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-, its complex conjugate 
-\begin_inset Formula $E^{*}$
-\end_inset
-
- is also an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $E$
-\end_inset
-
- is not real, we have 
-\begin_inset Formula $V^{\dagger}GV=0$
-\end_inset
-
-, where 
-\begin_inset Formula $G$
-\end_inset
-
- is the norm matrix defined by 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Norm-Matrix-Definition"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $G$
-\end_inset
-
- is positive-semidefinite, every eigenvalue of the Hamiltonian system is
- an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $G$
-\end_inset
-
- is positive-semidefinite, E is an eigenvalue of the Hamiltonian system
- if and only if 
-\begin_inset Formula $V^{\dagger}GV>0$
 \end_inset
 
 .
@@ -5541,137 +5453,25 @@ If
 \end_layout
 
 \begin_layout Standard
-What if 
-\begin_inset Formula $G$
-\end_inset
-
- is not positive-semidefinite? Per our calculation, this only happens when
- 
+The first method is used to investigate the change of energy levels with
+ respect to 
 \begin_inset Formula $N$
 \end_inset
 
- is less than 
+ for fixed 
 \begin_inset Formula $M$
 \end_inset
 
- and non-integer.
- In such case, the trace state space is not a Hilbert space and has no orthnorma
-l basis.
- For every set of basis, there exists one or more ghost states whose norms
- are negative.
- In analogy with positive-semidefinite case, we can still build a Hamiltonian
- matrix base on these basis.
- We have the following claims proved in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Hamiltonian-Eigenvalue-Problem"
-
+ while the second one is used to study the change of physical energy levels
+ with respect to 
+\begin_inset Formula $M$
 \end_inset
 
-:
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $E$
-\end_inset
-
- is an eigenvalue of the Hamiltonian matrix with eigenvector 
-\begin_inset Formula $W$
-\end_inset
-
-, it is an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- if 
-\begin_inset Formula $W$
-\end_inset
-
- does not mix with ghost states.
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $E$
-\end_inset
-
- is an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- with eigenvecot 
-\begin_inset Formula $V$
-\end_inset
-
-, then it is an eigenvalue of the Hamiltonian matrix if 
-\begin_inset Formula $E=0$
-\end_inset
-
- or 
-\begin_inset Formula $V^{\dagger}\mathrm{abs}\left(G\right)V=V^{\dagger}GV>0$
-\end_inset
-
-, where the function 
-\begin_inset Formula $\mathrm{abs}$
-\end_inset
-
- is defined as
-\begin_inset Formula 
-\[
-\mathrm{abs}\left(G\right)=U^{\dagger}\left(\begin{array}{cccc}
-\left|g_{1}\right|\\
- & \left|g_{2}\right|\\
- &  & \ddots\\
- &  &  & \left|g_{n}\right|
-\end{array}\right)U,
-\]
-
-\end_inset
-
-with 
-\begin_inset Formula 
-\[
-G=U^{\dagger}\left(\begin{array}{cccc}
-g_{1}\\
- & g_{2}\\
- &  & \ddots\\
- &  &  & g_{n}
-\end{array}\right)U
-\]
-
-\end_inset
-
- be the eigendecomposition of 
-\begin_inset Formula $G$
+ for fixed 
+\begin_inset Formula $N$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-The above claims implies, for positive-semidefinite 
-\begin_inset Formula $G$
-\end_inset
-
-, the subset of eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- whose eigenvector 
-\begin_inset Formula $V$
-\end_inset
-
- satisfying 
-\begin_inset Formula $V^{\dagger}GV>0$
-\end_inset
-
- are eigenvalues of the Hamiltonian.
- But for non-positive-semidefinite 
-\begin_inset Formula $G$
-\end_inset
-
-, there is no such simple relationship.
  
 \end_layout
 
