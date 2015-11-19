@@ -6458,6 +6458,44 @@ reference "fig:First-excitation-H0"
 \end_inset
 
 .
+ The vertical axis of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:First-excitation-H0"
+
+\end_inset
+
+ is 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $E_{1}-E_{0}$
+\end_inset
+
+ is the excitation of first excited energy level.
+ For stringy behavior, the 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+ should be a constant.
+ While this is clearly not true for small 
+\begin_inset Formula $N$
+\end_inset
+
+, it is roughly remain unchanged for for large 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Though we only calculate up to 
+\begin_inset Formula $M=11$
+\end_inset
+
+, we can still see the trendency from the graph.
+ There is no inconsistency between the numerical calculation and the analytic
+ prediction.
  
 \end_layout
 
@@ -6526,8 +6564,8 @@ Variations of
 \end_layout
 
 \begin_layout Standard
-In this subsection, we will analyze how the energy levels changes for two
- variations of the Hamiltonian.
+In this subsection, we will analyze the energy levels for two variations
+ of the Hamiltonian.
  The first form of Hamiltonian is 
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
@@ -7033,12 +7071,12 @@ reference "fig:EvsM-N<=2"
 
 .
  In these two figures, we only evaluate the physical ground energy at odd
- numbers of 
+ 
 \begin_inset Formula $M$
 \end_inset
 
 .
- From the figures, we see that the ground states have very different trends
+ From the figures, we see that the ground states have very different trendency
  for 
 \begin_inset Formula $\xi<-1$
 \end_inset
@@ -7061,7 +7099,8 @@ reference "fig:EvsM-N<=2"
 \begin_inset Formula $N$
 \end_inset
 
-.When 
+.
+ When 
 \begin_inset Formula $\xi<-1$
 \end_inset
 
@@ -7083,11 +7122,7 @@ reference "fig:EvsM-N<=2"
 \begin_inset Formula $M$
 \end_inset
 
- is small compared with 
-\begin_inset Formula $N$
-\end_inset
-
-, and declines slowly or turn to increasing when 
+ is small, and declines slowly or turn to increasing when 
 \begin_inset Formula $M$
 \end_inset
 
@@ -7229,6 +7264,111 @@ Change of physical ground energy with respect to
 
  for fixed 
 \begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also plot 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M$
+\end_inset
+
+, shown as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:excitation-xi=many"
+
+\end_inset
+
+.
+ For all values of 
+\begin_inset Formula $\xi$
+\end_inset
+
+, when 
+\begin_inset Formula $N$
+\end_inset
+
+ is large enough, the curves all roughly stay unchanged.
+ There is one difference between 
+\begin_inset Formula $\xi<-1$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi\geq-1$
+\end_inset
+
+.
+ For the former case, curves of small 
+\begin_inset Formula $N$
+\end_inset
+
+ goes upward steadily, while for later case, they curves are zig-zagged.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=manyexcitation.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:excitation-xi=many"
+
+\end_inset
+
+
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=-2,\,-1,\,1,\,2$
 \end_inset
 
 
