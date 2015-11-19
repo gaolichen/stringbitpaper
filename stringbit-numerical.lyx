@@ -6092,8 +6092,15 @@ reference "figH=h0M=even"
 \end_inset
 
 .
- The analysis of the odd cases also applies to the even cases except that
- the ground states may be degenerate at large 
+ The analysis of the odd 
+\begin_inset Formula $M$
+\end_inset
+
+ cases also applies to the even 
+\begin_inset Formula $M$
+\end_inset
+
+ cases except that the ground states may be degenerate at large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -6179,21 +6186,35 @@ reference "fig:Top-5-energy-H=H_0"
 \end_inset
 
  from 4 to 7.
- Unlike the low energy states, the highest energy states do not disappear,
- even if 
+ Unlike the low energy states, the highest energy states do not disappear
+ even when 
 \begin_inset Formula $N$
 \end_inset
 
- is less than 1.
- If we use 
+ is very small.
+ It seems to suggest that, the groud states of Hamiltonian 
 \begin_inset Formula $-H_{0}$
 \end_inset
 
- as Hamiltonian, will the ground states survive for smaller 
+ could survive at lower 
 \begin_inset Formula $N$
 \end_inset
 
-? We now answer this question in the next subsection.
+.
+ But as we will show in the next subsection, this is not true.
+ The stablization term 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ will cause the ground state disappear at large 
+\begin_inset Formula $N$
+\end_inset
+
+ and the highest energy lelvel survive at lower 
+\begin_inset Formula $N$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -6230,6 +6251,253 @@ Top 5 energy levels of
 
  and 
 \begin_inset Formula $M=4,5,6,7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can also plot the physical ground state as a function of 
+\begin_inset Formula $M$
+\end_inset
+
+ when 
+\begin_inset Formula $N$
+\end_inset
+
+ is fixed, shown as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:physical-state-H0"
+
+\end_inset
+
+.
+ The physical ground states have different trendency at different values
+ of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $N=1$
+\end_inset
+
+, the physical ground state climbs significantly.
+ This is consistent with analytical calculation, which shows the ground
+ state is a quardratic function of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $N=2$
+\end_inset
+
+, the ground state only goes up slightly.
+ When 
+\begin_inset Formula $N\geq3$
+\end_inset
+
+, the trendency become downwards.
+ For very large 
+\begin_inset Formula $N$
+\end_inset
+
+, it almost drops linearly, which implies the system become stringy.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0physicalN=1_2.pdf
+	width 32page%
+	BoundingBox 50bp 190bp 562bp 620bp
+	clip
+	groupId HalfPageFig
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0physical.pdf
+	width 32page%
+	BoundingBox 50bp 190bp 562bp 620bp
+	clip
+	groupId HalfPageFig
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:physical-state-H0"
+
+\end_inset
+
+Change of physical ground states with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Only the ground energy at odd values of 
+\begin_inset Formula $M$
+\end_inset
+
+ are sampled.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also studies how the excitation changes with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $N$
+\end_inset
+
+, shown as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:First-excitation-H0"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0excitation.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:First-excitation-H0"
+
+\end_inset
+
+First excitation times 
+\begin_inset Formula $M$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $M$
 \end_inset
 
 
