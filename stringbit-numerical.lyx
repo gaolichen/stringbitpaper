@@ -6310,13 +6310,35 @@ reference "fig:physical-state-H0"
 \begin_inset Formula $N\geq3$
 \end_inset
 
-, the trendency become downwards.
- For very large 
+, the trendency turn to be downwards.
+ For large 
 \begin_inset Formula $N$
 \end_inset
 
-, it almost drops linearly, which implies the system become stringy.
+, the physical ground energy almost drops linearly with a slope close to
  
+\begin_inset Formula $-\frac{8}{\pi}$
+\end_inset
+
+, which is consistent with the analytic predication of ground energy at
+ large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, as shown in Eq.
+ (98) of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+.
+ This indicates the system become stringy when 
+\begin_inset Formula $N$
+\end_inset
+
+ is large enough.
 \end_layout
 
 \begin_layout Standard
@@ -6328,74 +6350,12 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0physicalN=1_2.pdf
-	width 32page%
-	BoundingBox 50bp 190bp 562bp 620bp
-	clip
-	groupId HalfPageFig
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename plots/boson/xi=0physical.pdf
-	width 32page%
-	BoundingBox 50bp 190bp 562bp 620bp
+	width 100col%
+	BoundingBox 50bp 400bp 560bp 600bp
 	clip
-	groupId HalfPageFig
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
+	groupId OneColumnHalfFigure
 
 \end_inset
 
@@ -6530,11 +6490,11 @@ name "fig:First-excitation-H0"
 
 \end_inset
 
-First excitation times 
-\begin_inset Formula $M$
+ 
+\begin_inset Formula $\left(E_{1}-E_{0}\right)\times M$
 \end_inset
 
- with respect to 
+ as a function of 
 \begin_inset Formula $M$
 \end_inset
 
@@ -6564,7 +6524,7 @@ Variations of
 \end_layout
 
 \begin_layout Standard
-In this subsection, we will analyze the energy levels for two variations
+In this subsection, we will analyze the energy levels of two variations
  of the Hamiltonian.
  The first form of Hamiltonian is 
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
@@ -7175,10 +7135,6 @@ reference "fig:EvsM-N<=2"
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
