@@ -5661,7 +5661,7 @@ reference "eq:eigenvalue-problem"
 \end_inset
 
  is small.
- To distinguish different energy states and unphysical states from physical
+ To label energy states and distinguish unphysical states from physical
  states, we use different colors for different energy states and different
  line styles for different types of states.
  Solid, dotted, and dash-dotted curves correspond to positive, negative,
@@ -5750,7 +5750,7 @@ name "fig:H=H0M=3"
 
 \end_inset
 
-Lowest 5 energy states for the 3-bit system of Hamiltonian 
+Lowest 5 energy states of the 3-bit system with Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -5796,7 +5796,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Lowest 8 energy states for the 5-bit system of Hamiltonian 
+Lowest 5 energy states of the 5-bit system with Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -5848,7 +5848,7 @@ name "fig:H=H0M=7"
 
 \end_inset
 
-Lowest 8 energy states for the 7-bit system of Hamiltonian 
+Lowest 8 energy states of the 7-bit system with Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -5890,7 +5890,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Lowest 8 energy states for the 9-bit system of Hamiltonian 
+Lowest 8 energy states of the 9-bit system with Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -5942,7 +5942,7 @@ name "fig:H=H0M=11"
 
 \end_inset
 
-Lowest 8 energy states for the 11-bit system of Hamiltonian 
+Lowest 8 energy states of the 11-bit system with Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -5983,7 +5983,7 @@ key "Sun:2014dga"
 \end_inset
 
 .
- The degeneracies are broken a finite 
+ The degeneracies are broken at finite 
 \begin_inset Formula $N$
 \end_inset
 
@@ -7393,6 +7393,48 @@ reference "fig:nxi=-2M=odd"
 \end_inset
 
  determined by stabalization condition.
+ Unlike the 
+\begin_inset Formula $H_{0}+\xi\Delta H$
+\end_inset
+
+ case, the ground energy of 
+\begin_inset Formula $-H_{0}+\xi\Delta H$
+\end_inset
+
+ at even 
+\begin_inset Formula $M$
+\end_inset
+
+ is not degenerate at large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nH-M=even"
+
+\end_inset
+
+.
+ The change of physical ground energy of 
+\begin_inset Formula $-H_{0}+2\Delta H$
+\end_inset
+
+ at fixed 
+\begin_inset Formula $N$
+\end_inset
+
+ are plotted as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nH-physical-ground"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -7462,23 +7504,6 @@ Energy level of Hamiltonian
 \end_layout
 
 \begin_layout Standard
-The difference between 
-\begin_inset Formula $-H_{0}+\xi\Delta H$
-\end_inset
-
- and 
-\begin_inset Formula $H_{0}+\xi\Delta H$
-\end_inset
-
- is that the ground energy is non-degenerate as large 
-\begin_inset Formula $N$
-\end_inset
-
- limit for former one.
- 
-\end_layout
-
-\begin_layout Standard
 \align center
 \begin_inset Float figure
 wide false
@@ -7503,6 +7528,12 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-M=even"
+
+\end_inset
+
 Lowest five energy levels of Hamiltonian 
 \begin_inset Formula $H=-H_{0}+2\Delta H$
 \end_inset
@@ -7550,8 +7581,18 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-physical-ground"
+
+\end_inset
+
 Physical ground energy of 
 \begin_inset Formula $H=-H_{0}+2\Delta H$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M$
 \end_inset
 
 
@@ -7596,7 +7637,26 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-physical-ground-N=12"
 
+\end_inset
+
+Physical ground energy of 
+\begin_inset Formula $-H_{0}+\xi\Delta H$
+\end_inset
+
+ at 
+\begin_inset Formula $\xi=0.5,\,1,\,1.5,\,3$
+\end_inset
+
+ and 
+\begin_inset Formula $N=1,\,2$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_inset
@@ -7639,7 +7699,26 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-Physical-ground-energy"
 
+\end_inset
+
+Physical ground energy of 
+\begin_inset Formula $-H_{0}+\xi\Delta H$
+\end_inset
+
+ at 
+\begin_inset Formula $\xi=0.5,\,1,\,1.5,\,3$
+\end_inset
+
+ and 
+\begin_inset Formula $N=3,\,5,\,10,\,20,\,\infty$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_inset
@@ -7681,7 +7760,18 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-excitation"
 
+\end_inset
+
+The product of first excitation energy and bit number, 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+, as a function of bit number.
+ 
 \end_layout
 
 \end_inset
