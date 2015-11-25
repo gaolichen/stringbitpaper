@@ -1809,3348 +1809,6 @@ E_{G}(M)\sim\alpha M+\frac{\gamma}{M}+O(\frac{1}{M^{3}})
 \end_layout
 
 \begin_layout Section
-Trace States
-\end_layout
-
-\begin_layout Standard
-The trace state space of string-bit is built as follows.
- We first introduce the vacuum state 
-\begin_inset Formula $\ket{0}$
-\end_inset
-
- which annihilated by all 
-\begin_inset Formula $a$
-\end_inset
-
- and 
-\begin_inset Formula $b$
-\end_inset
-
- with arbitrary color indices.
- We then can act on 
-\begin_inset Formula $\ket{0}$
-\end_inset
-
- with arbitrary number of 
-\begin_inset Formula $\bar{a}$
-\end_inset
-
- and 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
- to obtain non-vacuum states with color indices.
- Finally, we take trace of the creator operators to obtain color-singlet
- states, which span the string-bit trace state space.
- In general, when 
-\begin_inset Formula $N$
-\end_inset
-
- is big enough, we can act arbitrary number of traces on the vacuum state.
- Each creator operator in the trace state is interpreted as one string bit.
- Trace states with even number of 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
- are bosonic states while those with odd number of 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
- are fermionic states.
- 
-\end_layout
-
-\begin_layout Standard
-A counting question arises naturally here.
- How many trace states are there for a fixed bit number
-\begin_inset Formula $M$
-\end_inset
-
-? Let's first consider the single trace states.
- There are 
-\begin_inset Formula $2^{M}$
-\end_inset
-
- combinations of 
-\begin_inset Formula $M$
-\end_inset
-
--bit string consisting of 
-\begin_inset Formula $\ba,\bb$
-\end_inset
-
-.
- By property of trace, a trace state is equivalent to its cyclic permutations.
- For example, 
-\begin_inset Formula $\tr\bar{b}\bar{a}$
-\end_inset
-
- and 
-\begin_inset Formula $\tr\ba\bb$
-\end_inset
-
- are equivalent states, so as 
-\begin_inset Formula $\tr\bar{b}\bar{a}\bar{a}\bar{b}$
-\end_inset
-
- and 
-\begin_inset Formula $\tr\ba\ba\bb\bb$
-\end_inset
-
-.
- Actually, the later case differs by a negative sign
-\begin_inset Formula 
-\[
-\tr\ba\ba\bb\bb=-\tr\bb\ba\ba\bb.
-\]
-
-\end_inset
-
-The rule is each exchange of order of two 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
- introduce a minus sign.
- This leads to vanishing states, for example, 
-\begin_inset Formula 
-\[
-\tr\bar{b}\bar{b}=-\tr\bar{b}\bar{b}=0.
-\]
-
-\end_inset
-
-Using Burnside’s theorem, we proved that there are equal number of bosonic
- and fermionic single trace states for a given number of 
-\begin_inset Formula $M$
-\end_inset
-
-
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-This stems from the fact that the bit operator 
-\begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
-\end_inset
-
- commute with supersymmetry operator 
-\begin_inset Formula $Q=\tr\left(\exp\left(i\frac{\pi}{4}\right)\bar{a}b+\exp\left(-i\frac{\pi}{4}\right)\bar{b}a\right)$
-\end_inset
-
-.
- 
-\end_layout
-
-\end_inset
-
-.
- The number is given by 
-\begin_inset Formula 
-\begin{equation}
-S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, n,n|M}\varphi\left(n\right)2^{\frac{M}{n}},\label{eq:Single-Trace-Number}
-\end{equation}
-
-\end_inset
-
- where 
-\begin_inset Formula $n|M$
-\end_inset
-
- denotes the condition that 
-\begin_inset Formula $M$
-\end_inset
-
- is dividible by 
-\begin_inset Formula $n$
-\end_inset
-
-, and 
-\begin_inset Formula $\varphi\left(n\right)$
-\end_inset
-
- the Euler's totient function, 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-which indicates the number of positive integers less than or equal to 
-\begin_inset Formula $n$
-\end_inset
-
- that are relatively prime to 
-\begin_inset Formula $n$
-\end_inset
-
-.
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- The proof of formula 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Single-Trace-Number"
-
-\end_inset
-
- is given in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Counting-Single-Trace"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Now consider the general trace states, including single and multiple trace
- states.
- Let 
-\begin_inset Formula $T\left(m,r;0\right)$
-\end_inset
-
- be the number of 
-\begin_inset Formula $r$
-\end_inset
-
--bit bosonic trace states built out of single trace states of bits less
- than or equal to 
-\begin_inset Formula $m$
-\end_inset
-
-.
- 
-\begin_inset Formula $T\left(m,r;1\right)$
-\end_inset
-
- is defined similarly for fermionic trace states.
- We can express 
-\begin_inset Formula $T\left(m,r,b\right)$
-\end_inset
-
- in terms of 
-\begin_inset Formula $T\left(m-1,\cdots\right)$
-\end_inset
-
-.
- Among the 
-\begin_inset Formula $r$
-\end_inset
-
- bits, we can assign 
-\begin_inset Formula $i\times m$
-\end_inset
-
- bits to 
-\begin_inset Formula $i$
-\end_inset
-
- bosonic single trace states and 
-\begin_inset Formula $j\times m$
-\end_inset
-
- bits to 
-\begin_inset Formula $j$
-\end_inset
-
- fermionic single trace states, provided 
-\begin_inset Formula $\left(i+j\right)m\leq r$
-\end_inset
-
-.
- There are 
-\begin_inset Formula $\binom{S_{m}}{i}$
-\end_inset
-
- ways to 
-\begin_inset Formula $ $
-\end_inset
-
-pick 
-\begin_inset Formula $i$
-\end_inset
-
- fermionic 
-\begin_inset Formula $m$
-\end_inset
-
--bit single trace states, and 
-\begin_inset Formula $\binom{S_{m}+j-1}{j}$
-\end_inset
-
- ways to pick 
-\begin_inset Formula $j$
-\end_inset
-
- bosonic 
-\begin_inset Formula $m$
-\end_inset
-
--bit single trace states.
- The rest 
-\begin_inset Formula $r-\left(i+j\right)m$
-\end_inset
-
- bits need to be built out of single trace states of bits less than or equal
- to 
-\begin_inset Formula $m-1$
-\end_inset
-
-.
- Summation over all non-negative 
-\begin_inset Formula $i$
-\end_inset
-
-, 
-\begin_inset Formula $j$
-\end_inset
-
- yields 
-\begin_inset Formula 
-\begin{equation}
-T\left(m,r;b\right)=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T\left(m-1,r-\left(i+j\right)m;\left(b+i\right)\mod2\right).\label{eq:Multiple-Trace-States}
-\end{equation}
-
-\end_inset
-
-We can use induction to prove that 
-\begin_inset Formula 
-\begin{equation}
-T\left(m,r;0\right)=T\left(m,r;1\right),\label{eq:Multiple-trace-T0=T1}
-\end{equation}
-
-\end_inset
-
- which follows there are equal number of bosonic and fermionic multiple
- trace states.
- For 
-\begin_inset Formula $m=1$
-\end_inset
-
-, the only 
-\begin_inset Formula $r$
-\end_inset
-
--bit bosonic state is 
-\begin_inset Formula $\left(\tr\bar{a}\right)^{r}\ket{0}$
-\end_inset
-
- and the only 
-\begin_inset Formula $r$
-\end_inset
-
--bit fermionic state is 
-\begin_inset Formula $\left(\tr\bar{a}\right)^{r-1}\tr\bar{b}\ket{0}$
-\end_inset
-
-, which implies 
-\begin_inset Formula $T\left(1,r;0\right)=T\left(1,r;1\right)=1$
-\end_inset
-
-.
- If 
-\begin_inset Formula $T\left(m-1,r;0\right)=T\left(m-1,r;1\right)$
-\end_inset
-
- holds for all 
-\begin_inset Formula $r$
-\end_inset
-
-, then Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Multiple-Trace-States"
-
-\end_inset
-
- gives the same result for 
-\begin_inset Formula $T\left(m,r;0\right)$
-\end_inset
-
- and 
-\begin_inset Formula $T\left(m,r;1\right)$
-\end_inset
-
-, which follows 
-\begin_inset Formula $T\left(m,r;0\right)=T\left(m,r;1\right)$
-\end_inset
-
- holds for all values of 
-\begin_inset Formula $m,r$
-\end_inset
-
-.
- Therefore, we can drop the third argument of 
-\begin_inset Formula $T$
-\end_inset
-
- function and simply write 
-\begin_inset Formula 
-\begin{equation}
-T\left(m,r\right)=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T\left(m-1,r-\left(i+j\right)m\right).\label{eq:Multiple-trace-states-2}
-\end{equation}
-
-\end_inset
-
-The number of 
-\begin_inset Formula $M$
-\end_inset
-
--bit bosonic or fermionic trace states is simply 
-\begin_inset Formula 
-\begin{equation}
-T_{M}=T\left(M,M\right).\label{eq:Multiple-trace-states-3}
-\end{equation}
-
-\end_inset
-
- Equations 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Single-Trace-Number"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Multiple-trace-states-2"
-
-\end_inset
-
-, and 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Multiple-trace-states-3"
-
-\end_inset
-
- enable us to find the number of trace states by computer program.
- The results of 
-\begin_inset Formula $S_{M}$
-\end_inset
-
- and 
-\begin_inset Formula $T_{M}$
-\end_inset
-
- are shown in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Number-of-trace-states"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="44" columns="5">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<column alignment="center" valignment="top" width="0">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-M
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $S_{M}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $T_{M}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $S_{M}\times\nicefrac{M}{2^{M}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\nicefrac{T_{M}}{2^{M}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.750000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.625000000000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.625000000000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.625000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.656250000000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-44
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.562500000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.687500000000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-89
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.546875000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.695312500000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-16
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-180
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.703125000000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-365
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.527343750000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.712890625000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-10
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-52
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-734
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.507812500000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.716796875000 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-11
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-94
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1473
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.504882812500 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.719238281250 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-12
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-172 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2958 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.503906250000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.722167968750 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-13
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-316 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5925 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.501464843750 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.723266601563 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-586 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-11864 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500732421875 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.724121093750 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1096
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23757
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.501708984375 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725006103516 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-16
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2048 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-47536 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725341796875 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-17
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3856 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-95105 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500122070313 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725593566895 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-18
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7286 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-190274 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500289916992 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725837707520 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-13798 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-380601 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500034332275 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725938796997 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-26216
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-761282 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500030517578 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726015090942 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-49940 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1522705 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500078201294 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726082324982 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-22
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-95326 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3045532 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500004768372 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726111412048 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-182362 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6091241 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500002622604 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726132512093 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-349536 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-12182788 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500015258789 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726150751114 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-671092
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24365857 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500002503395 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726159125566 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-26
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1290556 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-48732102 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000357628 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726164907217 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-27
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2485534 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-97464861 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500004127622 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726169802248 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-28
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4793492 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-194930334 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000178814 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726172082126 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-29
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9256396 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-389861509 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000052154 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726173648611 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-17895736 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-779724424 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500001087785 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726174958050 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-31
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-34636834 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1559450161 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000013970 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726175569464 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-32
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-67108864 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3118902120 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726175988093 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-33
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-130150588 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6237807181 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000245403 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176330470 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-34
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-252645136 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-12475617154 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000001863 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176492986 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-35
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-490853416 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24951238137 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000010943 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176604425 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-36
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-954437292 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-49902482386 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000060303 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176693366 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-37
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1857283156 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-99804970645 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000262 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176736098 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-38
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3616814566 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-199609949268 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000131 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176765122 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-39
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7048151672 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-399219911173 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000015032 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176788108 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-40
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-13743895360 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-798439834644 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000466 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176799293 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-45
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-390937468408 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25550075403713 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000965 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176819049 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-50
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-11258999068468 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-817602415099946 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000001 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176820986 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-60
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9607679205074672 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-837224873334502342 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000001 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176821223 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Number-of-trace-states"
-
-\end_inset
-
-Number of trace states
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The results reveals that as 
-\begin_inset Formula $M$
-\end_inset
-
- increase 
-\begin_inset Formula 
-\[
-S_{M}\to\frac{2^{M-1}}{M},\qquad T_{M}\to\left(0.7261768212\cdots\right)\times2^{M}.
-\]
-
-\end_inset
-
-The limit of 
-\begin_inset Formula $S_{M}$
-\end_inset
-
- shows for large 
-\begin_inset Formula $M$
-\end_inset
-
- almost each single trace state has 
-\begin_inset Formula $M$
-\end_inset
-
- different cyclic permutations.
- This is easy to understand.
- As 
-\begin_inset Formula $M$
-\end_inset
-
- increase, the ratio of the single trace with certain cyclic symmetry become
- lower and lower.
- 
-\begin_inset Formula $T_{M}$
-\end_inset
-
- increase simply as 
-\begin_inset Formula $2^{M}$
-\end_inset
-
- with a prefactor we don't understand.
- The exploration of the magic number in the 
-\begin_inset Formula $T_{M}$
-\end_inset
-
- limit could be an interesting mathematic problem.
-\end_layout
-
-\begin_layout Standard
-The metric matrix 
-\begin_inset Formula $G$
-\end_inset
-
- of 
-\begin_inset Formula $M$
-\end_inset
-
--bit bosonic trace state space 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-The 
-\begin_inset Formula $M$
-\end_inset
-
-- bit fermionic trace state space has a equivalent metric as 
-\begin_inset Formula $M$
-\end_inset
-
--bit bosonic trace state space.
-\end_layout
-
-\end_inset
-
- is a 
-\begin_inset Formula $T_{M}\times T_{M}$
-\end_inset
-
- real symmetric matrix defined as 
-\begin_inset Formula 
-\begin{equation}
-G_{ij}=\dprod{i}{j},\label{eq:Norm-Matrix-Definition}
-\end{equation}
-
-\end_inset
-
- where 
-\begin_inset Formula $\ket{i}$
-\end_inset
-
- is the 
-\begin_inset Formula $i$
-\end_inset
-
--th 
-\begin_inset Formula $M$
-\end_inset
-
--bit trace state.
- The complete lists of bosonic trace states from 
-\begin_inset Formula $M=1$
-\end_inset
-
- to 
-\begin_inset Formula $M=7$
-\end_inset
-
- are in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Trace-States-List"
-
-\end_inset
-
-.
- The rank of 
-\begin_inset Formula $G$
-\end_inset
-
- determines the dimension of the trace state space, and hence, the number
- of energy levels of the system.
- Matrix 
-\begin_inset Formula $G$
-\end_inset
-
- has full rank for 
-\begin_inset Formula $N\geq M$
-\end_inset
-
-, while for 
-\begin_inset Formula $N<M$
-\end_inset
-
- it's rank deficient.
- As 
-\begin_inset Formula $N$
-\end_inset
-
- change from 
-\begin_inset Formula $M$
-\end_inset
-
- to 
-\begin_inset Formula $1$
-\end_inset
-
-, , it's rank changes from 
-\begin_inset Formula $T_{M}$
-\end_inset
-
- to 
-\begin_inset Formula $1$
-\end_inset
-
-.
- For 
-\begin_inset Formula $M\leq11$
-\end_inset
-
- and 
-\begin_inset Formula $N\leq M$
-\end_inset
-
-, the ranks of 
-\begin_inset Formula $G$
-\end_inset
-
- matrices form an number triangle show as follows:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{gather*}
-\end_layout
-
-\begin_layout Plain Layout
-
-1 
-\backslash
-
-\backslash
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-1 
-\backslash
-quad 2 
-\backslash
-
-\backslash
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-1 
-\backslash
-quad 4 
-\backslash
-quad 5 
-\backslash
-
-\backslash
-    
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 6 
-\backslash
-quad 9 
-\backslash
-quad 10 
-\backslash
-
-\backslash
-    
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 8
-\backslash
-quad 17
-\backslash
-quad 20
-\backslash
-quad 21 
-\backslash
-
-\backslash
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 10 
-\backslash
-quad 31 
-\backslash
-quad 40 
-\backslash
-quad 43
-\backslash
-quad 44 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 12 
-\backslash
-quad 49 
-\backslash
-quad 76 
-\backslash
-quad 85
-\backslash
-quad 88
-\backslash
-quad 89 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 14 
-\backslash
-quad 75 
-\backslash
-quad 140 
-\backslash
-quad 167
-\backslash
-quad 176 
-\backslash
-quad 179 
-\backslash
-quad 180
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 16 
-\backslash
-quad 109 
-\backslash
-quad 252 
-\backslash
-quad 325
-\backslash
-quad 352 
-\backslash
-quad 361 
-\backslash
-quad 364 
-\backslash
-quad 365
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 18 
-\backslash
-quad 147 
-\backslash
-quad 436 
-\backslash
-quad 621
-\backslash
-quad 694 
-\backslash
-quad 721 
-\backslash
-quad 730 
-\backslash
-quad 733 
-\backslash
-quad 734
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-qquad 1
-\backslash
-quad 20 
-\backslash
-quad 193 
-\backslash
-quad 724 
-\backslash
-quad 1165
-\backslash
-quad 1360 
-\backslash
-quad 1433 
-\backslash
-quad 1460 
-\backslash
-quad 1469 
-\backslash
-quad 1472 
-\backslash
-quad 1473
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{gather*} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The number at 
-\begin_inset Formula $i$
-\end_inset
-
--th row and 
-\begin_inset Formula $j$
-\end_inset
-
--th column is the rank of 
-\begin_inset Formula $G$
-\end_inset
-
- when 
-\begin_inset Formula $M=i,\, N=j$
-\end_inset
-
-.
- Let's denote the rank to be of 
-\begin_inset Formula $R\left(i,j\right)$
-\end_inset
-
-.
- There are couples of obvious patterns: 
-\begin_inset Formula $R\left(M,M\right)=T_{M}$
-\end_inset
-
-, 
-\begin_inset Formula $R\left(M,M-1\right)=T_{M}-1$
-\end_inset
-
-, 
-\begin_inset Formula $R\left(M,1\right)=1$
-\end_inset
-
-, and for 
-\begin_inset Formula $M$
-\end_inset
-
- greater than 1, 
-\begin_inset Formula $R\left(M,2\right)=2M-2$
-\end_inset
-
-.
- Moreover, if we define 
-\begin_inset Formula $R\left(M,0\right)=0$
-\end_inset
-
- and 
-\begin_inset Formula $D\left(M,N\right)=R\left(M,N\right)-R\left(M,N-1\right)$
-\end_inset
-
-, we obtain another number triangle formed by 
-\begin_inset Formula $D\left(M,N\right)$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{gather*}
-\end_layout
-
-\begin_layout Plain Layout
-
-1 
-\backslash
-
-\backslash
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-1 
-\backslash
-quad 1 
-\backslash
-
-\backslash
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-1 
-\backslash
-quad 3 
-\backslash
-quad 1 
-\backslash
-
-\backslash
-    
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 5 
-\backslash
-quad 3 
-\backslash
-quad 1 
-\backslash
-
-\backslash
-    
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 7
-\backslash
-quad 9
-\backslash
-quad 3
-\backslash
-quad 1 
-\backslash
-
-\backslash
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 9 
-\backslash
-quad 21 
-\backslash
-quad 9 
-\backslash
-quad 3
-\backslash
-quad 1 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 11 
-\backslash
-quad 37 
-\backslash
-quad 27 
-\backslash
-quad 9
-\backslash
-quad 3
-\backslash
-quad 1 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 13 
-\backslash
-quad 61 
-\backslash
-quad 65 
-\backslash
-quad 27
-\backslash
-quad 9 
-\backslash
-quad 3 
-\backslash
-quad 1
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 15 
-\backslash
-quad 93 
-\backslash
-quad 143 
-\backslash
-quad 73
-\backslash
-quad 27 
-\backslash
-quad 9 
-\backslash
-quad 3 
-\backslash
-quad 1
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 17 
-\backslash
-quad 129 
-\backslash
-quad 289 
-\backslash
-quad 185
-\backslash
-quad 73 
-\backslash
-quad 27 
-\backslash
-quad 9 
-\backslash
-quad 3 
-\backslash
-quad 1
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-1
-\backslash
-quad 19 
-\backslash
-quad 173 
-\backslash
-quad 531 
-\backslash
-quad 441
-\backslash
-quad 195 
-\backslash
-quad 73 
-\backslash
-quad 27 
-\backslash
-quad 9 
-\backslash
-quad 3 
-\backslash
-quad 1
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{gather*} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The right half of the each row exibits the pattern 
-\begin_inset Formula 
-\[
-1,\quad3,\quad9,\quad27,\quad73,\quad195,\cdots.
-\]
-
-\end_inset
-
- For odd 
-\begin_inset Formula $M$
-\end_inset
-
-, the sequence starts from 
-\begin_inset Formula $N=M$
-\end_inset
-
- to 
-\begin_inset Formula $N=\frac{M+1}{2}$
-\end_inset
-
-; for even 
-\begin_inset Formula $M$
-\end_inset
-
-, the sequence starts from 
-\begin_inset Formula $N=M$
-\end_inset
-
- to 
-\begin_inset Formula $N=\frac{M}{2}$
-\end_inset
-
-.
- We are not sure about why it behaves like this.
- It might be related to the value of 
-\begin_inset Formula $N$
-\end_inset
-
- when the norm of some trace states begin to vanish.
- For odd 
-\begin_inset Formula $M$
-\end_inset
-
-, the norm of state 
-\begin_inset Formula $\tr\bar{a}\bar{b}^{M-1}\ket{0}$
-\end_inset
-
- vanishes at 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-, and as 
-\begin_inset Formula $N$
-\end_inset
-
- decrease, more states have zero norm.
- For even 
-\begin_inset Formula $M$
-\end_inset
-
-, when 
-\begin_inset Formula $N=\frac{M}{2}$
-\end_inset
-
-, there is state with vanishing norm, but when 
-\begin_inset Formula $N=\frac{M}{2}-2$
-\end_inset
-
-, there are more than one states have zero norm.
-\end_layout
-
-\begin_layout Section*
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Method"
@@ -8009,11 +4667,130 @@ options "plain"
 \start_of_appendix
 \begin_inset CommandInset label
 LatexCommand label
-name "app:Counting-Single-Trace"
+name "app:Counting-Trace-States"
 
 \end_inset
 
+Counting Problems on Trace States
+\end_layout
+
+\begin_layout Standard
+The trace state space of string-bit is built as follows.
+ We first introduce the vacuum state 
+\begin_inset Formula $\ket{0}$
+\end_inset
+
+ which annihilated by all 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ with arbitrary color indices.
+ We then can act on 
+\begin_inset Formula $\ket{0}$
+\end_inset
+
+ with arbitrary number of 
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ to obtain non-vacuum states with color indices.
+ Finally, we take trace of the creator operators to obtain color-singlet
+ states, which span the string-bit trace state space.
+ In general, when 
+\begin_inset Formula $N$
+\end_inset
+
+ is big enough, we can act arbitrary number of traces on the vacuum state.
+ Each creator operator in the trace state is interpreted as one string bit.
+ Trace states with even number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ are bosonic states while those with odd number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ are fermionic states.
+ 
+\end_layout
+
+\begin_layout Standard
+A counting question arises naturally here.
+ How many trace states are there for a fixed bit number
+\begin_inset Formula $M$
+\end_inset
+
+? In the following subsections, we will first count the single trace states
+ and then the general trace states which including both single and multiple
+ trace states.
+\end_layout
+
+\begin_layout Subsection*
 Counting Single Trace States
+\end_layout
+
+\begin_layout Standard
+There are 
+\begin_inset Formula $2^{M}$
+\end_inset
+
+ combinations of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit string consisting of 
+\begin_inset Formula $\ba,\bb$
+\end_inset
+
+.
+ By property of trace, a trace state is equivalent to its cyclic permutations.
+ For example, 
+\begin_inset Formula $\tr\bar{b}\bar{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tr\ba\bb$
+\end_inset
+
+ are equivalent states, so as 
+\begin_inset Formula $\tr\bar{b}\bar{a}\bar{a}\bar{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $\tr\ba\ba\bb\bb$
+\end_inset
+
+.
+ Actually, the later case differs by a negative sign
+\begin_inset Formula 
+\[
+\tr\ba\ba\bb\bb=-\tr\bb\ba\ba\bb.
+\]
+
+\end_inset
+
+The rule is each exchange of order of two 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ introduce a minus sign.
+ This leads to vanishing states, for example, 
+\begin_inset Formula 
+\[
+\tr\bar{b}\bar{b}=-\tr\bar{b}\bar{b}=0.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8384,11 +5161,16 @@ For bosonic states, we cannot simply count all single trace states with
 \end_inset
 
 -state minus number of vanishing states.
- Consider the number of even-
+ Let's first consider the number of even-
 \begin_inset Formula $\bar{b}$
 \end_inset
 
--states, for a group member 
+-states, which is denoted as 
+\begin_inset Formula $B_{M}$
+\end_inset
+
+ for convenience.
+ For a group member 
 \begin_inset Formula $c_{k}$
 \end_inset
 
@@ -8424,13 +5206,17 @@ For bosonic states, we cannot simply count all single trace states with
  in each part, which follows
 \begin_inset Formula 
 \begin{eqnarray}
-\text{number of even-}\bar{b}\text{-state} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)-1}+\sum_{M/\left(M,k\right)\text{ is even}}2^{\left(M,k\right)}\right)\nonumber \\
+B_{M} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)-1}+\sum_{M/\left(M,k\right)\text{ is even}}2^{\left(M,k\right)}\right)\nonumber \\
  & = & \frac{1}{2M}\left(\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}+2\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right).\label{eq:A-Even-b-States}
 \end{eqnarray}
 
 \end_inset
 
- Now consider the number of vanishing states.
+ We next consider the number of vanishing states, which is denoted as 
+\begin_inset Formula $V_{M}$
+\end_inset
+
+.
  For each 
 \begin_inset Formula $c_{k}$
 \end_inset
@@ -8502,7 +5288,7 @@ For bosonic states, we cannot simply count all single trace states with
  Therefore, the number of vanishing states reads 
 \begin_inset Formula 
 \begin{eqnarray}
-\text{number of vanishing states} & = & \frac{1}{M}\sum_{\text{odd }M/\left(M,k\right)}\left(\sum_{i\geq1\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
+V_{M} & = & \frac{1}{M}\sum_{\text{odd }M/\left(M,k\right)}\left(\sum_{i\geq1\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
  &  & +\frac{1}{M}\sum_{\text{even }M/\left(M,k\right)}\left(\sum_{i\geq0\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
  & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\text{even }M/\left(M,k\right)}2^{\left(M,k\right)}\right]\nonumber \\
  & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right]\label{eq:A-Vanish-States-1}
@@ -8570,7 +5356,7 @@ reference "eq:A-Vanish-States-1"
 
 \end_inset
 
-it's easy to prove that, 
+it's easy to see that 
 \begin_inset Formula 
 \[
 \sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)=\varphi\left(j\right),\quad\text{if }j\text{ is even}.
@@ -8578,10 +5364,18 @@ it's easy to prove that,
 
 \end_inset
 
-It follows 
+Now we have 
 \begin_inset Formula 
 \[
-\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{even }j,j|M}\varphi\left(j\right)2^{\frac{M}{j}}.
+\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{even }j,j|M}\varphi\left(j\right)2^{\frac{M}{j}},
+\]
+
+\end_inset
+
+ from which it follows 
+\begin_inset Formula 
+\[
+V_{M}=\frac{1}{M}\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}.
 \]
 
 \end_inset
@@ -8608,30 +5402,1916 @@ reference "eq:A-Vanish-States-1"
  yields 
 \begin_inset Formula 
 \[
-S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},
+S_{M}=B_{M}-V_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},
 \]
 
 \end_inset
 
  which is the same as the formula for fermionic states.
- Easy to check that Eq.
  
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-SM-Odd"
+\end_layout
+
+\begin_layout Standard
+In sum, we conclude that there are equal number of bosonic states and fermionic
+ state for a given bit number 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+From purely physical perspective, this stems from the fact that the bit
+ operator 
+\begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
+\end_inset
+
+ commute with supersymmetry operator 
+\begin_inset Formula $Q=\tr\left(\exp\left(i\frac{\pi}{4}\right)\bar{a}b+\exp\left(-i\frac{\pi}{4}\right)\bar{b}a\right)$
+\end_inset
+
+.
+ 
+\end_layout
 
 \end_inset
 
- is the same as Eq.
+ and both numbers can be written as 
+\begin_inset Formula 
+\begin{equation}
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, n,n|M}\varphi\left(n\right)2^{\frac{M}{n}}.\label{eq:Single-Trace-Number}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Counting Trace States
+\end_layout
+
+\begin_layout Standard
+Now consider the general trace states, including single and multiple trace
+ states.
+ Let 
+\begin_inset Formula $T\left(m,r;0\right)$
+\end_inset
+
+ be the number of 
+\begin_inset Formula $r$
+\end_inset
+
+-bit bosonic trace states built out of single trace states of bits less
+ than or equal to 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ 
+\begin_inset Formula $T\left(m,r;1\right)$
+\end_inset
+
+ is defined similarly for fermionic trace states.
+ We can express 
+\begin_inset Formula $T\left(m,r,b\right)$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $T\left(m-1,\cdots\right)$
+\end_inset
+
+.
+ Among the 
+\begin_inset Formula $r$
+\end_inset
+
+ bits, we can assign 
+\begin_inset Formula $i\times m$
+\end_inset
+
+ bits to 
+\begin_inset Formula $i$
+\end_inset
+
+ bosonic single trace states and 
+\begin_inset Formula $j\times m$
+\end_inset
+
+ bits to 
+\begin_inset Formula $j$
+\end_inset
+
+ fermionic single trace states, provided 
+\begin_inset Formula $\left(i+j\right)m\leq r$
+\end_inset
+
+.
+ There are 
+\begin_inset Formula $\binom{S_{m}}{i}$
+\end_inset
+
+ ways to 
+\begin_inset Formula $ $
+\end_inset
+
+pick 
+\begin_inset Formula $i$
+\end_inset
+
+ fermionic 
+\begin_inset Formula $m$
+\end_inset
+
+-bit single trace states, and 
+\begin_inset Formula $\binom{S_{m}+j-1}{j}$
+\end_inset
+
+ ways to pick 
+\begin_inset Formula $j$
+\end_inset
+
+ bosonic 
+\begin_inset Formula $m$
+\end_inset
+
+-bit single trace states.
+ The rest 
+\begin_inset Formula $r-\left(i+j\right)m$
+\end_inset
+
+ bits need to be built out of single trace states of bits less than or equal
+ to 
+\begin_inset Formula $m-1$
+\end_inset
+
+.
+ Summation over all non-negative 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $j$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{equation}
+T\left(m,r;b\right)=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T\left(m-1,r-\left(i+j\right)m;\left(b+i\right)\mod2\right).\label{eq:Multiple-Trace-States}
+\end{equation}
+
+\end_inset
+
+We can use induction to prove that 
+\begin_inset Formula 
+\begin{equation}
+T\left(m,r;0\right)=T\left(m,r;1\right),\label{eq:Multiple-trace-T0=T1}
+\end{equation}
+
+\end_inset
+
+ which follows there are equal number of bosonic and fermionic multiple
+ trace states.
+ For 
+\begin_inset Formula $m=1$
+\end_inset
+
+, the only 
+\begin_inset Formula $r$
+\end_inset
+
+-bit bosonic state is 
+\begin_inset Formula $\left(\tr\bar{a}\right)^{r}\ket{0}$
+\end_inset
+
+ and the only 
+\begin_inset Formula $r$
+\end_inset
+
+-bit fermionic state is 
+\begin_inset Formula $\left(\tr\bar{a}\right)^{r-1}\tr\bar{b}\ket{0}$
+\end_inset
+
+, which implies 
+\begin_inset Formula $T\left(1,r;0\right)=T\left(1,r;1\right)=1$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $T\left(m-1,r;0\right)=T\left(m-1,r;1\right)$
+\end_inset
+
+ holds for all 
+\begin_inset Formula $r$
+\end_inset
+
+, then Eq.
  
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:A-SM-Euler"
+reference "eq:Multiple-Trace-States"
+
+\end_inset
+
+ gives the same result for 
+\begin_inset Formula $T\left(m,r;0\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $T\left(m,r;1\right)$
+\end_inset
+
+, which follows 
+\begin_inset Formula $T\left(m,r;0\right)=T\left(m,r;1\right)$
+\end_inset
+
+ holds for all values of 
+\begin_inset Formula $m,r$
+\end_inset
+
+.
+ Therefore, we can drop the third argument of 
+\begin_inset Formula $T$
+\end_inset
+
+ function and simply write 
+\begin_inset Formula 
+\begin{equation}
+T\left(m,r\right)=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T\left(m-1,r-\left(i+j\right)m\right).\label{eq:Multiple-trace-states-2}
+\end{equation}
+
+\end_inset
+
+The number of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit bosonic or fermionic trace states is simply 
+\begin_inset Formula 
+\begin{equation}
+T_{M}=T\left(M,M\right).\label{eq:Multiple-trace-states-3}
+\end{equation}
+
+\end_inset
+
+ Equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Single-Trace-Number"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Multiple-trace-states-2"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Multiple-trace-states-3"
+
+\end_inset
+
+ enable us to find the number of trace states by computer program.
+ The results of 
+\begin_inset Formula $S_{M}$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{M}$
+\end_inset
+
+ are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Number-of-trace-states"
 
 \end_inset
 
 .
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="17" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S_{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $T_{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $S_{M}\times\nicefrac{M}{2^{M}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{T_{M}}{2^{M}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.750000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.625000000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.625000000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.625000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.656250000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.562500000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.687500000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+89
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.546875000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.695312500000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.703125000000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+365
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.527343750000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.712890625000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+734
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.507812500000 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.716796875000 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1473
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.504882812500 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.719238281250 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26216
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+761282 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500030517578 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726015090942 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17895736 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+779724424 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500001087785 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726174958050 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13743895360 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+798439834644 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000466 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176799293 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11258999068468 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+817602415099946 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000001 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176820986 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9607679205074672 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+837224873334502342 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.500000000001 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.726176821223 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Number-of-trace-states"
+
+\end_inset
+
+Number of trace states
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The results reveals that in large 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+S_{M}\to\frac{2^{M-1}}{M},\qquad T_{M}\to\left(0.7261768212\cdots\right)\times2^{M}.
+\]
+
+\end_inset
+
+The limit of 
+\begin_inset Formula $S_{M}$
+\end_inset
+
+ shows that almost each single trace state has 
+\begin_inset Formula $M$
+\end_inset
+
+ different cyclic permutations at large 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ This is not surprising.
+ The ratio of the single trace with certain cyclic symmetry goes down as
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ increase.
+ The number 
+\begin_inset Formula $T_{M}$
+\end_inset
+
+ increase simply as 
+\begin_inset Formula $2^{M}$
+\end_inset
+
+ with a unknown magic prefactor, which could be an interesting mathematic
+ problem to explore.
+\end_layout
+
+\begin_layout Section
+Rank of Metrix Matrix
+\end_layout
+
+\begin_layout Standard
+The metric matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit bosonic trace state space 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $M$
+\end_inset
+
+- bit fermionic trace state space has a equivalent metric as 
+\begin_inset Formula $M$
+\end_inset
+
+-bit bosonic trace state space.
+\end_layout
+
+\end_inset
+
+ is a 
+\begin_inset Formula $T_{M}\times T_{M}$
+\end_inset
+
+ real symmetric matrix defined as 
+\begin_inset Formula 
+\begin{equation}
+G_{ij}=\dprod{i}{j},\label{eq:Norm-Matrix-Definition}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\ket{i}$
+\end_inset
+
+ is the 
+\begin_inset Formula $i$
+\end_inset
+
+-th 
+\begin_inset Formula $M$
+\end_inset
+
+-bit trace state.
+ The complete lists of bosonic trace states from 
+\begin_inset Formula $M=1$
+\end_inset
+
+ to 
+\begin_inset Formula $M=7$
+\end_inset
+
+ are in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:Trace-States-List"
+
+\end_inset
+
+.
+ The rank of 
+\begin_inset Formula $G$
+\end_inset
+
+ determines the dimension of the trace state space, and hence, the number
+ of energy levels of the system.
+ Matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ has full rank for 
+\begin_inset Formula $N\geq M$
+\end_inset
+
+, while for 
+\begin_inset Formula $N<M$
+\end_inset
+
+ it's rank deficient.
+ As 
+\begin_inset Formula $N$
+\end_inset
+
+ change from 
+\begin_inset Formula $M$
+\end_inset
+
+ to 
+\begin_inset Formula $1$
+\end_inset
+
+, , it's rank changes from 
+\begin_inset Formula $T_{M}$
+\end_inset
+
+ to 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+ and 
+\begin_inset Formula $N\leq M$
+\end_inset
+
+, the ranks of 
+\begin_inset Formula $G$
+\end_inset
+
+ matrices form an number triangle show as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{gather*}
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+quad 2 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+quad 4 
+\backslash
+quad 5 
+\backslash
+
+\backslash
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 6 
+\backslash
+quad 9 
+\backslash
+quad 10 
+\backslash
+
+\backslash
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 8
+\backslash
+quad 17
+\backslash
+quad 20
+\backslash
+quad 21 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 10 
+\backslash
+quad 31 
+\backslash
+quad 40 
+\backslash
+quad 43
+\backslash
+quad 44 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 12 
+\backslash
+quad 49 
+\backslash
+quad 76 
+\backslash
+quad 85
+\backslash
+quad 88
+\backslash
+quad 89 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 14 
+\backslash
+quad 75 
+\backslash
+quad 140 
+\backslash
+quad 167
+\backslash
+quad 176 
+\backslash
+quad 179 
+\backslash
+quad 180
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 16 
+\backslash
+quad 109 
+\backslash
+quad 252 
+\backslash
+quad 325
+\backslash
+quad 352 
+\backslash
+quad 361 
+\backslash
+quad 364 
+\backslash
+quad 365
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 18 
+\backslash
+quad 147 
+\backslash
+quad 436 
+\backslash
+quad 621
+\backslash
+quad 694 
+\backslash
+quad 721 
+\backslash
+quad 730 
+\backslash
+quad 733 
+\backslash
+quad 734
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+qquad 1
+\backslash
+quad 20 
+\backslash
+quad 193 
+\backslash
+quad 724 
+\backslash
+quad 1165
+\backslash
+quad 1360 
+\backslash
+quad 1433 
+\backslash
+quad 1460 
+\backslash
+quad 1469 
+\backslash
+quad 1472 
+\backslash
+quad 1473
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{gather*} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The number at 
+\begin_inset Formula $i$
+\end_inset
+
+-th row and 
+\begin_inset Formula $j$
+\end_inset
+
+-th column is the rank of 
+\begin_inset Formula $G$
+\end_inset
+
+ when 
+\begin_inset Formula $M=i,\, N=j$
+\end_inset
+
+.
+ Let's denote the rank to be of 
+\begin_inset Formula $R\left(i,j\right)$
+\end_inset
+
+.
+ There are couples of obvious patterns: 
+\begin_inset Formula $R\left(M,M\right)=T_{M}$
+\end_inset
+
+, 
+\begin_inset Formula $R\left(M,M-1\right)=T_{M}-1$
+\end_inset
+
+, 
+\begin_inset Formula $R\left(M,1\right)=1$
+\end_inset
+
+, and for 
+\begin_inset Formula $M$
+\end_inset
+
+ greater than 1, 
+\begin_inset Formula $R\left(M,2\right)=2M-2$
+\end_inset
+
+.
+ Moreover, if we define 
+\begin_inset Formula $R\left(M,0\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $D\left(M,N\right)=R\left(M,N\right)-R\left(M,N-1\right)$
+\end_inset
+
+, we obtain another number triangle formed by 
+\begin_inset Formula $D\left(M,N\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{gather*}
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+quad 1 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1 
+\backslash
+quad 3 
+\backslash
+quad 1 
+\backslash
+
+\backslash
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 5 
+\backslash
+quad 3 
+\backslash
+quad 1 
+\backslash
+
+\backslash
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 7
+\backslash
+quad 9
+\backslash
+quad 3
+\backslash
+quad 1 
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 9 
+\backslash
+quad 21 
+\backslash
+quad 9 
+\backslash
+quad 3
+\backslash
+quad 1 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 11 
+\backslash
+quad 37 
+\backslash
+quad 27 
+\backslash
+quad 9
+\backslash
+quad 3
+\backslash
+quad 1 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 13 
+\backslash
+quad 61 
+\backslash
+quad 65 
+\backslash
+quad 27
+\backslash
+quad 9 
+\backslash
+quad 3 
+\backslash
+quad 1
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 15 
+\backslash
+quad 93 
+\backslash
+quad 143 
+\backslash
+quad 73
+\backslash
+quad 27 
+\backslash
+quad 9 
+\backslash
+quad 3 
+\backslash
+quad 1
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 17 
+\backslash
+quad 129 
+\backslash
+quad 289 
+\backslash
+quad 185
+\backslash
+quad 73 
+\backslash
+quad 27 
+\backslash
+quad 9 
+\backslash
+quad 3 
+\backslash
+quad 1
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1
+\backslash
+quad 19 
+\backslash
+quad 173 
+\backslash
+quad 531 
+\backslash
+quad 441
+\backslash
+quad 195 
+\backslash
+quad 73 
+\backslash
+quad 27 
+\backslash
+quad 9 
+\backslash
+quad 3 
+\backslash
+quad 1
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{gather*} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The right half of the each row exibits the pattern 
+\begin_inset Formula 
+\[
+1,\quad3,\quad9,\quad27,\quad73,\quad195,\cdots.
+\]
+
+\end_inset
+
+ For odd 
+\begin_inset Formula $M$
+\end_inset
+
+, the sequence starts from 
+\begin_inset Formula $N=M$
+\end_inset
+
+ to 
+\begin_inset Formula $N=\frac{M+1}{2}$
+\end_inset
+
+; for even 
+\begin_inset Formula $M$
+\end_inset
+
+, the sequence starts from 
+\begin_inset Formula $N=M$
+\end_inset
+
+ to 
+\begin_inset Formula $N=\frac{M}{2}$
+\end_inset
+
+.
+ We are not sure about why it behaves like this.
+ It might be related to the value of 
+\begin_inset Formula $N$
+\end_inset
+
+ when the norm of some trace states begin to vanish.
+ For odd 
+\begin_inset Formula $M$
+\end_inset
+
+, the norm of state 
+\begin_inset Formula $\tr\bar{a}\bar{b}^{M-1}\ket{0}$
+\end_inset
+
+ vanishes at 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+, and as 
+\begin_inset Formula $N$
+\end_inset
+
+ decrease, more states have zero norm.
+ For even 
+\begin_inset Formula $M$
+\end_inset
+
+, when 
+\begin_inset Formula $N=\frac{M}{2}$
+\end_inset
+
+, there is state with vanishing norm, but when 
+\begin_inset Formula $N=\frac{M}{2}-2$
+\end_inset
+
+, there are more than one states have zero norm.
 \end_layout
 
 \begin_layout Section
