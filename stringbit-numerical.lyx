@@ -141,7 +141,7 @@ there are different approaches to a fundamental formulation of string theory,
  String bit models
 \begin_inset CommandInset citation
 LatexCommand cite
-key "arXiv:hep-th/9405069v1"
+key "Thorn:1991fv"
 
 \end_inset
 
@@ -322,10 +322,10 @@ Because of the second term which is propotional to
 , a long chain of bosonic bits is unstable, it will decay into smaller chains.
  This instability is also a motivation for introducing supersymmetry.
  However except this there are also fermionic degrees of freedom which are
- called statistic waves
+ called statistic waves 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "arXiv:hep-th/9607204"
+key "Thorn:1996fa"
 
 \end_inset
 
@@ -572,10 +572,10 @@ Here is how we reconstructed the Hamiltonian.
 \begin_inset Formula $N=\infty$
 \end_inset
 
- is solved in
+ is solved in 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hep-th/9506125"
+key "Bergman:1995wh"
 
 \end_inset
 
@@ -621,7 +621,7 @@ we define a super creation operator as
 Consulting
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hep-th/9506125"
+key "Bergman:1995wh"
 
 \end_inset
 
@@ -1769,7 +1769,7 @@ For large
  is expected to have the asymptotic form
 \begin_inset CommandInset citation
 LatexCommand cite
-key "arXiv:hep-th/9607204"
+key "Thorn:1996fa"
 
 \end_inset
 
