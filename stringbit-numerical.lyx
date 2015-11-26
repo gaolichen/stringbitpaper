@@ -137,6 +137,82 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+The idea of string bits, proposed over two decades ago 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Thorn:1991fv"
+
+\end_inset
+
+, is one approach to formulate string theory.
+ In this formulation, strings are not fundamental building blocks but chain-like
+ objects comprised of string bits.
+ In lightcone coordinates, string bits move about the transverse space and
+ obey the dynamics of Galilei invariant.
+ While the Lorentz invariance is not a built in priori, it emerges as the
+ bit number 
+\begin_inset Formula $M$
+\end_inset
+
+ take the limit 
+\begin_inset Formula $M\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A brief summary on the motivatation of the idea is as follows.
+ Define the lightcone coordinates as 
+\begin_inset Formula 
+\[
+x^{\pm}=\frac{x^{0}\pm x^{1}}{\sqrt{2}},\quad\mathbf{x}=\left(x^{2},\cdots,x^{d}\right),
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ is the transverse coordinates of dimension 
+\begin_inset Formula $d=D-2$
+\end_inset
+
+, with 
+\begin_inset Formula $D$
+\end_inset
+
+ the dimension of spacetime.
+ The Hamiltonian of a single string reads
+\begin_inset Formula 
+\[
+P^{-}=\frac{1}{2}\int_{0}^{P^{+}}d\sigma\,[\mathbf{p}^{2}+T_{0}^{2}\mathbf{x}^{\prime2}],
+\]
+
+\end_inset
+
+ which is then discreted as 
+\begin_inset Formula 
+\[
+H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}^{2}-\mathbf{x}_{n}^{2}\right)\right],
+\]
+
+\end_inset
+
+for a harmonic chain of 
+\begin_inset Formula $M$
+\end_inset
+
+ string bits with fix mass 
+\begin_inset Formula $m=P^{+}/M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 there are different approaches to a fundamental formulation of string theory,
  String bit models
 \begin_inset CommandInset citation
