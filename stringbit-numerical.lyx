@@ -145,25 +145,41 @@ key "Thorn:1991fv"
 \end_inset
 
 , is one approach to formulate string theory.
- In this formulation, strings are not fundamental building blocks but chain-like
- objects comprised of string bits.
- In lightcone coordinates, string bits move about the transverse space and
- obey the dynamics of Galilei invariant.
- While the Lorentz invariance is not a built in priori, it emerges as the
- bit number 
-\begin_inset Formula $M$
+ In this formulation, strings in 
+\begin_inset Formula $D$
 \end_inset
 
- take the limit 
-\begin_inset Formula $M\to\infty$
+-dimensional spacetime are chain-like objects comprised of point-like entities,
+ string bits, moving in spatial space of 
+\begin_inset Formula $d=D-2$
+\end_inset
+
+ dimensions.
+ The dynamics of the string bits is chosen to retain the Galilei symmetry
+ described by the group 
+\begin_inset Formula $\mathrm{Galilei}\left(d,1\right)$
 \end_inset
 
 .
+ While one spatial coordinate is missing and the Lorentz invariance is not
+ built in a priori, both of them are regained as one take the limit 
+\begin_inset Formula $M\to\infty$
+\end_inset
+
+, where 
+\begin_inset Formula $M$
+\end_inset
+
+ is the number of string bits in the string.
+ 
 \end_layout
 
 \begin_layout Standard
-A brief summary on the motivatation of the idea is as follows.
- Define the lightcone coordinates as 
+The idea of string bit is motivated by discretization of continuous string.
+ Consider a string in lighcone coordinates, 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 x^{\pm}=\frac{x^{0}\pm x^{1}}{\sqrt{2}},\quad\mathbf{x}=\left(x^{2},\cdots,x^{d}\right),
@@ -175,40 +191,136 @@ x^{\pm}=\frac{x^{0}\pm x^{1}}{\sqrt{2}},\quad\mathbf{x}=\left(x^{2},\cdots,x^{d}
 \begin_inset Formula $\mathbf{x}$
 \end_inset
 
- is the transverse coordinates of dimension 
-\begin_inset Formula $d=D-2$
+ is the transverse coordinates, the Hamiltonian of the string reads 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goddard:1972ky,Goddard:1973qh"
+
 \end_inset
 
-, with 
-\begin_inset Formula $D$
-\end_inset
 
- the dimension of spacetime.
- The Hamiltonian of a single string reads
 \begin_inset Formula 
-\[
-P^{-}=\frac{1}{2}\int_{0}^{P^{+}}d\sigma\,[\mathbf{p}^{2}+T_{0}^{2}\mathbf{x}^{\prime2}],
-\]
+\begin{equation}
+P^{-}=\frac{1}{2}\int_{0}^{P^{+}}d\sigma\,[\mathbf{p}^{2}+T_{0}^{2}\mathbf{x}^{\prime2}],\label{eq:Ham-contious-string}
+\end{equation}
 
 \end_inset
 
- which is then discreted as 
-\begin_inset Formula 
-\[
-H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}^{2}-\mathbf{x}_{n}^{2}\right)\right],
-\]
+where 
+\begin_inset Formula $P^{\pm}$
+\end_inset
+
+ are the momenta conjugate to 
+\begin_inset Formula $x^{\mp}$
+\end_inset
+
+ coordinates.
+ In analogy to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Ham-contious-string"
 
 \end_inset
 
-for a harmonic chain of 
+, a harmonic chain of 
 \begin_inset Formula $M$
 \end_inset
 
- string bits with fix mass 
+ string bits of masses 
 \begin_inset Formula $m=P^{+}/M$
 \end_inset
 
+ can be described by the Hamiltonian
+\begin_inset Formula 
+\[
+H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}^{2}-\mathbf{x}_{n}^{2}\right)\right].
+\]
+
+\end_inset
+
+If we apply the Galilei transformation 
+\begin_inset Formula $x^{k}\to x^{k}+V^{k}x^{+}$
+\end_inset
+
+, the time-like coordinate 
+\begin_inset Formula $x^{+}$
+\end_inset
+
+ and the mass of the string bits are invariant.
+ Consequently, 
+\begin_inset Formula $P^{+}=Mm$
+\end_inset
+
+ can be considered as the Neutonian mass of the bit-chain.
+ For 
+\begin_inset Formula $M\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $P^{+}$
+\end_inset
+
+ behaves like a continuous variable whose conjugate can be interpreted as
+ the missing coordinate 
+\begin_inset Formula $x^{-}$
+\end_inset
+
 .
+ If the bound states for a many-bit system is closed linear chain with excitatio
+n energies scale as 
+\begin_inset Formula $1/M$
+\end_inset
+
+ in the limit 
+\begin_inset Formula $M\to\infty$
+\end_inset
+
+, the Lorentz invarance is regained and leads to a Poincaré invariant dispersion
+ relation 
+\begin_inset Formula $P^{-}=\left(\mathbf{P}^{2}+\mu^{2}\right)/(2P^{+})$
+\end_inset
+
+ .
+ Since the string bit models build a 
+\begin_inset Formula $\left(d+1\right)$
+\end_inset
+
+-dimensional theory from 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional fundamental entities, it provides an implementation of 't Hooft's
+ holography hopythesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "'tHooft:1990eb,'tHooft:1993gx"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+However, it turns out that the bosonic closed string bit chain is unstable.
+ The ground state energy of such system in the limit 
+\begin_inset Formula $M\to\infty$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\[
+E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}(M^{-3})).
+\]
+
+\end_inset
+
+Because of the negative 
+\begin_inset Formula $\mathcal{O}\left(M^{-1}\right)$
+\end_inset
+
+ term and conservation of bit number in string interaction, a lower ground
+ energy is obtained if one break a long closed string into two shorter ones.
+ Th instability problem can be solved by supersymmetry.
  
 \end_layout
 
