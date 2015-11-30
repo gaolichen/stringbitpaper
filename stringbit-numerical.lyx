@@ -171,7 +171,23 @@ key "Thorn:1991fv"
 \end_inset
 
  is the number of string bits in the string.
- 
+ Since the physics in 
+\begin_inset Formula $d+1$
+\end_inset
+
+ spatial space is described by physics in 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional space, the string bit modes provide an an implementation of
+ 't Hooft's holography hopythesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "'tHooft:1990eb,'tHooft:1993gx"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -232,9 +248,9 @@ reference "eq:Ham-contious-string"
 
  can be described by the Hamiltonian
 \begin_inset Formula 
-\[
-H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}^{2}-\mathbf{x}_{n}^{2}\right)\right].
-\]
+\begin{equation}
+H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}^{2}-\mathbf{x}_{n}^{2}\right)\right].\label{eq:Ham-discrete-chain}
+\end{equation}
 
 \end_inset
 
@@ -251,7 +267,7 @@ If we apply the Galilei transformation
 \begin_inset Formula $P^{+}=Mm$
 \end_inset
 
- can be considered as the Neutonian mass of the bit-chain.
+ can be considered as the Newtonian mass of the bit-chain.
  For 
 \begin_inset Formula $M\to\infty$
 \end_inset
@@ -281,19 +297,15 @@ n energies scale as
 \end_inset
 
  .
- Since the string bit models build a 
-\begin_inset Formula $\left(d+1\right)$
+ It is noteworthy that such bound states can be arranged in the contex of
+ 't Hooft large 
+\begin_inset Formula $N$
 \end_inset
 
--dimensional theory from 
-\begin_inset Formula $d$
-\end_inset
-
--dimensional fundamental entities, it provides an implementation of 't Hooft's
- holography hopythesis 
+ limit 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "'tHooft:1990eb,'tHooft:1993gx"
+key "'tHooft:1973jz,Thorn:1979gu"
 
 \end_inset
 
@@ -301,7 +313,14 @@ key "'tHooft:1990eb,'tHooft:1993gx"
 \end_layout
 
 \begin_layout Standard
-However, it turns out that the bosonic closed string bit chain is unstable.
+However, the Hamiltonian 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Ham-discrete-chain"
+
+\end_inset
+
+ for a bosonic closed string bit chain leads to inevitable instablility.
  The ground state energy of such system in the limit 
 \begin_inset Formula $M\to\infty$
 \end_inset
@@ -314,14 +333,134 @@ E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}(M^{-3})).
 
 \end_inset
 
-Because of the negative 
+The first term can be dropped as the bit number is conserved in string interacti
+on.
+ Because of the negative 
 \begin_inset Formula $\mathcal{O}\left(M^{-1}\right)$
 \end_inset
 
- term and conservation of bit number in string interaction, a lower ground
- energy is obtained if one break a long closed string into two shorter ones.
- Th instability problem can be solved by supersymmetry.
+ term, a long closed bit chain tends to split into multiple smaller chains
+ for a lower energy state.
+ This instability issue can be fixed by introducing supersymmetry.
+ In supersymmetry, string bits are multiplets with both bosonic and fermionic
+ degree of freeom.
+ It turns out that, for multiplets with 
+\begin_inset Formula $d$
+\end_inset
+
+ bosonic and 
+\begin_inset Formula $s$
+\end_inset
+
+ fermionic degree of freedom, the ground state become
+\begin_inset Formula 
+\[
+E_{G}=\frac{(s-d)\pi T_{0}}{6Mm}.
+\]
+
+\end_inset
+
+It implies that the system is stable for 
+\begin_inset Formula $s>d$
+\end_inset
+
+ and unstable for 
+\begin_inset Formula $s<d$
+\end_inset
+
+.
+ The supersymmetric case 
+\begin_inset Formula $s=d$
+\end_inset
+
+ gives rise to exact cancellation between bosonic and fermionic contribution
+ for all 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To set up dynamics of the superstring bit model, we employ 't Hooft's large
  
+\begin_inset Formula $N$
+\end_inset
+
+ limit and follow the standard second-quantized formalism.
+ A general superstring bit annihilation operoator is a 
+\begin_inset Formula $N\times N$
+\end_inset
+
+ matrix denoted by 
+\begin_inset Formula 
+\[
+\left(\phi_{\left[a_{1}\cdots a_{n}\right]}\right)_{\alpha}^{\beta}\left(\mathbf{x}\right),\quad n=0,\cdots,s,
+\]
+
+\end_inset
+
+ where each 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ is a spinor index running over 
+\begin_inset Formula $s$
+\end_inset
+
+ values, and 
+\begin_inset Formula $\alpha,\beta=1,\cdots,N$
+\end_inset
+
+ are color indicies for the adjoint representation of the color group 
+\begin_inset Formula $SU\left(N\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is bosonic for even 
+\begin_inset Formula $n$
+\end_inset
+
+ and fermionic for odd 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ The square bracket in the subscript denotes complete antisymmetric relation
+ among 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ indices.
+ For superstring theory, the Poincaré symmetry demands 
+\begin_inset Formula $s=d=8$
+\end_inset
+
+.
+ One of us studied a special case of the model with 
+\begin_inset Formula $d=0,\, s=1$
+\end_inset
+
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+, where there are only one bosonic operator 
+\begin_inset Formula $\left(a_{\alpha}^{\beta}\right)$
+\end_inset
+
+and one fermionic operator 
+\begin_inset Formula $\left(b_{\alpha}^{\beta}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
