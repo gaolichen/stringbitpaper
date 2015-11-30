@@ -6,6 +6,7 @@
 \begin_preamble
 \usepackage{babel}
 \allowdisplaybreaks
+\bibliographystyle{unsrt}
 
 \newcommand{\tr}{\mathrm{Tr}\,}
 \newcommand{\ba}{\bar{a}}
@@ -834,7 +835,7 @@ At large
  
 \begin_inset Formula 
 \[
-\tr\ {\bar{a}}^{2}a^{2},\quad\tr\ {\bar{b}}^{2}b^{2},\quad\tr\ {\bar{b}}^{2}a^{2},\quad\tr\ {\bar{a}}^{2}b^{2},\quad\tr\ {\bar{a}}{\bar{b}}ba,\quad\tr\ {\bar{a}}{\bar{b}}ab,\quad\tr\ {\bar{b}}{\bar{a}}ba,\quad\tr\ {\bar{b}}{\bar{a}}ab
+\tr{\bar{a}}^{2}a^{2},\quad\tr{\bar{b}}^{2}b^{2},\quad\tr\ {\bar{b}}^{2}a^{2},\quad\tr\ {\bar{a}}^{2}b^{2},\quad\tr\ {\bar{a}}{\bar{b}}ba,\quad\tr\ {\bar{a}}{\bar{b}}ab,\quad\tr\ {\bar{b}}{\bar{a}}ba,\quad\tr\ {\bar{b}}{\bar{a}}ab
 \]
 
 \end_inset
@@ -4998,18 +4999,6 @@ Acknowledgements
 
 \begin_layout Standard
 TODO
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintAll"
-bibfiles "ref"
-options "plain"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -9855,6 +9844,18 @@ Build
 \end_inset
 
  matrices
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "ref"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
