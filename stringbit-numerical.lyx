@@ -377,8 +377,8 @@ It implies that the system is stable for
 \end_layout
 
 \begin_layout Standard
-To set up dynamics of the superstring bit model, we employ 't Hooft's large
- 
+To set up the dynamics of the superstring bit model, we employ 't Hooft's
+ large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -436,7 +436,10 @@ To set up dynamics of the superstring bit model, we employ 't Hooft's large
 \end_inset
 
 .
- One of us studied the simplest case of the model with 
+\end_layout
+
+\begin_layout Standard
+One of us studied the simplest case of the model with 
 \begin_inset Formula $d=0,\, s=1$
 \end_inset
 
@@ -485,12 +488,41 @@ key "Sun:2014dga"
  of single trace operators
 \begin_inset Formula 
 \[
-\tr\bar{a}^{2}a^{2},\quad\tr\bar{b}^{2}b^{2},\quad\tr\bar{b}^{2}a^{2},\quad\tr\bar{a}^{2}b^{2},\quad\tr\bar{a}\bar{b}ba,\quad\tr\bar{a}\bar{b}ab,\quad\tr\bar{b}\bar{a}ba,\quad\tr\bar{b}\bar{a}ab.
+\tr\bar{a}^{2}a^{2},\quad\tr\bar{b}^{2}b^{2},\quad\tr\bar{b}^{2}a^{2},\quad\tr\bar{a}^{2}b^{2},\quad\tr\bar{a}\bar{b}ba,\quad\tr\bar{a}\bar{b}ab,\quad\tr\bar{b}\bar{a}ba,\quad\tr\bar{b}\bar{a}ab,
 \]
 
 \end_inset
 
+ with coefficients scaling as 
+\begin_inset Formula $1/N$
+\end_inset
 
+.
+ Such choice of Hamiltonian ensures these terms survive at large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit.
+ It then studied a special form of Hamiltonian 
+\begin_inset Formula 
+\begin{equation}
+H_{0}=\frac{2}{N}\tr\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{b}^{2}-i\bar{a}^{2}\right)b^{2}+\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)ba+\left(\bar{a}\bar{b}-\bar{b}\bar{a}\right)ab\right],\label{eq:H_0}
+\end{equation}
+
+\end_inset
+
+ which is derived from the Green-Scharwarz Hamiltonian.
+ By variational method, it shows that the ground states of the Hamiltonian
+ only survive at 
+\begin_inset Formula $N>\left(M-1\right)/2$
+\end_inset
+
+.
+ Then a numerical study of the Hamiltonian at 
+\begin_inset Formula $M=3$
+\end_inset
+
+ is performed.
 \end_layout
 
 \begin_layout Standard
