@@ -162,15 +162,8 @@ key "Thorn:1991fv"
 
 .
  While one spatial coordinate is missing and the Lorentz invariance is not
- built in a priori, both of them are regained as one take the limit 
-\begin_inset Formula $M\to\infty$
-\end_inset
-
-, where 
-\begin_inset Formula $M$
-\end_inset
-
- is the number of string bits in the string.
+ built in a priori, both of them are regained when the number of string
+ bits is large enough.
  Thereby, string theory emerges.
  Since the physics in 
 \begin_inset Formula $d+1$
@@ -263,7 +256,7 @@ If we apply the Galilei transformation
 \begin_inset Formula $x^{+}$
 \end_inset
 
- and the mass of the string bits are invariant.
+ and the mass of each string bit are invariant.
  Consequently, 
 \begin_inset Formula $P^{+}=Mm$
 \end_inset
@@ -283,13 +276,13 @@ If we apply the Galilei transformation
 \end_inset
 
 .
- If the bound states for a many-bit system is closed linear chain with excitatio
-n energies scale as 
+ If the bound states for a many-bit system is closed linear chain and the
+ excitation energies scale as 
 \begin_inset Formula $1/M$
 \end_inset
 
- in the limit 
-\begin_inset Formula $M\to\infty$
+ for large 
+\begin_inset Formula $M$
 \end_inset
 
 , the Lorentz invarance is regained and leads to a Poincaré invariant dispersion
@@ -298,7 +291,7 @@ n energies scale as
 \end_inset
 
 .
- It is noteworthy that such bound states can be arranged in the contex of
+ It is noteworthy that such bound states can be achieved in the contex of
  't Hooft large 
 \begin_inset Formula $N$
 \end_inset
@@ -374,7 +367,7 @@ It implies that the system is stable for
 \begin_inset Formula $s=d$
 \end_inset
 
- gives rise to exact cancellation between bosonic and fermionic contribution
+ gives rise to exact cancellation between bosonic and fermionic contributions
  for all 
 \begin_inset Formula $M$
 \end_inset
@@ -442,7 +435,7 @@ To set up dynamics of the superstring bit model, we employ 't Hooft's large
 \end_inset
 
 .
- One of us studied the simplese case of the model with 
+ One of us studied the simplest case of the model with 
 \begin_inset Formula $d=0,\, s=1$
 \end_inset
 
@@ -487,7 +480,8 @@ key "Sun:2014dga"
 \end_inset
 
  and all others vanishing.
- The Hamiltonian is chosen to be a linear combination of single trace operators
+ The Hamiltonian of this toy model is chosen to be a linear combination
+ of single trace operators
 \begin_inset Formula 
 \[
 \tr\bar{a}^{2}a^{2},\quad\tr\bar{b}^{2}b^{2},\quad\tr\bar{b}^{2}a^{2},\quad\tr\bar{a}^{2}b^{2},\quad\tr\bar{a}\bar{b}ba,\quad\tr\bar{a}\bar{b}ab,\quad\tr\bar{b}\bar{a}ba,\quad\tr\bar{b}\bar{a}ab.
