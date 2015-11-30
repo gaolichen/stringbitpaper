@@ -7,7 +7,7 @@
 \usepackage{babel}
 \allowdisplaybreaks
 
-\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\tr}{\mathrm{Tr}\,}
 \newcommand{\ba}{\bar{a}}
 \newcommand{\bb}{\bar{b}}
 \newcommand{\normord}[1]{{:}\!\mathrel{#1}\!{:}}
@@ -171,6 +171,7 @@ key "Thorn:1991fv"
 \end_inset
 
  is the number of string bits in the string.
+ Thereby, string theory emerges.
  Since the physics in 
 \begin_inset Formula $d+1$
 \end_inset
@@ -179,8 +180,8 @@ key "Thorn:1991fv"
 \begin_inset Formula $d$
 \end_inset
 
--dimensional space, the string bit modes provide an an implementation of
- 't Hooft's holography hopythesis 
+-dimensional space, the string bit modes provide an implementation of 't
+ Hooft's holography hopythesis 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "'tHooft:1990eb,'tHooft:1993gx"
@@ -198,7 +199,7 @@ The idea of string bit is motivated by discretization of continuous string.
 \begin_layout Standard
 \begin_inset Formula 
 \[
-x^{\pm}=\frac{x^{0}\pm x^{1}}{\sqrt{2}},\quad\mathbf{x}=\left(x^{2},\cdots,x^{d}\right),
+x^{\pm}=\frac{x^{0}\pm x^{1}}{\sqrt{2}},\quad\mathbf{x}=\left(x^{2},\cdots,x^{d+1}\right),
 \]
 
 \end_inset
@@ -242,11 +243,11 @@ reference "eq:Ham-contious-string"
 \begin_inset Formula $M$
 \end_inset
 
- string bits of masses 
+ string bits each of which has mass 
 \begin_inset Formula $m=P^{+}/M$
 \end_inset
 
- can be described by the Hamiltonian
+ is described by the Hamiltonian
 \begin_inset Formula 
 \begin{equation}
 H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}^{2}-\mathbf{x}_{n}^{2}\right)\right].\label{eq:Ham-discrete-chain}
@@ -296,7 +297,7 @@ n energies scale as
 \begin_inset Formula $P^{-}=\left(\mathbf{P}^{2}+\mu^{2}\right)/(2P^{+})$
 \end_inset
 
- .
+.
  It is noteworthy that such bound states can be arranged in the contex of
  't Hooft large 
 \begin_inset Formula $N$
@@ -352,7 +353,7 @@ on.
 \begin_inset Formula $s$
 \end_inset
 
- fermionic degree of freedom, the ground state become
+ fermionic degree of freedom, the ground energy becomes
 \begin_inset Formula 
 \[
 E_{G}=\frac{(s-d)\pi T_{0}}{6Mm}.
@@ -441,7 +442,7 @@ To set up dynamics of the superstring bit model, we employ 't Hooft's large
 \end_inset
 
 .
- One of us studied a special case of the model with 
+ One of us studied the simplese case of the model with 
 \begin_inset Formula $d=0,\, s=1$
 \end_inset
 
@@ -452,15 +453,49 @@ key "Sun:2014dga"
 
 \end_inset
 
-, where there are only one bosonic operator 
+, where there are 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+ bosonic operators 
 \begin_inset Formula $\left(a_{\alpha}^{\beta}\right)$
 \end_inset
 
-and one fermionic operator 
+ and 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+ fermionic operators 
 \begin_inset Formula $\left(b_{\alpha}^{\beta}\right)$
 \end_inset
 
 .
+ Their conjugate operators are defined as 
+\begin_inset Formula $\bar{a}_{\alpha}^{\beta}\equiv\left(a_{\alpha}^{\beta}\right)^{\dagger}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{b}_{\alpha}^{\beta}\equiv\left(b_{\alpha}^{\beta}\right)^{\dagger}$
+\end_inset
+
+ , which satisfy the (anti-)commutation relations: 
+\begin_inset Formula 
+\[
+\left[a_{\alpha}^{\beta},\bar{a}_{\gamma}^{\delta}\right]=\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta},\quad\left\{ b_{\alpha}^{\beta},\bar{b}_{\gamma}^{\delta}\right\} =\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta},
+\]
+
+\end_inset
+
+ and all others vanishing.
+ The Hamiltonian is chosen to be a linear combination of single trace operators
+\begin_inset Formula 
+\[
+\tr\bar{a}^{2}a^{2},\quad\tr\bar{b}^{2}b^{2},\quad\tr\bar{b}^{2}a^{2},\quad\tr\bar{a}^{2}b^{2},\quad\tr\bar{a}\bar{b}ba,\quad\tr\bar{a}\bar{b}ab,\quad\tr\bar{b}\bar{a}ba,\quad\tr\bar{b}\bar{a}ab.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
