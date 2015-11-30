@@ -6,8 +6,9 @@
 \begin_preamble
 \usepackage{babel}
 \allowdisplaybreaks
+\bibliographystyle{unsrt}
 
-\newcommand{\tr}{\mathrm{Tr}}
+\newcommand{\tr}{\mathrm{Tr}\,}
 \newcommand{\ba}{\bar{a}}
 \newcommand{\bb}{\bar{b}}
 \newcommand{\normord}[1]{{:}\!\mathrel{#1}\!{:}}
@@ -137,11 +138,367 @@ Introduction
 \end_layout
 
 \begin_layout Standard
+The idea of string bits, proposed over two decades ago 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Thorn:1991fv"
+
+\end_inset
+
+, is one approach to formulate string theory.
+ In this formulation, strings in 
+\begin_inset Formula $D$
+\end_inset
+
+-dimensional spacetime are chain-like objects comprised of point-like entities,
+ string bits, moving in spatial space of 
+\begin_inset Formula $d=D-2$
+\end_inset
+
+ dimensions.
+ The dynamics of the string bits is chosen to retain the Galilei symmetry
+ described by the group 
+\begin_inset Formula $\mathrm{Galilei}\left(d,1\right)$
+\end_inset
+
+.
+ While one spatial coordinate is missing and the Lorentz invariance is not
+ built in a priori, both of them are regained when the number of string
+ bits is large enough.
+ Thereby, string theory emerges.
+ Since the physics in 
+\begin_inset Formula $d+1$
+\end_inset
+
+ spatial space is described by physics in 
+\begin_inset Formula $d$
+\end_inset
+
+-dimensional space, the string bit modes provide an implementation of 't
+ Hooft's holography hopythesis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "'tHooft:1990eb,'tHooft:1993gx"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The idea of string bit is motivated by discretization of continuous string.
+ Consider a string in lighcone coordinates, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{\pm}=\frac{x^{0}\pm x^{1}}{\sqrt{2}},\quad\mathbf{x}=\left(x^{2},\cdots,x^{d+1}\right),
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+ is the transverse coordinates, the Hamiltonian of the string reads 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Goddard:1972ky,Goddard:1973qh"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+P^{-}=\frac{1}{2}\int_{0}^{P^{+}}d\sigma\,[\mathbf{p}^{2}+T_{0}^{2}\mathbf{x}^{\prime2}],\label{eq:Ham-contious-string}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $P^{\pm}$
+\end_inset
+
+ are the momenta conjugate to 
+\begin_inset Formula $x^{\mp}$
+\end_inset
+
+ coordinates.
+ In analogy to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Ham-contious-string"
+
+\end_inset
+
+, a harmonic chain of 
+\begin_inset Formula $M$
+\end_inset
+
+ string bits each of which has mass 
+\begin_inset Formula $m=P^{+}/M$
+\end_inset
+
+ is described by the Hamiltonian
+\begin_inset Formula 
+\begin{equation}
+H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}^{2}-\mathbf{x}_{n}^{2}\right)\right].\label{eq:Ham-discrete-chain}
+\end{equation}
+
+\end_inset
+
+If we apply the Galilei transformation 
+\begin_inset Formula $x^{k}\to x^{k}+V^{k}x^{+}$
+\end_inset
+
+, the time-like coordinate 
+\begin_inset Formula $x^{+}$
+\end_inset
+
+ and the mass of each string bit are invariant.
+ Consequently, 
+\begin_inset Formula $P^{+}=Mm$
+\end_inset
+
+ can be considered as the Newtonian mass of the bit-chain.
+ For 
+\begin_inset Formula $M\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $P^{+}$
+\end_inset
+
+ behaves like a continuous variable whose conjugate can be interpreted as
+ the missing coordinate 
+\begin_inset Formula $x^{-}$
+\end_inset
+
+.
+ If the bound states for a many-bit system is closed linear chain and the
+ excitation energies scale as 
+\begin_inset Formula $1/M$
+\end_inset
+
+ for large 
+\begin_inset Formula $M$
+\end_inset
+
+, the Lorentz invarance is regained and leads to a Poincaré invariant dispersion
+ relation 
+\begin_inset Formula $P^{-}=\left(\mathbf{P}^{2}+\mu^{2}\right)/(2P^{+})$
+\end_inset
+
+.
+ It is noteworthy that such bound states can be achieved in the contex of
+ 't Hooft large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "'tHooft:1973jz,Thorn:1979gu"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+However, the Hamiltonian 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Ham-discrete-chain"
+
+\end_inset
+
+ for a bosonic closed string bit chain leads to inevitable instablility.
+ The ground state energy of such system in the limit 
+\begin_inset Formula $M\to\infty$
+\end_inset
+
+ is given by
+\begin_inset Formula 
+\[
+E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}(M^{-3})).
+\]
+
+\end_inset
+
+The first term can be dropped as the bit number is conserved in string interacti
+on.
+ Because of the negative 
+\begin_inset Formula $\mathcal{O}\left(M^{-1}\right)$
+\end_inset
+
+ term, a long closed bit chain tends to split into multiple smaller chains
+ for a lower energy state.
+ This instability issue can be fixed by introducing supersymmetry.
+ In supersymmetry, string bits are multiplets with both bosonic and fermionic
+ degree of freeom.
+ It turns out that, for multiplets with 
+\begin_inset Formula $d$
+\end_inset
+
+ bosonic and 
+\begin_inset Formula $s$
+\end_inset
+
+ fermionic degree of freedom, the ground energy becomes
+\begin_inset Formula 
+\[
+E_{G}=\frac{(s-d)\pi T_{0}}{6Mm}.
+\]
+
+\end_inset
+
+It implies that the system is stable for 
+\begin_inset Formula $s>d$
+\end_inset
+
+ and unstable for 
+\begin_inset Formula $s<d$
+\end_inset
+
+.
+ The supersymmetric case 
+\begin_inset Formula $s=d$
+\end_inset
+
+ gives rise to exact cancellation between bosonic and fermionic contributions
+ for all 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To set up dynamics of the superstring bit model, we employ 't Hooft's large
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ limit and follow the standard second-quantized formalism.
+ A general superstring bit annihilation operoator is a 
+\begin_inset Formula $N\times N$
+\end_inset
+
+ matrix denoted by 
+\begin_inset Formula 
+\[
+\left(\phi_{\left[a_{1}\cdots a_{n}\right]}\right)_{\alpha}^{\beta}\left(\mathbf{x}\right),\quad n=0,\cdots,s,
+\]
+
+\end_inset
+
+ where each 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ is a spinor index running over 
+\begin_inset Formula $s$
+\end_inset
+
+ values, and 
+\begin_inset Formula $\alpha,\beta=1,\cdots,N$
+\end_inset
+
+ are color indicies for the adjoint representation of the color group 
+\begin_inset Formula $SU\left(N\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is bosonic for even 
+\begin_inset Formula $n$
+\end_inset
+
+ and fermionic for odd 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ The square bracket in the subscript denotes complete antisymmetric relation
+ among 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ indices.
+ For superstring theory, the Poincaré symmetry demands 
+\begin_inset Formula $s=d=8$
+\end_inset
+
+.
+ One of us studied the simplest case of the model with 
+\begin_inset Formula $d=0,\, s=1$
+\end_inset
+
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+, where there are 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+ bosonic operators 
+\begin_inset Formula $\left(a_{\alpha}^{\beta}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $N^{2}$
+\end_inset
+
+ fermionic operators 
+\begin_inset Formula $\left(b_{\alpha}^{\beta}\right)$
+\end_inset
+
+.
+ Their conjugate operators are defined as 
+\begin_inset Formula $\bar{a}_{\alpha}^{\beta}\equiv\left(a_{\alpha}^{\beta}\right)^{\dagger}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{b}_{\alpha}^{\beta}\equiv\left(b_{\alpha}^{\beta}\right)^{\dagger}$
+\end_inset
+
+ , which satisfy the (anti-)commutation relations: 
+\begin_inset Formula 
+\[
+\left[a_{\alpha}^{\beta},\bar{a}_{\gamma}^{\delta}\right]=\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta},\quad\left\{ b_{\alpha}^{\beta},\bar{b}_{\gamma}^{\delta}\right\} =\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta},
+\]
+
+\end_inset
+
+ and all others vanishing.
+ The Hamiltonian of this toy model is chosen to be a linear combination
+ of single trace operators
+\begin_inset Formula 
+\[
+\tr\bar{a}^{2}a^{2},\quad\tr\bar{b}^{2}b^{2},\quad\tr\bar{b}^{2}a^{2},\quad\tr\bar{a}^{2}b^{2},\quad\tr\bar{a}\bar{b}ba,\quad\tr\bar{a}\bar{b}ab,\quad\tr\bar{b}\bar{a}ba,\quad\tr\bar{b}\bar{a}ab.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 there are different approaches to a fundamental formulation of string theory,
  String bit models
 \begin_inset CommandInset citation
 LatexCommand cite
-key "arXiv:hep-th/9405069v1"
+key "Thorn:1991fv"
 
 \end_inset
 
@@ -322,10 +679,10 @@ Because of the second term which is propotional to
 , a long chain of bosonic bits is unstable, it will decay into smaller chains.
  This instability is also a motivation for introducing supersymmetry.
  However except this there are also fermionic degrees of freedom which are
- called statistic waves
+ called statistic waves 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "arXiv:hep-th/9607204"
+key "Thorn:1996fa"
 
 \end_inset
 
@@ -478,7 +835,7 @@ At large
  
 \begin_inset Formula 
 \[
-\tr\ {\bar{a}}^{2}a^{2},\quad\tr\ {\bar{b}}^{2}b^{2},\quad\tr\ {\bar{b}}^{2}a^{2},\quad\tr\ {\bar{a}}^{2}b^{2},\quad\tr\ {\bar{a}}{\bar{b}}ba,\quad\tr\ {\bar{a}}{\bar{b}}ab,\quad\tr\ {\bar{b}}{\bar{a}}ba,\quad\tr\ {\bar{b}}{\bar{a}}ab
+\tr{\bar{a}}^{2}a^{2},\quad\tr{\bar{b}}^{2}b^{2},\quad\tr\ {\bar{b}}^{2}a^{2},\quad\tr\ {\bar{a}}^{2}b^{2},\quad\tr\ {\bar{a}}{\bar{b}}ba,\quad\tr\ {\bar{a}}{\bar{b}}ab,\quad\tr\ {\bar{b}}{\bar{a}}ba,\quad\tr\ {\bar{b}}{\bar{a}}ab
 \]
 
 \end_inset
@@ -572,10 +929,10 @@ Here is how we reconstructed the Hamiltonian.
 \begin_inset Formula $N=\infty$
 \end_inset
 
- is solved in
+ is solved in 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hep-th/9506125"
+key "Bergman:1995wh"
 
 \end_inset
 
@@ -621,7 +978,7 @@ we define a super creation operator as
 Consulting
 \begin_inset CommandInset citation
 LatexCommand cite
-key "hep-th/9506125"
+key "Bergman:1995wh"
 
 \end_inset
 
@@ -1786,7 +2143,7 @@ For large
  is expected to have the asymptotic form
 \begin_inset CommandInset citation
 LatexCommand cite
-key "arXiv:hep-th/9607204"
+key "Thorn:1996fa"
 
 \end_inset
 
@@ -1826,7 +2183,2857 @@ E_{G}(M)\sim\alpha M+\frac{\gamma}{M}+O(\frac{1}{M^{3}})
 \end_layout
 
 \begin_layout Section
-Trace States
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Method"
+
+\end_inset
+
+The 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ Matrices
+\end_layout
+
+\begin_layout Standard
+We have two methods to calculate the energy states of the system.
+ The first method, which is used in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+, is to calculate the eigenvalues of the 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrix defined as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $H$
+\end_inset
+
+ is the Hamiltonian of the system and 
+\begin_inset Formula $\ket{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{j}$
+\end_inset
+
+ are the trace states for a given bit number 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ If the norm matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive definite, i.e, all eigenvalues of 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive, then every eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and its eigenstate uniquely correspond to a energy level and state of the
+ Hamiltonian.
+ For a eigenstate of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, 
+\begin_inset Formula $\ket{E}=\sum_{i}\ket{i}v^{i}$
+\end_inset
+
+, the norm of the state is given by 
+\begin_inset Formula 
+\[
+\dprod{E}{E}=\sum_{ij}v^{i*}\dprod{i}{j}v^{j}=v^{\dagger}Gv.
+\]
+
+\end_inset
+
+ In this case, all the and eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ are physical their norms 
+\begin_inset Formula $\dprod{E}{E}$
+\end_inset
+
+ are positive.
+ Our calculation shows when 
+\begin_inset Formula $N$
+\end_inset
+
+ is greater or equal to 
+\begin_inset Formula $M$
+\end_inset
+
+, the norm matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ is always positive definite.
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $N$
+\end_inset
+
+ is less than 
+\begin_inset Formula $M$
+\end_inset
+
+ and integal, the norm matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive semidefinite, i.e, some eigenvalues are zero and the others
+ are positive.
+ In this case, the eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with positive norm are physical and the ones with zero norm are unphysical.
+ The number of physical energy states equal to the number of positve eigenvalues
+ of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+When 
+\begin_inset Formula $N$
+\end_inset
+
+ is less than 
+\begin_inset Formula $M$
+\end_inset
+
+ and non-integer, the norm matrix 
+\begin_inset Formula $G$
+\end_inset
+
+ is indefinite, i.e, has both positive and negative eigenvalues.
+ There is some subtle complication.
+ The unphysical states can be either zero norm or negative norm.
+ The negative norm eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ stem from their coupling to the eigenstates of 
+\begin_inset Formula $G$
+\end_inset
+
+ whose corresponding eigenvalues are negative.
+ The eigenstates of 
+\begin_inset Formula $G$
+\end_inset
+
+ with negative eigenvalues are also called ghost states.
+ Unlike the positive definite and positive semidefinite cases, a eigenstate
+ of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ with positive norm does not correspond to a physical energy state unless
+ it is orthogonal to every ghost states.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that the eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ can also be non-real.
+ This occurs for both positive-semidefinite and indefinite cases.
+ For a non-real eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, its complex conjugate is also an eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and both of them correspond to zero nom eigenstates.
+\end_layout
+
+\begin_layout Standard
+The second method is to solve a generalised eigenvalue problem of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ In stead of solving the eigenvalue problem as 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}\ket{E}=E\ket{E},\label{eq:eigenvalue-problem}
+\end{equation}
+
+\end_inset
+
+ we solve a generalised eigenvalue problem as 
+\begin_inset Formula 
+\begin{equation}
+\left(G\mathcal{H}\right)\ket{E}=EG\ket{E}.\label{eq:generalised-eigenvalue-problem}
+\end{equation}
+
+\end_inset
+
+This method is particularly helpful for filtering unphysical states when
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive semidefinite.
+ If 
+\begin_inset Formula $G$
+\end_inset
+
+ is a full-rank matrix, this is a regular generalised eigenvalue problem.
+ If 
+\begin_inset Formula $G$
+\end_inset
+
+ is not full-rank matrix, we cannot solve this equation.
+ If the rank of 
+\begin_inset Formula $G$
+\end_inset
+
+ is 
+\begin_inset Formula $r$
+\end_inset
+
+, we can pick 
+\begin_inset Formula $r$
+\end_inset
+
+ independent rows and columns of 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(G\mathcal{H}\right)$
+\end_inset
+
+ to form two 
+\begin_inset Formula $r\times r$
+\end_inset
+
+ matrices as 
+\begin_inset Formula 
+\begin{eqnarray*}
+\tilde{G} & = & \left(\begin{array}{cccc}
+G_{i_{1}i_{1}} & G_{i_{1}i_{2}} & \cdots & G_{i_{1}i_{r}}\\
+G_{i_{2}i_{2}} & G_{i_{2}i_{2}} & \cdots & G_{i_{2}i_{r}}\\
+\vdots & \vdots & \vdots & \vdots\\
+G_{i_{r}i_{1}} & G_{i_{r}i_{2}} & \cdots & G_{i_{r}i_{r}}
+\end{array}\right),\\
+\tilde{G\mathcal{H}} & = & \left(\begin{array}{cccc}
+\left(G\mathcal{H}\right)_{i_{1}i_{1}} & \left(G\mathcal{H}\right)_{i_{1}i_{2}} & \cdots & \left(G\mathcal{H}\right)_{i_{1}i_{r}}\\
+\left(G\mathcal{H}\right)_{i_{2}i_{2}} & \left(G\mathcal{H}\right)_{i_{2}i_{2}} & \cdots & \left(G\mathcal{H}\right)_{i_{2}i_{r}}\\
+\vdots & \vdots & \vdots & \vdots\\
+\left(G\mathcal{H}\right)_{i_{r}i_{1}} & \left(G\mathcal{H}\right)_{i_{r}i_{2}} & \cdots & \left(G\mathcal{H}\right)_{i_{r}i_{r}}
+\end{array}\right).
+\end{eqnarray*}
+
+\end_inset
+
+ Then the generalised eigenvalue problem become 
+\begin_inset Formula 
+\[
+\left(\tilde{G\mathcal{H}}\right)\ket{E}=E\tilde{G}\ket{E},
+\]
+
+\end_inset
+
+whose eigenvalues are all correspond to physical states.
+ 
+\end_layout
+
+\begin_layout Standard
+The properties of the eigenvalue problems stated above are proved in Appendix
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:Hamiltonian-Eigenvalue-Problem"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The first method is used to investigate the change of energy levels with
+ respect to 
+\begin_inset Formula $N$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $M$
+\end_inset
+
+ while the second one is used to study the change of physical energy levels
+ with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Finite 
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this section, we perform the numerical analysis of the energy levels
+ of our model.
+ We will show how energy levels of various Hamiltonians change with respect
+ to 
+\begin_inset Formula $N$
+\end_inset
+
+ and the bit number 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ The procedure of calculation are very straightforward.
+ For different values of 
+\begin_inset Formula $M$
+\end_inset
+
+, we calculated the 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrices and norm matrices 
+\begin_inset Formula $G$
+\end_inset
+
+, whose entries are expressed in terms of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Then use Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:eigenvalue-problem"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:generalised-eigenvalue-problem"
+
+\end_inset
+
+ to find the energy levels.
+ Since the nubmer of trace states increase exponentially as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase, it's only feasible to perform the calculation for small 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ The biggest value of 
+\begin_inset Formula $M$
+\end_inset
+
+ we calculate is 11, at which value 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $G$
+\end_inset
+
+ are 
+\begin_inset Formula $1473\times1473$
+\end_inset
+
+ matrices.
+ 
+\end_layout
+
+\begin_layout Standard
+We will first analyze the result for the original Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+, for which the 
+\begin_inset Formula $M=3$
+\end_inset
+
+ case has been investigated in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+.
+ Next, we move to the Hamiltonians of the form 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ and investigate how the parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+ impact the energy levels.
+ Finally, we explore the Hamiltonians of the form 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
+\end_inset
+
+.
+ For each case, we first analyze the change of energy levels with respect
+ to 
+\begin_inset Formula $N$
+\end_inset
+
+ when 
+\begin_inset Formula $M$
+\end_inset
+
+ is fixed, and then with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ when 
+\begin_inset Formula $N$
+\end_inset
+
+ is fixed.
+ 
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=3"
+
+\end_inset
+
+ to 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=11"
+
+\end_inset
+
+ shows the energy levels as a function of 
+\begin_inset Formula $1/N$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $M$
+\end_inset
+
+ from 3 to 11.
+ Five energy levels are plotted for 
+\begin_inset Formula $M=3$
+\end_inset
+
+ and lowest eight energy levels are plotted for others.
+ The energy levels are calculated based on Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:eigenvalue-problem"
+
+\end_inset
+
+, so there exist unphysical states when 
+\begin_inset Formula $N$
+\end_inset
+
+ is small.
+ To label energy states and distinguish unphysical states from physical
+ states, we use different colors for different energy states and different
+ line styles for different types of states.
+ Solid, dotted, and dash-dotted curves correspond to positive, negative,
+ and zero norm energy states respectively.
+ Since a zero norm state associates with two complex energy levels that
+ conjugate to each other, the dash-dotted curves represent only the real
+ parts of the energy levels and always starts and ends at the merging point
+ of two curves.
+ Note a dotted line cannot pass across an integral value of 
+\begin_inset Formula $N$
+\end_inset
+
+ as the norm of states at integral values of 
+\begin_inset Formula $N$
+\end_inset
+
+ are always non-negative.
+ For higher 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $1/N$
+\end_inset
+
+, the energy levels decline dramatically as 
+\begin_inset Formula $1/N$
+\end_inset
+
+ increase.
+ To show more details of the curves in lower 
+\begin_inset Formula $1/N$
+\end_inset
+
+, we split the plots into lower 
+\begin_inset Formula $1/N$
+\end_inset
+
+ part and higher 
+\begin_inset Formula $1/N$
+\end_inset
+
+ part.
+ Between these two parts, curves of the same color represent the same energy
+ states.
+ See 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=7"
+
+\end_inset
+
+ as an example.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=3.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=3"
+
+\end_inset
+
+Lowest 5 energy states of the 3-bit system with Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=5.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 5 energy states of the 5-bit system with Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=7.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=7"
+
+\end_inset
+
+Lowest 8 energy states of the 7-bit system with Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=9.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Lowest 8 energy states of the 9-bit system with Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=11.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=11"
+
+\end_inset
+
+Lowest 8 energy states of the 11-bit system with Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From these figures, we can see several features of the energy levels.
+ At 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, degeneracy occurs for some excited states while the ground states are
+ non-degenerate.
+ This is consistent with the analytic calculation of large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+.
+ The degeneracies are broken at finite 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ All the curves are almost perpendicular to the vertical axe at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ This implies that 
+\begin_inset Formula $1/N$
+\end_inset
+
+ order perturbation of energy levels is zero.
+ As 
+\begin_inset Formula $1/N$
+\end_inset
+
+ increase, the solid curves turn to dotted or dash-dotted curves, which
+ implies to the disappearance of physical states.
+ If a physical state disappears at an integer value of 
+\begin_inset Formula $N$
+\end_inset
+
+, it also disappears at all the integers less than 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ For example, the ground state of 
+\begin_inset Formula $M=5$
+\end_inset
+
+ disappears at 
+\begin_inset Formula $N=2,\,1$
+\end_inset
+
+; ground state of 
+\begin_inset Formula $M=7$
+\end_inset
+
+ disappears at 
+\begin_inset Formula $N=3,2,1$
+\end_inset
+
+.
+ It is interesting to note that the first disappearances of ground states
+ occur at 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+.
+ Therefore, in order to have ground states surviving, 
+\begin_inset Formula $N$
+\end_inset
+
+ must increase linearly as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase.
+ At certain value of 
+\begin_inset Formula $1/N$
+\end_inset
+
+, the energy levels begin to drop dramatically and the large 
+\begin_inset Formula $M$
+\end_inset
+
+ is, the earlier (larger 
+\begin_inset Formula $N$
+\end_inset
+
+) the drop happens.
+ For 
+\begin_inset Formula $M=7$
+\end_inset
+
+, it occurs around 
+\begin_inset Formula $N=2$
+\end_inset
+
+; for 
+\begin_inset Formula $M=9$
+\end_inset
+
+, it occurs around 
+\begin_inset Formula $N=3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For even number of 
+\begin_inset Formula $M$
+\end_inset
+
+, we have similar plots as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "figH=h0M=even"
+
+\end_inset
+
+.
+ The analysis of the odd 
+\begin_inset Formula $M$
+\end_inset
+
+ cases also applies to the even 
+\begin_inset Formula $M$
+\end_inset
+
+ cases except that the ground states may be degenerate at large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit: the ground states of 
+\begin_inset Formula $M=4,8$
+\end_inset
+
+ are degenerate, and 
+\begin_inset Formula $M=6,10$
+\end_inset
+
+ are not.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=even.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "figH=h0M=even"
+
+\end_inset
+
+Lowest 5 energy states Hamiltonia 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+ with 
+\begin_inset Formula $M=4,6,8,10$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Top-5-energy-H=H_0"
+
+\end_inset
+
+ shows the highest 5 energy levels of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+ for 
+\begin_inset Formula $M$
+\end_inset
+
+ from 4 to 7.
+ Unlike the low energy states, the highest energy states do not disappear
+ even when 
+\begin_inset Formula $N$
+\end_inset
+
+ is very small.
+ It seems to suggest that, the groud states of Hamiltonian 
+\begin_inset Formula $-H_{0}$
+\end_inset
+
+ could survive at lower 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ But as we will show in the next subsection, this is not true.
+ The stablization term 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ will cause the ground state disappear at large 
+\begin_inset Formula $N$
+\end_inset
+
+ and the highest energy lelvel survive at lower 
+\begin_inset Formula $N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0M=4567top.pdf
+	width 100col%
+	BoundingBox 60bp 200bp 547bp 600bp
+	clip
+	groupId SinglePagePlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Top-5-energy-H=H_0"
+
+\end_inset
+
+Top 5 energy levels of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $M=4,5,6,7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can also plot the physical ground state as a function of 
+\begin_inset Formula $M$
+\end_inset
+
+ when 
+\begin_inset Formula $N$
+\end_inset
+
+ is fixed, shown as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:physical-state-H0"
+
+\end_inset
+
+.
+ The physical ground states have different trendency at different values
+ of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $N=1$
+\end_inset
+
+, the physical ground state climbs significantly.
+ This is consistent with analytical calculation, which shows the ground
+ state is a quardratic function of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $N=2$
+\end_inset
+
+, the ground state only goes up slightly.
+ When 
+\begin_inset Formula $N\geq3$
+\end_inset
+
+, the trendency turn to be downwards.
+ For large 
+\begin_inset Formula $N$
+\end_inset
+
+, the physical ground energy almost drops linearly with a slope close to
+ 
+\begin_inset Formula $-\frac{8}{\pi}$
+\end_inset
+
+, which is consistent with the analytic predication of ground energy at
+ large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, as shown in Eq.
+ (98) of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+.
+ This indicates the system become stringy when 
+\begin_inset Formula $N$
+\end_inset
+
+ is large enough.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0physical.pdf
+	width 100col%
+	BoundingBox 50bp 400bp 560bp 600bp
+	clip
+	groupId OneColumnHalfFigure
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:physical-state-H0"
+
+\end_inset
+
+Change of physical ground states with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Only the ground energy at odd values of 
+\begin_inset Formula $M$
+\end_inset
+
+ are sampled.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also studies how the excitation changes with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $N$
+\end_inset
+
+, shown as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:First-excitation-H0"
+
+\end_inset
+
+.
+ The vertical axis of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:First-excitation-H0"
+
+\end_inset
+
+ is 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $E_{1}-E_{0}$
+\end_inset
+
+ is the excitation of first excited energy level.
+ For stringy behavior, the 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+ should be a constant.
+ While this is clearly not true for small 
+\begin_inset Formula $N$
+\end_inset
+
+, it is roughly remain unchanged for for large 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Though we only calculate up to 
+\begin_inset Formula $M=11$
+\end_inset
+
+, we can still see the trendency from the graph.
+ There is no inconsistency between the numerical calculation and the analytic
+ prediction.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=0excitation.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:First-excitation-H0"
+
+\end_inset
+
+ 
+\begin_inset Formula $\left(E_{1}-E_{0}\right)\times M$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Variations of 
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this subsection, we will analyze the energy levels of two variations
+ of the Hamiltonian.
+ The first form of Hamiltonian is 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ and the second one is 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=negativeM=3"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=positiveM=3"
+
+\end_inset
+
+ plot the energy states of 3-bit systems of Hamiltonian 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ with different values of 
+\begin_inset Formula $\xi$
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=negativeM=3"
+
+\end_inset
+
+ shows that the highest energy state disappear later at larger 
+\begin_inset Formula $1/N$
+\end_inset
+
+ as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ increase.
+ The highest energy state disappears at 
+\begin_inset Formula $N=2$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=-0.9$
+\end_inset
+
+ and 
+\begin_inset Formula $N=1$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=-0.6$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\xi$
+\end_inset
+
+ continue increasing to -0.3, the highest state disappears only when 
+\begin_inset Formula $N>1.5$
+\end_inset
+
+, which implies it survives for all physical cases.
+ Finally, when 
+\begin_inset Formula $\xi=-0.1$
+\end_inset
+
+, the disappearance happens after 
+\begin_inset Formula $1/N=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=negativeM=3.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=negativeM=3"
+
+\end_inset
+
+Energy levels for 3-bit system of Hamiltonian 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+, with 
+\begin_inset Formula $\xi=-0.9,\,-0.6\,-0.3,$
+\end_inset
+
+ and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+-0.1.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now let's check how 
+\begin_inset Formula $\xi$
+\end_inset
+
+ impact the ground states.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=positiveM=3"
+
+\end_inset
+
+ shows the ground states disappear earlier as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ becomes larger.
+ When 
+\begin_inset Formula $\xi=0.01$
+\end_inset
+
+, the ground state disappears at 
+\begin_inset Formula $N=1$
+\end_inset
+
+; when 
+\begin_inset Formula $\xi=0.5$
+\end_inset
+
+ the disappearance occurs between 
+\begin_inset Formula $0.5<1/N<1$
+\end_inset
+
+; when 
+\begin_inset Formula $\xi=3$
+\end_inset
+
+, it's at 
+\begin_inset Formula $N=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=positiveM=3.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=positiveM=3"
+
+\end_inset
+
+Energy levels for 3-bit systems of Hamiltonian 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+, with 
+\begin_inset Formula $\xi=0.01,\,0.5,\,1$
+\end_inset
+
+ and 
+\begin_inset Formula $1.5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+By increasing 
+\begin_inset Formula $\xi$
+\end_inset
+
+, we can move the point at which of ground state disappear to 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+, the earliest point a state can disappear.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=2M=odd"
+
+\end_inset
+
+ show that for 
+\begin_inset Formula $H=H_{0}+2\Delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $M=3,\,5,\,7,\,9$
+\end_inset
+
+, the disappearance points of the ground states move to 
+\begin_inset Formula $2,\,4,\,6,\,8$
+\end_inset
+
+ respectively.
+ But we cannot move the disappearance point arbitary later because of the
+ stabalization constraint 
+\begin_inset Formula $\xi>-1$
+\end_inset
+
+.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=-0.9M=odd"
+
+\end_inset
+
+ shows, for Hamiltonian 
+\begin_inset Formula $H=H_{0}-0.9\Delta H$
+\end_inset
+
+, the disappearance point of ground states are at 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+.
+ It suggest that the latest disappearance point of ground states is 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=2M=odd.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=2M=odd"
+
+\end_inset
+
+Energy level of Hamiltonian 
+\begin_inset Formula $H=H_{0}+2\Delta H$
+\end_inset
+
+, 
+\begin_inset Formula $M=3,\,5,\,7,\,9$
+\end_inset
+
+.
+ For each 
+\begin_inset Formula $M$
+\end_inset
+
+, the ground states disappear at 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+, which is earliest point a state can disappear.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=n.9M=odd.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=-0.9M=odd"
+
+\end_inset
+
+Energy level of Hamiltonian 
+\begin_inset Formula $H=H_{0}-0.9\Delta H$
+\end_inset
+
+, 
+\begin_inset Formula $M=3,\,5,\,7,\,9$
+\end_inset
+
+.
+ For each 
+\begin_inset Formula $M$
+\end_inset
+
+, the ground state disappear at 
+\begin_inset Formula $N=\frac{M-1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To study how 
+\begin_inset Formula $\xi$
+\end_inset
+
+ impacts the physical ground energies, we plot the change of physical ground
+ energy with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed value of 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ See Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EvsM-N>=3"
+
+\end_inset
+
+ for 
+\begin_inset Formula $N=3$
+\end_inset
+
+, 
+\begin_inset Formula $5$
+\end_inset
+
+, 
+\begin_inset Formula $10$
+\end_inset
+
+, 
+\begin_inset Formula $1000$
+\end_inset
+
+ and Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:EvsM-N<=2"
+
+\end_inset
+
+ for 
+\begin_inset Formula $N=1,\,2$
+\end_inset
+
+.
+ In these two figures, we only evaluate the physical ground energy at odd
+ 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ From the figures, we see that the ground states have very different trendency
+ for 
+\begin_inset Formula $\xi<-1$
+\end_inset
+
+, 
+\begin_inset Formula $\xi=-1$
+\end_inset
+
+, and 
+\begin_inset Formula $\xi>-1$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $\xi=1$
+\end_inset
+
+, the physical ground states change almost linearly with negative slope
+ for all 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $\xi<-1$
+\end_inset
+
+, the physical ground states declines faster than linearity as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase.
+ Hence, the Hamiltonian of 
+\begin_inset Formula $\xi<-1$
+\end_inset
+
+ is not a stable system.
+ When 
+\begin_inset Formula $\xi>-1$
+\end_inset
+
+, the physical ground states declines linearly when 
+\begin_inset Formula $M$
+\end_inset
+
+ is small, and declines slowly or turn to increasing when 
+\begin_inset Formula $M$
+\end_inset
+
+ is relatively large.
+ It follows that for a given 
+\begin_inset Formula $N$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi>-1$
+\end_inset
+
+, there exist a critical value of 
+\begin_inset Formula $M$
+\end_inset
+
+ such that the physical ground states under such 
+\begin_inset Formula $M$
+\end_inset
+
+ is the lowest one of all energy states of all values of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ For a fixed value of 
+\begin_inset Formula $N$
+\end_inset
+
+, such critical values of 
+\begin_inset Formula $M$
+\end_inset
+
+ decrease as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ decrease.
+ This implies for large value of 
+\begin_inset Formula $\xi$
+\end_inset
+
+, lower bit system is more stable.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/physical-EvsM.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EvsM-N>=3"
+
+\end_inset
+
+Change of physical ground energy with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/physical-EvsM-N=1_2.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:EvsM-N<=2"
+
+\end_inset
+
+Change of physical ground energy with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also plot 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M$
+\end_inset
+
+, shown as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:excitation-xi=many"
+
+\end_inset
+
+.
+ For all values of 
+\begin_inset Formula $\xi$
+\end_inset
+
+, when 
+\begin_inset Formula $N$
+\end_inset
+
+ is large enough, the curves all roughly stay unchanged.
+ There is one difference between 
+\begin_inset Formula $\xi<-1$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi\geq-1$
+\end_inset
+
+.
+ For the former case, curves of small 
+\begin_inset Formula $N$
+\end_inset
+
+ goes upward steadily, while for later case, the curves are zig-zagged.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=manyexcitation.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:excitation-xi=many"
+
+\end_inset
+
+
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=-2,\,-1,\,1,\,2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
+\end_inset
+
+, the parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+ plays the same role.
+ A bigger 
+\begin_inset Formula $\xi$
+\end_inset
+
+ corresponds to earlier disappearance of ground states.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nxi=-2M=odd"
+
+\end_inset
+
+ shows that the first disappearing ground states locate at 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=2$
+\end_inset
+
+ and odd 
+\begin_inset Formula $M$
+\end_inset
+
+ between 3 and 9.
+ The latest disappearance point of ground states is when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ close to 
+\begin_inset Formula $1$
+\end_inset
+
+, the minimum value of 
+\begin_inset Formula $\xi$
+\end_inset
+
+ determined by stabalization condition.
+ Unlike the 
+\begin_inset Formula $H_{0}+\xi\Delta H$
+\end_inset
+
+ case, the ground energy of 
+\begin_inset Formula $-H_{0}+\xi\Delta H$
+\end_inset
+
+ at even 
+\begin_inset Formula $M$
+\end_inset
+
+ is not degenerate at large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, as shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nH-M=even"
+
+\end_inset
+
+.
+ The change of physical ground energy of 
+\begin_inset Formula $-H_{0}+2\Delta H$
+\end_inset
+
+ at fixed 
+\begin_inset Formula $N$
+\end_inset
+
+ are plotted as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nH-physical-ground"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nxi=2M=odd.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nxi=-2M=odd"
+
+\end_inset
+
+Energy level of Hamiltonian 
+\begin_inset Formula $H=-H_{0}+2\Delta H$
+\end_inset
+
+, 
+\begin_inset Formula $M=3,\,5,\,7,\,9$
+\end_inset
+
+.
+ For each 
+\begin_inset Formula $M$
+\end_inset
+
+, the ground state disappear at 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nxi=2M=even.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-M=even"
+
+\end_inset
+
+Lowest five energy levels of Hamiltonian 
+\begin_inset Formula $H=-H_{0}+2\Delta H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nxi=2physical.pdf
+	width 100col%
+	BoundingBox 50bp 400bp 560bp 600bp
+	clip
+	groupId OneColumnHalfFigure
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-physical-ground"
+
+\end_inset
+
+Physical ground energy of 
+\begin_inset Formula $H=-H_{0}+2\Delta H$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nphysical-EvsM-N=1_2.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-physical-ground-N=12"
+
+\end_inset
+
+Physical ground energy of 
+\begin_inset Formula $-H_{0}+\xi\Delta H$
+\end_inset
+
+ at 
+\begin_inset Formula $\xi=0.5,\,1,\,1.5,\,3$
+\end_inset
+
+ and 
+\begin_inset Formula $N=1,\,2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nphysical-EvsM-N.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-Physical-ground-energy"
+
+\end_inset
+
+Physical ground energy of 
+\begin_inset Formula $-H_{0}+\xi\Delta H$
+\end_inset
+
+ at 
+\begin_inset Formula $\xi=0.5,\,1,\,1.5,\,3$
+\end_inset
+
+ and 
+\begin_inset Formula $N=3,\,5,\,10,\,20,\,\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nxi=manyexcitation.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nH-excitation"
+
+\end_inset
+
+The product of first excitation energy and bit number, 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+, as a function of bit number.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+The Cubics
+\end_layout
+
+\begin_layout Standard
+We were trying to construct our Hamiltonian in the square of the cubics.
+ Since our Hamiltonian are in the form two annihilation operator followed
+ by two creation operator, so the are three bits fermions: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{1}=\bar{b}\bar{b}b,\qquad R_{2}=\bar{a}\bar{a}bb
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{3}=\bar{a}\bar{b}b,\qquad R_{2}=\bar{b}\bar{a}
+\]
+
+\end_inset
+
+If we define 
+\begin_inset Formula ${\left\{ Q,R\right\} }=F$
+\end_inset
+
+ Then we have 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[Q,F]=[Q,QR+RQ]=QQR+QRQ-RQQ-QRQ=[Q^{2},R]
+\]
+
+\end_inset
+
+In which the Grassmann odd operator 
+\begin_inset Formula $Q$
+\end_inset
+
+ is 
+\begin_inset Formula $Q=Tr[(\bar{a}be^{i\pi/4}+\bar{b}ae^{-i\pi/4}]$
+\end_inset
+
+ We can get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Q^{2}=Tr(\bar{a}a+\bar{b}b)
+\]
+
+\end_inset
+
+which is the bit number operator So
+\begin_inset Formula $[Q,F]=M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Follow this routinue, the hamiltonian
+\begin_inset Formula 
+\[
+H={\left\{ R,R^{\dagger}\right\} }+[F,F^{\dagger}]
+\]
+
+\end_inset
+
+ will be automatically supersymmetric.
+\end_layout
+
+\begin_layout Standard
+For each 
+\begin_inset Formula $R$
+\end_inset
+
+ here's the results:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+R_{1} & = & \bar{b}\bar{b}b,\qquad F_{1}=[Tr(\bar{a}\bar{b}b)-Tr(\bar{b}\bar{a}b)]e^{i\pi/4}+Tr(\bar{b}\bar{b}a)e^{-i\pi/4}\\
+H_{1} & = & Tr(\bar{a}\bar{b}ba)-Tr(\bar{a}\bar{b}ab)+Tr(\bar{b}\bar{a}ab)-Tr(\bar{b}\bar{a}ba)+2Tr(\bar{b}\bar{b}bb)\\
+R_{2} & = & \bar{a}\bar{a}b,\qquad F_{2}=[Tr(\bar{b}\bar{a}b)-Tr(\bar{a}\bar{b}b)+Tr(\bar{a}\bar{a}a])e^{-i\pi/4}\\
+H_{2} & = & Tr(\bar{a}\bar{b}ba)-Tr(\bar{a}\bar{a}ab)+Tr(\bar{b}\bar{a}ab-\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+2Tr(\bar{b}\bar{b}bb)+2Tr(\bar{a}a\bar{a}a)+2Tr(\bar{a}a\bar{b}b)+2Tr(\bar{b}a\bar{a}b)\\
+R_{3} & = & \bar{a}\bar{b}a,\qquad F_{3}=[Tr(\bar{a}\bar{a}a)-Tr(\bar{a}\bar{b}b)]e^{i\pi/4}+Tr(\bar{b}\bar{b}a)\\
+H_{3} & = & Tr(\bar{a}\bar{a}aa)-Tr(\bar{b}\bar{b}bb)+Tr(\bar{a}\bar{b}ab+\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+Tr(\bar{a}a\bar{a}a)+2Tr(\bar{a}a\bar{b}b)+Tr(\bar{b}b\bar{b}b)\\
+R_{4} & = & \bar{b}\bar{a}a,\qquad F_{4}=[Tr(\bar{a}\bar{a}a)+Tr(\bar{b}\bar{a}b)]e^{i\pi/4}-Tr(\bar{b}\bar{b}a)e^{-i\pi/4}\\
+H_{4} & = & Tr(\bar{a}\bar{a}aa)-Tr(\bar{b}\bar{b}bb)+Tr(\bar{a}\bar{b}ab+\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+Tr(\bar{a}a\bar{a}a)+2Tr(\bar{b}a\bar{a}b)-Tr(\bar{b}b\bar{b}b)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Hamiltonian has two parts, we look at them separately For the large
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ part we can conclude actually there's only two independent hamiltonian
+ for each part.
+ If we only focus on the large
+\begin_inset Formula $N$
+\end_inset
+
+ part and express the in terms of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $d/\theta$
+\end_inset
+
+:
+\begin_inset Formula $ $
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & 2\theta_{k}\frac{d}{d\theta_{k}}-\theta_{k}\frac{d}{d\theta_{k+1}}-\theta_{k}+1\frac{d}{d\theta_{k}}\\
+H^{'} & = & 2\theta_{k}\frac{d}{d\theta_{k}}-\theta_{k}\frac{d}{d\theta_{k+1}}-\theta_{k}+1\frac{d}{d\theta_{k}}+1
+\end{eqnarray*}
+
+\end_inset
+
+ It is not able to reconstruct our Hamiltonian by this routine.
+ However we can try not to stick to the given routine above, but list all
+ the anti-commutator of all the candidate cubics, and then find out wether
+ their linear combination would give us something similar.
+\end_layout
+
+\begin_layout Standard
+First the diagonal terms are:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\{ R_{1},R_{1}^{\dagger}\right\}  & = & -\tr(\bar{b}\bar{b}bb)\\
+\left\{ R_{2},R_{2}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{a}aa)+\tr(\bar{a}\bar{b}ab)+\tr(\bar{b}\bar{a}ba)+\tr(\bar{a}a\bar{b}b)+\tr(\bar{b}a\bar{a}b)\\
+\left\{ R_{3},R_{3}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{b}ba)+\tr(\bar{a}b\bar{b}a)+\tr(\bar{a}a\bar{a}a)\\
+\left\{ R_{4},R_{4}^{\dagger}\right\}  & = & \tr(\bar{b}\bar{a}ab)+\tr(\bar{a}a\bar{a}a)-\tr(\bar{a}a\bar{b}b)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the off diagnal terms:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left\{ R_{1},R_{2}^{\dagger}\right\}  & = & \tr(\bar{b}\bar{b}aa)\\
+\left\{ R_{1},R_{3}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{b}ba)+\tr(\bar{a}b\bar{b}a)\\
+\left\{ R_{1},R_{4}^{\dagger}\right\}  & = & -\tr(\bar{b}\bar{a}ab)+\tr(\bar{a}a\bar{b}b)\\
+\left\{ R_{2},R_{3}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{a}bb)\\
+\left\{ R_{2},R_{4}^{\dagger}\right\}  & = & -\tr(\bar{a}\bar{a}bb)\\
+\left\{ R_{3},R_{4}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{a}aa)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Conclusion
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Section*
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\start_of_appendix
+\begin_inset CommandInset label
+LatexCommand label
+name "app:Counting-Trace-States"
+
+\end_inset
+
+Counting Problems on Trace States
 \end_layout
 
 \begin_layout Standard
@@ -1883,8 +5090,17 @@ A counting question arises naturally here.
 \begin_inset Formula $M$
 \end_inset
 
-? Let's first consider the single trace states.
- There are 
+? In the following subsections, we will first count the single trace states
+ and then the general trace states which including both single and multiple
+ trace states.
+\end_layout
+
+\begin_layout Subsection*
+Counting Single Trace States
+\end_layout
+
+\begin_layout Standard
+There are 
 \begin_inset Formula $2^{M}$
 \end_inset
 
@@ -1936,17 +5152,640 @@ The rule is each exchange of order of two
 
 \end_inset
 
-Using Burnside’s theorem, we proved that there are equal number of bosonic
- and fermionic single trace states for a given number of 
+
+\end_layout
+
+\begin_layout Standard
+To count the single trace states, we need the following definition and theorem.
+ 
+\end_layout
+
+\begin_layout Definition*
+Given a group 
+\begin_inset Formula $G$
+\end_inset
+
+ acting on a set 
+\begin_inset Formula $X$
+\end_inset
+
+, the orbit of 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ is the set 
+\begin_inset Formula $Gx=\left\{ g\cdot x|g\in G\right\} $
+\end_inset
+
+.
+ The set of orbits is denoted by 
+\begin_inset Formula $X/G$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In our case, the cyclic group 
+\begin_inset Formula $C_{M}$
+\end_inset
+
+ is the group 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ is the 
+\begin_inset Formula $2^{M}$
+\end_inset
+
+ combinations of 
 \begin_inset Formula $M$
 \end_inset
 
+-bit operators, and 
+\begin_inset Formula $x$
+\end_inset
 
+ corresponds to one perticular combination.
+ 
+\begin_inset Formula $X/G$
+\end_inset
+
+ is the set of different combinations under the action of Cyclic group.
+ 
+\end_layout
+
+\begin_layout Theorem*
+(Burnside’s theorem).
+ If 
+\begin_inset Formula $G$
+\end_inset
+
+ is a finite group acting on a finite set 
+\begin_inset Formula $X$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\left|X/G\right|=\frac{1}{\left|G\right|}\sum_{g\in G}\left|\mathrm{Fix}\left(g\right)\right|,
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\mathrm{Fix}\left(g\right)$
+\end_inset
+
+ is the set of 
+\begin_inset Formula $x$
+\end_inset
+
+ that is invariant under action of 
+\begin_inset Formula $g$
+\end_inset
+
+, i.e, 
+\begin_inset Formula 
+\[
+\mathrm{Fix}\left(g\right)=\left\{ x\in X|g\cdot x=x\right\} 
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+To find the state number, we need to find 
+\begin_inset Formula $\left|\mathrm{Fix}\left(g\right)\right|$
+\end_inset
+
+ for each group member.
+\end_layout
+
+\begin_layout Standard
+We first consider the case of odd 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $c_{k}\in C_{M},\, k=1,2,\cdots M$
+\end_inset
+
+, be the group member that shift 
+\begin_inset Formula $k$
+\end_inset
+
+ operators from the tail of the trace to the beginning.
+ Here, the identity of the group is 
+\begin_inset Formula $e=c_{M}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+ denote the greatest common divisor of 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ For group member 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, we equally divide the 
+\begin_inset Formula $M$
+\end_inset
+
+ bits into 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ parts with each part of 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+ bits: the first part starts from bit 1 to bit 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+, and the second part starts from bit 
+\begin_inset Formula $\left(M,k\right)+1$
+\end_inset
+
+ to bit 
+\begin_inset Formula $2\left(M,k\right)$
+\end_inset
+
+, and etc.
+ Under the action of 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, the 
+\begin_inset Formula $i$
+\end_inset
+
+th part transfer as 
+\begin_inset Formula 
+\[
+i\mathrm{th}\text{ part}\to\left(i+\frac{k}{\left(M,k\right)}\right)\mathrm{\text{th part}}.
+\]
+
+\end_inset
+
+The trace is invariant under 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+ if and only if all the parts are identical to each other.
+ For bosonic trace states, each part need to bosonic, which follows 
+\begin_inset Formula 
+\begin{equation}
+\left|\mathrm{Fix}\left(c_{k}\right)\right|=\sum_{\text{even }i}\binom{\left(M,k\right)}{i}=\frac{1}{2}2^{\left(M,k\right)}.\label{eq:A-Fix-1}
+\end{equation}
+
+\end_inset
+
+ Similarly, for fermionic single trace states, each part need to be fermionic,
+ 
+\begin_inset Formula 
+\begin{equation}
+\left|\mathrm{Fix}\left(c_{k}\right)\right|=\sum_{\text{odd }i}\binom{\left(M,k\right)}{i}=\frac{1}{2}2^{\left(M,k\right)},\label{eq:A-Fix-2}
+\end{equation}
+
+\end_inset
+
+which implies there are the same number of bosonic and fermonic single trace
+ states for odd 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ By Burnside's theorem, this number is given by 
+\begin_inset Formula 
+\begin{equation}
+S_{M}=\frac{1}{2M}\sum_{k=1}^{M}2^{\left(M,k\right)}.\label{eq:A-SM-Odd}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+For even 
+\begin_inset Formula $M$
+\end_inset
+
+, let's first consider the fermionic states.
+ For a group member 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|\mathrm{Fix}\left(c_{k}\right)\right|=0$
+\end_inset
+
+ if 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ is even.
+ This because odd number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ cannot be equally divided into even parts.
+ Therefore, only odd 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ contributes to 
+\begin_inset Formula $\left|\mathrm{Fix}\left(c_{k}\right)\right|$
+\end_inset
+
+, which is still given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Fix-2"
+
+\end_inset
+
+.
+ And Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Odd"
+
+\end_inset
+
+ becomes
+\begin_inset Formula 
+\begin{equation}
+S_{M}=\frac{1}{2M}\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)}.\label{eq:A-SM-Even}
+\end{equation}
+
+\end_inset
+
+Let 
+\begin_inset Formula $i=M/\left(M,k\right)$
+\end_inset
+
+, Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Even"
+
+\end_inset
+
+ can be written as 
+\begin_inset Formula 
+\begin{equation}
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},\label{eq:A-SM-Euler}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\varphi\left(i\right)$
+\end_inset
+
+ is the Euler's totient function and 
+\begin_inset Formula $i|M$
+\end_inset
+
+ means 
+\begin_inset Formula $M$
+\end_inset
+
+ is divisible by 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ We see that Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Odd"
+
+\end_inset
+
+ is a special case of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Even"
+
+\end_inset
+
+ with 
+\begin_inset Formula $s=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For bosonic states, we cannot simply count all single trace states with
+ even number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, because there exist vanishing states, for example, 
+\begin_inset Formula 
+\[
+\tr\ba\bb\ba\bb=-\tr\ba\bb\ba\bb=0.
+\]
+
+\end_inset
+
+ The number of bosonic states equals to number of even-
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+-state minus number of vanishing states.
+ Let's first consider the number of even-
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+-states, which is denoted as 
+\begin_inset Formula $B_{M}$
+\end_inset
+
+ for convenience.
+ For a group member 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, we again divide 
+\begin_inset Formula $M$
+\end_inset
+
+ bits equally into 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ parts with each part 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+ bits.
+ If 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ is odd, we need even number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ in each part; if 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ is even, there can be any number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+ in each part, which follows
+\begin_inset Formula 
+\begin{eqnarray}
+B_{M} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)-1}+\sum_{M/\left(M,k\right)\text{ is even}}2^{\left(M,k\right)}\right)\nonumber \\
+ & = & \frac{1}{2M}\left(\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}+2\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right).\label{eq:A-Even-b-States}
+\end{eqnarray}
+
+\end_inset
+
+ We next consider the number of vanishing states, which is denoted as 
+\begin_inset Formula $V_{M}$
+\end_inset
+
+.
+ For each 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+, we perform the same partition as before.
+ If 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ is even and all parts are identical and with odd number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, then it's a vanishing state.
+ But this does not cover all the possibilities.
+ If 
+\begin_inset Formula $\left(M,k\right)$
+\end_inset
+
+ is even, we can perform finer partition: divide 
+\begin_inset Formula $M$
+\end_inset
+
+-bits into 
+\begin_inset Formula $2M/\left(M,k\right)$
+\end_inset
+
+ parts with each part of 
+\begin_inset Formula $\left(M,k\right)/2$
+\end_inset
+
+ bits.
+ If all the 
+\begin_inset Formula $2M/\left(M,k\right)$
+\end_inset
+
+ parts are the same and contain odd number of 
+\begin_inset Formula $\bar{b}$
+\end_inset
+
+, it's a vanishing state.
+ We can continue perform the finer partition 
+\begin_inset Formula $i$
+\end_inset
+
+ times until 
+\begin_inset Formula $\left(M,k\right)/2^{i}$
+\end_inset
+
+ is odd.
+ There is a difference between odd 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ and even 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+: it needs to perform at least one finer partition to get vanishing states
+ for odd 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+, while for even 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ it doesn't.
+ Therefore, the number of vanishing states reads 
+\begin_inset Formula 
+\begin{eqnarray}
+V_{M} & = & \frac{1}{M}\sum_{\text{odd }M/\left(M,k\right)}\left(\sum_{i\geq1\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
+ &  & +\frac{1}{M}\sum_{\text{even }M/\left(M,k\right)}\left(\sum_{i\geq0\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
+ & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\text{even }M/\left(M,k\right)}2^{\left(M,k\right)}\right]\nonumber \\
+ & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right]\label{eq:A-Vanish-States-1}
+\end{eqnarray}
+
+\end_inset
+
+ Let 
+\begin_inset Formula $\frac{\left(M,k\right)}{2^{i}}=\frac{M}{j}$
+\end_inset
+
+, then we have 
+\begin_inset Formula $2^{i}|j$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(M,k\right)=2^{i}M/j$
+\end_inset
+
+.
+ The number of 
+\begin_inset Formula $k$
+\end_inset
+
+ with 
+\begin_inset Formula $\left(M,k\right)=2^{i}M/j$
+\end_inset
+
+ equals to 
+\begin_inset Formula 
+\[
+\varphi\left(\frac{M}{2^{i}M/j}\right)=\varphi\left(\frac{j}{2^{i}}\right).
+\]
+
+\end_inset
+
+Now, the first term inside parenthesis of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Vanish-States-1"
+
+\end_inset
+
+ can be written as
+\begin_inset Formula 
+\[
+\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{ even }j,j|M}\left[\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)2^{\frac{M}{j}}\right].
+\]
+
+\end_inset
+
+ With the following property of function 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\varphi\left(2m\right)=\begin{cases}
+2\varphi\left(m\right) & \quad\text{if }m\text{ is even}\\
+\varphi\left(m\right) & \quad\text{if }m\text{ is odd}
+\end{cases},
+\]
+
+\end_inset
+
+it's easy to see that 
+\begin_inset Formula 
+\[
+\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)=\varphi\left(j\right),\quad\text{if }j\text{ is even}.
+\]
+
+\end_inset
+
+Now we have 
+\begin_inset Formula 
+\[
+\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{even }j,j|M}\varphi\left(j\right)2^{\frac{M}{j}},
+\]
+
+\end_inset
+
+ from which it follows 
+\begin_inset Formula 
+\[
+V_{M}=\frac{1}{M}\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, the difference of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Even-b-States"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Vanish-States-1"
+
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+S_{M}=B_{M}-V_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},
+\]
+
+\end_inset
+
+ which is the same as the formula for fermionic states.
+ 
+\end_layout
+
+\begin_layout Standard
+In sum, we conclude that there are equal number of bosonic states and fermionic
+ state for a given bit number 
+\begin_inset Formula $M$
+\end_inset
+
+ 
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-This stems from the fact that the bit operator 
+From purely physical perspective, this stems from the fact that the bit
+ operator 
 \begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
 \end_inset
 
@@ -1960,80 +5799,19 @@ This stems from the fact that the bit operator
 
 \end_inset
 
-.
- The number is given by 
+ and both numbers can be written as 
 \begin_inset Formula 
 \begin{equation}
-S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, n,n|M}\varphi\left(n\right)2^{\frac{M}{n}},\label{eq:Single-Trace-Number}
+S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, n,n|M}\varphi\left(n\right)2^{\frac{M}{n}}.\label{eq:Single-Trace-Number}
 \end{equation}
 
 \end_inset
 
- where 
-\begin_inset Formula $n|M$
-\end_inset
 
- denotes the condition that 
-\begin_inset Formula $M$
-\end_inset
+\end_layout
 
- is dividible by 
-\begin_inset Formula $n$
-\end_inset
-
-, and 
-\begin_inset Formula $\varphi\left(n\right)$
-\end_inset
-
- the Euler's totient function, 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-which indicates the number of positive integers less than or equal to 
-\begin_inset Formula $n$
-\end_inset
-
- that are relatively prime to 
-\begin_inset Formula $n$
-\end_inset
-
-.
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- The proof of formula 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Single-Trace-Number"
-
-\end_inset
-
- is given in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Counting-Single-Trace"
-
-\end_inset
-
-.
- 
+\begin_layout Subsection*
+Counting Trace States
 \end_layout
 
 \begin_layout Standard
@@ -2289,7 +6067,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="44" columns="5">
+<lyxtabular version="3" rows="17" columns="5">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -2877,382 +6655,6 @@ M
 \begin_inset Text
 
 \begin_layout Plain Layout
-12
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-172 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2958 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.503906250000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.722167968750 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-13
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-316 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-5925 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.501464843750 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.723266601563 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-14
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-586 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-11864 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500732421875 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.724121093750 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-15
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1096
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23757
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.501708984375 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725006103516 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-16
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2048 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-47536 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725341796875 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-17
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3856 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-95105 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500122070313 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725593566895 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-18
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7286 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-190274 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500289916992 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725837707520 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-19
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-13798 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-380601 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500034332275 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.725938796997 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 20
 \end_layout
 
@@ -3290,429 +6692,6 @@ M
 
 \begin_layout Plain Layout
 0.726015090942 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-21
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-49940 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1522705 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500078201294 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726082324982 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-22
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-95326 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3045532 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500004768372 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726111412048 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-182362 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6091241 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500002622604 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726132512093 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-349536 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-12182788 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500015258789 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726150751114 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-671092
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24365857 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500002503395 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726159125566 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-26
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1290556 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-48732102 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000357628 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726164907217 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-27
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2485534 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-97464861 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500004127622 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726169802248 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-28
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-4793492 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-194930334 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000178814 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726172082126 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-29
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-9256396 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-389861509 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000052154 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726173648611 
 \end_layout
 
 \end_inset
@@ -3770,429 +6749,6 @@ M
 \begin_inset Text
 
 \begin_layout Plain Layout
-31
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-34636834 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1559450161 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000013970 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726175569464 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-32
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-67108864 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3118902120 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000000 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726175988093 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-33
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-130150588 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-6237807181 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000245403 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176330470 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-34
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-252645136 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-12475617154 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000001863 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176492986 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-35
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-490853416 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-24951238137 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000010943 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176604425 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-36
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-954437292 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-49902482386 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000060303 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176693366 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-37
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1857283156 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-99804970645 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000262 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176736098 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-38
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-3616814566 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-199609949268 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000131 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176765122 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-39
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-7048151672 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-399219911173 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000015032 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176788108 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 40
 \end_layout
 
@@ -4230,53 +6786,6 @@ M
 
 \begin_layout Plain Layout
 0.726176799293 
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-45
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-390937468408 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25550075403713 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.500000000965 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0.726176819049 
 \end_layout
 
 \end_inset
@@ -4407,11 +6916,11 @@ Number of trace states
 \end_layout
 
 \begin_layout Standard
-The results reveals that as 
+The results reveals that in large 
 \begin_inset Formula $M$
 \end_inset
 
- increase 
+ 
 \begin_inset Formula 
 \[
 S_{M}\to\frac{2^{M-1}}{M},\qquad T_{M}\to\left(0.7261768212\cdots\right)\times2^{M}.
@@ -4423,23 +6932,23 @@ The limit of
 \begin_inset Formula $S_{M}$
 \end_inset
 
- shows for large 
+ shows that almost each single trace state has 
 \begin_inset Formula $M$
 \end_inset
 
- almost each single trace state has 
+ different cyclic permutations at large 
 \begin_inset Formula $M$
 \end_inset
 
- different cyclic permutations.
- This is easy to understand.
- As 
-\begin_inset Formula $M$
-\end_inset
-
- increase, the ratio of the single trace with certain cyclic symmetry become
- lower and lower.
+.
+ This is not surprising.
+ The ratio of the single trace with certain cyclic symmetry goes down as
  
+\begin_inset Formula $M$
+\end_inset
+
+ increase.
+ The number 
 \begin_inset Formula $T_{M}$
 \end_inset
 
@@ -4447,12 +6956,12 @@ The limit of
 \begin_inset Formula $2^{M}$
 \end_inset
 
- with a prefactor we don't understand.
- The exploration of the magic number in the 
-\begin_inset Formula $T_{M}$
-\end_inset
+ with a unknown magic prefactor, which could be an interesting mathematic
+ problem to explore.
+\end_layout
 
- limit could be an interesting mathematic problem.
+\begin_layout Section
+Rank of Metrix Matrix
 \end_layout
 
 \begin_layout Standard
@@ -5165,2744 +7674,6 @@ The right half of the each row exibits the pattern
 \end_inset
 
 , there are more than one states have zero norm.
-\end_layout
-
-\begin_layout Section*
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Method"
-
-\end_inset
-
-The 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- Matrices
-\end_layout
-
-\begin_layout Standard
-Our goal is to study the energy spectrum of Hamiltonian 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Hamiltonian-3"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Hamiltonian-4"
-
-\end_inset
-
-.
- The traditional approach is to build a Hamiltonian matrix in orthnormal
- basis, which comes from the diagonalization of the norm matrix 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Norm-Matrix-Definition"
-
-\end_inset
-
-.
- We used another approach which does not require the diagonalization of
- the norm matrix.
- A complex value matrix 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- is defined as 
-\begin_inset Formula 
-\[
-H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}
-\]
-
-\end_inset
-
- for a given value of 
-\begin_inset Formula $M$
-\end_inset
-
-.
- 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- is not the Hamiltonian matrix as the trace states 
-\begin_inset Formula $\ket{i}$
-\end_inset
-
- are not orthnormal basis.
- We then solve the eigenvalue problem of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-, 
-\begin_inset Formula 
-\[
-\left(\mathcal{H}-E\right)V=0.
-\]
-
-\end_inset
-
- In Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Hamiltonian-Eigenvalue-Problem"
-
-\end_inset
-
-, we prove the following claims regarding the eigenvalue problem of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $E$
-\end_inset
-
- is an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-, its complex conjugate 
-\begin_inset Formula $E^{*}$
-\end_inset
-
- is also an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $E$
-\end_inset
-
- is not real, we have 
-\begin_inset Formula $V^{\dagger}GV=0$
-\end_inset
-
-, where 
-\begin_inset Formula $G$
-\end_inset
-
- is the norm matrix defined by 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Norm-Matrix-Definition"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $G$
-\end_inset
-
- is positive-semidefinite, every eigenvalue of the Hamiltonian system is
- an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $G$
-\end_inset
-
- is positive-semidefinite, E is an eigenvalue of the Hamiltonian system
- if and only if 
-\begin_inset Formula $V^{\dagger}GV>0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-What if 
-\begin_inset Formula $G$
-\end_inset
-
- is not positive-semidefinite? Per our calculation, this only happens when
- 
-\begin_inset Formula $N$
-\end_inset
-
- is less than 
-\begin_inset Formula $M$
-\end_inset
-
- and non-integer.
- In such case, the trace state space is not a Hilbert space and has no orthnorma
-l basis.
- For every set of basis, there exists one or more ghost states whose norms
- are negative.
- In analogy with positive-semidefinite case, we can still build a Hamiltonian
- matrix base on these basis.
- We have the following claims proved in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Hamiltonian-Eigenvalue-Problem"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $E$
-\end_inset
-
- is an eigenvalue of the Hamiltonian matrix with eigenvector 
-\begin_inset Formula $W$
-\end_inset
-
-, it is an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- if 
-\begin_inset Formula $W$
-\end_inset
-
- does not mix with ghost states.
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $E$
-\end_inset
-
- is an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- with eigenvecot 
-\begin_inset Formula $V$
-\end_inset
-
-, then it is an eigenvalue of the Hamiltonian matrix if 
-\begin_inset Formula $E=0$
-\end_inset
-
- or 
-\begin_inset Formula $V^{\dagger}\mathrm{abs}\left(G\right)V=V^{\dagger}GV>0$
-\end_inset
-
-, where the function 
-\begin_inset Formula $\mathrm{abs}$
-\end_inset
-
- is defined as
-\begin_inset Formula 
-\[
-\mathrm{abs}\left(G\right)=U^{\dagger}\left(\begin{array}{cccc}
-\left|g_{1}\right|\\
- & \left|g_{2}\right|\\
- &  & \ddots\\
- &  &  & \left|g_{n}\right|
-\end{array}\right)U,
-\]
-
-\end_inset
-
-with 
-\begin_inset Formula 
-\[
-G=U^{\dagger}\left(\begin{array}{cccc}
-g_{1}\\
- & g_{2}\\
- &  & \ddots\\
- &  &  & g_{n}
-\end{array}\right)U
-\]
-
-\end_inset
-
- be the eigendecomposition of 
-\begin_inset Formula $G$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The above claims implies, for positive-semidefinite 
-\begin_inset Formula $G$
-\end_inset
-
-, the subset of eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- whose eigenvector 
-\begin_inset Formula $V$
-\end_inset
-
- satisfying 
-\begin_inset Formula $V^{\dagger}GV>0$
-\end_inset
-
- are eigenvalues of the Hamiltonian.
- But for non-positive-semidefinite 
-\begin_inset Formula $G$
-\end_inset
-
-, there is no such simple relationship.
- 
-\end_layout
-
-\begin_layout Section
-Finite 
-\begin_inset Formula $N$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In this section, we perform the numerical analysis of the energy levels
- of our model.
- We will show how energy levels of various Hamiltonians change with respect
- to 
-\begin_inset Formula $N$
-\end_inset
-
- and bit number 
-\begin_inset Formula $M$
-\end_inset
-
-.
- For different values of 
-\begin_inset Formula $M$
-\end_inset
-
-, we calculated the 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- matrices and norm matrices 
-\begin_inset Formula $G$
-\end_inset
-
-, whose entries are expressed in terms of 
-\begin_inset Formula $N$
-\end_inset
-
-.
- Since the nubmer of trace states increase exponentially as 
-\begin_inset Formula $M$
-\end_inset
-
- increase, it's only feasible to perform the calculation for small values
- of 
-\begin_inset Formula $M$
-\end_inset
-
-.
- The biggest value of 
-\begin_inset Formula $M$
-\end_inset
-
- we target is 11, where 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- and 
-\begin_inset Formula $G$
-\end_inset
-
- are 
-\begin_inset Formula $1473\times1473$
-\end_inset
-
- matrices.
- 
-\end_layout
-
-\begin_layout Standard
-We will first analyze the result for the original Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-, for which the 
-\begin_inset Formula $M=3$
-\end_inset
-
- case has been investigated in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
-
-\end_inset
-
-.
- Next, we move to the Hamiltonians of the form 
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
-\end_inset
-
- and investigate how the parameter 
-\begin_inset Formula $\xi$
-\end_inset
-
- impact the energy levels.
- Finally, we explore the Hamiltonians of the form 
-\begin_inset Formula $H=-H_{0}+\xi\Delta H$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Subsection*
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:H=H0M=3"
-
-\end_inset
-
- to 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:H=H0M=11"
-
-\end_inset
-
- plot energy levels for odd 
-\begin_inset Formula $M$
-\end_inset
-
- range from 3 to 11 with respect to 
-\begin_inset Formula $1/N$
-\end_inset
-
-.
- Five energy levels are plotted for 
-\begin_inset Formula $M=3$
-\end_inset
-
- and lowest eight energy levels are plotted for others.
- In these figures, different colors represent different energy states and
- different line styles indicate different norm of energy states.
- Solid, dotted, and dash-dotted curves correspond to positive, negative,
- and zero norm energy states respectively.
- As mentioned in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Method"
-
-\end_inset
-
-, a zero norm state associate with two complex energy levels that conjugate
- to each other.
- Therefore, the dash-dotted curves represent only the real parts of the
- energy levels and always starts and ends at the merging point of two curves.
- A dotted curve corresponds a negative norm state, which can be either pure
- ghost states or mixing of ghost states and other states.
- Note that there is non negative norm states at integer values of 
-\begin_inset Formula $N$
-\end_inset
-
-.
- For higher 
-\begin_inset Formula $M$
-\end_inset
-
- and 
-\begin_inset Formula $1/N$
-\end_inset
-
-, the energy levels decline dramatically as 
-\begin_inset Formula $1/N$
-\end_inset
-
- increase.
- To show more details of the curves in lower 
-\begin_inset Formula $1/N$
-\end_inset
-
-, we split the plots into lower 
-\begin_inset Formula $1/N$
-\end_inset
-
- part and higher 
-\begin_inset Formula $1/N$
-\end_inset
-
- part.
- Between these two parts, curves of the same color represent the same energy
- states.
- See 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:H=H0M=7"
-
-\end_inset
-
- as an example.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=3.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:H=H0M=3"
-
-\end_inset
-
-Lowest 5 energy states for the 3-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=5.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Lowest 8 energy states for the 5-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=7.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:H=H0M=7"
-
-\end_inset
-
-Lowest 8 energy states for the 7-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=9.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Lowest 8 energy states for the 9-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=11.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:H=H0M=11"
-
-\end_inset
-
-Lowest 8 energy states for the 11-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We see several features from these figures.
- At 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, degeneracy occurs for some excited states while the ground states are
- non-degenerate.
- This is consistent with the analytic calculation of large 
-\begin_inset Formula $N$
-\end_inset
-
- limit 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
-
-\end_inset
-
-.
- The degeneracies are broken when 
-\begin_inset Formula $N$
-\end_inset
-
- is finite.
- All the curves are almost horizontal in the region close to 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, and at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, perpendicular to the vertical axes.
- This implies that 
-\begin_inset Formula $1/N$
-\end_inset
-
- order perturbation of energy levels is zero.
- As 
-\begin_inset Formula $1/N$
-\end_inset
-
- increase, the solid curves turn to dotted or dash-dotted curves, which
- corresponds to the disappearance of states.
- If a state disappears at an integer value of 
-\begin_inset Formula $N$
-\end_inset
-
-, if also disappears at all the integers less than 
-\begin_inset Formula $N$
-\end_inset
-
-.
- For example, the ground state of 
-\begin_inset Formula $M=5$
-\end_inset
-
- disappears at 
-\begin_inset Formula $N=2,\,1$
-\end_inset
-
-; ground state of 
-\begin_inset Formula $M=7$
-\end_inset
-
- disappears at 
-\begin_inset Formula $N=3,2,1$
-\end_inset
-
-.
- It is interesting to note that the the first disappearances of ground states
- occur at 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-.
- This implies to have ground states survive, 
-\begin_inset Formula $N$
-\end_inset
-
- must increase linearly as 
-\begin_inset Formula $M$
-\end_inset
-
- increase.
- At certain value of 
-\begin_inset Formula $1/N$
-\end_inset
-
-, the energy levels begin to drop dramatically.
- The large 
-\begin_inset Formula $M$
-\end_inset
-
- is, the earlier (larger 
-\begin_inset Formula $N$
-\end_inset
-
-) the drop happens.
- For 
-\begin_inset Formula $M=7$
-\end_inset
-
-, it occurs around 
-\begin_inset Formula $N=2$
-\end_inset
-
-; for 
-\begin_inset Formula $M=9$
-\end_inset
-
-, it occurs around 
-\begin_inset Formula $N=3$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "figH=h0M=even"
-
-\end_inset
-
- plots the lowest five energy levels for even 
-\begin_inset Formula $M$
-\end_inset
-
- from 
-\begin_inset Formula $4$
-\end_inset
-
- to 
-\begin_inset Formula $10$
-\end_inset
-
-.
- Much of the analysis of odd cases applies to even cases except the ground
- states.
- At 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, the ground states of 
-\begin_inset Formula $M=4,8$
-\end_inset
-
- are degenerate, but for 
-\begin_inset Formula $M=6,10$
-\end_inset
-
- they are not degenerate.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=even.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "figH=h0M=even"
-
-\end_inset
-
-Lowest 5 energy states Hamiltonia 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
- with 
-\begin_inset Formula $M=4,6,8,10$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Top-5-energy-H=H_0"
-
-\end_inset
-
- shows the highest 5 energy levels of 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
- for 
-\begin_inset Formula $M$
-\end_inset
-
- from 4 to 7.
- Unlike the low energy states, the highest energy states do not disappear,
- even if 
-\begin_inset Formula $N$
-\end_inset
-
- is less than 1.
- If we use 
-\begin_inset Formula $-H_{0}$
-\end_inset
-
- as Hamiltonian, will the ground states survive for smaller 
-\begin_inset Formula $N$
-\end_inset
-
-? We now answer this question in the next subsection.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=4567top.pdf
-	width 100col%
-	BoundingBox 60bp 200bp 547bp 600bp
-	clip
-	groupId SinglePagePlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Top-5-energy-H=H_0"
-
-\end_inset
-
-Top 5 energy levels of 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
- and 
-\begin_inset Formula $M=4,5,6,7$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Variations of 
-\begin_inset Formula $H$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In this subsection, we will analyze how the energy levels changes for two
- variations of the Hamiltonian.
- The first form of Hamiltonian is 
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
-\end_inset
-
- and the second one is 
-\begin_inset Formula $H=-H_{0}+\xi\Delta H$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xi=negativeM=3"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xi=positiveM=3"
-
-\end_inset
-
- plot the energy states of 3-bit systems of Hamiltonian 
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
-\end_inset
-
- with different values of 
-\begin_inset Formula $\xi$
-\end_inset
-
-.
- Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xi=negativeM=3"
-
-\end_inset
-
- shows that the highest energy state disappear later at larger 
-\begin_inset Formula $1/N$
-\end_inset
-
- as 
-\begin_inset Formula $\xi$
-\end_inset
-
- increase.
- The highest energy state disappears at 
-\begin_inset Formula $N=2$
-\end_inset
-
- for 
-\begin_inset Formula $\xi=-0.9$
-\end_inset
-
- and 
-\begin_inset Formula $N=1$
-\end_inset
-
- for 
-\begin_inset Formula $\xi=-0.6$
-\end_inset
-
-.
- As 
-\begin_inset Formula $\xi$
-\end_inset
-
- continue increasing to -0.3, the highest state disappears only when 
-\begin_inset Formula $N>1.5$
-\end_inset
-
-, which implies it survives for all physical cases.
- Finally, when 
-\begin_inset Formula $\xi=-0.1$
-\end_inset
-
-, the disappearance happens after 
-\begin_inset Formula $1/N=2$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=negativeM=3.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:xi=negativeM=3"
-
-\end_inset
-
-Energy levels for 3-bit system of Hamiltonian 
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
-\end_inset
-
-, with 
-\begin_inset Formula $\xi=-0.9,\,-0.6\,-0.3,$
-\end_inset
-
- and 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
--0.1.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Now let's check how 
-\begin_inset Formula $\xi$
-\end_inset
-
- impact the ground states.
- Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xi=positiveM=3"
-
-\end_inset
-
- shows the ground states disappear earlier as 
-\begin_inset Formula $\xi$
-\end_inset
-
- becomes larger.
- When 
-\begin_inset Formula $\xi=0.01$
-\end_inset
-
-, the ground state disappears at 
-\begin_inset Formula $N=1$
-\end_inset
-
-; when 
-\begin_inset Formula $\xi=0.5$
-\end_inset
-
- the disappearance occurs between 
-\begin_inset Formula $0.5<1/N<1$
-\end_inset
-
-; when 
-\begin_inset Formula $\xi=3$
-\end_inset
-
-, it's at 
-\begin_inset Formula $N=2$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=positiveM=3.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:xi=positiveM=3"
-
-\end_inset
-
-Energy levels for 3-bit systems of Hamiltonian 
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
-\end_inset
-
-, with 
-\begin_inset Formula $\xi=0.01,\,0.5,\,1$
-\end_inset
-
- and 
-\begin_inset Formula $1.5$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-By increasing 
-\begin_inset Formula $\xi$
-\end_inset
-
-, we can move the point at which of ground state disappear to 
-\begin_inset Formula $N=M-1$
-\end_inset
-
-, the earliest point a state can disappear.
- Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xi=2M=odd"
-
-\end_inset
-
- show that for 
-\begin_inset Formula $H=H_{0}+2\Delta H$
-\end_inset
-
- and 
-\begin_inset Formula $M=3,\,5,\,7,\,9$
-\end_inset
-
-, the disappearance points of the ground states move to 
-\begin_inset Formula $2,\,4,\,6,\,8$
-\end_inset
-
- respectively.
- But we cannot move the disappearance point arbitary later because of the
- stabalization constraint 
-\begin_inset Formula $\xi>-1$
-\end_inset
-
-.
- Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xi=-0.9M=odd"
-
-\end_inset
-
- shows, for Hamiltonian 
-\begin_inset Formula $H=H_{0}-0.9\Delta H$
-\end_inset
-
-, the disappearance point of ground states are at 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-.
- It suggest that the latest disappearance point of ground states is 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=2M=odd.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:xi=2M=odd"
-
-\end_inset
-
-Energy level of Hamiltonian 
-\begin_inset Formula $H=H_{0}+2\Delta H$
-\end_inset
-
-, 
-\begin_inset Formula $M=3,\,5,\,7,\,9$
-\end_inset
-
-.
- For each 
-\begin_inset Formula $M$
-\end_inset
-
-, the ground states disappear at 
-\begin_inset Formula $N=M-1$
-\end_inset
-
-, which is earliest point a state can disappear.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=n.9M=odd.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:xi=-0.9M=odd"
-
-\end_inset
-
-Energy level of Hamiltonian 
-\begin_inset Formula $H=H_{0}-0.9\Delta H$
-\end_inset
-
-, 
-\begin_inset Formula $M=3,\,5,\,7,\,9$
-\end_inset
-
-.
- For each 
-\begin_inset Formula $M$
-\end_inset
-
-, the ground state disappear at 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-To study how 
-\begin_inset Formula $\xi$
-\end_inset
-
- impacts the physical ground energies, we plot the change of physical ground
- energy with respect to 
-\begin_inset Formula $M$
-\end_inset
-
- for fixed value of 
-\begin_inset Formula $N$
-\end_inset
-
-.
- See Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:EvsM-N>=3"
-
-\end_inset
-
- for 
-\begin_inset Formula $N=3$
-\end_inset
-
-, 
-\begin_inset Formula $5$
-\end_inset
-
-, 
-\begin_inset Formula $10$
-\end_inset
-
-, 
-\begin_inset Formula $1000$
-\end_inset
-
- and Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:EvsM-N<=2"
-
-\end_inset
-
- for 
-\begin_inset Formula $N=1,\,2$
-\end_inset
-
-.
- In these two figures, we only evaluate the physical ground energy at odd
- numbers of 
-\begin_inset Formula $M$
-\end_inset
-
-.
- From the figures, we see that the ground states have very different trends
- for 
-\begin_inset Formula $\xi<-1$
-\end_inset
-
-, 
-\begin_inset Formula $\xi=-1$
-\end_inset
-
-, and 
-\begin_inset Formula $\xi>-1$
-\end_inset
-
-.
- When 
-\begin_inset Formula $\xi=1$
-\end_inset
-
-, the physical ground states change almost linearly with negative slope
- for all 
-\begin_inset Formula $N$
-\end_inset
-
-.When 
-\begin_inset Formula $\xi<-1$
-\end_inset
-
-, the physical ground states declines faster than linearity as 
-\begin_inset Formula $M$
-\end_inset
-
- increase.
- Hence, the Hamiltonian of 
-\begin_inset Formula $\xi<-1$
-\end_inset
-
- is not a stable system.
- When 
-\begin_inset Formula $\xi>-1$
-\end_inset
-
-, the physical ground states declines linearly when 
-\begin_inset Formula $M$
-\end_inset
-
- is small compared with 
-\begin_inset Formula $N$
-\end_inset
-
-, and declines slowly or turn to increasing when 
-\begin_inset Formula $M$
-\end_inset
-
- is relatively large.
- It follows that for a given 
-\begin_inset Formula $N$
-\end_inset
-
- and 
-\begin_inset Formula $\xi>-1$
-\end_inset
-
-, there exist a critical value of 
-\begin_inset Formula $M$
-\end_inset
-
- such that the physical ground states under such 
-\begin_inset Formula $M$
-\end_inset
-
- is the lowest one of all energy states of all values of 
-\begin_inset Formula $M$
-\end_inset
-
-.
- For a fixed value of 
-\begin_inset Formula $N$
-\end_inset
-
-, such critical values of 
-\begin_inset Formula $M$
-\end_inset
-
- decrease as 
-\begin_inset Formula $\xi$
-\end_inset
-
- decrease.
- This implies for large value of 
-\begin_inset Formula $\xi$
-\end_inset
-
-, lower bit system is more stable.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/physical-EvsM.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EvsM-N>=3"
-
-\end_inset
-
-Change of physical ground energy with respect to 
-\begin_inset Formula $M$
-\end_inset
-
- for fixed 
-\begin_inset Formula $N$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/physical-EvsM-N=1_2.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EvsM-N<=2"
-
-\end_inset
-
-Change of physical ground energy with respect to 
-\begin_inset Formula $M$
-\end_inset
-
- for fixed 
-\begin_inset Formula $N$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-For 
-\begin_inset Formula $H=-H_{0}+\xi\Delta H$
-\end_inset
-
-, the parameter 
-\begin_inset Formula $\xi$
-\end_inset
-
- plays the same role.
- A bigger 
-\begin_inset Formula $\xi$
-\end_inset
-
- corresponds to earlier disappearance of ground states.
- Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:nxi=-2M=odd"
-
-\end_inset
-
- shows that the first disappearing ground states locate at 
-\begin_inset Formula $N=M-1$
-\end_inset
-
- for 
-\begin_inset Formula $\xi=2$
-\end_inset
-
- and odd 
-\begin_inset Formula $M$
-\end_inset
-
- between 3 and 9.
- The latest disappearance point of ground states is when 
-\begin_inset Formula $\xi$
-\end_inset
-
- close to 
-\begin_inset Formula $1$
-\end_inset
-
-, the minimum value of 
-\begin_inset Formula $\xi$
-\end_inset
-
- determined by stabalization condition.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/nxi=2M=odd.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:nxi=-2M=odd"
-
-\end_inset
-
-Energy level of Hamiltonian 
-\begin_inset Formula $H=-H_{0}+2\Delta H$
-\end_inset
-
-, 
-\begin_inset Formula $M=3,\,5,\,7,\,9$
-\end_inset
-
-.
- For each 
-\begin_inset Formula $M$
-\end_inset
-
-, the ground state disappear at 
-\begin_inset Formula $N=M-1$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-The Cubics
-\end_layout
-
-\begin_layout Standard
-We were trying to construct our Hamiltonian in the square of the cubics.
- Since our Hamiltonian are in the form two annihilation operator followed
- by two creation operator, so the are three bits fermions: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{1}=\bar{b}\bar{b}b,\qquad R_{2}=\bar{a}\bar{a}bb
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-R_{3}=\bar{a}\bar{b}b,\qquad R_{2}=\bar{b}\bar{a}
-\]
-
-\end_inset
-
-If we define 
-\begin_inset Formula ${\left\{ Q,R\right\} }=F$
-\end_inset
-
- Then we have 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-[Q,F]=[Q,QR+RQ]=QQR+QRQ-RQQ-QRQ=[Q^{2},R]
-\]
-
-\end_inset
-
-In which the Grassmann odd operator 
-\begin_inset Formula $Q$
-\end_inset
-
- is 
-\begin_inset Formula $Q=Tr[(\bar{a}be^{i\pi/4}+\bar{b}ae^{-i\pi/4}]$
-\end_inset
-
- We can get
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Q^{2}=Tr(\bar{a}a+\bar{b}b)
-\]
-
-\end_inset
-
-which is the bit number operator So
-\begin_inset Formula $[Q,F]=M$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Follow this routinue, the hamiltonian
-\begin_inset Formula 
-\[
-H={\left\{ R,R^{\dagger}\right\} }+[F,F^{\dagger}]
-\]
-
-\end_inset
-
- will be automatically supersymmetric.
-\end_layout
-
-\begin_layout Standard
-For each 
-\begin_inset Formula $R$
-\end_inset
-
- here's the results:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-R_{1} & = & \bar{b}\bar{b}b,\qquad F_{1}=[Tr(\bar{a}\bar{b}b)-Tr(\bar{b}\bar{a}b)]e^{i\pi/4}+Tr(\bar{b}\bar{b}a)e^{-i\pi/4}\\
-H_{1} & = & Tr(\bar{a}\bar{b}ba)-Tr(\bar{a}\bar{b}ab)+Tr(\bar{b}\bar{a}ab)-Tr(\bar{b}\bar{a}ba)+2Tr(\bar{b}\bar{b}bb)\\
-R_{2} & = & \bar{a}\bar{a}b,\qquad F_{2}=[Tr(\bar{b}\bar{a}b)-Tr(\bar{a}\bar{b}b)+Tr(\bar{a}\bar{a}a])e^{-i\pi/4}\\
-H_{2} & = & Tr(\bar{a}\bar{b}ba)-Tr(\bar{a}\bar{a}ab)+Tr(\bar{b}\bar{a}ab-\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+2Tr(\bar{b}\bar{b}bb)+2Tr(\bar{a}a\bar{a}a)+2Tr(\bar{a}a\bar{b}b)+2Tr(\bar{b}a\bar{a}b)\\
-R_{3} & = & \bar{a}\bar{b}a,\qquad F_{3}=[Tr(\bar{a}\bar{a}a)-Tr(\bar{a}\bar{b}b)]e^{i\pi/4}+Tr(\bar{b}\bar{b}a)\\
-H_{3} & = & Tr(\bar{a}\bar{a}aa)-Tr(\bar{b}\bar{b}bb)+Tr(\bar{a}\bar{b}ab+\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+Tr(\bar{a}a\bar{a}a)+2Tr(\bar{a}a\bar{b}b)+Tr(\bar{b}b\bar{b}b)\\
-R_{4} & = & \bar{b}\bar{a}a,\qquad F_{4}=[Tr(\bar{a}\bar{a}a)+Tr(\bar{b}\bar{a}b)]e^{i\pi/4}-Tr(\bar{b}\bar{b}a)e^{-i\pi/4}\\
-H_{4} & = & Tr(\bar{a}\bar{a}aa)-Tr(\bar{b}\bar{b}bb)+Tr(\bar{a}\bar{b}ab+\bar{b}\bar{a}ba)-Tr(\bar{b}\bar{a}ba)+Tr(\bar{a}a\bar{a}a)+2Tr(\bar{b}a\bar{a}b)-Tr(\bar{b}b\bar{b}b)
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The Hamiltonian has two parts, we look at them separately For the large
- 
-\begin_inset Formula $N$
-\end_inset
-
- part we can conclude actually there's only two independent hamiltonian
- for each part.
- If we only focus on the large
-\begin_inset Formula $N$
-\end_inset
-
- part and express the in terms of 
-\begin_inset Formula $\theta$
-\end_inset
-
- and 
-\begin_inset Formula $d/\theta$
-\end_inset
-
-:
-\begin_inset Formula $ $
-\end_inset
-
- 
-\begin_inset Formula 
-\begin{eqnarray*}
-H & = & 2\theta_{k}\frac{d}{d\theta_{k}}-\theta_{k}\frac{d}{d\theta_{k+1}}-\theta_{k}+1\frac{d}{d\theta_{k}}\\
-H^{'} & = & 2\theta_{k}\frac{d}{d\theta_{k}}-\theta_{k}\frac{d}{d\theta_{k+1}}-\theta_{k}+1\frac{d}{d\theta_{k}}+1
-\end{eqnarray*}
-
-\end_inset
-
- It is not able to reconstruct our Hamiltonian by this routine.
- However we can try not to stick to the given routine above, but list all
- the anti-commutator of all the candidate cubics, and then find out wether
- their linear combination would give us something similar.
-\end_layout
-
-\begin_layout Standard
-First the diagonal terms are:
-\begin_inset Formula 
-\begin{eqnarray*}
-\left\{ R_{1},R_{1}^{\dagger}\right\}  & = & -\tr(\bar{b}\bar{b}bb)\\
-\left\{ R_{2},R_{2}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{a}aa)+\tr(\bar{a}\bar{b}ab)+\tr(\bar{b}\bar{a}ba)+\tr(\bar{a}a\bar{b}b)+\tr(\bar{b}a\bar{a}b)\\
-\left\{ R_{3},R_{3}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{b}ba)+\tr(\bar{a}b\bar{b}a)+\tr(\bar{a}a\bar{a}a)\\
-\left\{ R_{4},R_{4}^{\dagger}\right\}  & = & \tr(\bar{b}\bar{a}ab)+\tr(\bar{a}a\bar{a}a)-\tr(\bar{a}a\bar{b}b)
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-And the off diagnal terms:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\left\{ R_{1},R_{2}^{\dagger}\right\}  & = & \tr(\bar{b}\bar{b}aa)\\
-\left\{ R_{1},R_{3}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{b}ba)+\tr(\bar{a}b\bar{b}a)\\
-\left\{ R_{1},R_{4}^{\dagger}\right\}  & = & -\tr(\bar{b}\bar{a}ab)+\tr(\bar{a}a\bar{b}b)\\
-\left\{ R_{2},R_{3}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{a}bb)\\
-\left\{ R_{2},R_{4}^{\dagger}\right\}  & = & -\tr(\bar{a}\bar{a}bb)\\
-\left\{ R_{3},R_{4}^{\dagger}\right\}  & = & \tr(\bar{a}\bar{a}aa)
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Conclusion
-\end_layout
-
-\begin_layout Standard
-TODO
-\end_layout
-
-\begin_layout Section*
-Acknowledgements
-\end_layout
-
-\begin_layout Standard
-TODO
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-btprint "btPrintAll"
-bibfiles "ref"
-options "plain"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-\start_of_appendix
-\begin_inset CommandInset label
-LatexCommand label
-name "app:Counting-Single-Trace"
-
-\end_inset
-
-Counting Single Trace States
-\end_layout
-
-\begin_layout Standard
-To count the single trace states, we need the following definition and theorem.
- 
-\end_layout
-
-\begin_layout Definition*
-Given a group 
-\begin_inset Formula $G$
-\end_inset
-
- acting on a set 
-\begin_inset Formula $X$
-\end_inset
-
-, the orbit of 
-\begin_inset Formula $x\in X$
-\end_inset
-
- is the set 
-\begin_inset Formula $Gx=\left\{ g\cdot x|g\in G\right\} $
-\end_inset
-
-.
- The set of orbits is denoted by 
-\begin_inset Formula $X/G$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-In our case, the cyclic group 
-\begin_inset Formula $C_{M}$
-\end_inset
-
- is the group 
-\begin_inset Formula $G$
-\end_inset
-
-.
- 
-\begin_inset Formula $X$
-\end_inset
-
- is the 
-\begin_inset Formula $2^{M}$
-\end_inset
-
- combinations of 
-\begin_inset Formula $M$
-\end_inset
-
--bit operators, and 
-\begin_inset Formula $x$
-\end_inset
-
- corresponds to one perticular combination.
- 
-\begin_inset Formula $X/G$
-\end_inset
-
- is the set of different combinations under the action of Cyclic group.
- 
-\end_layout
-
-\begin_layout Theorem*
-(Burnside’s theorem).
- If 
-\begin_inset Formula $G$
-\end_inset
-
- is a finite group acting on a finite set 
-\begin_inset Formula $X$
-\end_inset
-
-, then 
-\begin_inset Formula 
-\[
-\left|X/G\right|=\frac{1}{\left|G\right|}\sum_{g\in G}\left|\mathrm{Fix}\left(g\right)\right|,
-\]
-
-\end_inset
-
- where 
-\begin_inset Formula $\mathrm{Fix}\left(g\right)$
-\end_inset
-
- is the set of 
-\begin_inset Formula $x$
-\end_inset
-
- that is invariant under action of 
-\begin_inset Formula $g$
-\end_inset
-
-, i.e, 
-\begin_inset Formula 
-\[
-\mathrm{Fix}\left(g\right)=\left\{ x\in X|g\cdot x=x\right\} 
-\]
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-To find the state number, we need to find 
-\begin_inset Formula $\left|\mathrm{Fix}\left(g\right)\right|$
-\end_inset
-
- for each group member.
-\end_layout
-
-\begin_layout Standard
-We first consider the case of odd 
-\begin_inset Formula $M$
-\end_inset
-
-.
- Let 
-\begin_inset Formula $c_{k}\in C_{M},\, k=1,2,\cdots M$
-\end_inset
-
-, be the group member that shift 
-\begin_inset Formula $k$
-\end_inset
-
- operators from the tail of the trace to the beginning.
- Here, the identity of the group is 
-\begin_inset Formula $e=c_{M}$
-\end_inset
-
-.
- Let 
-\begin_inset Formula $\left(M,k\right)$
-\end_inset
-
- denote the greatest common divisor of 
-\begin_inset Formula $M$
-\end_inset
-
- and 
-\begin_inset Formula $k$
-\end_inset
-
-.
- For group member 
-\begin_inset Formula $c_{k}$
-\end_inset
-
-, we equally divide the 
-\begin_inset Formula $M$
-\end_inset
-
- bits into 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- parts with each part of 
-\begin_inset Formula $\left(M,k\right)$
-\end_inset
-
- bits: the first part starts from bit 1 to bit 
-\begin_inset Formula $\left(M,k\right)$
-\end_inset
-
-, and the second part starts from bit 
-\begin_inset Formula $\left(M,k\right)+1$
-\end_inset
-
- to bit 
-\begin_inset Formula $2\left(M,k\right)$
-\end_inset
-
-, and etc.
- Under the action of 
-\begin_inset Formula $c_{k}$
-\end_inset
-
-, the 
-\begin_inset Formula $i$
-\end_inset
-
-th part transfer as 
-\begin_inset Formula 
-\[
-i\mathrm{th}\text{ part}\to\left(i+\frac{k}{\left(M,k\right)}\right)\mathrm{\text{th part}}.
-\]
-
-\end_inset
-
-The trace is invariant under 
-\begin_inset Formula $c_{k}$
-\end_inset
-
- if and only if all the parts are identical to each other.
- For bosonic trace states, each part need to bosonic, which follows 
-\begin_inset Formula 
-\begin{equation}
-\left|\mathrm{Fix}\left(c_{k}\right)\right|=\sum_{\text{even }i}\binom{\left(M,k\right)}{i}=\frac{1}{2}2^{\left(M,k\right)}.\label{eq:A-Fix-1}
-\end{equation}
-
-\end_inset
-
- Similarly, for fermionic single trace states, each part need to be fermionic,
- 
-\begin_inset Formula 
-\begin{equation}
-\left|\mathrm{Fix}\left(c_{k}\right)\right|=\sum_{\text{odd }i}\binom{\left(M,k\right)}{i}=\frac{1}{2}2^{\left(M,k\right)},\label{eq:A-Fix-2}
-\end{equation}
-
-\end_inset
-
-which implies there are the same number of bosonic and fermonic single trace
- states for odd 
-\begin_inset Formula $M$
-\end_inset
-
-.
- By Burnside's theorem, this number is given by 
-\begin_inset Formula 
-\begin{equation}
-S_{M}=\frac{1}{2M}\sum_{k=1}^{M}2^{\left(M,k\right)}.\label{eq:A-SM-Odd}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-For even 
-\begin_inset Formula $M$
-\end_inset
-
-, let's first consider the fermionic states.
- For a group member 
-\begin_inset Formula $c_{k}$
-\end_inset
-
-, 
-\begin_inset Formula $\left|\mathrm{Fix}\left(c_{k}\right)\right|=0$
-\end_inset
-
- if 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- is even.
- This because odd number of 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
- cannot be equally divided into even parts.
- Therefore, only odd 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- contributes to 
-\begin_inset Formula $\left|\mathrm{Fix}\left(c_{k}\right)\right|$
-\end_inset
-
-, which is still given by 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-Fix-2"
-
-\end_inset
-
-.
- And Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-SM-Odd"
-
-\end_inset
-
- becomes
-\begin_inset Formula 
-\begin{equation}
-S_{M}=\frac{1}{2M}\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)}.\label{eq:A-SM-Even}
-\end{equation}
-
-\end_inset
-
-Let 
-\begin_inset Formula $i=M/\left(M,k\right)$
-\end_inset
-
-, Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-SM-Even"
-
-\end_inset
-
- can be written as 
-\begin_inset Formula 
-\begin{equation}
-S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},\label{eq:A-SM-Euler}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\varphi\left(i\right)$
-\end_inset
-
- is the Euler's totient function and 
-\begin_inset Formula $i|M$
-\end_inset
-
- means 
-\begin_inset Formula $M$
-\end_inset
-
- is divisible by 
-\begin_inset Formula $i$
-\end_inset
-
-.
- We see that Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-SM-Odd"
-
-\end_inset
-
- is a special case of Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-SM-Even"
-
-\end_inset
-
- with 
-\begin_inset Formula $s=0$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-For bosonic states, we cannot simply count all single trace states with
- even number of 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
-, because there exist vanishing states, for example, 
-\begin_inset Formula 
-\[
-\tr\ba\bb\ba\bb=-\tr\ba\bb\ba\bb=0.
-\]
-
-\end_inset
-
- The number of bosonic states equals to number of even-
-\begin_inset Formula $\bar{b}$
-\end_inset
-
--state minus number of vanishing states.
- Consider the number of even-
-\begin_inset Formula $\bar{b}$
-\end_inset
-
--states, for a group member 
-\begin_inset Formula $c_{k}$
-\end_inset
-
-, we again divide 
-\begin_inset Formula $M$
-\end_inset
-
- bits equally into 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- parts with each part 
-\begin_inset Formula $\left(M,k\right)$
-\end_inset
-
- bits.
- If 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- is odd, we need even number of 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
- in each part; if 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- is even, there can be any number of 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
- in each part, which follows
-\begin_inset Formula 
-\begin{eqnarray}
-\text{number of even-}\bar{b}\text{-state} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)-1}+\sum_{M/\left(M,k\right)\text{ is even}}2^{\left(M,k\right)}\right)\nonumber \\
- & = & \frac{1}{2M}\left(\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}+2\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right).\label{eq:A-Even-b-States}
-\end{eqnarray}
-
-\end_inset
-
- Now consider the number of vanishing states.
- For each 
-\begin_inset Formula $c_{k}$
-\end_inset
-
-, we perform the same partition as before.
- If 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- is even and all parts are identical and with odd number of 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
-, then it's a vanishing state.
- But this does not cover all the possibilities.
- If 
-\begin_inset Formula $\left(M,k\right)$
-\end_inset
-
- is even, we can perform finer partition: divide 
-\begin_inset Formula $M$
-\end_inset
-
--bits into 
-\begin_inset Formula $2M/\left(M,k\right)$
-\end_inset
-
- parts with each part of 
-\begin_inset Formula $\left(M,k\right)/2$
-\end_inset
-
- bits.
- If all the 
-\begin_inset Formula $2M/\left(M,k\right)$
-\end_inset
-
- parts are the same and contain odd number of 
-\begin_inset Formula $\bar{b}$
-\end_inset
-
-, it's a vanishing state.
- We can continue perform the finer partition 
-\begin_inset Formula $i$
-\end_inset
-
- times until 
-\begin_inset Formula $\left(M,k\right)/2^{i}$
-\end_inset
-
- is odd.
- There is a difference between odd 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- and even 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
-: it needs to perform at least one finer partition to get vanishing states
- for odd 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
-, while for even 
-\begin_inset Formula $M/\left(M,k\right)$
-\end_inset
-
- it doesn't.
- Therefore, the number of vanishing states reads 
-\begin_inset Formula 
-\begin{eqnarray}
-\text{number of vanishing states} & = & \frac{1}{M}\sum_{\text{odd }M/\left(M,k\right)}\left(\sum_{i\geq1\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
- &  & +\frac{1}{M}\sum_{\text{even }M/\left(M,k\right)}\left(\sum_{i\geq0\text{ and }2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}-1}\right)\nonumber \\
- & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\text{even }M/\left(M,k\right)}2^{\left(M,k\right)}\right]\nonumber \\
- & = & \frac{1}{2M}\left[\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)+\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}}\right]\label{eq:A-Vanish-States-1}
-\end{eqnarray}
-
-\end_inset
-
- Let 
-\begin_inset Formula $\frac{\left(M,k\right)}{2^{i}}=\frac{M}{j}$
-\end_inset
-
-, then we have 
-\begin_inset Formula $2^{i}|j$
-\end_inset
-
- and 
-\begin_inset Formula $\left(M,k\right)=2^{i}M/j$
-\end_inset
-
-.
- The number of 
-\begin_inset Formula $k$
-\end_inset
-
- with 
-\begin_inset Formula $\left(M,k\right)=2^{i}M/j$
-\end_inset
-
- equals to 
-\begin_inset Formula 
-\[
-\varphi\left(\frac{M}{2^{i}M/j}\right)=\varphi\left(\frac{j}{2^{i}}\right).
-\]
-
-\end_inset
-
-Now, the first term inside parenthesis of Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-Vanish-States-1"
-
-\end_inset
-
- can be written as
-\begin_inset Formula 
-\[
-\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{ even }j,j|M}\left[\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)2^{\frac{M}{j}}\right].
-\]
-
-\end_inset
-
- With the following property of function 
-\begin_inset Formula $\varphi$
-\end_inset
-
-, 
-\begin_inset Formula 
-\[
-\varphi\left(2m\right)=\begin{cases}
-2\varphi\left(m\right) & \quad\text{if }m\text{ is even}\\
-\varphi\left(m\right) & \quad\text{if }m\text{ is odd}
-\end{cases},
-\]
-
-\end_inset
-
-it's easy to prove that, 
-\begin_inset Formula 
-\[
-\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)=\varphi\left(j\right),\quad\text{if }j\text{ is even}.
-\]
-
-\end_inset
-
-It follows 
-\begin_inset Formula 
-\[
-\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{even }j,j|M}\varphi\left(j\right)2^{\frac{M}{j}}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Therefore, the difference of Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-Even-b-States"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-Vanish-States-1"
-
-\end_inset
-
- yields 
-\begin_inset Formula 
-\[
-S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},
-\]
-
-\end_inset
-
- which is the same as the formula for fermionic states.
- Easy to check that Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-SM-Odd"
-
-\end_inset
-
- is the same as Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:A-SM-Euler"
-
-\end_inset
-
-.
- 
 \end_layout
 
 \begin_layout Section
@@ -10090,6 +9861,18 @@ Build
 \end_inset
 
  matrices
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "ref"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
