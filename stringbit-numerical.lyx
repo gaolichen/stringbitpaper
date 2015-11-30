@@ -1159,6 +1159,15 @@ If we describe the general supersymmetric Fock Space Hamiltonian in terms
 \end_inset
 
  and resolve it, we could have its eigenvalues.
+ for detail, consult the appendix.
+ A of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1177,22 +1186,30 @@ where
 \begin_inset Formula $x=\varepsilon'-i\varepsilon''$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-We can notice that the eigenvalue for the general Hamiltonian is also propotiona
-l to 
-\begin_inset Formula $1/M$
-\end_inset
-
- at large 
+.
+ At large 
 \begin_inset Formula $M$
 \end_inset
 
-, which indicate that this property dose not need the Hamiltonian to be
- the same as the superstring, in fact any sypersymmetic Hamiltonian would
- have this property
+ limit this expression can still be write as 
+\begin_inset Formula $\epsilon_{n}=\gamma\sin\frac{\pi n}{M}\pm const.$
+\end_inset
+
+ which means the general eigenvalue of 
+\begin_inset Formula $h$
+\end_inset
+
+ wil still have a term 
+\begin_inset Formula $\sim1/M$
+\end_inset
+
+ aat large 
+\begin_inset Formula $M$
+\end_inset
+
+ limit, which indicate that this property dose not need the Hamiltonian
+ to be the same as the superstring, in fact any sypersymmetic Hamiltonian
+ would have this property
 \end_layout
 
 \begin_layout Section
