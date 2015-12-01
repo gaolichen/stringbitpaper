@@ -174,7 +174,7 @@ key "Thorn:1991fv"
 \begin_inset Formula $d$
 \end_inset
 
--dimensional space, the string bit modes provide an implementation of 't
+-dimensional space, the string bit models provide an implementation of 't
  Hooft's holography hopythesis 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -238,7 +238,7 @@ reference "eq:Ham-contious-string"
 \end_inset
 
  string bits each of which has mass 
-\begin_inset Formula $m=P^{+}/M$
+\begin_inset Formula $m$
 \end_inset
 
  is described by the Hamiltonian
@@ -646,8 +646,8 @@ reference "eq:H_0"
 
 \end_inset
 
- up to 
-\begin_inset Formula $M=11$
+ for 
+\begin_inset Formula $M\leq11$
 \end_inset
 
 .
@@ -678,8 +678,8 @@ reference "eq:H_0"
 \end_inset
 
  to check whether the system manifests stringy behavior.
- For stringy behavior, the ground energy should be almost a linear function
- of 
+ For stringy behavior, the ground energy should be a linear function of
+ 
 \begin_inset Formula $M$
 \end_inset
 
@@ -692,9 +692,9 @@ reference "eq:H_0"
 \begin_inset Formula $N$
 \end_inset
 
- large enough, the ground energy indeed drops linearly.
- For excitation energy, although there is not enough data for an unquestioned
- pattern, we can still see the trendency is roughly go with 
+ large enough, the ground energies do drop almost linearly.
+ For excitation energies, although there is not enough data for an unquestioned
+ pattern, it still shows trendencies roughly go with 
 \begin_inset Formula $M^{-1}$
 \end_inset
 
@@ -703,11 +703,10 @@ reference "eq:H_0"
 \end_inset
 
  is large.
- 
 \end_layout
 
 \begin_layout Standard
-This paper is organized as follows.
+The rest of this paper is organized as follows.
  In Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -766,6 +765,12 @@ reference "sec:Finite-N"
 
 , we provides the plots from the numerical computation and the analysis
  of the plots.
+ Hamiltonian 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ and its variations will be studied in the section.
+ 
 \end_layout
 
 \begin_layout Standard
