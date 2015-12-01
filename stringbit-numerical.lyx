@@ -902,20 +902,273 @@ Supersymmetry
 \end_layout
 
 \begin_layout Standard
-This section describes the Hamiltonians of string-bit model we would like
+This section describes the Hamiltonians of string-bits model we would like
  to study and their supersymmetry property to be studied in this paper.
+ 
 \end_layout
 
 \begin_layout Standard
-In our previous paper
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
+The hamiltonian we discussed in our previous paper, even though it has variation
+s, will all turn out to be H0 at N = ∞, which reduce to the super string
+ bit model dynamic.
+ However, we are also curious about whether there’s other well-defined Hamiltoni
+an.
+ 
+\end_layout
+
+\begin_layout Standard
+The first step we would like to explore all the possibilities of our Hamiltonian.
+\end_layout
+
+\begin_layout Standard
+We apply different parameters in front of each candidate of the Hamiltonian,
+ thus the very general form of the Hamiltonian can be expressed as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \varepsilon_{1}\tr\ {\bar{a}}^{2}a^{2}+\varepsilon_{2\,}\tr\ {\bar{b}}^{2}b^{2}+(\varepsilon_{3}+i\varepsilon_{4})\tr\ {\bar{b}}^{2}a^{2}+(\varepsilon_{3}-\,\, i\varepsilon_{4})tr\ {\bar{a}}^{2}b^{2}\\
+ & + & \varepsilon_{5}\tr\ {\bar{a}}{\bar{b}}ba+\varepsilon_{6}\tr\ {\bar{b}}{\bar{a}}ab+(\varepsilon_{7}+i\varepsilon_{8})\tr\ {\bar{a}}{\bar{b}}ab+(\varepsilon_{7}-\, i\varepsilon_{8})\tr\ {\bar{b}}{\bar{a}}ba
+\end{eqnarray*}
 
 \end_inset
 
- , we pick the Fock space Hamiltonian whose dynamic will reduce to the supertrin
-g bit model in large 
+
+\end_layout
+
+\begin_layout Standard
+In terms of the first quantized Hamiltonian h (we would explain this later)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+h & = & (\varepsilon_{3}-i\varepsilon_{4})\theta_{k+1}\theta_{k}+(\varepsilon_{3}+i\varepsilon_{4})\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+(-2\varepsilon_{1}+\varepsilon_{5}+\varepsilon_{6})\theta_{k}\frac{d}{d\theta_{k}}+\\
+ & + & (\varepsilon_{7}+i\varepsilon_{8})\theta_{k}\frac{d}{d\theta_{k+1}}+(\varepsilon_{7}-i\varepsilon_{8})\theta_{k+1}\frac{d}{d\theta_{k}}+(\varepsilon_{1}+\varepsilon_{2}-\varepsilon_{5}-\varepsilon_{6})\theta_{k}\frac{d}{d\theta}\theta_{k+1}\frac{d}{d\theta_{k+1}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to diagnalize it, at this stage we assume the coefficient of the
+ last quartic term is zero.
+ Later we will also find out the supersymmetric constrain would automaticly
+ set this term zero.
+\end_layout
+
+\begin_layout Standard
+If we do the Fourier transforms
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\alpha_{n} & = & \frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\qquad\beta=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus the general Hamiltonian could be expressed as ￼￼￼￼￼
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H=\text{−}a_{1}\sum_{n}\alpha_{n}\alpha_{M\text{−}n}\sin\frac{2\pi n}{M}+a_{1}^{\dagger}\sum_{n}\beta_{n}\beta_{M\text{−}n}\sin\frac{2\pi n}{M}+(2a_{2}*e^{2\pi i/n}+a_{2}^{\text{\dagger}}*e^{\text{−}2\pi i/n}+2a_{3})\sum_{n}\alpha_{n}\beta_{M\text{−}n}   
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\begin_inset Formula 
+\[
+a_{1}=\epsilon_{4}+i\epsilon_{3}\qquad a_{2}=\epsilon_{7}+i\epsilon_{8}\qquad a_{3}=\text{−}2\epsilon_{1}+\epsilon_{5}+\epsilon_{6}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We are curious of the excited energies, so by constructing the linear combinatio
+n 
+\begin_inset Formula $\alpha+\xi\beta$
+\end_inset
+
+ we would find the eigenvector of it.
+ Now we solve the equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+[H,\alpha+\xi\beta]=E(\alpha+\xi\beta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can get the excited energy for our general Hamiltonian:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{n}=2Ima_{2}\sin\frac{2\text{\pi}n}{M}+\sqrt{16(a_{3}+Rea_{2}\cos^{2}\frac{2\pi n}{M})^{2}+4a_{1}^{2}\sin^{2}\frac{2\text{\pi}n}{M}} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this result, there’s a critical point 
+\begin_inset Formula $a_{3}=−Rea_{2}$
+\end_inset
+
+which would lead 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ to zero at large 
+\begin_inset Formula $M$
+\end_inset
+
+ limit.
+\end_layout
+
+\begin_layout Standard
+Now we add the supersymmetry constraint to it, which means it commutes with
+ 
+\begin_inset Formula $Q=\tr\left(\bar{a}b*e^{i\pi/4}+\bar{b}a*e^{-i\pi/4}\right).$
+\end_inset
+
+, we get the relationship between these parameters.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\varepsilon_{1}+i(\varepsilon_{3}-i\varepsilon_{4})-\varepsilon_{6}-(\varepsilon_{7}+i\varepsilon_{8}) & = & 0\\
+\varepsilon_{1}-i(\varepsilon_{3}-i\varepsilon_{4})-\varepsilon_{5}-(\varepsilon_{7}-i\varepsilon_{8}) & = & 0\\
+-\varepsilon_{2}+i(\varepsilon_{3}+i\varepsilon_{4})+\varepsilon_{6}-(\varepsilon_{7}+i\varepsilon_{8}) & = & 0\\
+\varepsilon_{2}+i(\varepsilon_{3}+i\varepsilon_{4})-\varepsilon_{5}+(\varepsilon_{7}-i\varepsilon_{8}) & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This will lead to 
+\begin_inset Formula $a_{3}=−Rea_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $Ima_{2}=Ima_{1}$
+\end_inset
+
+ so the excited energy can be simplyfied as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{n}=2Ima_{2}\sin\frac{2\pi n}{M}+\sqrt{-16Rea_{2}(1-\cos^{2}\frac{2\pi n}{M})^{2}+4a_{1}^{2}\sin^{2}\frac{2\pi n}{M}} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which is obvious that when 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $M$
+\end_inset
+
+ is getting large the excited engergy would vanish.
+ So the supersymmetric energy secure the disappearance of the energy gap
+ for our string-bit chain at large 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $M$
+\end_inset
+
+ limit, which means the supersymetry is enough to keep this superstring
+ property at the continous limit.
+ Meanwhile we can also rewrite the Hamiltonian in a more clean way.
+ Eliminate the total scaling parameter, the Hamiltonian with only the supersymme
+tric constraint could be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & H_{0}+\varepsilon(\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab+{\bar{a}}^{2}a^{2}+{\bar{b}}^{2}b^{2})+\varepsilon'(\tr\ {\bar{b}}^{2}a^{2}+\tr\ {\bar{a}}^{2}b^{2}+i\tr\ {\bar{a}}{\bar{b}}ab-i\tr\ {\bar{b}}{\bar{a}}ba)\\
+ & + & \varepsilon''(i\tr\ {\bar{b}}^{2}a^{2}-i\tr\ {\bar{a}}^{2}b^{2}-\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which shows that there’s three free parameters here, in which the first
+ pa-ameter controls the same with the 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ above except the counting operator 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ So there’s two new parameters for the general supersymmetric Hamiltonian.
+ 
+\end_layout
+
+\begin_layout Standard
+If we continue to add more constrains to our Hamiltonian, which is how we
+ get the Hamiltionian we used in our previous paper[8] , we pick the Fock
+ space Hamiltonian whose dynamic will reduce to the supertring bit model
+ in large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -1412,161 +1665,6 @@ reference "eq:Hamiltonian-4-1"
 \end_inset
 
  in this paper.
-\end_layout
-
-\begin_layout Standard
-The hamiltonian we discussed above, even though it has variations, will
- all turn out to be 
-\begin_inset Formula $H_{0}$
-\end_inset
-
- at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, which reduce to the super string bit model dynamic.
- However, we are also curious about whether there;s other well-defined Hamiltoni
-an.
- So we also studied the possibilities if we only apply the constraint that
- 
-\begin_inset Formula $H$
-\end_inset
-
- is supersymmetric.
- 
-\end_layout
-
-\begin_layout Standard
-We apply different parameters in front of each candidate of the Hamiltonian,
- thus the very general form of the Hamiltonian can be expressed as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-H & = & \varepsilon_{1}\tr\ {\bar{a}}^{2}a^{2}+\varepsilon_{2\,}\tr\ {\bar{b}}^{2}b^{2}+(\varepsilon_{3}+i\varepsilon_{4})\tr\ {\bar{b}}^{2}a^{2}+(\varepsilon_{3}-\,\, i\varepsilon_{4})tr\ {\bar{a}}^{2}b^{2}\\
- & + & \varepsilon_{5}\tr\ {\bar{a}}{\bar{b}}ba+\varepsilon_{6}\tr\ {\bar{b}}{\bar{a}}ab+(\varepsilon_{7}+i\varepsilon_{8})\tr\ {\bar{a}}{\bar{b}}ab+(\varepsilon_{7}-\, i\varepsilon_{8})\tr\ {\bar{b}}{\bar{a}}ba
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Now we add the supersymmetry constraint to it, make it commute with 
-\begin_inset Formula $Q=\tr\left(\bar{a}b+\bar{b}a\right).$
-\end_inset
-
-, we get the relationship between these parameters.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\varepsilon_{1}+i(\varepsilon_{3}-i\varepsilon_{4})-\varepsilon_{6}-(\varepsilon_{7}+i\varepsilon_{8}) & = & 0\\
-\varepsilon_{1}-i(\varepsilon_{3}-i\varepsilon_{4})-\varepsilon_{5}-(\varepsilon_{7}-i\varepsilon_{8}) & = & 0\\
--\varepsilon_{2}+i(\varepsilon_{3}+i\varepsilon_{4})+\varepsilon_{6}-(\varepsilon_{7}+i\varepsilon_{8}) & = & 0\\
-\varepsilon_{2}+i(\varepsilon_{3}+i\varepsilon_{4})-\varepsilon_{5}+(\varepsilon_{7}-i\varepsilon_{8}) & = & 0
-\end{eqnarray*}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $ $
-\end_inset
-
-Eliminate the total scaling parameter, the Hamiltonian with only the supersymmet
-ric constraint could be written as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-H & = & H_{0}+\varepsilon(\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab+{\bar{a}}^{2}a^{2}+{\bar{b}}^{2}b^{2})+\varepsilon'(\tr\ {\bar{b}}^{2}a^{2}+\tr\ {\bar{a}}^{2}b^{2}+i\tr\ {\bar{a}}{\bar{b}}ab-i\tr\ {\bar{b}}{\bar{a}}ba)\\
- & + & \varepsilon''(i\tr\ {\bar{b}}^{2}a^{2}-i\tr\ {\bar{a}}^{2}b^{2}-\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab)
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Which shows that there's three free parameters here, in which the first
- parameter controls the same with the 
-\begin_inset Formula $\Delta H$
-\end_inset
-
- above except the counting operator 
-\begin_inset Formula $M$
-\end_inset
-
-.
- So there's two new parameters for the general supersymmetric Hamiltonian.
-\end_layout
-
-\begin_layout Standard
-If we describe the general supersymmetric Fock Space Hamiltonian in terms
- of the first quantized 
-\begin_inset Formula $h$
-\end_inset
-
- and resolve it, we could have its eigenvalues.
- for detail, consult the appendix.
- A of 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\epsilon_{n}=(1-x)\sin\frac{\pi n}{M}\pm\sqrt{(1-x)^{2}\sin^{2}\frac{\pi n}{M}+(1-x^{2})\cos^{2}\frac{\pi n}{M}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where 
-\begin_inset Formula $x=\varepsilon'-i\varepsilon''$
-\end_inset
-
-.
- At large 
-\begin_inset Formula $M$
-\end_inset
-
- limit this expression can still be write as 
-\begin_inset Formula $\epsilon_{n}=\gamma\sin\frac{\pi n}{M}\pm const.$
-\end_inset
-
- which means the general eigenvalue of 
-\begin_inset Formula $h$
-\end_inset
-
- wil still have a term 
-\begin_inset Formula $\sim1/M$
-\end_inset
-
- aat large 
-\begin_inset Formula $M$
-\end_inset
-
- limit, which indicate that this property dose not need the Hamiltonian
- to be the same as the superstring, in fact any sypersymmetic Hamiltonian
- would have this property
 \end_layout
 
 \begin_layout Section
