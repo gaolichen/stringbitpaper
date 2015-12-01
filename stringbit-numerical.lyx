@@ -1266,13 +1266,13 @@ If we do the Fourier transforms
 \end_layout
 
 \begin_layout Standard
-Thus the general Hamiltonian could be expressed as ￼￼￼￼￼
+Thus the general Hamiltonian could be expressed as
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H=\text{−}a_{1}\sum_{n}\alpha_{n}\alpha_{M\text{−}n}\sin\frac{2\pi n}{M}+a_{1}^{\dagger}\sum_{n}\beta_{n}\beta_{M\text{−}n}\sin\frac{2\pi n}{M}+(2a_{2}*e^{2\pi i/n}+a_{2}^{\text{\dagger}}*e^{\text{−}2\pi i/n}+2a_{3})\sum_{n}\alpha_{n}\beta_{M\text{−}n}   
+H=\text{−}a_{1}\sum_{n}\alpha_{n}\alpha_{M\text{−}n}\sin\frac{2\pi n}{M}+a_{1}^{\dagger}\sum_{n}\beta_{n}\beta_{M\text{−}n}\sin\frac{2\pi n}{M}+(2a_{2}*e^{2\pi i/n}+a_{2}^{\text{\dagger}}*e^{\text{−}2\pi i/n}+2a_{3})\sum_{n}\alpha_{n}\beta_{M\text{−}n}
 \]
 
 \end_inset
@@ -1327,7 +1327,7 @@ We can get the excited energy for our general Hamiltonian:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-E_{n}=2Ima_{2}\sin\frac{2\text{\pi}n}{M}+\sqrt{16(a_{3}+Rea_{2}\cos^{2}\frac{2\pi n}{M})^{2}+4a_{1}^{2}\sin^{2}\frac{2\text{\pi}n}{M}} 
+E_{n}=2Ima_{2}\sin\frac{2\text{\pi}n}{M}+\sqrt{16(a_{3}+Rea_{2}\cos^{2}\frac{2\pi n}{M})^{2}+4a_{1}^{2}\sin^{2}\frac{2\text{\pi}n}{M}}
 \]
 
 \end_inset
@@ -1389,7 +1389,7 @@ This will lead to
 \begin_layout Standard
 \begin_inset Formula 
 \[
-E_{n}=2Ima_{2}\sin\frac{2\pi n}{M}+\sqrt{-16Rea_{2}(1-\cos^{2}\frac{2\pi n}{M})^{2}+4a_{1}^{2}\sin^{2}\frac{2\pi n}{M}} 
+E_{n}=2Ima_{2}\sin\frac{2\pi n}{M}+\sqrt{-16Rea_{2}(1-\cos^{2}\frac{2\pi n}{M})^{2}+4a_{1}^{2}\sin^{2}\frac{2\pi n}{M}}
 \]
 
 \end_inset
