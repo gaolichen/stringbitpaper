@@ -167,10 +167,10 @@ key "Thorn:1991fv"
  bits is large enough.
  Thereby, string theory emerges.
  Since the physics in 
-\begin_inset Formula $d+1$
+\begin_inset Formula $\left(d+1\right)$
 \end_inset
 
- spatial space is described by physics in 
+-dimensional space is described by physics in 
 \begin_inset Formula $d$
 \end_inset
 
@@ -244,12 +244,12 @@ reference "eq:Ham-contious-string"
  is described by the Hamiltonian
 \begin_inset Formula 
 \begin{equation}
-H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}^{2}-\mathbf{x}_{n}^{2}\right)\right].\label{eq:Ham-discrete-chain}
+H=\frac{1}{2m}\sum_{k=1}^{M}\left[\mathbf{p}_{n}^{2}+T_{0}^{2}\left(\mathbf{x}_{n+1}-\mathbf{x}_{n}\right)^{2}\right].\label{eq:Ham-discrete-chain}
 \end{equation}
 
 \end_inset
 
-If we apply the Galilei transformation 
+Under the Galilei transformation 
 \begin_inset Formula $x^{k}\to x^{k}+V^{k}x^{+}$
 \end_inset
 
