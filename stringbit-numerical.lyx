@@ -151,7 +151,7 @@ key "Thorn:1991fv"
 \end_inset
 
 -dimensional spacetime are chain-like objects comprised of point-like entities,
- string bits, moving in spatial space of 
+ string bits, moving in space of 
 \begin_inset Formula $d=D-2$
 \end_inset
 
@@ -163,8 +163,8 @@ key "Thorn:1991fv"
 
 .
  While one spatial coordinate is missing and the Lorentz invariance is not
- built in a priori, both of them are regained when the number of string
- bits is large enough.
+ built in a priori, both of them are regained in the critical dimension
+ when the number of string bits is large enough.
  Thereby, string theory emerges.
  Since the physics in 
 \begin_inset Formula $\left(d+1\right)$
@@ -175,7 +175,7 @@ key "Thorn:1991fv"
 \end_inset
 
 -dimensional space, the string bit models provide an implementation of 't
- Hooft's holography hopythesis 
+ Hooft's holography hypothesis 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "'tHooft:1990eb,'tHooft:1993gx"
@@ -186,8 +186,8 @@ key "'tHooft:1990eb,'tHooft:1993gx"
 \end_layout
 
 \begin_layout Standard
-The idea of string bit is motivated by discretization of continuous string.
- Consider a string in lighcone coordinates, 
+Such an idea is motivated by discretization of continuous string.
+ Consider a string in lightcone coordinates, 
 \end_layout
 
 \begin_layout Standard
@@ -277,8 +277,8 @@ Under the Galilei transformation
 \end_inset
 
 .
- If the bound states for a many-bit system is closed linear chain and the
- excitation energies scale as 
+ If the bound states for a many-bit system are closed linear chains and
+ the excitation energies scale as 
 \begin_inset Formula $1/M$
 \end_inset
 
@@ -286,14 +286,14 @@ Under the Galilei transformation
 \begin_inset Formula $M$
 \end_inset
 
-, the Lorentz invarance is regained and leads to a Poincaré invariant dispersion
+, Lorentz invarance is regained and leads to a Poincaré invariant dispersion
  relation 
 \begin_inset Formula $P^{-}=\left(\mathbf{P}^{2}+\mu^{2}\right)/(2P^{+})$
 \end_inset
 
 .
- It is noteworthy that such bound states can be achieved in the contex of
- 't Hooft large 
+ It is noteworthy that such bound states can be achieved in the context
+ of 't Hooft large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -316,14 +316,14 @@ reference "eq:Ham-discrete-chain"
 \end_inset
 
  for a bosonic closed string bit chain leads to inevitable instablility.
- The ground state energy of such system in the limit 
+ The ground state energy of such a system in the limit 
 \begin_inset Formula $M\to\infty$
 \end_inset
 
  is given by
 \begin_inset Formula 
 \[
-E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}(M^{-3})).
+E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}\left(M^{-3}\right).
 \]
 
 \end_inset
@@ -383,7 +383,7 @@ To set up the dynamics of the superstring bit model, we employ 't Hooft's
 \end_inset
 
  limit and follow the standard second-quantized formalism.
- A general superstring bit annihilation operoator is a 
+ A general superstring bit annihilation operoator is an 
 \begin_inset Formula $N\times N$
 \end_inset
 
@@ -454,7 +454,7 @@ key "Sun:2014dga"
 \begin_inset Formula $N^{2}$
 \end_inset
 
- bosonic annihilator operators 
+ bosonic annihilation operators 
 \begin_inset Formula $\left(a_{\alpha}^{\beta}\right)$
 \end_inset
 
@@ -462,11 +462,11 @@ key "Sun:2014dga"
 \begin_inset Formula $N^{2}$
 \end_inset
 
- fermionic annihilator operators 
+ fermionic annihilation operators 
 \begin_inset Formula $\left(b_{\alpha}^{\beta}\right)$
 \end_inset
 
-, with corresponding creator operators defined as 
+, with corresponding creation operators defined as 
 \begin_inset Formula $\bar{a}_{\alpha}^{\beta}\equiv\left(a_{\alpha}^{\beta}\right)^{\dagger}$
 \end_inset
 
@@ -484,17 +484,17 @@ key "Sun:2014dga"
 \end_inset
 
  and all others vanishing.
- With these creator operators, we can build trace states as follows.
+ With these creation operators, we can build trace states as follows.
  Introduce the vacuum state 
 \begin_inset Formula $\ket{0}$
 \end_inset
 
  annihilated by all the 
-\begin_inset Formula $\bar{a}_{\alpha}^{\beta}$
+\begin_inset Formula $a_{\alpha}^{\beta}$
 \end_inset
 
  and 
-\begin_inset Formula $\bar{b}_{\alpha}^{\beta}$
+\begin_inset Formula $b_{\alpha}^{\beta}$
 \end_inset
 
 .
@@ -604,8 +604,8 @@ key "Sun:2014dga"
 \end_inset
 
 .
- Such choice ensures the action of the Hamiltonian to the trace states survive
- at large 
+ Such a choice ensures the action of the Hamiltonian to the trace states
+ survive at large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -618,7 +618,7 @@ H_{0}=\frac{2}{N}\tr\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{
 
 \end_inset
 
- which is derived from the Green-Scharwarz Hamiltonian.
+ which produces the Green-Scharwarz Hamiltonian.
  By variational method, it shows that the ground states of the Hamiltonian
  only survive at 
 \begin_inset Formula $N>\left(M-1\right)/2$
@@ -639,7 +639,7 @@ In this paper, we will investigate more general forms of supersymmetric
 \end_inset
 
  limit.
- We then perform numerical study of the Hamiltonian 
+ We then perform a numerical study of the Hamiltonian 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:H_0"
@@ -655,7 +655,7 @@ reference "eq:H_0"
 \begin_inset Formula $N$
 \end_inset
 
- at fixed value of 
+ at fixed values of 
 \begin_inset Formula $M$
 \end_inset
 
@@ -687,7 +687,7 @@ reference "eq:H_0"
 \begin_inset Formula $M^{-1}$
 \end_inset
 
- with negative coefficient.
+ with positive coefficient.
  It turns out that, for 
 \begin_inset Formula $N$
 \end_inset
@@ -763,422 +763,14 @@ reference "sec:Finite-N"
 
 \end_inset
 
-, we provides the plots from the numerical computation and the analysis
- of the plots.
+, we provide the plots from the numerical computation and the analysis of
+ the plots.
  Hamiltonian 
 \begin_inset Formula $H_{0}$
 \end_inset
 
  and its variations will be studied in the section.
  
-\end_layout
-
-\begin_layout Standard
---------------------------------------------------------------------
-\end_layout
-
-\begin_layout Standard
-there are different approaches to a fundamental formulation of string theory,
- String bit models
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Thorn:1991fv"
-
-\end_inset
-
- provide one of them.
- The main idea of string bit model is to describe string as a composite
- theories of point-like entities-string bits so that the string chains as
- a one dimensional objects is not fundamental any more.
- 
-\end_layout
-
-\begin_layout Standard
-The string bit model is motivated by the superstring description in lightcone
- gauge.
- First of all we introduce the lightcone coordinate,
-\begin_inset Formula 
-\[
-x^{\pm}=(x^{0}\pm x^{1})/\sqrt{2}{\rm \qquad x}=(x^{2},\cdots,x^{d})
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-here 
-\begin_inset Formula $d$
-\end_inset
-
- is the transverse coordinates 
-\begin_inset Formula $d=D-2$
-\end_inset
-
- where 
-\begin_inset Formula $D$
-\end_inset
-
- is the spacetime.
- In this coordinate system, it is Galilei invariant.
-\end_layout
-
-\begin_layout Standard
-For light-cone string, 
-\begin_inset Formula $\tau$
-\end_inset
-
- and 
-\begin_inset Formula $\sigma$
-\end_inset
-
- is identified by setting 
-\begin_inset Formula $x^{+}=\tau$
-\end_inset
-
- and 
-\begin_inset Formula ${\cal P^{\text{+}}}=1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Under the description of lightcone coordinate, the single string's Hamiltonian
- is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-P^{-}=\frac{1}{2}\int_{0}^{P^{+}}d\sigma[p^{2}+T_{0}^{2}x^{'2}]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-By setting the momentum density 
-\begin_inset Formula ${\cal P^{\text{+}}}$
-\end_inset
-
-.
- to be 1, the total momentum 
-\begin_inset Formula $P^{+}$
-\end_inset
-
- would be: 
-\begin_inset Formula 
-\[
-P^{+}=\int{\rm d}\sigma{\cal P}^{+}=\int{\rm d}\sigma
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Then next step is to the discrete string bits.
- Now we change the integral to sum
-\begin_inset Formula 
-\[
-\int_{0}^{P^{+}}d\sigma\rightarrow m\sum_{i=1}^{M}
-\]
-
-\end_inset
-
-the mass 
-\begin_inset Formula $m$
-\end_inset
-
- of each string bit is fixed, thus the total momentum can be directly related
- to the number of bits 
-\begin_inset Formula $M$
-\end_inset
-
- as 
-\begin_inset Formula $P^{+}=mM$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-As 
-\begin_inset Formula $M\rightarrow\infty$
-\end_inset
-
- this emergent 
-\begin_inset Formula $P^{+}$
-\end_inset
-
- would behave like a continuous total momentum.
-\end_layout
-
-\begin_layout Standard
-Thus the states of a single string bit chain described by the 
-\begin_inset Formula $M$
-\end_inset
-
- particle wave function: 
-\begin_inset Formula 
-\[
-\psi_{M}(x_{1},\cdots,x_{M},\tau)=\psi_{M}(x_{2},\cdots,x_{M},x_{1},\tau)
-\]
-
-\end_inset
-
- and the Hamiltonian can be expressed as: 
-\begin_inset Formula 
-\[
-P^{-}=\frac{1}{\epsilon}\sum_{i}^{M}\frac{1}{2T_{0}}(-\nabla_{i}^{2}+T_{0}^{2}(x_{i+1}-x_{i})^{2}).
-\]
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-The ground state energy of a bosonic closed string bit chain is: 
-\begin_inset Formula 
-\[
-E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}(M^{-3}))
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Because of the second term which is propotional to 
-\begin_inset Formula $-1/M$
-\end_inset
-
-, a long chain of bosonic bits is unstable, it will decay into smaller chains.
- This instability is also a motivation for introducing supersymmetry.
- However except this there are also fermionic degrees of freedom which are
- called statistic waves 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Thorn:1996fa"
-
-\end_inset
-
-.
- The coefficient for the statistics waves ground state energy is positive
- .
-\end_layout
-
-\begin_layout Standard
-Imagine the multiplets which have 
-\begin_inset Formula $d$
-\end_inset
-
- bosons and 
-\begin_inset Formula $s$
-\end_inset
-
- pairs of fermions.
- Thus the ground state energy read as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-E_{G}=\frac{(s-d)\pi T_{0}}{6Mm}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-For the case 
-\begin_inset Formula $s=d$
-\end_inset
-
- the ground state energy for a closed chain would be exactly zero, while
- for 
-\begin_inset Formula $s>d$
-\end_inset
-
- it is positive which lead to stable states, for 
-\begin_inset Formula $s<d$
-\end_inset
-
- the unstable states.
-\end_layout
-
-\begin_layout Standard
-As we know for superstring, 8 bosonic coordinate fields 
-\begin_inset Formula $x^{k}$
-\end_inset
-
- and 8 pairs of fermionic Grassmann filed 
-\begin_inset Formula $\theta_{L,R}^{q}$
-\end_inset
-
- is required.
- Thus the negative 
-\begin_inset Formula $1/M$
-\end_inset
-
- term in superstring will be cancelled and leading to massless ground states,
- so it is marginally stable.
- however in this project, we would like to study the more general case in
- which there are 
-\begin_inset Formula $d$
-\end_inset
-
- bosonic fields and 
-\begin_inset Formula $s$
-\end_inset
-
- fermionic fields, provided 
-\begin_inset Formula $s>d$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-However, the first step for this model we study here has zero space dimensions
- 
-\begin_inset Formula $d=0$
-\end_inset
-
- with 
-\begin_inset Formula $s=1$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-In stead of second-quantizing 
-\begin_inset Formula $\psi_{M}$
-\end_inset
-
- like string field theory, we introduce 
-\begin_inset Formula $N^{2}$
-\end_inset
-
- bosonic operators 
-\begin_inset Formula ${\bar{a}}_{\alpha}^{\beta}\equiv(a_{\beta}^{\alpha})^{\dagger}$
-\end_inset
-
- and 
-\begin_inset Formula $N^{2}$
-\end_inset
-
- fermionic operators which obey 
-\begin_inset Formula ${\bar{b}}_{\alpha}^{\beta}\equiv(b_{\beta}^{\alpha})^{\dagger}$
-\end_inset
-
-.
- Since we are at 
-\begin_inset Formula $d=0$
-\end_inset
-
- spacetime so these operators are not 
-\begin_inset Formula $x$
-\end_inset
-
- dependent.
- They satisfy the (anti-)commutation relations: 
-\begin_inset Formula 
-\[
-[a_{\alpha}^{\beta},{\bar{a}}_{\gamma}^{\delta}]=\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta},\qquad\{b_{\alpha}^{\beta},{\bar{b}}_{\gamma}^{\delta}\}=\delta_{\alpha}^{\delta}\delta_{\gamma}^{\beta}
-\]
-
-\end_inset
-
- all others would vanish.
-\end_layout
-
-\begin_layout Standard
-At large 
-\begin_inset Formula $N$
-\end_inset
-
- limit, we would like the bit number to be conserved, also that the dynamic
- reduces to the superstring bit model.
- In order to achieve that, our operators' structure should be two annihilation
- operators followed by two creation operators.
- The details will be shown later.
- Thus we have all the candidate trace operators to construct the Hamiltonian.
- 
-\begin_inset Formula 
-\[
-\tr{\bar{a}}^{2}a^{2},\quad\tr{\bar{b}}^{2}b^{2},\quad\tr\ {\bar{b}}^{2}a^{2},\quad\tr\ {\bar{a}}^{2}b^{2},\quad\tr\ {\bar{a}}{\bar{b}}ba,\quad\tr\ {\bar{a}}{\bar{b}}ab,\quad\tr\ {\bar{b}}{\bar{a}}ba,\quad\tr\ {\bar{b}}{\bar{a}}ab
-\]
-
-\end_inset
-
-with coefficients scaling as 
-\begin_inset Formula $1/N$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-As a result, this kind of operators preserves the feature that only the
- neighbor bit interaction survive the large 
-\begin_inset Formula $N$
-\end_inset
-
- limit.
- The 
-\begin_inset Formula $1/N$
-\end_inset
-
- term, on the other hand, will produce two separated strings, so the 
-\begin_inset Formula $1/N$
-\end_inset
-
- could be seen as the string coupling constant.
-\end_layout
-
-\begin_layout Standard
-The particular Hamiltonian we've chosen in our previous paper and would
- be further studied in this paper is 
-\begin_inset Formula 
-\begin{equation}
-H=\frac{2}{N}\tr\left[({\bar{a}}^{2}-i{\bar{b}}^{2})a^{2}-({\bar{b}}^{2}-i{\bar{a}}^{2})b^{2}+({\bar{a}}{\bar{b}}+{\bar{b}}{\bar{a}})ba+({\bar{a}}{\bar{b}}-{\bar{b}}{\bar{a}})ab\right]\label{bitham}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This Hamiltonian reconstructed the superstring case.
- In our previous paper we've already explored the situation at low bits
- number 
-\begin_inset Formula $M=3$
-\end_inset
-
-, in this paper we will continues to do the numerical simulation at higher
- bits number up to 
-\begin_inset Formula $M=11$
-\end_inset
-
-.
- Meanwhile, since there's an ambiguity for the Hamiltonian we will also
- try to understand the string chains' behavior under different Hamiltonians
- .
 \end_layout
 
 \begin_layout Section
