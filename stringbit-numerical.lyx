@@ -593,9 +593,9 @@ key "Sun:2014dga"
 
  is chosen to be a linear combination of single trace operators
 \begin_inset Formula 
-\[
-\tr\bar{a}^{2}a^{2},\quad\tr\bar{b}^{2}b^{2},\quad\tr\bar{b}^{2}a^{2},\quad\tr\bar{a}^{2}b^{2},\quad\tr\bar{a}\bar{b}ba,\quad\tr\bar{a}\bar{b}ab,\quad\tr\bar{b}\bar{a}ba,\quad\tr\bar{b}\bar{a}ab,
-\]
+\begin{equation}
+\tr\bar{a}^{2}a^{2},\quad\tr\bar{b}^{2}b^{2},\quad\tr\bar{b}^{2}a^{2},\quad\tr\bar{a}^{2}b^{2},\quad\tr\bar{a}\bar{b}ba,\quad\tr\bar{a}\bar{b}ab,\quad\tr\bar{b}\bar{a}ba,\quad\tr\bar{b}\bar{a}ab,\label{eq:trace-operators}
+\end{equation}
 
 \end_inset
 
@@ -781,6 +781,150 @@ name "sec:Supersymmetry"
 \end_inset
 
 Supersymmetry
+\end_layout
+
+\begin_layout Standard
+In the toy model with 
+\begin_inset Formula $d=0,\, s=1$
+\end_inset
+
+, while the spacetime supersymmetry is explicitly broken, there still exist
+ a form of supersymmetry between bosonic and fermionic trace states.
+ As the mathematical proof in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:Counting-Trace-States"
+
+\end_inset
+
+ shows, the numbers of bosonic and fermionic trace states are equal at any
+ value of 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ This is not a coincidence.
+ The physical interpretation is that the bit number oprator 
+\begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
+\end_inset
+
+ commutes with the supersymmetry operator 
+\begin_inset Formula 
+\[
+Q=\exp\left(\frac{i\pi}{4}\right)\tr\bar{a}b+\exp\left(-\frac{i\pi}{4}\right)\tr\bar{b}a.
+\]
+
+\end_inset
+
+A Hamiltonian 
+\begin_inset Formula $H$
+\end_inset
+
+ is supersymmetric if 
+\begin_inset Formula $\left[H,Q\right]=0$
+\end_inset
+
+.
+ As we will show in next section, supersymmetric Hamiltonian gaurantees
+ the exicitation energy vanishes at large 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now, let's investigate possible forms of supersymmetric Hamiltonian built
+ out of the trace operators in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:trace-operators"
+
+\end_inset
+
+.
+ The most general form of such Hamiltonian reads
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \varepsilon_{1}\tr\bar{a}^{2}a^{2}+\varepsilon_{2}\tr\bar{b}^{2}b^{2}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\tr\bar{b}^{2}a^{2}+\left(\varepsilon_{3}-i\varepsilon_{4}\right)\tr\bar{a}^{2}b^{2}\\
+ &  & +\varepsilon_{5}\tr\bar{a}\bar{b}ba+\varepsilon_{6}\tr\bar{b}\bar{a}ab+\left(\varepsilon_{7}+i\varepsilon_{8}\right)\tr\bar{a}\bar{b}ab+\left(\varepsilon_{7}-i\varepsilon_{8}\right)\tr\bar{b}\bar{a}ba.
+\end{eqnarray*}
+
+\end_inset
+
+Imposing the constraint 
+\begin_inset Formula $\left[H,Q\right]=0$
+\end_inset
+
+ yields
+\begin_inset Formula 
+\[
+\begin{cases}
+\epsilon_{2} & =\epsilon_{8}\\
+\varepsilon_{1}-\varepsilon_{2} & =2\varepsilon_{7}\\
+\varepsilon_{6}-\varepsilon_{5} & =2\varepsilon_{4}\\
+\varepsilon_{1}+\varepsilon_{2} & =\varepsilon_{5}+\varepsilon_{6}
+\end{cases},
+\]
+
+\end_inset
+
+ which implies a supersymmetric Hamiltonian can be written as
+\begin_inset Formula 
+\begin{eqnarray}
+H & = & H_{0}+\varepsilon\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right)\nonumber \\
+ &  & +\varepsilon'\tr\left(\bar{b}^{2}a^{2}+\bar{a}^{2}b^{2}+i\bar{a}\bar{b}ab-i\bar{b}\bar{a}ba\right)\nonumber \\
+ &  & +\varepsilon''\tr\left(i\bar{b}^{2}a^{2}-i\bar{a}^{2}b^{2}-\bar{a}\bar{b}ba+\bar{b}\bar{a}ab\right),\label{eq:general-susy-H}
+\end{eqnarray}
+
+\end_inset
+
+ with 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+, 
+\begin_inset Formula $\epsilon^{\prime}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsilon^{\prime\prime}$
+\end_inset
+
+ be free parameters and 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ the Hamiltonian in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:H_0"
+
+\end_inset
+
+.
+ Note that each term in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:general-susy-H"
+
+\end_inset
+
+ is supersymmetric.
+ Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "App:Calculation-of-HQ"
+
+\end_inset
+
+ details the calculation of 
+\begin_inset Formula $\left[H,Q\right]$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
