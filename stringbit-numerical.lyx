@@ -844,20 +844,46 @@ reference "eq:trace-operators"
 \end_inset
 
 .
- The most general form of such Hamiltonian reads
+ The general form of Hermitian Hamiltonian reads
 \begin_inset Formula 
 \begin{eqnarray*}
-H & = & \varepsilon_{1}\tr\bar{a}^{2}a^{2}+\varepsilon_{2}\tr\bar{b}^{2}b^{2}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\tr\bar{b}^{2}a^{2}+\left(\varepsilon_{3}-i\varepsilon_{4}\right)\tr\bar{a}^{2}b^{2}\\
- &  & +\varepsilon_{5}\tr\bar{a}\bar{b}ba+\varepsilon_{6}\tr\bar{b}\bar{a}ab+\left(\varepsilon_{7}+i\varepsilon_{8}\right)\tr\bar{a}\bar{b}ab+\left(\varepsilon_{7}-i\varepsilon_{8}\right)\tr\bar{b}\bar{a}ba.
+H & = & \frac{1}{N}\Big[\varepsilon_{1}\tr\bar{a}^{2}a^{2}+\varepsilon_{2}\tr\bar{b}^{2}b^{2}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\tr\bar{b}^{2}a^{2}+\left(\varepsilon_{3}-i\varepsilon_{4}\right)\tr\bar{a}^{2}b^{2}\\
+ &  & +\varepsilon_{5}\tr\bar{a}\bar{b}ba+\varepsilon_{6}\tr\bar{b}\bar{a}ab+\left(\varepsilon_{7}+i\varepsilon_{8}\right)\tr\bar{a}\bar{b}ab+\left(\varepsilon_{7}-i\varepsilon_{8}\right)\tr\bar{b}\bar{a}ba\Big],
 \end{eqnarray*}
 
 \end_inset
 
-Imposing the constraint 
+ where 
+\begin_inset Formula $\epsilon_{i}$
+\end_inset
+
+ are real.
+ Imposing the constraint 
 \begin_inset Formula $\left[H,Q\right]=0$
 \end_inset
 
  yields
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "App:Calculation-of-HQ"
+
+\end_inset
+
+ details the calculation of 
+\begin_inset Formula $\left[H,Q\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 \begin{cases}
@@ -873,26 +899,26 @@ Imposing the constraint
  which implies a supersymmetric Hamiltonian can be written as
 \begin_inset Formula 
 \begin{eqnarray}
-H & = & H_{0}+\varepsilon\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right)\nonumber \\
- &  & +\varepsilon'\tr\left(\bar{b}^{2}a^{2}+\bar{a}^{2}b^{2}+i\bar{a}\bar{b}ab-i\bar{b}\bar{a}ba\right)\nonumber \\
- &  & +\varepsilon''\tr\left(i\bar{b}^{2}a^{2}-i\bar{a}^{2}b^{2}-\bar{a}\bar{b}ba+\bar{b}\bar{a}ab\right),\label{eq:general-susy-H}
+H & = & H_{0}+\frac{2\xi}{N}\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right)\nonumber \\
+ &  & +\frac{2\eta}{N}\tr\left(\bar{b}^{2}a^{2}+\bar{a}^{2}b^{2}+i\bar{a}\bar{b}ab-i\bar{b}\bar{a}ba\right)\nonumber \\
+ &  & +\frac{2\zeta}{N}\tr\left(i\bar{b}^{2}a^{2}-i\bar{a}^{2}b^{2}-\bar{a}\bar{b}ba+\bar{b}\bar{a}ab\right),\label{eq:general-susy-H}
 \end{eqnarray}
 
 \end_inset
 
  with 
-\begin_inset Formula $\epsilon$
+\begin_inset Formula $\xi$
 \end_inset
 
 , 
-\begin_inset Formula $\epsilon^{\prime}$
+\begin_inset Formula $\eta$
 \end_inset
 
 , 
-\begin_inset Formula $\epsilon^{\prime\prime}$
+\begin_inset Formula $\zeta$
 \end_inset
 
- be free parameters and 
+ be real parameters and 
 \begin_inset Formula $H_{0}$
 \end_inset
 
@@ -911,136 +937,61 @@ reference "eq:general-susy-H"
 
 \end_inset
 
- is supersymmetric.
- Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "App:Calculation-of-HQ"
-
-\end_inset
-
- details the calculation of 
-\begin_inset Formula $\left[H,Q\right]$
-\end_inset
-
-.
+ is Hermitian and supersymmetric.
  
 \end_layout
 
 \begin_layout Standard
-This part we start from the feature of the most general form of the Hamiltonian,
- thus we explore how the supersymetric property influce it.
- And we would explain how we reproduce the superstring bit model by choosing
- a particular Hamiltonian 
-\end_layout
+The Hamiltonian 
+\begin_inset Formula $H_{0}$
+\end_inset
 
-\begin_layout Standard
-The hamiltonian we discussed in our previous paper, even though it has variation
-s, will all turn out to be 
+ is a special case of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:general-susy-H"
+
+\end_inset
+
+.
+ But we can also obtain a generalization of 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+ As noted in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+, we are free to add the terms 
 \begin_inset Formula 
 \[
-H_{0}=\frac{2}{N}\mathrm{Tr}\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{b}^{2}-i\bar{a}^{2}\right)b^{2}+\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)ba+\left(\bar{a}\bar{b}-\bar{b}\bar{a}\right)ab\right],
+\Delta H^{\prime}=\frac{1}{N}\mathrm{Tr}\left[2\xi_{1}\bar{a}\bar{b}ba+2\xi_{2}\bar{b}\bar{a}ab+\left(\xi_{1}+\xi_{2}\right)\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\right],
 \]
 
 \end_inset
 
- at 
-\begin_inset Formula $N=∞$
+ to a Hamiltonian without affect large 
+\begin_inset Formula $N$
 \end_inset
 
-, which reduce to the superstring bit model dynamic.
- However, we are also curious about whether there’s other well-defined Hamiltoni
-an, not necessarily agree with the superstring-bit model.
- 
-\end_layout
+ limit.
+ Here, 
+\begin_inset Formula $\tilde{M}$
+\end_inset
 
-\begin_layout Standard
-First of all we would like to explore all the possibilities of our Hamiltonian.
- We apply different parameters in front of each candidate of the Hamiltonian,
- with the assumption that the Hamiltonian need to be hermintian, thus the
- very general form of the Hamiltonian can be read as:
-\end_layout
-
-\begin_layout Standard
+ is a supersymmetric term given by 
 \begin_inset Formula 
-\begin{eqnarray}
-H & = & \varepsilon_{1}\tr\ {\bar{a}}^{2}a^{2}+\varepsilon_{2}\tr\ {\bar{b}}^{2}b^{2}+(\varepsilon_{3}+i\varepsilon_{4})\tr\ {\bar{b}}^{2}a^{2}+(\varepsilon_{3}-i\varepsilon_{4})tr\ {\bar{a}}^{2}b^{2}\label{eq:general hamiltonian}\\
- & + & \varepsilon_{5}\tr\ {\bar{a}}{\bar{b}}ba+\varepsilon_{6}\tr\ {\bar{b}}{\bar{a}}ab+(\varepsilon_{7}+i\varepsilon_{8})\tr\ {\bar{a}}{\bar{b}}ab+(\varepsilon_{7}-i\varepsilon_{8})\tr\ {\bar{b}}{\bar{a}}ba\nonumber 
-\end{eqnarray}
+\[
+\tilde{M}=\tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right).
+\]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Now we add the supersymmetry constraint to it, which means it commutes with
- 
-\begin_inset Formula $Q=\tr\left(\bar{a}b*e^{i\pi/4}+\bar{b}a*e^{-i\pi/4}\right)$
-\end_inset
-
-, we get the relationship between these parameters.
- See appendix for the detail of this calculation.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray}
-\varepsilon_{3} & = & \varepsilon_{8}\label{eq:supersymmetry constraints}\\
-\varepsilon_{1}-\varepsilon_{2} & = & 2\varepsilon_{7}\nonumber \\
-\varepsilon_{6}-\varepsilon_{5} & = & 2\varepsilon_{4}\nonumber \\
-\varepsilon_{1}+\varepsilon_{2} & = & \varepsilon_{5}+\varepsilon_{6}\nonumber 
-\end{eqnarray}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Thus we can also rewrite the Hamiltonian in a cleaner way.
- Eliminate the total scaling parameter, the Hamiltonian with only the supersymme
-tric constraint could be written as:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray}
-H_{susy} & = & H_{0}+\varepsilon(\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab+{\bar{a}}^{2}a^{2}+{\bar{b}}^{2}b^{2})+\label{eq:supersymmetry hamiltonian}\\
- & + & \varepsilon'(\tr\ {\bar{b}}^{2}a^{2}+\tr\ {\bar{a}}^{2}b^{2}+i\tr\ {\bar{a}}{\bar{b}}ab-i\tr\ {\bar{b}}{\bar{a}}ba)\nonumber \\
- & + & \varepsilon''(i\tr\ {\bar{b}}^{2}a^{2}-i\tr\ {\bar{a}}^{2}b^{2}-\tr\ {\bar{a}}{\bar{b}}ba+\tr\ {\bar{b}}{\bar{a}}ab)\nonumber 
-\end{eqnarray}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-where 
-\begin_inset Formula $\varepsilon=\frac{1}{2}(\varepsilon_{1}+\varepsilon_{2})\qquad\varepsilon'=\varepsilon_{3}\qquad\varepsilon''=1+\frac{1}{2}(\varepsilon_{6}-\varepsilon_{5})$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Which shows that there’s three free parameters here, in which the first
- parameter 
-\begin_inset Formula $\varepsilon$
-\end_inset
-
- controls the same with the 
-\begin_inset Formula $\Delta H$
-\end_inset
-
- in our prvious paper, except the counting operator 
-\begin_inset Formula $M$
-\end_inset
-
-.
- So there’s two new parameters for the general supersymmetric Hamiltonian.
- 
 \end_layout
 
 \begin_layout Standard
