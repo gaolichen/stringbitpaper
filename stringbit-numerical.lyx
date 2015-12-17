@@ -2167,10 +2167,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/Mm=13.pdf
+	filename plots/Mm=11(1).jpg
 	width 100text%
 	height 37pheight%
-	keepAspectRatio
 	BoundingBox 0bp 0bp 594bp 522bp
 
 \end_inset
@@ -2226,7 +2225,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/Mm=21.pdf
+	filename plots/Mm=21(1).jpg
 	width 100text%
 	height 37pheight%
 	BoundingBox 55bp 10bp 750bp 610bp
@@ -2280,7 +2279,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/Mm=51.pdf
+	filename plots/Mm=51(1).jpg
 	width 100text%
 	height 37pheight%
 	BoundingBox 55bp 10bp 750bp 610bp
