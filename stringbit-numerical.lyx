@@ -511,9 +511,9 @@ key "Sun:2014dga"
 \end_inset
 
  to obtain a non-vacuum state with color indices.
- Finally, we take trace of the creator operators to obtain a color-singlet
+ Finally, we take trace of the creation operators to obtain a color-singlet
  state.
- Each creator operator in the trace state is interpreted as a string bit.
+ Each creation operator in the trace state is interpreted as a string bit.
  Trace states with even number of 
 \begin_inset Formula $\bar{b}$
 \end_inset
@@ -5438,14 +5438,15 @@ The trace state space of string-bit is built as follows.
 \end_inset
 
  to obtain non-vacuum states with color indices.
- Finally, we take trace of the creator operators to obtain color-singlet
+ Finally, we take trace of the creation operators to obtain color-singlet
  states, which span the string-bit trace state space.
  In general, when 
 \begin_inset Formula $N$
 \end_inset
 
  is big enough, we can act arbitrary number of traces on the vacuum state.
- Each creator operator in the trace state is interpreted as one string bit.
+ Each creation operator in the trace state is interpreted as one string
+ bit.
  Trace states with even number of 
 \begin_inset Formula $\bar{b}$
 \end_inset
