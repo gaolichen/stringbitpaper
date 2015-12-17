@@ -780,7 +780,7 @@ name "sec:Supersymmetry"
 
 \end_inset
 
-Supersymmetry
+Supersymmetric Hamiltonian
 \end_layout
 
 \begin_layout Standard
@@ -825,8 +825,9 @@ A Hamiltonian
 \end_inset
 
 .
- As we will show in next section, supersymmetric Hamiltonian gaurantees
- the exicitation energy vanishes at large 
+ As we will show in next section, there is a nice feature of supersymmetric
+ Hamiltonian that it gaurantees the exicitation energy to be vanishing at
+ large 
 \begin_inset Formula $M$
 \end_inset
 
@@ -835,16 +836,21 @@ A Hamiltonian
 \end_layout
 
 \begin_layout Standard
-Now, let's investigate possible forms of supersymmetric Hamiltonian built
- out of the trace operators in 
+Now, let's investigate possible forms of supersymmetric Hamiltonian and
+ generalizations of 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+.
+ The general form of hermitian Hamiltonian built out of the trace operators
+ in 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:trace-operators"
 
 \end_inset
 
-.
- The general form of Hermitian Hamiltonian reads
+ reads
 \begin_inset Formula 
 \begin{eqnarray*}
 H & = & \frac{1}{N}\Big[\varepsilon_{1}\tr\bar{a}^{2}a^{2}+\varepsilon_{2}\tr\bar{b}^{2}b^{2}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\tr\bar{b}^{2}a^{2}+\left(\varepsilon_{3}-i\varepsilon_{4}\right)\tr\bar{a}^{2}b^{2}\\
@@ -918,18 +924,7 @@ H & = & H_{0}+\frac{2\xi}{N}\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{
 \begin_inset Formula $\zeta$
 \end_inset
 
- be real parameters and 
-\begin_inset Formula $H_{0}$
-\end_inset
-
- the Hamiltonian in 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:H_0"
-
-\end_inset
-
-.
+ be real parameters.
  Note that each term in 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -937,7 +932,7 @@ reference "eq:general-susy-H"
 
 \end_inset
 
- is Hermitian and supersymmetric.
+ is hermitian and supersymmetric.
  
 \end_layout
 
@@ -953,12 +948,28 @@ reference "eq:general-susy-H"
 
 \end_inset
 
-.
+ without 
+\begin_inset Formula $\xi$
+\end_inset
+
+, 
+\begin_inset Formula $\eta$
+\end_inset
+
+, and 
+\begin_inset Formula $\zeta$
+\end_inset
+
+ terms.
  But we can also obtain a generalization of 
 \begin_inset Formula $H_{0}$
 \end_inset
 
-.
+ by keeping a slightly twisted 
+\begin_inset Formula $\xi$
+\end_inset
+
+ term.
  As noted in 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -968,9 +979,9 @@ key "Sun:2014dga"
 
 , we are free to add the terms 
 \begin_inset Formula 
-\[
-\Delta H^{\prime}=\frac{1}{N}\mathrm{Tr}\left[2\xi_{1}\bar{a}\bar{b}ba+2\xi_{2}\bar{b}\bar{a}ab+\left(\xi_{1}+\xi_{2}\right)\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\right],
-\]
+\begin{equation}
+\Delta H^{\prime}=\frac{1}{N}\mathrm{Tr}\left[2\xi_{1}\bar{a}\bar{b}ba+2\xi_{2}\bar{b}\bar{a}ab+\left(\xi_{1}+\xi_{2}\right)\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\right],\label{eq:Delta-H-Prime}
+\end{equation}
 
 \end_inset
 
@@ -983,218 +994,7 @@ key "Sun:2014dga"
 \begin_inset Formula $\tilde{M}$
 \end_inset
 
- is a supersymmetric term given by 
-\begin_inset Formula 
-\[
-\tilde{M}=\tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-If we continue to add more constraints to our Hamiltonian, which is how
- we get the Hamiltionian we used in our previous paper[8] , we pick the
- Fock space Hamiltonian whose dynamic will reduce to the supertring bit
- model in large 
-\begin_inset Formula $N$
-\end_inset
-
- limit.
- 
-\end_layout
-
-\begin_layout Standard
-Here is how we reconstructed the Hamiltonian.
- The case when 
-\begin_inset Formula $N=\infty$
-\end_inset
-
- is solved in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bergman:1995wh"
-
-\end_inset
-
-.
- Now we use its solution as a guideline for our case in which 
-\begin_inset Formula $N$
-\end_inset
-
- is infinity.
- 
-\end_layout
-
-\begin_layout Standard
-we define a super creation operator as 
-\begin_inset Formula $\psi(\theta)={\bar{a}}+{\bar{b}}\theta$
-\end_inset
-
- From where we can get 
-\begin_inset Formula 
-\[
-{\bar{b}}=-\frac{d}{d\theta}\psi,\qquad{\bar{a}}=\left(1-\theta\frac{d}{d\theta}\right)\psi
-\]
-
-\end_inset
-
- here 
-\begin_inset Formula $\theta$
-\end_inset
-
- is a Grassmann anti-commuting number.
- Then the single trace state is represented by 
-\begin_inset Formula 
-\[
-\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\ \tr\ \left[\psi(\theta_{1})\psi(\theta_{2})\cdots\psi(\theta_{M})\right]\ket{0}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Consulting
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bergman:1995wh"
-
-\end_inset
-
- , the first quantize Hamiltonian 
-\begin_inset Formula $h$
-\end_inset
-
- is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-h & = & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}({\tilde{S}}_{k+1}+{\tilde{S}}_{k-1}-2{\tilde{S}}_{k})\right]\\
- & \text{=} & \sum_{k=1}^{M}\left[-iS_{k}S_{k+1}+i{\tilde{S}}_{k}{\tilde{S}}_{k+1}-iS_{k}{\tilde{S}}_{k+1}-S_{k+1}{\tilde{S}}_{k}+2iS_{k}{\tilde{S}}_{k}\right]\\
- & \text{}
-\end{eqnarray*}
-
-\end_inset
-
- represent them in terms of Grassmann variables 
-\begin_inset Formula 
-\[
-S_{k}=\theta_{k}+\frac{d}{d\theta_{k}},\qquad{\tilde{S}}_{k}=i\left(\theta_{k}-\frac{d}{d\theta_{k}}\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-and integrate them by part we can get:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\hat{h}=\sum_{k=1}^{M}\left[-2i\theta_{k}\theta_{k+1}-2i\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}-2\theta_{k}\frac{d}{d\theta_{k+1}}-2\theta_{k+1}\frac{d}{d\theta_{k}}-2+4\theta_{k}\frac{d}{d\theta_{k}}\right]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The next step is straight forward, here's an example of applying one of
- the candidate terms to a single trace state.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\frac{1}{N}\tr\ {\bar{a}}^{2}a^{2}\ket{\theta_{1}\theta_{2}\cdots\theta_{M}} & = & \frac{1}{N}\sum_{k=1}^{M}\tr\ {\bar{a}}^{2}a(\bar{a}+\bar{b}\theta_{k+1})\cdots(\bar{a}+\bar{b}\theta_{M})\cdots(\bar{a}+\bar{b}\theta_{k-1})\\
- & = & \sum_{k=1}^{M}\left(1-\theta_{k}\frac{d}{d\theta_{k}}\right)\left(1-\theta_{k+1}\frac{d}{d\theta_{k+1}}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}+{\cal O}(N^{-1})
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-By applying each candidate on the single trace state, we have our dictionary
- to reconstruct the superstring hamiltonian .
-\end_layout
-
-\begin_layout Standard
-However, if reproduce 
-\begin_inset Formula $h$
-\end_inset
-
- at large 
-\begin_inset Formula $N$
-\end_inset
-
- limit is the only requirement, we would have two free parameters.
- Because there are only six terms in 
-\begin_inset Formula $h$
-\end_inset
-
- while we have eight candidates in total.
- This means there is a ambiguity of the hamiltonian.
- 
-\end_layout
-
-\begin_layout Standard
-A possible form of Hamiltonian reads 
-\begin_inset Formula 
-\begin{equation}
-H'=H_{0}^{\prime}+\Delta H^{\prime},\label{eq:Hamiltonian-1-1}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula 
-\begin{eqnarray*}
-H_{0}^{\prime} & = & \frac{2}{N}\mathrm{Tr}\left[i\bar{a}^{2}b^{2}-i\bar{b}^{2}a^{2}+\bar{a}\bar{b}ab+\bar{b}\bar{a}ba+\bar{a}^{2}a^{2}-\bar{b}^{2}b^{2}\right],\\
-\Delta H^{\prime} & = & \frac{1}{N}\mathrm{Tr}\left[2\xi_{1}\bar{a}\bar{b}ba+2\xi_{2}\bar{b}\bar{a}ab+\left(\xi_{1}+\xi_{2}\right)\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\right],\\
-\tilde{M} & = & \tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right),
-\end{eqnarray*}
-
-\end_inset
-
- with 
-\begin_inset Formula $\xi_{1},\xi_{2}$
-\end_inset
-
- be two parameters.
- When acting to trace states, 
-\begin_inset Formula $H_{0}^{\prime}$
-\end_inset
-
- makes 
-\begin_inset Formula $\mathcal{O}\left(1\right)$
-\end_inset
-
- contribution while 
-\begin_inset Formula $\Delta H^{\prime}$
-\end_inset
-
- makes at most 
-\begin_inset Formula $\mathcal{O}\left(\frac{1}{N}\right)$
-\end_inset
-
- contribution and hence vanishes in large 
-\begin_inset Formula $N$
-\end_inset
-
- limit
+ is a supersymmetric term given by
 \begin_inset Foot
 status open
 
@@ -1218,7 +1018,7 @@ key "Sun:2014dga"
 \end_inset
 
 .
- Our calculation reveals in order to let 
+ Our calculation shows in order to let 
 \begin_inset Formula $\Delta H^{\prime}$
 \end_inset
 
@@ -1239,58 +1039,55 @@ key "Sun:2014dga"
 
 \end_inset
 
-.
  
-\end_layout
-
-\begin_layout Standard
-Now we require that the parameters 
-\begin_inset Formula $\xi_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $\xi_{2}$
-\end_inset
-
- are constrained by the  requirement of supersymmetry.
- In Append 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "App:Calculation-of-HQ"
-
-\end_inset
-
-, we show that 
-\begin_inset Formula $\left[H,Q\right]=0$
-\end_inset
-
- if 
 \begin_inset Formula 
 \[
-\xi_{1}-\xi_{2}=2.
+\tilde{M}=\tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right).
 \]
 
 \end_inset
 
-This allows the supersymmetric Hamiltonian to be parameterized by only one
- parameter, 
-\begin_inset Formula $\xi=\xi_{1}-1=\xi_{2}+1$
+ Setting 
+\begin_inset Formula $\xi_{1}-1=\xi_{2}+1=\xi$
 \end_inset
 
-, as 
+, we obtain a supersymmetric 
+\begin_inset Formula $\Delta H^{\prime}$
+\end_inset
+
+ term which equals the 
+\begin_inset Formula $\xi$
+\end_inset
+
+ term in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:general-susy-H"
+
+\end_inset
+
+ minus a 
+\begin_inset Formula $\tilde{M}$
+\end_inset
+
+ term.
+ Therefore, 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ can be generalized to 
 \begin_inset Formula 
 \begin{equation}
-H'=H_{0}+\xi\Delta H,\label{eq:Hamiltonian-2-1}
+H=H_{0}+\xi\Delta H,\label{eq:H-general-1}
 \end{equation}
 
 \end_inset
 
  where 
 \begin_inset Formula 
-\begin{eqnarray*}
-H_{0} & = & \frac{2}{N}\mathrm{Tr}\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{b}^{2}-i\bar{a}^{2}\right)b^{2}+\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)ba+\left(\bar{a}\bar{b}-\bar{b}\bar{a}\right)ab\right],\\
-\Delta H & = & \frac{2}{N}\tr\left[\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right].
-\end{eqnarray*}
+\[
+\Delta H=\frac{2}{N}\tr\left[\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right].
+\]
 
 \end_inset
 
@@ -1298,28 +1095,14 @@ H_{0} & = & \frac{2}{N}\mathrm{Tr}\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{
 \end_layout
 
 \begin_layout Standard
-So the supersymmetric constraint reduce the number of free parameter to
- 1.
- What's more, here the 
-\begin_inset Formula $\triangle H$
-\end_inset
-
- is the same with the term controled by 
-\begin_inset Formula $\varepsilon$
-\end_inset
-
- in
+In 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:supersymmetry hamiltonian"
+LatexCommand eqref
+reference "eq:H-general-1"
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-Again, 
+ 
 \begin_inset Formula $H_{0}$
 \end_inset
 
@@ -1327,11 +1110,11 @@ Again,
 \begin_inset Formula $\mathcal{O}\left(1\right)$
 \end_inset
 
- contribution and 
+ contribution while 
 \begin_inset Formula $\Delta H$
 \end_inset
 
- 
+ makes only 
 \begin_inset Formula $\mathcal{O}\left(\frac{1}{N}\right)$
 \end_inset
 
@@ -1340,7 +1123,7 @@ Again,
 \begin_inset Formula $\xi$
 \end_inset
 
- are determined by the requirement that a well-defined Hamiltonian should
+ are constrained by the requirement that a well-defined Hamiltonian should
  be stable for large 
 \begin_inset Formula $M$
 \end_inset
@@ -1364,19 +1147,19 @@ Again,
 \end_inset
 
  is negative.
- To maintain a 
+ To maintain a positive 
 \begin_inset Formula $\tr\bar{a}^{2}a^{2}$
 \end_inset
 
- term with a positive coefficient, we must choose 
-\begin_inset Formula $\xi>-1$
+ term, we must choose 
+\begin_inset Formula $\xi\geq-1$
 \end_inset
 
 .
  Therefore, we obtain a form of well-defined Hamiltonian
 \begin_inset Formula 
 \begin{equation}
-H=H_{0}+\xi\Delta H,\quad\xi>-1.\label{eq:Hamiltonian-3-1}
+H=H_{0}+\xi\Delta H,\quad\xi\geq-1.\label{eq:Hamiltonian-3-1}
 \end{equation}
 
 \end_inset
@@ -1385,24 +1168,22 @@ H=H_{0}+\xi\Delta H,\quad\xi>-1.\label{eq:Hamiltonian-3-1}
 \end_layout
 
 \begin_layout Standard
-Besides 
+In addition to 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:Hamiltonian-3-1"
 
 \end_inset
 
-, there exist other supersymmetric Hamiltonians.
- As both 
-\begin_inset Formula $H_{0}$
+, there exist another form of supersymmetric Hamiltonian.
+ As suggested in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
 \end_inset
 
- and 
-\begin_inset Formula $\Delta H$
-\end_inset
-
- are supersymmetric, we obtain another supersymmetric Hamiltonian by replacing
- 
+, we can replace 
 \begin_inset Formula $H_{0}$
 \end_inset
 
@@ -1410,16 +1191,16 @@ reference "eq:Hamiltonian-3-1"
 \begin_inset Formula $-H_{0}$
 \end_inset
 
- 
+ and obtain 
 \begin_inset Formula 
 \begin{equation}
-H=-H_{0}+\xi\Delta H,\quad\xi>1,\label{eq:Hamiltonian-4-1}
+H=-H_{0}+\xi\Delta H,\quad\xi\geq1,\label{eq:Hamiltonian-4-1}
 \end{equation}
 
 \end_inset
 
  where the constraint 
-\begin_inset Formula $\xi>1$
+\begin_inset Formula $\xi\geq1$
 \end_inset
 
  comes from the stability condition.
@@ -1437,11 +1218,18 @@ One might wonder if there exist other supersymmetric operators that are
 \end_inset
 
  contributions.
- One possibility is to use 
+ As suggested by 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Thorn:1991fv"
+
+\end_inset
+
+, one possibility is to use 
 \begin_inset Formula $\tr\bar{a}a\bar{a}a$
 \end_inset
 
- which also produces about 
+ operator which also produces about 
 \begin_inset Formula $M^{2}$
 \end_inset
 
@@ -1450,18 +1238,18 @@ One might wonder if there exist other supersymmetric operators that are
 \end_inset
 
 .
- A combination 
+ A combination as 
 \begin_inset Formula 
 \[
-H^{\prime}=\frac{2}{N}\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right),
+H^{\prime}=\frac{2}{N}\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right)
 \]
 
 \end_inset
 
- meet such requirement.
+ meets such a requirement.
  However, as Appendix 
 \begin_inset CommandInset ref
-LatexCommand pageref
+LatexCommand ref
 reference "app:HPrime-Equals-DeltaH"
 
 \end_inset
@@ -1474,7 +1262,7 @@ reference "app:HPrime-Equals-DeltaH"
 \begin_inset Formula $\Delta H$
 \end_inset
 
- for all trace states space, i.e, 
+ for all trace states, i.e, 
 \begin_inset Formula 
 \[
 \left(H^{\prime}-\Delta H\right)\ket{\text{Any trace state}}=0.
@@ -1482,12 +1270,12 @@ reference "app:HPrime-Equals-DeltaH"
 
 \end_inset
 
+While we are not sure if there exists other variations of 
+\begin_inset Formula $H_{0}$
+\end_inset
 
-\end_layout
-
-\begin_layout Standard
-For the time being, we leave be question for further research and only study
- Hamiltonians in the form of 
+, for the time being, we leave the question for further research and only
+ study Hamiltonians as 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:Hamiltonian-3-1"
@@ -1748,7 +1536,24 @@ reference "eq:LargeN-eigenfunctions"
 \end_layout
 
 \begin_layout Standard
-In terms of the first quantized Hamiltonian 
+we define a super creation operator as 
+\begin_inset Formula $\psi(\theta)={\bar{a}}+{\bar{b}}\theta$
+\end_inset
+
+ From where we can get 
+\begin_inset Formula 
+\[
+{\bar{b}}=-\frac{d}{d\theta}\psi,\qquad{\bar{a}}=\left(1-\theta\frac{d}{d\theta}\right)\psi
+\]
+
+\end_inset
+
+ here 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a Grassmann anti-commuting number.
+ In terms of the first quantized Hamiltonian 
 \begin_inset Formula $h$
 \end_inset
 
