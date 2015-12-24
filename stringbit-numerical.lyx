@@ -1455,8 +1455,8 @@ reference "eq:Susy-constraint"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-h & = & \sum_{n=1}^{M-1}\Big[\left(\text{−}a_{1}\alpha_{n}\alpha_{M\text{−}n}+a_{1}^{\dagger}\beta_{n}\beta_{M\text{−}n}\right)\sin\frac{2\pi n}{M}\\
- &  & +\left(2a_{2}e^{2\pi i/n}+a_{2}^{\text{\dagger}}e^{\text{−}2\pi i/n}+2a_{3}\right)\alpha_{n}\beta_{M\text{−}n}\Big],
+h & = & \sum_{n=1}^{M-1}\Big[\left(-a_{1}\alpha_{n}\alpha_{M-n}+a_{1}^{\dagger}\beta_{n}\beta_{M-n}\right)\sin\frac{2\pi n}{M}\\
+ &  & +\left(2a_{2}e^{2\pi in/M}+a_{2}^{\text{\dagger}}e^{-2\pi in/M}+2a_{3}\right)\alpha_{n}\beta_{M-n}\Big],
 \end{eqnarray*}
 
 \end_inset
@@ -1468,7 +1468,7 @@ h & = & \sum_{n=1}^{M-1}\Big[\left(\text{−}a_{1}\alpha_{n}\alpha_{M\text{−}n
 where
 \begin_inset Formula 
 \[
-a_{1}=\epsilon_{4}+i\epsilon_{3},\quad a_{2}=\epsilon_{7}+i\epsilon_{8},\quad a_{3}=\text{−}2\epsilon_{1}+\epsilon_{5}+\epsilon_{6}.
+a_{1}=\epsilon_{4}+i\epsilon_{3},\quad a_{2}=\epsilon_{7}+i\epsilon_{8},\quad a_{3}=-2\epsilon_{1}+\epsilon_{5}+\epsilon_{6}.
 \]
 
 \end_inset
