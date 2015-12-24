@@ -1482,22 +1482,17 @@ We now find the ladder operators of
 \end_inset
 
 .
- Denote the operator in square brackets as 
-\begin_inset Formula $h_{n}$
-\end_inset
-
-, for which the ladder operators is 
+ We choose the ladder operators to be the ansatz 
 \begin_inset Formula $\alpha_{n}+b\beta_{n}$
 \end_inset
 
-.
- Now we solve the equation:
+ and impose the constraint
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left[h_{n},\alpha_{n}+b\beta_{n}\right]=E_{n}\left(\alpha_{n}+b\beta_{n}\right)
+\left[h,\alpha_{n}+b\beta_{n}\right]=E_{n}\left(\alpha_{n}+b\beta_{n}\right),
 \]
 
 \end_inset
@@ -1506,76 +1501,84 @@ We now find the ladder operators of
 \end_layout
 
 \begin_layout Standard
-We can get the excited energy for our general Hamiltonian:
+from which it follows
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-E_{n}=2\mathrm{Im}a_{2}\sin\frac{2\text{\pi}n}{M}+\sqrt{(a_{3}+2\mathrm{Re}a_{2}\cos\frac{2\pi n}{M})^{2}+4|a_{1}|^{2}\sin^{2}\frac{2\text{\pi}n}{M}}
-\]
+\begin{equation}
+E_{n}=2\Im a_{2}\sin\frac{2\text{\pi}n}{M}\pm\sqrt{\left(a_{3}+2\Re a_{2}\cos\frac{2\pi n}{M}\right)^{2}+4|a_{1}|^{2}\sin^{2}\frac{2\text{\pi}n}{M}},\label{eq:LargeN-En}
+\end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-In this result, there’s a critical point 
-\begin_inset Formula $a_{3}=−2\mathrm{Re}a_{2}$
+ where 
+\begin_inset Formula $\Re$
 \end_inset
 
- which would lead 
+ and 
+\begin_inset Formula $\Im$
+\end_inset
+
+ denote the real and imaginary parts.
+ We see that, in general 
 \begin_inset Formula $E_{n}$
 \end_inset
 
- to zero at large 
-\begin_inset Formula $M$
+ are not vanishing.
+ In the limit 
+\begin_inset Formula $M\to\infty$
 \end_inset
 
- limit.
-\end_layout
+ and 
+\begin_inset Formula $n$
+\end_inset
 
-\begin_layout Standard
-The next we would like to see how the energy spectrum would be for the supersymm
-etric Hamiltonian.
- The supersymmetry` constraints 
+ small, 
+\begin_inset Formula $E_{n}$
+\end_inset
+
+ become 
+\begin_inset Formula $\left|a_{3}+2\Re a_{2}\right|$
+\end_inset
+
+.
+ However, under the supersymmetry constraint 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:supersymmetry constraints"
+LatexCommand eqref
+reference "eq:Susy-constraint"
 
 \end_inset
 
- will lead to 
-\begin_inset Formula $a_{3}=−2\mathrm{Re}a_{2}$
+, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-En"
+
 \end_inset
 
-, and 
-\begin_inset Formula $\mathrm{Im}a_{2}=\mathrm{Im}a_{1}$
-\end_inset
-
- so the excited energy can be simplified as 
-\end_layout
-
-\begin_layout Standard
+ becomes 
 \begin_inset Formula 
-\begin{eqnarray}
-E_{n} & = & 2\mathrm{Im}a_{2}\sin\frac{2\pi n}{M}\pm\sqrt{4Rea_{2}^{2}(1-\cos\frac{2\pi n}{M})^{2}+4|a_{1}|^{2}\sin^{2}\frac{2\pi n}{M}}\nonumber \\
- & = & 4\sin\frac{\pi n}{M}(\mathrm{Im}a_{2}\cos\frac{\pi n}{M}\pm\sqrt{Rea_{2}^{2}\sin^{2}\frac{\pi n}{M}+|a_{1}|^{2}\cos^{2}\frac{\pi n}{M}})\label{eq:susy excitation energy}
-\end{eqnarray}
+\begin{equation}
+E_{n}=4\left(\Im a_{2}\cos\frac{\pi n}{M}\pm\sqrt{\Re a_{2}^{2}\sin^{2}\frac{\pi n}{M}+|a_{1}|^{2}\cos^{2}\frac{\pi n}{M}}\right)\sin\frac{\pi n}{M},\label{eq:LargeN-En-susy}
+\end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Which is obvious that when 
+ which clearly vanishes for large 
 \begin_inset Formula $M$
 \end_inset
 
- is getting large the excited energy would vanish.
- So the supersymmetric energy secure the disappearance of the energy gap
+ and finite 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So the supersymmetric energy secure the disappearance of the energy gap
  for our string-bit chain at large 
 \begin_inset Formula $M$
 \end_inset
