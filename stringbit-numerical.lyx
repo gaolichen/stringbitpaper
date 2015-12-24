@@ -891,14 +891,14 @@ reference "App:Calculation-of-HQ"
 
 
 \begin_inset Formula 
-\[
+\begin{equation}
 \begin{cases}
 \epsilon_{2} & =\epsilon_{8}\\
 \varepsilon_{1}-\varepsilon_{2} & =2\varepsilon_{7}\\
 \varepsilon_{6}-\varepsilon_{5} & =2\varepsilon_{4}\\
 \varepsilon_{1}+\varepsilon_{2} & =\varepsilon_{5}+\varepsilon_{6}
-\end{cases},
-\]
+\end{cases},\label{eq:Susy-constraint}
+\end{equation}
 
 \end_inset
 
@@ -1307,309 +1307,156 @@ Energy Spectrum at
 \end_layout
 
 \begin_layout Standard
-In this section, we present a numerical result for the energy spectrum of
- the model in large 
+In this section, we will study the energy spectrum of string bit at large
+ 
 \begin_inset Formula $N$
 \end_inset
 
- limit.
- The numerical calculation is based on the result of 
+ limit by both analytic and numerical solutions.
+ We first show the supersymmetry garantees the excitation energy to be vanishing
+ at large 
+\begin_inset Formula $M$
+\end_inset
+
+ and then present the energy spectrum graphically.
+ 
+\end_layout
+
+\begin_layout Standard
+We first define a super creation operator using a Grassmann anti-commuting
+ number 
+\begin_inset Formula $\theta$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+\psi(\theta)=\bar{a}+\bar{b}\theta,
+\]
+
+\end_inset
+
+from which it follows 
+\begin_inset Formula 
+\[
+\bar{b}=-\frac{d}{d\theta}\psi,\quad\bar{a}=\left(1-\theta\frac{d}{d\theta}\right)\psi.
+\]
+
+\end_inset
+
+ We choose 
+\begin_inset Formula 
+\[
+\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\tr\left[\psi\left(\theta_{1}\right)\psi\left(\theta_{2}\right)\cdots\psi\left(\theta_{M}\right)\right]\ket{0}
+\]
+
+\end_inset
+
+ to be a basis of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit single trace states.
+ Then the leading term of trace operators in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:trace-operators"
+
+\end_inset
+
+ can be expressed in terms of 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{d}{d\theta_{i}}$
+\end_inset
+
+, as shown in Eq.
+ (9) to (16) of 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sun:2014dga"
 
 \end_inset
 
- which solves the energy spectrum at large 
-\begin_inset Formula $N$
-\end_inset
-
- analytically.
-\end_layout
-
-\begin_layout Standard
-The analytic solution is summaried as follows.
- Introducing the Fourier transforms 
-\begin_inset Formula 
-\[
-\alpha_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\quad\beta_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M},\quad\left\{ \alpha_{n},\beta_{m}\right\} =\delta_{m+n,M},
-\]
-
-\end_inset
-
- we can express the 
-\begin_inset Quotes eld
-\end_inset
-
-first-quantized
-\begin_inset Quotes erd
-\end_inset
-
- Hamiltonian at fixed 
-\begin_inset Formula $M$
-\end_inset
-
- and large 
-\begin_inset Formula $N$
-\end_inset
-
- as
-\begin_inset Formula 
-\[
-h=-2M+4\sum_{n=1}^{M-1}\sin\frac{n\pi}{M}\left[\left(\alpha_{n}\alpha_{M-n}+\beta_{n}\beta_{M-n}\right)\cos\frac{n\pi}{M}+\left(\alpha_{n}\beta_{M-n}+\alpha_{M-n}\beta_{n}\right)\sin\frac{n\pi}{M}\right].
-\]
-
-\end_inset
-
- It then follows that 
-\begin_inset Formula $h$
-\end_inset
-
- has eigenfunctions
-\begin_inset Formula 
-\begin{equation}
-\Psi=\psi_{1}\psi_{2}\cdots\psi_{\left\lfloor \frac{M}{2}\right\rfloor },\label{eq:LargeN-eigenfunctions}
-\end{equation}
-
-\end_inset
-
- where 
-\begin_inset Formula $\left\lfloor \frac{M}{2}\right\rfloor $
-\end_inset
-
- is intergral part of 
-\begin_inset Formula $\frac{M}{2}$
-\end_inset
-
- and
-\begin_inset Formula 
-\[
-\psi_{k}=\begin{cases}
-\alpha_{k},\,\alpha_{M-k},\,\text{or }1+\left(\tan\frac{k\pi}{M}\pm\sec\frac{k\pi}{M}\right)\alpha_{k}\alpha_{M-k} & \quad\text{if }k<\frac{M}{2}\\
-1,\,\text{or }\alpha_{\frac{M}{2}} & \quad\text{if }k=\frac{M}{2}
-\end{cases}.
-\]
-
-\end_inset
-
- 
-\begin_inset Formula 
-\[
-\]
-
-\end_inset
-
-The eigenvalues of 
-\begin_inset Formula $h$
-\end_inset
-
- are given by 
-\begin_inset Formula 
-\[
-E\left(\left\{ \eta_{n}\right\} \right)=8\sum_{n<\frac{M}{2}}\eta_{n}\sin\frac{n\pi}{M}+4\eta_{\frac{M}{2}},
-\]
-
-\end_inset
-
- where 
-\begin_inset Formula 
-\[
-\eta_{n}=\begin{cases}
-\pm1,0,0 & \quad\text{if }n\neq\frac{M}{2}\\
-\pm1 & \quad\text{if }n=\frac{M}{2}
-\end{cases}.
-\]
-
-\end_inset
-
- For 
-\begin_inset Formula $n\neq M/2$
-\end_inset
-
-, 
-\begin_inset Formula $\eta_{n}=\pm1$
-\end_inset
-
- corresponds to the eigenfunction 
-\begin_inset Formula $1+\left(\tan\frac{k\pi}{M}\pm\sec\frac{k\pi}{M}\right)\alpha_{k}\alpha_{M-k}$
-\end_inset
-
- and 
-\begin_inset Formula $\eta_{n}=0,0$
-\end_inset
-
- are for 
-\begin_inset Formula $\alpha_{n}$
-\end_inset
-
- and 
-\begin_inset Formula $\alpha_{M-n}$
-\end_inset
-
-.
- For 
-\begin_inset Formula $n=M/2$
-\end_inset
-
-, 
-\begin_inset Formula $\eta_{n}=+1$
-\end_inset
-
- is for the eigenfunction 
-\begin_inset Formula $\alpha_{M/2}$
-\end_inset
-
- and 
-\begin_inset Formula $-1$
-\end_inset
-
- for 
-\begin_inset Formula $1$
-\end_inset
-
-.
- In addition, the eigenfunction 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:LargeN-eigenfunctions"
-
-\end_inset
-
- need to obey cyclic symmetry.
- If 
-\begin_inset Formula $\alpha_{n}\to e^{2in\pi/M}\alpha_{n}$
-\end_inset
-
-, we must have 
-\begin_inset Formula $\Psi\to\left(-1\right)^{M-1}\Psi$
-\end_inset
-
-.
- When 
-\begin_inset Formula $M$
-\end_inset
-
- is odd, it implies the constraint 
-\begin_inset Formula 
-\begin{equation}
-\sum_{\eta_{k}=0}k=nM,\quad n=0,1,2,\dots.\label{eq:LargeN-oddM-cons}
-\end{equation}
-
-\end_inset
-
- While for even 
-\begin_inset Formula $M$
-\end_inset
-
-, the constraint is 
-\begin_inset Formula 
-\begin{equation}
-\begin{cases}
-\sum_{\eta_{k}=0,k\neq\frac{M}{2}}k=nM & ,\text{ if }\eta_{\frac{M}{2}}=+1\\
-\sum_{\eta_{k}=0,k\neq\frac{M}{2}}k=\left(n+\frac{1}{2}\right)M & ,\text{ if }\eta_{\frac{M}{2}}=-1
-\end{cases},\quad n=0,1,2,\dots\label{eq:LargeN-evenM-cons}
-\end{equation}
-
-\end_inset
-
- Consequently, the ground energy at odd 
-\begin_inset Formula $M$
-\end_inset
-
- is given by every 
-\begin_inset Formula $\eta_{k}=-1$
-\end_inset
-
- while at even 
-\begin_inset Formula $M$
-\end_inset
-
-, it is given by 
-\begin_inset Formula $\eta_{\frac{M}{2}}=+1$
-\end_inset
-
- and all other 
-\begin_inset Formula $\eta_{k}=-1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-we define a super creation operator as 
-\begin_inset Formula $\psi(\theta)={\bar{a}}+{\bar{b}}\theta$
-\end_inset
-
- From where we can get 
-\begin_inset Formula 
-\[
-{\bar{b}}=-\frac{d}{d\theta}\psi,\qquad{\bar{a}}=\left(1-\theta\frac{d}{d\theta}\right)\psi
-\]
-
-\end_inset
-
- here 
-\begin_inset Formula $\theta$
-\end_inset
-
- is a Grassmann anti-commuting number.
- In terms of the first quantized Hamiltonian 
-\begin_inset Formula $h$
-\end_inset
-
-, we rewrite 
+, by which we rewrite 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:general hamiltonian"
 
 \end_inset
 
- as
+ in large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+h & = & \sum_{k=1}^{M}\Big[\left(\varepsilon_{3}-i\varepsilon_{4}\right)\theta_{k+1}\theta_{k}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+\left(\varepsilon_{5}+\varepsilon_{6}-2\varepsilon_{1}\right)\theta_{k}\frac{d}{d\theta_{k}}\nonumber \\
+ &  & +\left(\varepsilon_{7}+i\varepsilon_{8}\right)\theta_{k}\frac{d}{d\theta_{k+1}}+\left(\varepsilon_{7}-i\varepsilon_{8}\right)\theta_{k+1}\frac{d}{d\theta_{k}}\nonumber \\
+ &  & +\left(\varepsilon_{1}+\varepsilon_{2}-\varepsilon_{5}-\varepsilon_{6}\right)\theta_{k}\frac{d}{d\theta}\theta_{k+1}\frac{d}{d\theta_{k+1}}\Big].\label{eq:LargeN-H-in-theta}
+\end{eqnarray}
+
+\end_inset
+
+We then introduce the Fourier transforms
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-h & = & (\varepsilon_{3}-i\varepsilon_{4})\theta_{k+1}\theta_{k}+(\varepsilon_{3}+i\varepsilon_{4})\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+(-2\varepsilon_{1}+\varepsilon_{5}+\varepsilon_{6})\theta_{k}\frac{d}{d\theta_{k}}+\\
- & + & (\varepsilon_{7}+i\varepsilon_{8})\theta_{k}\frac{d}{d\theta_{k+1}}+(\varepsilon_{7}-i\varepsilon_{8})\theta_{k+1}\frac{d}{d\theta_{k}}+(\varepsilon_{1}+\varepsilon_{2}-\varepsilon_{5}-\varepsilon_{6})\theta_{k}\frac{d}{d\theta}\theta_{k+1}\frac{d}{d\theta_{k+1}}
+\alpha_{n} & = & \frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\quad\beta_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M},\\
+\theta_{k} & = & \frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\alpha_{n}e^{-2\pi ikn/M},\quad\frac{d}{d\theta_{k}}=\frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\beta_{n}e^{-2\pi ikn/M},
 \end{eqnarray*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-In order to diagnalize it, at this stage we assume the coefficient of the
- last quartic term is zero.
- However the supersymmetric constraint would also automatically set the
- quartic term zero .
-\end_layout
-
-\begin_layout Standard
-If we do the Fourier transforms
-\end_layout
-
-\begin_layout Standard
+ satisfying 
 \begin_inset Formula 
-\begin{eqnarray*}
-\alpha_{n} & = & \frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\qquad\beta=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M}
-\end{eqnarray*}
+\[
+\left\{ \alpha_{n},\beta_{m}\right\} =\delta_{m+n,M}.
+\]
 
 \end_inset
 
+We now express 
+\begin_inset Formula $h$
+\end_inset
 
-\end_layout
+ in terms of 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
 
-\begin_layout Standard
-Thus the general Hamiltonian could be expressed as
+ and 
+\begin_inset Formula $\beta_{n}$
+\end_inset
+
+.
+ For convenience, we simply neglect the last quatic term of 
+\begin_inset Formula $h$
+\end_inset
+
+, as it vanishes under the supersymmetry constraint 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Susy-constraint"
+
+\end_inset
+
+.
+ A little algebra yields
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-H & = & \text{−}a_{1}\sum_{n}\alpha_{n}\alpha_{M\text{−}n}\sin\frac{2\pi n}{M}+\\
- & + & a_{1}^{\dagger}\sum_{n}\beta_{n}\beta_{M\text{−}n}\sin\frac{2\pi n}{M}+(2a_{2}*e^{2\pi i/n}+a_{2}^{\text{\dagger}}*e^{\text{−}2\pi i/n}+2a_{3})\sum_{n}\alpha_{n}\beta_{M\text{−}n}
+h & = & \sum_{n=1}^{M-1}\Big[\left(\text{−}a_{1}\alpha_{n}\alpha_{M\text{−}n}+a_{1}^{\dagger}\beta_{n}\beta_{M\text{−}n}\right)\sin\frac{2\pi n}{M}\\
+ &  & +\left(2a_{2}e^{2\pi i/n}+a_{2}^{\text{\dagger}}e^{\text{−}2\pi i/n}+2a_{3}\right)\alpha_{n}\beta_{M\text{−}n}\Big],
 \end{eqnarray*}
 
 \end_inset
@@ -1621,7 +1468,7 @@ H & = & \text{−}a_{1}\sum_{n}\alpha_{n}\alpha_{M\text{−}n}\sin\frac{2\pi n}{
 where
 \begin_inset Formula 
 \[
-a_{1}=\epsilon_{4}+i\epsilon_{3}\qquad a_{2}=\epsilon_{7}+i\epsilon_{8}\qquad a_{3}=\text{−}2\epsilon_{1}+\epsilon_{5}+\epsilon_{6}
+a_{1}=\epsilon_{4}+i\epsilon_{3},\quad a_{2}=\epsilon_{7}+i\epsilon_{8},\quad a_{3}=\text{−}2\epsilon_{1}+\epsilon_{5}+\epsilon_{6}.
 \]
 
 \end_inset
@@ -1630,19 +1477,27 @@ a_{1}=\epsilon_{4}+i\epsilon_{3}\qquad a_{2}=\epsilon_{7}+i\epsilon_{8}\qquad a_
 \end_layout
 
 \begin_layout Standard
-We are curious of the excited energies, so by constructing the linear combinatio
-n 
-\begin_inset Formula $\alpha+\xi\beta$
+We now find the ladder operators of 
+\begin_inset Formula $h$
 \end_inset
 
- we would find the eigenvector of it.
+.
+ Denote the operator in square brackets as 
+\begin_inset Formula $h_{n}$
+\end_inset
+
+, for which the ladder operators is 
+\begin_inset Formula $\alpha_{n}+b\beta_{n}$
+\end_inset
+
+.
  Now we solve the equation:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-[H,\alpha+\xi\beta]=E(\alpha+\xi\beta)
+\left[h_{n},\alpha_{n}+b\beta_{n}\right]=E_{n}\left(\alpha_{n}+b\beta_{n}\right)
 \]
 
 \end_inset
@@ -2082,6 +1937,235 @@ Above is theoretical analysis at the limit
 
 .
  
+\end_layout
+
+\begin_layout Standard
+We now present a numerical result for the energy spectrum of the model in
+ large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit.
+ The numerical calculation is based on the result of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+ which solves the energy spectrum at large 
+\begin_inset Formula $N$
+\end_inset
+
+ analytically.
+\end_layout
+
+\begin_layout Standard
+The analytic solution is summaried as follows.
+ Introducing the Fourier transforms 
+\begin_inset Formula 
+\[
+\alpha_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\quad\beta_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M},\quad\left\{ \alpha_{n},\beta_{m}\right\} =\delta_{m+n,M},
+\]
+
+\end_inset
+
+ we can express the 
+\begin_inset Quotes eld
+\end_inset
+
+first-quantized
+\begin_inset Quotes erd
+\end_inset
+
+ Hamiltonian at fixed 
+\begin_inset Formula $M$
+\end_inset
+
+ and large 
+\begin_inset Formula $N$
+\end_inset
+
+ as
+\begin_inset Formula 
+\[
+h=-2M+4\sum_{n=1}^{M-1}\sin\frac{n\pi}{M}\left[\left(\alpha_{n}\alpha_{M-n}+\beta_{n}\beta_{M-n}\right)\cos\frac{n\pi}{M}+\left(\alpha_{n}\beta_{M-n}+\alpha_{M-n}\beta_{n}\right)\sin\frac{n\pi}{M}\right].
+\]
+
+\end_inset
+
+ It then follows that 
+\begin_inset Formula $h$
+\end_inset
+
+ has eigenfunctions
+\begin_inset Formula 
+\begin{equation}
+\Psi=\psi_{1}\psi_{2}\cdots\psi_{\left\lfloor \frac{M}{2}\right\rfloor },\label{eq:LargeN-eigenfunctions}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\left\lfloor \frac{M}{2}\right\rfloor $
+\end_inset
+
+ is intergral part of 
+\begin_inset Formula $\frac{M}{2}$
+\end_inset
+
+ and
+\begin_inset Formula 
+\[
+\psi_{k}=\begin{cases}
+\alpha_{k},\,\alpha_{M-k},\,\text{or }1+\left(\tan\frac{k\pi}{M}\pm\sec\frac{k\pi}{M}\right)\alpha_{k}\alpha_{M-k} & \quad\text{if }k<\frac{M}{2}\\
+1,\,\text{or }\alpha_{\frac{M}{2}} & \quad\text{if }k=\frac{M}{2}
+\end{cases}.
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+The eigenvalues of 
+\begin_inset Formula $h$
+\end_inset
+
+ are given by 
+\begin_inset Formula 
+\[
+E\left(\left\{ \eta_{n}\right\} \right)=8\sum_{n<\frac{M}{2}}\eta_{n}\sin\frac{n\pi}{M}+4\eta_{\frac{M}{2}},
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+\eta_{n}=\begin{cases}
+\pm1,0,0 & \quad\text{if }n\neq\frac{M}{2}\\
+\pm1 & \quad\text{if }n=\frac{M}{2}
+\end{cases}.
+\]
+
+\end_inset
+
+ For 
+\begin_inset Formula $n\neq M/2$
+\end_inset
+
+, 
+\begin_inset Formula $\eta_{n}=\pm1$
+\end_inset
+
+ corresponds to the eigenfunction 
+\begin_inset Formula $1+\left(\tan\frac{k\pi}{M}\pm\sec\frac{k\pi}{M}\right)\alpha_{k}\alpha_{M-k}$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta_{n}=0,0$
+\end_inset
+
+ are for 
+\begin_inset Formula $\alpha_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{M-n}$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $n=M/2$
+\end_inset
+
+, 
+\begin_inset Formula $\eta_{n}=+1$
+\end_inset
+
+ is for the eigenfunction 
+\begin_inset Formula $\alpha_{M/2}$
+\end_inset
+
+ and 
+\begin_inset Formula $-1$
+\end_inset
+
+ for 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ In addition, the eigenfunction 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-eigenfunctions"
+
+\end_inset
+
+ need to obey cyclic symmetry.
+ If 
+\begin_inset Formula $\alpha_{n}\to e^{2in\pi/M}\alpha_{n}$
+\end_inset
+
+, we must have 
+\begin_inset Formula $\Psi\to\left(-1\right)^{M-1}\Psi$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $M$
+\end_inset
+
+ is odd, it implies the constraint 
+\begin_inset Formula 
+\begin{equation}
+\sum_{\eta_{k}=0}k=nM,\quad n=0,1,2,\dots.\label{eq:LargeN-oddM-cons}
+\end{equation}
+
+\end_inset
+
+ While for even 
+\begin_inset Formula $M$
+\end_inset
+
+, the constraint is 
+\begin_inset Formula 
+\begin{equation}
+\begin{cases}
+\sum_{\eta_{k}=0,k\neq\frac{M}{2}}k=nM & ,\text{ if }\eta_{\frac{M}{2}}=+1\\
+\sum_{\eta_{k}=0,k\neq\frac{M}{2}}k=\left(n+\frac{1}{2}\right)M & ,\text{ if }\eta_{\frac{M}{2}}=-1
+\end{cases},\quad n=0,1,2,\dots\label{eq:LargeN-evenM-cons}
+\end{equation}
+
+\end_inset
+
+ Consequently, the ground energy at odd 
+\begin_inset Formula $M$
+\end_inset
+
+ is given by every 
+\begin_inset Formula $\eta_{k}=-1$
+\end_inset
+
+ while at even 
+\begin_inset Formula $M$
+\end_inset
+
+, it is given by 
+\begin_inset Formula $\eta_{\frac{M}{2}}=+1$
+\end_inset
+
+ and all other 
+\begin_inset Formula $\eta_{k}=-1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
