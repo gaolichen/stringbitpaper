@@ -853,8 +853,8 @@ reference "eq:trace-operators"
  reads
 \begin_inset Formula 
 \begin{eqnarray}
-H & = & \frac{1}{N}\Big[\varepsilon_{1}\tr\bar{a}^{2}a^{2}+\varepsilon_{2}\tr\bar{b}^{2}b^{2}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\tr\bar{b}^{2}a^{2}+\left(\varepsilon_{3}-i\varepsilon_{4}\right)\tr\bar{a}^{2}b^{2}\label{eq:general hamiltonian}\\
- &  & +\varepsilon_{5}\tr\bar{a}\bar{b}ba+\varepsilon_{6}\tr\bar{b}\bar{a}ab+\left(\varepsilon_{7}+i\varepsilon_{8}\right)\tr\bar{a}\bar{b}ab+\left(\varepsilon_{7}-i\varepsilon_{8}\right)\tr\bar{b}\bar{a}ba\Big],\nonumber 
+H & = & \frac{1}{N}\Big[\varepsilon_{1}\tr\bar{a}^{2}a^{2}+\varepsilon_{2}\tr\bar{b}^{2}b^{2}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\tr\bar{b}^{2}a^{2}+\left(\varepsilon_{3}-i\varepsilon_{4}\right)\tr\bar{a}^{2}b^{2}\nonumber \\
+ &  & +\varepsilon_{5}\tr\bar{a}\bar{b}ba+\varepsilon_{6}\tr\bar{b}\bar{a}ab+\left(\varepsilon_{7}+i\varepsilon_{8}\right)\tr\bar{a}\bar{b}ab+\left(\varepsilon_{7}-i\varepsilon_{8}\right)\tr\bar{b}\bar{a}ba\Big],\label{eq:Susy-general-H}
 \end{eqnarray}
 
 \end_inset
@@ -1383,7 +1383,7 @@ key "Sun:2014dga"
 , by which we rewrite 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:general hamiltonian"
+reference "eq:Susy-general-H"
 
 \end_inset
 
@@ -1397,9 +1397,9 @@ reference "eq:general hamiltonian"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-h & = & \sum_{k=1}^{M}\Big[\left(\varepsilon_{3}-i\varepsilon_{4}\right)\theta_{k+1}\theta_{k}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+\left(\varepsilon_{5}+\varepsilon_{6}-2\varepsilon_{1}\right)\theta_{k}\frac{d}{d\theta_{k}}\nonumber \\
- &  & +\left(\varepsilon_{7}+i\varepsilon_{8}\right)\theta_{k}\frac{d}{d\theta_{k+1}}+\left(\varepsilon_{7}-i\varepsilon_{8}\right)\theta_{k+1}\frac{d}{d\theta_{k}}\nonumber \\
- &  & +\left(\varepsilon_{1}+\varepsilon_{2}-\varepsilon_{5}-\varepsilon_{6}\right)\theta_{k}\frac{d}{d\theta}\theta_{k+1}\frac{d}{d\theta_{k+1}}\Big].\label{eq:LargeN-H-in-theta}
+h & = & \sum_{k=1}^{M}\Big[\left(\varepsilon_{3}-i\varepsilon_{4}\right)\theta_{k+1}\theta_{k}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}\nonumber \\
+ &  & +\left(\varepsilon_{5}+\varepsilon_{6}-2\varepsilon_{1}\right)\theta_{k}\frac{d}{d\theta_{k}}+\left(\varepsilon_{7}+i\varepsilon_{8}\right)\theta_{k}\frac{d}{d\theta_{k+1}}\\
+ &  & +\left(\varepsilon_{7}-i\varepsilon_{8}\right)\theta_{k+1}\frac{d}{d\theta_{k}}+\left(\varepsilon_{1}+\varepsilon_{2}-\varepsilon_{5}-\varepsilon_{6}\right)\theta_{k}\frac{d}{d\theta_{k}}\theta_{k+1}\frac{d}{d\theta_{k+1}}\Big].\label{eq:LargeN-H-in-theta}
 \end{eqnarray}
 
 \end_inset
@@ -1456,7 +1456,7 @@ reference "eq:Susy-constraint"
 \begin_inset Formula 
 \begin{eqnarray*}
 h & = & \sum_{n=1}^{M-1}\Big[\left(-a_{1}\alpha_{n}\alpha_{M-n}+a_{1}^{\dagger}\beta_{n}\beta_{M-n}\right)\sin\frac{2\pi n}{M}\\
- &  & +\left(2a_{2}e^{2\pi in/M}+a_{2}^{\text{\dagger}}e^{-2\pi in/M}+2a_{3}\right)\alpha_{n}\beta_{M-n}\Big],
+ &  & +\left(2a_{2}e^{2\pi in/M}+2a_{2}^{\text{\dagger}}e^{-2\pi in/M}+2a_{3}\right)\alpha_{n}\beta_{M-n}\Big],
 \end{eqnarray*}
 
 \end_inset
@@ -1492,7 +1492,7 @@ We now find the ladder operators of
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left[h,\alpha_{n}+b\beta_{n}\right]=E_{n}\left(\alpha_{n}+b\beta_{n}\right),
+\left[h,\alpha_{n}+b\beta_{n}\right]=\Delta E_{n}\left(\alpha_{n}+b\beta_{n}\right),
 \]
 
 \end_inset
@@ -1507,7 +1507,7 @@ from which it follows
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-E_{n}=2\Im a_{2}\sin\frac{2\text{\pi}n}{M}\pm\sqrt{\left(a_{3}+2\Re a_{2}\cos\frac{2\pi n}{M}\right)^{2}+4|a_{1}|^{2}\sin^{2}\frac{2\text{\pi}n}{M}},\label{eq:LargeN-En}
+\Delta E_{n}=2\Im a_{2}\sin\frac{2\text{\pi}n}{M}\pm\sqrt{\left(a_{3}+2\Re a_{2}\cos\frac{2\pi n}{M}\right)^{2}+4|a_{1}|^{2}\sin^{2}\frac{2\text{\pi}n}{M}},\label{eq:LargeN-En}
 \end{equation}
 
 \end_inset
@@ -1521,29 +1521,21 @@ E_{n}=2\Im a_{2}\sin\frac{2\text{\pi}n}{M}\pm\sqrt{\left(a_{3}+2\Re a_{2}\cos\fr
 \end_inset
 
  denote the real and imaginary parts.
- We see that, in general 
-\begin_inset Formula $E_{n}$
+ For a stringy behavior at large 
+\begin_inset Formula $M$
 \end_inset
 
- are not vanishing.
- In the limit 
-\begin_inset Formula $M\to\infty$
+, 
+\begin_inset Formula $\Delta E_{n}$
 \end_inset
 
- and 
+ should be vanishing for some 
 \begin_inset Formula $n$
 \end_inset
 
- small, 
-\begin_inset Formula $E_{n}$
-\end_inset
-
- become 
-\begin_inset Formula $\left|a_{3}+2\Re a_{2}\right|$
-\end_inset
-
 .
- However, under the supersymmetry constraint 
+ But in general it's not the case.
+ But under the supersymmetry constraint 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:Susy-constraint"
@@ -1565,26 +1557,18 @@ E_{n}=4\left(\Im a_{2}\cos\frac{\pi n}{M}\pm\sqrt{\Re a_{2}^{2}\sin^{2}\frac{\pi
 
 \end_inset
 
- which clearly vanishes for large 
-\begin_inset Formula $M$
-\end_inset
-
- and finite 
+ which clearly vanishes for finite 
 \begin_inset Formula $n$
 \end_inset
 
-.
- 
-\end_layout
-
-\begin_layout Standard
-So the supersymmetric energy secure the disappearance of the energy gap
- for our string-bit chain at large 
+ at large 
 \begin_inset Formula $M$
 \end_inset
 
- limit, which means the supersymmetry is enough to keep this superstring
- property at the continuous limit.
+.
+ Therefore, the supersymmetry ensures the energy gap vanishes for many-bit
+ string chain.
+ 
 \end_layout
 
 \begin_layout Standard
