@@ -853,17 +853,21 @@ reference "eq:trace-operators"
  reads
 \begin_inset Formula 
 \begin{eqnarray}
-H & = & \frac{1}{N}\Big[\varepsilon_{1}\tr\bar{a}^{2}a^{2}+\varepsilon_{2}\tr\bar{b}^{2}b^{2}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\tr\bar{b}^{2}a^{2}+\left(\varepsilon_{3}-i\varepsilon_{4}\right)\tr\bar{a}^{2}b^{2}\nonumber \\
- &  & +\varepsilon_{5}\tr\bar{a}\bar{b}ba+\varepsilon_{6}\tr\bar{b}\bar{a}ab+\left(\varepsilon_{7}+i\varepsilon_{8}\right)\tr\bar{a}\bar{b}ab+\left(\varepsilon_{7}-i\varepsilon_{8}\right)\tr\bar{b}\bar{a}ba\Big],\label{eq:Susy-general-H}
+H & = & \frac{1}{N}\Big[c_{1}\tr\bar{a}^{2}a^{2}+c_{2}\tr\bar{b}^{2}b^{2}+iz_{1}\tr\bar{a}^{2}b^{2}-iz_{1}^{\dagger}\tr\bar{b}^{2}a^{2}\nonumber \\
+ &  & +c_{3}\tr\bar{a}\bar{b}ba+c_{4}\tr\bar{b}\bar{a}ab+z_{2}\tr\bar{a}\bar{b}ab+z_{2}^{\dagger}\tr\bar{b}\bar{a}ba\Big],\label{eq:Susy-general-H}
 \end{eqnarray}
 
 \end_inset
 
  where 
-\begin_inset Formula $\epsilon_{i}$
+\begin_inset Formula $c_{i}$
 \end_inset
 
- are real.
+ are real and 
+\begin_inset Formula $z_{i}$
+\end_inset
+
+ are complex.
  Imposing the constraint 
 \begin_inset Formula $\left[H,Q\right]=0$
 \end_inset
@@ -893,10 +897,10 @@ reference "App:Calculation-of-HQ"
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
-\epsilon_{2} & =\epsilon_{8}\\
-\varepsilon_{1}-\varepsilon_{2} & =2\varepsilon_{7}\\
-\varepsilon_{6}-\varepsilon_{5} & =2\varepsilon_{4}\\
-\varepsilon_{1}+\varepsilon_{2} & =\varepsilon_{5}+\varepsilon_{6}
+c_{2} & =\Im z_{2}\\
+c_{1}-c_{2} & =2\Re z_{2}\\
+c_{4}-c_{3} & =\Re z_{1}\\
+c_{1}+c_{2} & =c_{3}+c_{4}
 \end{cases},\label{eq:Susy-constraint}
 \end{equation}
 
@@ -1397,9 +1401,9 @@ reference "eq:Susy-general-H"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-h & = & \sum_{k=1}^{M}\Big[\left(\varepsilon_{3}-i\varepsilon_{4}\right)\theta_{k+1}\theta_{k}+\left(\varepsilon_{3}+i\varepsilon_{4}\right)\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}\nonumber \\
- &  & +\left(\varepsilon_{5}+\varepsilon_{6}-2\varepsilon_{1}\right)\theta_{k}\frac{d}{d\theta_{k}}+\left(\varepsilon_{7}+i\varepsilon_{8}\right)\theta_{k}\frac{d}{d\theta_{k+1}}\\
- &  & +\left(\varepsilon_{7}-i\varepsilon_{8}\right)\theta_{k+1}\frac{d}{d\theta_{k}}+\left(\varepsilon_{1}+\varepsilon_{2}-\varepsilon_{5}-\varepsilon_{6}\right)\theta_{k}\frac{d}{d\theta_{k}}\theta_{k+1}\frac{d}{d\theta_{k+1}}\Big].\label{eq:LargeN-H-in-theta}
+h & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+z_{2}\theta_{k}\frac{d}{d\theta_{k+1}}\nonumber \\
+ &  & +z_{2}^{\dagger}\theta_{k+1}\frac{d}{d\theta_{k}}+\left(-2c_{1}+c_{3}+c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\\
+ &  & +\left(c_{1}+c_{2}-c_{3}-c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\theta_{k+1}\frac{d}{d\theta_{k+1}}\Big]+c_{1}M.\label{eq:LargeN-H-in-theta}
 \end{eqnarray}
 
 \end_inset
@@ -1410,16 +1414,16 @@ We then introduce the Fourier transforms
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-\alpha_{n} & = & \frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\quad\beta_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M},\\
-\theta_{k} & = & \frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\alpha_{n}e^{-2\pi ikn/M},\quad\frac{d}{d\theta_{k}}=\frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\beta_{n}e^{-2\pi ikn/M},
+\alpha_{n} & = & \frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\quad\beta_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M},\quad n=0,\dots M-1\\
+\theta_{k} & = & \frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\alpha_{n}e^{-2\pi ikn/M},\quad\frac{d}{d\theta_{k}}=\frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\beta_{n}e^{-2\pi ikn/M},\quad k=1,\dots M
 \end{eqnarray*}
 
 \end_inset
 
- satisfying 
+satisfying 
 \begin_inset Formula 
 \[
-\left\{ \alpha_{n},\beta_{m}\right\} =\delta_{m+n,M}.
+\left\{ \alpha_{n},\beta_{m}\right\} =\delta_{m+n,M}+\delta_{m,0}\delta_{n,0}.
 \]
 
 \end_inset
@@ -1437,11 +1441,12 @@ We now express
 \end_inset
 
 .
- For convenience, we simply neglect the last quatic term of 
+ We neglect the constant term and, for simplicity, the last quatic term
+ of 
 \begin_inset Formula $h$
 \end_inset
 
-, as it vanishes under the supersymmetry constraint 
+, which vanishes automatically under the supersymmetry constraint 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:Susy-constraint"
@@ -1449,31 +1454,22 @@ reference "eq:Susy-constraint"
 \end_inset
 
 .
- A little algebra yields
-\end_layout
-
-\begin_layout Standard
+ A little algebra yields 
 \begin_inset Formula 
 \begin{eqnarray*}
-h & = & \sum_{n=1}^{M-1}\Big[\left(-a_{1}\alpha_{n}\alpha_{M-n}+a_{1}^{\dagger}\beta_{n}\beta_{M-n}\right)\sin\frac{2\pi n}{M}\\
- &  & +\left(2a_{2}e^{2\pi in/M}+2a_{2}^{\text{\dagger}}e^{-2\pi in/M}+2a_{3}\right)\alpha_{n}\beta_{M-n}\Big],
+h & = & \sum_{n=1}^{M-1}\Big[iz_{1}e^{-2\pi in/M}\alpha_{n}\alpha_{M-n}-iz_{1}^{\dagger}e^{2\pi in/M}\beta_{n}\beta_{M-n}\\
+ &  & +2\left(\Re\left(z_{2}e^{2\pi in/M}\right)-c\right)\alpha_{n}\beta_{M-n}\Big]\\
+ &  & +2\left(\Re z_{2}-c\right)\alpha_{0}\beta_{0},
 \end{eqnarray*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-where
-\begin_inset Formula 
-\[
-a_{1}=\epsilon_{4}+i\epsilon_{3},\quad a_{2}=\epsilon_{7}+i\epsilon_{8},\quad a_{3}=-2\epsilon_{1}+\epsilon_{5}+\epsilon_{6}.
-\]
-
+where we have defined 
+\begin_inset Formula $c=c_{1}-\frac{1}{2}\left(c_{3}+c_{4}\right)$
 \end_inset
 
-
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1483,58 +1479,164 @@ We now find the ladder operators of
 
 .
  We choose the ladder operators to be the ansatz 
-\begin_inset Formula $\alpha_{n}+b\beta_{n}$
+\begin_inset Formula $L_{k}=a\alpha_{k}+b\beta_{k}$
 \end_inset
 
- and impose the constraint
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\left[h,\alpha_{n}+b\beta_{n}\right]=\Delta E_{n}\left(\alpha_{n}+b\beta_{n}\right),
-\]
-
+ and solve for 
+\begin_inset Formula $a$
 \end_inset
 
+, 
+\begin_inset Formula $b$
+\end_inset
 
-\end_layout
-
-\begin_layout Standard
-from which it follows
+ from the constraint
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Delta E_{n}=2\Im a_{2}\sin\frac{2\text{\pi}n}{M}\pm\sqrt{\left(a_{3}+2\Re a_{2}\cos\frac{2\pi n}{M}\right)^{2}+4|a_{1}|^{2}\sin^{2}\frac{2\text{\pi}n}{M}},\label{eq:LargeN-En}
+\left[h,L_{k}\right]=\epsilon_{k}\left(a\alpha_{k}+b\beta_{k}\right).\label{eq:LargeN-ladder-constraint}
 \end{equation}
 
 \end_inset
 
+ By direct calculation, we have 
+\begin_inset Formula 
+\[
+\left[h,a\alpha_{k}+ib\beta_{k}\right]=2\left(ad_{k}+bz_{1}\sin\frac{2k\pi}{M}\right)\alpha_{k}+2\left(az_{1}^{\dagger}\sin\frac{2k\pi}{M}-bd_{M-k}\right)\beta_{k},
+\]
+
+\end_inset
+
  where 
-\begin_inset Formula $\Re$
+\begin_inset Formula $d_{k}=\Re\left(z_{2}e^{2\pi ik/M}\right)-c$
+\end_inset
+
+.
+ Constraint 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-ladder-constraint"
+
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\begin{eqnarray*}
+2\left(ad_{k}+bz_{1}\sin\frac{2k\pi}{M}\right) & = & a\epsilon_{k},\\
+2\left(az_{1}^{\dagger}\sin\frac{2k\pi}{M}-bd_{M-k}\right) & = & b\epsilon_{k}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's first consider 
+\begin_inset Formula $k=0$
+\end_inset
+
+ case.
+ If 
+\begin_inset Formula $d_{0}=\Re z_{2}-c\neq0$
+\end_inset
+
+, there are two solutions:
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{when }a\neq0,\, b & = & 0,\quad\epsilon_{0}=2\left(\Re z_{2}-c\right),\\
+\text{when }a=0,\, b & \neq & 0,\quad\epsilon_{0}=-2\left(\Re z_{2}-c\right).
+\end{eqnarray*}
+
+\end_inset
+
+ The corresponding ladder operators are 
+\begin_inset Formula $\alpha_{0}$
 \end_inset
 
  and 
-\begin_inset Formula $\Im$
+\begin_inset Formula $\beta_{0}$
 \end_inset
 
- denote the real and imaginary parts.
- For a stringy behavior at large 
+ respectively.
+ If 
+\begin_inset Formula $\Re z_{2}-c=0$
+\end_inset
+
+, then 
+\begin_inset Formula $\epsilon_{0}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $a,b$
+\end_inset
+
+ can be any non-zero values.
+ In this case there is no ladder operator for 
+\begin_inset Formula $k=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $k\neq0$
+\end_inset
+
+, we solve for 
+\begin_inset Formula $r_{k}\equiv b/a$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{k}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+r_{k}^{\pm}=\left(z_{1}\sin\frac{2k\pi}{M}\right)^{-1}\left[-\Re z_{2}\cos\frac{2k\pi}{M}+c\pm\sqrt{\left(\Re z_{2}\cos\frac{2k\pi}{M}-c\right)^{2}+\left|z_{1}\right|^{2}\sin^{2}\frac{2k\pi}{M}}\right],
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\epsilon_{k}^{\pm}=-2\Im z_{2}\sin\frac{2k\pi}{M}\pm2\sqrt{\left(\Re z_{2}\cos\frac{2k\pi}{M}-c\right)^{2}+\left|z_{1}\right|^{2}\sin^{2}\frac{2k\pi}{M}}.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+To obtain stringy behavior at large 
 \begin_inset Formula $M$
 \end_inset
 
 , 
-\begin_inset Formula $\Delta E_{n}$
+\begin_inset Formula $\epsilon_{k}$
 \end_inset
 
- should be vanishing for some 
-\begin_inset Formula $n$
+ should vanish form some 
+\begin_inset Formula $k$
 \end_inset
 
 .
- But in general it's not the case.
+ In general 
+\begin_inset Formula $\epsilon_{k}$
+\end_inset
+
+ does not vanish at large 
+\begin_inset Formula $M$
+\end_inset
+
+.
  But under the supersymmetry constraint 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -1543,22 +1645,19 @@ reference "eq:Susy-constraint"
 \end_inset
 
 , 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:LargeN-En"
-
+\begin_inset Formula $\epsilon_{k}$
 \end_inset
 
  becomes 
 \begin_inset Formula 
 \begin{equation}
-E_{n}=4\left(\Im a_{2}\cos\frac{\pi n}{M}\pm\sqrt{\Re a_{2}^{2}\sin^{2}\frac{\pi n}{M}+|a_{1}|^{2}\cos^{2}\frac{\pi n}{M}}\right)\sin\frac{\pi n}{M},\label{eq:LargeN-En-susy}
+\epsilon_{k}^{\pm}=4\left(-\Im z_{1}\cos\frac{\pi k}{M}\pm\sqrt{\left(\Re z_{2}\right)^{2}\sin^{2}\frac{k\pi}{M}+|z_{1}|^{2}\cos^{2}\frac{k\pi}{M}}\right)\sin\frac{k\pi}{M},\label{eq:LargeN-En-susy}
 \end{equation}
 
 \end_inset
 
  which clearly vanishes for finite 
-\begin_inset Formula $n$
+\begin_inset Formula $k$
 \end_inset
 
  at large 
