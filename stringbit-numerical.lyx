@@ -1569,15 +1569,14 @@ Let's first consider
 \end_inset
 
 , i.e., the supersymmetry case, then 
-\begin_inset Formula $\epsilon_{0}=0$
-\end_inset
-
- and 
 \begin_inset Formula $a,b$
 \end_inset
 
- can be any non-zero values, which implies there is no ladder operator for
- 
+ can be any value and 
+\begin_inset Formula $\epsilon_{0}=0$
+\end_inset
+
+ , which implies there is no ladder operator for 
 \begin_inset Formula $k=0$
 \end_inset
 
@@ -1646,7 +1645,7 @@ reference "eq:Susy-constraint"
 \end_layout
 
 \begin_layout Standard
-In the case 
+In the case of 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
