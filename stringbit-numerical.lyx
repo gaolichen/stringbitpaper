@@ -1303,11 +1303,11 @@ name "sec:Large-N"
 
 \end_inset
 
-Energy Spectrum at 
-\begin_inset Formula $N=\infty$
+Energy Spectrum at large 
+\begin_inset Formula $N$
 \end_inset
 
-
+ limit
 \end_layout
 
 \begin_layout Standard
@@ -1324,6 +1324,14 @@ In this section, we will study the energy spectrum of string bit at large
 
  and then present the energy spectrum graphically.
  
+\end_layout
+
+\begin_layout Subsection
+General 
+\begin_inset Formula $H$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1361,7 +1369,7 @@ from which it follows
 \end_inset
 
 -bit single trace states.
- Then the leading term of trace operators in 
+ In this basis, the leading term of trace operators in 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:trace-operators"
@@ -1414,8 +1422,8 @@ We then introduce the Fourier transforms
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-\alpha_{n} & = & \frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\quad\beta_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M},\quad n=0,\dots M-1\\
-\theta_{k} & = & \frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\alpha_{n}e^{-2\pi ikn/M},\quad\frac{d}{d\theta_{k}}=\frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\beta_{n}e^{-2\pi ikn/M},\quad k=1,\dots M
+\alpha_{n} & = & \frac{1}{\sqrt{M}}\sum_{k=1}^{M}\theta_{k}e^{2\pi ikn/M},\quad\beta_{n}=\frac{1}{\sqrt{M}}\sum_{k=1}^{M}\frac{d}{d\theta_{k}}e^{2\pi ikn/M},\quad n=0,\dots M-1,\\
+\theta_{k} & = & \frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\alpha_{n}e^{-2\pi ikn/M},\quad\frac{d}{d\theta_{k}}=\frac{1}{\sqrt{M}}\sum_{n=0}^{M-1}\beta_{n}e^{-2\pi ikn/M},\quad k=1,\dots M,
 \end{eqnarray*}
 
 \end_inset
@@ -1441,8 +1449,7 @@ We now express
 \end_inset
 
 .
- We neglect the constant term and, for simplicity, the last quatic term
- of 
+ For simplicity, we neglect the quatic term of 
 \begin_inset Formula $h$
 \end_inset
 
@@ -1459,7 +1466,7 @@ reference "eq:Susy-constraint"
 \begin{eqnarray*}
 h & = & \sum_{n=1}^{M-1}\Big[iz_{1}e^{-2\pi in/M}\alpha_{n}\alpha_{M-n}-iz_{1}^{\dagger}e^{2\pi in/M}\beta_{n}\beta_{M-n}\\
  &  & +2\left(\Re\left(z_{2}e^{2\pi in/M}\right)-c\right)\alpha_{n}\beta_{M-n}\Big]\\
- &  & +2\left(\Re z_{2}-c\right)\alpha_{0}\beta_{0},
+ &  & +2\left(\Re z_{2}-c\right)\alpha_{0}\beta_{0}+c_{1}M,
 \end{eqnarray*}
 
 \end_inset
@@ -1477,20 +1484,16 @@ We now find the ladder operators of
 \begin_inset Formula $h$
 \end_inset
 
+, which we denote as 
+\begin_inset Formula $L_{k}$
+\end_inset
+
 .
- We choose the ladder operators to be the ansatz 
+ We use the ansatz 
 \begin_inset Formula $L_{k}=a\alpha_{k}+b\beta_{k}$
 \end_inset
 
- and solve for 
-\begin_inset Formula $a$
-\end_inset
-
-, 
-\begin_inset Formula $b$
-\end_inset
-
- from the constraint
+ and impose the constraint
 \end_layout
 
 \begin_layout Standard
@@ -1540,13 +1543,13 @@ Let's first consider
 
  case.
  If 
-\begin_inset Formula $d_{0}=\Re z_{2}-c\neq0$
+\begin_inset Formula $d_{0}\equiv\Re z_{2}-c\neq0$
 \end_inset
 
 , there are two solutions:
 \begin_inset Formula 
 \begin{eqnarray*}
-\text{when }a\neq0,\, b & = & 0,\quad\epsilon_{0}=2\left(\Re z_{2}-c\right),\\
+\text{when }a\neq0,\, b & = & 0,\quad\epsilon_{0}=2\left(\Re z_{2}-c\right);\\
 \text{when }a=0,\, b & \neq & 0,\quad\epsilon_{0}=-2\left(\Re z_{2}-c\right).
 \end{eqnarray*}
 
@@ -1565,7 +1568,7 @@ Let's first consider
 \begin_inset Formula $\Re z_{2}-c=0$
 \end_inset
 
-, then 
+, i.e., the supersymmetry case, then 
 \begin_inset Formula $\epsilon_{0}=0$
 \end_inset
 
@@ -1573,13 +1576,12 @@ Let's first consider
 \begin_inset Formula $a,b$
 \end_inset
 
- can be any non-zero values.
- In this case there is no ladder operator for 
+ can be any non-zero values, which implies there is no ladder operator for
+ 
 \begin_inset Formula $k=0$
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -1588,22 +1590,10 @@ For
 \end_inset
 
 , we solve for 
-\begin_inset Formula $r_{k}\equiv b/a$
-\end_inset
-
- and 
 \begin_inset Formula $\epsilon_{k}$
 \end_inset
 
 ,
-\begin_inset Formula 
-\[
-r_{k}^{\pm}=\left(z_{1}\sin\frac{2k\pi}{M}\right)^{-1}\left[-\Re z_{2}\cos\frac{2k\pi}{M}+c\pm\sqrt{\left(\Re z_{2}\cos\frac{2k\pi}{M}-c\right)^{2}+\left|z_{1}\right|^{2}\sin^{2}\frac{2k\pi}{M}}\right],
-\]
-
-\end_inset
-
-
 \begin_inset Formula 
 \[
 \epsilon_{k}^{\pm}=-2\Im z_{2}\sin\frac{2k\pi}{M}\pm2\sqrt{\left(\Re z_{2}\cos\frac{2k\pi}{M}-c\right)^{2}+\left|z_{1}\right|^{2}\sin^{2}\frac{2k\pi}{M}}.
@@ -1611,32 +1601,15 @@ r_{k}^{\pm}=\left(z_{1}\sin\frac{2k\pi}{M}\right)^{-1}\left[-\Re z_{2}\cos\frac{
 
 \end_inset
 
- 
-\end_layout
-
-\begin_layout Standard
-To obtain stringy behavior at large 
-\begin_inset Formula $M$
-\end_inset
-
-, 
+ In general, 
 \begin_inset Formula $\epsilon_{k}$
 \end_inset
 
- should vanish form some 
-\begin_inset Formula $k$
-\end_inset
-
-.
- In general 
-\begin_inset Formula $\epsilon_{k}$
-\end_inset
-
- does not vanish at large 
+ is finite at large 
 \begin_inset Formula $M$
 \end_inset
 
-.
+ and the energy levels are discrete.
  But under the supersymmetry constraint 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -1645,10 +1618,6 @@ reference "eq:Susy-constraint"
 \end_inset
 
 , 
-\begin_inset Formula $\epsilon_{k}$
-\end_inset
-
- becomes 
 \begin_inset Formula 
 \begin{equation}
 \epsilon_{k}^{\pm}=4\left(-\Im z_{1}\cos\frac{\pi k}{M}\pm\sqrt{\left(\Re z_{2}\right)^{2}\sin^{2}\frac{k\pi}{M}+|z_{1}|^{2}\cos^{2}\frac{k\pi}{M}}\right)\sin\frac{k\pi}{M},\label{eq:LargeN-En-susy}
@@ -1656,7 +1625,7 @@ reference "eq:Susy-constraint"
 
 \end_inset
 
- which clearly vanishes for finite 
+ which vanishes for finite 
 \begin_inset Formula $k$
 \end_inset
 
@@ -1665,8 +1634,181 @@ reference "eq:Susy-constraint"
 \end_inset
 
 .
- Therefore, the supersymmetry ensures the energy gap vanishes for many-bit
- string chain.
+ Therefore, supersymmetry ensures continuous energy level and stringy behavior.
+ 
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the case 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+, we have 
+\begin_inset Formula $c_{1}=-c_{2}=c_{3}=-c_{4}=c=2$
+\end_inset
+
+, 
+\begin_inset Formula $z_{1}=z_{2}=2$
+\end_inset
+
+, and 
+\begin_inset Formula 
+\[
+\epsilon_{k}^{\pm}=\pm8\sin\frac{k\pi}{M},\quad r_{k}^{\pm}\equiv\frac{b}{a}=\tan\frac{k\pi}{M}\pm\sec\frac{k\pi}{M},\quad k=1,\cdots M-1.
+\]
+
+\end_inset
+
+ The ladder operators can be expressed as 
+\begin_inset Formula $L_{k}^{\pm}=\alpha_{k}+r_{k}^{\pm}\beta_{k}.$
+\end_inset
+
+ To find all the energy levels, we need to construct the ground function
+ 
+\begin_inset Formula $G_{M}$
+\end_inset
+
+, which is annihilated by all lower operators 
+\begin_inset Formula $L_{k}^{-}$
+\end_inset
+
+.
+ Easy to check that 
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{k}^{-}\left(r_{k}^{-}+\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(r_{k}^{-}+\alpha_{k}\alpha_{M-k}\right)=0,\quad k\neq M/2,\\
+L_{M/2}^{-}\alpha_{M/2} & = & 0,\quad\text{if }M\text{ is even}.
+\end{eqnarray*}
+
+\end_inset
+
+ So the ground function can be 
+\begin_inset Formula 
+\[
+G_{M}=\begin{cases}
+\prod_{k=1}^{\left(M-1\right)/2}\left(r_{k}^{-}+\alpha_{k}\alpha_{M-k}\right), & \quad\text{if }M\text{ is odd}\\
+\left[\prod_{k=1}^{M/2-1}\left(r_{k}^{-}+\alpha_{k}\alpha_{M-k}\right)\right]\alpha_{M/2}, & \quad\text{if }M\text{ is even}
+\end{cases}.
+\]
+
+\end_inset
+
+ For each 
+\begin_inset Formula $k<M/2$
+\end_inset
+
+, we have four different choices to attack 
+\begin_inset Formula $G_{M}$
+\end_inset
+
+, i.e., using 1, 
+\begin_inset Formula $L_{k}^{+}$
+\end_inset
+
+, 
+\begin_inset Formula $L_{M-k}^{+}$
+\end_inset
+
+, and 
+\begin_inset Formula $L_{k}^{+}L_{M-k}^{+}$
+\end_inset
+
+, which correspond to energy level increasing by 0, 
+\begin_inset Formula $\epsilon_{k}^{+}$
+\end_inset
+
+, 
+\begin_inset Formula $\epsilon_{k}^{+}$
+\end_inset
+
+, and 
+\begin_inset Formula $2\epsilon_{k}^{+}$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $k=M/2$
+\end_inset
+
+, there are two choices to attack 
+\begin_inset Formula $G_{M}$
+\end_inset
+
+, by 1 and 
+\begin_inset Formula $L_{M/2}^{+}$
+\end_inset
+
+, with energy increment of 0 and 
+\begin_inset Formula $\epsilon_{M/2}$
+\end_inset
+
+.
+ Therefore, all the energy levels can be written as 
+\begin_inset Formula 
+\begin{equation}
+E\left(\left\{ \eta_{k}\right\} \right)=E_{G}+8\sum_{k=1}^{M-1}\sin\frac{k\pi}{M}+8\sum_{k=1}^{M/2}\eta_{k}\sin\frac{k\pi}{M}\label{eq:LargeN-levels}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\eta_{k}=-1,\,0,\,0,\,1,\;\text{for }k<M/2;\;\eta_{M/2}=-1,0.\label{eq:LargeN-eta}
+\end{equation}
+
+\end_inset
+
+ Here we reproduced equation (94) and (95) of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+ with a different approach.
+\end_layout
+
+\begin_layout Standard
+But not all 
+\begin_inset Formula $\left\{ \eta_{k}\right\} $
+\end_inset
+
+ are valid energy states.
+ The eigenfunction need to satisfy the cyclic symmetry 
+\begin_inset Formula 
+\[
+\ket{\theta_{1}\dots\theta_{M}}=\left(-1\right)^{M-1}\ket{\theta_{M}\theta_{1}\dots\theta_{M-1}}.
+\]
+
+\end_inset
+
+ It implies the eigenfunctions should be changed by a factor of 
+\begin_inset Formula $\left(-1\right)^{M-1}$
+\end_inset
+
+ under the transformation 
+\begin_inset Formula $L_{k}^{+}\to\exp\left(2ik\pi/M\right)L_{k}^{+}$
+\end_inset
+
+, from which it follows
+\begin_inset Formula 
+\[
+\sum_{\eta_{k}=0}^{M/2}k=\begin{cases}
+nM, & \quad\text{for odd }M\\
+\left(n+\frac{1}{2}\right)M, & \quad\text{for even }M
+\end{cases},\quad n=0,1,2,\cdots.
+\]
+
+\end_inset
+
  
 \end_layout
 
