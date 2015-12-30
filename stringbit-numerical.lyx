@@ -810,9 +810,9 @@ reference "app:Counting-Trace-States"
 
  commutes with the supersymmetry operator 
 \begin_inset Formula 
-\[
-Q=\exp\left(\frac{i\pi}{4}\right)\tr\bar{a}b+\exp\left(-\frac{i\pi}{4}\right)\tr\bar{b}a.
-\]
+\begin{equation}
+Q=\exp\left(\frac{i\pi}{4}\right)\tr\bar{a}b+\exp\left(-\frac{i\pi}{4}\right)\tr\bar{b}a.\label{eq:Susy-susy-operator}
+\end{equation}
 
 \end_inset
 
@@ -1335,32 +1335,24 @@ General
 \end_layout
 
 \begin_layout Standard
-We first define a super creation operator using a Grassmann anti-commuting
- number 
+For convenience, we introduce a super creation operator using a Grassmann
+ anti-commuting number 
 \begin_inset Formula $\theta$
 \end_inset
 
 , 
 \begin_inset Formula 
 \[
-\psi(\theta)=\bar{a}+\bar{b}\theta,
+\psi(\theta)=\bar{a}+\bar{b}\theta,\quad\bar{b}=-\frac{d}{d\theta}\psi,\quad\bar{a}=\left(1-\theta\frac{d}{d\theta}\right)\psi.
 \]
 
 \end_inset
 
-from which it follows 
+ We then choose 
 \begin_inset Formula 
-\[
-\bar{b}=-\frac{d}{d\theta}\psi,\quad\bar{a}=\left(1-\theta\frac{d}{d\theta}\right)\psi.
-\]
-
-\end_inset
-
- We choose 
-\begin_inset Formula 
-\[
-\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\tr\left[\psi\left(\theta_{1}\right)\psi\left(\theta_{2}\right)\cdots\psi\left(\theta_{M}\right)\right]\ket{0}
-\]
+\begin{equation}
+\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\tr\left[\psi\left(\theta_{1}\right)\psi\left(\theta_{2}\right)\cdots\psi\left(\theta_{M}\right)\right]\ket{0}\label{eq:LargeN-single-trace-basis}
+\end{equation}
 
 \end_inset
 
@@ -1369,7 +1361,65 @@ from which it follows
 \end_inset
 
 -bit single trace states.
- In this basis, the leading term of trace operators in 
+ A general energy eigenstate at large 
+\begin_inset Formula $N$
+\end_inset
+
+ reads 
+\begin_inset Formula 
+\begin{equation}
+\ket{E}=\int d^{M}\theta\,\Psi\left(\theta_{1}\cdots\theta_{M}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}},\label{eq:LargeN-energy-eigenstate}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\Psi\left(\theta_{1}\cdots\theta_{M}\right)$
+\end_inset
+
+ is the wave function in terms of 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+.
+ Under the cyclic tranformation, 
+\begin_inset Formula $\theta_{i}\to\theta_{i+1}$
+\end_inset
+
+, 
+\begin_inset Formula $\ket{\theta_{1}\cdots\theta_{M}}$
+\end_inset
+
+ is invariant and the Jacobi 
+\begin_inset Formula $d^{M}\theta$
+\end_inset
+
+ obtain a factor of 
+\begin_inset Formula $\left(-1\right)^{M-1}$
+\end_inset
+
+.
+ It follows that we can constrain the wave function by a cyclic symmetry,
+ 
+\begin_inset Formula 
+\begin{equation}
+\Psi\left(\theta_{1}\theta_{2}\cdots\theta_{M}\right)=\left(-1\right)^{M-1}\Psi\left(\theta_{M}\theta_{1}\cdots\theta_{M-1}\right).\label{eq:LargeN-cyclic-symmetry}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the basis 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-single-trace-basis"
+
+\end_inset
+
+, the leading term of trace operators in 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:trace-operators"
@@ -1409,14 +1459,41 @@ reference "eq:Susy-general-H"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-h & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+z_{2}\theta_{k}\frac{d}{d\theta_{k+1}}\nonumber \\
+\hat{h} & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+z_{2}\theta_{k}\frac{d}{d\theta_{k+1}}\nonumber \\
  &  & +z_{2}^{\dagger}\theta_{k+1}\frac{d}{d\theta_{k}}+\left(-2c_{1}+c_{3}+c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\\
  &  & +\left(c_{1}+c_{2}-c_{3}-c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\theta_{k+1}\frac{d}{d\theta_{k+1}}\Big]+c_{1}M.\label{eq:LargeN-H-in-theta}
 \end{eqnarray}
 
 \end_inset
 
-We then introduce the Fourier transforms
+Performing Integratation by parts as 
+\begin_inset Formula 
+\[
+\int d^{M}\theta\,\Psi\left(\theta_{1}\cdots\theta_{M}\right)\hat{h}\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\int d^{M}\theta\, h\Psi\left(\theta_{1}\cdots\theta_{M}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}},
+\]
+
+\end_inset
+
+ we obtain
+\begin_inset Formula 
+\begin{eqnarray*}
+h & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}-z_{2}\theta_{k}\frac{d}{d\theta_{k+1}}\\
+ &  & -z_{2}^{\dagger}\theta_{k+1}\frac{d}{d\theta_{k}}+\left(2c_{1}-c_{3}-c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\Big]\\
+ &  & +\left(c_{3}+c_{4}-c_{1}\right)M,
+\end{eqnarray*}
+
+\end_inset
+
+ where for simplicity we neglect the quatic term, which vanishes automatically
+ under the supersymmetry constraint 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Susy-constraint"
+
+\end_inset
+
+.
+ We then introduce the Fourier transforms
 \end_layout
 
 \begin_layout Standard
@@ -1436,37 +1513,12 @@ satisfying
 
 \end_inset
 
-We now express 
-\begin_inset Formula $h$
-\end_inset
-
- in terms of 
-\begin_inset Formula $\alpha_{n}$
-\end_inset
-
- and 
-\begin_inset Formula $\beta_{n}$
-\end_inset
-
-.
- For simplicity, we neglect the quatic term of 
-\begin_inset Formula $h$
-\end_inset
-
-, which vanishes automatically under the supersymmetry constraint 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Susy-constraint"
-
-\end_inset
-
-.
- A little algebra yields 
+A little algebra yields 
 \begin_inset Formula 
 \begin{eqnarray*}
-h & = & \sum_{n=1}^{M-1}\Big[iz_{1}e^{-2\pi in/M}\alpha_{n}\alpha_{M-n}-iz_{1}^{\dagger}e^{2\pi in/M}\beta_{n}\beta_{M-n}\\
- &  & +2\left(\Re\left(z_{2}e^{2\pi in/M}\right)-c\right)\alpha_{n}\beta_{M-n}\Big]\\
- &  & +2\left(\Re z_{2}-c\right)\alpha_{0}\beta_{0}+c_{1}M,
+h & = & \sum_{n=1}^{M-1}\Big[\left(z_{1}\alpha_{n}\alpha_{M-n}+z_{1}^{\dagger}\beta_{n}\beta_{M-n}\right)\sin\frac{2n\pi}{M}\\
+ &  & +2\left(c-\Re\left(z_{2}e^{2\pi in/M}\right)\right)\alpha_{n}\beta_{M-n}\Big]\\
+ &  & +2\left(c-\Re z_{2}\right)\alpha_{0}\beta_{0}+\left(c_{1}-2c\right)M,
 \end{eqnarray*}
 
 \end_inset
@@ -1499,7 +1551,7 @@ We now find the ladder operators of
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left[h,L_{k}\right]=\epsilon_{k}\left(a\alpha_{k}+b\beta_{k}\right).\label{eq:LargeN-ladder-constraint}
+\left[h,L_{k}\right]=\epsilon_{k}L_{k}.\label{eq:LargeN-ladder-constraint}
 \end{equation}
 
 \end_inset
@@ -1513,7 +1565,7 @@ We now find the ladder operators of
 \end_inset
 
  where 
-\begin_inset Formula $d_{k}=\Re\left(z_{2}e^{2\pi ik/M}\right)-c$
+\begin_inset Formula $d_{k}\equiv c-\Re\left(z_{2}e^{2\pi ik/M}\right)$
 \end_inset
 
 .
@@ -1524,16 +1576,18 @@ reference "eq:LargeN-ladder-constraint"
 
 \end_inset
 
- yields 
+ yields
 \begin_inset Formula 
-\begin{eqnarray*}
-2\left(ad_{k}+bz_{1}\sin\frac{2k\pi}{M}\right) & = & a\epsilon_{k},\\
-2\left(az_{1}^{\dagger}\sin\frac{2k\pi}{M}-bd_{M-k}\right) & = & b\epsilon_{k}.
-\end{eqnarray*}
+\begin{equation}
+\begin{cases}
+2\left(ad_{k}+bz_{1}\sin\frac{2k\pi}{M}\right) & =a\epsilon_{k}\\
+2\left(az_{1}^{\dagger}\sin\frac{2k\pi}{M}-bd_{M-k}\right) & =b\epsilon_{k}
+\end{cases}\label{eq:LargeN-ladder-equation}
+\end{equation}
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1543,7 +1597,7 @@ Let's first consider
 
  case.
  If 
-\begin_inset Formula $d_{0}\equiv\Re z_{2}-c\neq0$
+\begin_inset Formula $d_{0}\equiv c-\Re z_{2}\neq0$
 \end_inset
 
 , there are two solutions:
@@ -1565,7 +1619,7 @@ Let's first consider
 
  respectively.
  If 
-\begin_inset Formula $\Re z_{2}-c=0$
+\begin_inset Formula $c-\Re z_{2}=0$
 \end_inset
 
 , i.e., the supersymmetry case, then 
@@ -1581,6 +1635,19 @@ Let's first consider
 \end_inset
 
 .
+ In the supersymmetry case, the linear combination 
+\begin_inset Formula $\exp\left(\frac{i\pi}{4}\right)\alpha_{0}+\exp\left(-\frac{i\pi}{4}\right)\beta_{0}$
+\end_inset
+
+ is just the supersymmetry operator 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Susy-susy-operator"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1595,7 +1662,7 @@ For
 ,
 \begin_inset Formula 
 \[
-\epsilon_{k}^{\pm}=-2\Im z_{2}\sin\frac{2k\pi}{M}\pm2\sqrt{\left(\Re z_{2}\cos\frac{2k\pi}{M}-c\right)^{2}+\left|z_{1}\right|^{2}\sin^{2}\frac{2k\pi}{M}}.
+\epsilon_{k}^{\pm}=2\Im z_{2}\sin\frac{2k\pi}{M}\pm2\sqrt{\left(c-\Re z_{2}\cos\frac{2k\pi}{M}\right)^{2}+\left|z_{1}\right|^{2}\sin^{2}\frac{2k\pi}{M}}.
 \]
 
 \end_inset
@@ -1660,17 +1727,28 @@ In the case of
 , and 
 \begin_inset Formula 
 \[
-\epsilon_{k}^{\pm}=\pm8\sin\frac{k\pi}{M},\quad r_{k}^{\pm}\equiv\frac{b}{a}=\tan\frac{k\pi}{M}\pm\sec\frac{k\pi}{M},\quad k=1,\cdots M-1.
+\epsilon_{k}^{\pm}=\pm8\sin\frac{k\pi}{M},\quad r_{k}^{\pm}\equiv\frac{a}{b}=\tan\frac{k\pi}{M}\pm\sec\frac{k\pi}{M},\quad k=1,\cdots,M-1.
 \]
 
 \end_inset
 
- The ladder operators can be expressed as 
-\begin_inset Formula $L_{k}^{\pm}=\alpha_{k}+r_{k}^{\pm}\beta_{k}.$
+As 
+\begin_inset Formula $r_{M/2}^{+}=\infty$
 \end_inset
 
- To find all the energy levels, we need to construct the ground function
- 
+ and 
+\begin_inset Formula $r_{M/2}^{-}=0$
+\end_inset
+
+, we choose the raising and lower operators to be 
+\begin_inset Formula 
+\[
+L_{k}^{+}=\alpha_{k}+\frac{1}{r_{k}^{+}}\beta_{k},\quad L_{k}^{-}=r_{k}^{-}\alpha_{k}+\beta_{k},\quad k=1,\cdots,M-1.
+\]
+
+\end_inset
+
+Now we can construct the ground function 
 \begin_inset Formula $G_{M}$
 \end_inset
 
@@ -1682,23 +1760,28 @@ In the case of
  Easy to check that 
 \begin_inset Formula 
 \begin{eqnarray*}
-L_{k}^{-}\left(r_{k}^{-}+\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(r_{k}^{-}+\alpha_{k}\alpha_{M-k}\right)=0,\quad k\neq M/2,\\
-L_{M/2}^{-}\alpha_{M/2} & = & 0,\quad\text{if }M\text{ is even}.
+L_{k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right)=0,
 \end{eqnarray*}
 
 \end_inset
 
- So the ground function can be 
+which suggests the ground function to be 
 \begin_inset Formula 
 \[
-G_{M}=\begin{cases}
-\prod_{k=1}^{\left(M-1\right)/2}\left(r_{k}^{-}+\alpha_{k}\alpha_{M-k}\right), & \quad\text{if }M\text{ is odd}\\
-\left[\prod_{k=1}^{M/2-1}\left(r_{k}^{-}+\alpha_{k}\alpha_{M-k}\right)\right]\alpha_{M/2}, & \quad\text{if }M\text{ is even}
-\end{cases}.
+G_{M}=\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right),
 \]
 
 \end_inset
 
+ with 
+\begin_inset Formula $\left\lfloor M/2\right\rfloor $
+\end_inset
+
+ the integral part of 
+\begin_inset Formula $M/2$
+\end_inset
+
+.
  For each 
 \begin_inset Formula $k<M/2$
 \end_inset
@@ -1745,14 +1828,14 @@ G_{M}=\begin{cases}
 \end_inset
 
 , with energy increment of 0 and 
-\begin_inset Formula $\epsilon_{M/2}$
+\begin_inset Formula $\epsilon_{M/2}^{+}$
 \end_inset
 
 .
  Therefore, all the energy levels can be written as 
 \begin_inset Formula 
 \begin{equation}
-E\left(\left\{ \eta_{k}\right\} \right)=E_{G}+8\sum_{k=1}^{M-1}\sin\frac{k\pi}{M}+8\sum_{k=1}^{M/2}\eta_{k}\sin\frac{k\pi}{M}\label{eq:LargeN-levels}
+E\left(\left\{ \eta_{k}\right\} \right)=E_{G}+8\sum_{k=1}^{\left\lfloor M/2\right\rfloor }\sin\frac{k\pi}{M}+8\sum_{k=1}^{\left\lfloor M/2\right\rfloor }\eta_{k}\sin\frac{k\pi}{M}\label{eq:LargeN-levels}
 \end{equation}
 
 \end_inset
@@ -1776,20 +1859,15 @@ key "Sun:2014dga"
 \end_layout
 
 \begin_layout Standard
-But not all 
-\begin_inset Formula $\left\{ \eta_{k}\right\} $
-\end_inset
-
- are valid energy states.
- The eigenfunction need to satisfy the cyclic symmetry 
-\begin_inset Formula 
-\[
-\ket{\theta_{1}\dots\theta_{M}}=\left(-1\right)^{M-1}\ket{\theta_{M}\theta_{1}\dots\theta_{M-1}}.
-\]
+Now consider the cyclic symmetry 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-cyclic-symmetry"
 
 \end_inset
 
- It implies the eigenfunctions should be changed by a factor of 
+.
+ The eigenfunctions should be changed by a factor of 
 \begin_inset Formula $\left(-1\right)^{M-1}$
 \end_inset
 
@@ -1808,7 +1886,7 @@ nM, & \quad\text{for odd }M\\
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
