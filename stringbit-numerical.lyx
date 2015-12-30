@@ -1765,7 +1765,7 @@ L_{k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(1
 
 \end_inset
 
-which suggests the ground function to be 
+which suggests 
 \begin_inset Formula 
 \[
 \Phi_{M}=\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right),
