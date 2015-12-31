@@ -1923,6 +1923,51 @@ nM, & \quad\text{for odd }M\\
 
 \end_inset
 
+This constraint has the following implications.
+\end_layout
+
+\begin_layout Itemize
+For odd 
+\begin_inset Formula $M$
+\end_inset
+
+, the minimal and maximal energy state of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit system are 
+\begin_inset Formula 
+\[
+E_{\mathrm{min}}=-E_{\mathrm{max}}=-4\cot\frac{\pi}{2M}=-\frac{8M}{\pi}+\frac{2\pi}{3M}+\mathcal{O}\left(M^{-3}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For even 
+\begin_inset Formula $M$
+\end_inset
+
+, the maximal and minimal energy states of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit system are
+\begin_inset Formula 
+\begin{eqnarray*}
+E_{\max} & = & \frac{8M}{\pi}-\frac{2\pi}{3M}+\mathcal{O}\left(M^{-3}\right)\\
+E_{\mathrm{min}} & = & -\frac{8M}{\pi}+\frac{4\pi}{3M}+\mathcal{O}\left(M^{-2}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 This constraint shows a difference between odd and even 
 \begin_inset Formula $M$
 \end_inset
