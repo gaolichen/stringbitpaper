@@ -1927,23 +1927,46 @@ This constraint has the following implications.
 \end_layout
 
 \begin_layout Itemize
-For odd 
+For a 
 \begin_inset Formula $M$
 \end_inset
 
-, the minimal and maximal energy state of 
+-bit system with 
 \begin_inset Formula $M$
 \end_inset
 
--bit system are 
+ being odd, the maximal and minimal energy states are comprised of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit single trace states.
+ When all 
+\begin_inset Formula $\eta_{k}$
+\end_inset
+
+ are 
+\begin_inset Formula $1$
+\end_inset
+
+, the maximal energy is achieved; when all 
+\begin_inset Formula $\eta_{k}$
+\end_inset
+
+ is -1, the minimal energy is achieved, i.e., 
 \begin_inset Formula 
-\[
-E_{\mathrm{min}}=-E_{\mathrm{max}}=-4\cot\frac{\pi}{2M}=-\frac{8M}{\pi}+\frac{2\pi}{3M}+\mathcal{O}\left(M^{-3}\right).
-\]
+\begin{eqnarray*}
+E_{\mathrm{max}} & = & E_{\mathrm{max}}^{\left(1\right)}=4\cot\frac{\pi}{2M}=\frac{8M}{\pi}-\frac{2\pi}{3M}+\mathcal{O}\left(M^{-3}\right),\\
+E_{\mathrm{min}} & = & E_{\mathrm{min}}^{\left(1\right)}=-4\cot\frac{\pi}{2M}=-\frac{8M}{\pi}+\frac{2\pi}{3M}+\mathcal{O}\left(M^{-3}\right).
+\end{eqnarray*}
 
 \end_inset
 
+ Here, we use the superscript 
+\begin_inset Formula $\left(1\right)$
+\end_inset
 
+ to denote single trace states.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -1951,15 +1974,41 @@ For even
 \begin_inset Formula $M$
 \end_inset
 
-, the maximal and minimal energy states of 
+, the maximal energy state is comprised of 
 \begin_inset Formula $M$
 \end_inset
 
--bit system are
+-bit single trace states, when 
+\begin_inset Formula $\eta_{M/2}=0$
+\end_inset
+
+ and all other 
+\begin_inset Formula $\eta_{k}=-1$
+\end_inset
+
+; the minimal energy state is comprised of double trace states, with each
+ trace of length 
+\begin_inset Formula $M/2$
+\end_inset
+
+ (or one 
+\begin_inset Formula $M/2-1$
+\end_inset
+
+ and the other one 
+\begin_inset Formula $M/2+1$
+\end_inset
+
+ if 
+\begin_inset Formula $M/2$
+\end_inset
+
+ is even).
+ Therefore, we have 
 \begin_inset Formula 
 \begin{eqnarray*}
-E_{\max} & = & \frac{8M}{\pi}-\frac{2\pi}{3M}+\mathcal{O}\left(M^{-3}\right)\\
-E_{\mathrm{min}} & = & -\frac{8M}{\pi}+\frac{4\pi}{3M}+\mathcal{O}\left(M^{-2}\right)
+E_{\max} & = & E_{\mathrm{max}}^{\left(1\right)}=\frac{8M}{\pi}-\frac{2\pi}{3M}+\mathcal{O}\left(M^{-3}\right)\\
+E_{\mathrm{min}} & = & E_{\mathrm{min}}^{\left(2\right)}=-\frac{8M}{\pi}+\frac{4\pi}{3M}+\mathcal{O}\left(M^{-2}\right)
 \end{eqnarray*}
 
 \end_inset
