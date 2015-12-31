@@ -2051,7 +2051,7 @@ reference "eq:LargeN-E-min-odd"
 , we obtain 
 \begin_inset Formula 
 \[
-E_{1}=-\frac{8M}{\pi}+\frac{6\pi}{M}+\mathcal{O}\left(M^{-2}\right).
+E_{1}=-\frac{8M}{\pi}+\frac{16\pi}{M}+\mathcal{O}\left(M^{-2}\right).
 \]
 
 \end_inset
