@@ -618,7 +618,7 @@ H_{0}=\frac{2}{N}\tr\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{
 
 \end_inset
 
- which produces the Green-Scharwarz Hamiltonian.
+ which produces the Green-Schwarz Hamiltonian.
  By variational method, it shows that the ground states of the Hamiltonian
  only survive at 
 \begin_inset Formula $N>\left(M-1\right)/2$
