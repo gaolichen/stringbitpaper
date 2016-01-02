@@ -2424,16 +2424,12 @@ key "Sun:2014dga"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}
+H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji},
 \]
 
 \end_inset
 
  where 
-\begin_inset Formula $H$
-\end_inset
-
- is the Hamiltonian of the system and 
 \begin_inset Formula $\ket{i}$
 \end_inset
 
@@ -2447,10 +2443,10 @@ H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}
 
 .
  If the norm matrix 
-\begin_inset Formula $G$
+\begin_inset Formula $G=\dprod{i}{j}$
 \end_inset
 
- is positive definite, i.e, all eigenvalues of 
+ is positive definite, i.e., all eigenvalues of 
 \begin_inset Formula $G$
 \end_inset
 
@@ -2460,37 +2456,25 @@ H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji}
 
  and its eigenstate uniquely correspond to a energy level and state of the
  Hamiltonian.
- For a eigenstate of 
+ In this case, all the eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
-, 
-\begin_inset Formula $\ket{E}=\sum_{i}\ket{i}v^{i}$
-\end_inset
-
-, the norm of the state is given by 
+ are physical and have positive norm, which is defined as 
 \begin_inset Formula 
 \[
-\dprod{E}{E}=\sum_{ij}v^{i*}\dprod{i}{j}v^{j}=v^{\dagger}Gv.
+\dprod{E}{E}=\sum_{ij}v^{i*}\dprod{i}{j}v^{j}=v^{\dagger}Gv
 \]
 
 \end_inset
 
- In this case, all the and eigenstates of 
-\begin_inset Formula $\mathcal{H}$
+ for a eigenstate 
+\begin_inset Formula $\ket{E}=\sum_{i}\ket{i}v^{i}$
 \end_inset
 
- are physical their norms 
-\begin_inset Formula $\dprod{E}{E}$
-\end_inset
-
- are positive.
- Our calculation shows when 
-\begin_inset Formula $N$
-\end_inset
-
- is greater or equal to 
-\begin_inset Formula $M$
+.
+ Our numerical calculation shows when 
+\begin_inset Formula $N\geq M$
 \end_inset
 
 , the norm matrix 
@@ -2505,27 +2489,28 @@ When
 \begin_inset Formula $N$
 \end_inset
 
- is less than 
+ is an integer and less than 
 \begin_inset Formula $M$
 \end_inset
 
- and integal, the norm matrix 
+, the norm matrix 
 \begin_inset Formula $G$
 \end_inset
 
- is positive semidefinite, i.e, some eigenvalues are zero and the others
+ is positive semidefinite, i.e., some eigenvalues are zero and the others
  are positive.
- In this case, the eigenstates of 
+ In this case, each positive eigenvalue of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- with positive norm are physical and the ones with zero norm are unphysical.
- The number of physical energy states equal to the number of positve eigenvalues
- of 
-\begin_inset Formula $G$
+ corresponds a physical energy state of the Hamiltonian.
+ While each zero eigenvalue of 
+\begin_inset Formula $\mathcal{H}$
 \end_inset
 
-.
+ corresponds to an unphysical state.
+ The norm of the eigenstates are positive for physical state and zero for
+ unphysical states.
  
 \end_layout
 
@@ -2534,15 +2519,15 @@ When
 \begin_inset Formula $N$
 \end_inset
 
- is less than 
+ is a non-integer and less than 
 \begin_inset Formula $M$
 \end_inset
 
- and non-integer, the norm matrix 
+, the norm matrix 
 \begin_inset Formula $G$
 \end_inset
 
- is indefinite, i.e, has both positive and negative eigenvalues.
+ is indefinite, i.e., has both positive and negative eigenvalues.
  There is some subtle complication.
  The unphysical states can be either zero norm or negative norm.
  The negative norm eigenstates of 
