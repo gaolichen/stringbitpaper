@@ -1748,16 +1748,13 @@ L_{k}^{+}=\alpha_{k}+\frac{1}{r_{k}^{+}}\beta_{k},\quad L_{k}^{-}=r_{k}^{-}\alph
 
 \end_inset
 
-Now we can construct the ground function 
-\begin_inset Formula $\Phi_{M}$
-\end_inset
-
-, which is annihilated by all lower operators 
+Now we can construct the ground function, which is annihilated by all lower
+ operators 
 \begin_inset Formula $L_{k}^{-}$
 \end_inset
 
 .
- Easy to check that 
+ Observing that 
 \begin_inset Formula 
 \begin{eqnarray*}
 L_{k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right)=0,
@@ -1765,10 +1762,18 @@ L_{k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(1
 
 \end_inset
 
-which suggests 
+ and 
+\begin_inset Formula $\alpha_{0}$
+\end_inset
+
+ is annihilated by all 
+\begin_inset Formula $L_{k}^{-}$
+\end_inset
+
+, we can construct two ground functions, 
 \begin_inset Formula 
 \[
-\Phi_{M}=\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right),
+\Phi_{M}^{b}=\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right),\quad\Phi_{M}^{f}=\alpha_{0}\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right)
 \]
 
 \end_inset
@@ -1782,11 +1787,16 @@ which suggests
 \end_inset
 
 .
- A direct calculation shows 
-\begin_inset Formula $\Phi_{M}$
+ Clearly 
+\begin_inset Formula $\Phi_{M}^{b}$
 \end_inset
 
- has the eigenvalue 
+ is bosonic and 
+\begin_inset Formula $\Phi_{M}^{f}$
+\end_inset
+
+ is fermionic.
+ A direct calculation shows they have the same eigenvalue 
 \begin_inset Formula 
 \begin{equation}
 E_{G}=-4\sum_{k=1}^{M-1}\sin\frac{k\pi}{M}=-4\cot\frac{\pi}{2M}.\label{eq:LargeN-ground-energy}
@@ -1798,11 +1808,8 @@ For each
 \begin_inset Formula $k<M/2$
 \end_inset
 
-, we have four different choices to attack 
-\begin_inset Formula $\Phi_{M}$
-\end_inset
-
-, i.e., using 1, 
+, we have four different choices to attack the ground functions, i.e., using
+ 1, 
 \begin_inset Formula $L_{k}^{+}$
 \end_inset
 
@@ -1844,7 +1851,8 @@ For each
 \end_inset
 
 .
- Therefore, all the energy levels can be written as 
+ Therefore, for each choice of ground function, the energy levels can be
+ written as 
 \begin_inset Formula 
 \begin{eqnarray}
 E\left(\left\{ \eta_{k}\right\} \right) & = & E_{G}+8\sum_{k=1}^{\left\lfloor M/2\right\rfloor }\sin\frac{k\pi}{M}+8\sum_{k=1}^{\left\lfloor M/2\right\rfloor }\eta_{k}\sin\frac{k\pi}{M}\nonumber \\
@@ -2006,7 +2014,21 @@ E_{\mathrm{min}} & = & E_{\mathrm{min}}^{\left(2\right)}=-\frac{8M}{\pi}+\frac{4
 
 \end_inset
 
+When 
+\begin_inset Formula $M/2$
+\end_inset
 
+ is even, the lowest energy states have extra degenerancy, because the bosonic
+ ground functions can be 
+\begin_inset Formula $\Phi_{M/2-1}^{b}\Phi_{M/2+1}^{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Phi_{M/2-1}^{f}\Phi_{M/2-1}^{f}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Itemize
