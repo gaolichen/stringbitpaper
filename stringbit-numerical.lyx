@@ -714,8 +714,7 @@ reference "sec:Supersymmetry"
 
 \end_inset
 
-, we discuss the general constraint on a supersymmetric Hamiltonian and
- calculate its ground energy.
+, we discuss the general constraint on a supersymmetric Hamiltonian.
  In Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -723,39 +722,13 @@ reference "sec:Large-N"
 
 \end_inset
 
-, we present a numerical study of energy levels of the Hamiltonian 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:H_0"
-
-\end_inset
-
- at large 
+, we investigate the energy spectrum of the system at large 
 \begin_inset Formula $N$
 \end_inset
 
  limit.
- In Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Method"
-
-\end_inset
-
-, we give a brief introduction to the method we used for numerical study
- at finite 
-\begin_inset Formula $N$
-\end_inset
-
-.
- The relevant mathematical proof is given in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Hamiltonian-Eigenvalue-Problem"
-
-\end_inset
-
-.
+ We first analyze the energy spectrum analytically and then present a numerical
+ study for it.
  In Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2416,7 +2389,86 @@ The energy levels from both single trace states and triple trace states
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Method"
+name "sec:Finite-N"
+
+\end_inset
+
+Energy Spectrum at Finite 
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this section, we perform the numerical analysis of the energy levels
+ of our model.
+ We will show how energy levels of various Hamiltonians change with respect
+ to 
+\begin_inset Formula $N$
+\end_inset
+
+ and the bit number 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ We first introduce the methods to calculate the energy states of the system.
+ We then analyze the result for the original Hamiltonian 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+, for which the 
+\begin_inset Formula $M=3$
+\end_inset
+
+ case has been investigated in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
+\end_inset
+
+.
+ Next, we move to the Hamiltonians of the form 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ and investigate how the parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+ impact the energy levels.
+ Finally, we explore the Hamiltonians of the form 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
+\end_inset
+
+.
+ For each case, we first analyze the change of energy levels with respect
+ to 
+\begin_inset Formula $N$
+\end_inset
+
+ when 
+\begin_inset Formula $M$
+\end_inset
+
+ is fixed, and then with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ when 
+\begin_inset Formula $N$
+\end_inset
+
+ is fixed.
+ 
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Method"
 
 \end_inset
 
@@ -2428,7 +2480,25 @@ The
 \end_layout
 
 \begin_layout Standard
-We have two methods to calculate the energy states of the system.
+We have two methods to calculate the energy states of the system
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In this subsection, we just state the properties of these two methods.
+ The relevent mathematical proof are provided in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:Hamiltonian-Eigenvalue-Problem"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
  The first method, which is used in 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2464,7 +2534,20 @@ H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji},
 \end_inset
 
 .
- If the norm matrix 
+ Since trace state basis 
+\begin_inset Formula $\ket{i}$
+\end_inset
+
+ is not orthonormal, 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ is not hermitian and not Hamiltonian matrix.
+ 
+\end_layout
+
+\begin_layout Standard
+If the norm matrix 
 \begin_inset Formula $G=\dprod{i}{j}$
 \end_inset
 
@@ -2600,7 +2683,7 @@ The second method is to solve a generalised eigenvalue problem of
 \end_inset
 
 .
- In stead of solving the eigenvalue problem as 
+ In stead of solving the eigenvalue problem, 
 \begin_inset Formula 
 \begin{equation}
 \mathcal{H}\ket{E}=E\ket{E},\label{eq:eigenvalue-problem}
@@ -2608,7 +2691,7 @@ The second method is to solve a generalised eigenvalue problem of
 
 \end_inset
 
- we solve a generalised eigenvalue problem as 
+ we solve a generalised eigenvalue problem, 
 \begin_inset Formula 
 \begin{equation}
 \left(G\mathcal{H}\right)\ket{E}=EG\ket{E}.\label{eq:generalised-eigenvalue-problem}
@@ -2665,7 +2748,7 @@ G_{i_{2}i_{2}} & G_{i_{2}i_{2}} & \cdots & G_{i_{2}i_{r}}\\
 \vdots & \vdots & \vdots & \vdots\\
 G_{i_{r}i_{1}} & G_{i_{r}i_{2}} & \cdots & G_{i_{r}i_{r}}
 \end{array}\right),\\
-\tilde{G\mathcal{H}} & = & \left(\begin{array}{cccc}
+\widetilde{G\mathcal{H}} & = & \left(\begin{array}{cccc}
 \left(G\mathcal{H}\right)_{i_{1}i_{1}} & \left(G\mathcal{H}\right)_{i_{1}i_{2}} & \cdots & \left(G\mathcal{H}\right)_{i_{1}i_{r}}\\
 \left(G\mathcal{H}\right)_{i_{2}i_{2}} & \left(G\mathcal{H}\right)_{i_{2}i_{2}} & \cdots & \left(G\mathcal{H}\right)_{i_{2}i_{r}}\\
 \vdots & \vdots & \vdots & \vdots\\
@@ -2678,25 +2761,12 @@ G_{i_{r}i_{1}} & G_{i_{r}i_{2}} & \cdots & G_{i_{r}i_{r}}
  Then the generalised eigenvalue problem become 
 \begin_inset Formula 
 \[
-\left(\tilde{G\mathcal{H}}\right)\ket{E}=E\tilde{G}\ket{E},
+\left(\widetilde{G\mathcal{H}}\right)\ket{E}=E\tilde{G}\ket{E},
 \]
 
 \end_inset
 
 whose eigenvalues are all correspond to physical states.
- 
-\end_layout
-
-\begin_layout Standard
-The properties of the eigenvalue problems stated above are proved in Appendix
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Hamiltonian-Eigenvalue-Problem"
-
-\end_inset
-
-.
  
 \end_layout
 
@@ -2720,37 +2790,6 @@ The first method is used to investigate the change of energy levels with
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Section
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Finite-N"
-
-\end_inset
-
-Finite 
-\begin_inset Formula $N$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In this section, we perform the numerical analysis of the energy levels
- of our model.
- We will show how energy levels of various Hamiltonians change with respect
- to 
-\begin_inset Formula $N$
-\end_inset
-
- and the bit number 
-\begin_inset Formula $M$
-\end_inset
-
-.
- The procedure of calculation are very straightforward.
  For different values of 
 \begin_inset Formula $M$
 \end_inset
@@ -2810,58 +2849,6 @@ reference "eq:generalised-eigenvalue-problem"
 \end_inset
 
  matrices.
- 
-\end_layout
-
-\begin_layout Standard
-We will first analyze the result for the original Hamiltonian 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
-, for which the 
-\begin_inset Formula $M=3$
-\end_inset
-
- case has been investigated in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
-
-\end_inset
-
-.
- Next, we move to the Hamiltonians of the form 
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
-\end_inset
-
- and investigate how the parameter 
-\begin_inset Formula $\xi$
-\end_inset
-
- impact the energy levels.
- Finally, we explore the Hamiltonians of the form 
-\begin_inset Formula $H=-H_{0}+\xi\Delta H$
-\end_inset
-
-.
- For each case, we first analyze the change of energy levels with respect
- to 
-\begin_inset Formula $N$
-\end_inset
-
- when 
-\begin_inset Formula $M$
-\end_inset
-
- is fixed, and then with respect to 
-\begin_inset Formula $M$
-\end_inset
-
- when 
-\begin_inset Formula $N$
-\end_inset
-
- is fixed.
  
 \end_layout
 
