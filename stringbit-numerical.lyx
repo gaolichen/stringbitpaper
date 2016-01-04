@@ -2170,7 +2170,9 @@ status open
 	filename plots/Mm=11(1).jpg
 	width 100text%
 	height 37pheight%
-	BoundingBox 0bp 0bp 594bp 522bp
+	BoundingBox 55bp 10bp 750bp 610bp
+	clip
+	groupId EnergyLevelPlot
 
 \end_inset
 
