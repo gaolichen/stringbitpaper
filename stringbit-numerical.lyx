@@ -2169,12 +2169,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/Mm=11(1).jpg
+	filename plots/pic.pdf
 	width 100text%
 	height 37pheight%
-	BoundingBox 55bp 10bp 750bp 610bp
-	clip
-	groupId EnergyLevelPlot
+	BoundingBox 0bp 0bp 959bp 709bp
 
 \end_inset
 
@@ -2197,7 +2195,7 @@ The energy levels of single trace states (red lines) and triple trace states
 \begin_inset Formula $M=11$
 \end_inset
 
- and large 
+, M=21, M=51 and M=101 and large 
 \begin_inset Formula $N$
 \end_inset
 
