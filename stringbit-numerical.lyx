@@ -3089,7 +3089,7 @@ name "fig:H=H0M=7"
 
 \end_inset
 
-Lowest 8 energy states of the 7-bit system with Hamiltonian 
+Lowest 5 energy states of the 7-bit system with Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -3131,7 +3131,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Lowest 8 energy states of the 9-bit system with Hamiltonian 
+Lowest 5 energy states of the 9-bit system with Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
