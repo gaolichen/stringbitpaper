@@ -2175,7 +2175,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/spectrum.pdf
+	filename plots/spec.pdf
 	width 100text%
 	height 37pheight%
 	BoundingBox 120bp 250bp 490bp 560bp
