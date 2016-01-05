@@ -2169,10 +2169,10 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/pic.pdf
+	filename plots/spectrum.pdf
 	width 100text%
 	height 37pheight%
-	BoundingBox 0bp 0bp 959bp 709bp
+	BoundingBox 0bp 0bp 385bp 298bp
 
 \end_inset
 
