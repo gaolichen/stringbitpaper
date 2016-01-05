@@ -2178,7 +2178,8 @@ status open
 	filename plots/spectrum.pdf
 	width 100text%
 	height 37pheight%
-	BoundingBox 0bp 0bp 385bp 298bp
+	BoundingBox 120bp 250bp 490bp 560bp
+	clip
 
 \end_inset
 
