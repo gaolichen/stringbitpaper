@@ -925,24 +925,16 @@ reference "eq:general-susy-H"
 
 \end_inset
 
- without 
-\begin_inset Formula $\xi$
+ when 
+\begin_inset Formula $\xi=\eta=\zeta=0$
 \end_inset
 
-, 
-\begin_inset Formula $\eta$
-\end_inset
-
-, and 
-\begin_inset Formula $\zeta$
-\end_inset
-
- terms.
+.
  But we can also obtain a generalization of 
 \begin_inset Formula $H_{0}$
 \end_inset
 
- by keeping a slightly twisted 
+ by keeping a twisted 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -1722,11 +1714,7 @@ L_{k}^{+}=\alpha_{k}+\frac{1}{r_{k}^{+}}\beta_{k},\quad L_{k}^{-}=r_{k}^{-}\alph
 \end_inset
 
 Now we can construct the ground function, which is annihilated by all lower
- operators 
-\begin_inset Formula $L_{k}^{-}$
-\end_inset
-
-.
+ operators.
  Observing that 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -1739,11 +1727,11 @@ L_{k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(1
 \begin_inset Formula $\alpha_{0}$
 \end_inset
 
- is annihilated by all 
+ commutes with all 
 \begin_inset Formula $L_{k}^{-}$
 \end_inset
 
-, we can construct two ground functions, 
+, we obtain ground functions, 
 \begin_inset Formula 
 \[
 \Phi_{M}^{b}=\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right),\quad\Phi_{M}^{f}=\alpha_{0}\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right)
@@ -1781,8 +1769,11 @@ For each
 \begin_inset Formula $k<M/2$
 \end_inset
 
-, we have four different choices to attack the ground functions, i.e., using
- 1, 
+, we have four different choices to attack the ground functions, 
+\shape italic
+i.e.
+\shape default
+, using 1, 
 \begin_inset Formula $L_{k}^{+}$
 \end_inset
 
@@ -1856,7 +1847,7 @@ key "Sun:2014dga"
 \end_layout
 
 \begin_layout Standard
-Now consider the cyclic symmetry 
+Now consider the cyclic constraint 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:LargeN-cyclic-symmetry"
@@ -1904,7 +1895,7 @@ nM, & \quad\text{for odd }M\\
 
 \end_inset
 
-This constraint has the several interesting consequence.
+This constraint has the several interesting consequences.
 \end_layout
 
 \begin_layout Itemize
@@ -2025,48 +2016,80 @@ For large
 \end_layout
 
 \begin_layout Standard
-Now let's plot the energy band of odd 
+Now let's consider the first excitation energy of odd 
 \begin_inset Formula $M$
 \end_inset
 
  system.
- The lowest energy level of the system is given by 
+ From above analysis, there is no double trace states in the low energy
+ region, so we consider the triple trace states.
+ From 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:LargeN-E-min-odd"
 
 \end_inset
 
-.
- From above analysis, there is no double trace states in the low energy
- region and the first excitation energy comes from triple trace states with
- each trace of 
+, the lowest energy of triple trace states is achieved when each trace has
+ 
 \begin_inset Formula $M/3$
 \end_inset
 
  bits.
- Using 
+ Hence, we have 
+\begin_inset Formula 
+\[
+E_{1}=-\frac{8M}{\pi}+\frac{16\pi}{M}+\mathcal{O}\left(M^{-2}\right),
+\]
+
+\end_inset
+
+from which it follows the energy gap between ground energy 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:LargeN-E-min-odd"
 
 \end_inset
 
-, we obtain 
-\begin_inset Formula 
-\[
-E_{1}=-\frac{8M}{\pi}+\frac{16\pi}{M}+\mathcal{O}\left(M^{-2}\right).
-\]
-
-\end_inset
-
-Hence, the energy gap between ground energy and first excitation energy
- is 
+ and first excitation energy is 
 \begin_inset Formula $\frac{16\pi}{3M}$
 \end_inset
 
 .
- 
+ If 
+\begin_inset Formula $M$
+\end_inset
+
+ is divisible by 3, the first excitation energy has no extra degenency.
+ If 
+\begin_inset Formula $M=3n\pm1$
+\end_inset
+
+, it has extra degenency: for 
+\begin_inset Formula $M=3n+1$
+\end_inset
+
+, the bosonic ground function can be 
+\begin_inset Formula $\Phi_{n-1}^{b}\Phi_{n+1}^{b}\Phi_{n+1}^{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Phi_{n-1}^{f}\Phi_{n+1}^{f}\Phi_{n+1}^{b}$
+\end_inset
+
+; for 
+\begin_inset Formula $M=3n+1$
+\end_inset
+
+, the bosonic ground function can be 
+\begin_inset Formula $\Phi_{n-1}^{b}\Phi_{n-1}^{b}\Phi_{n+1}^{b}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Phi_{n-1}^{b}\Phi_{n-1}^{f}\Phi_{n+1}^{f}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2091,24 +2114,6 @@ reference "fig:LargeN-energy-levels"
 \end_inset
 
 , 21, 51, and 101.
- 
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-TODO: merge the four figures to one, change title to 
-\begin_inset Formula $M=11$
-\end_inset
-
-, vertical axis title to 
-\begin_inset Formula $M\times\left(E-E_{\mathrm{min}}\right)$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
  In the plot, energy states are represented by horizontal lines, with red
  color for single trace states, blue color for triple trace states.
  The vertical coordinate is 
@@ -2134,8 +2139,8 @@ From the figure, it's clear that the energy gaps go smaller as
 \end_inset
 
 .
- As predicted by the previous discussion, the energy of single trace states
- tend to distributed near multiples of 
+ The energy of single trace states tend to distribute near multiples of
+ 
 \begin_inset Formula $\frac{16\pi}{M}$
 \end_inset
 
@@ -2144,7 +2149,8 @@ From the figure, it's clear that the energy gaps go smaller as
 \end_inset
 
 .
- The energy levels of triple trace states are even denser.
+ The energy levels of triple trace states are even denser than single trace
+ states.
  At 
 \begin_inset Formula $M=101$
 \end_inset
@@ -2205,175 +2211,6 @@ The energy levels of single trace states (red lines) and triple trace states
 \end_inset
 
 .
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/Mm=21(1).jpg
-	width 100text%
-	height 37pheight%
-	BoundingBox 55bp 10bp 750bp 610bp
-	clip
-	groupId EnergyLevelPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-The energy levels from both single trace states(red lines) and triple trace
- states(yellow lines) for 
-\begin_inset Formula $M=21$
-\end_inset
-
- when 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-.
- The degeneracy of single trace states' energy levels is maintained.
- At the lower area of energy, the feature of degeneracy is getting a little
- bit more obvious.
- While there's still big gaps between the triple trace states.
- And still the lowest lines of triple trace states is very close to the
- threshold for multi-trace states.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/Mm=51(1).jpg
-	width 100text%
-	height 37pheight%
-	BoundingBox 55bp 10bp 750bp 610bp
-	clip
-	groupId EnergyLevelPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-The energy levels from both single trace states and triple trace states
- for 
-\begin_inset Formula $M=51$
-\end_inset
-
- when 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-.
- The degeneracy of single trace states' energy levels is maintained.
- What's more, the energy levels from the triple trace state(the yellow lines)
- start spread out the region.
- we can see the degeneracy of single trace states' energy level is getting
- more clear as 
-\begin_inset Formula $M$
-\end_inset
-
- getting larger.
- Meanwhile the higher part of the triple trace states already formed the
- continuous background.
- and the lowest state of it is also getting closer to the blue dash line.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/Mm=101(1).jpg
-	width 100text%
-	height 37pheight%
-	BoundingBox 55bp 10bp 750bp 610bp
-	clip
-	groupId EnergyLevelPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-The energy levels from both single trace states and triple trace states
- of 
-\begin_inset Formula $M=101$
-\end_inset
-
- when 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-.
- The degeneracy of single trace states' energy levels is maintained.
- What's more, the energy levels from the triple trace state(the yellow lines)
- start spread out the region.
- This show that at this number of bits, the continuous "yellow" background
- is basically formed, while the lowest energy state of multi-trace states
- is nearly coincided with the supposed boundary.
- More single trace states is degenerated.
 \end_layout
 
 \end_inset
