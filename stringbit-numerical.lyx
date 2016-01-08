@@ -9036,7 +9036,11 @@ First let's calculate the commutation of each hamiltonian candidate and
 \end_inset
 
 .
- As we see, the normal ordering terms cancel out.
+ 
+\end_layout
+
+\begin_layout Standard
+As we see, the normal ordering terms cancel out.
  This occurs for all the terms of 
 \begin_inset Formula $H$
 \end_inset
@@ -9203,7 +9207,7 @@ First let's calculate the commutation of each hamiltonian candidate and
 
 \end_inset
 
-which follows
+
 \end_layout
 
 \begin_layout Standard
@@ -9292,12 +9296,27 @@ reference "eq:general hamiltonian"
 \end_inset
 
  we can get 
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \begin_inset Formula 
 \begin{eqnarray*}
-0 & = & \varepsilon_{1}[(\bar{a}^{2}ab+\bar{a}^{2}ba)-(\bar{a}\bar{b}a^{2}+\bar{b}\bar{a}a^{2})*e^{-i\frac{\pi}{2}}\text{]}+\varepsilon_{2}[(\bar{b}\bar{a}b^{2}-\bar{a}\bar{b}b^{2})+(\bar{b}^{2}ba-\bar{b}^{2}ab)*e^{-i\frac{\pi}{2}}]\\
- & + & (\varepsilon_{3}-i\varepsilon_{4})(\bar{a}^{2}ba-\bar{a}^{2}ab-\bar{a}\bar{b}b^{2}-\bar{b}\bar{a}b^{2})*e^{-i\frac{\pi}{2}}+(\varepsilon_{3}+i\varepsilon_{4})(\bar{b}\bar{a}a^{2}-\bar{a}\bar{b}a^{2}+\bar{b}^{2}ba+\bar{b}^{2}ab)\\
- & + & \varepsilon_{5}[(\bar{a}\bar{b}b^{2}-\bar{a}^{2}ba)+(\bar{a}\bar{b}a^{2}-\bar{b}^{2}ba)*e^{-i\frac{\pi}{2}}]+\varepsilon_{6}[(-\bar{b}\bar{a}b^{2}-\bar{a}^{2}ab)+(\bar{b}\bar{a}a^{2}+\bar{b}^{2}ab)*e^{-i\frac{\pi}{2}}]\\
- & + & (\varepsilon_{3}-i\varepsilon_{4})(\bar{a}^{2}ba-\bar{a}^{2}ab-\bar{a}\bar{b}b^{2}-\bar{b}\bar{a}b^{2})*e^{-i\frac{\pi}{2}}+(\varepsilon_{3}+i\varepsilon_{4})(\bar{b}\bar{a}a^{2}-\bar{a}\bar{b}a^{2}+\bar{b}^{2}ba+\bar{b}^{2}ab)
+0 & = & c_{1}[(\tr\bar{a}^{2}ab+\tr\bar{a}^{2}ba)-(\tr\bar{a}\bar{b}a^{2}+\tr\bar{b}\bar{a}a^{2})*e^{-i\frac{\pi}{2}}\text{]}+c_{2}[(\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}\bar{b}b^{2})+(\tr\bar{b}^{2}ba-\tr\bar{b}^{2}ab)*e^{-i\frac{\pi}{2}}]\\
+ & + & iz_{1}(\tr\bar{a}^{2}ba-\bar{\tr a}^{2}ab-\tr\bar{a}\bar{b}b^{2}-\tr\bar{b}\bar{a}b^{2})*e^{-i\frac{\pi}{2}}+-iz_{1}^{\dagger}(\tr\bar{b}\bar{a}a^{2}-\tr\bar{a}\bar{b}a^{2}+\tr\bar{b}^{2}ba+\tr\bar{b}^{2}ab)\\
+ & + & c_{3}[(\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ba)+(\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ba)*e^{-i\frac{\pi}{2}}]+c_{4}[(-\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab)+(\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab)*e^{-i\frac{\pi}{2}}]\\
+ & + & (z[(\tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba)+(\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba)*e^{-i\frac{\pi}{2}}]+z_{2}[(-\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab)+(\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab)*e^{-i\frac{\pi}{2}}]
 \end{eqnarray*}
 
 \end_inset
@@ -9311,11 +9330,18 @@ Therefore we get:
 
 \begin_layout Standard
 \begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
 \begin{eqnarray*}
-\varepsilon_{1}+i(\varepsilon_{3}-i\varepsilon_{4})-\varepsilon_{6}-(\varepsilon_{7}+i\varepsilon_{8}) & = & 0\\
-\varepsilon_{1}-i(\varepsilon_{3}-i\varepsilon_{4})-\varepsilon_{5}-(\varepsilon_{7}-i\varepsilon_{8}) & = & 0\\
--\varepsilon_{2}+i(\varepsilon_{3}+i\varepsilon_{4})+\varepsilon_{6}-(\varepsilon_{7}+i\varepsilon_{8}) & = & 0\\
-\varepsilon_{2}+i(\varepsilon_{3}+i\varepsilon_{4})-\varepsilon_{5}+(\varepsilon_{7}-i\varepsilon_{8}) & = & 0
+c_{1}-z_{1}-c_{4}-z_{2} & = & 0\\
+c_{1}+z_{1}-c_{3}-z_{2}^{\dagger} & = & 0\\
+-c_{2}+z_{1}^{\dagger}+c_{4}-z_{2} & = & 0\\
+c_{2}+z_{1}^{\dagger}-c_{3}+z_{2}^{\dagger} & = & 0
 \end{eqnarray*}
 
 \end_inset
