@@ -383,7 +383,7 @@ To set up the dynamics of the superstring bit model, we employ 't Hooft's
 \end_inset
 
  limit and follow the standard second-quantized formalism.
- A general superstring bit annihilation operoator is an 
+ A general superstring bit annihilation operator is an 
 \begin_inset Formula $N\times N$
 \end_inset
 
@@ -694,7 +694,7 @@ reference "eq:H_0"
 
  large enough, the ground energies do drop almost linearly.
  For excitation energies, although there is not enough data for an unquestioned
- pattern, it still shows trendencies roughly go with 
+ pattern, it still shows tendencies to go roughly as 
 \begin_inset Formula $M^{-1}$
 \end_inset
 
@@ -789,7 +789,16 @@ Q=\exp\left(\frac{i\pi}{4}\right)\tr\bar{a}b+\exp\left(-\frac{i\pi}{4}\right)\tr
 
 \end_inset
 
-A Hamiltonian 
+
+\end_layout
+
+\begin_layout Standard
+Also we notice that 
+\begin_inset Formula $M=Q^{2}$
+\end_inset
+
+.
+ A Hamiltonian 
 \begin_inset Formula $H$
 \end_inset
 
@@ -798,7 +807,7 @@ A Hamiltonian
 \end_inset
 
 .
- As we will show in next section, there is a nice feature of supersymmetric
+ As we will show in the next section, there is a nice feature of supersymmetric
  Hamiltonian that it gaurantees the exicitation energy to be vanishing at
  large 
 \begin_inset Formula $M$
