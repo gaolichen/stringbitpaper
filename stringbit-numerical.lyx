@@ -1832,7 +1832,7 @@ E\left(\left\{ \eta_{k}\right\} \right) & = & E_{G}+8\sum_{k=1}^{\left\lfloor M/
  &  & =8\sum_{k=1}^{\left\lfloor M/2\right\rfloor }\eta_{k}\sin\frac{k\pi}{M}+\begin{cases}
 0 & \;\text{for odd }M\\
 4 & \;\text{for even }M
-\end{cases}
+\end{cases}\label{eq:LargeN-energy-levels}
 \end{eqnarray}
 
 \end_inset
@@ -2248,9 +2248,7 @@ Energy Spectrum at Finite
 \end_layout
 
 \begin_layout Standard
-In this section, we perform the numerical analysis of the energy levels
- of our model.
- We will show how energy levels of various Hamiltonians change with respect
+In this section, we show numerically how the energy levels change with respect
  to 
 \begin_inset Formula $N$
 \end_inset
@@ -2261,7 +2259,7 @@ In this section, we perform the numerical analysis of the energy levels
 
 .
  We first introduce the methods to calculate the energy states of the system.
- We then analyze the result for the original Hamiltonian 
+ We then analyze the result of the original Hamiltonian 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -2346,14 +2344,7 @@ reference "app:Hamiltonian-Eigenvalue-Problem"
 \end_inset
 
 .
- The first method, which is used in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
-
-\end_inset
-
-, is to calculate the eigenvalues of the 
+ Both methods involve the 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
@@ -2376,38 +2367,65 @@ H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji},
 \begin_inset Formula $\ket{j}$
 \end_inset
 
- are the trace states for a given bit number 
+ are 
 \begin_inset Formula $M$
 \end_inset
 
-.
- Since trace state basis 
-\begin_inset Formula $\ket{i}$
-\end_inset
-
- is not orthonormal, 
+-bit trace states.
+ Note that, since trace state basis is not orthonormal, 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- is not hermitian and not Hamiltonian matrix.
+ is not the Hamiltonian matrix and even not hermitian.
  
 \end_layout
 
 \begin_layout Standard
-If the norm matrix 
-\begin_inset Formula $G=\dprod{i}{j}$
+The first method, used in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sun:2014dga"
+
 \end_inset
 
- is positive definite, i.e., all eigenvalues of 
-\begin_inset Formula $G$
-\end_inset
-
- is positive, then every eigenvalue of 
+, is to calculate the eigenvalues of the 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- and its eigenstate uniquely correspond to a energy level and state of the
- Hamiltonian.
+ from equation 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}\ket{E}=E\ket{E}.\label{eq:eigenvalue-problem}
+\end{equation}
+
+\end_inset
+
+The relation between eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and of the Hamiltonian matrix is determined by the norm matrix, 
+\begin_inset Formula $G=\dprod{i}{j}$
+\end_inset
+
+, as follows.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $G$
+\end_inset
+
+ is positive definite, 
+\shape italic
+i.e.
+\shape default
+, all its eigenvalues are positive, there is an one-to-one correspondence
+ between the eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ and the Hamiltonian.
  In this case, all the eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
@@ -2436,7 +2454,7 @@ If the norm matrix
  is always positive definite.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 When 
 \begin_inset Formula $N$
 \end_inset
@@ -2449,24 +2467,25 @@ When
 \begin_inset Formula $G$
 \end_inset
 
- is positive semidefinite, i.e., some eigenvalues are zero and the others
- are positive.
- In this case, each positive eigenvalue of 
+ is positive semidefinite, 
+\shape italic
+i.e.
+\shape default
+, some eigenvalues are zero and the others are positive.
+ In this case, only those eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- corresponds a physical energy state of the Hamiltonian.
- While each zero eigenvalue of 
+ with positive norm correspond to energy states of the Hamiltonian, while
+ those eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- corresponds to an unphysical state.
- The norm of the eigenstates are positive for physical state and zero for
- unphysical states.
+ with zero norm are unphysical.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 When 
 \begin_inset Formula $N$
 \end_inset
@@ -2479,66 +2498,68 @@ When
 \begin_inset Formula $G$
 \end_inset
 
- is indefinite, i.e., has both positive and negative eigenvalues.
- There is some subtle complication.
- The unphysical states can be either zero norm or negative norm.
+ is indefinite, 
+\shape italic
+i.e.
+\shape default
+, 
+\begin_inset Formula $G$
+\end_inset
+
+ has both positive and negative eigenvalues.
+ There is some subtly in this case.
+ The eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ can be of positive norm, of zero norm, and of negative norm.
  The negative norm eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- stem from their coupling to the eigenstates of 
+ stem from their coupling to ghost states, the eigenstates of 
 \begin_inset Formula $G$
 \end_inset
 
- whose corresponding eigenvalues are negative.
- The eigenstates of 
-\begin_inset Formula $G$
-\end_inset
-
- with negative eigenvalues are also called ghost states.
- Unlike the positive definite and positive semidefinite cases, a eigenstate
- of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- with positive norm does not correspond to a physical energy state unless
- it is orthogonal to every ghost states.
+ whose eigenvalues are negative.
+ The zero and positive norm eigenstates are still unphysical.
+ But positive norm eigenstates cannot be simply taken as energy states any
+ more.
+ A positive norm eigenstate is a physical energy state if it is orthogonal
+ to every ghost state.
  
 \end_layout
 
 \begin_layout Standard
-Note that the eigenvalues of 
+From above statements, we should treat positive norm eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- can also be non-real.
+ physical when 
+\begin_inset Formula $N$
+\end_inset
+
+ is large enough or small integral.
+ Moreover, the eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ can be non-real.
  This occurs for both positive-semidefinite and indefinite cases.
  For a non-real eigenvalue of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
-, its complex conjugate is also an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- and both of them correspond to zero nom eigenstates.
-\end_layout
-
-\begin_layout Standard
-The second method is to solve a generalised eigenvalue problem of 
+, the norm of its eigenstate must be zero and its complex conjugate is also
+ an eigenvalue of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
 .
- In stead of solving the eigenvalue problem, 
-\begin_inset Formula 
-\begin{equation}
-\mathcal{H}\ket{E}=E\ket{E},\label{eq:eigenvalue-problem}
-\end{equation}
+\end_layout
 
-\end_inset
-
- we solve a generalised eigenvalue problem, 
+\begin_layout Standard
+The second method is to solve a generalised eigenvalue problem, 
 \begin_inset Formula 
 \begin{equation}
 \left(G\mathcal{H}\right)\ket{E}=EG\ket{E}.\label{eq:generalised-eigenvalue-problem}
@@ -2546,8 +2567,7 @@ The second method is to solve a generalised eigenvalue problem of
 
 \end_inset
 
-This method is particularly helpful for filtering unphysical states when
- 
+This method is helpful for filtering unphysical states when 
 \begin_inset Formula $G$
 \end_inset
 
@@ -2561,7 +2581,16 @@ This method is particularly helpful for filtering unphysical states when
 \begin_inset Formula $G$
 \end_inset
 
- is not full-rank matrix, we cannot solve this equation.
+ is not a full-rank matrix, to solve the equation, we need to remove some
+ rows and columns from 
+\begin_inset Formula $G$
+\end_inset
+
+ and 
+\begin_inset Formula $G\mathcal{H}$
+\end_inset
+
+.
  If the rank of 
 \begin_inset Formula $G$
 \end_inset
@@ -2574,7 +2603,7 @@ This method is particularly helpful for filtering unphysical states when
 \begin_inset Formula $r$
 \end_inset
 
- independent rows and columns of 
+ independent rows and columns from 
 \begin_inset Formula $G$
 \end_inset
 
@@ -2605,7 +2634,15 @@ G_{i_{r}i_{1}} & G_{i_{r}i_{2}} & \cdots & G_{i_{r}i_{r}}
 
 \end_inset
 
- Then the generalised eigenvalue problem become 
+ Then, Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:generalised-eigenvalue-problem"
+
+\end_inset
+
+ becomes 
 \begin_inset Formula 
 \[
 \left(\widetilde{G\mathcal{H}}\right)\ket{E}=E\tilde{G}\ket{E},
@@ -2613,13 +2650,13 @@ G_{i_{r}i_{1}} & G_{i_{r}i_{2}} & \cdots & G_{i_{r}i_{r}}
 
 \end_inset
 
-whose eigenvalues are all correspond to physical states.
+whose eigenvalues and eigenstates are all physical.
  
 \end_layout
 
 \begin_layout Standard
-The first method is used to investigate the change of energy levels with
- respect to 
+The first method is used to investigate the change of eigenstates, including
+ both physical and unphysical states, with respect to 
 \begin_inset Formula $N$
 \end_inset
 
@@ -2627,8 +2664,8 @@ The first method is used to investigate the change of energy levels with
 \begin_inset Formula $M$
 \end_inset
 
- while the second one is used to study the change of physical energy levels
- with respect to 
+ while the second one is for the change of physical energy levels with respect
+ to 
 \begin_inset Formula $M$
 \end_inset
 
@@ -2645,16 +2682,16 @@ The first method is used to investigate the change of energy levels with
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- matrices and norm matrices 
+ and 
 \begin_inset Formula $G$
 \end_inset
 
-, whose entries are expressed in terms of 
+ matrices, whose entries are expressed in terms of 
 \begin_inset Formula $N$
 \end_inset
 
 .
- Then use Eq.
+ Then we solve Eq.
  
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -2662,14 +2699,14 @@ reference "eq:eigenvalue-problem"
 
 \end_inset
 
- and 
+ or 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:generalised-eigenvalue-problem"
 
 \end_inset
 
- to find the energy levels.
+ to find the their eigenstates.
  Since the nubmer of trace states increase exponentially as 
 \begin_inset Formula $M$
 \end_inset
@@ -2679,11 +2716,11 @@ reference "eq:generalised-eigenvalue-problem"
 \end_inset
 
 .
- The biggest value of 
+ The highest value of 
 \begin_inset Formula $M$
 \end_inset
 
- we calculate is 11, at which value 
+ we study for is 11, at which 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
@@ -2699,7 +2736,7 @@ reference "eq:generalised-eigenvalue-problem"
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -2812,7 +2849,7 @@ reference "fig:H=H0M=7"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2884,7 +2921,21 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Lowest 5 energy states of the 5-bit system with Hamiltonian 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H0M=5"
+
+\end_inset
+
+Lowest 5 eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ at 
+\begin_inset Formula $M=5$
+\end_inset
+
+ for 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -2936,7 +2987,15 @@ name "fig:H=H0M=7"
 
 \end_inset
 
-Lowest 5 energy states of the 7-bit system with Hamiltonian 
+Lowest 5 eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ at 
+\begin_inset Formula $M=7$
+\end_inset
+
+ for 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -2978,7 +3037,21 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Lowest 5 energy states of the 9-bit system with Hamiltonian 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:H=H-M=9"
+
+\end_inset
+
+Lowest 5 eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ at 
+\begin_inset Formula $M=9$
+\end_inset
+
+ for 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -3030,7 +3103,15 @@ name "fig:H=H0M=11"
 
 \end_inset
 
-Lowest 5 energy states of the 11-bit system with Hamiltonian 
+Lowest 5 eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ at 
+\begin_inset Formula $M=11$
+\end_inset
+
+ for 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
@@ -3052,31 +3133,23 @@ Lowest 5 energy states of the 11-bit system with Hamiltonian
 \end_layout
 
 \begin_layout Standard
-From these figures, we can see several features of the energy levels.
+From these figures, we can see several features of the eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
  At 
 \begin_inset Formula $N=\infty$
 \end_inset
 
-, degeneracy occurs for some excited states while the ground states are
- non-degenerate.
- This is consistent with the analytic calculation of large 
-\begin_inset Formula $N$
+, the ground states are nondegenerate, while the first excited states are
+ nondegenerate for 
+\begin_inset Formula $M$
 \end_inset
 
- limit 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
-
-\end_inset
-
-.
- The degeneracies are broken at finite 
-\begin_inset Formula $N$
-\end_inset
-
-.
- All the curves are almost perpendicular to the vertical axe at 
+ divisible by 3 and degenerate otherwise.
+ This is consistent with the analytic discussion of previous section.
+ All the curves are perpendicular to the vertical axe at 
 \begin_inset Formula $N=\infty$
 \end_inset
 
@@ -3085,46 +3158,33 @@ key "Sun:2014dga"
 \begin_inset Formula $1/N$
 \end_inset
 
- order perturbation of energy levels is zero.
+ order expansion of energy levels vanishes.
  As 
 \begin_inset Formula $1/N$
 \end_inset
 
- increase, the solid curves turn to dotted or dash-dotted curves, which
- implies to the disappearance of physical states.
- If a physical state disappears at an integer value of 
-\begin_inset Formula $N$
+ increase, degeneracies are broken and the solid curves turn to dotted or
+ dash-dotted curves, which implies the disappearance of physical states.
+ If a physical state disappears at an integer value 
+\begin_inset Formula $N=n$
 \end_inset
 
-, it also disappears at all the integers less than 
-\begin_inset Formula $N$
+, it also disappears at 
+\begin_inset Formula $N=n-1,\, n-2$
 \end_inset
 
-.
- For example, the ground state of 
-\begin_inset Formula $M=5$
-\end_inset
+, and 
+\shape italic
+etc.
 
- disappears at 
-\begin_inset Formula $N=2,\,1$
-\end_inset
-
-; ground state of 
-\begin_inset Formula $M=7$
-\end_inset
-
- disappears at 
-\begin_inset Formula $N=3,2,1$
-\end_inset
-
-.
+\shape default
  It is interesting to note that the first disappearances of ground states
  occur at 
 \begin_inset Formula $N=\frac{M-1}{2}$
 \end_inset
 
 .
- Therefore, in order to have ground states surviving, 
+ It means, in order to have ground states surviving, 
 \begin_inset Formula $N$
 \end_inset
 
@@ -3133,41 +3193,33 @@ key "Sun:2014dga"
 \end_inset
 
  increase.
- At certain value of 
+ The eigenvalues drop dramatically at large 
 \begin_inset Formula $1/N$
 \end_inset
 
-, the energy levels begin to drop dramatically and the large 
-\begin_inset Formula $M$
+, which can be seen from the right part of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=7"
+
 \end_inset
 
- is, the earlier (larger 
-\begin_inset Formula $N$
-\end_inset
+ to 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=11"
 
-) the drop happens.
- For 
-\begin_inset Formula $M=7$
-\end_inset
-
-, it occurs around 
-\begin_inset Formula $N=2$
-\end_inset
-
-; for 
-\begin_inset Formula $M=9$
-\end_inset
-
-, it occurs around 
-\begin_inset Formula $N=3$
 \end_inset
 
 .
+ But it does not imply the energy levels of the Hamiltonian drop, since
+ all these eigenstates are actually all unphysical.
  
 \end_layout
 
 \begin_layout Standard
-For even number of 
+For even 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3180,28 +3232,50 @@ reference "figH=h0M=even"
 \end_inset
 
 .
- The analysis of the odd 
-\begin_inset Formula $M$
+ At 
+\begin_inset Formula $N=\infty$
 \end_inset
 
- cases also applies to the even 
-\begin_inset Formula $M$
+, the lowest eigenstates are degenerate for 
+\begin_inset Formula $M=4$
 \end_inset
 
- cases except that the ground states may be degenerate at large 
+ and 
+\begin_inset Formula $8$
+\end_inset
+
+ and nondegenerate for 
+\begin_inset Formula $M=6$
+\end_inset
+
+ and 10.
+ It is again consistent with our analytic analysis in previous section.
+ The lowest states also disappear when 
 \begin_inset Formula $N$
 \end_inset
 
- limit: the ground states of 
-\begin_inset Formula $M=4,8$
+ is small.
+ But unlike the odd 
+\begin_inset Formula $M$
 \end_inset
 
- are degenerate, and 
-\begin_inset Formula $M=6,10$
+ case, there is no simple formula to determine where the first disappearnace
+ occurs.
+ The reason of the difference is the ground energy of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-energy-levels"
+
 \end_inset
 
- are not.
- 
+ being excluded by the cyclic constraint 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-cyclic-constraint"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3355,7 +3429,7 @@ Top 5 energy levels of
 \end_layout
 
 \begin_layout Standard
-We can also plot the physical ground state as a function of 
+We now consider the physical ground energy as a function of 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3372,8 +3446,8 @@ reference "fig:physical-state-H0"
 \end_inset
 
 .
- The physical ground states have different trendency at different values
- of 
+ The physical ground states have different trend at different values of
+ 
 \begin_inset Formula $N$
 \end_inset
 
@@ -3398,26 +3472,24 @@ reference "fig:physical-state-H0"
 \begin_inset Formula $N\geq3$
 \end_inset
 
-, the trendency turn to be downwards.
+, it turns to be downwards.
  For large 
 \begin_inset Formula $N$
 \end_inset
 
-, the physical ground energy almost drops linearly with a slope close to
- 
+, the physical ground energy drops almost linearly with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ at rate 
 \begin_inset Formula $-\frac{8}{\pi}$
 \end_inset
 
-, which is consistent with the analytic predication of ground energy at
- large 
-\begin_inset Formula $N$
-\end_inset
-
- limit, as shown in Eq.
- (98) of 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Sun:2014dga"
+, as prediced by Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-E-min-odd"
 
 \end_inset
 
@@ -3466,7 +3538,7 @@ Change of physical ground states with respect to
 \end_inset
 
 .
- Only the ground energy at odd values of 
+ Only the ground energy at odd 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3489,20 +3561,20 @@ Change of physical ground states with respect to
 \end_layout
 
 \begin_layout Standard
-We also studies how the excitation changes with respect to 
-\begin_inset Formula $M$
-\end_inset
-
- for fixed 
-\begin_inset Formula $N$
-\end_inset
-
-, shown as Fig.
+Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:First-excitation-H0"
 
+\end_inset
+
+ shows how the excitation changes with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ for fixed 
+\begin_inset Formula $N$
 \end_inset
 
 .
@@ -3522,18 +3594,13 @@ reference "fig:First-excitation-H0"
 \begin_inset Formula $E_{1}-E_{0}$
 \end_inset
 
- is the excitation of first excited energy level.
+ is the gap between the first excited energy and lowest energy.
  For stringy behavior, the 
 \begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
 \end_inset
 
- should be a constant.
- While this is clearly not true for small 
-\begin_inset Formula $N$
-\end_inset
-
-, it is roughly remain unchanged for for large 
-\begin_inset Formula $N$
+ should be constant for large 
+\begin_inset Formula $M$
 \end_inset
 
 .
@@ -3541,9 +3608,26 @@ reference "fig:First-excitation-H0"
 \begin_inset Formula $M=11$
 \end_inset
 
-, we can still see the trendency from the graph.
- There is no inconsistency between the numerical calculation and the analytic
- prediction.
+, we can still see the trend that, for 
+\begin_inset Formula $N$
+\end_inset
+
+ large enough, 
+\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
+\end_inset
+
+ is almost a constant between 15 and 20.
+ As a reference, the analytic prediction of the gap at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+ is 
+\begin_inset Formula $\frac{16\pi}{3}$
+\end_inset
+
+.
+ That being said, there is no inconsistency between the numerical results
+ and stringy behavior.
  
 \end_layout
 
@@ -3603,7 +3687,7 @@ name "fig:First-excitation-H0"
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Variations of 
 \begin_inset Formula $H$
 \end_inset
@@ -4876,7 +4960,7 @@ The product of first excitation energy and bit number,
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Conclusion
 \end_layout
 
@@ -4884,7 +4968,7 @@ Conclusion
 TODO
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Acknowledgements
 \end_layout
 
