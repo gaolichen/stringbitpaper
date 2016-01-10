@@ -2185,8 +2185,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename plots/spec.pdf
-	width 100text%
-	height 37pheight%
+	width 100col%
 	BoundingBox 120bp 250bp 490bp 560bp
 	clip
 
