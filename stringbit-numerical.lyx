@@ -9315,10 +9315,14 @@ reference "eq:general hamiltonian"
 \color none
 \begin_inset Formula 
 \begin{eqnarray*}
-0 & = & c_{1}[(\tr\bar{a}^{2}ab+\tr\bar{a}^{2}ba)-(\tr\bar{a}\bar{b}a^{2}+\tr\bar{b}\bar{a}a^{2})*e^{-i\frac{\pi}{2}}\text{]}+c_{2}[(\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}\bar{b}b^{2})+(\tr\bar{b}^{2}ba-\tr\bar{b}^{2}ab)*e^{-i\frac{\pi}{2}}]\\
- & + & iz_{1}(\tr\bar{a}^{2}ba-\bar{\tr a}^{2}ab-\tr\bar{a}\bar{b}b^{2}-\tr\bar{b}\bar{a}b^{2})*e^{-i\frac{\pi}{2}}+-iz_{1}^{\dagger}(\tr\bar{b}\bar{a}a^{2}-\tr\bar{a}\bar{b}a^{2}+\tr\bar{b}^{2}ba+\tr\bar{b}^{2}ab)\\
- & + & c_{3}[(\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ba)+(\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ba)*e^{-i\frac{\pi}{2}}]+c_{4}[(-\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab)+(\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab)*e^{-i\frac{\pi}{2}}]\\
- & + & (z[(\tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba)+(\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba)*e^{-i\frac{\pi}{2}}]+z_{2}[(-\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab)+(\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab)*e^{-i\frac{\pi}{2}}]
+0 & = & c_{1}[(\tr\bar{a}^{2}ab+\tr\bar{a}^{2}ba)-(\tr\bar{a}\bar{b}a^{2}+\tr\bar{b}\bar{a}a^{2})e^{-i\frac{\pi}{2}}\text{]}\\
+ & + & c_{2}[(\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}\bar{b}b^{2})+(\tr\bar{b}^{2}ba-\tr\bar{b}^{2}ab)e^{-i\frac{\pi}{2}}]\\
+ & + & iz_{1}(\tr\bar{a}^{2}ba-\tr\bar{a}^{2}ab-\tr\bar{a}\bar{b}b^{2}-\tr\bar{b}\bar{a}b^{2})e^{-i\frac{\pi}{2}}\\
+ & + & -iz_{1}^{\dagger}(\tr\bar{b}\bar{a}a^{2}-\tr\bar{a}\bar{b}a^{2}+\tr\bar{b}^{2}ba+\tr\bar{b}^{2}ab)\\
+ & + & c_{3}[(\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ba)+(\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ba)e^{-i\frac{\pi}{2}}]\\
+ & + & c_{4}[(-\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab)+(\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab)e^{-i\frac{\pi}{2}}]\\
+ & + & z_{2}^{\dagger}[(\tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba)+(\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba)e^{-i\frac{\pi}{2}}]\\
+ & + & z_{2}[(-\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab)+(\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab)e^{-i\frac{\pi}{2}}]
 \end{eqnarray*}
 
 \end_inset
@@ -9327,7 +9331,7 @@ reference "eq:general hamiltonian"
 \end_layout
 
 \begin_layout Standard
-Therefore we get:
+which lead to:
 \end_layout
 
 \begin_layout Standard
@@ -9340,15 +9344,26 @@ Therefore we get:
 
 \begin_inset Formula 
 \begin{eqnarray*}
-c_{1}-z_{1}-c_{4}-z_{2} & = & 0\\
-c_{1}+z_{1}-c_{3}-z_{2}^{\dagger} & = & 0\\
--c_{2}+z_{1}^{\dagger}+c_{4}-z_{2} & = & 0\\
-c_{2}+z_{1}^{\dagger}-c_{3}+z_{2}^{\dagger} & = & 0
+(c_{1}-z_{1}-c_{4}-z_{2})\tr\bar{a}^{2}ab & = & 0\\
+(c_{1}+z_{1}-c_{3}-z_{2}^{\dagger})\tr\bar{a}^{2}ba & = & 0\\
+(-c_{2}+z_{1}^{\dagger}+c_{4}-z_{2})\tr\bar{b}^{2}ab & = & 0\\
+(c_{2}+z_{1}^{\dagger}-c_{3}+z_{2}^{\dagger})\tr\bar{b}^{2}ba & = & 0
 \end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Therefore we get 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Susy-constraint"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection*
