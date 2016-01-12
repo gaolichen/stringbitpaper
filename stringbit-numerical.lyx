@@ -4004,11 +4004,11 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/boson/nxi=2M=odd.pdf
+	filename plots/boson/nxi=1.5M=many.pdf
 	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
+	BoundingBox 54bp 200bp 550bp 710bp
 	clip
-	groupId SingleColumnPlot
+	groupId ThreeRwoFig
 
 \end_inset
 
@@ -4043,58 +4043,6 @@ Energy level of Hamiltonian
 \end_inset
 
 .
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/nxi=2M=even.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:nH-M=even"
-
-\end_inset
-
-Lowest five energy levels of Hamiltonian 
-\begin_inset Formula $H=-H_{0}+2\Delta H$
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -4156,59 +4104,6 @@ Physical ground energy of
 \end_inset
 
 .
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/nxi=manyexcitation.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:nH-excitation"
-
-\end_inset
-
-The product of first excitation energy and bit number, 
-\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
-\end_inset
-
-, as a function of bit number.
  
 \end_layout
 
