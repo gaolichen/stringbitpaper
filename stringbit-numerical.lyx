@@ -2743,7 +2743,12 @@ reference "eq:generalised-eigenvalue-problem"
 \end_layout
 
 \begin_layout Standard
-Fig.
+Let's first consider the case of odd 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2758,69 +2763,43 @@ reference "fig:H=H0M=11"
 
 \end_inset
 
- shows the energy levels as a function of 
+ show the lowest five eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ as a function of 
 \begin_inset Formula $1/N$
 \end_inset
 
- for fixed 
+ for odd 
 \begin_inset Formula $M$
 \end_inset
 
  from 3 to 11.
- Five energy levels are plotted for 
-\begin_inset Formula $M=3$
-\end_inset
-
- and lowest eight energy levels are plotted for others.
- The energy levels are calculated based on Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:eigenvalue-problem"
-
-\end_inset
-
-, so there exist unphysical states when 
-\begin_inset Formula $N$
-\end_inset
-
- is small.
- To label energy states and distinguish unphysical states from physical
- states, we use different colors for different energy states and different
- line styles for different types of states.
- Solid, dotted, and dash-dotted curves correspond to positive, negative,
- and zero norm energy states respectively.
- Since a zero norm state associates with two complex energy levels that
- conjugate to each other, the dash-dotted curves represent only the real
- parts of the energy levels and always starts and ends at the merging point
- of two curves.
- Note a dotted line cannot pass across an integral value of 
-\begin_inset Formula $N$
-\end_inset
-
- as the norm of states at integral values of 
-\begin_inset Formula $N$
-\end_inset
-
- are always non-negative.
+ We use different line styles for different norm types: solid, dotted, and
+ dash-dotted curves correspond to positive, negative, and zero norm eigenstates
+ respectively.
+ Since a zero norm state associates with two complex eigenvalues that conjugate
+ to each other, the dash-dotted curves represent only the real part of eigenvalu
+es.
  For higher 
 \begin_inset Formula $M$
 \end_inset
 
- and 
+, the eigenvalues decline dramatically in higher 
 \begin_inset Formula $1/N$
 \end_inset
 
-, the energy levels decline dramatically as 
+, which would squeeze the lower 
 \begin_inset Formula $1/N$
 \end_inset
 
- increase.
- To show more details of the curves in lower 
+ part into small vertical size.
+ To show more details in lower 
 \begin_inset Formula $1/N$
 \end_inset
 
-, we split the plots into lower 
+, we split some plots into lower 
 \begin_inset Formula $1/N$
 \end_inset
 
@@ -2828,10 +2807,9 @@ reference "eq:eigenvalue-problem"
 \begin_inset Formula $1/N$
 \end_inset
 
- part.
- Between these two parts, curves of the same color represent the same energy
- states.
- See 
+ part, between which curves of the same color represent the same eigenstate.
+ See Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:H=H0M=7"
@@ -2845,7 +2823,6 @@ reference "fig:H=H0M=7"
 \begin_layout Standard
 \align center
 \begin_inset Float figure
-placement h
 wide false
 sideways false
 status open
@@ -2893,6 +2870,81 @@ Lowest 5 energy states of the 3-bit system with Hamiltonian
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+From these figures, we can see several features of the eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ At 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, the ground states are nondegenerate, while the first excited states are
+ nondegenerate for 
+\begin_inset Formula $M$
+\end_inset
+
+ divisible by 3 and degenerate otherwise.
+ This is consistent with the analytic discussion of previous section.
+ As 
+\begin_inset Formula $1/N$
+\end_inset
+
+ increase, degeneracies are broken and the solid curves turn to dotted or
+ dash-dotted curves, which implies the disappearance of physical states.
+ If a physical state disappears at an integer value 
+\begin_inset Formula $N=n$
+\end_inset
+
+, it also disappears at 
+\begin_inset Formula $N=n-1,\, n-2$
+\end_inset
+
+, and 
+\shape italic
+etc.
+
+\shape default
+ The first disappearances of ground states occur at 
+\begin_inset Formula $N=\left(M-1\right)/2$
+\end_inset
+
+.
+ It follws that, for ground states surviving, 
+\begin_inset Formula $N$
+\end_inset
+
+ must increase linearly as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase.
+ The eigenvalues drop dramatically at large 
+\begin_inset Formula $1/N$
+\end_inset
+
+, which can be seen from the right part of Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=7"
+
+\end_inset
+
+ to 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:H=H0M=11"
+
+\end_inset
+
+.
+ But it does not imply the energy levels of the Hamiltonian drop, since
+ all these eigenstates are actually all unphysical.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3132,92 +3184,6 @@ Lowest 5 eigenstates of
 \end_layout
 
 \begin_layout Standard
-From these figures, we can see several features of the eigenstates of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
-.
- At 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, the ground states are nondegenerate, while the first excited states are
- nondegenerate for 
-\begin_inset Formula $M$
-\end_inset
-
- divisible by 3 and degenerate otherwise.
- This is consistent with the analytic discussion of previous section.
- All the curves are perpendicular to the vertical axe at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-.
- This implies that 
-\begin_inset Formula $1/N$
-\end_inset
-
- order expansion of energy levels vanishes.
- As 
-\begin_inset Formula $1/N$
-\end_inset
-
- increase, degeneracies are broken and the solid curves turn to dotted or
- dash-dotted curves, which implies the disappearance of physical states.
- If a physical state disappears at an integer value 
-\begin_inset Formula $N=n$
-\end_inset
-
-, it also disappears at 
-\begin_inset Formula $N=n-1,\, n-2$
-\end_inset
-
-, and 
-\shape italic
-etc.
-
-\shape default
- It is interesting to note that the first disappearances of ground states
- occur at 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-.
- It means, in order to have ground states surviving, 
-\begin_inset Formula $N$
-\end_inset
-
- must increase linearly as 
-\begin_inset Formula $M$
-\end_inset
-
- increase.
- The eigenvalues drop dramatically at large 
-\begin_inset Formula $1/N$
-\end_inset
-
-, which can be seen from the right part of Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:H=H0M=7"
-
-\end_inset
-
- to 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:H=H0M=11"
-
-\end_inset
-
-.
- But it does not imply the energy levels of the Hamiltonian drop, since
- all these eigenstates are actually all unphysical.
- 
-\end_layout
-
-\begin_layout Standard
 For even 
 \begin_inset Formula $M$
 \end_inset
@@ -3314,104 +3280,6 @@ Lowest 5 energy states Hamiltonia
 
  with 
 \begin_inset Formula $M=4,6,8,10$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Top-5-energy-H=H_0"
-
-\end_inset
-
- shows the highest 5 energy levels of 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
- for 
-\begin_inset Formula $M$
-\end_inset
-
- from 4 to 7.
- Unlike the low energy states, the highest energy states do not disappear
- even when 
-\begin_inset Formula $N$
-\end_inset
-
- is very small.
- It seems to suggest that, the groud states of Hamiltonian 
-\begin_inset Formula $-H_{0}$
-\end_inset
-
- could survive at lower 
-\begin_inset Formula $N$
-\end_inset
-
-.
- But as we will show in the next subsection, this is not true.
- The stablization term 
-\begin_inset Formula $\Delta H$
-\end_inset
-
- will cause the ground state disappear at large 
-\begin_inset Formula $N$
-\end_inset
-
- and the highest energy lelvel survive at lower 
-\begin_inset Formula $N$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=0M=4567top.pdf
-	width 100col%
-	BoundingBox 60bp 200bp 547bp 600bp
-	clip
-	groupId SinglePagePlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Top-5-energy-H=H_0"
-
-\end_inset
-
-Top 5 energy levels of 
-\begin_inset Formula $H=H_{0}$
-\end_inset
-
- and 
-\begin_inset Formula $M=4,5,6,7$
 \end_inset
 
 
@@ -3713,7 +3581,7 @@ reference "fig:xi=manyM=3"
 
 \end_inset
 
- plots the eigenvalues of 
+ shows the eigenvalues of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
@@ -3764,7 +3632,8 @@ reference "fig:xi=manyM=3"
 \end_inset
 
 .
- The ground state moves in the opposite direction: when 
+ The disappearnce point of ground state moves in the opposite direction:
+ when 
 \begin_inset Formula $-1\leq\xi\leq-0.1$
 \end_inset
 
@@ -3786,6 +3655,32 @@ reference "fig:xi=manyM=3"
 
 , it's at 
 \begin_inset Formula $N=2$
+\end_inset
+
+.
+ The largest 
+\begin_inset Formula $N$
+\end_inset
+
+ the ground state dissppears is 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+, such as the case of 
+\begin_inset Formula $H=H_{0}+2\Delta H$
+\end_inset
+
+.
+ Because of the stabalization constraint 
+\begin_inset Formula $\xi\geq-1$
+\end_inset
+
+, the lowest 
+\begin_inset Formula $N$
+\end_inset
+
+ the ground states disappears first time is 
+\begin_inset Formula $N=\left(M-1\right)/2$
 \end_inset
 
 .
@@ -3881,200 +3776,15 @@ Eigenvalues of
 \end_layout
 
 \begin_layout Standard
-By increasing 
-\begin_inset Formula $\xi$
-\end_inset
-
-, we can move the point at which of ground state disappear to 
-\begin_inset Formula $N=M-1$
-\end_inset
-
-, the earliest point a state can disappear.
- Fig.
+Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:xi=2M=odd"
+reference "fig:EvsM-N>=3"
 
 \end_inset
 
- show that for 
-\begin_inset Formula $H=H_{0}+2\Delta H$
-\end_inset
-
- and 
-\begin_inset Formula $M=3,\,5,\,7,\,9$
-\end_inset
-
-, the disappearance points of the ground states move to 
-\begin_inset Formula $2,\,4,\,6,\,8$
-\end_inset
-
- respectively.
- But we cannot move the disappearance point arbitary later because of the
- stabalization constraint 
-\begin_inset Formula $\xi>-1$
-\end_inset
-
-.
- Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:xi=-0.9M=odd"
-
-\end_inset
-
- shows, for Hamiltonian 
-\begin_inset Formula $H=H_{0}-0.9\Delta H$
-\end_inset
-
-, the disappearance point of ground states are at 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-.
- It suggest that the latest disappearance point of ground states is 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=2M=odd.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:xi=2M=odd"
-
-\end_inset
-
-Energy level of Hamiltonian 
-\begin_inset Formula $H=H_{0}+2\Delta H$
-\end_inset
-
-, 
-\begin_inset Formula $M=3,\,5,\,7,\,9$
-\end_inset
-
-.
- For each 
-\begin_inset Formula $M$
-\end_inset
-
-, the ground states disappear at 
-\begin_inset Formula $N=M-1$
-\end_inset
-
-, which is earliest point a state can disappear.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=n.9M=odd.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:xi=-0.9M=odd"
-
-\end_inset
-
-Energy level of Hamiltonian 
-\begin_inset Formula $H=H_{0}-0.9\Delta H$
-\end_inset
-
-, 
-\begin_inset Formula $M=3,\,5,\,7,\,9$
-\end_inset
-
-.
- For each 
-\begin_inset Formula $M$
-\end_inset
-
-, the ground state disappear at 
-\begin_inset Formula $N=\frac{M-1}{2}$
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-To study how 
-\begin_inset Formula $\xi$
-\end_inset
-
- impacts the physical ground energies, we plot the change of physical ground
- energy with respect to 
+ shows the change of physical ground energy with respect to 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4083,51 +3793,12 @@ To study how
 \end_inset
 
 .
- See Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:EvsM-N>=3"
-
-\end_inset
-
- for 
-\begin_inset Formula $N=3$
-\end_inset
-
-, 
-\begin_inset Formula $5$
-\end_inset
-
-, 
-\begin_inset Formula $10$
-\end_inset
-
-, 
-\begin_inset Formula $1000$
-\end_inset
-
- and Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:EvsM-N<=2"
-
-\end_inset
-
- for 
-\begin_inset Formula $N=1,\,2$
-\end_inset
-
-.
- In these two figures, we only evaluate the physical ground energy at odd
- 
+ Note that only ground energies at odd 
 \begin_inset Formula $M$
 \end_inset
 
-.
- From the figures, we see that the ground states have very different trendency
- for 
+ are evaluated.
+ The ground energies have different trend for 
 \begin_inset Formula $\xi<-1$
 \end_inset
 
@@ -4139,84 +3810,41 @@ reference "fig:EvsM-N<=2"
 \begin_inset Formula $\xi>-1$
 \end_inset
 
-.
- When 
+: when 
 \begin_inset Formula $\xi=1$
 \end_inset
 
-, the physical ground states change almost linearly with negative slope
- for all 
+, the ground energies decrease almost linearly for all 
+\begin_inset Formula $N$
+\end_inset
+
+; when 
+\begin_inset Formula $\xi<-1$
+\end_inset
+
+, the ground energies decline faster than linearity, which implies the system
+ is not stable; when 
+\begin_inset Formula $\xi>-1$
+\end_inset
+
+, the ground energy first declines and then increase for small 
+\begin_inset Formula $N$
+\end_inset
+
+, and it declines linearly for large 
 \begin_inset Formula $N$
 \end_inset
 
 .
- When 
-\begin_inset Formula $\xi<-1$
-\end_inset
-
-, the physical ground states declines faster than linearity as 
-\begin_inset Formula $M$
-\end_inset
-
- increase.
- Hence, the Hamiltonian of 
-\begin_inset Formula $\xi<-1$
-\end_inset
-
- is not a stable system.
- When 
-\begin_inset Formula $\xi>-1$
-\end_inset
-
-, the physical ground states declines linearly when 
-\begin_inset Formula $M$
-\end_inset
-
- is small, and declines slowly or turn to increasing when 
-\begin_inset Formula $M$
-\end_inset
-
- is relatively large.
- It follows that for a given 
-\begin_inset Formula $N$
+ It follows that the system has stringy behavior if 
+\begin_inset Formula $\xi\geq-1$
 \end_inset
 
  and 
-\begin_inset Formula $\xi>-1$
-\end_inset
-
-, there exist a critical value of 
-\begin_inset Formula $M$
-\end_inset
-
- such that the physical ground states under such 
-\begin_inset Formula $M$
-\end_inset
-
- is the lowest one of all energy states of all values of 
-\begin_inset Formula $M$
-\end_inset
-
-.
- For a fixed value of 
 \begin_inset Formula $N$
 \end_inset
 
-, such critical values of 
-\begin_inset Formula $M$
-\end_inset
-
- decrease as 
-\begin_inset Formula $\xi$
-\end_inset
-
- decrease.
- This implies for large value of 
-\begin_inset Formula $\xi$
-\end_inset
-
-, lower bit system is more stable.
- 
+ is not too small.
 \end_layout
 
 \begin_layout Standard
@@ -4251,170 +3879,8 @@ Change of physical ground energy with respect to
 \begin_inset Formula $M$
 \end_inset
 
- for fixed 
+ at fixed 
 \begin_inset Formula $N$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/physical-EvsM-N=1_2.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:EvsM-N<=2"
-
-\end_inset
-
-Change of physical ground energy with respect to 
-\begin_inset Formula $M$
-\end_inset
-
- for fixed 
-\begin_inset Formula $N$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We also plot 
-\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
-\end_inset
-
- as a function of 
-\begin_inset Formula $M$
-\end_inset
-
-, shown as Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:excitation-xi=many"
-
-\end_inset
-
-.
- For all values of 
-\begin_inset Formula $\xi$
-\end_inset
-
-, when 
-\begin_inset Formula $N$
-\end_inset
-
- is large enough, the curves all roughly stay unchanged.
- There is one difference between 
-\begin_inset Formula $\xi<-1$
-\end_inset
-
- and 
-\begin_inset Formula $\xi\geq-1$
-\end_inset
-
-.
- For the former case, curves of small 
-\begin_inset Formula $N$
-\end_inset
-
- goes upward steadily, while for later case, the curves are zig-zagged.
- 
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/xi=manyexcitation.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:excitation-xi=many"
-
-\end_inset
-
-
-\begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
-\end_inset
-
- as a function of 
-\begin_inset Formula $M$
-\end_inset
-
- for 
-\begin_inset Formula $\xi=-2,\,-1,\,1,\,2$
 \end_inset
 
 
@@ -4629,124 +4095,6 @@ Lowest five energy levels of Hamiltonian
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/nxi=2physical.pdf
-	width 100col%
-	BoundingBox 50bp 400bp 560bp 600bp
-	clip
-	groupId OneColumnHalfFigure
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:nH-physical-ground"
-
-\end_inset
-
-Physical ground energy of 
-\begin_inset Formula $H=-H_{0}+2\Delta H$
-\end_inset
-
- as a function of 
-\begin_inset Formula $M$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename plots/boson/nphysical-EvsM-N=1_2.pdf
-	width 100col%
-	BoundingBox 54bp 200bp 550bp 610bp
-	clip
-	groupId SingleColumnPlot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:nH-physical-ground-N=12"
-
-\end_inset
-
-Physical ground energy of 
-\begin_inset Formula $-H_{0}+\xi\Delta H$
-\end_inset
-
- at 
-\begin_inset Formula $\xi=0.5,\,1,\,1.5,\,3$
-\end_inset
-
- and 
-\begin_inset Formula $N=1,\,2$
-\end_inset
-
-.
- 
 \end_layout
 
 \end_inset
