@@ -9505,11 +9505,38 @@ reference "eq:App-H0-Q-Com"
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Color Operator
+\begin_inset CommandInset label
+LatexCommand label
+name "app:HPrime-Equals-DeltaH"
+
+\end_inset
+
+Proof of 
+\begin_inset Formula $H^{\prime}-\Delta H=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proof of the equation 
+\begin_inset Formula $H^{\prime}-\Delta H=0$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9596,35 +9623,6 @@ from where we can get
 \Delta H\ket{\mathrm{singlet}}=H'\ket{\mathrm{singlet}}
 \]
 
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-\begin_inset CommandInset label
-LatexCommand label
-name "app:HPrime-Equals-DeltaH"
-
-\end_inset
-
-Proof of 
-\begin_inset Formula $H^{\prime}-\Delta H=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Proof of the equation 
-\begin_inset Formula $H^{\prime}-\Delta H=0$
 \end_inset
 
 
