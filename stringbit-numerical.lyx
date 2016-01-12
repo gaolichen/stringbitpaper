@@ -8748,7 +8748,16 @@ reference "eq:App-H0-Q-Com"
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -8768,6 +8777,95 @@ Proof of
 \begin_layout Standard
 Proof of the equation 
 \begin_inset Formula $H^{\prime}-\Delta H=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we define the color operator
+\begin_inset Formula 
+\[
+G_{\alpha}^{\beta}=(\bar{a}a)_{\alpha}^{\beta}+(\bar{b}b)_{\alpha}^{\beta}-\normord{(a\bar{a})_{\alpha}^{\beta}}-\normord{(b\bar{b})_{\alpha}^{\beta}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+it's commutation with any free bit has the property that would permutates
+ the color indices.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\bar{a}_{\alpha}^{\beta},\, G_{\gamma}^{\delta}\right] & = & \bar{a}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{a}_{\alpha}^{\delta}\\
+\left[\bar{b}_{\alpha}^{\beta},\, G_{\gamma}^{\delta}\right] & = & \bar{b}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{b}_{\alpha}^{\delta}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To any singlets, 
+\begin_inset Formula $G_{\alpha}^{\beta}\ket{\mathrm{singlet}}=0$
+\end_inset
+
+, then straight forwardly 
+\begin_inset Formula $\tr(G^{2})\ket{\mathrm{singlet}}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr(G^{2}) & = & 2\tr(\bar{a}a\bar{a}a)+\tr(\bar{b}b\bar{b}b)+\tr(\normord{b\bar{b}}\normord{b\bar{b}})+2\tr(\bar{a}a\bar{b}b)\\
+ & - & 2\tr(\bar{a}a\normord{a\bar{a}})-2\tr(\bar{a}a\normord{b\bar{b}})\\
+ & - & 2\tr(\bar{b}b\normord{a\bar{a}})-2\tr(\bar{b}b\normord{b\bar{b}})\\
+ & + & 2\tr(\normord{a\bar{a}}\normord{b\bar{b}})
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in which
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+2\tr(\normord{a\bar{a}}\normord{b\bar{b}}) & = & -2\tr(\bar{a}b\bar{b}a)+2N\tr(\bar{a}a)\\
+\tr(\bar{b}b\bar{b}b)++\tr(\normord{b\bar{b}}\normord{b\bar{b}}) & = & 2N\tr(\bar{b}b)\\
+2\tr(\bar{a}a\normord{a\bar{a}}) & = & 2\tr(\bar{a}^{2}a^{2})+\tr\bar{a}\tr a\\
+2\tr(\bar{b}b\normord{b\bar{b}}) & = & 2\tr(\bar{b}^{2}b^{2})+\tr\bar{b}\tr b
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+from where we can get
+\begin_inset Formula 
+\[
+\Delta H\ket{\mathrm{singlet}}=H'\ket{\mathrm{singlet}}
+\]
+
 \end_inset
 
 
