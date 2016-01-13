@@ -3905,89 +3905,66 @@ For
 \begin_inset Formula $H=-H_{0}+\xi\Delta H$
 \end_inset
 
-, the parameter 
-\begin_inset Formula $\xi$
+, in large 
+\begin_inset Formula $N$
 \end_inset
 
- plays the same role.
- A bigger 
-\begin_inset Formula $\xi$
+ limit, the maximum value of 
+\begin_inset Formula $E\left(\eta_{i}\right)$
 \end_inset
 
- corresponds to earlier disappearance of ground states.
- Fig.
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:LargeN-energy-levels"
+
+\end_inset
+
+ is allowed for both odd and even 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ Consequently, the ground eigenstate is not degenrate for all 
+\begin_inset Formula $M$
+\end_inset
+
+, as shown in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:nxi=-2M=odd"
+reference "fig:nxi=1.5M=many"
 
 \end_inset
 
- shows that the first disappearing ground states locate at 
+ for 
+\begin_inset Formula $H=-H_{0}+1.5\Delta H$
+\end_inset
+
+.
+ Moreover, the first disappearing points of ground states occur at 
 \begin_inset Formula $N=M-1$
 \end_inset
 
  for 
-\begin_inset Formula $\xi=2$
-\end_inset
-
- and odd 
-\begin_inset Formula $M$
-\end_inset
-
- between 3 and 9.
- The latest disappearance point of ground states is when 
-\begin_inset Formula $\xi$
-\end_inset
-
- close to 
-\begin_inset Formula $1$
-\end_inset
-
-, the minimum value of 
-\begin_inset Formula $\xi$
-\end_inset
-
- determined by stabalization condition.
- Unlike the 
-\begin_inset Formula $H_{0}+\xi\Delta H$
-\end_inset
-
- case, the ground energy of 
-\begin_inset Formula $-H_{0}+\xi\Delta H$
-\end_inset
-
- at even 
-\begin_inset Formula $M$
-\end_inset
-
- is not degenerate at large 
-\begin_inset Formula $N$
-\end_inset
-
- limit, as shown in Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:nH-M=even"
-
+\begin_inset Formula $\xi=1.5$
 \end_inset
 
 .
- The change of physical ground energy of 
-\begin_inset Formula $-H_{0}+2\Delta H$
-\end_inset
+ 
+\end_layout
 
- at fixed 
-\begin_inset Formula $N$
-\end_inset
-
- are plotted as Fig.
+\begin_layout Standard
+Fig.
  
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:nH-physical-ground"
+LatexCommand eqref
+reference "fig:nH-Physical-ground-energy"
 
+\end_inset
+
+ shows the change of physical ground energy with respect to 
+\begin_inset Formula $\xi$
 \end_inset
 
 .
@@ -4021,16 +3998,16 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:nxi=-2M=odd"
+name "fig:nxi=1.5M=many"
 
 \end_inset
 
-Energy level of Hamiltonian 
-\begin_inset Formula $H=-H_{0}+2\Delta H$
+Eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
 \end_inset
 
-, 
-\begin_inset Formula $M=3,\,5,\,7,\,9$
+ for 
+\begin_inset Formula $H=-H_{0}+1.5\Delta H$
 \end_inset
 
 .
