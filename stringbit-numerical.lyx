@@ -4751,11 +4751,67 @@ Physical ground energy of
 \end_layout
 
 \begin_layout Section
-Conclusion
+Summary and Conclusion
 \end_layout
 
 \begin_layout Standard
-TODO
+In this paper we have studied the string bit model with 
+\begin_inset Formula $s=1$
+\end_inset
+
+, 
+\begin_inset Formula $d=0$
+\end_inset
+
+.
+ We studied possible forms of supersymmetric Hamiltonian of the model.
+ The general supersymmetric Hamiltonian has three independent parameters
+ while the one competible with Green-Schwarz Hamiltonian has only one.
+ We analyzed the excitation energy of the model.
+ One finds the supersymmetry constraint is crucial to the model on Hamiltonin
+ is sufficient to produce a vanishing excitation energy, and hence, stringy
+ behavior.
+ 
+\end_layout
+
+\begin_layout Standard
+We performed further analytic and numerical study on a Hamiltonian 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ by adding a supersymmetric term 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+.
+ The parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+ only impact the physics at finite 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ This shows this model have at least unfixed parameter.
+ 
+\end_layout
+
+\begin_layout Standard
+The supersymmetry is a requirement of this model.
+ In genral, non-supersymmetric Hamiltonian leads to vanishing excitation
+ energy and nonstringy behavior.
+ 
+\end_layout
+
+\begin_layout Standard
+The numerical calculation is performed up to 
+\begin_inset Formula $M=11$
+\end_inset
+
+.
+ The bottleneck is the calculation of norm matrices.
+ 
 \end_layout
 
 \begin_layout Section
