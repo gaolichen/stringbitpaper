@@ -9448,7 +9448,7 @@ set a
  bits open chain 
 \begin_inset Formula 
 \[
-X_{\alpha_{1}}^{\alpha_{M+1}}=(\bar{x}_{1}\bar{x}_{2}\cdots\bar{x}_{M})_{\alpha_{1}}^{\alpha_{M+1}}\qquad\bar{x}=\bar{a}\,\mathrm{or}\,\bar{b}
+X_{\alpha_{1}}^{\alpha_{M+1}}=\left(\bar{x}_{1}\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha_{1}}^{\alpha_{M+1}}\qquad\bar{x}=\bar{a}\,\mathrm{or}\,\bar{b}
 \]
 
 \end_inset
@@ -9468,7 +9468,7 @@ Since they have the same structer wether
 , so when it work on the first bit 
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}X(1)=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-(\bar{x}_{1})_{\alpha_{1}}^{\beta}(\bar{x}_{2}\cdots\bar{x}_{M})_{\alpha}^{\alpha_{M+1}}
+G_{\alpha}^{\beta}X(1)=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-\left(\bar{x}_{1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
 \]
 
 \end_inset
@@ -9480,7 +9480,7 @@ G_{\alpha}^{\beta}X(1)=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-(\ba
 Then the second bit 
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}X(2)=(\bar{x}_{1})_{\alpha_{1}}^{\beta}\bar{(x}_{2}\cdots\bar{x}_{M})_{\alpha}^{\alpha_{M+1}}-(\bar{x}_{1}\bar{x}_{2})_{\alpha_{1}}^{\beta}(\bar{x}_{2}\cdots\bar{x}_{M})_{\alpha}^{\alpha_{M+1}}
+G_{\alpha}^{\beta}X(2)=(\bar{x}_{1})_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-\left(\bar{x}_{1}\bar{x}_{2}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
 \]
 
 \end_inset
@@ -9494,10 +9494,10 @@ We notice that the indices all have the same order and the first term of
 \end_layout
 
 \begin_layout Standard
-The result of the last bit:
+Until the last bit:
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}X(M)=(\bar{x}_{1}\cdots\bar{x}_{M-1})_{\alpha_{1}}^{\beta}(\bar{x}_{M})_{\alpha}^{\alpha_{M+1}}-(X)_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
+G_{\alpha}^{\beta}X(M)=\left(\bar{x}_{1}\cdots\bar{x}_{M-1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-X{}_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
 \]
 
 \end_inset
@@ -9513,7 +9513,7 @@ Add up them together, all of the middle term will cancel, the remaining
 \begin_layout Standard
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-(X)_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
+G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-X{}_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
 \]
 
 \end_inset
@@ -9547,11 +9547,46 @@ Now we trace over
 \end_inset
 
  .
- This can represent any singlets.
+ 
 \end_layout
 
 \begin_layout Standard
-Then straightforwardly where 
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $X$
+\end_inset
+
+ can represent any singlets, wo we've proven that 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $G_{\alpha}^{\beta}\ket{\mathrm{singlet}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then straightforwardly we have 
 \begin_inset Formula $\tr(G^{2})\ket{\mathrm{singlet}}=0$
 \end_inset
 
@@ -9605,6 +9640,14 @@ in which
 
 \begin_layout Standard
 from where we can get
+\begin_inset Formula 
+\[
+\tr\left(\bar{a}a\bar{a}a+\bar{a}a\bar{b}b-\bar{a}b\bar{b}a\right)-\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tr\left(\bar{a}a+\bar{b}b\right)+\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right)\right)\ket{\mathrm{singlet}}=0
+\]
+
+\end_inset
+
+which is
 \begin_inset Formula 
 \[
 \Delta H\ket{\mathrm{singlet}}=H'\ket{\mathrm{singlet}}
