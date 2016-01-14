@@ -4764,48 +4764,67 @@ In this paper we have studied the string bit model with
 \end_inset
 
 .
- We studied possible forms of supersymmetric Hamiltonian of the model.
- The general supersymmetric Hamiltonian has three independent parameters
- while the one competible with Green-Schwarz Hamiltonian has only one.
- We analyzed the excitation energy of the model.
- One finds the supersymmetry constraint is crucial to the model on Hamiltonin
- is sufficient to produce a vanishing excitation energy, and hence, stringy
- behavior.
+ We studied possible forms of supersymmetric Hamiltonian and their excitation
+ energies at large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit.
+ We also performed numerical study of energy levels at finite 
+\begin_inset Formula $N$
+\end_inset
+
+ for the Hamltonians of the form 
+\begin_inset Formula $\pm H_{0}+\xi\Delta H$
+\end_inset
+
+, where 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ is the superstring Hamiltonian compatible with Green-Schwarz and 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ vanishes at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-We performed further analytic and numerical study on a Hamiltonian 
-\begin_inset Formula $H_{0}$
+We showed that the supersymmetry plays an crucial role in the model.
+ The general Hamiltonian is chose to be a linear combination of 8 single
+ trace operators, which contain two consective creation operators followed
+ two annihilation operators.
+ By supersymmetry constraint, the number of parameter in the Hamiltonian
+ is reduced to three.
+ Another interesting effect about supersymmetry is that, after imposing
+ supersymmetry constraint to the Hamiltonian, the excitation energy is of
+ order 
+\begin_inset Formula $M^{-1}$
 \end_inset
 
- by adding a supersymmetric term 
-\begin_inset Formula $\Delta H$
+, which implies the energy spectrum is continuous when 
+\begin_inset Formula $M$
 \end_inset
 
-.
- The parameter 
-\begin_inset Formula $\xi$
-\end_inset
+ is large.
+\end_layout
 
- only impact the physics at finite 
+\begin_layout Standard
+The superstring Hamiltonian also has stringy behavior in finite 
 \begin_inset Formula $N$
 \end_inset
 
 .
- This shows this model have at least unfixed parameter.
  
 \end_layout
 
 \begin_layout Standard
-The supersymmetry is a requirement of this model.
- In genral, non-supersymmetric Hamiltonian leads to vanishing excitation
- energy and nonstringy behavior.
- 
-\end_layout
-
-\begin_layout Standard
-The numerical calculation is performed up to 
+The numerical computation is performed up to 
 \begin_inset Formula $M=11$
 \end_inset
 
