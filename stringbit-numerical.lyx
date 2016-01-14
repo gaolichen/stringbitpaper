@@ -4774,40 +4774,40 @@ In this paper we have studied the string bit model with
 \begin_inset Formula $N$
 \end_inset
 
- for the Hamltonians of the form 
+ for Hamltonians of the form 
 \begin_inset Formula $\pm H_{0}+\xi\Delta H$
 \end_inset
 
-, where 
-\begin_inset Formula $H_{0}$
-\end_inset
-
- is the superstring Hamiltonian compatible with Green-Schwarz and 
-\begin_inset Formula $\Delta H$
-\end_inset
-
- vanishes at 
+, where, at 
 \begin_inset Formula $N=\infty$
 \end_inset
 
-.
+, 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ vanishes and 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ produces the Green-Schwarz Hamiltonian.
  
 \end_layout
 
 \begin_layout Standard
 We showed that the supersymmetry plays an crucial role in the model.
- The general Hamiltonian is chose to be a linear combination of 8 single
+ The general Hamiltonian is chosen to be a linear combination of 8 single
  trace operators, which contain two consective creation operators followed
  two annihilation operators.
- By supersymmetry constraint, the number of parameter in the Hamiltonian
- is reduced to three.
+ With supersymmetry constraint, we reduce the the number of parameter in
+ the Hamiltonian to three.
  Another interesting effect about supersymmetry is that, after imposing
- supersymmetry constraint to the Hamiltonian, the excitation energy is of
- order 
+ supersymmetry constraint to the Hamiltonian, the excitation energy becomes
+ of order 
 \begin_inset Formula $M^{-1}$
 \end_inset
 
-, which implies the energy spectrum is continuous when 
+, which implies the energy spectrum of the model is continuous when 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4815,11 +4815,41 @@ We showed that the supersymmetry plays an crucial role in the model.
 \end_layout
 
 \begin_layout Standard
-The superstring Hamiltonian also has stringy behavior in finite 
+At finite 
 \begin_inset Formula $N$
 \end_inset
 
+, the superstring Hamiltonian, 
+\begin_inset Formula $\pm H_{0}+\xi\Delta H$
+\end_inset
+
+ with 
+\begin_inset Formula $\xi\geq-1$
+\end_inset
+
+, also has stringy behavior.
+ For 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+ at fixed 
+\begin_inset Formula $N$
+\end_inset
+
+, one finds the ground energy almost declines linearly with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ and the excitation energy is proportional to 
+\begin_inset Formula $M^{-1}$
+\end_inset
+
 .
+ While we do not have data for 
+\begin_inset Formula $M>11$
+\end_inset
+
+, the trend is still obvious.
  
 \end_layout
 
@@ -4830,7 +4860,42 @@ The numerical computation is performed up to
 
 .
  The bottleneck is the calculation of norm matrices.
- 
+ Our algorithm has 
+\begin_inset Formula $\mathcal{O}\left(M!\right)$
+\end_inset
+
+ time complexity for computing each entry of the matrix.
+ It needs significant improvement for numerical computation of higher 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ This is one of the issues we need to address in future research.
+\end_layout
+
+\begin_layout Standard
+We can also extend our work in other directions.
+ Our strategy can be applied to the model with 
+\begin_inset Formula $s>1,d=0$
+\end_inset
+
+ or 
+\begin_inset Formula $d>0$
+\end_inset
+
+ cases.
+ We can also analytically calculate 
+\begin_inset Formula $1/N$
+\end_inset
+
+ expansion of the model, in which some progress has been made by 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Thorn:2015wli"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
