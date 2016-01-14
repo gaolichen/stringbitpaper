@@ -2939,7 +2939,7 @@ reference "fig:H=H0M=11"
 
 .
  But it does not imply the energy levels of the Hamiltonian drop, since
- all these eigenstates are actually all unphysical.
+ all these eigenstates are actually unphysical.
  
 \end_layout
 
@@ -4107,12 +4107,12 @@ In this paper we have studied the string bit model with
 \end_layout
 
 \begin_layout Standard
-We showed that the supersymmetry plays an crucial role in the model.
+We showed that the supersymmetry plays a crucial role in the model.
  The general Hamiltonian is chosen to be a linear combination of 8 single
  trace operators, which contain two consective creation operators followed
  two annihilation operators.
- With supersymmetry constraint, we reduce the the number of parameter in
- the Hamiltonian to three.
+ With supersymmetry constraint, we reduce the number of parameter in the
+ Hamiltonian to three.
  Another interesting effect about supersymmetry is that, after imposing
  supersymmetry constraint to the Hamiltonian, the excitation energy becomes
  of order 
@@ -4161,7 +4161,7 @@ At finite
 \begin_inset Formula $M>11$
 \end_inset
 
-, the trend is still obvious.
+, the trend is still evident.
  
 \end_layout
 
