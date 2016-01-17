@@ -123,7 +123,36 @@ Department of Physics, University of Florida, Gainesville, FL 32611
 \end_layout
 
 \begin_layout Abstract
-This is the abstract.
+String bit is an idea to formulate string as a discrete chain of point-like
+ string bits, each of which have 
+\begin_inset Formula $s$
+\end_inset
+
+ fermionic degree of freedom and 
+\begin_inset Formula $d$
+\end_inset
+
+ bosonic degree of freedom.
+ The continuous string emerge when the bit number 
+\begin_inset Formula $M$
+\end_inset
+
+ is large.
+ In the case of 
+\begin_inset Formula $s=d=8$
+\end_inset
+
+, the string bit model describes the 10-dimensional superstring.
+ We study the simplest case of 
+\begin_inset Formula $s=1$
+\end_inset
+
+ and 
+\begin_inset Formula $d=0$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
