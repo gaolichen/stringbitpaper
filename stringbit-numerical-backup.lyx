@@ -81,7 +81,7 @@ theorems-ams
 \begin_body
 
 \begin_layout Title
-Numerical Study of the Simplest Stringbit Model
+Numerical Study of Stringbit Model
 \end_layout
 
 \begin_layout Author
@@ -95,7 +95,7 @@ email: gchen@ufl.edu
 
 \end_inset
 
- and Songge Sun
+, Songge Sun
 \begin_inset Foot
 status open
 
@@ -123,36 +123,7 @@ Department of Physics, University of Florida, Gainesville, FL 32611
 \end_layout
 
 \begin_layout Abstract
-String bit is an idea to formulate string as a discrete chain of point-like
- string bits, each of which have 
-\begin_inset Formula $s$
-\end_inset
-
- fermionic degree of freedom and 
-\begin_inset Formula $d$
-\end_inset
-
- bosonic degree of freedom.
- The continuous string emerge when the bit number 
-\begin_inset Formula $M$
-\end_inset
-
- is large.
- In the case of 
-\begin_inset Formula $s=d=8$
-\end_inset
-
-, the string bit model describes the 10-dimensional superstring.
- We study the simplest case of 
-\begin_inset Formula $s=1$
-\end_inset
-
- and 
-\begin_inset Formula $d=0$
-\end_inset
-
-.
- 
+This is the abstract.
 \end_layout
 
 \begin_layout Standard
@@ -790,7 +761,7 @@ In the toy model with
 \begin_inset Formula $d=0,\, s=1$
 \end_inset
 
-, while the spacetime supersymmetry is explicitly broken, there still exists
+, while the spacetime supersymmetry is explicitly broken, there still exist
  a form of supersymmetry between bosonic and fermionic trace states.
  As the mathematical proof in Appendix 
 \begin_inset CommandInset ref
@@ -837,7 +808,7 @@ Also we notice that
 
 .
  As we will show in the next section, there is a nice feature of supersymmetric
- Hamiltonian that it gaurantees that the exicitation energy vanishes at
+ Hamiltonian that it gaurantees the exicitation energy to be vanishing at
  large 
 \begin_inset Formula $M$
 \end_inset
@@ -847,13 +818,13 @@ Also we notice that
 \end_layout
 
 \begin_layout Standard
-Now, let's investigate possible forms of a supersymmetric Hamiltonian and
+Now, let's investigate possible forms of supersymmetric Hamiltonian and
  generalizations of 
 \begin_inset Formula $H_{0}$
 \end_inset
 
 .
- The general form of a hermitian Hamiltonian built out of the trace operators
+ The general form of hermitian Hamiltonian built out of the trace operators
  in 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -864,8 +835,8 @@ reference "eq:trace-operators"
  reads
 \begin_inset Formula 
 \begin{eqnarray}
-H & = & \frac{1}{N}\Big[c_{1}\tr\bar{a}^{2}a^{2}+c_{2}\tr\bar{b}^{2}b^{2}+iz_{1}\tr\bar{a}^{2}b^{2}-iz_{1}^{*}\tr\bar{b}^{2}a^{2}\nonumber \\
- &  & +c_{3}\tr\bar{a}\bar{b}ba+c_{4}\tr\bar{b}\bar{a}ab+z_{2}\tr\bar{a}\bar{b}ab+z_{2}^{*}\tr\bar{b}\bar{a}ba\Big],\label{eq:Susy-general-H}
+H & = & \frac{1}{N}\Big[c_{1}\tr\bar{a}^{2}a^{2}+c_{2}\tr\bar{b}^{2}b^{2}+iz_{1}\tr\bar{a}^{2}b^{2}-iz_{1}^{\dagger}\tr\bar{b}^{2}a^{2}\nonumber \\
+ &  & +c_{3}\tr\bar{a}\bar{b}ba+c_{4}\tr\bar{b}\bar{a}ab+z_{2}\tr\bar{a}\bar{b}ab+z_{2}^{\dagger}\tr\bar{b}\bar{a}ba\Big],\label{eq:Susy-general-H}
 \end{eqnarray}
 
 \end_inset
@@ -992,7 +963,7 @@ key "Sun:2014dga"
 
 \end_inset
 
- to a Hamiltonian without affecting the large 
+ to a Hamiltonian without affect large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -1016,7 +987,7 @@ key "Sun:2014dga"
 \begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
 \end_inset
 
- instead of 
+ in stead of 
 \begin_inset Formula $\tilde{M}$
 \end_inset
 
@@ -1025,7 +996,7 @@ key "Sun:2014dga"
 \end_inset
 
 .
- Our calculation shows in order that 
+ Our calculation shows in order to let 
 \begin_inset Formula $\Delta H^{\prime}$
 \end_inset
 
@@ -1306,22 +1277,22 @@ name "sec:Large-N"
 
 \end_inset
 
-Energy Spectrum in Large 
+Energy Spectrum at large 
 \begin_inset Formula $N$
 \end_inset
 
- Limit
+ limit
 \end_layout
 
 \begin_layout Standard
-In this section, we will study the energy spectrum of our tyo string bit
- model in the large 
+In this section, we will study the energy spectrum of string bit at large
+ 
 \begin_inset Formula $N$
 \end_inset
 
  limit by both analytic and numerical solutions.
- We first show that the supersymmetry garantees the excitation energy to
- be vanishing at large 
+ We first show the supersymmetry garantees the excitation energy to be vanishing
+ at large 
 \begin_inset Formula $M$
 \end_inset
 
@@ -1364,7 +1335,7 @@ For convenience, we introduce a super creation operator using a Grassmann
 \end_inset
 
 -bit single trace states.
- A general single trace energy eigenstate at large 
+ A general energy eigenstate at large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -1447,7 +1418,7 @@ key "Sun:2014dga"
 
 , by which we rewrite 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand ref
 reference "eq:Susy-general-H"
 
 \end_inset
@@ -1457,27 +1428,19 @@ reference "eq:Susy-general-H"
 \end_inset
 
  limit as
-\begin_inset Formula 
-\[
-H\ket{\theta_{1}\cdots\theta_{M}}=\hat{h}\ket{\theta_{1}\cdots\theta_{M}}+\mathcal{O}\left(\frac{1}{N}\right),
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-\hat{h} & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+z_{2}\theta_{k}\frac{d}{d\theta_{k+1}}\\
+\hat{h} & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+z_{2}\theta_{k}\frac{d}{d\theta_{k+1}}\nonumber \\
  &  & +z_{2}^{\dagger}\theta_{k+1}\frac{d}{d\theta_{k}}+\left(-2c_{1}+c_{3}+c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\\
  &  & +\left(c_{1}+c_{2}-c_{3}-c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\theta_{k+1}\frac{d}{d\theta_{k+1}}\Big]+c_{1}M.\label{eq:LargeN-H-in-theta}
 \end{eqnarray}
 
 \end_inset
 
-Performing Integration by parts as 
+Performing Integratation by parts as 
 \begin_inset Formula 
 \[
 \int d^{M}\theta\,\Psi\left(\theta_{1}\cdots\theta_{M}\right)\hat{h}\ket{\theta_{1}\theta_{2}\cdots\theta_{M}}=\int d^{M}\theta\, h\Psi\left(\theta_{1}\cdots\theta_{M}\right)\ket{\theta_{1}\theta_{2}\cdots\theta_{M}},
@@ -1495,7 +1458,7 @@ h & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}
 
 \end_inset
 
- where for simplicity we neglect the quartic term, which vanishes automatically
+ where for simplicity we neglect the quatic term, which vanishes automatically
  under the supersymmetry constraint 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -1711,8 +1674,7 @@ reference "eq:Susy-constraint"
 \end_inset
 
 .
- Therefore, supersymmetry ensures continuous energy spectrum and stringy
- behavior.
+ Therefore, supersymmetry ensures continuous energy level and stringy behavior.
  
 \end_layout
 
@@ -1752,7 +1714,7 @@ As
 \begin_inset Formula $r_{M/2}^{-}=0$
 \end_inset
 
-, we choose the raising and lowering operators to be 
+, we choose the raising and lower operators to be 
 \begin_inset Formula 
 \[
 L_{k}^{+}=\alpha_{k}+\frac{1}{r_{k}^{+}}\beta_{k},\quad L_{k}^{-}=r_{k}^{-}\alpha_{k}+\beta_{k},\quad k=1,\cdots,M-1.
@@ -1760,7 +1722,7 @@ L_{k}^{+}=\alpha_{k}+\frac{1}{r_{k}^{+}}\beta_{k},\quad L_{k}^{-}=r_{k}^{-}\alph
 
 \end_inset
 
-Now we can construct the ground function, which is annihilated by all lowering
+Now we can construct the ground function, which is annihilated by all lower
  operators.
  Observing that 
 \begin_inset Formula 
@@ -1770,7 +1732,7 @@ L_{k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(1
 
 \end_inset
 
- and that 
+ and 
 \begin_inset Formula $\alpha_{0}$
 \end_inset
 
@@ -1778,7 +1740,7 @@ L_{k}^{-}\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right) & = & L_{M-k}^{-}\left(1
 \begin_inset Formula $L_{k}^{-}$
 \end_inset
 
-, we obtain ground wave functions, 
+, we obtain ground functions, 
 \begin_inset Formula 
 \[
 \Phi_{M}^{b}=\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right),\quad\Phi_{M}^{f}=\alpha_{0}\prod_{k=1}^{\left\lfloor M/2\right\rfloor }\left(1+r_{k}^{-}\alpha_{k}\alpha_{M-k}\right)
@@ -1942,7 +1904,7 @@ nM, & \quad\text{for odd }M\\
 
 \end_inset
 
-This constraint has several interesting consequences.
+This constraint has the several interesting consequences.
 \end_layout
 
 \begin_layout Itemize
@@ -2059,8 +2021,7 @@ For large
 
  is much large than the excitation energy, which implies only odd-bit chains
  participate in the low energy physics.
- Particularly, it also means a low energy odd-bit chain cannot decay into
- two chains.
+ Particularly, it also means an odd-bit chain cannot decay into two chains.
 \end_layout
 
 \begin_layout Standard
@@ -2163,17 +2124,17 @@ reference "fig:LargeN-energy-levels"
 
 , 21, 51, and 101.
  In the plot, energy states are represented by horizontal lines, with red
- color for single trace states, yellow color for triple trace states.
+ color for single trace states, blue color for triple trace states.
  The vertical coordinate is 
 \begin_inset Formula $M\times\left(E-E_{\mathrm{min}}\right)$
 \end_inset
 
-, the product of 
+, the produce of 
 \begin_inset Formula $M$
 \end_inset
 
  with the difference between energy level and the lowest energy.
- The threshold for triple trace states is a blue line.
+ The threshold for triple trace states as blue dash line.
  
 \end_layout
 
@@ -2321,7 +2282,7 @@ key "Sun:2014dga"
 \begin_inset Formula $\xi$
 \end_inset
 
- affects the energy levels.
+ impact the energy levels.
  Finally, we explore the Hamiltonians of the form 
 \begin_inset Formula $H=-H_{0}+\xi\Delta H$
 \end_inset
@@ -2369,7 +2330,7 @@ status open
 
 \begin_layout Plain Layout
 In this subsection, we just state the properties of these two methods.
- The relevent mathematical proofs are provided in Appendix 
+ The relevent mathematical proof are provided in Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "app:Hamiltonian-Eigenvalue-Problem"
@@ -2410,7 +2371,7 @@ H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji},
 \end_inset
 
 -bit trace states.
- Note that, since the trace state basis is not orthonormal, 
+ Note that, since trace state basis is not orthonormal, 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
@@ -2458,7 +2419,7 @@ If
 \shape italic
 i.e.
 \shape default
-, all its eigenvalues are positive, there is a one-to-one correspondence
+, all its eigenvalues are positive, there is an one-to-one correspondence
  between the eigenvalues of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
@@ -2476,7 +2437,7 @@ i.e.
 
 \end_inset
 
- for an eigenstate 
+ for a eigenstate 
 \begin_inset Formula $\ket{E}=\sum_{i}\ket{i}v^{i}$
 \end_inset
 
@@ -2745,11 +2706,11 @@ reference "eq:generalised-eigenvalue-problem"
 \end_inset
 
  to find the their eigenstates.
- Since the nubmer of trace states increases exponentially as 
+ Since the nubmer of trace states increase exponentially as 
 \begin_inset Formula $M$
 \end_inset
 
- increases, it's only feasible to perform the calculation for small 
+ increase, it's only feasible to perform the calculation for small 
 \begin_inset Formula $M$
 \end_inset
 
@@ -2758,7 +2719,7 @@ reference "eq:generalised-eigenvalue-problem"
 \begin_inset Formula $M$
 \end_inset
 
- we study is 11, at which 
+ we study for is 11, at which 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
@@ -2902,6 +2863,10 @@ Lowest 5 energy states of the 3-bit system with Hamiltonian
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -2978,7 +2943,7 @@ reference "fig:H=H0M=11"
 
 .
  But it does not imply the energy levels of the Hamiltonian drop, since
- all these eigenstates are actually unphysical.
+ all these eigenstates are actually all unphysical.
  
 \end_layout
 
@@ -3030,6 +2995,10 @@ Lowest 5 eigenstates of
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3145,6 +3114,10 @@ Lowest 5 eigenstates of
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -3201,6 +3174,10 @@ Lowest 5 eigenstates of
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -3237,7 +3214,7 @@ reference "figH=h0M=even"
 \end_inset
 
  and 10.
- It is again consistent with our analysis in previous section.
+ It is again consistent with our analytic analysis in previous section.
  The lowest states also disappear when 
 \begin_inset Formula $N$
 \end_inset
@@ -3249,7 +3226,7 @@ reference "figH=h0M=even"
 
  case, there is no simple formula to determine where the first disappearnace
  occurs.
- The reason for the difference is the ground energy of 
+ The reason of the difference is the ground energy of 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:LargeN-energy-levels"
@@ -3348,7 +3325,7 @@ reference "fig:physical-state-H0"
 
 , the physical ground state climbs significantly.
  This is consistent with analytical calculation, which shows the ground
- state is a quadratic function of 
+ state is a quardratic function of 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3438,6 +3415,10 @@ Change of physical ground states with respect to
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3612,7 +3593,7 @@ reference "fig:xi=manyM=3"
 \begin_inset Formula $M=3$
 \end_inset
 
- and Hamiltonian is of the form 
+ and Hamiltonian of the form 
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
@@ -3681,7 +3662,7 @@ reference "fig:xi=manyM=3"
 \begin_inset Formula $N$
 \end_inset
 
- the ground state disappears is 
+ the ground state dissppears is 
 \begin_inset Formula $N=M-1$
 \end_inset
 
@@ -3830,7 +3811,7 @@ reference "fig:EvsM-N>=3"
 \end_inset
 
 : when 
-\begin_inset Formula $\xi=-1$
+\begin_inset Formula $\xi=1$
 \end_inset
 
 , the ground energies decrease almost linearly for all 
@@ -3841,7 +3822,7 @@ reference "fig:EvsM-N>=3"
 \begin_inset Formula $\xi<-1$
 \end_inset
 
-, the ground energies decline faster than linearly, which implies the system
+, the ground energies decline faster than linearity, which implies the system
  is not stable; when 
 \begin_inset Formula $\xi>-1$
 \end_inset
@@ -3910,6 +3891,10 @@ Change of physical ground energy with respect to
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -3940,7 +3925,7 @@ reference "eq:LargeN-energy-levels"
 \end_inset
 
 .
- Consequently, the ground eigenstate is not degenerate for all 
+ Consequently, the ground eigenstate is not degenrate for all 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4042,6 +4027,10 @@ Eigenvalues of
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -4053,6 +4042,10 @@ Eigenvalues of
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -4096,157 +4089,21 @@ Physical ground energy of
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Section
-Summary and Conclusion
+Conclusion
 \end_layout
 
 \begin_layout Standard
-In this paper we have studied the string bit model with 
-\begin_inset Formula $s=1$
-\end_inset
-
-, 
-\begin_inset Formula $d=0$
-\end_inset
-
-.
- We studied possible forms of supersymmetric Hamiltonian and their excitation
- energies at large 
-\begin_inset Formula $N$
-\end_inset
-
- limit.
- We also performed numerical study of energy levels at finite 
-\begin_inset Formula $N$
-\end_inset
-
- for Hamltonians of the form 
-\begin_inset Formula $\pm H_{0}+\xi\Delta H$
-\end_inset
-
-, where, at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, 
-\begin_inset Formula $\Delta H$
-\end_inset
-
- vanishes and 
-\begin_inset Formula $H_{0}$
-\end_inset
-
- produces the Green-Schwarz Hamiltonian.
- 
-\end_layout
-
-\begin_layout Standard
-We showed that the supersymmetry plays a crucial role in the model.
- The general Hamiltonian is chosen to be a linear combination of 8 single
- trace operators, which contain two consecutive creation operators followed
- by two annihilation operators.
- With the supersymmetry constraint, we reduce the number of parameters in
- the Hamiltonian to three.
- Another interesting effect about supersymmetry is that, after imposing
- the supersymmetry constraint to the Hamiltonian, the excitation energy
- becomes of order 
-\begin_inset Formula $M^{-1}$
-\end_inset
-
-, which implies the energy spectrum of the model is continuous when 
-\begin_inset Formula $M$
-\end_inset
-
- is large.
-\end_layout
-
-\begin_layout Standard
-At finite 
-\begin_inset Formula $N$
-\end_inset
-
-, the superstring Hamiltonian, 
-\begin_inset Formula $\pm H_{0}+\xi\Delta H$
-\end_inset
-
- with 
-\begin_inset Formula $\xi\geq-1$
-\end_inset
-
-, also has stringy behavior.
- For 
-\begin_inset Formula $M\leq11$
-\end_inset
-
- at fixed 
-\begin_inset Formula $N$
-\end_inset
-
-, one finds the ground energy almost declines linearly with respect to 
-\begin_inset Formula $M$
-\end_inset
-
- and the excitation energy is proportional to 
-\begin_inset Formula $M^{-1}$
-\end_inset
-
-.
- While we do not have data for 
-\begin_inset Formula $M>11$
-\end_inset
-
-, the trend is still evident.
- 
-\end_layout
-
-\begin_layout Standard
-The numerical computation is performed up to 
-\begin_inset Formula $M=11$
-\end_inset
-
-.
- The bottleneck is the calculation of norm matrices.
- Our algorithm has 
-\begin_inset Formula $\mathcal{O}\left(M!\right)$
-\end_inset
-
- time complexity for computing each entry of the matrix.
- It needs significant improvement for numerical computation of higher 
-\begin_inset Formula $M$
-\end_inset
-
-.
- This is one of the issues we need to address in future research.
-\end_layout
-
-\begin_layout Standard
-We can also extend our work in other directions.
- Our strategy can be applied to the model with 
-\begin_inset Formula $s>1,d=0$
-\end_inset
-
- or 
-\begin_inset Formula $d>0$
-\end_inset
-
- cases.
- We can also analytically calculate 
-\begin_inset Formula $1/N$
-\end_inset
-
- expansion of the model, in which some progress has been made by 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Thorn:2015wli"
-
-\end_inset
-
-.
+TODO
 \end_layout
 
 \begin_layout Section
@@ -8895,7 +8752,15 @@ Proof of
 \end_layout
 
 \begin_layout Standard
-We define the color operator
+Proof of the equation 
+\begin_inset Formula $H^{\prime}-\Delta H=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+we define the color operator
 \begin_inset Formula 
 \[
 G_{\alpha}^{\beta}=(\bar{a}a)_{\alpha}^{\beta}+(\bar{b}b)_{\alpha}^{\beta}-\normord{(a\bar{a})_{\alpha}^{\beta}}-\normord{(b\bar{b})_{\alpha}^{\beta}}
@@ -8907,7 +8772,7 @@ G_{\alpha}^{\beta}=(\bar{a}a)_{\alpha}^{\beta}+(\bar{b}b)_{\alpha}^{\beta}-\norm
 \end_layout
 
 \begin_layout Standard
-Its commutation with any free bit has the property that would permutates
+it's commutation with any free bit has the property that would permutates
  the color indices.
 \end_layout
 
@@ -8924,160 +8789,11 @@ Its commutation with any free bit has the property that would permutates
 \end_layout
 
 \begin_layout Standard
-To any singlets, first let's prove 
+To any singlets, 
 \begin_inset Formula $G_{\alpha}^{\beta}\ket{\mathrm{singlet}}=0$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-set a 
-\begin_inset Formula $M$
-\end_inset
-
- bits open chain 
-\begin_inset Formula 
-\[
-X_{\alpha_{1}}^{\alpha_{M+1}}=\left(\bar{x}_{1}\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha_{1}}^{\alpha_{M+1}}\qquad\bar{x}=\bar{a}\,\mathrm{or}\,\bar{b}
-\]
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Since they have the same structer wether 
-\begin_inset Formula $G_{\alpha}^{\beta}$
-\end_inset
-
- act on 
-\begin_inset Formula $\bar{a}\,\mathrm{or}\,\bar{b}$
-\end_inset
-
-, so when it work on the first bit 
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X(1)=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-\left(\bar{x}_{1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Then the second bit 
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X(2)=(\bar{x}_{1})_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-\left(\bar{x}_{1}\bar{x}_{2}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We notice that the indices all have the same order and the first term of
- the second one would cancel the second term of the first one.
-\end_layout
-
-\begin_layout Standard
-Until the last bit:
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X(M)=\left(\bar{x}_{1}\cdots\bar{x}_{M-1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-X{}_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Add up them together, all of the middle term will cancel, the remaining
- is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-X{}_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Now we trace over 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $X_{\alpha_{1}}^{\alpha_{M+1}}$
-\end_inset
-
-, which mean 
-\begin_inset Formula $\alpha_{1}=\alpha_{M+1}$
-\end_inset
-
-, we have
-\begin_inset Formula $G_{\alpha}^{\beta}X=0$
-\end_inset
-
- .
- 
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $X$
-\end_inset
-
- can represent any singlets, wo we've proven that 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Formula $G_{\alpha}^{\beta}\ket{\mathrm{singlet}}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Then straightforwardly we have 
+, then straight forwardly 
 \begin_inset Formula $\tr(G^{2})\ket{\mathrm{singlet}}=0$
 \end_inset
 
@@ -9112,17 +8828,8 @@ in which
 2\tr(\normord{a\bar{a}}\normord{b\bar{b}}) & = & -2\tr(\bar{a}b\bar{b}a)+2N\tr(\bar{a}a)\\
 \tr(\bar{b}b\bar{b}b)++\tr(\normord{b\bar{b}}\normord{b\bar{b}}) & = & 2N\tr(\bar{b}b)\\
 2\tr(\bar{a}a\normord{a\bar{a}}) & = & 2\tr(\bar{a}^{2}a^{2})+\tr\bar{a}\tr a\\
-2\tr(\bar{b}b\normord{b\bar{b}}) & = & 2\tr(\bar{b}^{2}b^{2})+\tr\bar{b}\tr b\\
-2\tr(\bar{a}a\normord{b\bar{b}}) & = & 2\tr(\bar{b}\bar{a}ab)\\
-2\tr(\bar{b}b\normord{a\bar{a}}) & = & 2\tr(\bar{a}\bar{b}ba)
+2\tr(\bar{b}b\normord{b\bar{b}}) & = & 2\tr(\bar{b}^{2}b^{2})+\tr\bar{b}\tr b
 \end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\]
 
 \end_inset
 
@@ -9131,14 +8838,6 @@ in which
 
 \begin_layout Standard
 from where we can get
-\begin_inset Formula 
-\[
-\tr\left(\bar{a}a\bar{a}a+\bar{a}a\bar{b}b-\bar{a}b\bar{b}a\right)-\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tr\left(\bar{a}a+\bar{b}b\right)+\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right)\right)\ket{\mathrm{singlet}}=0
-\]
-
-\end_inset
-
-which is
 \begin_inset Formula 
 \[
 \Delta H\ket{\mathrm{singlet}}=H'\ket{\mathrm{singlet}}
