@@ -81,7 +81,7 @@ theorems-ams
 \begin_body
 
 \begin_layout Title
-Numerical Study of the Simplest Stringbit Model
+Numerical Study of the Simplest String Bit Model
 \end_layout
 
 \begin_layout Author
@@ -152,6 +152,14 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \end_inset
 
 .
+ We provide a general form of supersymmetric Hamiltonian of the model and
+ show that the energy spectrum of such a model is continuous.
+ We numerically computate the energy spectrum of a special form of supersymmetri
+c Hamiltonian, which produce the superstring Hamiltonian in large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit.
  
 \end_layout
 
