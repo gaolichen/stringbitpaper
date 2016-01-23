@@ -4048,32 +4048,21 @@ reference "fig:nxi=1.5M=many"
 \end_inset
 
 .
- Moreover, the first disappearing points of ground states occur at 
+ From the figure, we see that the first disappearance points of ground states
+ occur at 
 \begin_inset Formula $N=M-1$
 \end_inset
 
- for 
-\begin_inset Formula $\xi=1.5$
-\end_inset
-
 .
- 
-\end_layout
-
-\begin_layout Standard
-Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "fig:nH-Physical-ground-energy"
-
-\end_inset
-
- shows the change of physical ground energy with respect to 
+ Actually, the 
 \begin_inset Formula $\xi$
 \end_inset
 
-.
+ has the same impact on these disappearance points as the 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ case.
  
 \end_layout
 
@@ -4136,6 +4125,73 @@ Eigenvalues of
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nH-Physical-ground-energy"
+
+\end_inset
+
+ shows the change of physical ground energy with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ at fixed 
+\begin_inset Formula $N$
+\end_inset
+
+ for 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
+\end_inset
+
+.
+ It's similar to the 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ case.
+ When 
+\begin_inset Formula $\xi=0.5$
+\end_inset
+
+, the system is not stable in finite 
+\begin_inset Formula $N$
+\end_inset
+
+ as their curves decline faster linearly.
+ When 
+\begin_inset Formula $\xi=1$
+\end_inset
+
+, it's the marginal case and all the physical ground energies drop almost
+ linearly.
+ When 
+\begin_inset Formula $\xi=1.5$
+\end_inset
+
+ or 
+\begin_inset Formula $\xi=3$
+\end_inset
+
+, the curves for small 
+\begin_inset Formula $N$
+\end_inset
+
+ are zig-zag, and particularly, when 
+\begin_inset Formula $\xi=3$
+\end_inset
+
+ and 
+\begin_inset Formula $N=3$
+\end_inset
+
+, the trend is  slightly upward.
+ It implies that the system is stable.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -6278,11 +6334,11 @@ The limit of
 \end_layout
 
 \begin_layout Section
-Rank of Metrix Matrix
+Rank of Norm Matrix
 \end_layout
 
 \begin_layout Standard
-The metric matrix 
+The norm matrix 
 \begin_inset Formula $G$
 \end_inset
 
