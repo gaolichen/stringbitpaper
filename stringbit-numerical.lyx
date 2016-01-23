@@ -4216,8 +4216,8 @@ In this paper we have studied the string bit model with
 \begin_inset Formula $N$
 \end_inset
 
- for Hamltonians of the form 
-\begin_inset Formula $\pm H_{0}+\xi\Delta H$
+ for Hamltonians 
+\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
 \end_inset
 
 , where, at 
@@ -4257,28 +4257,29 @@ We showed that the supersymmetry plays a crucial role in the model.
 \end_layout
 
 \begin_layout Standard
-At finite 
+In finite 
 \begin_inset Formula $N$
 \end_inset
 
-, the superstring Hamiltonian, 
-\begin_inset Formula $\pm H_{0}+\xi\Delta H$
-\end_inset
-
- with 
-\begin_inset Formula $\xi\geq-1$
-\end_inset
-
-, also has stringy behavior.
- For 
+, we numerically studies the energy spectrum of the model up to 
 \begin_inset Formula $M\leq11$
 \end_inset
 
- at fixed 
+.
+ One finds that the ground energy state of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+ is unphysical when 
+\begin_inset Formula $N\leq\left(M-1\right)/2$
+\end_inset
+
+.
+ For fixed 
 \begin_inset Formula $N$
 \end_inset
 
-, one finds the ground energy almost declines linearly with respect to 
+, the ground energy almost declines linearly with respect to 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4292,6 +4293,41 @@ At finite
 \end_inset
 
 , the trend is still evident.
+ This indicates the model has stringy behavior.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
+\end_inset
+
+, the system is stable only when 
+\begin_inset Formula $\xi\geq\mp1$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\xi$
+\end_inset
+
+ increases, the disappearance point of ground state moves to larger 
+\begin_inset Formula $N$
+\end_inset
+
+ direction until it reaches 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+.
+ Conversly, the disappearance point moves to lower 
+\begin_inset Formula $N$
+\end_inset
+
+ direction as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ decrease.
  
 \end_layout
 
