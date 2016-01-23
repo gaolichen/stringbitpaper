@@ -90,7 +90,7 @@ Gaoli Chen
 status open
 
 \begin_layout Plain Layout
-email: gchen@ufl.edu
+Email: gchen@ufl.edu
 \end_layout
 
 \end_inset
@@ -100,7 +100,7 @@ email: gchen@ufl.edu
 status open
 
 \begin_layout Plain Layout
-email: uranussg@phys.ufl.edu
+Email: uranussg@phys.ufl.edu
 \end_layout
 
 \end_inset
@@ -124,15 +124,15 @@ Department of Physics, University of Florida, Gainesville, FL 32611
 
 \begin_layout Abstract
 String bit is an idea to formulate string as a discrete chain of point-like
- string bits, each of which have 
+ string bits, each of which has 
 \begin_inset Formula $s$
 \end_inset
 
- fermionic degree of freedom and 
+ fermionic degrees of freedom and 
 \begin_inset Formula $d$
 \end_inset
 
- bosonic degree of freedom.
+ bosonics degree of freedom.
  The continuous string emerge when the bit number 
 \begin_inset Formula $M$
 \end_inset
@@ -143,7 +143,7 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \end_inset
 
 , the string bit model describes the 10-dimensional superstring.
- We study the simplest case of 
+ We study the simplest case with 
 \begin_inset Formula $s=1$
 \end_inset
 
@@ -152,15 +152,98 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \end_inset
 
 .
- We provide a general form of supersymmetric Hamiltonian of the model and
- show that the energy spectrum of such a model is continuous.
- We numerically computate the energy spectrum of a special form of supersymmetri
-c Hamiltonian, which produce the superstring Hamiltonian in large 
+ The creation and annihilation operators are adjoint representations of
+ 
+\begin_inset Formula $U\left(N\right)$
+\end_inset
+
+ group.
+ The Hamiltonian 
+\begin_inset Formula $H$
+\end_inset
+
+ is constructed so that its action on a bit chain does not vanish at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ A general supersymmetric Hamiltonian has three free parameter and produces
+ continuous energy spectrum at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ We concentrate on numerical study of the model in finite 
 \begin_inset Formula $N$
 \end_inset
 
- limit.
+ and 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+.
+ We show that the ground energy state of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+, a special Hamiltonian produces the superstring Hamiltonian at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, disappears at 
+\begin_inset Formula $N=\left(M-1\right)/2$
+\end_inset
+
+ for odd 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $N$
+\end_inset
+
+ large enough, the ground energy descrese linearly with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ and that the excitation energy is roughly of order 
+\begin_inset Formula $M^{-1}$
+\end_inset
+
+.
+ We also investigate generalized Hamiltonians of the form 
+\begin_inset Formula $\pm H_{0}+\xi\Delta H$
+\end_inset
+
+, where 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ vanishes at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ We find a stable system requires 
+\begin_inset Formula $\xi\geq\mp1$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\xi$
+\end_inset
+
+ increases, the disappearance point of the ground energy state move to larger
  
+\begin_inset Formula $N$
+\end_inset
+
+ until reach the point 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
