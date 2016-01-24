@@ -3807,7 +3807,12 @@ reference "fig:xi=manyM=3"
 \begin_inset Formula $M-1$
 \end_inset
 
-, such as the case of 
+.
+ We find 
+\begin_inset Formula $N_{d}=M-1$
+\end_inset
+
+ can be achieved if 
 \begin_inset Formula $H=H_{0}+2\Delta H$
 \end_inset
 
