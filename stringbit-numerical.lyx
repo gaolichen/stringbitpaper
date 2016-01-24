@@ -3035,16 +3035,20 @@ etc.
 
 \shape default
  For convenience, we denote as 
-\begin_inset Formula $N_{d}$
+\begin_inset Formula $N_{M}^{*}$
 \end_inset
 
  the maximum value of 
 \begin_inset Formula $N$
 \end_inset
 
- where the first disappearance of ground state occurs.
+ where the first disappearance of ground state occurs for bit number 
+\begin_inset Formula $M$
+\end_inset
+
+.
  From the figures, we see that 
-\begin_inset Formula $N_{d}=\left(M-1\right)/2$
+\begin_inset Formula $N_{M}^{*}=\left(M-1\right)/2$
 \end_inset
 
  for 
@@ -3487,7 +3491,7 @@ reference "fig:physical-state-H0"
 \end_inset
 
  at rate 
-\begin_inset Formula $-\frac{8}{\pi}$
+\begin_inset Formula $-8/\pi$
 \end_inset
 
 , as prediced by Eq.
@@ -3623,7 +3627,7 @@ reference "fig:First-excitation-H0"
 \end_inset
 
  is 
-\begin_inset Formula $\frac{16\pi}{3}$
+\begin_inset Formula $16\pi/3$
 \end_inset
 
 .
@@ -3767,7 +3771,7 @@ reference "fig:xi=manyM=3"
 
 .
  The disappearnce point of ground state, 
-\begin_inset Formula $N_{d}$
+\begin_inset Formula $N_{3}^{*}$
 \end_inset
 
 , moves in the opposite direction: for 
@@ -3775,7 +3779,7 @@ reference "fig:xi=manyM=3"
 \end_inset
 
 , 
-\begin_inset Formula $N_{d}=1$
+\begin_inset Formula $N_{3}^{*}=1$
 \end_inset
 
 ; for 
@@ -3783,7 +3787,7 @@ reference "fig:xi=manyM=3"
 \end_inset
 
 , 
-\begin_inset Formula $1<N_{d}<2$
+\begin_inset Formula $1<N_{3}^{*}<2$
 \end_inset
 
 ; for 
@@ -3791,37 +3795,7 @@ reference "fig:xi=manyM=3"
 \end_inset
 
 , 
-\begin_inset Formula $N_{d}=2$
-\end_inset
-
-.
- Since all eigenstates of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- is physical when 
-\begin_inset Formula $N\geq M$
-\end_inset
-
-, the largest value of 
-\begin_inset Formula $N_{d}$
-\end_inset
-
- is 
-\begin_inset Formula $M-1$
-\end_inset
-
-.
- For 
-\begin_inset Formula $M\leq11$
-\end_inset
-
-, we find 
-\begin_inset Formula $N_{d}=M-1$
-\end_inset
-
- can be achieved when 
-\begin_inset Formula $\xi\geq2$
+\begin_inset Formula $N_{3}^{*}=2$
 \end_inset
 
 .
@@ -3917,19 +3891,54 @@ Eigenvalues of
 \end_layout
 
 \begin_layout Standard
-Because of the stabalization constraint 
-\begin_inset Formula $\xi\geq-1$
+Since all eigenstates of 
+\begin_inset Formula $\mathcal{H}$
 \end_inset
 
-, the minimal 
-\begin_inset Formula $N_{d}$
+ is physical when 
+\begin_inset Formula $N\geq M$
 \end_inset
 
- is achieved when 
+, the largest value of 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ is 
+\begin_inset Formula $M-1$
+\end_inset
+
+.
+ Particularly, for 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+, we find 
+\begin_inset Formula $N_{M}^{*}=M-1$
+\end_inset
+
+ can be achieved when 
+\begin_inset Formula $\xi\geq2$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ is minimal when 
 \begin_inset Formula $\xi=-1$
 \end_inset
 
-, which is shown as Fig.
+, the lower bound of the 
+\begin_inset Formula $\xi$
+\end_inset
+
+ meets the stabalization constraint.
+ The 
+\begin_inset Formula $\xi=-1$
+\end_inset
+
+ case is shown as Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3938,46 +3947,41 @@ reference "fig:xi=-1M=odd"
 \end_inset
 
 .
- For 
+ While 
+\begin_inset Formula $N_{M}^{*}=\left(M-1\right)/2$
+\end_inset
+
+ still holds for 
 \begin_inset Formula $M=5$
 \end_inset
 
- or 
+ and 
 \begin_inset Formula $7$
 \end_inset
 
 , 
-\begin_inset Formula $N_{d}=\left(M-1\right)/2$
+\begin_inset Formula $N_{9}^{*}=2$
 \end_inset
 
- still holds.
- But for 
-\begin_inset Formula $M=9$
+ and 
+\begin_inset Formula $N_{11}^{*}=3$
 \end_inset
 
-, 
-\begin_inset Formula $N_{d}=2$
+ spoil the pattern.
+ We don't have results for 
+\begin_inset Formula $M>11$
 \end_inset
 
- and for 
-\begin_inset Formula $M=11$
+, but it seems that 
+\begin_inset Formula $M/N_{M}^{*}$
 \end_inset
 
-, 
-\begin_inset Formula $N_{d}=3$
-\end_inset
-
-.
- If such a trend continues, for large 
+ could be large for large 
 \begin_inset Formula $M$
 \end_inset
 
-, we would have 
-\begin_inset Formula $N_{d}\ll M$
-\end_inset
-
 .
- It means that the ground eigenstates could survive when 
+ If it's true, it means that the ground eigenstates could survive when 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4287,7 +4291,7 @@ The
 \end_inset
 
  has the similar impact on 
-\begin_inset Formula $N_{d}$
+\begin_inset Formula $N_{M}^{*}$
 \end_inset
 
  as the 
@@ -4295,15 +4299,7 @@ The
 \end_inset
 
  case.
- The minimal 
-\begin_inset Formula $N_{d}$
-\end_inset
-
- is achieved when 
-\begin_inset Formula $\xi=1$
-\end_inset
-
-, which is shown as Fig.
+ Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4311,7 +4307,74 @@ reference "fig:nxi=1M=many"
 
 \end_inset
 
+ plots the eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=1$
+\end_inset
+
+, when 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ is minimal.
+ There is no simple patter for 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+: for odd 
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $N_{3}^{*}=2$
+\end_inset
+
+, 
+\begin_inset Formula $N_{5}^{*}=2$
+\end_inset
+
+, 
+\begin_inset Formula $N_{7}^{*}=3$
+\end_inset
+
+, and 
+\begin_inset Formula $N_{9}^{*}=3$
+\end_inset
+
+; for even 
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $N_{4}^{*}=3$
+\end_inset
+
+, 
+\begin_inset Formula $N_{6}^{*}=2$
+\end_inset
+
+, 
+\begin_inset Formula $N_{8}=2$
+\end_inset
+
+, and 
+\begin_inset Formula $N_{10}^{*}=3$
+\end_inset
+
 .
+ It suggests that the ground eigenstate could survive when 
+\begin_inset Formula $M$
+\end_inset
+
+ is large and 
+\begin_inset Formula $N\ll M$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4350,6 +4413,10 @@ Eigenvalues of
 
  for 
 \begin_inset Formula $H=-H_{0}+\Delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $3\leq M\leq10$
 \end_inset
 
 .
@@ -4564,6 +4631,11 @@ In finite
 \end_inset
 
 .
+ The ground energy eigenstates disappear when 
+\begin_inset Formula $N$
+\end_inset
+
+ is small.
  One finds that the ground energy state of 
 \begin_inset Formula $H=H_{0}$
 \end_inset
@@ -4573,7 +4645,42 @@ In finite
 \end_inset
 
 .
- For fixed 
+ We are not sure whether this relation holds for larger 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
+\end_inset
+
+, a higher (lower) 
+\begin_inset Formula $\xi$
+\end_inset
+
+ pushes the disappearance point in higher (lower) 
+\begin_inset Formula $N$
+\end_inset
+
+ direction.
+ When 
+\begin_inset Formula $H=\pm H_{0}\mp\Delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+ is large, the disappearance point of ground states occur at 
+\begin_inset Formula $N<\left(M-1\right)/2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For fixed 
 \begin_inset Formula $N$
 \end_inset
 
