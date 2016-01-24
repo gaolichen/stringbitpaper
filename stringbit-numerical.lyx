@@ -3034,12 +3034,29 @@ From these figures, we can see several features of the eigenstates of
 etc.
 
 \shape default
- The first disappearances of ground states occur at 
-\begin_inset Formula $N=\left(M-1\right)/2$
+ For convenience, we denote as 
+\begin_inset Formula $N_{d}$
+\end_inset
+
+ the maximum value of 
+\begin_inset Formula $N$
+\end_inset
+
+ where the first disappearance of ground state occurs.
+ From the figures, we see that 
+\begin_inset Formula $N_{d}=\left(M-1\right)/2$
+\end_inset
+
+ for 
+\begin_inset Formula $M\leq11$
 \end_inset
 
 .
- It follws that, for ground states surviving, 
+ If it's true for all 
+\begin_inset Formula $M$
+\end_inset
+
+, it follows that, for ground states surviving, 
 \begin_inset Formula $N$
 \end_inset
 
@@ -3338,8 +3355,11 @@ reference "figH=h0M=even"
 \begin_inset Formula $M$
 \end_inset
 
- case, there is no simple formula to determine where the first disappearnace
- occurs.
+ case, there is no simple formula to determine 
+\begin_inset Formula $N_{d}$
+\end_inset
+
+.
  The reason for the difference is the ground energy of 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -3742,38 +3762,49 @@ reference "fig:xi=manyM=3"
 \end_inset
 
 .
- The disappearnce point of ground state moves in the opposite direction:
- when 
+ The disappearnce point of ground state, 
+\begin_inset Formula $N_{d}$
+\end_inset
+
+, moves in the opposite direction: for 
 \begin_inset Formula $-1\leq\xi\leq-0.1$
 \end_inset
 
-, the ground state disappears at 
-\begin_inset Formula $N=1$
+, 
+\begin_inset Formula $N_{d}=1$
 \end_inset
 
-; when 
+; for 
 \begin_inset Formula $\xi=0.5$
 \end_inset
 
- the disappearance occurs between 
-\begin_inset Formula $0.5<1/N<1$
+, 
+\begin_inset Formula $1<N_{d}<2$
 \end_inset
 
-; when 
+; for 
 \begin_inset Formula $\xi=3$
 \end_inset
 
-, it's at 
-\begin_inset Formula $N=2$
+, 
+\begin_inset Formula $N_{d}=2$
 \end_inset
 
 .
- The largest 
-\begin_inset Formula $N$
+ Since all eigenstates of 
+\begin_inset Formula $\mathcal{H}$
 \end_inset
 
- the ground state disappears is 
-\begin_inset Formula $N=M-1$
+ is physical when 
+\begin_inset Formula $N\geq M$
+\end_inset
+
+, the largest value of 
+\begin_inset Formula $N_{d}$
+\end_inset
+
+ is 
+\begin_inset Formula $M-1$
 \end_inset
 
 , such as the case of 
@@ -4054,15 +4085,6 @@ reference "fig:nxi=1.5M=many"
 \end_inset
 
 .
- Actually, the 
-\begin_inset Formula $\xi$
-\end_inset
-
- has the same impact on these disappearance points as the 
-\begin_inset Formula $H=H_{0}+\xi\Delta H$
-\end_inset
-
- case.
  
 \end_layout
 
@@ -4119,6 +4141,100 @@ Eigenvalues of
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\xi$
+\end_inset
+
+ has the similar impact on these disappearance points as the 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ case.
+ But when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ is smaller, there is no simple pattern for the disappearance point of the
+ ground state, as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nxi=1M=many"
+
+\end_inset
+
+ shows for 
+\begin_inset Formula $H=-H_{0}+\Delta H$
+\end_inset
+
+.
+ Comparing the disappearance point of the ground state between 
+\begin_inset Formula $\xi=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\xi=1.5$
+\end_inset
+
+, there is no change 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nxi=1M=many2.pdf
+	width 100col%
+	BoundingBox 55bp 90bp 550bp 595bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nxi=1M=many"
+
+\end_inset
+
+Eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ for 
+\begin_inset Formula $H=-H_{0}+\Delta H$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
