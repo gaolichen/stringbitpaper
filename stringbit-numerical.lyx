@@ -3408,11 +3408,15 @@ name "figH=h0M=even"
 
 \end_inset
 
-Lowest 5 energy states Hamiltonia 
+Lowest 5 eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ for 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
- with 
+ at 
 \begin_inset Formula $M=4,6,8,10$
 \end_inset
 
@@ -3808,25 +3812,16 @@ reference "fig:xi=manyM=3"
 \end_inset
 
 .
- We find 
+ For 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+, we find 
 \begin_inset Formula $N_{d}=M-1$
 \end_inset
 
- can be achieved if 
-\begin_inset Formula $H=H_{0}+2\Delta H$
-\end_inset
-
-.
- Because of the stabalization constraint 
-\begin_inset Formula $\xi\geq-1$
-\end_inset
-
-, the lowest 
-\begin_inset Formula $N$
-\end_inset
-
- the ground states disappears first time is 
-\begin_inset Formula $N=\left(M-1\right)/2$
+ can be achieved when 
+\begin_inset Formula $\xi\geq2$
 \end_inset
 
 .
@@ -3913,6 +3908,139 @@ Eigenvalues of
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because of the stabalization constraint 
+\begin_inset Formula $\xi\geq-1$
+\end_inset
+
+, the minimal 
+\begin_inset Formula $N_{d}$
+\end_inset
+
+ is achieved when 
+\begin_inset Formula $\xi=-1$
+\end_inset
+
+, which is shown as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=-1M=odd"
+
+\end_inset
+
+.
+ For 
+\begin_inset Formula $M=5$
+\end_inset
+
+ or 
+\begin_inset Formula $7$
+\end_inset
+
+, 
+\begin_inset Formula $N_{d}=\left(M-1\right)/2$
+\end_inset
+
+ still holds.
+ But for 
+\begin_inset Formula $M=9$
+\end_inset
+
+, 
+\begin_inset Formula $N_{d}=2$
+\end_inset
+
+ and for 
+\begin_inset Formula $M=11$
+\end_inset
+
+, 
+\begin_inset Formula $N_{d}=3$
+\end_inset
+
+.
+ If such a trend continues, for large 
+\begin_inset Formula $M$
+\end_inset
+
+, we would have 
+\begin_inset Formula $N_{d}\ll M$
+\end_inset
+
+.
+ It means that the ground eigenstates could survive when 
+\begin_inset Formula $M$
+\end_inset
+
+ is large and 
+\begin_inset Formula $N\ll M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=n1M=odd2.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=-1M=odd"
+
+\end_inset
+
+Lowest 5 eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ for 
+\begin_inset Formula $H=H_{0}-\Delta H$
+\end_inset
+
+ at 
+\begin_inset Formula $M=5,7,9,11$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -4084,9 +4212,8 @@ reference "fig:nxi=1.5M=many"
 \end_inset
 
 .
- From the figure, we see that the first disappearance points of ground states
- occur at 
-\begin_inset Formula $N=M-1$
+ From the figure, we see that 
+\begin_inset Formula $N_{d}=M-1$
 \end_inset
 
 .
@@ -4159,17 +4286,24 @@ The
 \begin_inset Formula $\xi$
 \end_inset
 
- has the similar impact on these disappearance points as the 
+ has the similar impact on 
+\begin_inset Formula $N_{d}$
+\end_inset
+
+ as the 
 \begin_inset Formula $H=H_{0}+\xi\Delta H$
 \end_inset
 
  case.
- But when 
-\begin_inset Formula $\xi$
+ The minimal 
+\begin_inset Formula $N_{d}$
 \end_inset
 
- is smaller, there is no simple pattern for the disappearance point of the
- ground state, as Fig.
+ is achieved when 
+\begin_inset Formula $\xi=1$
+\end_inset
+
+, which is shown as Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4177,20 +4311,7 @@ reference "fig:nxi=1M=many"
 
 \end_inset
 
- shows for 
-\begin_inset Formula $H=-H_{0}+\Delta H$
-\end_inset
-
 .
- Comparing the disappearance point of the ground state between 
-\begin_inset Formula $\xi=1$
-\end_inset
-
- and 
-\begin_inset Formula $\xi=1.5$
-\end_inset
-
-, there is no change 
 \end_layout
 
 \begin_layout Standard
