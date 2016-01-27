@@ -8613,7 +8613,7 @@ As we see, the normal ordering terms cancel out.
 
 \end_inset
 
-
+ 
 \begin_inset Formula 
 \begin{eqnarray*}
 \left[\tr\bar{b}\bar{a}ab,\tr\bar{a}b\right] & = & \tr\bar{b}\bar{a}ab\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}\bar{a}ab\\
@@ -8967,7 +8967,7 @@ Since they have the same structer wether
 , so when it work on the first bit 
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}X(1)=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-\left(\bar{x}_{1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
+G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}(1)=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-\left(\bar{x}_{1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
 \]
 
 \end_inset
@@ -8979,7 +8979,7 @@ G_{\alpha}^{\beta}X(1)=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-\lef
 Then the second bit 
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}X(2)=(\bar{x}_{1})_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-\left(\bar{x}_{1}\bar{x}_{2}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
+G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}(2)=(\bar{x}_{1})_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-\left(\bar{x}_{1}\bar{x}_{2}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
 \]
 
 \end_inset
@@ -8988,7 +8988,7 @@ G_{\alpha}^{\beta}X(2)=(\bar{x}_{1})_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots
 \end_layout
 
 \begin_layout Standard
-We notice that the indices all have the same order and the first term of
+We notice that the indices all have the same order, and the first term of
  the second one would cancel the second term of the first one.
 \end_layout
 
@@ -8996,7 +8996,7 @@ We notice that the indices all have the same order and the first term of
 Until the last bit:
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}X(M)=\left(\bar{x}_{1}\cdots\bar{x}_{M-1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-X{}_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
+G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}(M)=\left(\bar{x}_{1}\cdots\bar{x}_{M-1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-X{}_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
 \]
 
 \end_inset
@@ -9005,8 +9005,25 @@ G_{\alpha}^{\beta}X(M)=\left(\bar{x}_{1}\cdots\bar{x}_{M-1}\right){}_{\alpha_{1}
 \end_layout
 
 \begin_layout Standard
-Add up them together, all of the middle term will cancel, the remaining
- is:
+Add up them together,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}=\text{ }\sum_{k=1}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{k-1}\right)_{\alpha_{1}}^{\beta}\left(\bar{x}_{k}\cdots\bar{x}_{M}\right)_{\alpha}^{\alpha_{M+1}}-\left(\bar{x}_{1}\cdots\bar{x}_{k}\right)_{\alpha_{1}}^{\beta}\left(\bar{x}_{k+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\alpha_{M+1}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+all of the middle term will cancel, the remaining is:
 \end_layout
 
 \begin_layout Standard
