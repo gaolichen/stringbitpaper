@@ -90,7 +90,7 @@ Gaoli Chen
 status open
 
 \begin_layout Plain Layout
-email: gchen@ufl.edu
+Email: gchen@ufl.edu
 \end_layout
 
 \end_inset
@@ -100,7 +100,7 @@ email: gchen@ufl.edu
 status open
 
 \begin_layout Plain Layout
-email: uranussg@phys.ufl.edu
+Email: uranussg@phys.ufl.edu
 \end_layout
 
 \end_inset
@@ -124,15 +124,15 @@ Department of Physics, University of Florida, Gainesville, FL 32611
 
 \begin_layout Abstract
 String bit is an idea to formulate string as a discrete chain of point-like
- string bits, each of which have 
+ string bits, each of which has 
 \begin_inset Formula $s$
 \end_inset
 
- fermionic degree of freedom and 
+ fermionic degrees of freedom and 
 \begin_inset Formula $d$
 \end_inset
 
- bosonic degree of freedom.
+ bosonics degree of freedom.
  The continuous string emerge when the bit number 
 \begin_inset Formula $M$
 \end_inset
@@ -143,7 +143,7 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \end_inset
 
 , the string bit model describes the 10-dimensional superstring.
- We study the simplest case of 
+ We study the simplest case with 
 \begin_inset Formula $s=1$
 \end_inset
 
@@ -152,15 +152,98 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \end_inset
 
 .
- We provide a general form of supersymmetric Hamiltonian of the model and
- show that the energy spectrum of such a model is continuous.
- We numerically computate the energy spectrum of a special form of supersymmetri
-c Hamiltonian, which produce the superstring Hamiltonian in large 
+ The creation and annihilation operators are adjoint representations of
+ 
+\begin_inset Formula $U\left(N\right)$
+\end_inset
+
+ group.
+ The Hamiltonian 
+\begin_inset Formula $H$
+\end_inset
+
+ is constructed so that its action on a bit chain does not vanish at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ A general supersymmetric Hamiltonian has three free parameter and produces
+ continuous energy spectrum at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ We concentrate on numerical study of the model in finite 
 \begin_inset Formula $N$
 \end_inset
 
- limit.
+ and 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+.
+ We show that the ground energy state of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+, a special Hamiltonian produces the superstring Hamiltonian at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, disappears at 
+\begin_inset Formula $N=\left(M-1\right)/2$
+\end_inset
+
+ for odd 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ When 
+\begin_inset Formula $N$
+\end_inset
+
+ large enough, the ground energy descrese linearly with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ and that the excitation energy is roughly of order 
+\begin_inset Formula $M^{-1}$
+\end_inset
+
+.
+ We also investigate generalized Hamiltonians of the form 
+\begin_inset Formula $\pm H_{0}+\xi\Delta H$
+\end_inset
+
+, where 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ vanishes at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
+ We find a stable system requires 
+\begin_inset Formula $\xi\geq\mp1$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\xi$
+\end_inset
+
+ increases, the disappearance point of the ground energy state move to larger
  
+\begin_inset Formula $N$
+\end_inset
+
+ until reach the point 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2951,12 +3034,33 @@ From these figures, we can see several features of the eigenstates of
 etc.
 
 \shape default
- The first disappearances of ground states occur at 
-\begin_inset Formula $N=\left(M-1\right)/2$
+ For convenience, we denote as 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ the maximum value of 
+\begin_inset Formula $N$
+\end_inset
+
+ where the first disappearance of ground state occurs for bit number 
+\begin_inset Formula $M$
 \end_inset
 
 .
- It follws that, for ground states surviving, 
+ From the figures, we see that 
+\begin_inset Formula $N_{M}^{*}=\left(M-1\right)/2$
+\end_inset
+
+ for 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+.
+ If it's true for all 
+\begin_inset Formula $M$
+\end_inset
+
+, it follows that, for ground states surviving, 
 \begin_inset Formula $N$
 \end_inset
 
@@ -3255,8 +3359,11 @@ reference "figH=h0M=even"
 \begin_inset Formula $M$
 \end_inset
 
- case, there is no simple formula to determine where the first disappearnace
- occurs.
+ case, there is no simple formula to determine 
+\begin_inset Formula $N_{d}$
+\end_inset
+
+.
  The reason for the difference is the ground energy of 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -3305,11 +3412,15 @@ name "figH=h0M=even"
 
 \end_inset
 
-Lowest 5 energy states Hamiltonia 
+Lowest 5 eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ for 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
- with 
+ at 
 \begin_inset Formula $M=4,6,8,10$
 \end_inset
 
@@ -3380,7 +3491,7 @@ reference "fig:physical-state-H0"
 \end_inset
 
  at rate 
-\begin_inset Formula $-\frac{8}{\pi}$
+\begin_inset Formula $-8/\pi$
 \end_inset
 
 , as prediced by Eq.
@@ -3516,7 +3627,7 @@ reference "fig:First-excitation-H0"
 \end_inset
 
  is 
-\begin_inset Formula $\frac{16\pi}{3}$
+\begin_inset Formula $16\pi/3$
 \end_inset
 
 .
@@ -3659,55 +3770,32 @@ reference "fig:xi=manyM=3"
 \end_inset
 
 .
- The disappearnce point of ground state moves in the opposite direction:
- when 
+ The disappearnce point of ground state, 
+\begin_inset Formula $N_{3}^{*}$
+\end_inset
+
+, moves in the opposite direction: for 
 \begin_inset Formula $-1\leq\xi\leq-0.1$
 \end_inset
 
-, the ground state disappears at 
-\begin_inset Formula $N=1$
+, 
+\begin_inset Formula $N_{3}^{*}=1$
 \end_inset
 
-; when 
+; for 
 \begin_inset Formula $\xi=0.5$
 \end_inset
 
- the disappearance occurs between 
-\begin_inset Formula $0.5<1/N<1$
+, 
+\begin_inset Formula $1<N_{3}^{*}<2$
 \end_inset
 
-; when 
+; for 
 \begin_inset Formula $\xi=3$
 \end_inset
 
-, it's at 
-\begin_inset Formula $N=2$
-\end_inset
-
-.
- The largest 
-\begin_inset Formula $N$
-\end_inset
-
- the ground state disappears is 
-\begin_inset Formula $N=M-1$
-\end_inset
-
-, such as the case of 
-\begin_inset Formula $H=H_{0}+2\Delta H$
-\end_inset
-
-.
- Because of the stabalization constraint 
-\begin_inset Formula $\xi\geq-1$
-\end_inset
-
-, the lowest 
-\begin_inset Formula $N$
-\end_inset
-
- the ground states disappears first time is 
-\begin_inset Formula $N=\left(M-1\right)/2$
+, 
+\begin_inset Formula $N_{3}^{*}=2$
 \end_inset
 
 .
@@ -3794,6 +3882,169 @@ Eigenvalues of
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since all eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ is physical when 
+\begin_inset Formula $N\geq M$
+\end_inset
+
+, the largest value of 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ is 
+\begin_inset Formula $M-1$
+\end_inset
+
+.
+ Particularly, for 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+, we find 
+\begin_inset Formula $N_{M}^{*}=M-1$
+\end_inset
+
+ can be achieved when 
+\begin_inset Formula $\xi\geq2$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ is minimal when 
+\begin_inset Formula $\xi=-1$
+\end_inset
+
+, the lower bound of the 
+\begin_inset Formula $\xi$
+\end_inset
+
+ meets the stabalization constraint.
+ The 
+\begin_inset Formula $\xi=-1$
+\end_inset
+
+ case is shown as Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:xi=-1M=odd"
+
+\end_inset
+
+.
+ While 
+\begin_inset Formula $N_{M}^{*}=\left(M-1\right)/2$
+\end_inset
+
+ still holds for 
+\begin_inset Formula $M=5$
+\end_inset
+
+ and 
+\begin_inset Formula $7$
+\end_inset
+
+, 
+\begin_inset Formula $N_{9}^{*}=2$
+\end_inset
+
+ and 
+\begin_inset Formula $N_{11}^{*}=3$
+\end_inset
+
+ spoil the pattern.
+ We don't have results for 
+\begin_inset Formula $M>11$
+\end_inset
+
+, but it seems that 
+\begin_inset Formula $M/N_{M}^{*}$
+\end_inset
+
+ could be large for large 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ If it's true, it means that the ground eigenstates could survive when 
+\begin_inset Formula $M$
+\end_inset
+
+ is large and 
+\begin_inset Formula $N\ll M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/xi=n1M=odd2.pdf
+	width 100col%
+	BoundingBox 54bp 200bp 550bp 610bp
+	clip
+	groupId SingleColumnPlot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:xi=-1M=odd"
+
+\end_inset
+
+Lowest 5 eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ for 
+\begin_inset Formula $H=H_{0}-\Delta H$
+\end_inset
+
+ at 
+\begin_inset Formula $M=5,7,9,11$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3965,29 +4216,8 @@ reference "fig:nxi=1.5M=many"
 \end_inset
 
 .
- Moreover, the first disappearing points of ground states occur at 
-\begin_inset Formula $N=M-1$
-\end_inset
-
- for 
-\begin_inset Formula $\xi=1.5$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Fig.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "fig:nH-Physical-ground-energy"
-
-\end_inset
-
- shows the change of physical ground energy with respect to 
-\begin_inset Formula $\xi$
+ From the figure, we see that 
+\begin_inset Formula $N_{d}=M-1$
 \end_inset
 
 .
@@ -4053,6 +4283,224 @@ Eigenvalues of
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\xi$
+\end_inset
+
+ has the similar impact on 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ as the 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ case.
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nxi=1M=many"
+
+\end_inset
+
+ plots the eigenstates of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi=1$
+\end_inset
+
+, when 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ is minimal.
+ There is no simple patter for 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+: for odd 
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $N_{3}^{*}=2$
+\end_inset
+
+, 
+\begin_inset Formula $N_{5}^{*}=2$
+\end_inset
+
+, 
+\begin_inset Formula $N_{7}^{*}=3$
+\end_inset
+
+, and 
+\begin_inset Formula $N_{9}^{*}=3$
+\end_inset
+
+; for even 
+\begin_inset Formula $M$
+\end_inset
+
+, 
+\begin_inset Formula $N_{4}^{*}=3$
+\end_inset
+
+, 
+\begin_inset Formula $N_{6}^{*}=2$
+\end_inset
+
+, 
+\begin_inset Formula $N_{8}=2$
+\end_inset
+
+, and 
+\begin_inset Formula $N_{10}^{*}=3$
+\end_inset
+
+.
+ It suggests that the ground eigenstate could survive when 
+\begin_inset Formula $M$
+\end_inset
+
+ is large and 
+\begin_inset Formula $N\ll M$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/boson/nxi=1M=many2.pdf
+	width 100col%
+	BoundingBox 55bp 90bp 550bp 595bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:nxi=1M=many"
+
+\end_inset
+
+Eigenvalues of 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ for 
+\begin_inset Formula $H=-H_{0}+\Delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $3\leq M\leq10$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:nH-Physical-ground-energy"
+
+\end_inset
+
+ shows the change of physical ground energy with respect to 
+\begin_inset Formula $M$
+\end_inset
+
+ at fixed 
+\begin_inset Formula $N$
+\end_inset
+
+ for 
+\begin_inset Formula $H=-H_{0}+\xi\Delta H$
+\end_inset
+
+.
+ It's similar to the 
+\begin_inset Formula $H=H_{0}+\xi\Delta H$
+\end_inset
+
+ case.
+ When 
+\begin_inset Formula $\xi=0.5$
+\end_inset
+
+, the system is not stable in finite 
+\begin_inset Formula $N$
+\end_inset
+
+ as their curves decline faster linearly.
+ When 
+\begin_inset Formula $\xi=1$
+\end_inset
+
+, it's the marginal case and all the physical ground energies drop almost
+ linearly.
+ When 
+\begin_inset Formula $\xi=1.5$
+\end_inset
+
+ or 
+\begin_inset Formula $\xi=3$
+\end_inset
+
+, the curves for small 
+\begin_inset Formula $N$
+\end_inset
+
+ are zig-zag, and particularly, when 
+\begin_inset Formula $\xi=3$
+\end_inset
+
+ and 
+\begin_inset Formula $N=3$
+\end_inset
+
+, the trend is  slightly upward.
+ It implies that the system is stable.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -4133,8 +4581,8 @@ In this paper we have studied the string bit model with
 \begin_inset Formula $N$
 \end_inset
 
- for Hamltonians of the form 
-\begin_inset Formula $\pm H_{0}+\xi\Delta H$
+ for Hamltonians 
+\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
 \end_inset
 
 , where, at 
@@ -4174,28 +4622,69 @@ We showed that the supersymmetry plays a crucial role in the model.
 \end_layout
 
 \begin_layout Standard
-At finite 
+In finite 
 \begin_inset Formula $N$
 \end_inset
 
-, the superstring Hamiltonian, 
-\begin_inset Formula $\pm H_{0}+\xi\Delta H$
-\end_inset
-
- with 
-\begin_inset Formula $\xi\geq-1$
-\end_inset
-
-, also has stringy behavior.
- For 
+, we numerically studies the energy spectrum of the model up to 
 \begin_inset Formula $M\leq11$
 \end_inset
 
- at fixed 
+.
+ The ground energy eigenstates disappear when 
 \begin_inset Formula $N$
 \end_inset
 
-, one finds the ground energy almost declines linearly with respect to 
+ is small.
+ One finds that the ground energy state of 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+ is unphysical when 
+\begin_inset Formula $N\leq\left(M-1\right)/2$
+\end_inset
+
+.
+ We are not sure whether this relation holds for larger 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
+\end_inset
+
+, a higher (lower) 
+\begin_inset Formula $\xi$
+\end_inset
+
+ pushes the disappearance point in higher (lower) 
+\begin_inset Formula $N$
+\end_inset
+
+ direction.
+ When 
+\begin_inset Formula $H=\pm H_{0}\mp\Delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+ is large, the disappearance point of ground states occur at 
+\begin_inset Formula $N<\left(M-1\right)/2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For fixed 
+\begin_inset Formula $N$
+\end_inset
+
+, the ground energy almost declines linearly with respect to 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4209,6 +4698,41 @@ At finite
 \end_inset
 
 , the trend is still evident.
+ This indicates the model has stringy behavior.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
+\end_inset
+
+, the system is stable only when 
+\begin_inset Formula $\xi\geq\mp1$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\xi$
+\end_inset
+
+ increases, the disappearance point of ground state moves to larger 
+\begin_inset Formula $N$
+\end_inset
+
+ direction until it reaches 
+\begin_inset Formula $N=M-1$
+\end_inset
+
+.
+ Conversly, the disappearance point moves to lower 
+\begin_inset Formula $N$
+\end_inset
+
+ direction as 
+\begin_inset Formula $\xi$
+\end_inset
+
+ decrease.
  
 \end_layout
 
@@ -6159,11 +6683,11 @@ The limit of
 \end_layout
 
 \begin_layout Section
-Rank of Metrix Matrix
+Rank of Norm Matrix
 \end_layout
 
 \begin_layout Standard
-The metric matrix 
+The norm matrix 
 \begin_inset Formula $G$
 \end_inset
 
