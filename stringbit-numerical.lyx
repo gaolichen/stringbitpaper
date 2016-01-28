@@ -4631,48 +4631,104 @@ In finite
 \end_inset
 
 .
- The ground energy eigenstates disappear when 
-\begin_inset Formula $N$
+ There exists a maximal integer 
+\begin_inset Formula $N_{M}^{*}$
 \end_inset
 
- is small.
- One finds that the ground energy state of 
-\begin_inset Formula $H=H_{0}$
+ that when 
+\begin_inset Formula $N\leq N_{M}^{*}$
 \end_inset
 
- is unphysical when 
-\begin_inset Formula $N\leq\left(M-1\right)/2$
-\end_inset
-
-.
- We are not sure whether this relation holds for larger 
+ the ground energy eigenstate of 
 \begin_inset Formula $M$
 \end_inset
 
+-bit system is unphysical.
+ For 
+\begin_inset Formula $H=H_{0}$
+\end_inset
+
+ and odd 
+\begin_inset Formula $M\leq11$
+\end_inset
+
+, the numerical computation shows 
+\begin_inset Formula $N_{M}^{*}=\left(M-1\right)/2$
+\end_inset
+
 .
+ If such a simple relation holds for all odd 
+\begin_inset Formula $M$
+\end_inset
+
+, then, at large 
+\begin_inset Formula $M$
+\end_inset
+
+, the surviving of ground state requires 
+\begin_inset Formula $N$
+\end_inset
+
+ to be large as well.
  For 
 \begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
 \end_inset
 
-, a higher (lower) 
+, 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ increases (decreases) as 
 \begin_inset Formula $\xi$
 \end_inset
 
- pushes the disappearance point in higher (lower) 
-\begin_inset Formula $N$
+ increases (decreases).
+ The maximum value of 
+\begin_inset Formula $N_{M}^{*}$
 \end_inset
 
- direction.
- When 
+ is 
+\begin_inset Formula $\left(M-1\right)$
+\end_inset
+
+.
+ The minimum of 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ is achieved when 
 \begin_inset Formula $H=\pm H_{0}\mp\Delta H$
 \end_inset
 
- and 
+ because of the stablization constraint 
+\begin_inset Formula $\xi\geq\mp1$
+\end_inset
+
+.
+ In the minimum cases, one find that 
+\begin_inset Formula $N_{M}^{*}$
+\end_inset
+
+ is less than 
+\begin_inset Formula $\left(M-1\right)/2$
+\end_inset
+
+ when 
+\begin_inset Formula $7<M\leq11$
+\end_inset
+
+ .
+ If such a trend continues for 
+\begin_inset Formula $M>11$
+\end_inset
+
+, it means that the gound energy state might be able to survive at very
+ large 
 \begin_inset Formula $M$
 \end_inset
 
- is large, the disappearance point of ground states occur at 
-\begin_inset Formula $N<\left(M-1\right)/2$
+ and 
+\begin_inset Formula $M\gg N$
 \end_inset
 
 .
@@ -4680,15 +4736,34 @@ In finite
 \end_layout
 
 \begin_layout Standard
-For fixed 
+For fixed finite 
 \begin_inset Formula $N$
 \end_inset
 
-, the ground energy almost declines linearly with respect to 
+ and 
+\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
+\end_inset
+
+, the system is stable only when 
+\begin_inset Formula $\xi\geq\mp1$
+\end_inset
+
+.
+ The ground energy drops almost linearly with respect to 
 \begin_inset Formula $M$
 \end_inset
 
- and the excitation energy is proportional to 
+ when 
+\begin_inset Formula $\xi\geq\mp1$
+\end_inset
+
+ and faster than linearly when 
+\begin_inset Formula $\xi<\mp1$
+\end_inset
+
+.
+ The numerical computation also reveals the excitation energy is roughly
+ proportional to 
 \begin_inset Formula $M^{-1}$
 \end_inset
 
@@ -4698,42 +4773,11 @@ For fixed
 \end_inset
 
 , the trend is still evident.
- This indicates the model has stringy behavior.
-\end_layout
-
-\begin_layout Standard
-For 
-\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
-\end_inset
-
-, the system is stable only when 
+ These properties indicate that the model has stringy behavior when 
 \begin_inset Formula $\xi\geq\mp1$
 \end_inset
 
 .
- As 
-\begin_inset Formula $\xi$
-\end_inset
-
- increases, the disappearance point of ground state moves to larger 
-\begin_inset Formula $N$
-\end_inset
-
- direction until it reaches 
-\begin_inset Formula $N=M-1$
-\end_inset
-
-.
- Conversly, the disappearance point moves to lower 
-\begin_inset Formula $N$
-\end_inset
-
- direction as 
-\begin_inset Formula $\xi$
-\end_inset
-
- decrease.
- 
 \end_layout
 
 \begin_layout Standard
