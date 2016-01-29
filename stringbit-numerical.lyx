@@ -999,9 +999,9 @@ reference "App:Calculation-of-HQ"
 \begin_inset Formula 
 \begin{equation}
 \begin{cases}
-c_{2} & =\Im z_{2}\\
+\Im z_{1} & =\Im z_{2}\\
 c_{1}-c_{2} & =2\Re z_{2}\\
-c_{4}-c_{3} & =\Re z_{1}\\
+c_{3}-c_{4} & =2\Re z_{1}\\
 c_{1}+c_{2} & =c_{3}+c_{4}
 \end{cases},\label{eq:Susy-constraint}
 \end{equation}
@@ -4830,7 +4830,8 @@ Acknowledgements
 \end_layout
 
 \begin_layout Standard
-TODO
+We thank Charles Thorn who provides lots of advice on this work.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -9282,157 +9283,6 @@ reference "eq:Susy-constraint"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Subsection*
-\begin_inset Formula $\left[H',Q\right]$
-\end_inset
-
- Calculation
-\end_layout
-
-\begin_layout Standard
-In [ref to string-bit], the Hamiltonian we chose is written as 
-\begin_inset Formula $H'=H_{0}^{\prime}+\Delta H^{\prime},$
-\end_inset
-
-where 
-\begin_inset Formula 
-\begin{eqnarray*}
-H_{0}^{\prime} & = & \frac{2}{N}\mathrm{Tr}\left[i\bar{a}^{2}b^{2}-i\bar{b}^{2}a^{2}+\bar{a}\bar{b}ab+\bar{b}\bar{a}ba+\bar{a}^{2}a^{2}-\bar{b}^{2}b^{2}\right],\\
-\Delta H^{\prime} & = & \frac{1}{N}\mathrm{Tr}\left[2\xi_{1}\bar{a}\bar{b}ba+2\xi_{2}\bar{b}\bar{a}ab+\left(\xi_{1}+\xi_{2}\right)\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\right],\\
-\tilde{M} & = & \tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right).
-\end{eqnarray*}
-
-\end_inset
-
- As the main text states, 
-\begin_inset Formula $H'$
-\end_inset
-
- does not commute with 
-\begin_inset Formula $Q=\tr\left(\bar{a}b*exp(i\frac{\pi}{4})+\bar{b}a*exp(-i\frac{\pi}{4})\right)$
-\end_inset
-
- for all 
-\begin_inset Formula $\xi_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $\xi_{2}$
-\end_inset
-
- .
- In this section, we calculate 
-\begin_inset Formula $\left[H',Q\right]$
-\end_inset
-
- and find the constraint under which it vanishes.
- 
-\end_layout
-
-\begin_layout Standard
-Substituting above results into 
-\begin_inset Formula $\left[H_{0}^{\prime},Q\right]$
-\end_inset
-
- yields 
-\begin_inset Formula 
-\begin{eqnarray}
-\left[H_{0}^{\prime},Q\right] & = & \frac{2i}{N}\left[\tr\bar{a}^{2}b^{2},Q\right]-2i\left[\tr\bar{b}^{2}a^{2},Q\right]+2\left[\tr\bar{a}\bar{b}ab,Q\right]\nonumber \\
- &  & +\frac{2}{N}\left[\tr\bar{b}\bar{a}ba,Q\right]+2\left[\tr\bar{a}^{2}a^{2},Q\right]-2\left[\tr\bar{b}^{2}b^{2},Q\right]\nonumber \\
- & = & \frac{2}{N}\exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\right]\nonumber \\
- &  & +\frac{2}{N}\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2}\right].\label{eq:App-H0-Q-Com}
-\end{eqnarray}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-for 
-\begin_inset Formula $\left[\Delta H^{\prime},Q\right]$
-\end_inset
-
- , we obtain 
-\begin_inset Formula 
-\begin{eqnarray*}
-2\left[\xi_{1}\tr\bar{a}\bar{b}ba+\xi_{2}\tr\bar{b}\bar{a}ab,Q\right] & = & 2\exp\left(i\frac{\pi}{4}\right)\Big[-\tr\bar{a}^{2}\left(\xi_{1}ba+\xi_{2}ab\right)+\tr\left(\xi_{1}\bar{a}\bar{b}-\xi_{2}\bar{b}\bar{a}\right)b^{2}\Big]\\
- &  & +2\exp\left(-i\frac{\pi}{4}\right)\Big[\tr\left(\xi_{1}\bar{a}\bar{b}+\xi_{2}\bar{b}\bar{a}\right)a^{2}+\tr\bar{b}^{2}\left(-\xi_{1}ba+\xi_{2}ab\right)\Big],
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\left(\xi_{1}+\xi_{2}\right)\left[\tr\left(\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right),Q\right] & = & \left(\xi_{1}+\xi_{2}\right)\exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2}\right]\\
- &  & +\left(\xi_{1}+\xi_{2}\right)\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ba-ab\right)-\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}\right].
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Easy to check that 
-\begin_inset Formula $\left[\tilde{M},Q\right]=0$
-\end_inset
-
-.
- Therefore, we obtain 
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\Delta H^{\prime},Q\right] & = & \frac{\xi_{1}-\xi_{2}}{N}\Big\{\exp\left(i\frac{\pi}{4}\right)\Big[\tr\bar{a}^{2}\left(ab-ba\right)+\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\Big]\\
- &  & -\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ba+ab\right)+\tr\left(-\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}\right]\Big\}.
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Comparing 
-\begin_inset Formula $\left[\Delta H^{\prime},Q\right]$
-\end_inset
-
- with 
-\begin_inset Formula $\left[H_{0}^{\prime},Q\right]$
-\end_inset
-
- in Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:App-H0-Q-Com"
-
-\end_inset
-
-, we find that 
-\begin_inset Formula $\left[H_{0}^{\prime}+\Delta H^{\prime},Q\right]=0$
-\end_inset
-
- if 
-\begin_inset Formula $\xi_{1}-\xi_{2}=2$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
