@@ -9293,7 +9293,7 @@ name "app:HPrime-Equals-DeltaH"
 \end_inset
 
 Proof of 
-\begin_inset Formula $\left(H^{\prime}-\Delta H\right)\ket{\text{color singlet}}=0$
+\begin_inset Formula $\left(H^{\prime}-\Delta H\right)\ket{\text{Any trace state}}=0$
 \end_inset
 
 
@@ -9326,9 +9326,9 @@ H^{\prime} & = & \frac{2}{N}\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\
 
 We first prove that 
 \begin_inset Formula 
-\[
-\Delta H-H^{\prime}=\tr G^{2},
-\]
+\begin{equation}
+N\left(H^{\prime}-\Delta H\right)=\tr G^{2},\label{eq:HPrime-DeltaH-G2-1}
+\end{equation}
 
 \end_inset
 
@@ -9342,69 +9342,67 @@ We first prove that
 \begin_layout Standard
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}=\left(\bar{a}a+\bar{b}b-\normord{a\bar{a}}-\normord{b\bar{b}}\right)_{\alpha}^{\beta},
+G_{\alpha}^{\beta}=\left(\bar{a}a-\normord{a\bar{a}}+\bar{b}b-\normord{b\bar{b}}\right)_{\alpha}^{\beta},
 \]
 
 \end_inset
 
  then it's sufficient to prove that 
 \begin_inset Formula 
+\begin{equation}
+G_{\alpha}^{\beta}\ket{\text{Any trace state}}=0.\label{eq:HPrime-DeltaH-G2-2}
+\end{equation}
+
+\end_inset
+
+ Expanding 
+\begin_inset Formula $\tr G^{2}$
+\end_inset
+
+ yields
+\begin_inset Formula 
 \[
-G_{\alpha}^{\beta}\ket{\text{Any trace state}}=0.
+\tr G^{2}=\tr\left(\bar{a}a-\normord{a\bar{a}}\right)^{2}+\tr\left(\bar{b}b-\normord{b\bar{b}}\right)^{2}+2\tr\left(\bar{b}b-\normord{b\bar{b}}\right)\left(\bar{a}a-\normord{a\bar{a}}\right).
 \]
+
+\end_inset
+
+Expanding each term of the right hand side, we obtain
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr\left(\bar{a}a-\normord{a\bar{a}}\right)^{2} & = & \tr\bar{a}a\bar{a}a+\tr\left(\normord{a\bar{a}}\normord{a\bar{a}}\right)-\tr\left(\bar{a}a\normord{a\bar{a}}+\normord{a\bar{a}}\bar{a}a\right)\\
+ & = & 2\tr\left(\normord{\bar{a}a\bar{a}a}\right)+2N\tr\bar{a}a-\left(2\tr\bar{a}^{2}a^{2}+\tr\bar{a}\tr a\right),
+\end{eqnarray*}
 
 \end_inset
 
 
 \begin_inset Formula 
 \begin{eqnarray*}
-\tr G^{2} & = & G_{\beta}^{\alpha}G_{\alpha}^{\beta}\\
- & = & \left(\bar{a}a+\bar{b}b-\normord{a\bar{a}}-\normord{b\bar{b}}\right)_{\beta}^{\alpha}\left(\bar{a}a+\bar{b}b-\normord{a\bar{a}}-\normord{b\bar{b}}\right)_{\alpha}^{\beta}\\
- & = & \tr\bar{a}a\bar{a}a+\tr\bar{b}b\bar{b}b+\tr a\bar{a}a\bar{a}+\tr b\bar{b}b\bar{b}\\
- &  & +2\tr\bar{a}a\bar{b}b-\tr\bar{a}aa\bar{a}-\tr a\bar{a}\bar{a}a+2\tr\bar{a}ab\bar{b}\\
- &  & -2\tr a\bar{a}\bar{b}b+\tr\bar{b}bb\bar{b}+\tr b\bar{b}\bar{b}b-2\tr a\bar{a}b\bar{b}
+\tr\left(\bar{b}b-\normord{b\bar{b}}\right)^{2} & = & \tr\left(\bar{b}b\bar{b}b+\normord{b\bar{b}}\normord{b\bar{b}}\right)-\tr\left(\bar{b}b\normord{b\bar{b}}+\normord{b\bar{b}}\bar{b}b\right)\\
+ & = & 2N\tr\bar{b}b-2\left(\tr\bar{b}^{2}b^{2}+\tr\bar{b}\tr b\right),
 \end{eqnarray*}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Its commutation with any free bit has the property that would permutates
- the color indices.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\bar{a}_{\alpha}^{\beta},\, G_{\gamma}^{\delta}\right] & = & \bar{a}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{a}_{\alpha}^{\delta}\\
-\left[\bar{b}_{\alpha}^{\beta},\, G_{\gamma}^{\delta}\right] & = & \bar{b}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{b}_{\alpha}^{\delta}
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-To any singlets, first let's prove 
-\begin_inset Formula $G_{\alpha}^{\beta}\ket{\mathrm{singlet}}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-set a 
-\begin_inset Formula $M$
-\end_inset
-
- bits open chain 
 \begin_inset Formula 
 \[
-X_{\alpha_{1}}^{\alpha_{M+1}}=\left(\bar{x}_{1}\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha_{1}}^{\alpha_{M+1}}\qquad\bar{x}=\bar{a}\,\mathrm{or}\,\bar{b}
+\tr\left(\bar{b}b-\normord{b\bar{b}}\right)\left(\bar{a}a-\normord{a\bar{a}}\right)=\tr\bar{b}b\bar{a}a+\tr\left(\normord{\bar{a}b\bar{b}a}\right)-\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab\right).
 \]
+
+\end_inset
+
+ It follows
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr G^{2} & = & 2\tr\left(\normord{\bar{a}a\bar{a}a}+\bar{b}b\bar{a}a+\normord{\bar{a}b\bar{b}a}\right)\\
+ &  & -2\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right)\\
+ &  & +2N\tr\left(\bar{a}a+\bar{b}b\right)-2\tr\bar{a}\tr a-2\tr\bar{b}\tr b\\
+ & = & 2\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right)\\
+ &  & -2\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\\
+ & = & N\left(H^{\prime}-\Delta H\right).
+\end{eqnarray*}
 
 \end_inset
 
@@ -9412,222 +9410,91 @@ X_{\alpha_{1}}^{\alpha_{M+1}}=\left(\bar{x}_{1}\bar{x}_{2}\cdots\bar{x}_{M}\righ
 \end_layout
 
 \begin_layout Standard
-Since they have the same structer wether 
-\begin_inset Formula $G_{\alpha}^{\beta}$
-\end_inset
-
- act on 
-\begin_inset Formula $\bar{a}\,\mathrm{or}\,\bar{b}$
-\end_inset
-
-, so when it work on the first bit 
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}(1)=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-\left(\bar{x}_{1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
-\]
+Now let's prove 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:HPrime-DeltaH-G2-2"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Then the second bit 
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}(2)=(\bar{x}_{1})_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-\left(\bar{x}_{1}\bar{x}_{2}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{2}\cdots\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We notice that the indices all have the same order, and the first term of
- the second one would cancel the second term of the first one.
-\end_layout
-
-\begin_layout Standard
-Until the last bit:
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}(M)=\left(\bar{x}_{1}\cdots\bar{x}_{M-1}\right){}_{\alpha_{1}}^{\beta}\left(\bar{x}_{M}\right){}_{\alpha}^{\alpha_{M+1}}-X{}_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Add up them together,
+.
+ Easy to check that
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}=\text{ }\sum_{k=1}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{k-1}\right)_{\alpha_{1}}^{\beta}\left(\bar{x}_{k}\cdots\bar{x}_{M}\right)_{\alpha}^{\alpha_{M+1}}-\left(\bar{x}_{1}\cdots\bar{x}_{k}\right)_{\alpha_{1}}^{\beta}\left(\bar{x}_{k+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\alpha_{M+1}}
-\]
+\begin{eqnarray*}
+\left[\bar{a}_{\alpha}^{\beta},\, G_{\gamma}^{\delta}\right] & = & \bar{a}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{a}_{\alpha}^{\delta},\\
+\left[\bar{b}_{\alpha}^{\beta},\, G_{\gamma}^{\delta}\right] & = & \bar{b}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{b}_{\alpha}^{\delta}.
+\end{eqnarray*}
 
 \end_inset
 
-
-\begin_inset Formula 
-\[
-\]
-
-\end_inset
-
-all of the middle term will cancel, the remaining is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}X_{\alpha_{1}}^{\alpha_{M+1}}=X_{\alpha}^{\alpha_{M+1}}\delta_{\alpha_{1}}^{\beta}-X{}_{\alpha_{1}}^{\beta}\delta_{\alpha}^{\alpha_{M+1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Now we trace over 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $X_{\alpha_{1}}^{\alpha_{M+1}}$
-\end_inset
-
-, which mean 
-\begin_inset Formula $\alpha_{1}=\alpha_{M+1}$
-\end_inset
-
-, we have
-\begin_inset Formula $G_{\alpha}^{\beta}X=0$
-\end_inset
-
- .
- 
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+Let 
 \begin_inset Formula $X$
 \end_inset
 
- can represent any singlets, wo we've proven that 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-
-\begin_inset Formula $G_{\alpha}^{\beta}\ket{\mathrm{singlet}}=0$
+ be a 
+\begin_inset Formula $M$
 \end_inset
 
+-bits chain 
+\begin_inset Formula 
+\[
+X_{\alpha}^{\beta}=\left(\bar{x}_{1}\bar{x}_{2}\cdots\bar{x}_{M}\right)_{\alpha}^{\beta},\quad\bar{x}_{i}=\bar{a}\,\text{or}\,\bar{b},
+\]
 
-\end_layout
-
-\begin_layout Standard
-Then straightforwardly we have 
-\begin_inset Formula $\tr(G^{2})\ket{\mathrm{singlet}}=0$
 \end_inset
 
+ then
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[X_{\alpha}^{\beta},G_{\gamma}^{\delta}\right] & = & \sum_{i=1}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\sigma}^{\beta}\left[\bar{x}_{\rho}^{\sigma},G_{\gamma}^{\delta}\right]\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\rho}\\
+ & = & \sum_{i=1}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\sigma}^{\beta}\left(\left(\bar{x}_{i}\right)_{\gamma}^{\sigma}\delta_{\rho}^{\delta}-\delta_{\gamma}^{\sigma}\left(\bar{x}_{i}\right)_{\rho}^{\delta}\right)\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\rho}\\
+ & = & \sum_{i=1}^{M-1}\left(\bar{x}_{1}\cdots\bar{x}_{i}\right)_{\gamma}^{\beta}\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}+\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}\\
+ &  & -\left(\sum_{i=2}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\gamma}^{\beta}\left(\bar{x}_{i}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}+\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}\right)\\
+ & = & \left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}.
+\end{eqnarray*}
+
+\end_inset
+
+ On the other hand 
+\begin_inset Formula 
+\[
+\left[X_{\alpha}^{\beta},G_{\gamma}^{\delta}\right]\ket{0}=X_{\alpha}^{\beta}G_{\gamma}^{\delta}\ket{0}-G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0}=-G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0},
+\]
+
+\end_inset
+
+ from which it follows
+\begin_inset Formula 
+\[
+G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0}=\left(\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}-\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}\right)\ket{0}.
+\]
+
+\end_inset
+
+ Taking trace on indices of 
+\begin_inset Formula $X$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+G_{\gamma}^{\delta}\tr\left(X\right)\ket{0}=0.
+\]
+
+\end_inset
+
+Therefore, we proved 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:HPrime-DeltaH-G2-2"
+
+\end_inset
+
+.
  
-\end_layout
-
-\begin_layout Standard
-where
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\tr(G^{2}) & = & 2\tr(\bar{a}a\bar{a}a)+\tr(\bar{b}b\bar{b}b)+\tr(\normord{b\bar{b}}\normord{b\bar{b}})+2\tr(\bar{a}a\bar{b}b)\\
- & - & 2\tr(\bar{a}a\normord{a\bar{a}})-2\tr(\bar{a}a\normord{b\bar{b}})\\
- & - & 2\tr(\bar{b}b\normord{a\bar{a}})-2\tr(\bar{b}b\normord{b\bar{b}})\\
- & + & 2\tr(\normord{a\bar{a}}\normord{b\bar{b}})
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-in which
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-2\tr(\normord{a\bar{a}}\normord{b\bar{b}}) & = & -2\tr(\bar{a}b\bar{b}a)+2N\tr(\bar{a}a)\\
-\tr(\bar{b}b\bar{b}b)+\tr(\normord{b\bar{b}}\normord{b\bar{b}}) & = & 2N\tr(\bar{b}b)\\
-2\tr(\bar{a}a\normord{a\bar{a}}) & = & 2\tr(\bar{a}^{2}a^{2})+\tr\bar{a}\tr a\\
-2\tr(\bar{b}b\normord{b\bar{b}}) & = & 2\tr(\bar{b}^{2}b^{2})+\tr\bar{b}\tr b\\
-2\tr(\bar{a}a\normord{b\bar{b}}) & = & 2\tr(\bar{b}\bar{a}ab)\\
-2\tr(\bar{b}b\normord{a\bar{a}}) & = & 2\tr(\bar{a}\bar{b}ba)
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-from where we can get
-\begin_inset Formula 
-\[
-\tr\left(\bar{a}a\bar{a}a+\bar{a}a\bar{b}b-\bar{a}b\bar{b}a\right)-\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tr\left(\bar{a}a+\bar{b}b\right)+\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right)\right)\ket{\mathrm{singlet}}=0
-\]
-
-\end_inset
-
-which is
-\begin_inset Formula 
-\[
-\Delta H\ket{\mathrm{singlet}}=H'\ket{\mathrm{singlet}}
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
