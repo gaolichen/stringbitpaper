@@ -9293,18 +9293,77 @@ name "app:HPrime-Equals-DeltaH"
 \end_inset
 
 Proof of 
-\begin_inset Formula $H^{\prime}-\Delta H=0$
+\begin_inset Formula $\left(H^{\prime}-\Delta H\right)\ket{\text{color singlet}}=0$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-We define the color operator
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $H^{\prime}$
+\end_inset
+
+ are defined as
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta H & = & \frac{2}{N}\tr\left[\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right],\\
+H^{\prime} & = & \frac{2}{N}\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right),
+\end{eqnarray*}
+
+\end_inset
+
+ where 
 \begin_inset Formula 
 \[
-G_{\alpha}^{\beta}=(\bar{a}a)_{\alpha}^{\beta}+(\bar{b}b)_{\alpha}^{\beta}-\normord{(a\bar{a})_{\alpha}^{\beta}}-\normord{(b\bar{b})_{\alpha}^{\beta}}
+\tilde{M}=\tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right).
 \]
+
+\end_inset
+
+We first prove that 
+\begin_inset Formula 
+\[
+\Delta H-H^{\prime}=\tr G^{2},
+\]
+
+\end_inset
+
+ where the color operator 
+\begin_inset Formula $G_{\alpha}^{\beta}$
+\end_inset
+
+ is defined as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{\alpha}^{\beta}=\left(\bar{a}a+\bar{b}b-\normord{a\bar{a}}-\normord{b\bar{b}}\right)_{\alpha}^{\beta},
+\]
+
+\end_inset
+
+ then it's sufficient to prove that 
+\begin_inset Formula 
+\[
+G_{\alpha}^{\beta}\ket{\text{Any trace state}}=0.
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr G^{2} & = & G_{\beta}^{\alpha}G_{\alpha}^{\beta}\\
+ & = & \left(\bar{a}a+\bar{b}b-\normord{a\bar{a}}-\normord{b\bar{b}}\right)_{\beta}^{\alpha}\left(\bar{a}a+\bar{b}b-\normord{a\bar{a}}-\normord{b\bar{b}}\right)_{\alpha}^{\beta}\\
+ & = & \tr\bar{a}a\bar{a}a+\tr\bar{b}b\bar{b}b+\tr a\bar{a}a\bar{a}+\tr b\bar{b}b\bar{b}\\
+ &  & +2\tr\bar{a}a\bar{b}b-\tr\bar{a}aa\bar{a}-\tr a\bar{a}\bar{a}a+2\tr\bar{a}ab\bar{b}\\
+ &  & -2\tr a\bar{a}\bar{b}b+\tr\bar{b}bb\bar{b}+\tr b\bar{b}\bar{b}b-2\tr a\bar{a}b\bar{b}
+\end{eqnarray*}
 
 \end_inset
 
@@ -9532,7 +9591,7 @@ in which
 \begin_inset Formula 
 \begin{eqnarray*}
 2\tr(\normord{a\bar{a}}\normord{b\bar{b}}) & = & -2\tr(\bar{a}b\bar{b}a)+2N\tr(\bar{a}a)\\
-\tr(\bar{b}b\bar{b}b)++\tr(\normord{b\bar{b}}\normord{b\bar{b}}) & = & 2N\tr(\bar{b}b)\\
+\tr(\bar{b}b\bar{b}b)+\tr(\normord{b\bar{b}}\normord{b\bar{b}}) & = & 2N\tr(\bar{b}b)\\
 2\tr(\bar{a}a\normord{a\bar{a}}) & = & 2\tr(\bar{a}^{2}a^{2})+\tr\bar{a}\tr a\\
 2\tr(\bar{b}b\normord{b\bar{b}}) & = & 2\tr(\bar{b}^{2}b^{2})+\tr\bar{b}\tr b\\
 2\tr(\bar{a}a\normord{b\bar{b}}) & = & 2\tr(\bar{b}\bar{a}ab)\\
