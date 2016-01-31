@@ -132,17 +132,17 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \begin_inset Formula $d$
 \end_inset
 
- bosonics degree of freedom.
- The continuous string emerge when the bit number 
+ bosonics degrees of freedom.
+ When the bit number 
 \begin_inset Formula $M$
 \end_inset
 
- is large.
- In the case of 
+ is large, a bit chain evolves into a continuous string.
+ Particularly, if 
 \begin_inset Formula $s=d=8$
 \end_inset
 
-, the string bit model describes the 10-dimensional superstring.
+, the 10-dimensional superstring emerges.
  We study the simplest case with 
 \begin_inset Formula $s=1$
 \end_inset
@@ -167,8 +167,9 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \end_inset
 
 .
- A general supersymmetric Hamiltonian has three free parameter and produces
- continuous energy spectrum at 
+ We show that a general Hamiltonian has three free parameters under the
+ supersymmetry, which ensures continuous energy spectrum of the model at
+ 
 \begin_inset Formula $N=\infty$
 \end_inset
 
@@ -182,65 +183,81 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \end_inset
 
 .
- We show that the ground energy state of 
+ In the case of 
 \begin_inset Formula $H=H_{0}$
 \end_inset
 
-, a special Hamiltonian produces the superstring Hamiltonian at 
+, a special Hamiltonian produces the Green-Schwarz Hamiltonian at 
 \begin_inset Formula $N=\infty$
 \end_inset
 
-, disappears at 
+, the numerical computation shows that the would be ground energy states
+ disappear at 
 \begin_inset Formula $N=\left(M-1\right)/2$
 \end_inset
 
  for odd 
-\begin_inset Formula $M$
+\begin_inset Formula $M\leq11$
 \end_inset
 
 .
- When 
-\begin_inset Formula $N$
+ Such a simple pattern is spoiled if 
+\begin_inset Formula $H$
 \end_inset
 
- large enough, the ground energy descrese linearly with respect to 
-\begin_inset Formula $M$
+ has an additional term 
+\begin_inset Formula $\xi\Delta H$
 \end_inset
 
- and that the excitation energy is roughly of order 
-\begin_inset Formula $M^{-1}$
-\end_inset
-
-.
- We also investigate generalized Hamiltonians of the form 
-\begin_inset Formula $\pm H_{0}+\xi\Delta H$
-\end_inset
-
-, where 
-\begin_inset Formula $\Delta H$
-\end_inset
-
- vanishes at 
+, which vanishes at 
 \begin_inset Formula $N=\infty$
 \end_inset
 
 .
- We find a stable system requires 
-\begin_inset Formula $\xi\geq\mp1$
-\end_inset
-
-.
- As 
-\begin_inset Formula $\xi$
-\end_inset
-
- increases, the disappearance point of the ground energy state move to larger
- 
+ The disappearance point moves to higher (lower) 
 \begin_inset Formula $N$
 \end_inset
 
- until reach the point 
-\begin_inset Formula $N=M-1$
+ when 
+\begin_inset Formula $\xi$
+\end_inset
+
+ increases (descreases).
+ Particuarly, the 
+\begin_inset Formula $H=\pm\left(H_{0}-\Delta H\right)$
+\end_inset
+
+ cases suggest a possibility that the ground state could survive at large
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ and 
+\begin_inset Formula $M\gg N$
+\end_inset
+
+.
+ The numerical computation also reveals that the model has stringy behavior:
+ when 
+\begin_inset Formula $N$
+\end_inset
+
+ is fixed and large enough, the ground energy descreases linearly with respect
+ to 
+\begin_inset Formula $M$
+\end_inset
+
+ and the excitation energy is roughly of order 
+\begin_inset Formula $M^{-1}$
+\end_inset
+
+.
+ Our study also verifies that a stable system requires 
+\begin_inset Formula $\xi\geq\mp1$
+\end_inset
+
+ for 
+\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
 \end_inset
 
 .
