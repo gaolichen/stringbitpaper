@@ -9,7 +9,8 @@
 \allowdisplaybreaks
 \bibliographystyle{unsrt}
 
-\newcommand{\tr}{\mathrm{Tr}\,}
+%\newcommand{\tr}{\mathrm{Tr}}
+\DeclareMathOperator{\tr}{Tr}
 \newcommand{\ba}{\bar{a}}
 \newcommand{\bb}{\bar{b}}
 \newcommand{\normord}[1]{{:}\!\mathrel{#1}\!{:}}
@@ -9516,7 +9517,7 @@ G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0}=\left(\delta_{\gamma}^{\beta}\left(
  yields 
 \begin_inset Formula 
 \[
-G_{\gamma}^{\delta}\tr\left(X\right)\ket{0}=0.
+G_{\gamma}^{\delta}\tr X\ket{0}=0.
 \]
 
 \end_inset
@@ -9826,8 +9827,8 @@ n and creation operators.
  The results of these two contraction schemes are 
 \begin_inset Formula 
 \begin{eqnarray}
-\mathrm{Tr}\left(Aab\right)\mathrm{Tr}\left(B\bar{b}C\bar{a}D\right)\ket{0} & \to & \left(-1\right)^{\pi\left(AB\bar{b}CD\to A\bar{b}DBC\right)}\mathrm{Tr}\left(ADB\right)\mathrm{Tr}\left(C\right)\ket{0},\label{eq:Alg-1}\\
-\mathrm{Tr}\left(Aab\right)\mathrm{Tr}\left(B\bar{a}C\bar{b}D\right)\ket{0} & \to & \left(-1\right)^{\pi\left(ABC\bar{b}D\to A\bar{b}CDB\right)}\mathrm{Tr}\left(AC\right)\mathrm{Tr}\left(DB\right)\ket{0},\label{eq:Alg-2}
+\tr Aab\tr B\bar{b}C\bar{a}D\ket{0} & \to & \left(-1\right)^{\pi\left(AB\bar{b}CD\to A\bar{b}DBC\right)}\tr ADB\tr C\ket{0},\label{eq:Alg-1}\\
+\tr Aab\tr B\bar{a}C\bar{b}D\ket{0} & \to & \left(-1\right)^{\pi\left(ABC\bar{b}D\to A\bar{b}CDB\right)}\tr AC\tr DB\ket{0},\label{eq:Alg-2}
 \end{eqnarray}
 
 \end_inset
@@ -9871,14 +9872,14 @@ n and creation operators.
 \end_inset
 
 
-\begin_inset Formula $\tr\left(Aab\right)\tr\left(S\right)\ket{0}$
+\begin_inset Formula $\tr Aab\tr S\ket{0}$
 \end_inset
 
  can be written as 
 \begin_inset Formula 
 \begin{eqnarray*}
-\mathrm{Tr}\left(Aab\right)\mathrm{Tr}\left(S\right)\ket{0} & = & \sum_{B\bar{b}C\bar{a}D=S}\left(-1\right)^{\pi\left(AB\bar{b}CD\to A\bar{b}DBC\right)}\mathrm{Tr}\left(ADB\right)\mathrm{Tr}\left(C\right)\ket{0}\\
- &  & +\sum_{B\bar{a}C\bar{b}D=S}\left(-1\right)^{\pi\left(ABC\bar{b}D\to A\bar{b}CDB\right)}\mathrm{Tr}\left(AC\right)\mathrm{Tr}\left(DB\right)\ket{0}.
+\tr Aab\tr S\ket{0} & = & \sum_{B\bar{b}C\bar{a}D=S}\left(-1\right)^{\pi\left(AB\bar{b}CD\to A\bar{b}DBC\right)}\tr ADB\tr C\ket{0}\\
+ &  & +\sum_{B\bar{a}C\bar{b}D=S}\left(-1\right)^{\pi\left(ABC\bar{b}D\to A\bar{b}CDB\right)}\tr AC\tr DB\ket{0}.
 \end{eqnarray*}
 
 \end_inset
@@ -9900,8 +9901,8 @@ reference "eq:Alg-2"
 , for two trace states, we have 
 \begin_inset Formula 
 \begin{eqnarray*}
-\mathrm{Tr}\left(Aab\right)\mathrm{Tr}\left(B\bar{a}C\right)\mathrm{Tr}\left(D\bar{b}E\right)\ket{0} & \to & \left(-1\right)^{\pi\left(ABCD\bar{b}E\to A\bar{b}CBED\right)}\mathrm{Tr}\left(ACBED\right)\ket{0},\\
-\mathrm{Tr}\left(Aab\right)\mathrm{Tr}\left(B\bar{b}C\right)\mathrm{Tr}\left(D\bar{a}E\right)\ket{0} & \to & \left(-1\right)^{\pi\left(AB\bar{b}CDE\to A\bar{b}EDCB\right)}\mathrm{Tr}\left(AEDCB\right)\ket{0}.
+\tr Aab\tr B\bar{a}C\tr D\bar{b}E\ket{0} & \to & \left(-1\right)^{\pi\left(ABCD\bar{b}E\to A\bar{b}CBED\right)}\tr ACBED\ket{0},\\
+\tr Aab\tr B\bar{b}C\tr D\bar{a}E\ket{0} & \to & \left(-1\right)^{\pi\left(AB\bar{b}CDE\to A\bar{b}EDCB\right)}\tr AEDCB\ket{0}.
 \end{eqnarray*}
 
 \end_inset
