@@ -191,7 +191,7 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \begin_inset Formula $N=\infty$
 \end_inset
 
-, the numerical computation shows that the would be ground energy states
+, the numerical computation shows that the would-be ground energy states
  disappear at 
 \begin_inset Formula $N=\left(M-1\right)/2$
 \end_inset
@@ -776,7 +776,7 @@ In this paper, we will investigate more general forms of supersymmetric
 \end_inset
 
  limit.
- We then perform a numerical study of the Hamiltonian 
+ We will perform a numerical study of the Hamiltonian 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:H_0"
@@ -796,7 +796,7 @@ reference "eq:H_0"
 \begin_inset Formula $M$
 \end_inset
 
- and show numerically that the ground state disappears at 
+ and show numerically that the would-be ground state disappears at 
 \begin_inset Formula $N\leq\left(M-1\right)/2$
 \end_inset
 
@@ -840,6 +840,7 @@ reference "eq:H_0"
 \end_inset
 
  is large.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -864,8 +865,6 @@ reference "sec:Large-N"
 \end_inset
 
  limit.
- We first analyze the energy spectrum analytically and then present a numerical
- study for it.
  In Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -873,8 +872,11 @@ reference "sec:Finite-N"
 
 \end_inset
 
-, we provide the plots from the numerical computation and the analysis of
- the plots.
+, we compute the energy spetrum in finite 
+\begin_inset Formula $N$
+\end_inset
+
+ numerically and present the plots from the numerical study.
  Hamiltonian 
 \begin_inset Formula $H_{0}$
 \end_inset
