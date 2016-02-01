@@ -5,6 +5,7 @@
 \textclass article
 \begin_preamble
 \usepackage{babel}
+\usepackage{url}
 \allowdisplaybreaks
 \bibliographystyle{unsrt}
 
@@ -42,7 +43,7 @@ theorems-ams
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
+\bibtex_command bibtex
 \index_command default
 \paperfontsize default
 \spacing single
@@ -9529,14 +9530,13 @@ The numerical computation is performed by C++ and matlab program.
  Here we introduce the algorithms for generating trace states and building
  norm matrices.
  The source code of the project can be found in 
-\begin_inset CommandInset href
-LatexCommand href
-name "Github"
-target "https://github.com/gaolichen/stringbit"
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chen:2015GitHub"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Paragraph*
