@@ -132,7 +132,7 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \begin_inset Formula $d$
 \end_inset
 
- bosonics degrees of freedom.
+ bosonic degrees of freedom.
  When the bit number 
 \begin_inset Formula $M$
 \end_inset
@@ -222,8 +222,8 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \begin_inset Formula $\xi$
 \end_inset
 
- increases (descreases).
- Particuarly, the 
+ increases (decreases).
+ Particularly, the 
 \begin_inset Formula $H=\pm\left(H_{0}-\Delta H\right)$
 \end_inset
 
@@ -242,7 +242,7 @@ String bit is an idea to formulate string as a discrete chain of point-like
 \begin_inset Formula $N$
 \end_inset
 
- is fixed and large enough, the ground energy descreases linearly with respect
+ is fixed and large enough, the ground energy decreases linearly with respect
  to 
 \begin_inset Formula $M$
 \end_inset
@@ -423,7 +423,7 @@ Under the Galilei transformation
 \begin_inset Formula $M$
 \end_inset
 
-, Lorentz invarance is regained and leads to a Poincaré invariant dispersion
+, Lorentz invariance is regained and leads to a Poincaré invariant dispersion
  relation 
 \begin_inset Formula $P^{-}=\left(\mathbf{P}^{2}+\mu^{2}\right)/(2P^{+})$
 \end_inset
@@ -452,7 +452,7 @@ reference "eq:Ham-discrete-chain"
 
 \end_inset
 
- for a bosonic closed string bit chain leads to inevitable instablility.
+ for a bosonic closed string bit chain leads to inevitable instability.
  The ground state energy of such a system in the limit 
 \begin_inset Formula $M\to\infty$
 \end_inset
@@ -475,7 +475,7 @@ on.
  for a lower energy state.
  This instability issue can be fixed by introducing supersymmetry.
  In supersymmetry, string bits are multiplets with both bosonic and fermionic
- degree of freeom.
+ degree of freedom.
  It turns out that, for multiplets with 
 \begin_inset Formula $d$
 \end_inset
@@ -544,7 +544,7 @@ To set up the dynamics of the superstring bit model, we employ 't Hooft's
 \begin_inset Formula $\alpha,\beta=1,\cdots,N$
 \end_inset
 
- are color indicies for the adjoint representation of the color group 
+ are color indices for the adjoint representation of the color group 
 \begin_inset Formula $SU\left(N\right)$
 \end_inset
 
@@ -872,7 +872,7 @@ reference "sec:Finite-N"
 
 \end_inset
 
-, we compute the energy spetrum in finite 
+, we compute the energy spectrum in finite 
 \begin_inset Formula $N$
 \end_inset
 
@@ -916,7 +916,7 @@ reference "app:Counting-Trace-States"
 
 .
  This is not a coincidence.
- The physical interpretation is that the bit number oprator 
+ The physical interpretation is that the bit number operator 
 \begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
 \end_inset
 
@@ -947,8 +947,8 @@ Also we notice that
 
 .
  As we will show in the next section, there is a nice feature of supersymmetric
- Hamiltonian that it gaurantees that the exicitation energy vanishes at
- large 
+ Hamiltonian that it guarantees that the excitation energy vanishes at large
+ 
 \begin_inset Formula $M$
 \end_inset
 
@@ -963,7 +963,7 @@ Now, let's investigate possible forms of a supersymmetric Hamiltonian and
 \end_inset
 
 .
- The general form of a hermitian Hamiltonian built out of the trace operators
+ The general form of a Hermitian Hamiltonian built out of the trace operators
  in 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -1057,7 +1057,7 @@ reference "eq:general-susy-H"
 
 \end_inset
 
- is hermitian and supersymmetric.
+ is Hermitian and supersymmetric.
  
 \end_layout
 
@@ -1424,13 +1424,13 @@ Energy Spectrum in Large
 \end_layout
 
 \begin_layout Standard
-In this section, we will study the energy spectrum of our tyo string bit
+In this section, we will study the energy spectrum of our toy string bit
  model in the large 
 \begin_inset Formula $N$
 \end_inset
 
  limit by both analytic and numerical solutions.
- We first show that the supersymmetry garantees the excitation energy to
+ We first show that the supersymmetry guarantees the excitation energy to
  be vanishing at large 
 \begin_inset Formula $M$
 \end_inset
@@ -1495,7 +1495,7 @@ For convenience, we introduce a super creation operator using a Grassmann
 \end_inset
 
 .
- Under the cyclic tranformation, 
+ Under the cyclic transformation, 
 \begin_inset Formula $\theta_{i}\to\theta_{i+1}$
 \end_inset
 
@@ -2139,7 +2139,7 @@ When
 \begin_inset Formula $M/2$
 \end_inset
 
- is even, the lowest energy states have extra degenerancy, because the bosonic
+ is even, the lowest energy states have extra degeneracy, because the bosonic
  ground functions can be 
 \begin_inset Formula $\Phi_{M/2-1}^{b}\Phi_{M/2+1}^{b}$
 \end_inset
@@ -2218,12 +2218,12 @@ reference "eq:LargeN-E-min-odd"
 \begin_inset Formula $M$
 \end_inset
 
- is divisible by 3, the first excitation energy has no extra degenency.
+ is divisible by 3, the first excitation energy has no extra degeneracy.
  If 
 \begin_inset Formula $M=3n\pm1$
 \end_inset
 
-, it has extra degenency: for 
+, it has extra degeneracy: for 
 \begin_inset Formula $M=3n+1$
 \end_inset
 
@@ -2292,7 +2292,7 @@ From the figure, it's clear that the energy gaps go smaller as
 \begin_inset Formula $M$
 \end_inset
 
- increase and the energy levels become continueous at large 
+ increase and the energy levels become continuous at large 
 \begin_inset Formula $M$
 \end_inset
 
@@ -2313,7 +2313,7 @@ From the figure, it's clear that the energy gaps go smaller as
 \begin_inset Formula $M=101$
 \end_inset
 
-, they almost filled the gap between consective single trace energy levels.
+, they almost filled the gap between consecutive single trace energy levels.
  All these behaviors illustrate the chains behave as continuous strings
  at large 
 \begin_inset Formula $M$
@@ -2479,7 +2479,7 @@ status open
 
 \begin_layout Plain Layout
 In this subsection, we just state the properties of these two methods.
- The relevent mathematical proofs are provided in Appendix 
+ The relevant mathematical proofs are provided in Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "app:Hamiltonian-Eigenvalue-Problem"
@@ -2524,7 +2524,7 @@ H\ket{i}=\sum_{j}\ket{j}\mathcal{H}_{ji},
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- is not the Hamiltonian matrix and even not hermitian.
+ is not the Hamiltonian matrix and even not Hermitian.
  
 \end_layout
 
@@ -2707,7 +2707,7 @@ From above statements, we should treat positive norm eigenstates of
 \end_layout
 
 \begin_layout Standard
-The second method is to solve a generalised eigenvalue problem, 
+The second method is to solve a generalized eigenvalue problem, 
 \begin_inset Formula 
 \begin{equation}
 \left(G\mathcal{H}\right)\ket{E}=EG\ket{E}.\label{eq:generalised-eigenvalue-problem}
@@ -2724,7 +2724,7 @@ This method is helpful for filtering unphysical states when
 \begin_inset Formula $G$
 \end_inset
 
- is a full-rank matrix, this is a regular generalised eigenvalue problem.
+ is a full-rank matrix, this is a regular generalized eigenvalue problem.
  If 
 \begin_inset Formula $G$
 \end_inset
@@ -2855,7 +2855,7 @@ reference "eq:generalised-eigenvalue-problem"
 \end_inset
 
  to find the their eigenstates.
- Since the nubmer of trace states increases exponentially as 
+ Since the number of trace states increases exponentially as 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3513,7 +3513,7 @@ reference "fig:physical-state-H0"
 \begin_inset Formula $-8/\pi$
 \end_inset
 
-, as prediced by Eq.
+, as predicted by Eq.
  
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -3789,7 +3789,7 @@ reference "fig:xi=manyM=3"
 \end_inset
 
 .
- The disappearnce point of ground state, 
+ The disappearance point of ground state, 
 \begin_inset Formula $N_{3}^{*}$
 \end_inset
 
@@ -3952,7 +3952,7 @@ Since all eigenstates of
 \begin_inset Formula $\xi$
 \end_inset
 
- meets the stabalization constraint.
+ meets the stabilization constraint.
  The 
 \begin_inset Formula $\xi=-1$
 \end_inset
@@ -4600,7 +4600,7 @@ In this paper we have studied the string bit model with
 \begin_inset Formula $N$
 \end_inset
 
- for Hamltonians 
+ for Hamiltonians 
 \begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
 \end_inset
 
@@ -4719,7 +4719,7 @@ In finite
 \begin_inset Formula $H=\pm H_{0}\mp\Delta H$
 \end_inset
 
- because of the stablization constraint 
+ because of the stabilization constraint 
 \begin_inset Formula $\xi\geq\mp1$
 \end_inset
 
@@ -4741,7 +4741,7 @@ In finite
 \begin_inset Formula $M>11$
 \end_inset
 
-, it means that the gound energy state might be able to survive at very
+, it means that the ground energy state might be able to survive at very
  large 
 \begin_inset Formula $M$
 \end_inset
@@ -4845,7 +4845,7 @@ key "Thorn:2015wli"
 \end_layout
 
 \begin_layout Section
-Acknowledgements
+Acknowledgments
 \end_layout
 
 \begin_layout Standard
@@ -4998,7 +4998,7 @@ In our case, the cyclic group
 \begin_inset Formula $x$
 \end_inset
 
- corresponds to one perticular combination.
+ corresponds to one particular combination.
  
 \begin_inset Formula $X/G$
 \end_inset
@@ -5156,8 +5156,8 @@ The trace is invariant under
 
 \end_inset
 
-which implies there are the same number of bosonic and fermonic single trace
- states for odd 
+which implies there are the same number of bosonic and fermionic single
+ trace states for odd 
 \begin_inset Formula $M$
 \end_inset
 
@@ -6742,7 +6742,7 @@ The limit of
 \begin_inset Formula $2^{M}$
 \end_inset
 
- with a unknown magic prefactor, which could be an interesting mathematic
+ with a unknown magic prefactor, which could be an interesting mathematical
  problem to explore.
 \end_layout
 
@@ -6768,7 +6768,7 @@ The
 \begin_inset Formula $M$
 \end_inset
 
-- bit fermionic trace state space has a equivalent metric as 
+-bit fermionic trace state space has a equivalent metric as 
 \begin_inset Formula $M$
 \end_inset
 
@@ -7390,7 +7390,7 @@ end{gather*}
 \end_layout
 
 \begin_layout Standard
-The right half of the each row exibits the pattern 
+The right half of the each row exhibits the pattern 
 \begin_inset Formula 
 \[
 1,\quad3,\quad9,\quad27,\quad73,\quad195,\cdots.
@@ -7735,7 +7735,7 @@ reference "eq:C-H-on-trace"
 \begin_inset Formula $H$
 \end_inset
 
- is hermitian, we also have 
+ is Hermitian, we also have 
 \begin_inset Formula 
 \[
 \bra{i}H\ket{j}=\sum_{k}\mathcal{H}_{ik}^{\dagger}\dprod{k}{j}=\left(\mathcal{H}^{\dagger}G\right)_{ij},
@@ -7871,7 +7871,7 @@ The rest claims are related to whether
 \end_inset
 
  is positive-semidefinite matrix.
- Let's discuss them seperately.
+ Let's discuss them separately.
 \end_layout
 
 \begin_layout Subsection*
@@ -7888,7 +7888,7 @@ If
 \end_inset
 
  is a positive-semidefinite matrix, all its eigenvalues are non-negative.
- There exists a set of orthnormal basis spanning the trace state space.
+ There exists a set of orthonormal basis spanning the trace state space.
  Suppose there are 
 \begin_inset Formula $r$
 \end_inset
@@ -7906,7 +7906,7 @@ with dimension
 \end_inset
 
 .
- We can build a set of nothnormal basis 
+ We can build a set of orthonormal basis 
 \begin_inset Formula $\ketp{i}$
 \end_inset
 
@@ -7995,7 +7995,7 @@ An eigenvalue E of
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- with an eignvector 
+ with an eigenvector 
 \begin_inset Formula $V$
 \end_inset
 
@@ -8051,7 +8051,7 @@ This can be done by extending the
 \begin_inset Formula $r\times r$
 \end_inset
 
- invertable matrix 
+ invertible matrix 
 \begin_inset Formula $R$
 \end_inset
 
@@ -8061,7 +8061,7 @@ This can be done by extending the
 \end_inset
 
  can be constructed as follows.
- We pick any invertable 
+ We pick any invertible 
 \begin_inset Formula $r\times r$
 \end_inset
 
@@ -8121,7 +8121,7 @@ This can be done by extending the
 \end_inset
 
  must be zero.
- Repeating this process for the rest rows, we obtain the invertable square
+ Repeating this process for the rest rows, we obtain the invertible square
  matrix 
 \begin_inset Formula $R$
 \end_inset
@@ -8248,7 +8248,7 @@ reference "eq:ExHam-eigenvalue-Eq"
 \begin_inset Formula $R$
 \end_inset
 
- is invertable, we obtain 
+ is invertible, we obtain 
 \begin_inset Formula 
 \[
 \left(\mathcal{H}^{\dagger}-E\right)R^{-1}W^{\prime}=0.
@@ -8264,7 +8264,7 @@ reference "eq:ExHam-eigenvalue-Eq"
 \begin_inset Formula $R^{-1}$
 \end_inset
 
- is invertable and 
+ is invertible and 
 \begin_inset Formula $W^{\prime}\neq0$
 \end_inset
 
@@ -8331,7 +8331,7 @@ To let
 \begin_inset Formula $E$
 \end_inset
 
- be an eignvalue of 
+ be an eigenvalue of 
 \begin_inset Formula $\mathbb{H}$
 \end_inset
 
@@ -8396,7 +8396,7 @@ If
 
  is not positive-semidefinite matrix, at least one of its eigenvalue is
  negative.
- There is no orthnormal basis can be constructed in trace state space.
+ There is no orthonormal basis can be constructed in trace state space.
  Suppose the 
 \begin_inset Formula $r\times r$
 \end_inset
@@ -8527,7 +8527,7 @@ If
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
- with eigenvecot 
+ with eigenvector 
 \begin_inset Formula $V$
 \end_inset
 
@@ -8611,11 +8611,11 @@ The condition
 \begin_inset Formula $V^{\dagger}\mathrm{abs}\left(G\right)V=V^{\dagger}GV$
 \end_inset
 
- is usually not satisified when 
+ is usually not satisfied when 
 \begin_inset Formula $G$
 \end_inset
 
- is not positive-semidifinite.
+ is not positive-semidefinite.
  The proof of the claims is given as follows.
 \end_layout
 
@@ -9247,7 +9247,7 @@ from which it follows
 \end_layout
 
 \begin_layout Standard
-As mentioned in the main text, the general form of hermitian Hamiltonian
+As mentioned in the main text, the general form of Hermitian Hamiltonian
  is 
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -9593,7 +9593,7 @@ There is no cyclic rotation on this integer producing a smaller integer.
 
 \begin_layout Itemize
 The corresponding trace state is valid.
- A trace state is invalid if it can be divided into even number of idential
+ A trace state is invalid if it can be divided into even number of identical
  consecutive part which has odd number of 
 \begin_inset Formula $\bar{b}$
 \end_inset
@@ -9867,7 +9867,7 @@ n and creation operators.
 
 \end_inset
 
-In anology with 
+In analogy with 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:Alg-1"
