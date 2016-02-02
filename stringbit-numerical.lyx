@@ -6748,37 +6748,8 @@ Rank of Norm Matrix
 \end_layout
 
 \begin_layout Standard
-The norm matrix 
-\begin_inset Formula $G$
-\end_inset
-
- of 
-\begin_inset Formula $M$
-\end_inset
-
--bit bosonic trace state space 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-The 
-\begin_inset Formula $M$
-\end_inset
-
--bit fermionic trace state space has a equivalent metric as 
-\begin_inset Formula $M$
-\end_inset
-
--bit bosonic trace state space.
-\end_layout
-
-\end_inset
-
- is a 
-\begin_inset Formula $T_{M}\times T_{M}$
-\end_inset
-
- real symmetric matrix defined as 
+In this section, we show some interesting patterns of the rank of norm matrix,
+ which is defined as 
 \begin_inset Formula 
 \begin{equation}
 G_{ij}=\dprod{i}{j},\label{eq:Norm-Matrix-Definition}
@@ -6790,32 +6761,43 @@ G_{ij}=\dprod{i}{j},\label{eq:Norm-Matrix-Definition}
 \begin_inset Formula $\ket{i}$
 \end_inset
 
- is the 
-\begin_inset Formula $i$
+, 
+\begin_inset Formula $\ket{j}$
 \end_inset
 
--th 
+ are trace states.
+ We only focus on the norm matrix of 
 \begin_inset Formula $M$
 \end_inset
 
--bit trace state.
- The complete lists of bosonic trace states from 
-\begin_inset Formula $M=1$
+-bit bosonic trace states, which is a 
+\begin_inset Formula $T_{M}\times T_{M}$
 \end_inset
 
- to 
-\begin_inset Formula $M=7$
+ real symmetric matrix.
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+By supersymmetry, the norm matrix of 
+\begin_inset Formula $M$
 \end_inset
 
- are in Appendix 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "app:Trace-States-List"
+-bit fermionic trace state space has the same rank as the one of 
+\begin_inset Formula $M$
+\end_inset
+
+-bit bosonic trace state space.
+\end_layout
 
 \end_inset
 
-.
- The rank of 
+
+\end_layout
+
+\begin_layout Standard
+The rank of 
 \begin_inset Formula $G$
 \end_inset
 
@@ -6846,7 +6828,7 @@ reference "app:Trace-States-List"
 \begin_inset Formula $1$
 \end_inset
 
-, , it's rank changes from 
+, it's rank changes from 
 \begin_inset Formula $T_{M}$
 \end_inset
 
@@ -6867,7 +6849,7 @@ reference "app:Trace-States-List"
 \begin_inset Formula $G$
 \end_inset
 
- matrices form an number triangle show as follows:
+ matrices form an number triangle shown as follows:
 \end_layout
 
 \begin_layout Standard
@@ -7404,7 +7386,7 @@ The right half of the each row exhibits the pattern
 \end_inset
 
  to 
-\begin_inset Formula $N=\frac{M+1}{2}$
+\begin_inset Formula $N=\left(M+1\right)/2$
 \end_inset
 
 ; for even 
@@ -7416,7 +7398,7 @@ The right half of the each row exhibits the pattern
 \end_inset
 
  to 
-\begin_inset Formula $N=\frac{M}{2}$
+\begin_inset Formula $N=M/2$
 \end_inset
 
 .
@@ -7435,7 +7417,7 @@ The right half of the each row exhibits the pattern
 \end_inset
 
  vanishes at 
-\begin_inset Formula $N=\frac{M-1}{2}$
+\begin_inset Formula $N=\left(M-1\right)/2$
 \end_inset
 
 , and as 
@@ -7448,11 +7430,11 @@ The right half of the each row exhibits the pattern
 \end_inset
 
 , when 
-\begin_inset Formula $N=\frac{M}{2}$
+\begin_inset Formula $N=M/2$
 \end_inset
 
 , there is state with vanishing norm, but when 
-\begin_inset Formula $N=\frac{M}{2}-2$
+\begin_inset Formula $N=M/2-2$
 \end_inset
 
 , there are more than one states have zero norm.
