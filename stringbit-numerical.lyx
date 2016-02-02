@@ -4896,9 +4896,8 @@ How many trace states are there for a fixed bit number
 \begin_inset Formula $M$
 \end_inset
 
-? In the following subsections, we will first count the single trace states
- and then the trace states which includes both single and multiple trace
- states.
+? In this sections, we will first count the single trace states and then
+ the trace states which includes both single and multiple trace states.
 \end_layout
 
 \begin_layout Subsection*
@@ -4945,17 +4944,13 @@ There are
 
 \end_inset
 
-The rule is each exchange of order of two 
+The rule is that each swap of two 
 \begin_inset Formula $\bar{b}$
 \end_inset
 
- introduce a minus sign.
- This leads to vanishing states, for example, 
-\begin_inset Formula 
-\[
-\tr\bar{b}\bar{b}=-\tr\bar{b}\bar{b}=0.
-\]
-
+ introducing a minus sign.
+ It follows that some trace states is vanishing, for example, 
+\begin_inset Formula $\tr\bar{b}\bar{b}=-\tr\bar{b}\bar{b}=0.$
 \end_inset
 
 
@@ -5060,7 +5055,7 @@ In our case, the cyclic group
 , i.e, 
 \begin_inset Formula 
 \[
-\mathrm{Fix}\left(g\right)=\left\{ x\in X|g\cdot x=x\right\} 
+\mathrm{Fix}\left(g\right)=\left\{ x\in X|g\cdot x=x\right\} .
 \]
 
 \end_inset
@@ -5069,7 +5064,7 @@ In our case, the cyclic group
 \end_layout
 
 \begin_layout Standard
-To find the state number, we need to find 
+To find the number of states, we need to find 
 \begin_inset Formula $\left|\mathrm{Fix}\left(g\right)\right|$
 \end_inset
 
@@ -5077,11 +5072,11 @@ To find the state number, we need to find
 \end_layout
 
 \begin_layout Standard
-We first consider the case of odd 
+We first consider odd 
 \begin_inset Formula $M$
 \end_inset
 
-.
+ case.
  Let 
 \begin_inset Formula $c_{k}\in C_{M},\, k=1,2,\cdots M$
 \end_inset
@@ -5091,7 +5086,7 @@ We first consider the case of odd
 \end_inset
 
  operators from the tail of the trace to the beginning.
- Here, the identity of the group is 
+ The identity of the group is 
 \begin_inset Formula $e=c_{M}$
 \end_inset
 
@@ -5113,7 +5108,7 @@ We first consider the case of odd
 \begin_inset Formula $c_{k}$
 \end_inset
 
-, we equally divide the 
+, we equally partition the 
 \begin_inset Formula $M$
 \end_inset
 
@@ -5121,11 +5116,7 @@ We first consider the case of odd
 \begin_inset Formula $M/\left(M,k\right)$
 \end_inset
 
- parts with each part of 
-\begin_inset Formula $\left(M,k\right)$
-\end_inset
-
- bits: the first part starts from bit 1 to bit 
+ consecutive parts: the first part starts from bit 1 to bit 
 \begin_inset Formula $\left(M,k\right)$
 \end_inset
 
@@ -5137,7 +5128,11 @@ We first consider the case of odd
 \begin_inset Formula $2\left(M,k\right)$
 \end_inset
 
-, and etc.
+, and 
+\shape italic
+etc
+\shape default
+.
  Under the action of 
 \begin_inset Formula $c_{k}$
 \end_inset
@@ -5159,7 +5154,8 @@ The trace is invariant under
 \end_inset
 
  if and only if all the parts are identical to each other.
- For bosonic trace states, each part need to bosonic, which follows 
+ For bosonic trace states, each part need to bosonic, from which it follows
+ 
 \begin_inset Formula 
 \begin{equation}
 \left|\mathrm{Fix}\left(c_{k}\right)\right|=\sum_{\text{even }i}\binom{\left(M,k\right)}{i}=\frac{1}{2}2^{\left(M,k\right)}.\label{eq:A-Fix-1}
@@ -5212,11 +5208,11 @@ For even
 \end_inset
 
  is even.
- This because odd number of 
+ The reason is that odd number of 
 \begin_inset Formula $\bar{b}$
 \end_inset
 
- cannot be equally divided into even parts.
+ cannot be equally partitioned into even parts.
  Therefore, only odd 
 \begin_inset Formula $M/\left(M,k\right)$
 \end_inset
@@ -5294,7 +5290,7 @@ reference "eq:A-SM-Odd"
 
 \end_inset
 
- is a special case of Eq.
+ can also be written as Eq.
  
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -5302,8 +5298,11 @@ reference "eq:A-SM-Even"
 
 \end_inset
 
- with 
-\begin_inset Formula $s=0$
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-SM-Euler"
+
 \end_inset
 
 .
@@ -5311,25 +5310,16 @@ reference "eq:A-SM-Even"
 \end_layout
 
 \begin_layout Standard
-For bosonic states, we cannot simply count all single trace states with
- even number of 
-\begin_inset Formula $\bar{b}$
+For bosonic states, because there exists vanishing states, like 
+\begin_inset Formula $\tr\ba\bb\ba\bb=-\tr\ba\bb\ba\bb=0$
 \end_inset
 
-, because there exist vanishing states, for example, 
-\begin_inset Formula 
-\[
-\tr\ba\bb\ba\bb=-\tr\ba\bb\ba\bb=0.
-\]
-
-\end_inset
-
- The number of bosonic states equals to number of even-
+, the number of bosonic states equals to number of even-
 \begin_inset Formula $\bar{b}$
 \end_inset
 
 -state minus number of vanishing states.
- Let's first consider the number of even-
+ Consider the number of even-
 \begin_inset Formula $\bar{b}$
 \end_inset
 
@@ -5342,7 +5332,7 @@ For bosonic states, we cannot simply count all single trace states with
 \begin_inset Formula $c_{k}$
 \end_inset
 
-, we again divide 
+, we partition 
 \begin_inset Formula $M$
 \end_inset
 
@@ -5350,12 +5340,11 @@ For bosonic states, we cannot simply count all single trace states with
 \begin_inset Formula $M/\left(M,k\right)$
 \end_inset
 
- parts with each part 
+ consecutive parts with each part 
 \begin_inset Formula $\left(M,k\right)$
 \end_inset
 
- bits.
- If 
+ bits: if 
 \begin_inset Formula $M/\left(M,k\right)$
 \end_inset
 
@@ -5371,7 +5360,7 @@ For bosonic states, we cannot simply count all single trace states with
 \begin_inset Formula $\bar{b}$
 \end_inset
 
- in each part, which follows
+ in each part, from which it follows
 \begin_inset Formula 
 \begin{eqnarray}
 B_{M} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k\right)-1}+\sum_{M/\left(M,k\right)\text{ is even}}2^{\left(M,k\right)}\right)\nonumber \\
@@ -5380,7 +5369,7 @@ B_{M} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k
 
 \end_inset
 
- We next consider the number of vanishing states, which is denoted as 
+Now consider the number of vanishing states, which is denoted as 
 \begin_inset Formula $V_{M}$
 \end_inset
 
@@ -5389,12 +5378,20 @@ B_{M} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k
 \begin_inset Formula $c_{k}$
 \end_inset
 
-, we perform the same partition as before.
+, we again partition 
+\begin_inset Formula $M$
+\end_inset
+
+ bits into 
+\begin_inset Formula $M/\left(M,k\right)$
+\end_inset
+
+ consecutive parts.
  If 
 \begin_inset Formula $M/\left(M,k\right)$
 \end_inset
 
- is even and all parts are identical and with odd number of 
+ is even and all parts are identical with odd number of 
 \begin_inset Formula $\bar{b}$
 \end_inset
 
@@ -5443,8 +5440,7 @@ B_{M} & = & \frac{1}{M}\left(\sum_{M/\left(M,k\right)\text{ is odd}}2^{\left(M,k
 \begin_inset Formula $M/\left(M,k\right)$
 \end_inset
 
-: it needs to perform at least one finer partition to get vanishing states
- for odd 
+: it needs to perform at least one finer partition for odd 
 \begin_inset Formula $M/\left(M,k\right)$
 \end_inset
 
@@ -5465,7 +5461,7 @@ V_{M} & = & \frac{1}{M}\sum_{\text{odd }M/\left(M,k\right)}\left(\sum_{i\geq1\te
 \end_inset
 
  Let 
-\begin_inset Formula $\frac{\left(M,k\right)}{2^{i}}=\frac{M}{j}$
+\begin_inset Formula $\left(M,k\right)/2^{i}=\frac{M}{j}$
 \end_inset
 
 , then we have 
@@ -5481,7 +5477,7 @@ V_{M} & = & \frac{1}{M}\sum_{\text{odd }M/\left(M,k\right)}\left(\sum_{i\geq1\te
 \begin_inset Formula $k$
 \end_inset
 
- with 
+ satisfying 
 \begin_inset Formula $\left(M,k\right)=2^{i}M/j$
 \end_inset
 
@@ -5503,13 +5499,13 @@ reference "eq:A-Vanish-States-1"
 
  can be written as
 \begin_inset Formula 
-\[
-\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{ even }j,j|M}\left[\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)2^{\frac{M}{j}}\right].
-\]
+\begin{equation}
+\sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{ even }j,j|M}\left[\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)2^{\frac{M}{j}}\right].\label{eq:A-Vanish-States-2}
+\end{equation}
 
 \end_inset
 
- With the following property of function 
+ With the following property of the function 
 \begin_inset Formula $\varphi$
 \end_inset
 
@@ -5524,15 +5520,22 @@ reference "eq:A-Vanish-States-1"
 
 \end_inset
 
-it's easy to see that 
+we see that 
 \begin_inset Formula 
 \[
-\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)=\varphi\left(j\right),\quad\text{if }j\text{ is even}.
+\sum_{i\geq1,2^{i}|j}\varphi\left(\frac{j}{2^{i}}\right)=\varphi\left(j\right),\quad\text{if }j\text{ is even},
 \]
 
 \end_inset
 
-Now we have 
+Now 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:A-Vanish-States-2"
+
+\end_inset
+
+ becomes 
 \begin_inset Formula 
 \[
 \sum_{k}\left(\sum_{i\geq1,2^{i}|\left(M,k\right)}2^{\frac{\left(M,k\right)}{2^{i}}}\right)=\sum_{\text{even }j,j|M}\varphi\left(j\right)2^{\frac{M}{j}},
@@ -5552,7 +5555,7 @@ V_{M}=\frac{1}{M}\sum_{\mathrm{even}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}
 \end_layout
 
 \begin_layout Standard
-Therefore, the difference of Eq.
+The difference of Eq.
  
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -5567,7 +5570,7 @@ reference "eq:A-Vanish-States-1"
 
 \end_inset
 
- yields 
+ is 
 \begin_inset Formula 
 \[
 S_{M}=B_{M}-V_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^{\frac{M}{i}},
@@ -5580,32 +5583,12 @@ S_{M}=B_{M}-V_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, i,i|M}\varphi\left(i\right)2^
 \end_layout
 
 \begin_layout Standard
-In sum, we conclude that there are equal number of bosonic states and fermionic
- state for a given bit number 
+In sum, we conclude that there are equal number of bosonic and fermionic
+ states for a given bit number 
 \begin_inset Formula $M$
 \end_inset
 
- 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-From purely physical perspective, this stems from the fact that the bit
- operator 
-\begin_inset Formula $M=\tr\left(\bar{a}a+\bar{b}b\right)$
-\end_inset
-
- commute with supersymmetry operator 
-\begin_inset Formula $Q=\tr\left(\exp\left(i\frac{\pi}{4}\right)\bar{a}b+\exp\left(-i\frac{\pi}{4}\right)\bar{b}a\right)$
-\end_inset
-
-.
- 
-\end_layout
-
-\end_inset
-
- and both numbers can be written as 
+ and both can be written as 
 \begin_inset Formula 
 \begin{equation}
 S_{M}=\frac{1}{2M}\sum_{\mathrm{odd}\, n,n|M}\varphi\left(n\right)2^{\frac{M}{n}}.\label{eq:Single-Trace-Number}
@@ -5624,7 +5607,7 @@ Counting Trace States
 Now consider the general trace states, including single and multiple trace
  states.
  Let 
-\begin_inset Formula $T\left(m,r;0\right)$
+\begin_inset Formula $T_{m,r}^{\left(0\right)}$
 \end_inset
 
  be the number of 
@@ -5638,24 +5621,20 @@ Now consider the general trace states, including single and multiple trace
 
 .
  
-\begin_inset Formula $T\left(m,r;1\right)$
+\begin_inset Formula $T_{m,r}^{\left(1\right)}$
 \end_inset
 
  is defined similarly for fermionic trace states.
- We can express 
-\begin_inset Formula $T\left(m,r,b\right)$
+ We can build the recursive relation of 
+\begin_inset Formula $T_{m,r}^{\left(b\right)}$
 \end_inset
 
- in terms of 
-\begin_inset Formula $T\left(m-1,\cdots\right)$
-\end_inset
-
-.
- Among the 
+ as follows.
+ Out of 
 \begin_inset Formula $r$
 \end_inset
 
- bits, we can assign 
+ string bits, we can assign 
 \begin_inset Formula $i\times m$
 \end_inset
 
@@ -5663,7 +5642,11 @@ Now consider the general trace states, including single and multiple trace
 \begin_inset Formula $i$
 \end_inset
 
- bosonic single trace states and 
+ bosonic 
+\begin_inset Formula $m$
+\end_inset
+
+-bit single trace states and 
 \begin_inset Formula $j\times m$
 \end_inset
 
@@ -5671,7 +5654,11 @@ Now consider the general trace states, including single and multiple trace
 \begin_inset Formula $j$
 \end_inset
 
- fermionic single trace states, provided 
+ fermionic 
+\begin_inset Formula $m$
+\end_inset
+
+-bit single trace states provided 
 \begin_inset Formula $\left(i+j\right)m\leq r$
 \end_inset
 
@@ -5709,9 +5696,8 @@ pick
 \begin_inset Formula $r-\left(i+j\right)m$
 \end_inset
 
- bits need to be built out of single trace states of bits less than or equal
- to 
-\begin_inset Formula $m-1$
+ bits need to be built out of single trace states of bits less than 
+\begin_inset Formula $m$
 \end_inset
 
 .
@@ -5726,22 +5712,33 @@ pick
  yields 
 \begin_inset Formula 
 \begin{equation}
-T\left(m,r;b\right)=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T\left(m-1,r-\left(i+j\right)m;\left(b+i\right)\mod2\right).\label{eq:Multiple-Trace-States}
+T_{m,r}^{\left(b\right)}=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T_{m-1,r-\left(i+j\right)m}^{\left(\left(b+i\right)\mod2\right)}.\label{eq:Multiple-Trace-States}
 \end{equation}
 
 \end_inset
 
-We can use induction to prove that 
-\begin_inset Formula 
-\begin{equation}
-T\left(m,r;0\right)=T\left(m,r;1\right),\label{eq:Multiple-trace-T0=T1}
-\end{equation}
 
+\end_layout
+
+\begin_layout Standard
+We can actually drop the superscript of 
+\begin_inset Formula $T$
 \end_inset
 
- which follows there are equal number of bosonic and fermionic multiple
- trace states.
- For 
+ because 
+\begin_inset Formula $T_{m,r}^{\left(0\right)}$
+\end_inset
+
+ equals to 
+\begin_inset Formula $T_{m,r}^{\left(0\right)}$
+\end_inset
+
+ for all 
+\begin_inset Formula $m,r$
+\end_inset
+
+.
+ It can be proved by mathematical induction: for 
 \begin_inset Formula $m=1$
 \end_inset
 
@@ -5762,12 +5759,12 @@ T\left(m,r;0\right)=T\left(m,r;1\right),\label{eq:Multiple-trace-T0=T1}
 \end_inset
 
 , which implies 
-\begin_inset Formula $T\left(1,r;0\right)=T\left(1,r;1\right)=1$
+\begin_inset Formula $T_{1,r}^{\left(0\right)}=T_{1,r}^{\left(1\right)}$
 \end_inset
 
 .
  If 
-\begin_inset Formula $T\left(m-1,r;0\right)=T\left(m-1,r;1\right)$
+\begin_inset Formula $T_{m-1,r}^{\left(0\right)}=T_{m-1,r}^{\left(1\right)}$
 \end_inset
 
  holds for all 
@@ -5783,15 +5780,15 @@ reference "eq:Multiple-Trace-States"
 \end_inset
 
  gives the same result for 
-\begin_inset Formula $T\left(m,r;0\right)$
+\begin_inset Formula $T_{m,r}^{\left(0\right)}$
 \end_inset
 
  and 
-\begin_inset Formula $T\left(m,r;1\right)$
+\begin_inset Formula $T_{m,r}^{\left(0\right)}$
 \end_inset
 
-, which follows 
-\begin_inset Formula $T\left(m,r;0\right)=T\left(m,r;1\right)$
+, from which it follows 
+\begin_inset Formula $T_{m,r}^{\left(0\right)}=T_{m,r}^{\left(0\right)}$
 \end_inset
 
  holds for all values of 
@@ -5799,14 +5796,17 @@ reference "eq:Multiple-Trace-States"
 \end_inset
 
 .
- Therefore, we can drop the third argument of 
-\begin_inset Formula $T$
+ Therefore, we can simply write 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Multiple-Trace-States"
+
 \end_inset
 
- function and simply write 
+ as 
 \begin_inset Formula 
 \begin{equation}
-T\left(m,r\right)=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T\left(m-1,r-\left(i+j\right)m\right).\label{eq:Multiple-trace-states-2}
+T_{m,r}=\sum_{\left(i+j\right)m\leq r}\binom{S_{m}}{i}\binom{S_{m}+j-1}{j}T_{m-1,r}.\label{eq:Multiple-trace-states-2}
 \end{equation}
 
 \end_inset
@@ -5818,34 +5818,16 @@ The number of
 -bit bosonic or fermionic trace states is simply 
 \begin_inset Formula 
 \begin{equation}
-T_{M}=T\left(M,M\right).\label{eq:Multiple-trace-states-3}
+T_{M}=T_{M,M}.\label{eq:Multiple-trace-states-3}
 \end{equation}
 
 \end_inset
 
- Equations 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Single-Trace-Number"
+ 
+\end_layout
 
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Multiple-trace-states-2"
-
-\end_inset
-
-, and 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Multiple-trace-states-3"
-
-\end_inset
-
- enable us to find the number of trace states by computer program.
- The results of 
+\begin_layout Standard
+We use computer program to calculate the values of 
 \begin_inset Formula $S_{M}$
 \end_inset
 
@@ -5853,7 +5835,7 @@ reference "eq:Multiple-trace-states-3"
 \begin_inset Formula $T_{M}$
 \end_inset
 
- are shown in Table 
+, as shown in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Number-of-trace-states"
@@ -5861,7 +5843,47 @@ reference "tab:Number-of-trace-states"
 \end_inset
 
 .
+ The results reveal that when 
+\begin_inset Formula $M$
+\end_inset
+
+ is large 
+\begin_inset Formula 
+\[
+S_{M}\to\frac{2^{M-1}}{M},\qquad T_{M}\to\left(0.7261768212\cdots\right)\times2^{M}.
+\]
+
+\end_inset
+
+The limit of 
+\begin_inset Formula $S_{M}$
+\end_inset
+
+ shows that almost all the single trace states have 
+\begin_inset Formula $M$
+\end_inset
+
+ different cyclic permutations when 
+\begin_inset Formula $M$
+\end_inset
+
+ is large.
+ This is not surprising: the density of the single trace with certain cyclic
+ symmetry goes down as 
+\begin_inset Formula $M$
+\end_inset
+
+ increase.
  
+\begin_inset Formula $T_{M}$
+\end_inset
+
+ increases as 
+\begin_inset Formula $2^{M}$
+\end_inset
+
+ with a magic prefactor we don't understand, which could be an interesting
+ mathematical problem to explore.
 \end_layout
 
 \begin_layout Standard
@@ -6719,51 +6741,6 @@ Number of trace states
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-The results reveals that in large 
-\begin_inset Formula $M$
-\end_inset
-
- 
-\begin_inset Formula 
-\[
-S_{M}\to\frac{2^{M-1}}{M},\qquad T_{M}\to\left(0.7261768212\cdots\right)\times2^{M}.
-\]
-
-\end_inset
-
-The limit of 
-\begin_inset Formula $S_{M}$
-\end_inset
-
- shows that almost each single trace state has 
-\begin_inset Formula $M$
-\end_inset
-
- different cyclic permutations at large 
-\begin_inset Formula $M$
-\end_inset
-
-.
- This is not surprising.
- The ratio of the single trace with certain cyclic symmetry goes down as
- 
-\begin_inset Formula $M$
-\end_inset
-
- increase.
- The number 
-\begin_inset Formula $T_{M}$
-\end_inset
-
- increase simply as 
-\begin_inset Formula $2^{M}$
-\end_inset
-
- with a unknown magic prefactor, which could be an interesting mathematical
- problem to explore.
 \end_layout
 
 \begin_layout Section
