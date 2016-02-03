@@ -779,10 +779,7 @@ In this paper, we will investigate more general forms of supersymmetric
 
  limit.
  We will perform a numerical study of the Hamiltonian 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:H_0"
-
+\begin_inset Formula $H_{0}$
 \end_inset
 
  for 
@@ -804,6 +801,40 @@ reference "eq:H_0"
 
  for odd 
 \begin_inset Formula $M\leq11$
+\end_inset
+
+.
+ Such a pattern is spoiled when we add to 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+ an additional 
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ term, which does not affect the large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit.
+ For the Hamiltonians 
+\begin_inset Formula $\pm\left(H_{0}-\Delta H\right)$
+\end_inset
+
+, the disappearance of ground state occurs at 
+\begin_inset Formula $N<\left(M-1\right)/2$
+\end_inset
+
+, which might suggest that the ground states can survive when 
+\begin_inset Formula $M$
+\end_inset
+
+ is large and 
+\begin_inset Formula $N$
+\end_inset
+
+ is much smaller than 
+\begin_inset Formula $M$
 \end_inset
 
 .
