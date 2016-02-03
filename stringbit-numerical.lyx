@@ -6748,24 +6748,14 @@ Rank of Norm Matrix
 \end_layout
 
 \begin_layout Standard
-In this section, we show some interesting patterns of the rank of norm matrix,
- which is defined as 
-\begin_inset Formula 
-\begin{equation}
-G_{ij}=\dprod{i}{j},\label{eq:Norm-Matrix-Definition}
-\end{equation}
-
+The rank of norm matrix 
+\begin_inset Formula $G_{ij}=\dprod{i}{j}$
 \end_inset
 
- where 
-\begin_inset Formula $\ket{i}$
-\end_inset
-
-, 
-\begin_inset Formula $\ket{j}$
-\end_inset
-
- are trace states.
+ is the dimension of the trace state space, and also, the number of energy
+ levels of the system.
+ In this section, we show some interesting patterns of the rank of norm
+ matrix.
  We only focus on the norm matrix of 
 \begin_inset Formula $M$
 \end_inset
@@ -6775,12 +6765,7 @@ G_{ij}=\dprod{i}{j},\label{eq:Norm-Matrix-Definition}
 \end_inset
 
  real symmetric matrix.
- 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-By supersymmetry, the norm matrix of 
+ By supersymmetry, the norm matrix of 
 \begin_inset Formula $M$
 \end_inset
 
@@ -6791,31 +6776,25 @@ By supersymmetry, the norm matrix of
 -bit bosonic trace state space.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
-The rank of 
-\begin_inset Formula $G$
+We generate the norma matrices for 
+\begin_inset Formula $M\leq11$
 \end_inset
 
- determines the dimension of the trace state space, and hence, the number
- of energy levels of the system.
- Matrix 
-\begin_inset Formula $G$
-\end_inset
-
- has full rank for 
+ and calculate their ranks numerically.
+ We find that when 
 \begin_inset Formula $N\geq M$
 \end_inset
 
-, while for 
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ has full rank and that when 
 \begin_inset Formula $N<M$
 \end_inset
 
- it's rank deficient.
+ it is rank deficient.
  As 
 \begin_inset Formula $N$
 \end_inset
@@ -6828,7 +6807,11 @@ The rank of
 \begin_inset Formula $1$
 \end_inset
 
-, it's rank changes from 
+, rank of 
+\begin_inset Formula $G$
+\end_inset
+
+ changes from 
 \begin_inset Formula $T_{M}$
 \end_inset
 
@@ -6837,7 +6820,7 @@ The rank of
 \end_inset
 
 .
- For 
+ We arrange the ranks of norm matrices for 
 \begin_inset Formula $M\leq11$
 \end_inset
 
@@ -6845,11 +6828,7 @@ The rank of
 \begin_inset Formula $N\leq M$
 \end_inset
 
-, the ranks of 
-\begin_inset Formula $G$
-\end_inset
-
- matrices form an number triangle shown as follows:
+ as a number triangle as below:
 \end_layout
 
 \begin_layout Standard
@@ -7095,25 +7074,30 @@ The number at
 \begin_inset Formula $G$
 \end_inset
 
- when 
-\begin_inset Formula $M=i,\, N=j$
+ for 
+\begin_inset Formula $M=i$
 \end_inset
 
- denoted as 
-\begin_inset Formula $R\left(i,j\right)$
+ and 
+\begin_inset Formula $N=j$
+\end_inset
+
+.
+ For convenience, we denote it as 
+\begin_inset Formula $R_{i,j}$
 \end_inset
 
 .
  We immediately see several patterns: 
-\begin_inset Formula $R\left(M,M\right)=T_{M}$
+\begin_inset Formula $R_{M,M}=T_{M}$
 \end_inset
 
 , 
-\begin_inset Formula $R\left(M,M-1\right)=T_{M}-1$
+\begin_inset Formula $R_{M,M-1}=T_{M}-1$
 \end_inset
 
 , 
-\begin_inset Formula $R\left(M,1\right)=1$
+\begin_inset Formula $R_{M,1}=1$
 \end_inset
 
 , and for 
@@ -7121,23 +7105,44 @@ The number at
 \end_inset
 
  greater than 1, 
-\begin_inset Formula $R\left(M,2\right)=2M-2$
+\begin_inset Formula $R_{M,2}=2M-2$
 \end_inset
 
 .
  If we define 
-\begin_inset Formula $R\left(M,0\right)=0$
+\begin_inset Formula $R_{i,0}=0$
+\end_inset
+
+, then we can define new variables 
+\begin_inset Formula $D_{i,j}=R_{i,j}-R_{i,j-1}$
+\end_inset
+
+, which represent the change of 
+\begin_inset Formula $G$
+\end_inset
+
+'s rank when 
+\begin_inset Formula $M=i$
 \end_inset
 
  and 
-\begin_inset Formula $D\left(M,N\right)=R\left(M,N\right)-R\left(M,N-1\right)$
+\begin_inset Formula $N$
 \end_inset
 
-, we obtain another number triangle formed by 
-\begin_inset Formula $D\left(M,N\right)$
+ change from 
+\begin_inset Formula $j$
 \end_inset
 
-:
+ to 
+\begin_inset Formula $j-1$
+\end_inset
+
+.
+ We arrange 
+\begin_inset Formula $D_{ij}$
+\end_inset
+
+ as another number triangle as below:
 \end_layout
 
 \begin_layout Standard
@@ -7365,11 +7370,8 @@ end{gather*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-The right half of the each row exhibits the pattern 
+Going through each row from right to left, we find the following sequence:
+ 
 \begin_inset Formula 
 \[
 1,\quad3,\quad9,\quad27,\quad73,\quad195,\cdots.
@@ -7385,7 +7387,7 @@ The right half of the each row exhibits the pattern
 \begin_inset Formula $N=M$
 \end_inset
 
- to 
+ and ends at 
 \begin_inset Formula $N=\left(M+1\right)/2$
 \end_inset
 
@@ -7397,47 +7399,43 @@ The right half of the each row exhibits the pattern
 \begin_inset Formula $N=M$
 \end_inset
 
- to 
+ and ends at 
 \begin_inset Formula $N=M/2$
 \end_inset
 
 .
- We are not sure about why it behaves like this.
- It might be related to the value of 
-\begin_inset Formula $N$
-\end_inset
-
- when the norm of some trace states begin to vanish.
- For odd 
+ This means that, not matter what value 
 \begin_inset Formula $M$
 \end_inset
 
-, the norm of state 
-\begin_inset Formula $\tr\bar{a}\bar{b}^{M-1}\ket{0}$
+ is, the changes of 
+\begin_inset Formula $G$
 \end_inset
 
- vanishes at 
-\begin_inset Formula $N=\left(M-1\right)/2$
-\end_inset
-
-, and as 
+'s rank from 
 \begin_inset Formula $N$
 \end_inset
 
- decrease, more states have zero norm.
- For even 
-\begin_inset Formula $M$
+ to 
+\begin_inset Formula $N-1$
 \end_inset
 
-, when 
-\begin_inset Formula $N=M/2$
+ for 
+\begin_inset Formula $N\geq M$
 \end_inset
 
-, there is state with vanishing norm, but when 
-\begin_inset Formula $N=M/2-2$
+ are the same.
+ 
+\end_layout
+
+\begin_layout Standard
+Since we only obtain the norm matrices for 
+\begin_inset Formula $M\leq11$
 \end_inset
 
-, there are more than one states have zero norm.
+, we don't know next number of the sequence.
+ Finding the pattern of the sequence is an interesting problem for future
+ research.
 \end_layout
 
 \begin_layout Section
