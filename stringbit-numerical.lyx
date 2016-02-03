@@ -7433,7 +7433,7 @@ Since we only obtain the norm matrices for
 \begin_inset Formula $M\leq11$
 \end_inset
 
-, we don't know next number of the sequence.
+, we don't know the next number of the sequence.
  Finding the pattern of the sequence is an interesting problem for future
  research.
 \end_layout
@@ -7637,6 +7637,10 @@ This section proves several claims on the eigenvalue problems of
 \end_inset
 
 where 
+\begin_inset Formula $V$
+\end_inset
+
+ is a vector and 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
@@ -7685,7 +7689,7 @@ If
 \begin_inset Formula $G$
 \end_inset
 
- is the norm matrix given by 
+ is the norm matrix 
 \begin_inset Formula $G_{ij}=\dprod{i}{j}$
 \end_inset
 
@@ -7728,20 +7732,7 @@ G\mathcal{H}=\mathcal{H}^{\dagger}G.\label{eq:GH-HG}
 
 \end_inset
 
- Let 
-\begin_inset Formula $E$
-\end_inset
-
- be an eigenvalue of 
-\begin_inset Formula $\mathcal{H}$
-\end_inset
-
- with eigenvector 
-\begin_inset Formula $V$
-\end_inset
-
-.
- Left multiplying Eq.
+Left multiplying Eq.
  
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -7802,7 +7793,6 @@ reference "eq:E-Complex-Eq1"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Proof
@@ -7822,7 +7812,7 @@ E^{*}V^{\dagger}GV & = & \left(E^{*}V^{\dagger}\right)GV=V^{\dagger}\mathcal{H}^
 
 \end_inset
 
- which follows
+ from which it follows
 \begin_inset Formula 
 \[
 \left(E-E^{*}\right)V^{\dagger}GV=V^{\dagger}\left(G\mathcal{H}-\mathcal{H}^{\dagger}G\right)V=0.
@@ -7847,8 +7837,8 @@ The rest claims are related to whether
 \begin_inset Formula $G$
 \end_inset
 
- is positive-semidefinite matrix.
- Let's discuss them separately.
+ is positive-semidefinite.
+ Let's discuss them case by case.
 \end_layout
 
 \begin_layout Subsection*
@@ -7950,7 +7940,7 @@ with dimension
 \begin_inset Formula $p$
 \end_inset
 
--dimensional eigenvector.
+-dimensional vector.
  We claim:
 \end_layout
 
@@ -7989,7 +7979,7 @@ An eigenvalue E of
 \end_layout
 
 \begin_layout Proof
-We can extend the 
+We extend the 
 \begin_inset Formula $p$
 \end_inset
 
@@ -8296,7 +8286,7 @@ RG\left(\mathcal{H}-E\right)V & = & RG\left(\mathcal{H}R^{\dagger}-ER^{\dagger}\
 
 \end_inset
 
- which follows 
+ from which it follows 
 \begin_inset Formula 
 \begin{equation}
 \left(\mathbb{H}-E\right)\left(\mathbf{I}_{p}\oplus\mathbf{O}_{r-p}\right)R^{\dagger-1}V=0.\label{eq:ExtHam-Eigenvalue-Eq3}
@@ -8371,9 +8361,9 @@ If
 \begin_inset Formula $G$
 \end_inset
 
- is not positive-semidefinite matrix, at least one of its eigenvalue is
+ is not positive-semidefinite matrix, at least one of its eigenvalues are
  negative.
- There is no orthonormal basis can be constructed in trace state space.
+ There does not exist an orthonormal basis in trace state space.
  Suppose the 
 \begin_inset Formula $r\times r$
 \end_inset
@@ -8386,7 +8376,7 @@ If
 \begin_inset Formula $p$
 \end_inset
 
- positive eigenvalues and 
+ positive eigenvalues, 
 \begin_inset Formula $q$
 \end_inset
 
@@ -8492,7 +8482,7 @@ If
 \begin_inset Formula $W$
 \end_inset
 
- does not contain any ghost state.
+ does not couple with any ghost state.
 \end_layout
 
 \begin_layout Itemize
@@ -8570,16 +8560,16 @@ The condition
 \begin_inset Formula $V$
 \end_inset
 
- does not mix with any ghost state.
+ does not couple with any ghost state.
  According to our numerical calculation, 
 \begin_inset Formula $G$
 \end_inset
 
  is not positive-semidefinite only when 
-\begin_inset Formula $N$
+\begin_inset Formula $N<M$
 \end_inset
 
- is small enough and non-integer.
+ and is not integer.
  The numerical calculation shows, except the 
 \begin_inset Formula $E=0$
 \end_inset
@@ -8737,7 +8727,7 @@ RG\left(\mathcal{H}-E\right)V & = & RG\mathcal{H}R^{\dagger}R^{\dagger-1}V-ERGR^
 
 \end_inset
 
- where we define 
+ where we have defined 
 \begin_inset Formula 
 \begin{eqnarray*}
 W^{\prime} & \equiv & \left(\mat{I}_{p+q}\oplus\mat{O}_{s}\right)R^{\dagger-1}V,\\
@@ -8807,7 +8797,7 @@ V^{\dagger}\left(GR^{\dagger}RG-G\right)V=0.\label{eq:V-norm-constraint3}
 
 \end_inset
 
- Combining constraint 
+ Combining constraints 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:W-prime-norm"
