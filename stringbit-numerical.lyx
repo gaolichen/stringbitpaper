@@ -317,7 +317,7 @@ key "Thorn:1991fv"
  Hooft's holography hypothesis 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "'tHooft:1990eb,'tHooft:1993gx"
+key "'tHooft:1990eb,'tHooft:1987,'tHooft:1993gx"
 
 \end_inset
 
@@ -468,16 +468,30 @@ E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}\left(M^{-3}\right).
 \end_inset
 
 The first term can be dropped as the bit number is conserved in string interacti
-on.
+on
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Giles:1977mpa"
+
+\end_inset
+
+.
  Because of the negative 
 \begin_inset Formula $\mathcal{O}\left(M^{-1}\right)$
 \end_inset
 
  term, a long closed bit chain tends to split into multiple smaller chains
  for a lower energy state.
- This instability issue can be fixed by introducing supersymmetry.
+ This instability issue can be fixed by introducing supersymmetry
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Gliozzi:1976qd,Ramond:1971gb,Neveu:1971rx,Neveu:1971iw,Thorn:1971jc,Neveu:1971iv"
+
+\end_inset
+
+.
  In supersymmetry, string bits are multiplets with both bosonic and fermionic
- degree of freedom.
+ degrees of freedom.
  It turns out that, for multiplets with 
 \begin_inset Formula $d$
 \end_inset
