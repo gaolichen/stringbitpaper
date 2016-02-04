@@ -5204,7 +5204,15 @@ The rule is that each swap of two
 \end_layout
 
 \begin_layout Standard
-To count the single trace states, we need the following definition and theorem.
+To count the single trace states, we need the following definition and theorem
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "rotman1999introduction"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -5270,7 +5278,7 @@ In our case, the cyclic group
 \end_layout
 
 \begin_layout Theorem*
-(Burnside’s theorem).
+(Burnside’s counting theorem).
  If 
 \begin_inset Formula $G$
 \end_inset
