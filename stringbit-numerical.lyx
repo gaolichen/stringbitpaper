@@ -771,7 +771,11 @@ H_{0}=\frac{2}{N}\tr\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{
 
 \end_inset
 
- which produces the Green-Schwarz Hamiltonian.
+ which produces the Green-Schwarz Hamiltonian at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+.
  By variational method, it shows that the ground states of the Hamiltonian
  only survive at 
 \begin_inset Formula $N>\left(M-1\right)/2$
@@ -2883,6 +2887,23 @@ The first method is used to investigate the change of eigenstates, including
 
  matrices, whose entries are expressed in terms of 
 \begin_inset Formula $N$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The source code of the project can be found in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chen:2015GitHub"
+
+\end_inset
+
+.
+\end_layout
+
 \end_inset
 
 .
@@ -9564,14 +9585,7 @@ The numerical computation is performed by C++ and matlab program.
  matrices, then use matlab to find eigenvalues and eigenstates.
  Here we introduce the algorithms for generating trace states and building
  norm matrices.
- The source code of the project can be found in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Chen:2015GitHub"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Paragraph*
