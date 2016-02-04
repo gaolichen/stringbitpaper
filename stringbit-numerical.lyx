@@ -2688,7 +2688,7 @@ i.e.
 \end_inset
 
  has both positive and negative eigenvalues.
- There is some subtly in this case.
+ There is some subtlety in this case.
  The eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
@@ -2961,9 +2961,9 @@ reference "fig:H=H0M=11"
  We use different line styles for different norm types: solid, dotted, and
  dash-dotted curves correspond to positive, negative, and zero norm eigenstates
  respectively.
- Since a zero norm state associates with two complex eigenvalues that conjugate
- to each other, the dash-dotted curves represent only the real part of eigenvalu
-es.
+ Dash-dotted curves actually associate with two complex eigenvalues which
+ are conjugate to each other, and hence, represent only the real part of
+ the eigenvalues.
  For higher 
 \begin_inset Formula $M$
 \end_inset
