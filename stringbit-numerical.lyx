@@ -6,6 +6,7 @@
 \begin_preamble
 \usepackage{babel}
 \usepackage{url}
+\usepackage[numbers,sort&compress]{natbib}
 %\allowdisplaybreaks
 \bibliographystyle{unsrt}
 
@@ -125,50 +126,31 @@ Department of Physics, University of Florida, Gainesville, FL 32611
 \end_layout
 
 \begin_layout Abstract
-String bit is an idea to formulate string as a discrete chain of point-like
- string bits, each of which has 
-\begin_inset Formula $s$
-\end_inset
-
- fermionic degrees of freedom and 
-\begin_inset Formula $d$
-\end_inset
-
- bosonic degrees of freedom.
+String bit model provides a possible method to formulate string as a discrete
+ chain of point-like string bits.
  When the bit number 
 \begin_inset Formula $M$
 \end_inset
 
- is large, a bit chain evolves into a continuous string.
- Particularly, if 
-\begin_inset Formula $s=d=8$
-\end_inset
-
-, the 10-dimensional superstring emerges.
- We study the simplest case with 
-\begin_inset Formula $s=1$
-\end_inset
-
- and 
-\begin_inset Formula $d=0$
-\end_inset
-
-.
+ is large, a chain behaves as a continuous string.
+ We study the simplest case that has only one bosonic bit and one fermionic
+ bit.
  The creation and annihilation operators are adjoint representations of
  
 \begin_inset Formula $U\left(N\right)$
 \end_inset
 
- group.
+ color group.
  The Hamiltonian 
-\begin_inset Formula $H$
+\begin_inset Formula $H_{0}$
 \end_inset
 
- is constructed so that its action on a bit chain does not vanish at 
-\begin_inset Formula $N=\infty$
+ is constructed so that in large 
+\begin_inset Formula $N$
 \end_inset
 
-.
+ limit it produces a worldsheet spectrum with one grassmann Green-Schwarz
+ field.
  We show that a general Hamiltonian has three free parameters under the
  supersymmetry, which ensures continuous energy spectrum of the model at
  
@@ -326,7 +308,14 @@ key "'tHooft:1990eb,'tHooft:1987,'tHooft:1993gx"
 
 \begin_layout Standard
 Such an idea is motivated by discretization of continuous string.
- Consider a string in lightcone coordinates, 
+ Consider a string in lightcone coordinates 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mandelstam:1973jk,Mandelstam:1974hk"
+
+\end_inset
+
+, 
 \end_layout
 
 \begin_layout Standard
@@ -459,7 +448,7 @@ reference "eq:Ham-discrete-chain"
 \begin_inset Formula $M\to\infty$
 \end_inset
 
- is given by
+ is given by 
 \begin_inset Formula 
 \[
 E_{G}=\frac{2dT_{0}M}{m\pi}-\frac{\pi dT_{0}}{6Mm}+{\cal O}\left(M^{-3}\right).
@@ -491,8 +480,15 @@ key "Gliozzi:1976qd,Ramond:1971gb,Neveu:1971rx,Neveu:1971iw,Thorn:1971jc,Neveu:1
 
 .
  In supersymmetry, string bits are multiplets with both bosonic and fermionic
- degrees of freedom.
- It turns out that, for multiplets with 
+ degrees of freedom 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Green:1980zg,Bardakci:1970nb"
+
+\end_inset
+
+.
+ It turns out that, for models with 
 \begin_inset Formula $d$
 \end_inset
 
@@ -500,7 +496,7 @@ key "Gliozzi:1976qd,Ramond:1971gb,Neveu:1971rx,Neveu:1971iw,Thorn:1971jc,Neveu:1
 \begin_inset Formula $s$
 \end_inset
 
- fermionic degree of freedom, the ground energy becomes
+ fermionic worldsheet degree of freedom, the ground energy becomes
 \begin_inset Formula 
 \[
 E_{G}=\frac{(s-d)\pi T_{0}}{6Mm}.
@@ -620,11 +616,11 @@ key "Sun:2014dga"
 \end_inset
 
 , with corresponding creation operators defined as 
-\begin_inset Formula $\bar{a}_{\alpha}^{\beta}\equiv\left(a_{\alpha}^{\beta}\right)^{\dagger}$
+\begin_inset Formula $\bar{a}_{\alpha}^{\beta}\equiv\left(a_{\beta}^{\alpha}\right)^{\dagger}$
 \end_inset
 
  and 
-\begin_inset Formula $\bar{b}_{\alpha}^{\beta}\equiv\left(b_{\alpha}^{\beta}\right)^{\dagger}$
+\begin_inset Formula $\bar{b}_{\alpha}^{\beta}\equiv\left(b_{\beta}^{\alpha}\right)^{\dagger}$
 \end_inset
 
 .
@@ -710,11 +706,11 @@ reference "eq:commutation-relation"
 \end_inset
 
 .
- Clearly, the number of trace states increase exponentially as 
+ Clearly, the number of trace states increases exponentially as 
 \begin_inset Formula $M$
 \end_inset
 
- increase.
+ increases.
  In Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -771,7 +767,14 @@ H_{0}=\frac{2}{N}\tr\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{
 
 \end_inset
 
- which produces the Green-Schwarz Hamiltonian at 
+ which produces the Green-Schwarz Hamiltonian
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Green:1980zg,Green:1983hw"
+
+\end_inset
+
+ at 
 \begin_inset Formula $N=\infty$
 \end_inset
 
@@ -791,7 +794,7 @@ H_{0}=\frac{2}{N}\tr\left[\left(\bar{a}^{2}-i\bar{b}^{2}\right)a^{2}-\left(\bar{
 
 \begin_layout Standard
 In this paper, we will investigate more general forms of supersymmetric
- Hamiltonian and their ground energy at large 
+ Hamiltonian and their energy spectrum at large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -911,7 +914,7 @@ reference "sec:Large-N"
 
 \end_inset
 
-, we investigate the energy spectrum of the system at large 
+, we investigate the energy spectrum of the system in the large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -923,7 +926,7 @@ reference "sec:Finite-N"
 
 \end_inset
 
-, we compute the energy spectrum in finite 
+, we compute the energy spectrum at finite 
 \begin_inset Formula $N$
 \end_inset
 
@@ -1078,7 +1081,7 @@ c_{1}+c_{2} & =c_{3}+c_{4}
 
 \end_inset
 
- which implies a supersymmetric Hamiltonian can be written as
+ which implies that a supersymmetric Hamiltonian can be written as
 \begin_inset Formula 
 \begin{eqnarray}
 H & = & H_{0}+\frac{2\xi}{N}\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right)\nonumber \\
@@ -1088,7 +1091,7 @@ H & = & H_{0}+\frac{2\xi}{N}\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{
 
 \end_inset
 
- with 
+ where 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -1100,7 +1103,7 @@ H & = & H_{0}+\frac{2\xi}{N}\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{
 \begin_inset Formula $\zeta$
 \end_inset
 
- be real parameters.
+ are real parameters.
  Note that each term in 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -1117,7 +1120,7 @@ The Hamiltonian
 \begin_inset Formula $H_{0}$
 \end_inset
 
- is a special case of 
+ is the special case of 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:general-susy-H"
@@ -1310,7 +1313,7 @@ reference "eq:H-general-1"
 \end_inset
 
 .
- This would cause dangerous instability if the coefficient of 
+ This would cause a dangerous instability if the coefficient of 
 \begin_inset Formula $\tr\bar{a}^{2}a^{2}$
 \end_inset
 
@@ -1438,7 +1441,7 @@ reference "app:HPrime-Equals-DeltaH"
 
 \end_inset
 
-While we are not sure if there exists other variations of 
+While we are not sure if there exist other variations of 
 \begin_inset Formula $H_{0}$
 \end_inset
 
@@ -1480,7 +1483,7 @@ In this section, we will study the energy spectrum of our toy string bit
 \begin_inset Formula $N$
 \end_inset
 
- limit by both analytic and numerical solutions.
+ limit by both analytic and numerical methods.
  We first show that the supersymmetry guarantees the excitation energy to
  be vanishing at large 
 \begin_inset Formula $M$
@@ -1656,7 +1659,7 @@ h & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}
 
 \end_inset
 
- where for simplicity we neglect the quartic term, which vanishes automatically
+ where for simplicity we drop the quartic term, which vanishes automatically
  under the supersymmetry constraint 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -2230,7 +2233,7 @@ Now let's consider the first excitation energy of odd
 \end_inset
 
  system.
- From above analysis, there is no double trace states in the low energy
+ From above analysis, there are no double trace states in the low energy
  region, so we consider the triple trace states.
  From 
 \begin_inset CommandInset ref
@@ -4695,8 +4698,8 @@ We showed that the supersymmetry plays a crucial role in the model.
  by two annihilation operators.
  With the supersymmetry constraint, we reduce the number of parameters in
  the Hamiltonian to three.
- Another interesting effect about supersymmetry is that, after imposing
- the supersymmetry constraint to the Hamiltonian, the excitation energy
+ Another interesting consequence of supersymmetry is that, after imposing
+ the supersymmetry constraint on the Hamiltonian, the excitation energy
  becomes of order 
 \begin_inset Formula $M^{-1}$
 \end_inset
@@ -4713,7 +4716,7 @@ In finite
 \begin_inset Formula $N$
 \end_inset
 
-, we numerically studies the energy spectrum of the model up to 
+, we numerically studied the energy spectrum of the model up to 
 \begin_inset Formula $M\leq11$
 \end_inset
 
@@ -5171,7 +5174,7 @@ There are
 \begin_inset Formula $\tr\ba\bb$
 \end_inset
 
- are equivalent states, so as 
+ are equivalent states, so are 
 \begin_inset Formula $\tr\bar{b}\bar{a}\bar{a}\bar{b}$
 \end_inset
 
@@ -5180,7 +5183,7 @@ There are
 \end_inset
 
 .
- Actually, the later case differs by a negative sign
+ Actually, the latter case differs by a negative sign
 \begin_inset Formula 
 \[
 \tr\ba\ba\bb\bb=-\tr\bb\ba\ba\bb.
@@ -5192,7 +5195,7 @@ The rule is that each swap of two
 \begin_inset Formula $\bar{b}$
 \end_inset
 
- introducing a minus sign.
+ introduces a minus sign.
  It follows that some trace states is vanishing, for example, 
 \begin_inset Formula $\tr\bar{b}\bar{b}=-\tr\bar{b}\bar{b}=0.$
 \end_inset
@@ -5296,7 +5299,7 @@ In our case, the cyclic group
 \begin_inset Formula $g$
 \end_inset
 
-, i.e, 
+, i.e., 
 \begin_inset Formula 
 \[
 \mathrm{Fix}\left(g\right)=\left\{ x\in X|g\cdot x=x\right\} .
@@ -5316,7 +5319,7 @@ To find the number of states, we need to find
 \end_layout
 
 \begin_layout Standard
-We first consider odd 
+We first consider the odd 
 \begin_inset Formula $M$
 \end_inset
 
@@ -5325,7 +5328,7 @@ We first consider odd
 \begin_inset Formula $c_{k}\in C_{M},\, k=1,2,\cdots M$
 \end_inset
 
-, be the group member that shift 
+, be the group member that shifts 
 \begin_inset Formula $k$
 \end_inset
 
