@@ -4950,6 +4950,184 @@ numberwithin{equation}{section}
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
+name "app:Trace-States-List"
+
+\end_inset
+
+Bosonic Trace States
+\end_layout
+
+\begin_layout Subsection*
+1 bit
+\end_layout
+
+\begin_layout Standard
+1 bosonic state: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2 bits
+\end_layout
+
+\begin_layout Standard
+2 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+3 bits
+\end_layout
+
+\begin_layout Standard
+5 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+4 bits
+\end_layout
+
+\begin_layout Standard
+10 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|10\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+5 bits
+\end_layout
+
+\begin_layout Standard
+21 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|16\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|19\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+6 bits
+\end_layout
+
+\begin_layout Standard
+44 bosonic states: 
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|16\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|19\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|22\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|23\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|24\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|25\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|26\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|27\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|28\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|29\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|30\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|31\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|32\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|33\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|34\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|35\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|36\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|37\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|38\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|39\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|40\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|41\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|42\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|43\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|44\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+7 bits
+\end_layout
+
+\begin_layout Standard
+89 bosonic states:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle \\
+\left|16\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|19\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|22\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|23\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|24\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|25\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|26\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|27\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
+\left|28\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|29\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|30\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|31\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|32\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|33\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|34\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|35\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|36\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|37\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|38\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|39\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|40\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|41\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|42\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|43\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|44\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|45\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|46\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|47\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|48\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|49\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|50\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|51\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|52\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|53\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|54\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|55\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|56\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|57\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|58\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|59\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|60\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
+\left|61\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|62\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|63\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|64\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|65\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|66\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|67\right\rangle  & =\mathrm{Tr}\bar{b}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|68\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|69\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|70\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|71\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|72\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|73\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|74\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|75\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|76\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|77\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|78\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|79\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|80\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|81\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|82\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|83\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|84\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|85\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|86\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|87\right\rangle  & =\mathrm{Tr}\bar{b}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
+\left|88\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|89\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
 name "app:Counting-Trace-States"
 
 \end_inset
@@ -7528,179 +7706,576 @@ Since we only obtain the norm matrices for
 \begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
-name "app:Trace-States-List"
+name "App:Calculation-of-HQ"
 
 \end_inset
 
-Bosonic Trace States
-\end_layout
+Calculation of 
+\begin_inset Formula $\left[H,Q\right]$
+\end_inset
 
-\begin_layout Subsection*
-1 bit
+
 \end_layout
 
 \begin_layout Standard
-1 bosonic state: 
+In this section, let's find the constraint of supersymmetric Hamiltonian,
+ 
+\shape italic
+i.e.
+\shape default
+, the condition for 
+\begin_inset Formula $\left[H,Q\right]=0$
+\end_inset
+
+, where 
 \begin_inset Formula 
-\begin{align*}
-\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\left|0\right\rangle 
-\end{align*}
+\[
+Q=\exp\left(\frac{i\pi}{4}\right)\tr\bar{a}b+\exp\left(-\frac{i\pi}{4}\right)\tr\bar{b}a.
+\]
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection*
-2 bits
-\end_layout
-
 \begin_layout Standard
-2 bosonic states: 
+We first calculate the commutation between 
+\begin_inset Formula $Q$
+\end_inset
+
+ and each trace operators in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:trace-operators"
+
+\end_inset
+
+.
+ We have 
 \begin_inset Formula 
-\begin{align*}
-\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle 
-\end{align*}
+\[
+\left[\mathrm{Tr}\bar{a}^{2}b^{2},\mathrm{Tr}\bar{a}b\right]=\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{a}b-\mathrm{Tr}\bar{a}b\mathrm{Tr}\bar{a}^{2}b^{2}=0,
+\]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection*
-3 bits
-\end_layout
-
-\begin_layout Standard
-5 bosonic states: 
-\begin_inset Formula 
-\begin{align*}
-\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle \\
-\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle 
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-4 bits
-\end_layout
-
-\begin_layout Standard
-10 bosonic states: 
-\begin_inset Formula 
-\begin{align*}
-\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|10\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-5 bits
-\end_layout
-
-\begin_layout Standard
-21 bosonic states: 
-\begin_inset Formula 
-\begin{align*}
-\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|16\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|19\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-6 bits
-\end_layout
-
-\begin_layout Standard
-44 bosonic states: 
-\begin_inset Formula 
-\begin{align*}
-\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|16\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|19\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|22\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|23\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|24\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|25\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|26\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|27\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|28\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|29\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|30\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|31\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|32\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|33\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|34\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|35\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|36\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|37\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|38\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|39\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|40\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|41\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|42\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|43\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|44\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-7 bits
-\end_layout
-
-\begin_layout Standard
-89 bosonic states:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
-\left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|4\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|5\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|6\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|7\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|8\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|9\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|10\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|11\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|12\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|13\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|14\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\left|0\right\rangle  & \left|15\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\left|0\right\rangle \\
-\left|16\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|17\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|18\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|19\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|20\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|21\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|22\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|23\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|24\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|25\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|26\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|27\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
-\left|28\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|29\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|30\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|31\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|32\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|33\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|34\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|35\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|36\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|37\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|38\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|39\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|40\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|41\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|42\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|43\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|44\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|45\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|46\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|47\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|48\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|49\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\left|0\right\rangle  & \left|50\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|51\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|52\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|53\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|54\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|55\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|56\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|57\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|58\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|59\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|60\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{a}\bar{b}\left|0\right\rangle \\
-\left|61\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{a}\bar{b}\left|0\right\rangle  & \left|62\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|63\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|64\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|65\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|66\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|67\right\rangle  & =\mathrm{Tr}\bar{b}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{b}\left|0\right\rangle  & \left|68\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|69\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|70\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|71\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|72\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|73\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|74\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|75\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|76\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|77\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|78\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|79\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|80\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|81\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|82\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\left|0\right\rangle  & \left|83\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|84\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|85\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|86\right\rangle  & =\mathrm{Tr}\bar{a}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|87\right\rangle  & =\mathrm{Tr}\bar{b}\bar{b}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\bar{b}\left|0\right\rangle \\
-\left|88\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\bar{b}\bar{b}\left|0\right\rangle  & \left|89\right\rangle  & =\mathrm{Tr}\bar{b}\mathrm{Tr}\bar{a}\bar{b}\bar{b}\mathrm{Tr}\bar{b}\bar{b}\bar{b}\left|0\right\rangle 
-\end{align*}
+\begin{eqnarray*}
+\left[\mathrm{Tr}\bar{a}^{2}b^{2},\tr\bar{b}a\right] & = & \mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a-\mathrm{Tr}\bar{b}a\mathrm{Tr}\bar{a}^{2}b^{2}\\
+ & = & \mathrm{Tr}\bar{a}^{2}ba-\mathrm{Tr}b\bar{a}^{2}a+\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}\\
+ &  & -\left(\mathrm{Tr}\bar{b}\bar{a}b^{2}+\tr\bar{b}b^{2}\bar{a}+\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}\right)\\
+ & = & \tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2},
+\end{eqnarray*}
+
+\end_inset
+
+ where 
+\begin_inset Formula $\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}$
+\end_inset
+
+ denotes the normal ordering of 
+\begin_inset Formula $\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a$
+\end_inset
+
+.
+ As we see, the normal ordering terms cancel out.
+ This occurs for all the trace operators.
+ So in the following calculation, we simply drop the normal ordering terms
+ in most cases.
+ From above two results, it follows 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\mathrm{Tr}\bar{a}^{2}b^{2},Q\right] & = & \exp\left(-i\frac{\pi}{4}\right)\left[\mathrm{Tr}\bar{a}^{2}b^{2},\tr\bar{b}a\right]\\
+ & = & \exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\right].
+\end{eqnarray*}
+
+\end_inset
+
+ We repeat the calculation for the other trace operators as follows.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}^{2}a^{2},\tr\bar{a}b\right] & = & \tr\bar{b}^{2}a^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}^{2}a^{2}\\
+ & = & \tr\bar{b}^{2}ab+\tr a\bar{b}^{2}b-\tr\bar{a}\bar{b}a^{2}+\tr\bar{a}a^{2}\bar{b}\\
+ & = & \tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2},
+\end{eqnarray*}
 
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\left[\tr\bar{b}^{2}a^{2},\tr\bar{b}a\right]=0,
+\]
+
+\end_inset
+
+ from which it follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{b}^{2}a^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}a^{2},\tr\bar{a}b\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2}\right].
+\end{eqnarray}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}^{2}a^{2},\tr\bar{a}b\right] & = & \tr\bar{a}^{2}a^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}^{2}a^{2}\\
+ & = & \tr\bar{a}^{2}ab+\tr\bar{a}^{2}ba+\normord{\tr\bar{a}^{2}a^{2}\tr\bar{a}b}-\tr\bar{a}b\tr\bar{a}^{2}a^{2}\\
+ & = & \tr\bar{a}^{2}\left(ab+ba\right),
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}^{2}a^{2},\tr\bar{b}a\right] & = & \tr\bar{a}^{2}a^{2}\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}^{2}a^{2}\\
+ & = & \tr\bar{a}^{2}a^{2}\tr\bar{b}a-\tr\bar{b}\bar{a}a^{2}-\tr\bar{a}\bar{b}a^{2}-\normord{\tr\bar{b}a\tr\bar{a}^{2}a^{2}}\\
+ & = & -\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2},
+\end{eqnarray*}
+
+\end_inset
+
+from which it follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{a}^{2}a^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}a^{2},\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}a^{2},\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\tr\bar{a}^{2}\left(ab+ba\right)-\exp\left(-i\frac{\pi}{4}\right)\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}.
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}^{2}b^{2},\tr\bar{a}b\right] & = & \tr\bar{b}^{2}b^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}^{2}b^{2}\\
+ & = & \tr\bar{b}^{2}b^{2}\tr\bar{a}b-\tr\bar{a}\bar{b}b^{2}+\tr\bar{b}\bar{a}b^{2}-\normord{\tr\bar{a}b\tr\bar{b}^{2}b^{2}}\\
+ & = & \tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2},
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}^{2}b^{2},\tr\bar{b}a\right] & = & \tr\bar{b}^{2}b^{2}\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}^{2}b^{2}\\
+ & = & \tr\bar{b}^{2}ba-\tr\bar{b}^{2}ab+\normord{\tr\bar{b}^{2}b^{2}\tr\bar{b}a}-\tr\bar{b}a\tr\bar{b}^{2}b^{2}\\
+ & = & \tr\bar{b}^{2}\left(ba-ab\right),
+\end{eqnarray*}
+
+\end_inset
+
+ from which it follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{b}^{2}b^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}b^{2},\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}b^{2},\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2}+\exp\left(-i\frac{\pi}{4}\right)\tr\bar{b}^{2}\left(ba-ab\right).
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}\bar{a}ba,\tr\bar{a}b\right] & = & \tr\bar{b}\bar{a}ba\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}\bar{a}ba\\
+ & = & \tr\bar{b}\bar{a}bb+\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}-\tr\bar{a}\bar{a}ba+\normord{\tr\bar{a}b\tr\bar{b}\bar{a}ba}\\
+ & = & \tr\bar{b}\bar{a}bb+\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}-\tr\bar{a}\bar{a}ba-\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}\\
+ & = & \tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}\bar{a}ba,\tr\bar{b}a\right] & = & \tr\bar{b}\bar{a}ba\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}\bar{a}ba\\
+ & = & \tr\bar{b}\bar{a}a^{2}-\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}+\tr\bar{b}\bar{b}ba-\normord{\tr\bar{b}a\tr\bar{b}\bar{a}ba}\\
+ & = & \tr\bar{b}\bar{a}a^{2}-\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}+\tr\bar{b}\bar{b}ba+\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}\\
+ & = & \tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba,
+\end{eqnarray*}
+
+\end_inset
+
+ from which it follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{b}\bar{a}ba,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ba,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ba,\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba\right]\nonumber \\
+ &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba\right].
+\end{eqnarray}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}\bar{b}ab,\tr\bar{a}b\right] & = & \tr\bar{a}\bar{b}ab\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}\bar{b}ab\\
+ & = & -\tr\bar{a}\bar{b}b^{2}+\normord{\tr\bar{a}\bar{b}ab\tr\bar{a}b}-\tr\bar{a}^{2}ab+\normord{\tr\bar{a}b\tr\bar{a}\bar{b}ab}\\
+ & = & -\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}\bar{b}ab,\tr\bar{b}a\right] & = & \tr\bar{a}\bar{b}ab\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}\bar{b}ab\\
+ & = & \tr\bar{a}\bar{b}a^{2}-\normord{\tr\bar{a}\bar{b}ab\tr\bar{b}a}-\tr\bar{b}^{2}ab-\normord{\tr\bar{a}\bar{b}ab\tr\bar{b}a}\\
+ & = & \tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab,
+\end{eqnarray*}
+
+\end_inset
+
+ which follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{a}\bar{b}ab,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ab,\tr\bar{b}a\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ab,\tr\bar{a}b\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[-\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab\right]\nonumber \\
+ &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab\right].
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}\bar{b}ba,\tr\bar{a}b\right] & = & \tr\bar{a}\bar{b}ba\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}\bar{b}ba\\
+ & = & \tr\bar{a}\bar{b}bb+\normord{\tr\bar{a}\bar{b}ba\tr\bar{a}b}-\tr\bar{a}^{2}ba+\normord{\tr\bar{a}b\tr\bar{a}\bar{b}ba}\\
+ & = & \tr\bar{a}\bar{b}bb-\tr\bar{a}^{2}ba,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{a}\bar{b}ba,\tr\bar{b}a\right] & = & \tr\bar{a}\bar{b}ba\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}\bar{b}ba\\
+ & = & \tr\bar{a}\bar{b}aa-\normord{\tr\bar{a}\bar{b}ba\tr\bar{b}a}-\tr\bar{b}\bar{b}ba-\normord{\tr\bar{a}\bar{b}ba\tr\bar{b}a}\\
+ & = & \tr\bar{a}\bar{b}aa-\tr\bar{b}^{2}ba,
+\end{eqnarray*}
+
+\end_inset
+
+ from which it follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{a}\bar{b}ba,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ba,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ba,\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}bb-\tr\bar{a}^{2}ba\right]\nonumber \\
+ &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}aa-\tr\bar{b}^{2}ba\right].
+\end{eqnarray}
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}\bar{a}ab,\tr\bar{a}b\right] & = & \tr\bar{b}\bar{a}ab\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}\bar{a}ab\\
+ & = & -\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\tr\bar{b}\bar{a}ab,\tr\bar{b}a\right] & = & \tr\bar{b}\bar{a}ab\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}\bar{a}ab\\
+ & = & \tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab,
+\end{eqnarray*}
+
+\end_inset
+
+ from which it follows
+\begin_inset Formula 
+\begin{eqnarray}
+\left[\tr\bar{b}\bar{a}ab,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ab,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ab,\tr\bar{b}a\right]\nonumber \\
+ & = & \exp\left(i\frac{\pi}{4}\right)\left[-\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab\right]\nonumber \\
+ &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab\right].
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As mentioned in the main text, the general form of Hermitian Hamiltonian
+ is 
+\begin_inset Formula 
+\begin{eqnarray*}
+H & = & \frac{1}{N}\Big[c_{1}\tr\bar{a}^{2}a^{2}+c_{2}\tr\bar{b}^{2}b^{2}+iz_{1}\tr\bar{a}^{2}b^{2}-iz_{1}^{*}\tr\bar{b}^{2}a^{2}\\
+ &  & +c_{3}\tr\bar{a}\bar{b}ba+c_{4}\tr\bar{b}\bar{a}ab+z_{2}\tr\bar{a}\bar{b}ab+z_{2}^{*}\tr\bar{b}\bar{a}ba\Big].
+\end{eqnarray*}
+
+\end_inset
+
+ With above calculation, we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+N\exp\left(\frac{i\pi}{4}\right)\left[H,Q\right] & = & c_{1}\left[i\tr\bar{a}^{2}\left(ab+ba\right)-\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}\right]\\
+ &  & +c_{2}\left[i\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2}+\tr\bar{b}^{2}\left(ba-ab\right)\right]\\
+ &  & +iz_{1}\left[\tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\right]\\
+ &  & +z_{1}^{*}\left[\tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2}\right]\\
+ &  & +c_{3}\left[i\left(\tr\bar{a}\bar{b}bb-\tr\bar{a}^{2}ba\right)+\tr\bar{a}\bar{b}aa-\tr\bar{b}^{2}ba\right]\\
+ &  & +c_{4}\left[i\left(-\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab\right)+\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab\right]\\
+ &  & +z_{2}\left[i\left(-\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab\right)+\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab\right]\\
+ &  & +z_{2}^{*}\left[i\left(\tr\bar{b}\bar{a}bb-\tr\bar{a}^{2}ba\right)+\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ba\right]\\
+ & = & i\left(c_{1}-z_{1}-c_{4}-z_{2}\right)\tr\bar{a}^{2}ab-\left(c_{1}-z_{1}^{*}-c_{4}-z_{2}^{*}\right)\tr\bar{b}\bar{a}a^{2}\\
+ &  & +i\left(c_{1}+z_{1}-c_{3}-z_{2}^{*}\right)\tr\bar{a}^{2}ba-\left(c_{1}+z_{1}^{*}-c_{3}-z_{2}\right)\tr\bar{a}\bar{b}a^{2}\\
+ &  & -\left(c_{2}-z_{1}^{*}-c_{4}+z_{2}\right)\tr\bar{b}^{2}ab+i\left(c_{2}-z_{1}-c_{4}+z_{2}^{*}\right)\tr\bar{a}\bar{b}b^{2}\\
+ &  & +\left(c_{2}+z_{1}^{*}-c_{3}+z_{2}^{*}\right)\tr\bar{b}^{2}ba-i\left(c_{2}+z_{1}-c_{3}+z_{2}\right)\tr\bar{a}\bar{b}b^{2}.
+\end{eqnarray*}
+
+\end_inset
+
+ Then 
+\begin_inset Formula $\left[H,Q\right]=0$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+\begin{cases}
+c_{1}-z_{1}-c_{4}-z_{2} & =0\\
+c_{1}+z_{1}-c_{3}-z_{2}^{*} & =0\\
+c_{2}-z_{1}^{*}-c_{4}+z_{2} & =0\\
+c_{2}+z_{1}^{*}-c_{3}+z_{2}^{*} & =0
+\end{cases},
+\]
+
+\end_inset
+
+from which it follows 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Susy-constraint"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "app:HPrime-Equals-DeltaH"
+
+\end_inset
+
+Proof of 
+\begin_inset Formula $\left(H^{\prime}-\Delta H\right)\ket{\text{Any trace state}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta H$
+\end_inset
+
+ and 
+\begin_inset Formula $H^{\prime}$
+\end_inset
+
+ are defined as
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta H & = & \frac{2}{N}\tr\left[\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right],\\
+H^{\prime} & = & \frac{2}{N}\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right),
+\end{eqnarray*}
+
+\end_inset
+
+ where 
+\begin_inset Formula 
+\[
+\tilde{M}=\tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right).
+\]
+
+\end_inset
+
+We first prove that 
+\begin_inset Formula 
+\begin{equation}
+N\left(H^{\prime}-\Delta H\right)=\tr G^{2},\label{eq:HPrime-DeltaH-G2-1}
+\end{equation}
+
+\end_inset
+
+ where the color operator 
+\begin_inset Formula $G_{\alpha}^{\beta}$
+\end_inset
+
+ is defined as 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+G_{\alpha}^{\beta}=\left(\bar{a}a-\normord{a\bar{a}}+\bar{b}b-\normord{b\bar{b}}\right)_{\alpha}^{\beta},
+\]
+
+\end_inset
+
+ then it's sufficient to prove that 
+\begin_inset Formula 
+\begin{equation}
+G_{\alpha}^{\beta}\ket{\text{Any trace state}}=0.\label{eq:HPrime-DeltaH-G2-2}
+\end{equation}
+
+\end_inset
+
+ Expanding 
+\begin_inset Formula $\tr G^{2}$
+\end_inset
+
+ yields
+\begin_inset Formula 
+\[
+\tr G^{2}=\tr\left(\bar{a}a-\normord{a\bar{a}}\right)^{2}+\tr\left(\bar{b}b-\normord{b\bar{b}}\right)^{2}+2\tr\left(\bar{b}b-\normord{b\bar{b}}\right)\left(\bar{a}a-\normord{a\bar{a}}\right).
+\]
+
+\end_inset
+
+Expanding each term of the right hand side, we obtain
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr\left(\bar{a}a-\normord{a\bar{a}}\right)^{2} & = & \tr\bar{a}a\bar{a}a+\tr\left(\normord{a\bar{a}}\normord{a\bar{a}}\right)-\tr\left(\bar{a}a\normord{a\bar{a}}+\normord{a\bar{a}}\bar{a}a\right)\\
+ & = & 2\tr\left(\normord{\bar{a}a\bar{a}a}\right)+2N\tr\bar{a}a-\left(2\tr\bar{a}^{2}a^{2}+\tr\bar{a}\tr a\right),
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr\left(\bar{b}b-\normord{b\bar{b}}\right)^{2} & = & \tr\left(\bar{b}b\bar{b}b+\normord{b\bar{b}}\normord{b\bar{b}}\right)-\tr\left(\bar{b}b\normord{b\bar{b}}+\normord{b\bar{b}}\bar{b}b\right)\\
+ & = & 2N\tr\bar{b}b-2\left(\tr\bar{b}^{2}b^{2}+\tr\bar{b}\tr b\right),
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tr\left(\bar{b}b-\normord{b\bar{b}}\right)\left(\bar{a}a-\normord{a\bar{a}}\right)=\tr\bar{b}b\bar{a}a+\tr\left(\normord{\bar{a}b\bar{b}a}\right)-\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab\right).
+\]
+
+\end_inset
+
+ It follows
+\begin_inset Formula 
+\begin{eqnarray*}
+\tr G^{2} & = & 2\tr\left(\normord{\bar{a}a\bar{a}a}+\bar{b}b\bar{a}a+\normord{\bar{a}b\bar{b}a}\right)\\
+ &  & -2\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right)\\
+ &  & +2N\tr\left(\bar{a}a+\bar{b}b\right)-2\tr\bar{a}\tr a-2\tr\bar{b}\tr b\\
+ & = & 2\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right)\\
+ &  & -2\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\\
+ & = & N\left(H^{\prime}-\Delta H\right).
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Now let's prove 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:HPrime-DeltaH-G2-2"
+
+\end_inset
+
+.
+ Easy to check that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[\bar{a}_{\alpha}^{\beta},G_{\gamma}^{\delta}\right] & = & \bar{a}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{a}_{\alpha}^{\delta},\\
+\left[\bar{b}_{\alpha}^{\beta},G_{\gamma}^{\delta}\right] & = & \bar{b}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{b}_{\alpha}^{\delta}.
+\end{eqnarray*}
+
+\end_inset
+
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be an 
+\begin_inset Formula $M$
+\end_inset
+
+-bit chain 
+\begin_inset Formula 
+\[
+X_{\alpha}^{\beta}=\left(\bar{x}_{1}\bar{x}_{2}\cdots\bar{x}_{M}\right)_{\alpha}^{\beta},\quad\bar{x}_{i}=\bar{a}\,\text{or}\,\bar{b},
+\]
+
+\end_inset
+
+ then
+\begin_inset Formula 
+\begin{eqnarray*}
+\left[X_{\alpha}^{\beta},G_{\gamma}^{\delta}\right] & = & \sum_{i=1}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\sigma}^{\beta}\left[\bar{x}_{\rho}^{\sigma},G_{\gamma}^{\delta}\right]\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\rho}\\
+ & = & \sum_{i=1}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\sigma}^{\beta}\left(\left(\bar{x}_{i}\right)_{\gamma}^{\sigma}\delta_{\rho}^{\delta}-\delta_{\gamma}^{\sigma}\left(\bar{x}_{i}\right)_{\rho}^{\delta}\right)\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\rho}\\
+ & = & \sum_{i=1}^{M-1}\left(\bar{x}_{1}\cdots\bar{x}_{i}\right)_{\gamma}^{\beta}\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}+\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}\\
+ &  & -\left(\sum_{i=2}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\gamma}^{\beta}\left(\bar{x}_{i}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}+\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}\right)\\
+ & = & \left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}.
+\end{eqnarray*}
+
+\end_inset
+
+ On the other hand 
+\begin_inset Formula 
+\[
+\left[X_{\alpha}^{\beta},G_{\gamma}^{\delta}\right]\ket{0}=X_{\alpha}^{\beta}G_{\gamma}^{\delta}\ket{0}-G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0}=-G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0},
+\]
+
+\end_inset
+
+ from which it follows
+\begin_inset Formula 
+\[
+G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0}=\left(\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}-\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}\right)\ket{0}.
+\]
+
+\end_inset
+
+ Taking trace on indices of 
+\begin_inset Formula $X$
+\end_inset
+
+ yields 
+\begin_inset Formula 
+\[
+G_{\gamma}^{\delta}\tr X\ket{0}=0.
+\]
+
+\end_inset
+
+Therefore, we proved 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:HPrime-DeltaH-G2-2"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Section
@@ -8991,581 +9566,6 @@ GR^{\dagger}RG=U^{\dagger}\left(\begin{array}{cccc}
 
  which clearly only depends on 
 \begin_inset Formula $G$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Section
-\begin_inset CommandInset label
-LatexCommand label
-name "App:Calculation-of-HQ"
-
-\end_inset
-
-Calculation of 
-\begin_inset Formula $\left[H,Q\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In this section, let's find the constraint of supersymmetric Hamiltonian,
- 
-\shape italic
-i.e.
-\shape default
-, the condition for 
-\begin_inset Formula $\left[H,Q\right]=0$
-\end_inset
-
-, where 
-\begin_inset Formula 
-\[
-Q=\exp\left(\frac{i\pi}{4}\right)\tr\bar{a}b+\exp\left(-\frac{i\pi}{4}\right)\tr\bar{b}a.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We first calculate the commutation between 
-\begin_inset Formula $Q$
-\end_inset
-
- and each trace operators in 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:trace-operators"
-
-\end_inset
-
-.
- We have 
-\begin_inset Formula 
-\[
-\left[\mathrm{Tr}\bar{a}^{2}b^{2},\mathrm{Tr}\bar{a}b\right]=\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{a}b-\mathrm{Tr}\bar{a}b\mathrm{Tr}\bar{a}^{2}b^{2}=0,
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\mathrm{Tr}\bar{a}^{2}b^{2},\tr\bar{b}a\right] & = & \mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a-\mathrm{Tr}\bar{b}a\mathrm{Tr}\bar{a}^{2}b^{2}\\
- & = & \mathrm{Tr}\bar{a}^{2}ba-\mathrm{Tr}b\bar{a}^{2}a+\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}\\
- &  & -\left(\mathrm{Tr}\bar{b}\bar{a}b^{2}+\tr\bar{b}b^{2}\bar{a}+\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}\right)\\
- & = & \tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2},
-\end{eqnarray*}
-
-\end_inset
-
- where 
-\begin_inset Formula $\normord{\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a}$
-\end_inset
-
- denotes the normal ordering of 
-\begin_inset Formula $\mathrm{Tr}\bar{a}^{2}b^{2}\mathrm{Tr}\bar{b}a$
-\end_inset
-
-.
- As we see, the normal ordering terms cancel out.
- This occurs for all the trace operators.
- So in the following calculation, we simply drop the normal ordering terms
- in most cases.
- From above two results, it follows 
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\mathrm{Tr}\bar{a}^{2}b^{2},Q\right] & = & \exp\left(-i\frac{\pi}{4}\right)\left[\mathrm{Tr}\bar{a}^{2}b^{2},\tr\bar{b}a\right]\\
- & = & \exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\right].
-\end{eqnarray*}
-
-\end_inset
-
- We repeat the calculation for the other trace operators as follows.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{b}^{2}a^{2},\tr\bar{a}b\right] & = & \tr\bar{b}^{2}a^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}^{2}a^{2}\\
- & = & \tr\bar{b}^{2}ab+\tr a\bar{b}^{2}b-\tr\bar{a}\bar{b}a^{2}+\tr\bar{a}a^{2}\bar{b}\\
- & = & \tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2},
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\left[\tr\bar{b}^{2}a^{2},\tr\bar{b}a\right]=0,
-\]
-
-\end_inset
-
- from which it follows
-\begin_inset Formula 
-\begin{eqnarray}
-\left[\tr\bar{b}^{2}a^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}a^{2},\tr\bar{a}b\right]\nonumber \\
- & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2}\right].
-\end{eqnarray}
-
-\end_inset
-
- 
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{a}^{2}a^{2},\tr\bar{a}b\right] & = & \tr\bar{a}^{2}a^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}^{2}a^{2}\\
- & = & \tr\bar{a}^{2}ab+\tr\bar{a}^{2}ba+\normord{\tr\bar{a}^{2}a^{2}\tr\bar{a}b}-\tr\bar{a}b\tr\bar{a}^{2}a^{2}\\
- & = & \tr\bar{a}^{2}\left(ab+ba\right),
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{a}^{2}a^{2},\tr\bar{b}a\right] & = & \tr\bar{a}^{2}a^{2}\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}^{2}a^{2}\\
- & = & \tr\bar{a}^{2}a^{2}\tr\bar{b}a-\tr\bar{b}\bar{a}a^{2}-\tr\bar{a}\bar{b}a^{2}-\normord{\tr\bar{b}a\tr\bar{a}^{2}a^{2}}\\
- & = & -\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2},
-\end{eqnarray*}
-
-\end_inset
-
-from which it follows
-\begin_inset Formula 
-\begin{eqnarray}
-\left[\tr\bar{a}^{2}a^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}a^{2},\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}^{2}a^{2},\tr\bar{b}a\right]\nonumber \\
- & = & \exp\left(i\frac{\pi}{4}\right)\tr\bar{a}^{2}\left(ab+ba\right)-\exp\left(-i\frac{\pi}{4}\right)\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}.
-\end{eqnarray}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{b}^{2}b^{2},\tr\bar{a}b\right] & = & \tr\bar{b}^{2}b^{2}\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}^{2}b^{2}\\
- & = & \tr\bar{b}^{2}b^{2}\tr\bar{a}b-\tr\bar{a}\bar{b}b^{2}+\tr\bar{b}\bar{a}b^{2}-\normord{\tr\bar{a}b\tr\bar{b}^{2}b^{2}}\\
- & = & \tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2},
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{b}^{2}b^{2},\tr\bar{b}a\right] & = & \tr\bar{b}^{2}b^{2}\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}^{2}b^{2}\\
- & = & \tr\bar{b}^{2}ba-\tr\bar{b}^{2}ab+\normord{\tr\bar{b}^{2}b^{2}\tr\bar{b}a}-\tr\bar{b}a\tr\bar{b}^{2}b^{2}\\
- & = & \tr\bar{b}^{2}\left(ba-ab\right),
-\end{eqnarray*}
-
-\end_inset
-
- from which it follows
-\begin_inset Formula 
-\begin{eqnarray}
-\left[\tr\bar{b}^{2}b^{2},Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}b^{2},\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}^{2}b^{2},\tr\bar{b}a\right]\nonumber \\
- & = & \exp\left(i\frac{\pi}{4}\right)\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2}+\exp\left(-i\frac{\pi}{4}\right)\tr\bar{b}^{2}\left(ba-ab\right).
-\end{eqnarray}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{b}\bar{a}ba,\tr\bar{a}b\right] & = & \tr\bar{b}\bar{a}ba\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}\bar{a}ba\\
- & = & \tr\bar{b}\bar{a}bb+\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}-\tr\bar{a}\bar{a}ba+\normord{\tr\bar{a}b\tr\bar{b}\bar{a}ba}\\
- & = & \tr\bar{b}\bar{a}bb+\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}-\tr\bar{a}\bar{a}ba-\normord{\tr\bar{b}\bar{a}ba\tr\bar{a}b}\\
- & = & \tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba,
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{b}\bar{a}ba,\tr\bar{b}a\right] & = & \tr\bar{b}\bar{a}ba\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}\bar{a}ba\\
- & = & \tr\bar{b}\bar{a}a^{2}-\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}+\tr\bar{b}\bar{b}ba-\normord{\tr\bar{b}a\tr\bar{b}\bar{a}ba}\\
- & = & \tr\bar{b}\bar{a}a^{2}-\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}+\tr\bar{b}\bar{b}ba+\normord{\tr\bar{b}\bar{a}ba\tr\bar{b}a}\\
- & = & \tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba,
-\end{eqnarray*}
-
-\end_inset
-
- from which it follows
-\begin_inset Formula 
-\begin{eqnarray}
-\left[\tr\bar{b}\bar{a}ba,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ba,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ba,\tr\bar{b}a\right]\nonumber \\
- & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}bb-\tr\bar{a}\bar{a}ba\right]\nonumber \\
- &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}\bar{b}ba\right].
-\end{eqnarray}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{a}\bar{b}ab,\tr\bar{a}b\right] & = & \tr\bar{a}\bar{b}ab\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}\bar{b}ab\\
- & = & -\tr\bar{a}\bar{b}b^{2}+\normord{\tr\bar{a}\bar{b}ab\tr\bar{a}b}-\tr\bar{a}^{2}ab+\normord{\tr\bar{a}b\tr\bar{a}\bar{b}ab}\\
- & = & -\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab,
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{a}\bar{b}ab,\tr\bar{b}a\right] & = & \tr\bar{a}\bar{b}ab\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}\bar{b}ab\\
- & = & \tr\bar{a}\bar{b}a^{2}-\normord{\tr\bar{a}\bar{b}ab\tr\bar{b}a}-\tr\bar{b}^{2}ab-\normord{\tr\bar{a}\bar{b}ab\tr\bar{b}a}\\
- & = & \tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab,
-\end{eqnarray*}
-
-\end_inset
-
- which follows
-\begin_inset Formula 
-\begin{eqnarray}
-\left[\tr\bar{a}\bar{b}ab,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ab,\tr\bar{b}a\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ab,\tr\bar{a}b\right]\nonumber \\
- & = & \exp\left(i\frac{\pi}{4}\right)\left[-\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab\right]\nonumber \\
- &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab\right].
-\end{eqnarray}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{a}\bar{b}ba,\tr\bar{a}b\right] & = & \tr\bar{a}\bar{b}ba\tr\bar{a}b-\tr\bar{a}b\tr\bar{a}\bar{b}ba\\
- & = & \tr\bar{a}\bar{b}bb+\normord{\tr\bar{a}\bar{b}ba\tr\bar{a}b}-\tr\bar{a}^{2}ba+\normord{\tr\bar{a}b\tr\bar{a}\bar{b}ba}\\
- & = & \tr\bar{a}\bar{b}bb-\tr\bar{a}^{2}ba,
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{a}\bar{b}ba,\tr\bar{b}a\right] & = & \tr\bar{a}\bar{b}ba\tr\bar{b}a-\tr\bar{b}a\tr\bar{a}\bar{b}ba\\
- & = & \tr\bar{a}\bar{b}aa-\normord{\tr\bar{a}\bar{b}ba\tr\bar{b}a}-\tr\bar{b}\bar{b}ba-\normord{\tr\bar{a}\bar{b}ba\tr\bar{b}a}\\
- & = & \tr\bar{a}\bar{b}aa-\tr\bar{b}^{2}ba,
-\end{eqnarray*}
-
-\end_inset
-
- from which it follows
-\begin_inset Formula 
-\begin{eqnarray}
-\left[\tr\bar{a}\bar{b}ba,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ba,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}ba,\tr\bar{b}a\right]\nonumber \\
- & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}bb-\tr\bar{a}^{2}ba\right]\nonumber \\
- &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{a}\bar{b}aa-\tr\bar{b}^{2}ba\right].
-\end{eqnarray}
-
-\end_inset
-
- 
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{b}\bar{a}ab,\tr\bar{a}b\right] & = & \tr\bar{b}\bar{a}ab\tr\bar{a}b-\tr\bar{a}b\tr\bar{b}\bar{a}ab\\
- & = & -\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab,
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\tr\bar{b}\bar{a}ab,\tr\bar{b}a\right] & = & \tr\bar{b}\bar{a}ab\tr\bar{b}a-\tr\bar{b}a\tr\bar{b}\bar{a}ab\\
- & = & \tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab,
-\end{eqnarray*}
-
-\end_inset
-
- from which it follows
-\begin_inset Formula 
-\begin{eqnarray}
-\left[\tr\bar{b}\bar{a}ab,Q\right] & = & \exp\left(i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ab,\tr\bar{a}b\right]+\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}ab,\tr\bar{b}a\right]\nonumber \\
- & = & \exp\left(i\frac{\pi}{4}\right)\left[-\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab\right]\nonumber \\
- &  & +\exp\left(-i\frac{\pi}{4}\right)\left[\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab\right].
-\end{eqnarray}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-As mentioned in the main text, the general form of Hermitian Hamiltonian
- is 
-\begin_inset Formula 
-\begin{eqnarray*}
-H & = & \frac{1}{N}\Big[c_{1}\tr\bar{a}^{2}a^{2}+c_{2}\tr\bar{b}^{2}b^{2}+iz_{1}\tr\bar{a}^{2}b^{2}-iz_{1}^{*}\tr\bar{b}^{2}a^{2}\\
- &  & +c_{3}\tr\bar{a}\bar{b}ba+c_{4}\tr\bar{b}\bar{a}ab+z_{2}\tr\bar{a}\bar{b}ab+z_{2}^{*}\tr\bar{b}\bar{a}ba\Big].
-\end{eqnarray*}
-
-\end_inset
-
- With above calculation, we have 
-\begin_inset Formula 
-\begin{eqnarray*}
-N\exp\left(\frac{i\pi}{4}\right)\left[H,Q\right] & = & c_{1}\left[i\tr\bar{a}^{2}\left(ab+ba\right)-\tr\left(\bar{a}\bar{b}+\bar{b}\bar{a}\right)a^{2}\right]\\
- &  & +c_{2}\left[i\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)b^{2}+\tr\bar{b}^{2}\left(ba-ab\right)\right]\\
- &  & +iz_{1}\left[\tr\bar{a}^{2}\left(ba-ab\right)-\tr\left(\bar{b}\bar{a}+\bar{a}\bar{b}\right)b^{2}\right]\\
- &  & +z_{1}^{*}\left[\tr\bar{b}^{2}\left(ab+ba\right)+\tr\left(\bar{b}\bar{a}-\bar{a}\bar{b}\right)a^{2}\right]\\
- &  & +c_{3}\left[i\left(\tr\bar{a}\bar{b}bb-\tr\bar{a}^{2}ba\right)+\tr\bar{a}\bar{b}aa-\tr\bar{b}^{2}ba\right]\\
- &  & +c_{4}\left[i\left(-\tr\bar{b}\bar{a}b^{2}-\tr\bar{a}^{2}ab\right)+\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ab\right]\\
- &  & +z_{2}\left[i\left(-\tr\bar{a}\bar{b}b^{2}-\tr\bar{a}^{2}ab\right)+\tr\bar{a}\bar{b}a^{2}-\tr\bar{b}^{2}ab\right]\\
- &  & +z_{2}^{*}\left[i\left(\tr\bar{b}\bar{a}bb-\tr\bar{a}^{2}ba\right)+\tr\bar{b}\bar{a}a^{2}+\tr\bar{b}^{2}ba\right]\\
- & = & i\left(c_{1}-z_{1}-c_{4}-z_{2}\right)\tr\bar{a}^{2}ab-\left(c_{1}-z_{1}^{*}-c_{4}-z_{2}^{*}\right)\tr\bar{b}\bar{a}a^{2}\\
- &  & +i\left(c_{1}+z_{1}-c_{3}-z_{2}^{*}\right)\tr\bar{a}^{2}ba-\left(c_{1}+z_{1}^{*}-c_{3}-z_{2}\right)\tr\bar{a}\bar{b}a^{2}\\
- &  & -\left(c_{2}-z_{1}^{*}-c_{4}+z_{2}\right)\tr\bar{b}^{2}ab+i\left(c_{2}-z_{1}-c_{4}+z_{2}^{*}\right)\tr\bar{a}\bar{b}b^{2}\\
- &  & +\left(c_{2}+z_{1}^{*}-c_{3}+z_{2}^{*}\right)\tr\bar{b}^{2}ba-i\left(c_{2}+z_{1}-c_{3}+z_{2}\right)\tr\bar{a}\bar{b}b^{2}.
-\end{eqnarray*}
-
-\end_inset
-
- Then 
-\begin_inset Formula $\left[H,Q\right]=0$
-\end_inset
-
- yields 
-\begin_inset Formula 
-\[
-\begin{cases}
-c_{1}-z_{1}-c_{4}-z_{2} & =0\\
-c_{1}+z_{1}-c_{3}-z_{2}^{*} & =0\\
-c_{2}-z_{1}^{*}-c_{4}+z_{2} & =0\\
-c_{2}+z_{1}^{*}-c_{3}+z_{2}^{*} & =0
-\end{cases},
-\]
-
-\end_inset
-
-from which it follows 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:Susy-constraint"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-\begin_inset CommandInset label
-LatexCommand label
-name "app:HPrime-Equals-DeltaH"
-
-\end_inset
-
-Proof of 
-\begin_inset Formula $\left(H^{\prime}-\Delta H\right)\ket{\text{Any trace state}}=0$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\Delta H$
-\end_inset
-
- and 
-\begin_inset Formula $H^{\prime}$
-\end_inset
-
- are defined as
-\begin_inset Formula 
-\begin{eqnarray*}
-\Delta H & = & \frac{2}{N}\tr\left[\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right],\\
-H^{\prime} & = & \frac{2}{N}\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right),
-\end{eqnarray*}
-
-\end_inset
-
- where 
-\begin_inset Formula 
-\[
-\tilde{M}=\tr\left(\bar{a}a+\bar{b}b\right)-\frac{1}{N}\left(\tr\bar{a}\tr a+\tr\bar{b}\tr b\right).
-\]
-
-\end_inset
-
-We first prove that 
-\begin_inset Formula 
-\begin{equation}
-N\left(H^{\prime}-\Delta H\right)=\tr G^{2},\label{eq:HPrime-DeltaH-G2-1}
-\end{equation}
-
-\end_inset
-
- where the color operator 
-\begin_inset Formula $G_{\alpha}^{\beta}$
-\end_inset
-
- is defined as 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-G_{\alpha}^{\beta}=\left(\bar{a}a-\normord{a\bar{a}}+\bar{b}b-\normord{b\bar{b}}\right)_{\alpha}^{\beta},
-\]
-
-\end_inset
-
- then it's sufficient to prove that 
-\begin_inset Formula 
-\begin{equation}
-G_{\alpha}^{\beta}\ket{\text{Any trace state}}=0.\label{eq:HPrime-DeltaH-G2-2}
-\end{equation}
-
-\end_inset
-
- Expanding 
-\begin_inset Formula $\tr G^{2}$
-\end_inset
-
- yields
-\begin_inset Formula 
-\[
-\tr G^{2}=\tr\left(\bar{a}a-\normord{a\bar{a}}\right)^{2}+\tr\left(\bar{b}b-\normord{b\bar{b}}\right)^{2}+2\tr\left(\bar{b}b-\normord{b\bar{b}}\right)\left(\bar{a}a-\normord{a\bar{a}}\right).
-\]
-
-\end_inset
-
-Expanding each term of the right hand side, we obtain
-\begin_inset Formula 
-\begin{eqnarray*}
-\tr\left(\bar{a}a-\normord{a\bar{a}}\right)^{2} & = & \tr\bar{a}a\bar{a}a+\tr\left(\normord{a\bar{a}}\normord{a\bar{a}}\right)-\tr\left(\bar{a}a\normord{a\bar{a}}+\normord{a\bar{a}}\bar{a}a\right)\\
- & = & 2\tr\left(\normord{\bar{a}a\bar{a}a}\right)+2N\tr\bar{a}a-\left(2\tr\bar{a}^{2}a^{2}+\tr\bar{a}\tr a\right),
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{eqnarray*}
-\tr\left(\bar{b}b-\normord{b\bar{b}}\right)^{2} & = & \tr\left(\bar{b}b\bar{b}b+\normord{b\bar{b}}\normord{b\bar{b}}\right)-\tr\left(\bar{b}b\normord{b\bar{b}}+\normord{b\bar{b}}\bar{b}b\right)\\
- & = & 2N\tr\bar{b}b-2\left(\tr\bar{b}^{2}b^{2}+\tr\bar{b}\tr b\right),
-\end{eqnarray*}
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\tr\left(\bar{b}b-\normord{b\bar{b}}\right)\left(\bar{a}a-\normord{a\bar{a}}\right)=\tr\bar{b}b\bar{a}a+\tr\left(\normord{\bar{a}b\bar{b}a}\right)-\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab\right).
-\]
-
-\end_inset
-
- It follows
-\begin_inset Formula 
-\begin{eqnarray*}
-\tr G^{2} & = & 2\tr\left(\normord{\bar{a}a\bar{a}a}+\bar{b}b\bar{a}a+\normord{\bar{a}b\bar{b}a}\right)\\
- &  & -2\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}\right)\\
- &  & +2N\tr\left(\bar{a}a+\bar{b}b\right)-2\tr\bar{a}\tr a-2\tr\bar{b}\tr b\\
- & = & 2\tr\left(\bar{a}a\bar{a}a+\bar{b}b\bar{a}a-\bar{a}b\bar{b}a\right)\\
- &  & -2\tr\left(\bar{a}\bar{b}ba+\bar{b}\bar{a}ab+\bar{a}^{2}a^{2}+\bar{b}^{2}b^{2}-\tilde{M}\right)\\
- & = & N\left(H^{\prime}-\Delta H\right).
-\end{eqnarray*}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-Now let's prove 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:HPrime-DeltaH-G2-2"
-
-\end_inset
-
-.
- Easy to check that
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[\bar{a}_{\alpha}^{\beta},G_{\gamma}^{\delta}\right] & = & \bar{a}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{a}_{\alpha}^{\delta},\\
-\left[\bar{b}_{\alpha}^{\beta},G_{\gamma}^{\delta}\right] & = & \bar{b}_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\bar{b}_{\alpha}^{\delta}.
-\end{eqnarray*}
-
-\end_inset
-
-Let 
-\begin_inset Formula $X$
-\end_inset
-
- be an 
-\begin_inset Formula $M$
-\end_inset
-
--bit chain 
-\begin_inset Formula 
-\[
-X_{\alpha}^{\beta}=\left(\bar{x}_{1}\bar{x}_{2}\cdots\bar{x}_{M}\right)_{\alpha}^{\beta},\quad\bar{x}_{i}=\bar{a}\,\text{or}\,\bar{b},
-\]
-
-\end_inset
-
- then
-\begin_inset Formula 
-\begin{eqnarray*}
-\left[X_{\alpha}^{\beta},G_{\gamma}^{\delta}\right] & = & \sum_{i=1}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\sigma}^{\beta}\left[\bar{x}_{\rho}^{\sigma},G_{\gamma}^{\delta}\right]\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\rho}\\
- & = & \sum_{i=1}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\sigma}^{\beta}\left(\left(\bar{x}_{i}\right)_{\gamma}^{\sigma}\delta_{\rho}^{\delta}-\delta_{\gamma}^{\sigma}\left(\bar{x}_{i}\right)_{\rho}^{\delta}\right)\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\rho}\\
- & = & \sum_{i=1}^{M-1}\left(\bar{x}_{1}\cdots\bar{x}_{i}\right)_{\gamma}^{\beta}\left(\bar{x}_{i+1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}+\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}\\
- &  & -\left(\sum_{i=2}^{M}\left(\bar{x}_{1}\cdots\bar{x}_{i-1}\right)_{\gamma}^{\beta}\left(\bar{x}_{i}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}+\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}\right)\\
- & = & \left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}-\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}.
-\end{eqnarray*}
-
-\end_inset
-
- On the other hand 
-\begin_inset Formula 
-\[
-\left[X_{\alpha}^{\beta},G_{\gamma}^{\delta}\right]\ket{0}=X_{\alpha}^{\beta}G_{\gamma}^{\delta}\ket{0}-G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0}=-G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0},
-\]
-
-\end_inset
-
- from which it follows
-\begin_inset Formula 
-\[
-G_{\gamma}^{\delta}X_{\alpha}^{\beta}\ket{0}=\left(\delta_{\gamma}^{\beta}\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\alpha}^{\delta}-\left(\bar{x}_{1}\cdots\bar{x}_{M}\right)_{\gamma}^{\beta}\delta_{\alpha}^{\delta}\right)\ket{0}.
-\]
-
-\end_inset
-
- Taking trace on indices of 
-\begin_inset Formula $X$
-\end_inset
-
- yields 
-\begin_inset Formula 
-\[
-G_{\gamma}^{\delta}\tr X\ket{0}=0.
-\]
-
-\end_inset
-
-Therefore, we proved 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:HPrime-DeltaH-G2-2"
-
 \end_inset
 
 .
