@@ -6,7 +6,7 @@
 \begin_preamble
 \usepackage{babel}
 \usepackage{url}
-\allowdisplaybreaks
+%\allowdisplaybreaks
 \bibliographystyle{unsrt}
 
 %\newcommand{\tr}{\mathrm{Tr}}
@@ -1613,8 +1613,8 @@ H\ket{\theta_{1}\cdots\theta_{M}}=\hat{h}\ket{\theta_{1}\cdots\theta_{M}}+\mathc
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-\hat{h} & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+z_{2}\theta_{k}\frac{d}{d\theta_{k+1}}\\
- &  & +z_{2}^{\dagger}\theta_{k+1}\frac{d}{d\theta_{k}}+\left(-2c_{1}+c_{3}+c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\\
+\hat{h} & = & \sum_{k=1}^{M}\Big[iz_{1}\theta_{k+1}\theta_{k}-iz_{1}^{\dagger}\frac{d}{d\theta_{k}}\frac{d}{d\theta_{k+1}}+z_{2}\theta_{k}\frac{d}{d\theta_{k+1}}\nonumber \\
+ &  & +z_{2}^{\dagger}\theta_{k+1}\frac{d}{d\theta_{k}}+\left(-2c_{1}+c_{3}+c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\nonumber \\
  &  & +\left(c_{1}+c_{2}-c_{3}-c_{4}\right)\theta_{k}\frac{d}{d\theta_{k}}\theta_{k+1}\frac{d}{d\theta_{k+1}}\Big]+c_{1}M.\label{eq:LargeN-H-in-theta}
 \end{eqnarray}
 
@@ -5918,6 +5918,7 @@ The limit of
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Float table
 wide false
 sideways false
@@ -6863,6 +6864,7 @@ We generate the norma matrices for
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -6879,7 +6881,7 @@ begin{gather*}
 \backslash
 
 \backslash
-   
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -6903,7 +6905,7 @@ quad 5
 \backslash
 
 \backslash
-    
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -6961,13 +6963,19 @@ quad 44
 
 1
 \backslash
-quad 12 
+quad
+\backslash
+, 12 
 \backslash
 quad 49 
 \backslash
-quad 76 
+quad
 \backslash
-quad 85
+, 76 
+\backslash
+quad
+\backslash
+, 85
 \backslash
 quad 88
 \backslash
@@ -7055,9 +7063,7 @@ quad 734
 
 \begin_layout Plain Layout
 
-
-\backslash
-qquad 1
+1
 \backslash
 quad 20 
 \backslash
@@ -7065,19 +7071,33 @@ quad 193
 \backslash
 quad 724 
 \backslash
-quad 1165
+;
 \backslash
-quad 1360 
+; 1165
 \backslash
-quad 1433 
+;
 \backslash
-quad 1460 
+; 1360
 \backslash
-quad 1469 
+;
 \backslash
-quad 1472 
+; 1433 
 \backslash
-quad 1473
+;
+\backslash
+; 1460 
+\backslash
+;
+\backslash
+; 1469 
+\backslash
+;
+\backslash
+; 1472 
+\backslash
+;
+\backslash
+; 1473
 \end_layout
 
 \begin_layout Plain Layout
@@ -7177,6 +7197,7 @@ The number at
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset ERT
 status open
 
@@ -7480,11 +7501,11 @@ Bosonic Trace States
 \end_layout
 
 \begin_layout Subsection*
-1 bits
+1 bit
 \end_layout
 
 \begin_layout Standard
-1 bosonic states: 
+1 bosonic state: 
 \begin_inset Formula 
 \begin{align*}
 \left|1\right\rangle  & =\mathrm{Tr}\bar{a}\left|0\right\rangle 
@@ -7604,7 +7625,10 @@ Bosonic Trace States
 \end_layout
 
 \begin_layout Standard
-89 bosonic states: 
+89 bosonic states:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
 \left|1\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|2\right\rangle  & =\mathrm{Tr}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle  & \left|3\right\rangle  & =\mathrm{Tr}\bar{a}\bar{a}\mathrm{Tr}\bar{a}\bar{a}\bar{a}\bar{a}\bar{a}\left|0\right\rangle \\
