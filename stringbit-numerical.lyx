@@ -485,7 +485,7 @@ key "Green:1980zg,Bardakci:1970nb"
 \begin_inset Formula $s$
 \end_inset
 
- fermionic worldsheet degree of freedom, the ground energy becomes
+ fermionic worldsheet degrees of freedom, the ground energy becomes
 \begin_inset Formula 
 \[
 E_{G}=\frac{(s-d)\pi T_{0}}{6Mm}.
@@ -990,9 +990,8 @@ Also we notice that
 \end_inset
 
 .
- As we will show in the next section, there is a nice feature of supersymmetric
- Hamiltonian that it guarantees that the excitation energy vanishes at large
- 
+ As we will show in the next section, a nice feature of supersymmetric Hamiltoni
+an is that its excitation energy vanishes at large 
 \begin_inset Formula $M$
 \end_inset
 
@@ -2711,7 +2710,7 @@ i.e.
 \end_inset
 
  has both positive and negative eigenvalues.
- There is some subtlety in this case.
+ There is a subtlety in this case.
  The eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
@@ -2726,7 +2725,7 @@ i.e.
 \end_inset
 
  whose eigenvalues are negative.
- The zero and positive norm eigenstates are still unphysical.
+ The zero and negative norm eigenstates are still unphysical.
  But positive norm eigenstates cannot be simply taken as energy states any
  more.
  A positive norm eigenstate is a physical energy state if it is orthogonal
