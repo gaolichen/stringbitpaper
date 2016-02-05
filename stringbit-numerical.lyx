@@ -936,7 +936,8 @@ reference "sec:Finite-N"
 \end_inset
 
  and its variations will be studied in the section.
- 
+ The main text is closed with a section of summary and conclusion.
+ Finally, we include seven appendices covering techenical details.
 \end_layout
 
 \begin_layout Section
@@ -9065,7 +9066,7 @@ If
 \end_inset
 
  zero eigenvalues.
- We can properly choose the transformation matrix 
+ We can properly choose a unitary matrix 
 \begin_inset Formula $R$
 \end_inset
 
