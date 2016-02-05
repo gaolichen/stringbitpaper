@@ -3079,7 +3079,7 @@ Lowest 5 energy states of the 3-bit system with Hamiltonian
 \end_layout
 
 \begin_layout Standard
-From these figures, we can see several features of the eigenstates of 
+From these figures, we see several features of the eigenstates of 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
@@ -3153,7 +3153,7 @@ etc.
 \begin_inset Formula $1/N$
 \end_inset
 
-, which can be seen from the right part of Fig.
+, as the right parts of Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3168,9 +3168,9 @@ reference "fig:H=H0M=11"
 
 \end_inset
 
-.
- But it does not imply the energy levels of the Hamiltonian drop, since
- all these eigenstates are actually unphysical.
+ show.
+ But it does not imply the decrease of energy levels, since all these eigenstate
+s are actually unphysical.
  
 \end_layout
 
@@ -3440,18 +3440,22 @@ reference "figH=h0M=even"
 \end_inset
 
  case, there is no simple formula to determine 
-\begin_inset Formula $N_{d}$
+\begin_inset Formula $N_{M}^{*}$
 \end_inset
 
 .
- The reason for the difference is the ground energy of 
+ The reason is that the lowest energy of 
+\begin_inset Formula $E\left(\eta_{i}\right)$
+\end_inset
+
+ in 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:LargeN-energy-levels"
 
 \end_inset
 
- being excluded by the cyclic constraint 
+ is excluded by the cyclic constraint 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:LargeN-cyclic-constraint"
@@ -3551,6 +3555,10 @@ reference "fig:physical-state-H0"
 \begin_inset Formula $M$
 \end_inset
 
+ when 
+\begin_inset Formula $N=1$
+\end_inset
+
 .
  For 
 \begin_inset Formula $N=2$
@@ -3627,7 +3635,7 @@ Change of physical ground states with respect to
 \end_inset
 
 .
- Only the ground energy at odd 
+ Only the ground energies at odd 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3654,7 +3662,7 @@ reference "fig:First-excitation-H0"
 
 \end_inset
 
- shows how the excitation changes with respect to 
+ shows how the excitation energy changes with respect to 
 \begin_inset Formula $M$
 \end_inset
 
@@ -3680,7 +3688,7 @@ reference "fig:First-excitation-H0"
 \end_inset
 
  is the gap between the first excited energy and lowest energy.
- For stringy behavior, the 
+ For stringy behavior, 
 \begin_inset Formula $M\times\left(E_{1}-E_{0}\right)$
 \end_inset
 
@@ -3693,7 +3701,7 @@ reference "fig:First-excitation-H0"
 \begin_inset Formula $M=11$
 \end_inset
 
-, we can still see the trend that, for 
+, we still see the trend that, for 
 \begin_inset Formula $N$
 \end_inset
 
@@ -3707,7 +3715,7 @@ reference "fig:First-excitation-H0"
 \end_inset
 
  is 
-\begin_inset Formula $16\pi/3$
+\begin_inset Formula $16\pi/3M$
 \end_inset
 
 .
@@ -4001,7 +4009,7 @@ Since all eigenstates of
 \end_inset
 
 .
- The 
+ 
 \begin_inset Formula $N_{M}^{*}$
 \end_inset
 
@@ -4009,11 +4017,11 @@ Since all eigenstates of
 \begin_inset Formula $\xi=-1$
 \end_inset
 
-, the lower bound of the 
+, the lower bound of 
 \begin_inset Formula $\xi$
 \end_inset
 
- meets the stabilization constraint.
+ under the stabilization constraint.
  The 
 \begin_inset Formula $\xi=-1$
 \end_inset
@@ -4279,7 +4287,7 @@ reference "eq:LargeN-energy-levels"
 \end_inset
 
 .
- Consequently, the ground eigenstate is not degenerate for all 
+ Consequently, the ground eigenstates are nondegenerate for all 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4297,7 +4305,7 @@ reference "fig:nxi=1.5M=many"
 
 .
  From the figure, we see that 
-\begin_inset Formula $N_{d}=M-1$
+\begin_inset Formula $N_{M}^{*}=M-1$
 \end_inset
 
 .
@@ -4348,7 +4356,7 @@ Eigenvalues of
 \begin_inset Formula $M$
 \end_inset
 
-, the ground state disappear at 
+, the ground state disappears at 
 \begin_inset Formula $N=M-1$
 \end_inset
 
@@ -4366,11 +4374,10 @@ Eigenvalues of
 \end_layout
 
 \begin_layout Standard
-The 
 \begin_inset Formula $\xi$
 \end_inset
 
- has the similar impact on 
+ has a similar impact on 
 \begin_inset Formula $N_{M}^{*}$
 \end_inset
 
@@ -4445,7 +4452,7 @@ reference "fig:nxi=1M=many"
 \end_inset
 
 .
- It suggests that the ground eigenstate could survive when 
+ It seems to suggest that the ground eigenstate could survive when 
 \begin_inset Formula $M$
 \end_inset
 
@@ -4547,16 +4554,16 @@ reference "fig:nH-Physical-ground-energy"
 \begin_inset Formula $\xi=0.5$
 \end_inset
 
-, the system is not stable in finite 
+, the system is not stable at finite 
 \begin_inset Formula $N$
 \end_inset
 
- as their curves decline faster linearly.
- When 
+ as the curves decline faster than linearly.
+ 
 \begin_inset Formula $\xi=1$
 \end_inset
 
-, it's the marginal case and all the physical ground energies drop almost
+ is the marginal case, in which all the physical ground energies drop almost
  linearly.
  When 
 \begin_inset Formula $\xi=1.5$
@@ -4579,7 +4586,11 @@ reference "fig:nH-Physical-ground-energy"
 \end_inset
 
 , the trend is  slightly upward.
- It implies that the system is stable.
+ It implies that the system is stable for large 
+\begin_inset Formula $M$
+\end_inset
+
+.
  
 \end_layout
 
@@ -4652,7 +4663,7 @@ In this paper we have studied the string bit model with
 
 .
  We studied possible forms of supersymmetric Hamiltonian and their excitation
- energies at large 
+ energies in the large 
 \begin_inset Formula $N$
 \end_inset
 
@@ -4719,7 +4730,7 @@ In finite
 \begin_inset Formula $N\leq N_{M}^{*}$
 \end_inset
 
- the ground energy eigenstate of 
+ the would-be ground energy eigenstate of 
 \begin_inset Formula $M$
 \end_inset
 
@@ -9583,14 +9594,17 @@ Algorithms
 
 \begin_layout Standard
 The numerical computation is performed by C++ and matlab program.
- We use C++ program to generates the norm matrices and 
+ We use C++ program to generate the norm matrices and 
 \begin_inset Formula $\mathcal{H}$
 \end_inset
 
  matrices, then use matlab to find eigenvalues and eigenstates.
- Here we introduce the algorithms for generating trace states and building
- norm matrices.
- 
+ Here we introduce the algorithms for generating trace states, calculating
+ norm matrices, and building 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrices.
 \end_layout
 
 \begin_layout Paragraph*
@@ -9599,7 +9613,7 @@ Generate trace states
 
 \begin_layout Standard
 Trace states are represented by integer numbers.
- The bosonic and fermionic operators are mapped to 
+ The bosonic and fermionic creation operators are mapped to 
 \begin_inset Formula $0$
 \end_inset
 
@@ -9646,9 +9660,9 @@ There is no cyclic rotation on this integer producing a smaller integer.
 \end_layout
 
 \begin_layout Itemize
-The corresponding trace state is valid.
- A trace state is invalid if it can be divided into even number of identical
- consecutive part which has odd number of 
+The corresponding trace state is nonvanishing.
+ A trace state is vanishing if it can be partitioned into even number of
+ identical consecutive parts each of which has odd number of 
 \begin_inset Formula $\bar{b}$
 \end_inset
 
@@ -9657,22 +9671,30 @@ The corresponding trace state is valid.
 \begin_inset Formula $\tr\bar{b}\bar{b}\bar{b}\bar{b}\ket{0}$
 \end_inset
 
- is invalid as it can be divided into four 
+ vanishes as it can be partitioned into four 
 \begin_inset Formula $\bar{b}$
 \end_inset
 
-.
+s.
  
 \end_layout
 
 \begin_layout Standard
 After generating all single trace states, we can build multiple trace states
  out of single trace states.
+ The procedure is similar to the recursive relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Multiple-trace-states-2"
+
+\end_inset
+
+ for calculating the number of trace states.
  
 \end_layout
 
 \begin_layout Paragraph*
-Build norm matrices
+Calculate norm matrices
 \end_layout
 
 \begin_layout Standard
@@ -9730,8 +9752,8 @@ To build norm matrix, we need to calculate
 
 \end_inset
 
- Using the commutation and anticommutation relation, we can expand the norm
- into 
+ Using the commutation and anticommutation relations, we can expand the
+ norm into 
 \begin_inset Formula $2!\times2!=4$
 \end_inset
 
@@ -9745,8 +9767,8 @@ To build norm matrix, we need to calculate
 
 \end_inset
 
- The sign of each term is determined by how many times of swap occurring
- among 
+ The sign of each term is determined by how many times a swap occurs among
+ 
 \begin_inset Formula $b$
 \end_inset
 
@@ -9754,7 +9776,7 @@ To build norm matrix, we need to calculate
 \begin_inset Formula $\bar{b}$
 \end_inset
 
-: odd (even) number of swap produces a negative (positive) sign.
+: odd (even) number of swaps produces a negative (positive) sign.
  The first term can be written as
 \begin_inset Formula 
 \[
@@ -9822,7 +9844,7 @@ To build
 
  matrices, we need to calculate the action of trace operators on trace states.
  Let's take an example that the trace operator is 
-\begin_inset Formula $\tr\left(Aab\right)$
+\begin_inset Formula $\tr Aab$
 \end_inset
 
 , where 
@@ -9831,7 +9853,7 @@ To build
 
  is any creation operator chain.
  To calculate 
-\begin_inset Formula $\tr\left(Aab\right)\tr\left(S\right)\ket{0}$
+\begin_inset Formula $\tr Aab\tr S\ket{0}$
 \end_inset
 
 , we need to find all possible ways to partition 
@@ -9858,7 +9880,7 @@ To build
 \begin_inset Formula $D$
 \end_inset
 
- are creation operator chains.
+ are any creation operator chains.
  Each partition corresponds to one way to contract the indices among annihilatio
 n and creation operators.
  The results of these two contraction schemes are 
@@ -9874,8 +9896,8 @@ n and creation operators.
 \begin_inset Formula $\pi\left(AB\bar{b}CD\to A\bar{b}DBC\right)$
 \end_inset
 
- denotes the number of swap occurring among the fermionic operator as the
- chain being reordered from
+ denotes the number of swaps occurring among the fermionic operators as
+ the chain being reordered from
 \begin_inset Formula $AB\bar{b}CD$
 \end_inset
 
@@ -9945,6 +9967,31 @@ reference "eq:Alg-2"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The algorithm takes 
+\begin_inset Formula $\mathcal{O}\left(M^{2}\right)$
+\end_inset
+
+ to calculate one row of the 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrix.
+ Since there are about 
+\begin_inset Formula $2^{M}$
+\end_inset
+
+ trace states, it takes 
+\begin_inset Formula $\mathcal{O}\left(M^{2}2^{M}\right)$
+\end_inset
+
+ to build a 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ matrix, which is much faster than building a norm matrix.
 \end_layout
 
 \begin_layout Standard
