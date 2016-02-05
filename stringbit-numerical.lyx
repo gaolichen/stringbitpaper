@@ -2377,7 +2377,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/spec.pdf
+	filename spec.pdf
 	width 100col%
 	BoundingBox 120bp 250bp 490bp 560bp
 	clip
@@ -3040,7 +3040,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=0M=3.pdf
+	filename xi=0M=3.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3184,7 +3184,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=0M=5.pdf
+	filename xi=0M=5.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3240,7 +3240,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=0M=7.pdf
+	filename xi=0M=7.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3296,7 +3296,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=0M=9.pdf
+	filename xi=0M=9.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3352,7 +3352,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=0M=11.pdf
+	filename xi=0M=11.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3471,7 +3471,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=0M=even.pdf
+	filename xi=0M=even.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3600,7 +3600,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=0physical.pdf
+	filename xi=0physical.pdf
 	width 100col%
 	BoundingBox 50bp 400bp 560bp 600bp
 	clip
@@ -3726,7 +3726,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=0excitation.pdf
+	filename xi=0excitation.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3892,7 +3892,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=manyM=3.pdf
+	filename xi=manyM=3.pdf
 	width 100col%
 	BoundingBox 55bp 210bp 550bp 720bp
 	clip
@@ -4083,7 +4083,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/xi=n1M=odd2.pdf
+	filename xi=n1M=odd2.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -4215,7 +4215,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/physical-EvsM.pdf
+	filename physical-EvsM.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -4314,7 +4314,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/nxi=1.5M=many.pdf
+	filename nxi=1.5M=many.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 710bp
 	clip
@@ -4467,7 +4467,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/nxi=1M=many2.pdf
+	filename nxi=1M=many2.pdf
 	width 100col%
 	BoundingBox 55bp 90bp 550bp 595bp
 	clip
@@ -4593,7 +4593,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/nphysical-EvsM-N.pdf
+	filename nphysical-EvsM-N.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
