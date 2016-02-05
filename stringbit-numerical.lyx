@@ -126,7 +126,7 @@ Department of Physics, University of Florida, Gainesville, FL 32611
 \end_layout
 
 \begin_layout Abstract
-String bit model provides a possible method to formulate string as a discrete
+String bit models provide a possible method to formulate string as a discrete
  chain of point-like string bits.
  When the bit number 
 \begin_inset Formula $M$
@@ -141,6 +141,13 @@ String bit model provides a possible method to formulate string as a discrete
 \end_inset
 
  color group.
+ We show that the supersymmetry reduces the parameter number of a Hamiltonian
+ from seven to three and, at 
+\begin_inset Formula $N=\infty$
+\end_inset
+
+, ensures continuous energy spectrum, which implies the emergence of one
+ spatial dimension.
  The Hamiltonian 
 \begin_inset Formula $H_{0}$
 \end_inset
@@ -149,34 +156,17 @@ String bit model provides a possible method to formulate string as a discrete
 \begin_inset Formula $N$
 \end_inset
 
- limit it produces a worldsheet spectrum with one grassmann Green-Schwarz
- field.
- We show that a general Hamiltonian has three free parameters under the
- supersymmetry, which ensures continuous energy spectrum of the model at
- 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-.
+ limit it produces a worldsheet spectrum with one grassmann worldsheet field.
  We concentrate on numerical study of the model in finite 
 \begin_inset Formula $N$
 \end_inset
 
- and 
-\begin_inset Formula $M\leq11$
-\end_inset
-
 .
- In the case of 
-\begin_inset Formula $H=H_{0}$
+ For the Hamiltonian 
+\begin_inset Formula $H_{0}$
 \end_inset
 
-, a special Hamiltonian produces the Green-Schwarz Hamiltonian at 
-\begin_inset Formula $N=\infty$
-\end_inset
-
-, the numerical computation shows that the would-be ground energy states
- disappear at 
+, we find that the would-be ground energy states disappear at 
 \begin_inset Formula $N=\left(M-1\right)/2$
 \end_inset
 
@@ -193,7 +183,7 @@ String bit model provides a possible method to formulate string as a discrete
 \begin_inset Formula $\xi\Delta H$
 \end_inset
 
-, which vanishes at 
+ which does not affect the result of 
 \begin_inset Formula $N=\infty$
 \end_inset
 
@@ -208,7 +198,7 @@ String bit model provides a possible method to formulate string as a discrete
 
  increases (decreases).
  Particularly, the 
-\begin_inset Formula $H=\pm\left(H_{0}-\Delta H\right)$
+\begin_inset Formula $\pm\left(H_{0}-\Delta H\right)$
 \end_inset
 
  cases suggest a possibility that the ground state could survive at large
@@ -221,8 +211,7 @@ String bit model provides a possible method to formulate string as a discrete
 \end_inset
 
 .
- The numerical computation also reveals that the model has stringy behavior:
- when 
+ Our study reveals that the model has stringy behavior: when 
 \begin_inset Formula $N$
 \end_inset
 
@@ -236,12 +225,12 @@ String bit model provides a possible method to formulate string as a discrete
 \end_inset
 
 .
- Our study also verifies that a stable system requires 
-\begin_inset Formula $\xi\geq\mp1$
+ We also verify that a stable system of Hamiltonian 
+\begin_inset Formula $\pm H_{0}+\xi\Delta H$
 \end_inset
 
- for 
-\begin_inset Formula $H=\pm H_{0}+\xi\Delta H$
+ requires 
+\begin_inset Formula $\xi\geq\mp1$
 \end_inset
 
 .
