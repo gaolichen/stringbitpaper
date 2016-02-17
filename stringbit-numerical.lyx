@@ -3051,7 +3051,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=0M=3.pdf
+	filename xi_0M_3.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3195,7 +3195,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=0M=5.pdf
+	filename xi_0M_5.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3251,7 +3251,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=0M=7.pdf
+	filename xi_0M_7.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3307,7 +3307,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=0M=9.pdf
+	filename xi_0M_9.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3363,7 +3363,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=0M=11.pdf
+	filename xi_0M_11.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3486,7 +3486,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=0M=even.pdf
+	filename xi_0M_even.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3619,7 +3619,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=0physical.pdf
+	filename xi_0physical.pdf
 	width 100col%
 	BoundingBox 50bp 400bp 560bp 600bp
 	clip
@@ -3745,7 +3745,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=0excitation.pdf
+	filename xi_0excitation.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -3911,7 +3911,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=manyM=3.pdf
+	filename xi_manyM_3.pdf
 	width 100col%
 	BoundingBox 55bp 210bp 550bp 720bp
 	clip
@@ -4102,7 +4102,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename xi=n1M=odd2.pdf
+	filename xi_n1M_odd2.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 610bp
 	clip
@@ -4333,7 +4333,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename nxi=1.5M=many.pdf
+	filename nxi_1.5M_many.pdf
 	width 100col%
 	BoundingBox 54bp 200bp 550bp 710bp
 	clip
@@ -4485,7 +4485,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename nxi=1M=many2.pdf
+	filename nxi_1M_many2.pdf
 	width 100col%
 	BoundingBox 55bp 90bp 550bp 595bp
 	clip
